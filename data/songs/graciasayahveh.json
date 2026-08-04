@@ -1,0 +1,261 @@
+{
+  "id": "graciasayahveh",
+  "tt": "Gracias A Yahveh",
+  "title": "Gracias A Yahveh",
+  "subtitle": "Salmo 136 (135) - Melodía hebraica",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Paz",
+    "Comunión",
+    "Final",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "77",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/graciasayahveh.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=felicidadparaelhombre",
+  "sig": "/src/index.html?canto=gritadjubilosos",
+  "lizq": [
+    {
+      "line": "GRACIAS A YAHVEH, ALELUYA., (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)",
+      "sC": "ta as"
+    },
+    {
+      "line": "GRACIAS A YAHVEH, ALELUYA., (Re,,99)(Mi,m,169)(Re,,236)(Mi,m,281)",
+      "sC": "ta as"
+    },
+    {
+      "line": "GRACIAS A YAHVEH, ALELUYA., (La,m,34)(Mi,m,170)(Si,7,233)(Mi,m,280)",
+      "sC": "ta as"
+    },
+    {
+      "line": "GRACIAS A YAHVEH, ALELUYA., (La,m,32)(Mi,m,167)(Si,7,232)(Mi,m,281)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Demos gracias al Dios de los dioses,, (Do,,10)(Mi,m,95)(Re,7,160)(Sol,,302)",
+      "sC": "tc"
+    },
+    {
+      "line": "PORQUE ETERNA ES SU MISERICORDIA,, (Do,,10)(Mi,m,118)(Re,7,218)(Sol,,318)",
+      "sC": "ta as"
+    },
+    {
+      "line": "demos gracias al Señor de los Señores., (Si,m,96)(Mi,m,338)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "GRACIAS A YAHVEH, ALELUYA, (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (Re,,99)(Mi,m,169)(Re,,236)(Mi,m,281)",
+          "sC": "ta as"
+        },
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (La,m,34)(Mi,m,170)(Si,7,233)(Mi,m,280)",
+          "sC": "ta as"
+        },
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (La,m,32)(Mi,m,167)(Si,7,232)(Mi,m,281)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Él ha abierto en dos partes el Mar Rojo,, (Do,,10)(Mi,m,85)(Re,7,212)(Sol,,342)",
+      "sC": "tc"
+    },
+    {
+      "line": "PORQUE ETERNA ES SU MISERICORDIA,, (Do,,10)(Mi,m,117)(Re,7,215)(Sol,,320)",
+      "sC": "ta as"
+    },
+    {
+      "line": "hizo pasar por en medio a su pueblo., (Si,m,83)(Mi,m,310)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "GRACIAS A YAHVEH, ALELUYA, (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (Re,,99)(Mi,m,169)(Re,,236)(Mi,m,281)",
+          "sC": "ta as"
+        },
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (La,m,34)(Mi,m,170)(Si,7,233)(Mi,m,280)",
+          "sC": "ta as"
+        },
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (La,m,32)(Mi,m,167)(Si,7,232)(Mi,m,281)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Él ha abierto un camino en el desierto,, (Do,,10)(Mi,m,84)(Re,7,198)(Sol,,333)",
+      "sC": "tc"
+    },
+    {
+      "line": "PORQUE ETERNA ES SU MISERICORDIA,, (Do,,10)(Mi,m,118)(Re,7,216)(Sol,,318)",
+      "sC": "ta as"
+    },
+    {
+      "line": "e hizo con el pueblo una alianza para siempre., (Si,m,157)(Mi,m,380)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "GRACIAS A YAHVEH, ALELUYA, (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (Re,,99)(Mi,m,169)(Re,,236)(Mi,m,281)",
+          "sC": "ta as"
+        },
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (La,m,34)(Mi,m,170)(Si,7,233)(Mi,m,280)",
+          "sC": "ta as"
+        },
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (La,m,32)(Mi,m,167)(Si,7,232)(Mi,m,281)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Él los condujo a la tierra prometida,, (Do,,10)(Mi,m,109)(Re,7,193)(Sol,,305)",
+      "sC": "tc"
+    },
+    {
+      "line": "PORQUE ETERNA ES SU MISERICORDIA,, (Do,,10)(Mi,m,115)(Re,7,218)(Sol,,319)",
+      "sC": "ta as"
+    },
+    {
+      "line": "una tierra que mana leche y miel., (Si,m,59)(Mi,m,302)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "GRACIAS A YAHVEH, ALELUYA, (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (Re,,99)(Mi,m,169)(Re,,236)(Mi,m,281)",
+          "sC": "ta as"
+        },
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (La,m,34)(Mi,m,170)(Si,7,233)(Mi,m,280)",
+          "sC": "ta as"
+        },
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (La,m,32)(Mi,m,167)(Si,7,232)(Mi,m,281)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En la angustia no nos abandona,, (Do,,10)(Mi,m,97)(Re,7,154)(Sol,,272)",
+      "sC": "tc"
+    },
+    {
+      "line": "PORQUE ETERNA ES SU MISERICORDIA,, (Do,,10)(Mi,m,120)(Re,7,218)(Sol,,319)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Él nos libra de nuestros enemigos., (Si,m,78)(Mi,m,285)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "GRACIAS A YAHVEH, ALELUYA, (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (Re,,99)(Mi,m,169)(Re,,236)(Mi,m,281)",
+          "sC": "ta as"
+        },
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (La,m,34)(Mi,m,170)(Si,7,233)(Mi,m,280)",
+          "sC": "ta as"
+        },
+        {
+          "line": "GRACIAS A YAHVEH, ALELUYA., (La,m,32)(Mi,m,167)(Si,7,232)(Mi,m,281)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

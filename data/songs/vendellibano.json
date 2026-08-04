@@ -1,0 +1,270 @@
+{
+  "id": "vendellibano",
+  "tt": "Ven Del Líbano",
+  "title": "Ven Del Líbano",
+  "subtitle": "Cantar de los cantares 4,8ss",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Entrada",
+    "Comunión",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "166",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/vendellibano.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=vamosyapastores",
+  "sig": "/src/index.html?canto=venespiritusanto",
+  "lizq": [
+    {
+      "line": "Ven del Líbano, esposa,, (Mi,m,20)(Re,,132)",
+      "sC": "tc"
+    },
+    {
+      "line": "ven del Líbano, ven., (Do,,10)(Re,,87)(Mi,m,168)",
+      "sC": ""
+    },
+    {
+      "line": "Tendrás por corona la cima de los montes,, (Re,,221)",
+      "sC": ""
+    },
+    {
+      "line": "la alta cumbre del Hermón., (Do,,32)(Re,,84)(Mi,m,238)",
+      "sC": ""
+    },
+    {
+      "line": "Tú me has herido, herido el corazón,, (Re,,208)",
+      "sC": ""
+    },
+    {
+      "line": "oh, esposa, amada mía., (Do,,10)(Re,,72)(Mi,m,207)",
+      "sC": ""
+    },
+    {
+      "line": "Ven del Líbano, esposa,, (Re,,131)",
+      "sC": ""
+    },
+    {
+      "line": "ven del Líbano, ven., (Do,,10)(Re,,86)(Mi,m,168)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "BUSQUÉ EL AMOR DEL ALMA MÍA,, (Sol,,153)(La,,303)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LO BUSQUÉ SIN ENCONTRARLO., (La,m,96)(Mi,m,257)",
+      "sC": "as"
+    },
+    {
+      "line": "ENCONTRÉ EL AMOR DE MI VIDA,, (Sol,,98)(La,,282)",
+      "sC": "as"
+    },
+    {
+      "line": "LO HE ABRAZADO Y NO LO DEJARÉ JAMÁS., (Do,,136)(Re,,284)(Mi,m,392)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo pertenezco a mi amado, y él es todo para mí., (Mi,,10)(Re,,149)(Do,,292)(Re,,343)(Mi,m,446)",
+      "sC": "tc"
+    },
+    {
+      "line": "Ven, salgamos a los campos,, (Re,,154)",
+      "sC": ""
+    },
+    {
+      "line": "nos perderemos por los pueblos., (Do,,16)(Re,,107)(Mi,m,257)",
+      "sC": ""
+    },
+    {
+      "line": "Saldremos al alba a las viñas, (Re,,186)",
+      "sC": ""
+    },
+    {
+      "line": "y recogeremos de su fruto., (Do,,10)(Re,,91)(Mi,m,223)",
+      "sC": ""
+    },
+    {
+      "line": "Yo pertenezco a mi amado, y él es todo para mí., (Re,,147)(Do,,291)(Re,,343)(Mi,m,450)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "BUSQUÉ EL AMOR DEL ALMA MÍA, (Sol,,153)(La,,303)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LO BUSQUÉ SIN ENCONTRARLO., (La,m,96)(Mi,m,257)",
+          "sC": "as"
+        },
+        {
+          "line": "ENCONTRÉ EL AMOR DE MI VIDA,, (Sol,,98)(La,,282)",
+          "sC": "as"
+        },
+        {
+          "line": "LO HE ABRAZADO Y NO LO DEJARÉ JAMÁS., (Do,,136)(Re,,284)(Mi,m,392)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Levántate deprisa, amada mía,, (Mi,m,20)(Re,,217)",
+      "sC": "tc"
+    },
+    {
+      "line": "ven, paloma, ven., (Do,,14)(Re,,77)(Mi,m,144)",
+      "sC": ""
+    },
+    {
+      "line": "Porque el invierno ya ha pasado,, (Re,,192)",
+      "sC": ""
+    },
+    {
+      "line": "el canto de la alondra ya se oye., (Do,,39)(Re,,157)(Mi,m,282)",
+      "sC": ""
+    },
+    {
+      "line": "Las flores aparecen en la tierra,, (Re,,202)",
+      "sC": ""
+    },
+    {
+      "line": "el fuerte sol ha llegado., (Do,,46)(Re,,100)(Mi,m,189)",
+      "sC": ""
+    },
+    {
+      "line": "Levántate deprisa, amada mía,, (Re,,216)",
+      "sC": ""
+    },
+    {
+      "line": "ven, paloma, ven., (Do,,15)(Re,,78)(Mi,m,144)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "BUSQUÉ EL AMOR DEL ALMA MÍA, (Sol,,153)(La,,303)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LO BUSQUÉ SIN ENCONTRARLO., (La,m,96)(Mi,m,257)",
+          "sC": "as"
+        },
+        {
+          "line": "ENCONTRÉ EL AMOR DE MI VIDA,, (Sol,,98)(La,,282)",
+          "sC": "as"
+        },
+        {
+          "line": "LO HE ABRAZADO Y NO LO DEJARÉ JAMÁS., (Do,,136)(Re,,284)(Mi,m,392)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Como un sello en el corazón,, (Mi,m,20)(Re,,150)",
+      "sC": "tc"
+    },
+    {
+      "line": "como tatuaje en el brazo., (Do,,10)(Re,,104)(Mi,m,207)",
+      "sC": ""
+    },
+    {
+      "line": "El amor es fuerte como la muerte,, (Re,,185)",
+      "sC": ""
+    },
+    {
+      "line": "las aguas no lo apagarán., (Do,,42)(Re,,111)(Mi,m,222)",
+      "sC": ""
+    },
+    {
+      "line": "Dar por este amor, ",
+      "sC": ""
+    },
+    {
+      "line": "todos los bienes de la casa,, (Re,,101)",
+      "sC": ""
+    },
+    {
+      "line": "sería despreciarlo., (Do,,32)(Re,,73)(Mi,m,137)",
+      "sC": ""
+    },
+    {
+      "line": "Como un sello en el corazón,, (Re,,149)",
+      "sC": ""
+    },
+    {
+      "line": "como tatuaje en el brazo., (Do,,13)(Re,,101)(Mi,m,206)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "BUSQUÉ EL AMOR DEL ALMA MÍA, (Sol,,153)(La,,303)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LO BUSQUÉ SIN ENCONTRARLO., (La,m,96)(Mi,m,257)",
+          "sC": "as"
+        },
+        {
+          "line": "ENCONTRÉ EL AMOR DE MI VIDA,, (Sol,,98)(La,,282)",
+          "sC": "as"
+        },
+        {
+          "line": "LO HE ABRAZADO Y NO LO DEJARÉ JAMÁS., (Do,,136)(Re,,284)(Mi,m,392)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

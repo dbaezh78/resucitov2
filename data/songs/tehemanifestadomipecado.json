@@ -1,0 +1,264 @@
+{
+  "id": "tehemanifestadomipecado",
+  "tt": "Te He Manifestado Mi Pecado",
+  "title": "Te He Manifestado Mi Pecado",
+  "subtitle": "Salmo 32 (31)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "159",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/tehemanifestadomipecado.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=teestoyllamandosenor",
+  "sig": "/src/index.html?canto=tuhascubiertodeverguenzalamuerte",
+  "lizq": [
+    {
+      "line": "TE HE MANIFESTADO MI PECADO,, (La,m,20)(Re,m,225)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NO HE TENIDO ESCONDIDOS MIS ERRORES., (La,m,109)",
+      "sC": "as"
+    },
+    {
+      "line": "HE DICHO: «CONFESARÉ AL SEÑOR MI CULPA»., (Sol,,50)(La,m,225)",
+      "sC": "as"
+    },
+    {
+      "line": "Y TÚ HAS PERDONADO, (Sol,,36)",
+      "sC": "as"
+    },
+    {
+      "line": "LA MALICIA DE MI PECADO., (La,m,224)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dichoso el hombre, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "al que le son perdonadas sus culpas, (Re,m,106)",
+      "sC": ""
+    },
+    {
+      "line": "y que le fueron cubiertos sus pecados., (La,m,101)",
+      "sC": ""
+    },
+    {
+      "line": "Dichoso el hombre, (Sol,,123)",
+      "sC": ""
+    },
+    {
+      "line": "al que el Señor no imputa algún mal, (La,m,132)",
+      "sC": ""
+    },
+    {
+      "line": "y en cuyo espíritu no hay engaño., (Sol,,131)(La,m,280)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "TE HE MANIFESTADO MI PECADO, (La,m,20)(Re,m,225)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO HE TENIDO ESCONDIDOS MIS ERRORES., (La,m,109)",
+          "sC": "as"
+        },
+        {
+          "line": "HE DICHO: «CONFESARÉ AL SEÑOR MI CULPA»., (Sol,,50)(La,m,225)",
+          "sC": "as"
+        },
+        {
+          "line": "Y TÚ HAS PERDONADO, (Sol,,36)",
+          "sC": "as"
+        },
+        {
+          "line": "LA MALICIA DE MI PECADO., (La,m,224)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Callaba y se consumían mis huesos, (La,m,20)(Sol,,197)",
+      "sC": "tc"
+    },
+    {
+      "line": "gimiendo todo el día,, (La,m,48)",
+      "sC": ""
+    },
+    {
+      "line": "porque día y noche, (Sol,,18)",
+      "sC": ""
+    },
+    {
+      "line": "pesaba tu mano sobre mí,, (La,m,238)",
+      "sC": ""
+    },
+    {
+      "line": "como estío de verano, (Sol,,90)",
+      "sC": ""
+    },
+    {
+      "line": "estaba árido mi corazón., (La,m,217)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Mas te he manifestado mi pecado,, (La,m,20)(Re,m,245)",
+      "sC": ""
+    },
+    {
+      "line": "no he tenido escondidos mis errores,, (La,m,98)",
+      "sC": ""
+    },
+    {
+      "line": "he dicho: «Confesaré al Señor mi culpa»., (Sol,,43)(La,m,190)",
+      "sC": ""
+    },
+    {
+      "line": "Y tú has perdonado la malicia de mi pecado., (Sol,,27)(La,m,389)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "TE HE MANIFESTADO MI PECADO, (La,m,20)(Re,m,225)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO HE TENIDO ESCONDIDOS MIS ERRORES., (La,m,109)",
+          "sC": "as"
+        },
+        {
+          "line": "HE DICHO: «CONFESARÉ AL SEÑOR MI CULPA»., (Sol,,50)(La,m,225)",
+          "sC": "as"
+        },
+        {
+          "line": "Y TÚ HAS PERDONADO, (Sol,,36)",
+          "sC": "as"
+        },
+        {
+          "line": "LA MALICIA DE MI PECADO., (La,m,224)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por eso te suplican tus fieles, (La,m,20)(Re,m,146)",
+      "sC": "tc"
+    },
+    {
+      "line": "en el día de la angustia,, (La,m,70)",
+      "sC": ""
+    },
+    {
+      "line": "cuando las aguas caudalosas se desbordan,, (Sol,,122)(La,m,245)",
+      "sC": ""
+    },
+    {
+      "line": "mas a él no le alcanzarán., (Sol,,76)(La,m,227)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú eres mi refugio,, (Sol,,136)",
+      "sC": ""
+    },
+    {
+      "line": "tú me preservas del peligro,, (La,m,114)",
+      "sC": ""
+    },
+    {
+      "line": "me rodeas de cantos de salvación,, (Sol,,14)(La,m,156)",
+      "sC": ""
+    },
+    {
+      "line": "me dices: «Te haré sabio,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "te indicaré el camino de la vida»., (La,m,275)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "TE HE MANIFESTADO MI PECADO, (La,m,20)(Re,m,225)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO HE TENIDO ESCONDIDOS MIS ERRORES., (La,m,109)",
+          "sC": "as"
+        },
+        {
+          "line": "HE DICHO: «CONFESARÉ AL SEÑOR MI CULPA»., (Sol,,50)(La,m,225)",
+          "sC": "as"
+        },
+        {
+          "line": "Y TÚ HAS PERDONADO, (Sol,,36)",
+          "sC": "as"
+        },
+        {
+          "line": "LA MALICIA DE MI PECADO., (La,m,224)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

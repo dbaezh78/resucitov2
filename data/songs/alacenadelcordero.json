@@ -1,0 +1,216 @@
+{
+  "id": "alacenadelcordero",
+  "tt": "A La Cena Del Cordero",
+  "title": "A La Cena Del Cordero",
+  "subtitle": "Himno lat. «Ad cenam Agni providi»",
+  "category": [
+    "Eleccion",
+    "Pascua",
+    "Pentecostés",
+    "Entrada"
+  ],
+  "catCanto": "Eleccion",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "237",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/alacenadelcordero.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=tueresmiesperanzasenor",
+  "sig": "/src/index.html?canto=adondeteescondisteamado",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "cantoseleccion",
+      "color": "#544d47"
+    },
+    {
+      "line": "A LA CENA DEL CORDERO,, (La,m,20)(Sol,,216)",
+      "sC": "ta as"
+    },
+    {
+      "line": "VESTIDOS CON BLANCAS TÚNICAS,, (La,m,266)(Fa,,343)",
+      "sC": "as"
+    },
+    {
+      "line": "ATRAVESADO EL MAR ROJO, ",
+      "sC": "as"
+    },
+    {
+      "line": "CANTAMOS A CRISTO, EL SEÑOR., (Mi,,293)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Su cuerpo lleno de amor,, (La,m,20)(Sol,,220)",
+      "sC": "tc"
+    },
+    {
+      "line": "sobre la mesa es el Pan vivo., (La,m,252)",
+      "sC": ""
+    },
+    {
+      "line": "Y su sangre sobre el altar,, (Sol,,233)",
+      "sC": ""
+    },
+    {
+      "line": "es el cáliz del nuevo pacto., (La,m,215)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Manso cordero inmolado,, (Sol,,211)",
+      "sC": ""
+    },
+    {
+      "line": "es Cristo, nuestra Pascua., (La,m,193)",
+      "sC": ""
+    },
+    {
+      "line": "Su cuerpo adorable, (Sol,,149)",
+      "sC": ""
+    },
+    {
+      "line": "es el verdadero pan ácimo., (La,m,212)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "A LA CENA DEL CORDERO, (La,m,20)(Sol,,216)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "VESTIDOS CON BLANCAS TÚNICAS,, (La,m,266)(Fa,,343)",
+          "sC": "as"
+        },
+        {
+          "line": "ATRAVESADO EL MAR ROJO, ",
+          "sC": "as"
+        },
+        {
+          "line": "CANTAMOS A CRISTO, EL SEÑOR., (Mi,,293)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "En esta hora admirable, (La,m,20)(Sol,,187)",
+      "sC": "tc"
+    },
+    {
+      "line": "retornan los antiguos prodigios,, (La,m,261)",
+      "sC": ""
+    },
+    {
+      "line": "su brazo potente nos salva, (Sol,,219)",
+      "sC": ""
+    },
+    {
+      "line": "del ángel de la muerte., (La,m,178)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Irradia sobre la Iglesia, (Sol,,178)",
+      "sC": ""
+    },
+    {
+      "line": "el gozo pascual, oh Señor,, (La,m,232)",
+      "sC": ""
+    },
+    {
+      "line": "y une a tu gran victoria, (Sol,,188)",
+      "sC": ""
+    },
+    {
+      "line": "a los que han renovado el Bautismo., (La,m,302)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "A LA CENA DEL CORDERO, (La,m,20)(Sol,,216)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "VESTIDOS CON BLANCAS TÚNICAS,, (La,m,266)(Fa,,343)",
+          "sC": "as"
+        },
+        {
+          "line": "ATRAVESADO EL MAR ROJO, ",
+          "sC": "as"
+        },
+        {
+          "line": "CANTAMOS A CRISTO, EL SEÑOR., (Mi,,293)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sea honor, alabanza y gloria,, (La,m,20)(Sol,,240)",
+      "sC": "tc"
+    },
+    {
+      "line": "a Cristo victorioso de la muerte,, (La,m,266)",
+      "sC": ""
+    },
+    {
+      "line": "al Padre y al Santo Espíritu, (Sol,,223)",
+      "sC": ""
+    },
+    {
+      "line": "ahora y por los siglos eternos., (La,m,237)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AMÉN, (Sol,,14)(La,m,53)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

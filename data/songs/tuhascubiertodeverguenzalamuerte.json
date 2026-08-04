@@ -1,0 +1,236 @@
+{
+  "id": "tuhascubiertodeverguenzalamuerte",
+  "tt": "Tú Has Cubierto De Vergüenza La Muerte",
+  "title": "Tú Has Cubierto De Vergüenza La Muerte",
+  "subtitle": "Homilía Pascual (Melltón de Sardes)",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María",
+    "Pascua",
+    "Pentecostés",
+    "Fracción Del Pan"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "160",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/tuhascubiertodeverguenzalamuerte.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=tehemanifestadomipecado",
+  "sig": "/src/index.html?canto=tuqueeresfiel",
+  "lizq": [
+    {
+      "line": "Tú has cubierto de vergüenza la muerte,, (Re,m,22)(La,7,345)",
+      "sC": "tc"
+    },
+    {
+      "line": "tú has llenado de luto el infierno., (Re,m,276)",
+      "sC": "r1"
+    },
+    {
+      "line": "Has golpeado la iniquidad,, (La,7,233)",
+      "sC": ""
+    },
+    {
+      "line": "has privado a la injusticia de sus hijos,, (Re,m,334)",
+      "sC": ""
+    },
+    {
+      "line": "como Moisés al Faraón,, (Si♭,7,112)(La,7,210)",
+      "sC": ""
+    },
+    {
+      "line": "como Moisés al Faraón., (Si♭,7,113)(La,7,210)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú nos has pasado de la esclavitud a la libertad, (Re,m,20)(La,7,433)",
+      "sC": "tc"
+    },
+    {
+      "line": "de las tinieblas a la luz,, (Re,m,207)",
+      "sC": ""
+    },
+    {
+      "line": "de la muerte a la vida,, (La,7,183)",
+      "sC": ""
+    },
+    {
+      "line": "de la tiranía al reino eterno., (Re,m,227)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú eres la Pascua de nuestra salvación;, (La,7,357)",
+      "sC": ""
+    },
+    {
+      "line": "tú eres el cordero nacido de María., (Re,m,315)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MARÍA, CORDERA SIN MANCHA,, (Re,m,20)(La,7,241)",
+      "sC": "ta as"
+    },
+    {
+      "line": "MARÍA, LA INOCENTE CORDERA., (Re,m,273)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú has sido asesinado en Abel,, (Re,m,20)(La,7,275)",
+      "sC": "tc"
+    },
+    {
+      "line": "tú fuiste atado en Isaac,, (Re,m,210)",
+      "sC": ""
+    },
+    {
+      "line": "vendido en José,, (La,7,140)",
+      "sC": ""
+    },
+    {
+      "line": "abandonado sobre las aguas en Moisés,, (Re,m,362)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "perseguido en David, (La,7,182)",
+      "sC": ""
+    },
+    {
+      "line": "y despreciado en todos los profetas., (Re,m,303)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú eres el cordero que no abre boca;, (La,7,314)",
+      "sC": ""
+    },
+    {
+      "line": "tú eres el cordero nacido de María., (Re,m,310)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "MARÍA, CORDERA SIN MANCHA, (Re,m,20)(La,7,241)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "MARÍA, LA INOCENTE CORDERA., (Re,m,273)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú fuiste cogido del rebaño,, (Re,m,20)(La,7,228)",
+      "sC": "tc"
+    },
+    {
+      "line": "conducido al sacrificio, inmolado por la tarde,, (Re,m,396)",
+      "sC": ""
+    },
+    {
+      "line": "sepultado en la noche; (La,7,169)",
+      "sC": ""
+    },
+    {
+      "line": "sobre la cruz no te fue roto ningún hueso,",
+      "sC": ""
+    },
+    {
+      "line": "ni en la tierra experimentaste la corrupción., (Re,m,396)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú resucitando de la muerte, (La,7,238)",
+      "sC": ""
+    },
+    {
+      "line": "has hecho resurgir a la humanidad, ",
+      "sC": ""
+    },
+    {
+      "line": "de lo profundo del sepulcro., (Re,m,220)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú eres el cordero que no abre boca;, (La,7,313)",
+      "sC": ""
+    },
+    {
+      "line": "tú eres el cordero nacido de María., (Re,m,311)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "MARÍA, CORDERA SIN MANCHA, (Re,m,20)(La,7,241)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "MARÍA, LA INOCENTE CORDERA., (Re,m,273)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

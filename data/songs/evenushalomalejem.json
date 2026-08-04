@@ -1,0 +1,234 @@
+{
+  "id": "evenushalomalejem",
+  "tt": "Evenu Shalom Alejem",
+  "title": "Evenu Shalom Alejem",
+  "subtitle": "Melodía hebraica",
+  "category": [
+    "Precatecumenado",
+    "Paz"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "73",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/evenushalomalejem.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=esteeselmandamientomio",
+  "sig": "/src/index.html?canto=extiendomismanos",
+  "lizq": [
+    {
+      "line": "EVENU SHALOM ALEJEM,, (Re,m,21)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EVENU SHALOM ALEJEM,, (Sol,m,105)",
+      "sC": "as"
+    },
+    {
+      "line": "EVENU SHALOM ALEJEM,, (La,,102)(Re,m,214)",
+      "sC": "as"
+    },
+    {
+      "line": "EVENU SHALOM, SHALOM,, (La,7,105)",
+      "sC": "as"
+    },
+    {
+      "line": "SHALOM ALEJEM., (Re,m,144)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "QUE SEA LA PAZ CON NOSOTROS,, (Re,m,21)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE SEA LA PAZ CON NOSOTROS,, (Sol,m,142)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE SEA LA PAZ CON NOSOTROS,, (La,,141)(Re,m,260)",
+      "sC": "as"
+    },
+    {
+      "line": "EVENU SHALOM, SHALOM,, (La,7,107)",
+      "sC": "as"
+    },
+    {
+      "line": "SHALOM ALEJEM., (Re,m,147)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EVENU SHALOM ALEJEM, (Re,m,21)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EVENU SHALOM ALEJEM,, (Sol,m,105)",
+          "sC": "as"
+        },
+        {
+          "line": "EVENU SHALOM ALEJEM,, (La,,102)(Re,m,214)",
+          "sC": "as"
+        },
+        {
+          "line": "EVENU SHALOM, SHALOM,, (La,7,105)",
+          "sC": "as"
+        },
+        {
+          "line": "SHALOM ALEJEM., (Re,m,144)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "E SIA LA PACE CON NOI,, (Re,m,21)",
+      "sC": "as"
+    },
+    {
+      "line": "E SIA LA PACE CON NOI,, (Sol,m,104)",
+      "sC": "as"
+    },
+    {
+      "line": "E SIA LA PACE CON NOI,, (La,,108)(Re,m,205)",
+      "sC": "as"
+    },
+    {
+      "line": "EVENU SHALOM, SHALOM,, (La,7,105)",
+      "sC": "as"
+    },
+    {
+      "line": "SHALOM ALEJEM., (Re,m,147)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "ET LA PAIX SOIT AVEC NOUS... ",
+      "sC": "as"
+    },
+    {
+      "line": "AND MAY PEACE BE WITH US... ",
+      "sC": "as"
+    },
+    {
+      "line": "UND SEi DER FRIEDE MIT UNS... ",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "EVENU SHALOM ALEJEM, (Re,m,21)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EVENU SHALOM ALEJEM,, (Sol,m,105)",
+          "sC": "as"
+        },
+        {
+          "line": "EVENU SHALOM ALEJEM,, (La,,102)(Re,m,214)",
+          "sC": "as"
+        },
+        {
+          "line": "EVENU SHALOM, SHALOM,, (La,7,105)",
+          "sC": "as"
+        },
+        {
+          "line": "SHALOM ALEJEM., (Re,m,144)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DIGAMOS LA PAZ AL MUNDO,, (Re,m,22)",
+      "sC": "as"
+    },
+    {
+      "line": "CANTEMOS LA PAZ AL MUNDO,, (Sol,m,129)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE NUESTRA VIDA SEA GLORIOSA,, (La,,156)(Re,m,302)",
+      "sC": "as"
+    },
+    {
+      "line": "YO TE SALUDO: LA PAZ,, (La,7,104)",
+      "sC": "as"
+    },
+    {
+      "line": "LA PAZ SEA CONTIGO., (Re,m,172)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "EVENU SHALOM ALEJEM, (Re,m,21)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EVENU SHALOM ALEJEM,, (Sol,m,105)",
+          "sC": "as"
+        },
+        {
+          "line": "EVENU SHALOM ALEJEM,, (La,,102)(Re,m,214)",
+          "sC": "as"
+        },
+        {
+          "line": "EVENU SHALOM, SHALOM,, (La,7,105)",
+          "sC": "as"
+        },
+        {
+          "line": "SHALOM ALEJEM., (Re,m,144)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "sourceBook": "resucito"
+}

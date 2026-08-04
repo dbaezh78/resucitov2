@@ -1,0 +1,229 @@
+{
+  "id": "benditoseadios",
+  "tt": "Bendito Sea Dios",
+  "title": "Bendito Sea Dios",
+  "subtitle": "Efesios 1,3-13",
+  "category": [
+    "PreCatecumenado",
+    "Adviento",
+    "Navidad",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "29",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/benditoseadios.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=benditoeressenor",
+  "sig": "/src/index.html?canto=benedictus",
+  "lizq": [
+    {
+      "line": "BENDITO SEA DIOS, (Re,,10)(Mi,m,75)(La,7,122)(Re,,163)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y PADRE DE JESUCRISTO., (Mi,m,69)(La,7,115)(Re,,199)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que nos ha bendecido, (Fa#,,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "con toda clase de amor;, (Si,m,214)",
+      "sC": ""
+    },
+    {
+      "line": "y nos ha elegido, (Fa#,,129)",
+      "sC": ""
+    },
+    {
+      "line": "antes de la creación,,(Si,m,174)",
+      "sC": ""
+    },
+    {
+      "line": "para ser santos e inmaculados, (La,,63)(Sol,,259)",
+      "sC": ""
+    },
+    {
+      "line": "en el amor., (Fa#,,90)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PARA SER ALABANZA DE SU GLORIA,,(Si,m,81)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DE LA GLORIA DE SU GRACIA,,(La,,243)",
+      "sC": "as"
+    },
+    {
+      "line": "DE LA GRACIA DE SU AMOR,,(Sol,,244)",
+      "sC": "as"
+    },
+    {
+      "line": "CON LA QUE NOS AMÓ EN JESUCRISTO., (Fa#,,331)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "BENDITO SEA DIOS, (Re,,10)(Mi,m,75)(La,7,122)(Re,,163)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "Y PADRE DE JESUCRISTO., (Mi,m,69)(La,7,115)(Re,,199)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "En Él tenemos la redención,,(Fa#,,15)(Si,m,248)",
+      "sC": "tc"
+    },
+    {
+      "line": "el perdón de los pecados,,(Fa#,,76)",
+      "sC": ""
+    },
+    {
+      "line": "según la riqueza de su amor,,(Si,m,259)",
+      "sC": ""
+    },
+    {
+      "line": "para que en la plenitud de los tiempos, (La,,79)(Sol,,310)",
+      "sC": ""
+    },
+    {
+      "line": "Cristo sea todo en todos., (Fa#,,191)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "PARA SER ALABANZA DE SU GLORIA,(Si,m,81)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DE LA GLORIA DE SU GRACIA,,(La,,243)",
+          "sC": "as"
+        },
+        {
+          "line": "DE LA GRACIA DE SU AMOR,,(Sol,,244)",
+          "sC": "as"
+        },
+        {
+          "line": "CON LA QUE NOS AMÓ EN JESUCRISTO., (Fa#,,331)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "BENDITO SEA DIOS, (Re,,10)(Mi,m,75)(La,7,122)(Re,,163)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "Y PADRE DE JESUCRISTO., (Mi,m,69)(La,7,115)(Re,,199)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En Él también nosotros,,(Fa#,,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "tras haber escuchado la Palabra de la verdad,,(Si,m,415)",
+      "sC": ""
+    },
+    {
+      "line": "la Buena Nueva, (Fa#,,115)",
+      "sC": ""
+    },
+    {
+      "line": "de nuestra salvación,,(Si,m,179)",
+      "sC": ""
+    },
+    {
+      "line": "fuimos sellados con el Espíritu Santo,,(La,,109)(Sol,,311)",
+      "sC": ""
+    },
+    {
+      "line": "garantía de nuestra resurrección., (Fa#,,296)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "PARA SER ALABANZA DE SU GLORIA,(Si,m,81)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DE LA GLORIA DE SU GRACIA,,(La,,243)",
+          "sC": "as"
+        },
+        {
+          "line": "DE LA GRACIA DE SU AMOR,,(Sol,,244)",
+          "sC": "as"
+        },
+        {
+          "line": "CON LA QUE NOS AMÓ EN JESUCRISTO., (Fa#,,331)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

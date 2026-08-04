@@ -1,0 +1,248 @@
+{
+  "id": "lavozdemiamado",
+  "tt": "La Voz De Mi Amado",
+  "title": "La Voz De Mi Amado",
+  "subtitle": "Cantar de los Cantares 2,8-17",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Comunión",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "101",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/lavozdemiamado.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=lasiegadelasnaciones",
+  "sig": "/src/index.html?canto=lasarmasdelaluz",
+  "lizq": [
+    {
+      "line": "¡La voz de mi amado!, (Do,,10)(La,m,225)",
+      "sC": "tc"
+    },
+    {
+      "line": "Helo aquí que viene,, (Fa,,158)",
+      "sC": ""
+    },
+    {
+      "line": "saltando por los montes,, (Mi,,188)",
+      "sC": ""
+    },
+    {
+      "line": "brincando por los collados., (Fa,,53)(Mi,,214)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Semejante es mi amado a una gacela,, (Do,,10)(La,m,386)",
+      "sC": ""
+    },
+    {
+      "line": "o a un joven cervatillo,, (Fa,,182)",
+      "sC": ""
+    },
+    {
+      "line": "semejante es mi amado a una gacela., (Mi,,335)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Vedle que ya se para, (Do,,10)(La,m,217)",
+      "sC": ""
+    },
+    {
+      "line": "detrás de nuestra cerca,, (Fa,,190)",
+      "sC": ""
+    },
+    {
+      "line": "mira por la ventana, atisba por la reja., (Mi,,335)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Empieza a hablar mi amado y me dice:, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡LEVÁNTATE, AMADA MÍA,, (Do,,10)(Mi,,222)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LEVÁNTATE,, (Fa,,41)",
+      "sC": "as r1"
+    },
+    {
+      "line": "HERMOSA MÍA, Y VENTE!, (Mi,,189)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque, mira, ha pasado ya el invierno,, (Re,m,22)(Mi,,332)",
+      "sC": "tc"
+    },
+    {
+      "line": "han cesado las lluvias y se han ido,, (Re,m,22)(Mi,,306)",
+      "sC": ""
+    },
+    {
+      "line": "aparecen las flores en la tierra,, (Fa,,12)",
+      "sC": ""
+    },
+    {
+      "line": "el tiempo de las canciones ha llegado., (Mi,,331)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Se oye el arrullo de la tórtola,, (Re,m,20)(Mi,,222)",
+      "sC": ""
+    },
+    {
+      "line": "echa la higuera sus yemas, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "y la viña exhala su fragancia., (Mi,,225)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡LEVÁNTATE, AMADA MÍA, (Do,,10)(Mi,,222)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LEVÁNTATE,, (Fa,,41)",
+          "sC": "as r1"
+        },
+        {
+          "line": "HERMOSA MÍA, Y VENTE!, (Mi,,187)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Paloma mía que vives en las grietas de la roca, (Re,m,22)(Mi,,417)",
+      "sC": "tc"
+    },
+    {
+      "line": "en escarpados escondrijos,, (Re,m,22)(Mi,,223)",
+      "sC": ""
+    },
+    {
+      "line": "déjame oír tu voz, déjame oír tu voz., (Fa,,20)(Mi,,329)",
+      "sC": ""
+    },
+    {
+      "line": "Cazadnos las raposas,, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "las pequeñas raposas, (Mi,,10)",
+      "sC": ""
+    },
+    {
+      "line": "que devastan nuestra viña,, (Fa,,79)(Mi,,221)",
+      "sC": ""
+    },
+    {
+      "line": "porque nuestra viña está ya en flor,, (Sol,,11)(Fa,,163)(Mi,,315)",
+      "sC": ""
+    },
+    {
+      "line": "PORQUE NUESTRA VIÑA ESTÁ YA EN FLOR., (Sol,,11)(Fa,,200)(Mi,,386)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mi amado es para mí,, (Re,m,20)(Mi,,199)",
+      "sC": "tc"
+    },
+    {
+      "line": "y yo soy para mi amado., (Re,m,20)(Mi,,200)",
+      "sC": ""
+    },
+    {
+      "line": "Antes que sople la brisa, (Re,m,20)(Mi,,204)",
+      "sC": ""
+    },
+    {
+      "line": "y se alarguen las sombras con la muerte,, (Re,m,20)(Mi,,352)",
+      "sC": ""
+    },
+    {
+      "line": "RETORNA, RETORNA, RETORNA., (La,m,20)(Sol,,145)(La,m,255)",
+      "sC": "la as r2"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "¡LEVÁNTATE, AMADA MÍA, (Do,,10)(Mi,,222)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LEVÁNTATE,, (Fa,,41)",
+          "sC": "as r1"
+        },
+        {
+          "line": "HERMOSA MÍA, Y VENTE!, (Mi,,187)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

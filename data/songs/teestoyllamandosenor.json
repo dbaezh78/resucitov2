@@ -1,0 +1,243 @@
+{
+  "id": "teestoyllamandosenor",
+  "tt": "Te Estoy Llamando, Señor",
+  "title": "Te Estoy Llamando, Señor",
+  "subtitle": "Salmo 141 (140)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "158",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/teestoyllamandosenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=subediosentreaclamaciones",
+  "sig": "/src/index.html?canto=tehemanifestadomipecado",
+  "lizq": [
+    {
+      "line": "A TE ESTOY LLAMANDO,, (Re,m,22)",
+      "sC": "ta as"
+    },
+    {
+      "line": "TE ESTOY LLAMANDO, SEÑOR,, (La,7,269)",
+      "sC": "as"
+    },
+    {
+      "line": "VEN CORRIENDO,, (Sol,m,22)(La,7,113)",
+      "sC": "as"
+    },
+    {
+      "line": "ESCUCHA MI VOZ QUE YO A TI GRITO., (Re,m,324)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "VALGA ANTE TI MI ORACIÓN, ",
+      "sC": "as"
+    },
+    {
+      "line": "COMO INCIENSO,, (La,7,114)",
+      "sC": "as"
+    },
+    {
+      "line": "EL ALZAR DE MIS MANOS, ",
+      "sC": "as"
+    },
+    {
+      "line": "COMO SACRIFICIO DE LA TARDE., (Re,m,263)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pon, Señor, a mi boca un centinela,, (Do,,10)(Fa,,123)(La,7,309)",
+      "sC": "tc"
+    },
+    {
+      "line": "una guardia a la puerta de mis labios., (Do,,68)(Si♭,,191)(La,7,318)",
+      "sC": ""
+    },
+    {
+      "line": "No sea que se incline mi corazón a la maldad,, (Sol,m,52)(La,7,417)",
+      "sC": ""
+    },
+    {
+      "line": "a cometer acciones criminales., (Si♭,,88)(La,7,258)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que el justo me golpee por amor, y me corrija,, (Fa,,11)(Re,m,137)(La,7,300)(Re,m,411)",
+      "sC": ""
+    },
+    {
+      "line": "para que el ungüento del malvado, (Si,♭,10)",
+      "sC": ""
+    },
+    {
+      "line": "no perfume mi cabeza,, (La,7,190)",
+      "sC": ""
+    },
+    {
+      "line": "porque yo me enviciaría en su maldad,, (Sol,m,93)(La,7,348)",
+      "sC": ""
+    },
+    {
+      "line": "porque yo me enviciaría en su maldad., (Si♭,,90)(La,7,348)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "TE ESTOY LLAMANDO, (Re,m,22)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "TE ESTOY LLAMANDO, SEÑOR,, (La,7,269)",
+          "sC": "as"
+        },
+        {
+          "line": "VEN CORRIENDO,, (Sol,m,22)(La,7,113)",
+          "sC": "as"
+        },
+        {
+          "line": "ESCUCHA MI VOZ QUE YO A TI GRITO., (Re,m,324)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "VALGA ANTE TI MI ORACIÓN, ",
+          "sC": "as"
+        },
+        {
+          "line": "COMO INCIENSO,, (La,7,114)",
+          "sC": "as"
+        },
+        {
+          "line": "EL ALZAR DE MIS MANOS, ",
+          "sC": "as"
+        },
+        {
+          "line": "COMO SACRIFICIO DE LA TARDE., (Re,m,263)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "A ti, Señor, miran mis ojos,, (Do,,10)(Fa,,80)(La,7,228)",
+      "sC": "tc"
+    },
+    {
+      "line": "en ti me refugio, ¡no desampares mi alma!, (Do,,35)(Si♭,,120)(La,7,367)",
+      "sC": ""
+    },
+    {
+      "line": "Guárdame tú del lazo que me tienden,, (Sol,m,22)(La,7,307)",
+      "sC": ""
+    },
+    {
+      "line": "de las trampas de tantos enemigos., (Sol,m,87)(La,7,298)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Caigan ellos, cada uno en su red,, (Fa,,10)(Re,m,135)(La,7,294)",
+      "sC": ""
+    },
+    {
+      "line": "que yo, unido a ti, paso indemne,, (Si♭,,12)(La,7,265)",
+      "sC": ""
+    },
+    {
+      "line": "que yo, unido a ti, paso indemne., (Sol,m,23)(Si♭,,161)(La,7,262)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "TE ESTOY LLAMANDO, (Re,m,22)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "TE ESTOY LLAMANDO, SEÑOR,, (La,7,269)",
+          "sC": "as"
+        },
+        {
+          "line": "VEN CORRIENDO,, (Sol,m,22)(La,7,113)",
+          "sC": "as"
+        },
+        {
+          "line": "ESCUCHA MI VOZ QUE YO A TI GRITO., (Re,m,324)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "VALGA ANTE TI MI ORACIÓN, ",
+          "sC": "as"
+        },
+        {
+          "line": "COMO INCIENSO,, (La,7,114)",
+          "sC": "as"
+        },
+        {
+          "line": "EL ALZAR DE MIS MANOS, ",
+          "sC": "as"
+        },
+        {
+          "line": "COMO SACRIFICIO DE LA TARDE., (Re,m,263)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

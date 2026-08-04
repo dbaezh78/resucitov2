@@ -1,0 +1,215 @@
+{
+  "id": "plegariaeucaristicaivp4",
+  "tt": "Plegaria Eucarística IV ",
+  "title": "Plegaria Eucarística IV ",
+  "subtitle": "(1988) ─ Página 4",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "200",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=plegariaeucaristicaivp3",
+  "sig": "/src/index.html?canto=prefacioparaadvientoynavidad",
+  "lizq": [
+    {
+      "line": "Dirige tu mirada sobre esta Víctima, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "que tú mismo has preparado a tu Iglesia,, (La,m,360)",
+      "sC": ""
+    },
+    {
+      "line": "y concede a cuantos compartimos este pan, (Fa,,64)",
+      "sC": ""
+    },
+    {
+      "line": "y este cáliz,, (La,m,84)",
+      "sC": ""
+    },
+    {
+      "line": "que, congregados en un solo cuerpo, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "por el Espíritu Santo,, ",
+      "sC": ""
+    },
+    {
+      "line": "seamos en Cristo, víctima para tu alabanza., (Mi,,25)",
+      "sC": ""
+    },
+    {
+      "line": "ALABANZA DE TU GLORIA,, (Mi7,,13)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ALABANZA DE TU GLORIA. ",
+      "sC": "as"
+    },
+    {
+      "line": "Intercesiones",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Acuérdate, Señor, de todos aquellos, (La,m,20)(Do,,218)",
+      "sC": ""
+    },
+    {
+      "line": "por quienes te ofrecemos este sacrificio; ",
+      "sC": ""
+    },
+    {
+      "line": "de tu servidor el Papa...,(Re,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "N/.",
+      "sC": "sub adl1",
+      "color": "red"
+    },
+    {
+      "line": "de nuestro obispo...",
+      "sC": "sub adl2"
+    },
+    {
+      "line": "N/.,",
+      "sC": "sub adl3",
+      "color": "red"
+    },
+    {
+      "line": "del orden episcopal, de todo el clero, ",
+      "sC": ""
+    },
+    {
+      "line": "de cuantos aquí reunidos hacemos esta oblación, ",
+      "sC": "width"
+    },
+    {
+      "line": "de todo tu pueblo santo, ",
+      "sC": ""
+    },
+    {
+      "line": "y de aquellos que te buscan con sincero corazón., (Mi,,442)",
+      "sC": ""
+    },
+    {
+      "line": "Acuérdate también de los que murieron, (La,m,20)(Do,,168)",
+      "sC": ""
+    },
+    {
+      "line": "en la paz de Cristo, ",
+      "sC": ""
+    },
+    {
+      "line": "y de todos los difuntos cuya fe solo tú conociste., (Re,m,22)(Mi,,423)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Conmemoración de los Santos",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Padre misericordioso,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "que todos tus hijos nos reunamos, (Re,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "en la heredad de tu reino, ",
+      "sC": ""
+    },
+    {
+      "line": "con María, la Virgen Madre de Dios,, (Mi,,145)",
+      "sC": ""
+    },
+    {
+      "line": "su esposo san José,, ",
+      "sC": ""
+    },
+    {
+      "line": "y con los apóstoles y los santos;, (Re,m,22)(Mi,,250)",
+      "sC": ""
+    },
+    {
+      "line": "y allí, junto con toda la creación,, ",
+      "sC": ""
+    },
+    {
+      "line": "libre ya del pecado y de la muerte,, (Re,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "te glorifiquemos por Cristo, Señor nuestro,, (Mi,,353)",
+      "sC": ""
+    },
+    {
+      "line": "por quien concedes al mundo, ",
+      "sC": ""
+    },
+    {
+      "line": "todos los bienes., (La,m,114)",
+      "sC": ""
+    },
+    {
+      "line": "Doxología y Conclusión de la Plegaria Eucarística,",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Por Cristo, con Cristo y en Cristo,, (Mi7,,16)",
+      "sC": ""
+    },
+    {
+      "line": "a ti Dios Padre omnipotente,, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "en la unidad del Espíritu Santo,, (Mi7,,253)",
+      "sC": ""
+    },
+    {
+      "line": "todo honor y gloria, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "por los siglos de los siglos., (Mi,,234)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AMÉN, AMÉN, AMÉN, AMÉN, (Fa,,176)(Mi,,243)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

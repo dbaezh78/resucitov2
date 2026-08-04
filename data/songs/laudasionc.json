@@ -1,0 +1,277 @@
+{
+  "id": "laudasionc",
+  "tt": "Lauda Sión",
+  "title": "Lauda Sión",
+  "subtitle": "Secuencia del Corpus Christi (Santo Tomas de Aquino) ",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "103",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/laudasion2.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=laudasion",
+  "sig": "/src/index.html?canto=levantomisojosalosmontes",
+  "lizq": [
+    {
+      "line": "Tú no ves, tú no comprendes;, (La,m,20)(Re,m,220)",
+      "sC": "tc"
+    },
+    {
+      "line": "mas la fe te lo confirma, (La,m,186)",
+      "sC": ""
+    },
+    {
+      "line": "más allá de la razón., (Mi,,76)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Es signo lo que aparece,, (La,m,20)(Re,m,199)",
+      "sC": ""
+    },
+    {
+      "line": "y esconde un gran misterio,, (La,m,231)",
+      "sC": ""
+    },
+    {
+      "line": "una realidad sublime., (Mi,,104)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Comes carne, bebes sangre,, (La,m,20)(Re,m,217)",
+      "sC": ""
+    },
+    {
+      "line": "en las dos especies;, (La,m,141)",
+      "sC": ""
+    },
+    {
+      "line": "pero queda Cristo entero., (Mi,,75)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El que come solo parte,, (La,m,20)(Re,m,187)",
+      "sC": "tc"
+    },
+    {
+      "line": "ni separa ni divide,, (La,m,149)",
+      "sC": ""
+    },
+    {
+      "line": "en tanto que lo recibe., (Mi,,175)",
+      "sC": ""
+    },
+    {
+      "line": "Que sean uno, que sean mil,, (La,m,20)(Re,m,253)",
+      "sC": ""
+    },
+    {
+      "line": "igualmente lo reciben, (La,m,176)",
+      "sC": ""
+    },
+    {
+      "line": "y nunca se consume., (Mi,,33)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Buen pastor, pan verdadero,, (La,m,20)(Re,m,239)",
+      "sC": "tc"
+    },
+    {
+      "line": "de nosotros ten piedad., (La,m,203)",
+      "sC": ""
+    },
+    {
+      "line": "Danos los bienes eternos, (Mi,,194)",
+      "sC": ""
+    },
+    {
+      "line": "en la tierra de los vivos., ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Oh, Señor, que todo sabes!, (La,m,20)(Re,m,217)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡Oh, Señor, que todo puedes!, (La,m,230)",
+      "sC": ""
+    },
+    {
+      "line": "¡Que nos sacias en la tierra!, (Mi,,108)",
+      "sC": ""
+    },
+    {
+      "line": "Conduce a tus hermanos, (La,m,20)(Re,m,198)",
+      "sC": ""
+    },
+    {
+      "line": "a la cena del cielo;, (La,m,150)",
+      "sC": ""
+    },
+    {
+      "line": "en el gozo de los santos., (Mi,,71)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "",
+      "sC": "sp1 nota"
+    },
+    {
+      "line": "En la convivencia de itinerantes de España del año, 2003, Kiko cantó este himno en la Eucaristía como, canto de entrada. En aquella ocasión, utilizó como, estribillo el texto en latín que reproducimos a, continuación, con el fin de que pueda ser utilizado, por los salmistas si así lo consideráis apropiado para, la celebración.",
+      "sC": "small"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_5",
+      "initialState": "collapsed",
+      "triggerLine": "LAUDA, SION, SALVATOREM, (La,m,20)(Re,m,230)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LAUDA DUCEM ET PASTOREM (La,m,248)",
+          "sC": "as"
+        },
+        {
+          "line": "IN HYMNIS ET CANTICIS. (Mi,,10)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "sourceBook": "resucito"
+}

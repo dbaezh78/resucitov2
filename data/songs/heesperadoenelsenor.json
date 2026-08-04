@@ -1,0 +1,329 @@
+{
+  "id": "heesperadoenelsenor",
+  "tt": "He Esperado En El Señor",
+  "title": "He Esperado En El Señor",
+  "subtitle": "Salmo 40 (39)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "83",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/heesperadoenelsenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=heaquiquevengopresto",
+  "sig": "/src/index.html?canto=hijasdejerusalen",
+  "lizq": [
+    {
+      "line": "HE ESPERADO,, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HE ESPERADO EN EL SEÑOR,, (Mi,m,251)",
+      "sC": "as r1"
+    },
+    {
+      "line": "Y ÉL HACIA MÍ SE HA INCLINADO,, (La,m,33)(Mi,m,277)",
+      "sC": "as"
+    },
+    {
+      "line": "HA ESCUCHADO MI GRITO,, (Fa,,116)(Mi,7,222)",
+      "sC": "as"
+    },
+    {
+      "line": "ME HA SACADO, (Fa,,118)",
+      "sC": "as"
+    },
+    {
+      "line": "DE LA FOSA DE LA MUERTE., (Mi,,222)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Me ha sacado del fango de la ciénaga,, (La,m,20)(Mi,m,310)",
+      "sC": "tc"
+    },
+    {
+      "line": "ha puesto mis pies sobre la roca,, (La,m,66)(Mi,m,283)",
+      "sC": ""
+    },
+    {
+      "line": "ha establecido mis pasos, (Fa,,113)(Mi,7,201)",
+      "sC": ""
+    },
+    {
+      "line": "en un camino, en un camino de salvación., (Fa,,99)(Mi,,380)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HE ESPERADO, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HE ESPERADO EN EL SEÑOR,, (Mi,m,251)",
+          "sC": "as r1"
+        },
+        {
+          "line": "Y ÉL HACIA MÍ SE HA INCLINADO,, (La,m,33)(Mi,m,277)",
+          "sC": "as"
+        },
+        {
+          "line": "HA ESCUCHADO MI GRITO,, (Fa,,116)(Mi,7,222)",
+          "sC": "as"
+        },
+        {
+          "line": "ME HA SACADO, (Fa,,118)",
+          "sC": "as"
+        },
+        {
+          "line": "DE LA FOSA DE LA MUERTE., (Mi,,222)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ha puesto en mi boca un cantar nuevo,, (La,m,20)(Mi,m,336)",
+      "sC": "tc"
+    },
+    {
+      "line": "una alabanza, una alabanza a nuestro Dios., (La,m,90)(Mi,m,393)",
+      "sC": ""
+    },
+    {
+      "line": "Muchos vendrán y lo verán,, (Fa,,22)(Mi,7,237)",
+      "sC": ""
+    },
+    {
+      "line": "y tantos en Él confiarán., (Fa,,26)(Mi,,203)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "HE ESPERADO, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HE ESPERADO EN EL SEÑOR,, (Mi,m,251)",
+          "sC": "as r1"
+        },
+        {
+          "line": "Y ÉL HACIA MÍ SE HA INCLINADO,, (La,m,33)(Mi,m,277)",
+          "sC": "as"
+        },
+        {
+          "line": "HA ESCUCHADO MI GRITO,, (Fa,,116)(Mi,7,222)",
+          "sC": "as"
+        },
+        {
+          "line": "ME HA SACADO, (Fa,,118)",
+          "sC": "as"
+        },
+        {
+          "line": "DE LA FOSA DE LA MUERTE., (Mi,,222)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Dios mío, ¡cuántas maravillas,, (La,m,20)(Mi,m,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "cuántos prodigios en nuestro favor!, (La,m,35)(Mi,m,320)",
+      "sC": ""
+    },
+    {
+      "line": "Si los quiero anunciar y proclamar,, (Fa,,97)(Mi,7,314)",
+      "sC": ""
+    },
+    {
+      "line": "son tantos que me superan en número., (Fa,,53)(Mi,,316)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "HE ESPERADO, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HE ESPERADO EN EL SEÑOR,, (Mi,m,251)",
+          "sC": "as r1"
+        },
+        {
+          "line": "Y ÉL HACIA MÍ SE HA INCLINADO,, (La,m,33)(Mi,m,277)",
+          "sC": "as"
+        },
+        {
+          "line": "HA ESCUCHADO MI GRITO,, (Fa,,116)(Mi,7,222)",
+          "sC": "as"
+        },
+        {
+          "line": "ME HA SACADO, (Fa,,118)",
+          "sC": "as"
+        },
+        {
+          "line": "DE LA FOSA DE LA MUERTE., (Mi,,222)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No quisiste sacrificios ni oblación,, (La,m,20)(Mi,m,301)",
+      "sC": "tc r2"
+    },
+    {
+      "line": "por eso me has abierto el oído., (La,m,51)(Mi,m,262)",
+      "sC": ""
+    },
+    {
+      "line": "No has querido víctima por la culpa,, (Fa,,117)(Mi,7,304)",
+      "sC": ""
+    },
+    {
+      "line": "por eso he dicho: he aquí que vengo, (Fa,,119)",
+      "sC": ""
+    },
+    {
+      "line": "para hacer tu voluntad., (Mi,7,201)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HE ESPERADO, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HE ESPERADO EN EL SEÑOR,, (Mi,m,251)",
+          "sC": "as r1"
+        },
+        {
+          "line": "Y ÉL HACIA MÍ SE HA INCLINADO,, (La,m,33)(Mi,m,277)",
+          "sC": "as"
+        },
+        {
+          "line": "HA ESCUCHADO MI GRITO,, (Fa,,116)(Mi,7,222)",
+          "sC": "as"
+        },
+        {
+          "line": "ME HA SACADO, (Fa,,118)",
+          "sC": "as"
+        },
+        {
+          "line": "DE LA FOSA DE LA MUERTE., (Mi,,222)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "De mí está escrito en tu libro, (La,m,20)(Mi,m,247)",
+      "sC": "tc"
+    },
+    {
+      "line": "que yo haga, Señor, tu voluntad., (La,m,86)(Mi,m,280)",
+      "sC": ""
+    },
+    {
+      "line": "Dios mío, eso sólo quiero:, (Fa,,68)(Mi,7,214)",
+      "sC": ""
+    },
+    {
+      "line": "tu palabra, tu palabra en mis entrañas., (Fa,,60)(Mi,,325)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HE ESPERADO, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HE ESPERADO EN EL SEÑOR,, (Mi,m,251)",
+          "sC": "as r1"
+        },
+        {
+          "line": "Y ÉL HACIA MÍ SE HA INCLINADO,, (La,m,33)(Mi,m,277)",
+          "sC": "as"
+        },
+        {
+          "line": "HA ESCUCHADO MI GRITO,, (Fa,,116)(Mi,7,222)",
+          "sC": "as"
+        },
+        {
+          "line": "ME HA SACADO, (Fa,,118)",
+          "sC": "as"
+        },
+        {
+          "line": "DE LA FOSA DE LA MUERTE., (Mi,,222)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

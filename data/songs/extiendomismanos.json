@@ -1,0 +1,152 @@
+{
+  "id": "extiendomismanos",
+  "tt": "Extiendo Mis Manos",
+  "title": "Extiendo Mis Manos",
+  "subtitle": "Oda XXVII de Salomón",
+  "category": [
+    "Precatecumenado",
+    "Adviento",
+    "Navidad",
+    "Cuaresma",
+    "Penitencial",
+    "Fracción Del Pan"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "74",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/extiendomismanos.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=evenushalomalejem",
+  "sig": "/src/index.html?canto=exultadjustosenelsenor",
+  "lizq": [
+    {
+      "line": "EXTIENDO MIS MANOS,, (Re,,10)(Si,m,86)(Sol,,171)",
+      "sC": "at as "
+    },
+    {
+      "line": "EXTIENDO MIS MANOS,, (Mi,,50)(La,,170)",
+      "sC": "as r1"
+    },
+    {
+      "line": "Y GRITO AL SEÑOR,, (Sol,,50)(Re,,161)",
+      "sC": "as"
+    },
+    {
+      "line": "Y GRITO AL SEÑOR., (La,,50)(Re,,161)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Abbá, Padre mío,, (Fa#,,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "Abbá, Padre mío., (Sol,,12)(Fa#,,145)",
+      "sC": ""
+    },
+    {
+      "line": "En tus manos encomiendo mi espíritu,, (Mi,,11)(La,,326)",
+      "sC": ""
+    },
+    {
+      "line": "en tus manos encomiendo mi espíritu., (Sol,,15)(Re,,88)(La,,215)(Re,,328)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EXTIENDO MIS MANOS, (Re,,10)(Si,m,86)(Sol,,171)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EXTIENDO MIS MANOS,, (Mi,,50)(La,,170)",
+          "sC": "as r1"
+        },
+        {
+          "line": "Y GRITO AL SEÑOR,, (Sol,,50)(Re,,161)",
+          "sC": "as"
+        },
+        {
+          "line": "Y GRITO AL SEÑOR., (La,,50)(Re,,161)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque el extender las manos, (Fa#,,15)(Mi,,70)",
+      "sC": "tc"
+    },
+    {
+      "line": "es el signo de su Cruz,, (La,,186)",
+      "sC": ""
+    },
+    {
+      "line": "y el estar derecho, (Sol,,12)(Re,,127)",
+      "sC": ""
+    },
+    {
+      "line": "es el leño alzado,, (La,,125)",
+      "sC": ""
+    },
+    {
+      "line": "es el leño alzado., (Re,,125)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "EXTIENDO MIS MANOS, (Re,,10)(Si,m,86)(Sol,,171)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EXTIENDO MIS MANOS,, (Mi,,50)(La,,170)",
+          "sC": "as r1"
+        },
+        {
+          "line": "Y GRITO AL SEÑOR,, (Sol,,50)(Re,,161)",
+          "sC": "as"
+        },
+        {
+          "line": "Y GRITO AL SEÑOR., (La,,50)(Re,,161)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

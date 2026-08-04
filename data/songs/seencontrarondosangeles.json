@@ -1,0 +1,107 @@
+{
+  "id": "seencontrarondosangeles",
+  "tt": "Se Encontraron Dos Ángeles",
+  "title": "Se Encontraron Dos Ángeles",
+  "subtitle": "Melodía hebraica",
+  "category": [
+    "Precatecumenado",
+    "Niños",
+    "Paz"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "* Se repite todo el canto subiendo medio tono cada vez.",
+  "nCanURL": "",
+  "dbno": "145",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/seencontrarondosangeles.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=salvereinadeloscielos",
+  "sig": "/src/index.html?canto=senorayudameanodudardeti",
+  "lizq": [
+    {
+      "line": "Se encontraron dos ángeles,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "el uno preguntó al otro:, ",
+      "sC": ""
+    },
+    {
+      "line": "«¿dónde,dónde, (Re,m,67)(La,m,131)",
+      "sC": ""
+    },
+    {
+      "line": "está la gloria de Dios?», (Mi,,31)(La,m,182)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«¿DÓNDE, DÓNDE, (Re,m,85)(La,m,159)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ESTÁ LA GLORIA DE DIOS?», (Mi,,39)(La,m,221)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«En la bendición,, (La,m,20)(Re,m,133)",
+      "sC": "tc"
+    },
+    {
+      "line": "en la bendición,, (La,m,126)",
+      "sC": ""
+    },
+    {
+      "line": "en la bendición»,, (Mi,,131)",
+      "sC": ""
+    },
+    {
+      "line": "el otro le respondió., (La,m,167)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«EN LA BENDICIÓN,, (La,m,20)(Re,m,157)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EN LA BENDICIÓN,, (La,m,149)",
+      "sC": "as"
+    },
+    {
+      "line": "EN LA BENDICIÓN,, (Mi,,151)",
+      "sC": "as"
+    },
+    {
+      "line": "ESTÁ LA GLORIA DE DIOS»., (La,m,221)",
+      "sC": "as ast"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

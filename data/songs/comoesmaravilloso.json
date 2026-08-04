@@ -1,0 +1,180 @@
+{
+  "id": "comoesmaravilloso",
+  "tt": "Cómo Es Maravilloso",
+  "title": "Cómo Es Maravilloso",
+  "subtitle": "Salmo 133 (132)",
+  "category": [
+    "PreCatecumenado",
+    "Paz",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "* Puede intercalarse el estribillo en hebreo: HINNEH MAH TOV UMAH NA 'IYM, SHEVETH Af;IIYM GAM YAHADH",
+  "nCanURL": "",
+  "dbno": "38",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/comoesmaravilloso.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=comocondenadosamuerte",
+  "sig": "/src/index.html?canto=comolacierva",
+  "lizq": [
+    {
+      "line": "¡Cómo es maravilloso, (Mi,m,15)(La,m,171)(Mi,m,215)",
+      "sC": "tc"
+    },
+    {
+      "line": "estar con los hermanos!, (Si,7,15)(Mi,m,190)",
+      "sC": ""
+    },
+    {
+      "line": "¡CÓMO ES MARAVILLOSO, (La,m,197)(Mi,m,240)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ESTAR CON LOS HERMANOS!, (Si,7,15)(Mi,m,228)",
+      "sC": "as"
+    },
+    {
+      "line": "Maravilloso estar con los hermanos., (Do,,44)(Re,,83)(Mi,m,114)(Sol,,148)(Si,m,227)(Mi,m,302)",
+      "sC": "tc"
+    },
+    {
+      "line": "MARAVILLOSO ESTAR CON LOS HERMANOS., (Do,,55)(Re,,100)(Mi,m,131)(Sol,,165)(Si,m,281)(Mi,m,367)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Es como aceite que baja, (La,m,197)(Mi,m,242)",
+      "sC": "tc"
+    },
+    {
+      "line": "por la barba de Aarón., (Si,7,15)(Mi,m,198)",
+      "sC": ""
+    },
+    {
+      "line": "ES COMO ACEITE QUE BAJA, (La,m,223)(Mi,m,264)",
+      "sC": "ta as"
+    },
+    {
+      "line": "POR LA BARBA DE AARÓN., (Si,7,23)(Mi,m,237)",
+      "sC": "as"
+    },
+    {
+      "line": "Como aceite por la barba de Aarón., (Do,,50)(Re,,88)(Mi,m,124)(Sol,,160)(Si,m,233)(Mi,m,318)",
+      "sC": "tc"
+    },
+    {
+      "line": "COMO ACEITE POR LA BARBA DE AARÓN., (Do,,50)(Re,,88)(Mi,m,124)(Sol,,160)(Si,m,275)(Mi,m,370)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Como rocío del Hermón que baja sobre Sión., (La,m,171)(Mi,m,214)(Si,7,264)(Mi,m,394)",
+      "sC": "tc"
+    },
+    {
+      "line": "COMO ROCÍO DEL HERMÓN, (La,m,198)(Mi,m,247)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE BAJA SOBRE SIÓN., (Si,7,37)(Mi,m,189)",
+      "sC": "as"
+    },
+    {
+      "line": "Como rocío que baja sobre Sión., (Do,,46)(Re,,85)(Mi,m,124)(Sol,,158)(Si,m,218)(Mi,m,278)",
+      "sC": "tc"
+    },
+    {
+      "line": "COMO ROCÍO QUE BAJA SOBRE SIÓN., (Do,,52)(Re,,100)(Mi,m,134)(Sol,,169)(Si,m,251)(Mi,m,320)",
+      "sC": "ta as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Allí Yahveh nos ha dado, (Mi,m,15)(La,m,188)(Mi,m,230)",
+      "sC": "tc"
+    },
+    {
+      "line": "toda su bendición., (Si,7,15)(Mi,m,151)",
+      "sC": ""
+    },
+    {
+      "line": "ALLÍYAHVEH NOS HA DADO, (La,m,217)(Mi,m,258)",
+      "sC": "ta as"
+    },
+    {
+      "line": "TODA SU BENDICIÓN., (Si,7,27)(Mi,m,176)",
+      "sC": "as"
+    },
+    {
+      "line": "Nos ha dado toda su bendición., (Do,,46)(Re,,85)(Mi,m,124)(Sol,,158)(Si,m,218)(Mi,m,278)",
+      "sC": "tc"
+    },
+    {
+      "line": "NOS HA DADO TODA SU BENDICIÓN., (Do,,52)(Re,,100)(Mi,m,134)(Sol,,169)(Si,m,251)(Mi,m,320)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Allí Yahveh nos ha dado, (La,m,183)(Mi,m,224)",
+      "sC": "tc"
+    },
+    {
+      "line": "la Vida para siempre., (Si,7,15)(Mi,m,140)",
+      "sC": ""
+    },
+    {
+      "line": "ALLÍ YAHVEH NOS HA DADO, (La,m,217)(Mi,m,259)",
+      "sC": ""
+    },
+    {
+      "line": "LA VIDA PARA SIEMPRE., (Si,7,15)(Mi,m,166)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Nos ha dado la Vida para siempre., (Do,,46)(Re,,85)(Mi,m,124)(Sol,,158)(Si,m,218)(Mi,m,278)",
+      "sC": "tc"
+    },
+    {
+      "line": "NOS HA DADO LA VIDA PARA SIEMPRE., (Do,,52)(Re,,100)(Mi,m,134)(Sol,,169)(Si,m,251)(Mi,m,320)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡CÓMO ES MARAVILLOSO, (Mi,m,15)(La,m,192)(Mi,m,234)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ESTAR CON LOS HERMANOS!, (Si,7,15)(Mi,m,226)",
+      "sC": "as a321"
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,152 @@
+{
+  "id": "yahvehtueresmidios",
+  "tt": "Yahveh, Tú Eres Mi Dios",
+  "title": "Yahveh, Tú Eres Mi Dios",
+  "subtitle": "Isaías 25,1-8",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "175",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/yahvehtueresmidios.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=yavienemidios",
+  "sig": "/src/index.html?canto=yoteamosenor",
+  "lizq": [
+    {
+      "line": "YAHVEH, TÚ ERES MI DIOS,, (La,m,20)(Mi,,231)",
+      "sC": "tc as"
+    },
+    {
+      "line": "YO TE ENSALZARÉ., (La,m,169)",
+      "sC": "as r1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y alabaré tu nombre,, (Fa,,140)",
+      "sC": "tc"
+    },
+    {
+      "line": "alabaré tu nombre,, ",
+      "sC": ""
+    },
+    {
+      "line": "alabaré tu nombre., (Mi,,119)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "YAHVEH, TÚ ERES MI DIOS, (La,m,20)(Mi,,231)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "YO TE ENSALZARÉ., (La,m,169)",
+          "sC": "as r1"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Destruirás la muerte para siempre., (Fa,,163)",
+      "sC": ""
+    },
+    {
+      "line": "Y enjugarás las lágrimas, (Sol,,161)",
+      "sC": ""
+    },
+    {
+      "line": "de todos los rostros,, (Fa,,133)",
+      "sC": ""
+    },
+    {
+      "line": "de todos los rostros., (Mi,,135)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "YAHVEH, TÚ ERES MI DIOS, (La,m,20)(Mi,,231)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "YO TE ENSALZARÉ., (La,m,169)",
+          "sC": "as r1"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Ya se acercan los pasos de los pobres,, (Fa,,82)",
+      "sC": "tc"
+    },
+    {
+      "line": "los pies de los humildes,, (Sol,,186)",
+      "sC": ""
+    },
+    {
+      "line": "los pies de los humildes,, (Fa,,183)",
+      "sC": ""
+    },
+    {
+      "line": "el resto de Jacob., (Mi,,143)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "YAHVEH, TÚ ERES MI DIOS, (La,m,20)(Mi,,231)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "YO TE ENSALZARÉ., (La,m,169)",
+          "sC": "as r1"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

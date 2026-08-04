@@ -1,0 +1,209 @@
+{
+  "id": "aetcs3c",
+  "tt": "Domingo III, Tiempo Cuaresma",
+  "title": "Domingo III, Tiempo Cuaresma",
+  "subtitle": "Aleluya InterLeccional, Modelo I, II, III - Año C, Juan 4, 42. 15",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "180",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/aleluyainterleccional.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=aetcs2c",
+  "sig": "/src/index.html?canto=aetcs4c",
+  "lizq": [
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_cuaresma_1",
+      "initialState": "expanded",
+      "triggerLine": "Modelo I",
+      "sC": "as mod1",
+      "color": "red",
+      "lines": [
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "La estrofa que hace el cantor se canta con la \n melodía del «Aleluya interleccional - Modelo I». ",
+          "sC": "cnota"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Gloria a ti, oh Cristo,, (Sol,,11)(Do,,155)",
+          "sC": "tc bg"
+        },
+        {
+          "line": "Rey de eterna gloria,, (Re,,162)",
+          "sC": "bg"
+        },
+        {
+          "line": "Rey de eterna gloria,, (Sol,,162)",
+          "sC": "bg"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "GLORIA A TI, OH CRISTO,, (Sol,,15)(Do,,190)",
+          "sC": "ta as bg"
+        },
+        {
+          "line": "REY DE ETERNA GLORIA,, (Re,,190)",
+          "sC": "as bg"
+        },
+        {
+          "line": "REY DE ETERNA GLORIA,, (Sol,,190)",
+          "sC": "as bg"
+        },
+        {
+          "line": "Acordes:",
+          "sC": "anotc",
+          "color": "gray"
+        },
+        {
+          "line": "(Mi,m,20)(Re,,70)",
+          "sC": "bnota"
+        },
+        {
+          "line": "Señor, tú eres de verdad el Salvador del mundo;",
+          "sC": "tc"
+        },
+        {
+          "line": "dame agua viva; así no tendré más sed.",
+          "sC": "bg"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_cuaresma_2",
+      "initialState": "collapsed",
+      "triggerLine": "GLORIA A TI, OH CRISTO, (Sol,,15)(Do,,190)",
+      "sC": "ta as bg",
+      "lines": [
+        {
+          "line": "REY DE ETERNA GLORIA,, (Re,,190)",
+          "sC": "as bg"
+        },
+        {
+          "line": "REY DE ETERNA GLORIA,, (Sol,,190)",
+          "sC": "as bg"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_cuaresma_1",
+      "initialState": "expanded",
+      "triggerLine": "Modelo II",
+      "sC": "as mod1",
+      "color": "red",
+      "lines": [
+        {
+          "line": "Toda la antífona se canta con la misma melodía \n del «Aleluya interleccional - Modelo I».». ",
+          "sC": "cnota"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Gloria al Señor, Gloria al Señor,, (Sol,,15)",
+          "sC": "tc bg"
+        },
+        {
+          "line": "Gloria al Señor, Gloria al Señor,, (Do,,123)(Re,,284)",
+          "sC": "bg"
+        },
+        {
+          "line": "Gloria al Señor., (Sol,,127)",
+          "sC": "bg"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Sol,,15)",
+          "sC": "ta as bg"
+        },
+        {
+          "line": "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Do,,147)(Re,,346)",
+          "sC": "as bg"
+        },
+        {
+          "line": "GLORIA AL SEÑOR., (Sol,,147)",
+          "sC": "as bg"
+        },
+        {
+          "line": "Acordes:",
+          "sC": "anota"
+        },
+        {
+          "line": "(Mi,m,20)(Re,,70)",
+          "sC": "bnota"
+        },
+        {
+          "line": "Señor, tú eres de verdad el Salvador del mundo;",
+          "sC": "tc"
+        },
+        {
+          "line": "dame agua viva; así no tendré más sed.",
+          "sC": "bg"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_cuaresma_2",
+      "initialState": "collapsed",
+      "triggerLine": "GLORIA AL SEÑOR, GLORIA AL SEÑOR, (Sol,,15)",
+      "sC": "ta as bg",
+      "lines": [
+        {
+          "line": "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Do,,147)(Re,,346)",
+          "sC": "as bg"
+        },
+        {
+          "line": "GLORIA AL SEÑOR., (Sol,,147)",
+          "sC": "as bg"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "aclamaciones"
+}

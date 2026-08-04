@@ -1,0 +1,253 @@
+{
+  "id": "alegriahanacidoelsalvador",
+  "tt": "Alegría, Ha Nacido El Salvador",
+  "title": "Alegría, Ha Nacido El Salvador",
+  "subtitle": "Villancico (Kiko Argüello)",
+  "category": [
+    "PreCatecumenado",
+    "Niños",
+    "Adviento",
+    "Adviento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "12",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/alegriahanacidoelsalvador.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=alabadalsenorenelcielo",
+  "sig": "/src/index.html?canto=aleluyaalabadalsenor",
+  "lizq": [
+    {
+      "line": "Un ángel vino del cielo, (Re,m,18)",
+      "sC": "b12-1"
+    },
+    {
+      "line": "trayendo una gran noticia: ",
+      "sC": "tc"
+    },
+    {
+      "line": "¡Hoy os ha nacido,(Sol,m,15)(Re,m,139)",
+      "sC": "b12-1"
+    },
+    {
+      "line": "ha nacido el Salvador!, (La,,64)(Re,m,194)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡ALEGRÍA, ALEGRÍA, ALEGRÍA,(Fa,,75)(La,,264)",
+      "sC": "as ta"
+    },
+    {
+      "line": "HA NACIDO EL SALVADOR, (Si♭,,78)",
+      "sC": "as b12-2"
+    },
+    {
+      "line": "ACOSTADO EN UN PESEBRE!, (Do,,68)",
+      "sC": "as"
+    },
+    {
+      "line": "¡ÉL ES EL CRISTO, EL SEÑOR!, (Do,7,252)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Fajado con lindos pañales, (Re,m,15)",
+      "sC": "b12-1"
+    },
+    {
+      "line": "y acostado en un pesebre!, ",
+      "sC": "sdb"
+    },
+    {
+      "line": "Esta será la señal, (Sol,m,20)(Re,m,151)",
+      "sC": "b12-1"
+    },
+    {
+      "line": "de que Él es el Señor. (La,,79)(Re,m,187)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡ALEGRÍA, ALEGRÍA, ALEGRÍA,(Fa,,75)(La,,264)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "HA NACIDO EL SALVADOR, (Si♭,,78)",
+          "sC": "as b12-2"
+        },
+        {
+          "line": "ACOSTADO EN UN PESEBRE!, (Do,,68)",
+          "sC": "as"
+        },
+        {
+          "line": "¡ÉL ES EL CRISTO, EL SEÑOR!, (Do,7,252)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Al establo de Belén, (Re,m,15)",
+      "sC": "b12-1"
+    },
+    {
+      "line": "han llegado los pastores., ",
+      "sC": "sdb"
+    },
+    {
+      "line": "Vienen trayendo regalos, (Sol,m,15)(Re,m,195)",
+      "sC": "b12-1"
+    },
+    {
+      "line": "a Jesús el Salvador., (La,,52)(Re,m,168)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "¡ALEGRÍA, ALEGRÍA, ALEGRÍA,(Fa,,75)(La,,264)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "HA NACIDO EL SALVADOR, (Si♭,,78)",
+          "sC": "as b12-2"
+        },
+        {
+          "line": "ACOSTADO EN UN PESEBRE!, (Do,,68)",
+          "sC": "as"
+        },
+        {
+          "line": "¡ÉL ES EL CRISTO, EL SEÑOR!, (Do,7,252)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Encontraron a María,(Re,m,15)",
+      "sC": "b12-1"
+    },
+    {
+      "line": "encontraron a José., ",
+      "sC": ""
+    },
+    {
+      "line": "El buey, el asno y el niño,(Sol,m,15)(Re,m,208)",
+      "sC": "b12-1"
+    },
+    {
+      "line": "que se llamará Emmanuel., (La,,85)(Re,m,234)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "¡ALEGRÍA, ALEGRÍA, ALEGRÍA,(Fa,,75)(La,,264)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "HA NACIDO EL SALVADOR, (Si♭,,78)",
+          "sC": "as b12-2"
+        },
+        {
+          "line": "ACOSTADO EN UN PESEBRE!, (Do,,68)",
+          "sC": "as"
+        },
+        {
+          "line": "¡ÉL ES EL CRISTO, EL SEÑOR!, (Do,7,252)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El buey reconoce a su dueño,(Re,m,15)",
+      "sC": "b12-1"
+    },
+    {
+      "line": "el borrico su pesebre., ",
+      "sC": ""
+    },
+    {
+      "line": "Pero Israel no conoce,(Sol,m,15)(Re,m,174)",
+      "sC": "b12-1"
+    },
+    {
+      "line": "no conoce a su Señor., (La,,71)(Re,m,189)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "¡ALEGRÍA, ALEGRÍA, ALEGRÍA,(Fa,,75)(La,,264)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "HA NACIDO EL SALVADOR, (Si♭,,78)",
+          "sC": "as b12-2"
+        },
+        {
+          "line": "ACOSTADO EN UN PESEBRE!, (Do,,68)",
+          "sC": "as"
+        },
+        {
+          "line": "¡ÉL ES EL CRISTO, EL SEÑOR!, (Do,7,252)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

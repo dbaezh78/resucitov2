@@ -1,0 +1,158 @@
+{
+  "id": "queestupendoquealegria",
+  "tt": "Qué Estupendo, Qué Alegría ",
+  "title": "Qué Estupendo, Qué Alegría ",
+  "subtitle": "Salmo 133 (132)",
+  "category": [
+    "Precatecumenado",
+    "Antiguo Testamento",
+    "Paz"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "137",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/queestupendoquealegria.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=queamablessontusmoradas",
+  "sig": "/src/index.html?canto=quienesestaquesubedeldesierto",
+  "lizq": [
+    {
+      "line": "¡QUÉ ESTUPENDO, QUÉ ALEGRÍA!, (La,m,20)(Re,m,123)(La,m,206)(Mi,,298)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¡LOS HERMANOS SIEMPRE UNIDOS!, (La,m,20)(Re,m,114)(Mi,,196)(La,m,295)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Es como ungüento que desciende por la barba,, (Sol,,137)",
+      "sC": "tc"
+    },
+    {
+      "line": "por la barba de Aarón., (Fa,,12)(Mi,,192)",
+      "sC": ""
+    },
+    {
+      "line": "ES COMO UNGÜENTO \n QUE DESCIENDE POR LA BARBA,, (Sol,,159)",
+      "sC": "ta as"
+    },
+    {
+      "line": "POR LA BARBA DE AARÓN., (Fa,,20)(Mi,,236)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡QUÉ ESTUPENDO, QUÉ ALEGRÍA!, (La,m,20)(Re,m,123)(La,m,206)(Mi,,298)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡LOS HERMANOS SIEMPRE UNIDOS!, (La,m,20)(Re,m,114)(Mi,,196)(La,m,295)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Como rocío que desciende del Hermón, (Sol,,95)",
+      "sC": "tc"
+    },
+    {
+      "line": "sobre el monte de Sión,, (Fa,,14)(Mi,,224)",
+      "sC": ""
+    },
+    {
+      "line": "COMO ROCÍO QUE DESCIENDE DEL HERMÓN, (Sol,,111)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SOBRE EL MONTE DE SIÓN., (Fa,,15)(Mi,,227)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "¡QUÉ ESTUPENDO, QUÉ ALEGRÍA!, (La,m,20)(Re,m,123)(La,m,206)(Mi,,298)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡LOS HERMANOS SIEMPRE UNIDOS!, (La,m,20)(Re,m,114)(Mi,,196)(La,m,295)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Nos bendice el Señor desde lo alto,, (Sol,,95)",
+      "sC": "tc"
+    },
+    {
+      "line": "la vida nos da eternamente,, (Fa,,35)(Mi,,222)",
+      "sC": ""
+    },
+    {
+      "line": "NOS BENDICE EL SEÑOR DESDE LO ALTO,, (Sol,,105)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LA VIDA NOS DA ETERNAMENTE., (Fa,,39)(Mi,,263)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "¡QUÉ ESTUPENDO, QUÉ ALEGRÍA!, (La,m,20)(Re,m,123)(La,m,206)(Mi,,298)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡LOS HERMANOS SIEMPRE UNIDOS!, (La,m,20)(Re,m,114)(Mi,,196)(La,m,295)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

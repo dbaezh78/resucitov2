@@ -1,0 +1,246 @@
+{
+  "id": "cuandodormia",
+  "tt": "Cuando Dormía",
+  "title": "Cuando Dormía",
+  "subtitle": "Cantar de los Cantares 5,2ss ",
+  "category": [
+    "Catecumenado",
+    "Comunión",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "222",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/cuandodormia.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=comoelimpulsoquesientelaira",
+  "sig": "/src/index.html?canto=debora",
+  "lizq": [
+    {
+      "line": "Cuando dormía, (Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "y mi corazón velaba,, (Mi,,160)",
+      "sC": ""
+    },
+    {
+      "line": "la voz de mi amado oí:, (La,m,205)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«Abre, hermana mía,, (Re,m,22)(Mi,,175)",
+      "sC": ""
+    },
+    {
+      "line": "ábreme, paloma,, (Re,m,22)(Mi,,124)",
+      "sC": ""
+    },
+    {
+      "line": "que mi cabeza está cubierta de rocío, ",
+      "sC": ""
+    },
+    {
+      "line": "y mis cabellos del relente de la noche»., (La,m,321)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Metió la mano, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "por el agujero de la cerradura, (Mi,,256)",
+      "sC": ""
+    },
+    {
+      "line": "y toda entera me estremecí., (La,m,257)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Me levanté corriendo, (Re,m,22)(Mi,,160)",
+      "sC": ""
+    },
+    {
+      "line": "y mis manos destilaron mirra,, ",
+      "sC": ""
+    },
+    {
+      "line": "mirra fluida mis dedos, ",
+      "sC": ""
+    },
+    {
+      "line": "por el pestillo de la puerta., (La,m,212)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "OS CONJURO,, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HIJAS DE JERUSALÉN,, (Sol,,182)",
+      "sC": "as r1"
+    },
+    {
+      "line": "SI ENCONTRÁIS A MI AMADO,, (Fa,,242)",
+      "sC": "as"
+    },
+    {
+      "line": "DECIDLE QUE MUERO DE AMOR., (Mi,,284)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Abrí, abrí a mi amado,, (Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "pero no estaba,, (Mi,,112)",
+      "sC": ""
+    },
+    {
+      "line": "ya había pasado., (La,m,128)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y el alma se me escapó en su huida., (Re,m,56)(Mi,,319)",
+      "sC": ""
+    },
+    {
+      "line": "Lo busqué, no lo hallé,, ",
+      "sC": ""
+    },
+    {
+      "line": "lo llamé, lo llamé,, ",
+      "sC": ""
+    },
+    {
+      "line": "y no me respondió., (La,m,172)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Me encontraron los guardias,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "que hacen la ronda,, (Sol,,139)",
+      "sC": ""
+    },
+    {
+      "line": "me golpearon, me desnudaron, (Fa,,96)",
+      "sC": ""
+    },
+    {
+      "line": "los guardias de las murallas., (Mi,,229)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "OS CONJURO (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HIJAS DE JERUSALÉN,, (Sol,,182)",
+          "sC": "as"
+        },
+        {
+          "line": "SI ENCONTRÁIS A MI AMADO,, (Fa,,242)",
+          "sC": "as"
+        },
+        {
+          "line": "DECIDLE QUE MUERO DE AMOR., (Mi,,284)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Ay, si tú fueras mi hermano,, (La,m,20)(Sol,,236)",
+      "sC": "tc"
+    },
+    {
+      "line": "te podría besar,, (Fa,,129)",
+      "sC": ""
+    },
+    {
+      "line": "al encontrarte en la puerta!, (Mi,,226)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "OS CONJURO (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HIJAS DE JERUSALÉN,, (Sol,,182)",
+          "sC": "as r1"
+        },
+        {
+          "line": "SI ENCONTRÁIS A MI AMADO,, (Fa,,242)",
+          "sC": "as"
+        },
+        {
+          "line": "DECIDLE QUE MUERO DE AMOR., (Mi,,284)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,135 @@
+{
+  "id": "cantadadios",
+  "tt": "Cantad A Dios",
+  "title": "Cantad A Dios",
+  "subtitle": "Salmo 67 (68) 2.4-7",
+  "category": [
+    "PreCatecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "31",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/cantadadios.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=benedictus",
+  "sig": "/src/index.html?canto=cantadalsenor",
+  "lizq": [
+    {
+      "line": "CANTAD A DIOS,,(Mi,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SALMODIAD PARA SU NOMBRE. ",
+      "sC": "as b31"
+    },
+    {
+      "line": "CANTAD A DIOS,",
+      "sC": "as"
+    },
+    {
+      "line": "ALLANAD EL CAMINO, (Re,m9,180)",
+      "sC": "as"
+    },
+    {
+      "line": "AL QUE CABALGA EN LAS NUBES., (Mi,,273)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor es su Nombre, alegraos ante Él., (Mi,,12)(Re,m9,262)",
+      "sC": "tc"
+    },
+    {
+      "line": "Padre de los huérfanos,",
+      "sC": ""
+    },
+    {
+      "line": "defensor de las viudas, es Dios., (Mi,,279)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A los más pobres hace habitar en su casa,,(Re,m9,128)(Mi,,372)",
+      "sC": ""
+    },
+    {
+      "line": "a los cautivos Él los libra con amor., (Re,m9,107)(Mi,,321)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SE LEVANTA DIOS,,(Mi,,11)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SUS ENEMIGOS SE DISPERSAN; ",
+      "sC": "as"
+    },
+    {
+      "line": "LOS JUSTOS SE ALEGRAN, ",
+      "sC": "as"
+    },
+    {
+      "line": "Y CANTAN DE ALEGRÍA., (Re,m9,45)(Mi,,200)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "CANTAD A DIOS,(Mi,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SALMODIAD PARA SU NOMBRE. ",
+          "sC": "as b31"
+        },
+        {
+          "line": "CANTAD A DIOS,",
+          "sC": "as"
+        },
+        {
+          "line": "ALLANAD EL CAMINO, (Re,m9,180)",
+          "sC": "as"
+        },
+        {
+          "line": "AL QUE CABALGA EN LAS NUBES., (Mi,,233)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

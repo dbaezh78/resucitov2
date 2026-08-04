@@ -1,0 +1,214 @@
+{
+  "id": "plegariaeucaristicaiimodeloip2",
+  "tt": "Plegaria Eucarística II",
+  "title": "Plegaria Eucarística II",
+  "subtitle": "Modelo I ─ Página 2",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "194",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/plegariaeucaristicaiimodeloip2.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=plegariaeucaristicaiimodeloip1",
+  "sig": "/src/index.html?canto=plegariaeucaristicaiimodeloip3",
+  "lizq": [
+    {
+      "line": "Relato de la Institución,",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "El cual, cuando iba a ser entregado a su Pasión,, (Re,m,21)",
+      "sC": "pa"
+    },
+    {
+      "line": "voluntariamente aceptada, tomó el pan,, ",
+      "sC": ""
+    },
+    {
+      "line": "y elevando los ojos a Ti, Padre, Padre,, ",
+      "sC": ""
+    },
+    {
+      "line": "pronunció la bendición,, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "lo partió y lo dio a sus discípulos, diciendo:, (Sol,m,72)(Re,m,360)",
+      "sC": ""
+    },
+    {
+      "line": "Tomad y comed todos de él,, (La,7,262)",
+      "sC": ""
+    },
+    {
+      "line": "porque esto es mi Cuerpo,, (Re,m,91)",
+      "sC": ""
+    },
+    {
+      "line": "que será entregado por vosotros., (La,7,157)(Re,m,270)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Del mismo modo, acabada la cena,, (Re,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "tomó el cáliz, lleno del fruto de la vid,, ",
+      "sC": ""
+    },
+    {
+      "line": "y elevando los ojos a Ti, Padre, Padre,, ",
+      "sC": ""
+    },
+    {
+      "line": "pronunció la bendición,, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "lo pasó a sus discípulos, diciendo:, (Sol,m,71)(Re,m,274)",
+      "sC": ""
+    },
+    {
+      "line": "Tomad y bebed todos de él,, (La,7,255)",
+      "sC": ""
+    },
+    {
+      "line": "porque este es el cáliz de mi Sangre,, (Re,m,91)",
+      "sC": ""
+    },
+    {
+      "line": "Sangre de la alianza nueva y eterna,, ",
+      "sC": ""
+    },
+    {
+      "line": "que será derramada por muchos, (La,7,269)",
+      "sC": ""
+    },
+    {
+      "line": "para el perdón de los pecados., (Re,m,255)",
+      "sC": ""
+    },
+    {
+      "line": "Haced esto como mi memorial., (La,7,83)(Re,m,280)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Aclamación,",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Este es el sacramento de nuestra fe., (Sol,m,23)(La,7,339)",
+      "sC": "pa"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ANUNCIAMOS TU MUERTE, SEÑOR,, (Re,m,19)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PROCLAMAMOS TU RESURRECCIÓN., (Sol,m,23)",
+      "sC": "as"
+    },
+    {
+      "line": "¡MARANA THÁ! ¡MARANA THÁ!, (La,7,126)(Sol,m,274)",
+      "sC": "as"
+    },
+    {
+      "line": "¡MARANA THÁ!, (La,7,126)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Ven, Señor Jesús!, (Re,m,19)",
+      "sC": "tc"
+    },
+    {
+      "line": "Memorial y Ofrenda",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Así, pues, Padre, al celebrar ahora, (Sol,,15)",
+      "sC": "pa"
+    },
+    {
+      "line": "el memorial de la muerte, ",
+      "sC": ""
+    },
+    {
+      "line": "y resurrección de tu Hijo,, (Mi,m,215)",
+      "sC": ""
+    },
+    {
+      "line": "te ofrecemos el pan de vida, (La,m,21)",
+      "sC": ""
+    },
+    {
+      "line": "y el cáliz de salvación,, (Mi,m,19)",
+      "sC": ""
+    },
+    {
+      "line": "y te damos gracias porque nos haces dignos, (La,m,19)(Mi,m,206)",
+      "sC": ""
+    },
+    {
+      "line": "de servirte en tu presencia., ",
+      "sC": ""
+    },
+    {
+      "line": "Epíclesis",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Te pedimos humildemente, (Sol,,13)",
+      "sC": ""
+    },
+    {
+      "line": "que el Espíritu Santo congregue en la unidad, (Si,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "a cuantos participamos, (La,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "del Cuerpo y Sangre de Cristo., (Mi,m,247)",
+      "sC": ""
+    }
+  ],
+  "sourceBook": "resucito"
+}

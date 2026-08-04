@@ -1,0 +1,148 @@
+{
+  "id": "felicidadparaelhombre",
+  "tt": "Felicidad Para El Hombre ",
+  "title": "Felicidad Para El Hombre ",
+  "subtitle": "Salmo 128 (127)",
+  "category": [
+    "Precatecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "76",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/felicidadparaelhombre.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=exultadjustosenelsenor",
+  "sig": "/src/index.html?canto=graciasayahveh",
+  "lizq": [
+    {
+      "line": "FELICIDAD PARA EL HOMBRE, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE TEME AL SEÑOR,, (Mi,m,20)(La,m,180)",
+      "sC": "as r1"
+    },
+    {
+      "line": "FELICIDAD PARA EL HOMBRE, (Re,m9,28)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE CAMINA POR SU SENDERO., (Fa,,91)(Mi,,273)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Vivirá del trabajo de sus manos,, (Re,m,20)(Mi,,257)",
+      "sC": "tc"
+    },
+    {
+      "line": "será feliz y gozará de todo bien;, (Re,m,75)(Mi,,277)",
+      "sC": ""
+    },
+    {
+      "line": "su esposa como vid fecunda en medio de su casa;, (Fa,,66)(Mi,,440)",
+      "sC": ""
+    },
+    {
+      "line": "sus hijos, como brotes de olivo en torno a su mesa., (Fa,,52)(Mi,,453)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "FELICIDAD PARA EL HOMBRE, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUE TEME AL SEÑOR,, (Mi,m,20)(La,m,180)",
+          "sC": "as r1"
+        },
+        {
+          "line": "FELICIDAD PARA EL HOMBRE, (Re,m9,28)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE CAMINA POR SU SENDERO., (Fa,,91)(Mi,,273)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Así será bendecido el hombre que teme al Señor., (Re,m,19)(Mi,,452)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡Que te bendiga Dios desde Sión,, (Re,m,124)(Mi,,292)",
+      "sC": ""
+    },
+    {
+      "line": "que puedas tú ver la prosperidad de Jerusalén,, (Fa,,68)(Mi,,421)",
+      "sC": ""
+    },
+    {
+      "line": "que puedas tú ver a los hijos de tus hijos!, (Fa,,68)",
+      "sC": ""
+    },
+    {
+      "line": "¡Paz a Israel!, (Mi,,104)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "FELICIDAD PARA EL HOMBRE, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUE TEME AL SEÑOR,, (Mi,m,20)(La,m,180)",
+          "sC": "as r1"
+        },
+        {
+          "line": "FELICIDAD PARA EL HOMBRE, (Re,m9,28)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE CAMINA POR SU SENDERO., (Fa,,91)(Mi,,273)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

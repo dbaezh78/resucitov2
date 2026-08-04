@@ -1,0 +1,240 @@
+{
+  "id": "queamablessontusmoradas",
+  "tt": "Qué Amables Son Tus Moradas",
+  "title": "Qué Amables Son Tus Moradas",
+  "subtitle": "Salmo 84 (83)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "136",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/queamablessontusmoradas.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=porquemiyugoessuave",
+  "sig": "/src/index.html?canto=queestupendoquealegria",
+  "lizq": [
+    {
+      "line": "¡Qué amables son tus moradas, Señor,, (Do,,10)(Mi,m,260)(La,m,352)",
+      "sC": "tc"
+    },
+    {
+      "line": "Señor de los ejércitos!, (Do,,37)(Mi,m,148)",
+      "sC": ""
+    },
+    {
+      "line": "Mi alma ansía y anhela, (Fa,,38)(Do,,201)",
+      "sC": ""
+    },
+    {
+      "line": "los atrios del Señor., (Sol,,167)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Hasta el pájaro encuentra una casa,, (Do,,10)(Mi,m,204)(La,m,310)",
+      "sC": ""
+    },
+    {
+      "line": "la golondrina su nido:, (Do,,10)(Mi,m,172)",
+      "sC": ""
+    },
+    {
+      "line": "¡junto a tus altares, Señor,, (Fa,,20)(Do,,172)",
+      "sC": ""
+    },
+    {
+      "line": "rey mío y Dios mío!, (Sol,,161)",
+      "sC": ""
+    },
+    {
+      "line": "¡REY MÍO Y DIOS MÍO!, (Do,,188)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DICHOSOS LOS QUE VIVEN EN TU CASA,, (Fa,,54)(Do,,341)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SIEMPRE CANTAN TUS AMORES,, (Sol,,263)",
+      "sC": "as"
+    },
+    {
+      "line": "SIEMPRE CANTAN TUS AMORES., (Do,,260)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DICHOSO EL QUE ENCUENTRA, (Fa,,54)",
+      "sC": "as"
+    },
+    {
+      "line": "EN TI LA FUERZA, (Do,,116)",
+      "sC": "as"
+    },
+    {
+      "line": "Y EN SU CORAZÓN DECIDE, (Sol,,223)",
+      "sC": "as"
+    },
+    {
+      "line": "EL SANTO VIAJE., (Do,,123)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "PASANDO POR EL VALLE DEL LLANTO,, (Do,,10)(Mi,m,198)(La,m,315)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ÉL LO CAMBIA EN BENDICIÓN., (Do,,10)(Mi,m,261)",
+      "sC": "as"
+    },
+    {
+      "line": "CRECE EN EL CAMINO SU VIGOR,, (Fa,,35)(Do,,289)",
+      "sC": "as"
+    },
+    {
+      "line": "HASTA LLEGAR A SIÓN,, (Sol,,194)",
+      "sC": "as"
+    },
+    {
+      "line": "HASTA LLEGAR A SIÓN., (Do,,193)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mejor es un día en tus atrios, (Fa,,39)(Do,,224)",
+      "sC": "tc"
+    },
+    {
+      "line": "que mil fuera de ellos,, (Sol,,174)",
+      "sC": ""
+    },
+    {
+      "line": "QUE MIL FUERA DE ELLOS,, (Do,,193)",
+      "sC": "ta as"
+    },
+    {
+      "line": "porque estar en el umbral de tu casa, (Fa,,111)(Do,,331)",
+      "sC": "tc"
+    },
+    {
+      "line": "es siempre mejor, (Sol,,153)",
+      "sC": ""
+    },
+    {
+      "line": "QUE HABITAR EN LOS PALACIOS., (Do,,256)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "PASANDO POR EL VALLE DEL LLANTO, (Do,,10)(Mi,m,196)(La,m,315)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ÉL LO CAMBIA EN BENDICIÓN., (Do,,10)(Mi,m,261)",
+          "sC": "as"
+        },
+        {
+          "line": "CRECE EN EL CAMINO SU VIGOR,, (Fa,,35)(Do,,289)",
+          "sC": "as"
+        },
+        {
+          "line": "HASTA LLEGAR A SIÓN,, (Sol,,194)",
+          "sC": "as"
+        },
+        {
+          "line": "HASTA LLEGAR A SIÓN., (Do,,193)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "DICHOSOS LOS QUE VIVEN ...  \n...EL SANTO VIAJE, (Fa,,54)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "  EN TU CASA,, (Do,,81)",
+          "sC": "as sub1"
+        },
+        {
+          "line": "SIEMPRE CANTAN TUS AMORES,, (Sol,,257)",
+          "sC": "as sub2"
+        },
+        {
+          "line": "SIEMPRE CANTAN TUS AMORES., (Do,,260)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "DICHOSO EL QUE ENCUENTRA, (Fa,,54)",
+          "sC": "as"
+        },
+        {
+          "line": "EN TI LA FUERZA, (Do,,116)",
+          "sC": "as"
+        },
+        {
+          "line": "Y EN SU CORAZÓN DECIDE, (Sol,,223)",
+          "sC": "as"
+        },
+        {
+          "line": "EL SANTO VIAJE., (Do,,123)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

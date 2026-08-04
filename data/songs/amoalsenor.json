@@ -1,0 +1,178 @@
+{
+  "id": "amoalsenor",
+  "tt": "Amo Al Señor",
+  "title": "Amo Al Señor",
+  "subtitle": "Salmo 116 (114-115)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "18",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/amoalsenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=amenamenamen",
+  "sig": "/src/index.html?canto=aquedah",
+  "lizq": [
+    {
+      "line": "Amo al Señor, porque escucha, (Re,,10)(Fa#,m,253)",
+      "sC": "tc b2"
+    },
+    {
+      "line": "mi voz suplicante;, (Sol,,127)",
+      "sC": "b18"
+    },
+    {
+      "line": "inclina hacia mí su oído, (Mi,m6,38)(La,7,201)",
+      "sC": ""
+    },
+    {
+      "line": "el día en que lo invoco., (Re,,188)",
+      "sC": "b2"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Me envolvían redes de muerte,,(Re,,11)",
+      "sC": "tc"
+    },
+    {
+      "line": "me alcanzaron los lazos del infierno;, (Fa#,m,300)",
+      "sC": ""
+    },
+    {
+      "line": "me rodeaban tristeza y angustia,,(Sol,,87)(Mi,m6,268)",
+      "sC": ""
+    },
+    {
+      "line": "invoqué el nombre del Señor:, (La,7,68)",
+      "sC": ""
+    },
+    {
+      "line": "«¡Te ruego, Señor, sálvame!»., (Re,,193)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "RECOBRA, ALMA MÍA, TU REPOSO,,(Re,,11)(Fa#,m,297)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PORQUE EL SEÑOR FUE BUENO CONTIGO., (Sol,,15)(Mi,m6,214)(La,7,364)",
+      "sC": "as"
+    },
+    {
+      "line": "ÉL TE HA SALVADO DE LA MUERTE,,(Sol,,13)(Re,,293)",
+      "sC": "as"
+    },
+    {
+      "line": "HA PRESERVADO TUS PIES DE LA CAÍDA., (La,7,243)(Re,,358)",
+      "sC": "as"
+    },
+    {
+      "line": "ÉL TE HA SALVADO DE LA MUERTE,,(Sol,,14)(Re,,284)",
+      "sC": "as"
+    },
+    {
+      "line": "HA PRESERVADO TUS PIES DE LA CAÍDA., (La,7,246)(Re,,359)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "¡Tenía fe, aun cuando dije:, (Re,,10)(Fa#,m,231)",
+      "sC": "tc"
+    },
+    {
+      "line": "«Yo soy un desgraciado»!,,",
+      "sC": ""
+    },
+    {
+      "line": "y pensaba lleno de angustia:, (Sol,,229)",
+      "sC": ""
+    },
+    {
+      "line": "«todo hombre es falso»., (Mi,m6,26)(La,7,176)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Cómo pagaré al Señor, (Re,,14)",
+      "sC": "tc"
+    },
+    {
+      "line": "todo el bien que me ha hecho?, (Fa#,m,248)",
+      "sC": ""
+    },
+    {
+      "line": "Alzaré la copa de la bendición, (Sol,,53)(Mi,m6,267)",
+      "sC": ""
+    },
+    {
+      "line": "e invocaré el nombre del Señor., (La,7,89)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "RECOBRA, ALMA MÍA, TU REPOSO,,(Re,,11)(Fa#,m,297)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PORQUE EL SEÑOR FUE BUENO CONTIGO., (Sol,,15)(Mi,m6,214)(La,7,364)",
+          "sC": "as"
+        },
+        {
+          "line": "ÉL TE HA SALVADO DE LA MUERTE,,(Sol,,13)(Re,,293)",
+          "sC": "as"
+        },
+        {
+          "line": "HA PRESERVADO TUS PIES DE LA CAÍDA., (La,7,243)(Re,,358)",
+          "sC": "as"
+        },
+        {
+          "line": "ÉL TE HA SALVADO DE LA MUERTE,,(Sol,,14)(Re,,284)",
+          "sC": "as"
+        },
+        {
+          "line": "HA PRESERVADO TUS PIES DE LA CAÍDA., (La,7,246)(Re,,359)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

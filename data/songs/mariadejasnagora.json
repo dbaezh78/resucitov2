@@ -1,0 +1,192 @@
+{
+  "id": "mariadejasnagora",
+  "tt": "María De Jasna Góra",
+  "title": "María De Jasna Góra",
+  "subtitle": "Himno a la Virgen de Jasna Göra, Częstochowa Polonia (Kiko Argüello) ",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "* Se puede decir por el texto en latín: MARIA, SANCTA MARIA",
+  "nCanURL": "",
+  "dbno": "110",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/mariadejasnagora.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=mariacasadebendicion",
+  "sig": "/src/index.html?canto=mariamadredelaiglesia",
+  "lizq": [
+    {
+      "line": "MARÍA DE JASNA GÓRA, (La,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "MARIA, SANCTA MARIA",
+      "sC": "as msm",
+      "color": "rgb(255 0 0 / 42%)"
+    },
+    {
+      "line": "",
+      "sC": "ast"
+    },
+    {
+      "line": "MATER ABSCONDITA,",
+      "sC": "as"
+    },
+    {
+      "line": "AT SEMPER SOLICITA;",
+      "sC": "as"
+    },
+    {
+      "line": "TU, REDEMPTORIS MATER,, (Sol,m,22) ",
+      "sC": "as"
+    },
+    {
+      "line": "ORA PRO NOBIS., (La,,122)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Surge como Débora,, (Re,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "sálvanos como Judit,, (Sol,m,23)(La,,186)",
+      "sC": ""
+    },
+    {
+      "line": "canta como Ana,, (Sol,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "intercede como Ester., (La,,191)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "MARÍA DE JASNA GÓRA, (La,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "MARIA, SANCTA MARIA",
+          "sC": "as msm",
+          "color": "rgb(255 0 0 / 42%)"
+        },
+        {
+          "line": "",
+          "sC": "ast"
+        },
+        {
+          "line": "MATER ABSCONDITA,, ",
+          "sC": "as"
+        },
+        {
+          "line": "AT SEMPER SOLICITA; ",
+          "sC": "as"
+        },
+        {
+          "line": "TU, REDEMPTORIS MATER,, (Sol,m,22)",
+          "sC": "as"
+        },
+        {
+          "line": "ORA PRO NOBIS., (La,,122)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Madre del Cielo,, (Re,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "enséñanos a seguir las huellas de Cristo,, (Sol,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "las huellas del Siervo, ",
+      "sC": ""
+    },
+    {
+      "line": "del humilde Hijo, ",
+      "sC": ""
+    },
+    {
+      "line": "de la humilde Madre, ",
+      "sC": ""
+    },
+    {
+      "line": "de la siempre Virgen María., (La,,251)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "MARÍA DE JASNA GÓRA, (La,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "MARIA, SANCTA MARIA",
+          "sC": "as msm",
+          "color": "rgb(255 0 0 / 42%)"
+        },
+        {
+          "line": "",
+          "sC": "ast"
+        },
+        {
+          "line": "MATER ABSCONDITA,, ",
+          "sC": "as"
+        },
+        {
+          "line": "AT SEMPER SOLICITA; ",
+          "sC": "as"
+        },
+        {
+          "line": "TU, REDEMPTORIS MATER,, (Sol,m,22)",
+          "sC": "as"
+        },
+        {
+          "line": "ORA PRO NOBIS., (La,,122)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

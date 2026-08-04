@@ -1,0 +1,222 @@
+{
+  "id": "anadiedemosocasiondetropiezo",
+  "tt": "A nadie demos ocasión de tropiezo",
+  "title": "A NADIE DEMOS OCASIÓN DE TROPIEZO",
+  "subtitle": "2ª Corintios 6,3ss",
+  "category": [
+    "PreCatecumenado",
+    "Fracción del Pan",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=alavictimapascual",
+  "sig": "/src/index.html?canto=atilevantomisojos",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "2",
+  "notes": "Este canto se usa en la liturgia de Pascua.",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/anadiedemosocasiondetropiezo.mp3",
+  "lizq": [
+    {
+      "line": "Hermanos, a nadie demos ocasión de tropiezo, (La,m,16)(Re,m,410)",
+      "sC": "tc"
+    },
+    {
+      "line": "hermanos, vivamos aceptando las tribulaciones, (Mi,,61) (La,m,412)"
+    },
+    {
+      "line": "necesidades, angustias y fatigas,   (Re,m,16) (Mi,,278)"
+    },
+    {
+      "line": "viviendo en pureza, paciencia y bondad, (Re,m,16) (Mi,,359)"
+    },
+    {
+      "line": "en el Espíritu Santo, y en el poder de Dios, (Fa,,152)(Mi,,381)"
+    },
+    {
+      "line": "con las armas de la justicia, (Fa,,229)"
+    },
+    {
+      "line": "las de la derecha y las de la izquierda. (Mi,,321)"
+    },
+    {
+      "line": "HERMANOS, A NADIE DEMOS (La,m,18)",
+      "sC": "mt ta as"
+    },
+    {
+      "line": "OCASIÓN DE TROPIEZO,    (Re,m,186)",
+      "sC": "as"
+    },
+    {
+      "line": "HERMANOS, VIVAMOS ACEPTANDO (Mi,,63)",
+      "sC": "as"
+    },
+    {
+      "line": "LAS TRIBULACIONES,  (La,m,149)",
+      "sC": "as"
+    },
+    {
+      "line": "NECESIDADES, ANGUSTIAS Y FATIGAS. (Re,m,18)(Mi,,322)",
+      "sC": "as"
+    },
+    {
+      "line": "En calumnias y en buena fama, (Re,m,15)(Mi,,257)",
+      "sC": "mt tc"
+    },
+    {
+      "line": "en gloria e ignominia, (Re,m,15) (Mi,,169)"
+    },
+    {
+      "line": "como pobres, aunque enriqueciendo a muchos; (Re,m,66) (Mi,,254)"
+    },
+    {
+      "line": "como quienes nada tienen, (Fa,,205)"
+    },
+    {
+      "line": "aunque lo poseemos todo. (Mi,,212)"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HERMANOS, A NADIE DEMOS (La,m,18)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "OCASIÓN DE TROPIEZO, (Re,m,186)",
+          "sC": "as"
+        },
+        {
+          "line": "HERMANOS, VIVAMOS ACEPTANDO (Mi,,63)",
+          "sC": "as"
+        },
+        {
+          "line": "LAS TRIBULACIONES,  (La,m,148)",
+          "sC": "as"
+        },
+        {
+          "line": "NECESIDADES, ANGUSTIAS Y FATIGAS. (Re,m,18)(Mi,,322)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Hermanos, os hemos hablado con franqueza, (La,7,13)(Re,m,392)",
+      "sC": "tc"
+    },
+    {
+      "line": "os hemos hablado en toda verdad. (Mi,,301)",
+      "sC": ""
+    },
+    {
+      "line": "No unciros al yugo desigual con los paganos. (Re,m,15) (Mi,,385)"
+    },
+    {
+      "line": "¿Qué participación hay entre el fiel y el infiel? (Re,m,15) (Mi,,414)"
+    },
+    {
+      "line": "¿Qué unión entre el santuario de Dios (Fa,,342) "
+    },
+    {
+      "line": "y el santuario de los ídolos? (Mi,,202)"
+    },
+    {
+      "line": "Porque somos el santuario de Dios. (Re,m,15) (Mi,,314) "
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "HERMANOS, A NADIE DEMOS (La,m,18)",
+      "sC": "as mt ta",
+      "lines": [
+        {
+          "line": "OCASIÓN DE TROPIEZO, (Re,m,186)",
+          "sC": "as"
+        },
+        {
+          "line": "HERMANOS, VIVAMOS ACEPTANDO (Mi,,63)",
+          "sC": "as"
+        },
+        {
+          "line": "LAS TRIBULACIONES,  (La,m,148)",
+          "sC": "as"
+        },
+        {
+          "line": "NECESIDADES, ANGUSTIAS Y FATIGAS. (Re,m,18)(Mi,,322)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "Tengo plena confianza en el hablaros, (La,7,15) (Re,m,307)",
+      "sC": "mt tc"
+    },
+    {
+      "line": "porque estoy orgulloso de vosotros. (Mi,,283)"
+    },
+    {
+      "line": "No unciros al yugo desigual con los paganos. (Re,m,15) (Mi,,382)"
+    },
+    {
+      "line": "¿Qué participación hay entre el fiel y el infiel? (Re,m,15) (Mi,,415)"
+    },
+    {
+      "line": "¿Qué unión entre el santuario de Dios (Fa,,343)"
+    },
+    {
+      "line": "y el santuario de los ídolos? (Mi,,201)"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "HERMANOS, A NADIE DEMOS (La,m,18)",
+      "sC": "as mt ta",
+      "lines": [
+        {
+          "line": "OCASIÓN DE TROPIEZO, (Re,m,186)",
+          "sC": "as"
+        },
+        {
+          "line": "HERMANOS, VIVAMOS ACEPTANDO (Mi,,63)",
+          "sC": "as"
+        },
+        {
+          "line": "LAS TRIBULACIONES,  (La,m,148)",
+          "sC": "as"
+        },
+        {
+          "line": "NECESIDADES, ANGUSTIAS Y FATIGAS. (Re,m,18)(Mi,,322)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "En pureza, paciencia y bondad, (Re,m,15)(Mi,,271)",
+      "sC": "mt tc"
+    },
+    {
+      "line": "en el Espíritu Santo, y en el poder de Dios. (Fa,,141)(Mi,,375)"
+    }
+  ],
+  "sourceBook": "resucito"
+}

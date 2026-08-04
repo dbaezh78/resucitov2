@@ -1,0 +1,160 @@
+{
+  "id": "venicreator",
+  "tt": "Veni Creator",
+  "title": "Veni Creator",
+  "subtitle": "Himno latin",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "169",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/venicreator.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=venhijodelhombre",
+  "sig": "/src/index.html?canto=vieneelsenor",
+  "lizq": [
+    {
+      "line": "VEN, ESPÍRITU CREADOR,, (La,m,20)(Sol,,220)",
+      "sC": "ta as"
+    },
+    {
+      "line": "VISITA NUESTRA MENTE;, (La,m,190)",
+      "sC": "as"
+    },
+    {
+      "line": "LLENA DE TU AMOR, (Sol,,168)",
+      "sC": "as"
+    },
+    {
+      "line": "EL CORAZÓN QUE HAS CREADO., (La,m,265)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Oh dulce consolador,, (La,m,20)(Sol,,181)",
+      "sC": "tc"
+    },
+    {
+      "line": "don del Padre altísimo,, (La,m,167)",
+      "sC": ""
+    },
+    {
+      "line": "agua viva, fuego, amor,, (Sol,,204)",
+      "sC": ""
+    },
+    {
+      "line": "santo crisma del alma., (La,m,179)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DEDO DE LA MANO DE DIOS,, (La,m,20)(Sol,,247)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PROMESA DEL SALVADOR,, (La,m,231)",
+      "sC": "as"
+    },
+    {
+      "line": "DERRAMA TUS SIETE DONES,, (Sol,,225)",
+      "sC": "as"
+    },
+    {
+      "line": "SUSCITA EN NOSOTROS LA PALABRA., (La,m,307)",
+      "sC": "sa"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Sé luz del intelecto,, (La,m,20)(Sol,,144)",
+      "sC": "tc"
+    },
+    {
+      "line": "llama ardiente en el corazón,, (La,m,252)",
+      "sC": ""
+    },
+    {
+      "line": "sana nuestras heridas, (Sol,,173)",
+      "sC": ""
+    },
+    {
+      "line": "con el bálsamo de tu amor., (La,m,241)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DEFIÉNDENOS DEL ENEMIGO,, (La,m,20)(Sol,,246)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DANOS EL DON DE LA PAZ., (La,m,238)",
+      "sC": "as"
+    },
+    {
+      "line": "TU GUÍA INVENCIBLE, (Sol,,157)",
+      "sC": "as"
+    },
+    {
+      "line": "NOS PRESERVE DEL MAL., (La,m,222)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Oh Luz de eterna sabiduría,, (La,m,20)(Sol,,241)",
+      "sC": "tc"
+    },
+    {
+      "line": "desvélanos el gran misterio, (La,m,232)",
+      "sC": ""
+    },
+    {
+      "line": "de Dios Padre y del Hijo,, (Sol,,203)",
+      "sC": ""
+    },
+    {
+      "line": "unidos en un solo amor., (La,m,208)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AMÉN., (Sol,,10)(La,m,51)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

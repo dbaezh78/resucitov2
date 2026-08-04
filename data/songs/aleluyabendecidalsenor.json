@@ -1,0 +1,189 @@
+{
+  "id": "aleluyabendecidalsenor",
+  "tt": "Aleluya, Bendecid Al Señor",
+  "title": "Aleluya, Bendecid Al Señor",
+  "subtitle": "Salmo 1.34 (1.33) - Melodía hebraica",
+  "category": [
+    "PreCatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Niños",
+    "Paz",
+    "Comunión"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "14",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/aleluyabendecidalsenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=aleluyaalabadalsenor",
+  "sig": "/src/index.html?canto=aleluyayallegoelreino",
+  "lizq": [
+    {
+      "line": "ALELÚ, ALELÚ, ALE E LU U YA., (La,,10)(Si♭,,178)(La,,272)",
+      "sC": "niño as"
+    },
+    {
+      "line": "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,180)(La,,271)",
+      "sC": "as r1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendecid al Señor, bendecid al Señor,(Re,m,20)",
+      "sC": "niño"
+    },
+    {
+      "line": "vosotros los siervos del Señor., (La,7,266)",
+      "sC": ""
+    },
+    {
+      "line": "Bendecid al Señor, bendecid al Señor, ",
+      "sC": ""
+    },
+    {
+      "line": "vosotros que estáis en la casa del Señor., (Re,m,366)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Alzad a Él las manos, alzad a Él las manos, (Re,m,21)",
+      "sC": ""
+    },
+    {
+      "line": "y bendecid al Señor,(La,7,172)",
+      "sC": ""
+    },
+    {
+      "line": "vosotros que estáis en la casa del Señor, ",
+      "sC": ""
+    },
+    {
+      "line": "durante la noche., (Re,m,159)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, A A LE E LU U YA., (Re,m,15)(La,7,108)(Si♭,,218)(La,,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, A A LE E LU U YA., (Re,m,15)(La,7,108)(Si♭,,218)(La,,250)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ALELÚ, ALELÚ, ALE E LU U YA., (La,,10)(Si♭,,178)(La,,272)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,180)(La,,271)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "BENDECID AL SEÑOR, BENDECID AL SEÑOR,(Re,m,20)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "VOSOTROS LOS SIERVOS DEL SEÑOR., (La,7,327)",
+          "sC": "as"
+        },
+        {
+          "line": "BENDECID AL SEÑOR, BENDECID AL SEÑOR,",
+          "sC": "as"
+        },
+        {
+          "line": "VOSOTROS QUE ESTÁIS EN LA CASA DEL SEÑOR., (Re,m,439)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "ALZAD A ÉL LAS MANOS, ALZAD A ÉL LAS MANOS, (Re,m,21)",
+          "sC": "as ta"
+        },
+        {
+          "line": "Y BENDECID AL SEÑOR,(La,7,172)",
+          "sC": "as"
+        },
+        {
+          "line": "VOSOTROS QUE ESTÁIS EN LA CASA DEL SEÑOR, ",
+          "sC": "as"
+        },
+        {
+          "line": "DURANTE LA NOCHE., (Re,m,159)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aalelú, alelú uuu ... uuya., (Si♭,,59)(La,7,226)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "ALELÚ, ALELÚ, ALE E LU U YA., (La,,10)(Si♭,,178)(La,,272)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,180)(La,,271)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

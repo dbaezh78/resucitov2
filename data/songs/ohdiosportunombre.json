@@ -1,0 +1,135 @@
+{
+  "id": "ohdiosportunombre",
+  "tt": "Oh Dios, por tu nombre sálvame",
+  "title": "Oh Dios, por tu nombre sálvame",
+  "subtitle": "Salmo 54 (53)",
+  "category": [
+    "Precatecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "124",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/ohdiosportunombresalvame.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ohcieloslloveddeloalto",
+  "sig": "/src/index.html?canto=ohdiostueresmidios",
+  "lizq": [
+    {
+      "line": "OH DIOS, POR TU NOMBRE SÁLVAME,, (La,m,20)(Fa,7,286)",
+      "sC": "ta as"
+    },
+    {
+      "line": "POR TU PODER HAZME JUSTICIA., (Re,m,22)(Mi,,274)",
+      "sC": "as"
+    },
+    {
+      "line": "OH DIOS, ESCUCHA MI ORACIÓN,, (La,m,20)(Fa,7,288)",
+      "sC": "as"
+    },
+    {
+      "line": "ATIENDE A LAS PALABRAS DE MI BOCA., (Re,m,22)(Mi,,343)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque los arrogantes se han aliado contra mí,, (La,7,20)(Re,m,436)",
+      "sC": "tc"
+    },
+    {
+      "line": "los prepotentes andan buscando mi vida,, (Si♭,7,20)(La,7,361)",
+      "sC": ""
+    },
+    {
+      "line": "no tienen nunca a Dios presente,, (Sol,m,50)(La,7,272)",
+      "sC": ""
+    },
+    {
+      "line": "no tienen nunca a Dios presente., (Si♭,7,47)(La,7,272)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MAS VED, QUE DIOS VIENE EN MI AYUDA,, (Re,m,22)(La,7,354)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EL SEÑOR, EL SEÑOR ME SOSTIENE., (Re,m,77)(La,7,309)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "De todo corazón le ofreceré un sacrificio,, (Sol,m,23)(La,7,355)",
+      "sC": "tc"
+    },
+    {
+      "line": "celebraré su nombre, porque es bueno,, (Sol,m,82)(La,7,343)",
+      "sC": ""
+    },
+    {
+      "line": "de toda angustia Él me ha liberado,, (Si♭,7,20)(La,7,307)",
+      "sC": ""
+    },
+    {
+      "line": "de toda angustia me ha liberado,, (Do,,10)(La,7,285)",
+      "sC": ""
+    },
+    {
+      "line": "de toda angustia me ha liberado., (Do,,10)(Mi,,173)",
+      "sC": "melisma"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "OH DIOS, POR TU NOMBRE SÁLVAME, (La,m,20)(Fa,7,286)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "POR TU PODER HAZME JUSTICIA., (Re,m,22)(Mi,,274)",
+          "sC": "as"
+        },
+        {
+          "line": "OH DIOS, ESCUCHA MI ORACIÓN,, (La,m,20)(Fa,7,288)",
+          "sC": "as"
+        },
+        {
+          "line": "ATIENDE A LAS PALABRAS DE MI BOCA., (Re,m,22)(Mi,,343)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

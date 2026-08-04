@@ -1,0 +1,220 @@
+{
+  "id": "bendecirealsenorentodotiempo",
+  "tt": "Bendeciré Al Señor En Todo Tiempo",
+  "title": "Bendeciré Al Señor En Todo Tiempo",
+  "subtitle": "Sal 34 (33)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Comunión",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "25",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/bendecirealsenorentodotiempo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=balaam",
+  "sig": "/src/index.html?canto=bendicealmamiaayahveh",
+  "lizq": [
+    {
+      "line": "BENDECIRÉ AL SEÑOR EN TODO TIEMPO,,(Re,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EN MI BOCA SIEMPRE SU ALABANZA;, (Do,,86)(La,,311)",
+      "sC": "as"
+    },
+    {
+      "line": "YO ME GLORÍO EN EL SEÑOR,,(Si♭,,131)(La,7,265)",
+      "sC": "as"
+    },
+    {
+      "line": "LO ESCUCHEN LOS HUMILDES, (Si♭,,81)",
+      "sC": "as"
+    },
+    {
+      "line": "Y SE ALEGREN., (La,7,79)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cantad conmigo al Señor,,(Re,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "cantemos juntos a su Nombre., (Do,,47)(La,,222)",
+      "sC": ""
+    },
+    {
+      "line": "Porque este pobre grita, el Señor le escucha,,(Si♭,,144)(La,,386)",
+      "sC": ""
+    },
+    {
+      "line": "y le libra de todas sus angustias., (Si♭,,50)(La,,259)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "BENDECIRÉ AL SEÑOR EN TODO TIEMPO,(Re,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EN MI BOCA SIEMPRE SU ALABANZA;, (Do,,86)(La,,311)",
+          "sC": "as"
+        },
+        {
+          "line": "YO ME GLORÍO EN EL SEÑOR,,(Si♭,,131)(La,7,265)",
+          "sC": "as"
+        },
+        {
+          "line": "LO ESCUCHEN LOS HUMILDES, (Si♭,,81)",
+          "sC": "as"
+        },
+        {
+          "line": "Y SE ALEGREN., (La,7,79)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque el ángel del Señor acampa, (Re,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "en torno a aquellos que le temen y les salva., (Do,,41)(La,,379)",
+      "sC": ""
+    },
+    {
+      "line": "Gritan ellos, y el Señor les escucha, (Si♭,,77)(La,,291)",
+      "sC": ""
+    },
+    {
+      "line": "y los libra de todas sus angustias., (Si♭,,62)(La,,267)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Gustad y ved, (Re,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "qué bueno es el Señor,,(Do,,77)(La,,195)",
+      "sC": ""
+    },
+    {
+      "line": "dichoso el hombre, (Si♭,,122)",
+      "sC": ""
+    },
+    {
+      "line": "que se refugia en Él., (La,,182)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "GUSTAD Y VED, (Re,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUÉ BUENO ES EL SEÑOR,,(Do,,83)(La,,227)",
+      "sC": "as"
+    },
+    {
+      "line": "DICHOSO EL HOMBRE, (Si♭,,149)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE SE REFUGIA EN ÉL., (La,,206)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque muchas son las pruebas, (Re,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "que le esperan al Justo,",
+      "sC": ""
+    },
+    {
+      "line": "mas de todas le libra el Señor., (Do,,90)(La,,267)",
+      "sC": ""
+    },
+    {
+      "line": "Gritan ellos, y el Señor les escucha, (Si♭,,77)(La,,299)",
+      "sC": ""
+    },
+    {
+      "line": "y los libra de todas sus angustias., (Si♭,,62)(La,,268)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "BENDECIRÉ AL SEÑOR EN TODO TIEMPO,(Re,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EN MI BOCA SIEMPRE SU ALABANZA;, (Do,,86)(La,,311)",
+          "sC": "as"
+        },
+        {
+          "line": "YO ME GLORÍO EN EL SEÑOR,,(Si♭,,131)(La,7,265)",
+          "sC": "as"
+        },
+        {
+          "line": "LO ESCUCHEN LOS HUMILDES, (Si♭,,81)",
+          "sC": "as"
+        },
+        {
+          "line": "Y SE ALEGREN., (La,7,79)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

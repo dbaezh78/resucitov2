@@ -1,0 +1,157 @@
+{
+  "id": "aleluyaalabadalsenor",
+  "tt": "Aleluya, Alabad Al Señor",
+  "title": "Aleluya, Alabad Al Señor",
+  "subtitle": "Salmo 150",
+  "category": [
+    "PreCatecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "13",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/aleluyaalabadalsenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=alegriahanacidoelsalvador",
+  "sig": "/src/index.html?canto=aleluyabendecidalsenor",
+  "lizq": [
+    {
+      "line": "¡ALELUYA, ALELUYA, ALELUYA!, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(La,,248)(Mi,,275)",
+      "sC": "as ta"
+    },
+    {
+      "line": "¡ALELUYA, ALELUYA, ALELUYA!, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(Mi,,275)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Alabad al Señor en su templo,(MI,,10)(La,,139)(Re,,170)(La,,228)",
+      "sC": "tc"
+    },
+    {
+      "line": "alabadlo en su fuerte firmamento,(Re,,52)(La,,173)(Mi,,286)",
+      "sC": ""
+    },
+    {
+      "line": "Alabadlo por sus obras estupendas,(La,,52)(Re,,178)(La,,236)(Mi,,284)",
+      "sC": ""
+    },
+    {
+      "line": "alabadlo por su inmensa grandeza., (La,,52)(Re,,198)(Mi,,309)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡ALELUYA, ALELUYA, ALELUYA, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(La,,248)(Mi,,275)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "¡ALELUYA, ALELUYA, ALELUYA!, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(Mi,,275)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Alabadlo al son de trompetas,(Mi,,10)(La,,128)(Re,,168)(La,,245)",
+      "sC": "tc"
+    },
+    {
+      "line": "alabadlo con arpas y guitarras,(Re,,45)(La,,140)(Mi,,243)",
+      "sC": ""
+    },
+    {
+      "line": "alabadlo con tambores y con danzas,(La,,45)(Re,,182)(La,,237)(Mi,,298)",
+      "sC": ""
+    },
+    {
+      "line": "alabadlo con trompas y flautas., (La,,45)(Re,,143)(Mi,,257)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "¡ALELUYA, ALELUYA, ALELUYA, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(La,,248)(Mi,,275)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "¡ALELUYA, ALELUYA, ALELUYA!, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(Mi,,275)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Alabadlo con platillos sonoros,(Mi,,15)(La,,169)(Re,,195)(La,,251)",
+      "sC": "tc"
+    },
+    {
+      "line": "alabadlo con platillos vibrantes., (Re,,48)(La,,166)(Mi,,249)",
+      "sC": ""
+    },
+    {
+      "line": "¡TODO SER ALABE AL SEÑOR,(La,,10)(Re,,81)(La,,137)(Mi,,254)",
+      "sC": "as ta"
+    },
+    {
+      "line": "ALABE, ALABE AL SEÑOR!, (La,,31)(Re,,102)(MI,,222)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "¡ALELUYA, ALELUYA, ALELUYA, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(La,,248)(Mi,,275)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "¡ALELUYA, ALELUYA, ALELUYA! (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(Mi,,275)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,309 @@
+{
+  "id": "zaqueo",
+  "tt": "Zaqueo",
+  "title": "Zaqueo",
+  "subtitle": "Lucas 19,1-10",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Entrada",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "178",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/zaqueo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=yovengoareunir",
+  "sig": "/src/index.html?canto=aclamacionesalaoraciondelosfieles",
+  "lizq": [
+    {
+      "line": "HABIENDO ENTRADO JESÚS EN JERICÓ,, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ATRAVESABA LA CIUDAD,, (Sol,,216)",
+      "sC": "as"
+    },
+    {
+      "line": "HABIENDO ENTRADO JESÚS EN JERICÓ,, (Fa,,167)",
+      "sC": "as"
+    },
+    {
+      "line": "ATRAVESABA LA CIUDAD., (Mi,,216)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Había un hombre llamado Zaqueo,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "que era jefe de publicanos y muy rico, (Sol,,331)",
+      "sC": ""
+    },
+    {
+      "line": "que trataba de ver a Jesús, pero no podía, (Fa,,234)",
+      "sC": ""
+    },
+    {
+      "line": "porque era de pequeña estatura., (Mi,,285)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Se adelantó corriendo, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "y se subió a un sicómoro,, (Sol,,177)",
+      "sC": ""
+    },
+    {
+      "line": "pues iba a pasar por allí,, (Fa,,58)",
+      "sC": ""
+    },
+    {
+      "line": "pues iba a pasar por allí., (Mi,,222)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cuando llegó Jesús,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "alzó la vista y le vio,, (Sol,,174)",
+      "sC": ""
+    },
+    {
+      "line": "y le dijo: «Zaqueo, baja pronto;, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "porque conviene que hoy yo entre en tu casa,, (Mi,,395)",
+      "sC": ""
+    },
+    {
+      "line": "conviene que yo entre en tu casa»., (Fa,,48)(Mi,,283)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HABIENDO ENTRADO JESÚS EN JERICÓ (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ATRAVESABA LA CIUDAD,, (Sol,,216)",
+          "sC": "as"
+        },
+        {
+          "line": "HABIENDO ENTRADO JESÚS EN JERICÓ,, (Fa,,167)",
+          "sC": "as"
+        },
+        {
+          "line": "ATRAVESABA LA CIUDAD., (Mi,,216)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Bajó deprisa Zaqueo, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "y le recibió lleno de alegría., (Sol,,238)",
+      "sC": ""
+    },
+    {
+      "line": "Al verlo, todos murmuraban:, (Fa,,222)",
+      "sC": ""
+    },
+    {
+      "line": "«Ha entrado en casa de un pecador»., (Mi,,320)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Zaqueo, se puso en pie y dijo al Señor:, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "«Daré, Señor, la mitad de mis bienes a los pobres;, (Sol,,393)",
+      "sC": "ajustar"
+    },
+    {
+      "line": "y si en algo defraudé, el cuádruplo le devolveré»., (Fa,,74)(Mi,,438)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y Jesús le dijo:, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "Hoy ha llegado la salvación a esta casa,, (La,m,20)(Sol,,345)",
+      "sC": "tc"
+    },
+    {
+      "line": "hoy ha llegado la salvación a esta casa., (Fa,,15)(Mi,,343)",
+      "sC": ""
+    },
+    {
+      "line": "HOY HA LLEGADO LA SALVACIÓN A ESTA CASA,, (La,m,20)(Sol,,409)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HOY HA LLEGADO LA SALVACIÓN A ESTA CASA»., (Fa,,20)(Mi,,413)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«Porque también este es hijo de Abraham,, (Re,m,22)(Mi,,371)",
+      "sC": "tc"
+    },
+    {
+      "line": "pues el Hijo del hombre ha venido, (Re,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "a buscar y a salvar lo que estaba perdido»., (Mi,,363)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HABIENDO ENTRADO... HOY HA LLEGADO (La,m,20)(La,m,244)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HABIENDO ENTRADO JESÚS EN JERICÓ, ",
+          "sC": "as sub"
+        },
+        {
+          "line": "ATRAVESABA LA CIUDAD,, (Sol,,216)",
+          "sC": "as"
+        },
+        {
+          "line": "HABIENDO ENTRADO JESÚS EN JERICÓ,, (Fa,,167)",
+          "sC": "as"
+        },
+        {
+          "line": "ATRAVESABA LA CIUDAD., (Mi,,216)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "HOY HA LLEGADO LA SALVACIÓN A ESTA CASA». (La,,20)(Sol,,409)",
+          "sC": "ta as"
+        },
+        {
+          "line": "HOY HA LLEGADO LA SALVACIÓN A ESTA CASA». (Fa,,20)(Mi,,413)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "Zaqueo eres tú., (Re,m,22)(Mi,,135)",
+      "sC": "r1 "
+    },
+    {
+      "line": "Baja pronto., (Re,m,22)(Mi,,70)",
+      "sC": "r1"
+    },
+    {
+      "line": "Conviene que hoy entre en tu casa., (Fa,,56)(Mi,,298)",
+      "sC": "r2"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HABIENDO ENTRADO... HOY HA LLEGADO (La,m,20)(La,m,244)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HABIENDO ENTRADO JESÚS EN JERICÓ, ",
+          "sC": "as sub"
+        },
+        {
+          "line": "ATRAVESABA LA CIUDAD,, (Sol,,216)",
+          "sC": "as"
+        },
+        {
+          "line": "HABIENDO ENTRADO JESÚS EN JERICÓ,, (Fa,,167)",
+          "sC": "as"
+        },
+        {
+          "line": "ATRAVESABA LA CIUDAD., (Mi,,216)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "HOY HA LLEGADO LA SALVACIÓN A ESTA CASA». (La,,20)(Sol,,409)",
+          "sC": "ta as"
+        },
+        {
+          "line": "HOY HA LLEGADO LA SALVACIÓN A ESTA CASA». (Fa,,20)(Mi,,413)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

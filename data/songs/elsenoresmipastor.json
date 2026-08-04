@@ -1,0 +1,320 @@
+{
+  "id": "elsenoresmipastor",
+  "tt": "El Señor Es Mi Pastor",
+  "title": "El Señor Es Mi Pastor",
+  "subtitle": "Salmo 23 (22)",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Comunión",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "2",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "61",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/elsenoresmipastor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=elsenoranunciaunanoticia",
+  "sig": "/src/index.html?canto=elsenormehadado",
+  "lizq": [
+    {
+      "line": "El Señor es mi pastor,, (La,m,21)(Fa,,186)",
+      "sC": "tc"
+    },
+    {
+      "line": "nada me falta., (Mi,,107)",
+      "sC": ""
+    },
+    {
+      "line": "En prados de fresca hierba, ",
+      "sC": ""
+    },
+    {
+      "line": "me apacienta., (La,m,93)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "EL SEÑOR ES MI PASTOR,, (La,m,19)(Fa,,217)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NADA ME FALTA., (Mi,,118)",
+      "sC": "as"
+    },
+    {
+      "line": "HACIA LAS AGUAS DE LA VIDA, ",
+      "sC": "as"
+    },
+    {
+      "line": "ME CONDUCE., (La,m,97)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Repara mis fuerzas y me lleva, (Sol,,40)(Fa,,259)",
+      "sC": "tc"
+    },
+    {
+      "line": "por el camino del amor., (Mi,,206)",
+      "sC": ""
+    },
+    {
+      "line": "Repara mis fuerzas y me lleva, (Sol,,40)(Fa,,260)",
+      "sC": ""
+    },
+    {
+      "line": "para la gloria de su nombre., (Mi,,212)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EL SEÑOR ES MI PASTOR, (La,m,19)(Fa,,217)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NADA ME FALTA., (Mi,,118)",
+          "sC": "as"
+        },
+        {
+          "line": "HACIA LAS AGUAS DE LA VIDA, ",
+          "sC": "as"
+        },
+        {
+          "line": "ME CONDUCE., (La,m,97)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aunque camine por valle oscuro,, (Sol,,15)(Fa,,285)",
+      "sC": "tc"
+    },
+    {
+      "line": "no temeré,, (Mi,,93)",
+      "sC": ""
+    },
+    {
+      "line": "porque Tú, porque Tú, porque Tú, ",
+      "sC": "melisma"
+    },
+    {
+      "line": "vas conmigo;, (La,m,92)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Tu vara y tu cayado me consuelan,, (Sol,,41)(Fa,,287)",
+      "sC": "tc"
+    },
+    {
+      "line": "me consuelan., (Mi,,96)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EL SEÑOR ES MI PASTOR, (La,m,19)(Fa,,217)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NADA ME FALTA., (Mi,,118)",
+          "sC": "as"
+        },
+        {
+          "line": "HACIA LAS AGUAS DE LA VIDA, ",
+          "sC": "as"
+        },
+        {
+          "line": "ME CONDUCE., (La,m,97)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Preparas una mesa ante mí, (Sol,,48)(Fa,,261)",
+      "sC": "tc"
+    },
+    {
+      "line": "frente a mis enemigos., (Mi,,178)",
+      "sC": ""
+    },
+    {
+      "line": "Me unges la cabeza con perfume,, (Sol,,15)(Fa,,279)",
+      "sC": ""
+    },
+    {
+      "line": "mi copa rebosa., (Mi,,125)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EL SEÑOR ES MI PASTOR, (La,m,19)(Fa,,217)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NADA ME FALTA., (Mi,,118)",
+          "sC": "as"
+        },
+        {
+          "line": "HACIA LAS AGUAS DE LA VIDA, ",
+          "sC": "as"
+        },
+        {
+          "line": "ME CONDUCE., (La,m,97)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sí, tu amor y tu alegría, (Sol,,14)(Fa,,199)",
+      "sC": "tc"
+    },
+    {
+      "line": "me acompañarán., (Mi,,153)",
+      "sC": ""
+    },
+    {
+      "line": "Sí, yo viviré, (Sol,,13)(Fa,,99)",
+      "sC": ""
+    },
+    {
+      "line": "en tu casa eternamente., (Mi,,191)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EL SEÑOR ES MI PASTOR, (La,m,19)(Fa,,217)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NADA ME FALTA., (Mi,,118)",
+          "sC": "as"
+        },
+        {
+          "line": "HACIA LAS AGUAS DE LA VIDA, ",
+          "sC": "as"
+        },
+        {
+          "line": "ME CONDUCE., (La,m,97)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SÍ, TU AMOR Y TU ALEGRÍA, (Sol,,14)(Fa,,230)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ME ACOMPAÑARÁN., (Mi,,172)",
+          "sC": "as"
+        },
+        {
+          "line": "SÍ, YO VIVIRÉ, (Sol,,13)(Fa,,112)",
+          "sC": "as"
+        },
+        {
+          "line": "EN TU CASA ETERNAMENTE., (Mi,,218)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EL SEÑOR ES MI PASTOR, (La,m,19)(Fa,,217)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NADA ME FALTA., (Mi,,118)",
+          "sC": "as"
+        },
+        {
+          "line": "HACIA LAS AGUAS DE LA VIDA, ",
+          "sC": "as"
+        },
+        {
+          "line": "ME CONDUCE., (La,m,97)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

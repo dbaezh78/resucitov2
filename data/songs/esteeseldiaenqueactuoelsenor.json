@@ -1,0 +1,420 @@
+{
+  "id": "esteeseldiaenqueactuoelsenor",
+  "tt": "Este Es El Día En Que Actuó El Señor",
+  "title": "Este Es El Día En Que Actuó El Señor",
+  "subtitle": "Salmo 118 (117)",
+  "category": [
+    "Precatecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "71",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/esteeseldiaenqueactuoelsenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=escuchadislaslejanas",
+  "sig": "/src/index.html?canto=esteeselmandamientomio",
+  "lizq": [
+    {
+      "line": "No he de morir,, (La,m,19)",
+      "sC": "tc"
+    },
+    {
+      "line": "QUE VIVIRÉ,",
+      "sC": "ta as ab1"
+    },
+    {
+      "line": "No he de morir,",
+      "sC": "tc"
+    },
+    {
+      "line": "QUE VIVIRÉ, ",
+      "sC": "ta as ab1"
+    },
+    {
+      "line": "para cantar, (Fa,,96)",
+      "sC": ""
+    },
+    {
+      "line": "LAS HAZAÑAS DEL SEÑOR., (Mi,,236)",
+      "sC": "as ab2"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Me castigó,, (La,m ,20)",
+      "sC": ""
+    },
+    {
+      "line": "ME CASTIGÓ. ",
+      "sC": "as ab3"
+    },
+    {
+      "line": "Me castigó, ",
+      "sC": ""
+    },
+    {
+      "line": "ME CASTIGÓ, ",
+      "sC": "as ab3"
+    },
+    {
+      "line": "pero no, (Fa,,64)",
+      "sC": ""
+    },
+    {
+      "line": "ME DEJÓ EN LA MUERTE., (Mi,,193)",
+      "sC": "as ab4"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dad gracias al Señor porque es bueno,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "PORQUE ES ETERNA SU MISERICORDIA., (Fa,,146)(Mi,,325)",
+      "sC": "as"
+    },
+    {
+      "line": "Que lo diga la casa de Israel:, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ES ETERNA, (Fa,,63)",
+      "sC": "as ab5",
+      "lines": [
+        {
+          "line": "SU MISERICORDIA., (Mi,,123)",
+          "sC": "as ab6"
+        }
+      ]
+    },
+    {
+      "line": "Que lo diga la casa de Aarón:, (La,m,15)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "ES ETERNA, (Fa,,63)",
+      "sC": "as ab5",
+      "lines": [
+        {
+          "line": "SU MISERICORDIA., (Mi,,123)",
+          "sC": "as ab6"
+        }
+      ]
+    },
+    {
+      "line": "Que lo digan los fieles del Señor:, (La,m,15)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "ES ETERNA, (Fa,,63)",
+      "sC": "as ab7",
+      "lines": [
+        {
+          "line": "SU MISERICORDIA., (Mi,,129)",
+          "sC": "as ab8"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mejor es confiar en el Señor, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "QUE FIARSE DE LOS HOMBRES,, (Fa,,68)(Mi,,221)",
+      "sC": "as"
+    },
+    {
+      "line": "mejor es apoyarse en el Señor, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "QUE CONFIAR EN LOS INTELIGENTES., (Fa,,111)(Mi,,297)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "me rodeaban,,(La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "ME RODEABAN, ",
+      "sC": "as ab9"
+    },
+    {
+      "line": "me rodeaban, ",
+      "sC": ""
+    },
+    {
+      "line": "ME RODEABAN, ",
+      "sC": "as ab9"
+    },
+    {
+      "line": "en el nombre del Señor, (Fa,,66)",
+      "sC": ""
+    },
+    {
+      "line": "LOS RECHACÉ., (Mi,,129)",
+      "sC": "as ab10"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Me empujaban,, (Lam,,15)",
+      "sC": ""
+    },
+    {
+      "line": "ME EMPUJABAN, ",
+      "sC": "as ab11"
+    },
+    {
+      "line": "Me empujaban, ",
+      "sC": ""
+    },
+    {
+      "line": "ME EMPUJABAN, ",
+      "sC": "as ab11"
+    },
+    {
+      "line": "pero el Señor, (Fa,,112)",
+      "sC": ""
+    },
+    {
+      "line": "ME AYUDÓ., (Mi,,97)",
+      "sC": "as ab12"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Escuchad: hay cantos de victoria, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "EN LAS TIENDAS DE LOS JUSTOS:, (Fa,,96)(Mi,,258)",
+      "sC": "as"
+    },
+    {
+      "line": "«La diestra del Señor es poderosa,, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "ES EXCELSA LA DIESTRA DEL SEÑOR»., (Fa,,74)(Mi,,333)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "No he de morir...    ...EN LA MUERTE  (La,m,19)",
+      "sC": "tc as",
+      "lines": [
+        {
+          "line": "QUE VIVIRÉ,",
+          "sC": "as ab14 bgtop"
+        },
+        {
+          "line": "No he de morir,",
+          "sC": "tc"
+        },
+        {
+          "line": "QUE VIVIRÉ, ",
+          "sC": "as ab14"
+        },
+        {
+          "line": "para cantar, (Fa,,96)",
+          "sC": ""
+        },
+        {
+          "line": "LAS HAZAÑAS DEL SEÑOR., (Mi,,236)",
+          "sC": "as ab2"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Me castigó,, (La,m ,20)",
+          "sC": ""
+        },
+        {
+          "line": "ME CASTIGÓ. ",
+          "sC": "as ab3"
+        },
+        {
+          "line": "Me castigó, ",
+          "sC": ""
+        },
+        {
+          "line": "ME CASTIGÓ, ",
+          "sC": "as ab3"
+        },
+        {
+          "line": "pero no, (Fa,,64)",
+          "sC": ""
+        },
+        {
+          "line": "ME DEJÓ EN LA MUERTE., (Mi,,193)",
+          "sC": "as ab4"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Abridme las puertas del triunfo, (La,m,21)",
+      "sC": ""
+    },
+    {
+      "line": "Y ENTRARÉ PARA DAR GRACIAS AL SEÑOR., (Fa,,108)(Mi,,394)",
+      "sC": "as"
+    },
+    {
+      "line": "Esta es la puerta del Señor:, (Fa,,10)(Mi,,244)",
+      "sC": ""
+    },
+    {
+      "line": "LOS VENCEDORES ENTRARÁN POR ELLA., (Fa,,130)(Mi,,348)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La piedra que desecharon los arquitectos, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "ES AHORA LA PIEDRA ANGULAR., (Fa,,67)(Mi,,289)",
+      "sC": "as"
+    },
+    {
+      "line": "Es el Señor quien lo ha hecho,, (Fa,,10)(Mi,,238)",
+      "sC": ""
+    },
+    {
+      "line": "HA SIDO UN MILAGRO PATENTE., (Fa,,46)(Mi,,259)",
+      "sC": "as"
+    },
+    {
+      "line": "Este es el día en que actuó el Señor:, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "SEA NUESTRA ALEGRÍA Y NUESTRO GOZO., (Fa,,20)(Mi,,369)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_5",
+      "initialState": "collapsed",
+      "triggerLine": "No he de morir...    ...EN LA MUERTE  (La,m,19)",
+      "sC": "tc as",
+      "lines": [
+        {
+          "line": "QUE VIVIRÉ,",
+          "sC": "as ab14 bgtop"
+        },
+        {
+          "line": "No he de morir,",
+          "sC": "tc"
+        },
+        {
+          "line": "QUE VIVIRÉ, ",
+          "sC": "as ab14"
+        },
+        {
+          "line": "para cantar, (Fa,,96)",
+          "sC": ""
+        },
+        {
+          "line": "LAS HAZAÑAS DEL SEÑOR., (Mi,,236)",
+          "sC": "as ab2"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Me castigó,, (La,m ,20)",
+          "sC": ""
+        },
+        {
+          "line": "ME CASTIGÓ. ",
+          "sC": "as ab3"
+        },
+        {
+          "line": "Me castigó, ",
+          "sC": ""
+        },
+        {
+          "line": "ME CASTIGÓ, ",
+          "sC": "as ab3"
+        },
+        {
+          "line": "pero no, (Fa,,64)",
+          "sC": ""
+        },
+        {
+          "line": "ME DEJÓ EN LA MUERTE., (Mi,,193)",
+          "sC": "as ab4"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

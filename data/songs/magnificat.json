@@ -1,0 +1,201 @@
+{
+  "id": "magnificat",
+  "tt": "Magníficat",
+  "title": "Magníficat",
+  "subtitle": "Lucas 1,46-55",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "108",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/magnificat.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=llevamealcielo",
+  "sig": "/src/index.html?canto=mariacasadebendicion",
+  "lizq": [
+    {
+      "line": "PROCLAMA MI ALMA, (Re,,11)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LA GRANDEZA DEL SEÑOR,, (Mi,,236)",
+      "sC": "as r1"
+    },
+    {
+      "line": "SE ALEGRA MI ESPÍRITU, ",
+      "sC": "as"
+    },
+    {
+      "line": "EN DIOS MI SALVADOR., (Re,,194)(La,,242)(Mi,,266)(La,,292)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Desde ahora me felicitarán, (La,,11)(Mi,,245)",
+      "sC": "tc"
+    },
+    {
+      "line": "todas las generaciones., (La,,173)",
+      "sC": ""
+    },
+    {
+      "line": "DESDE AHORA ME FELICITARÁN, (Mi,,288)",
+      "sC": "ta as"
+    },
+    {
+      "line": "TODAS LAS GENERACIONES., (La,,224)",
+      "sC": "as"
+    },
+    {
+      "line": "Porque el Poderoso, (Re,,158)",
+      "sC": "tc"
+    },
+    {
+      "line": "ha hecho grandes cosas en mí,, (La,,281)",
+      "sC": ""
+    },
+    {
+      "line": "su nombre es santo., (Mi,,42)(La,,150)",
+      "sC": ""
+    },
+    {
+      "line": "PORQUE EL PODEROSO, (La,7,19)(Re,,196)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HA HECHO GRANDES COSAS EN MÍ,, (La,,332)",
+      "sC": "as"
+    },
+    {
+      "line": "SU NOMBRE ES SANTO., (Mi,,58)(La,,175)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Él hace proezas con su brazo:, (La,,10)(Mi,,247)",
+      "sC": "tc"
+    },
+    {
+      "line": "dispersa a los soberbios de corazón., (La,,321)",
+      "sC": ""
+    },
+    {
+      "line": "ÉL HACE PROEZAS CON SU BRAZO:, (Mi,,299)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DISPERSA A LOS SOBERBIOS DE CORAZÓN., (La,,395)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Derriba a los poderosos, (Re,,48)(La,,187)",
+      "sC": "tc"
+    },
+    {
+      "line": "y ensalza a los humildes., (Mi,,52)(La,,191)",
+      "sC": ""
+    },
+    {
+      "line": "LOS HAMBRIENTOS, (La,7,17)(Re,,120)",
+      "sC": "ta as"
+    },
+    {
+      "line": "COLMA DE BIENES, (La,,122)",
+      "sC": "as"
+    },
+    {
+      "line": "Y A LOS RICOS DESPIDE VACÍOS., (Mi,,97)(La,,277)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Auxilia a Israel, su siervo,, (La,,10)(Mi,,203)",
+      "sC": "tc"
+    },
+    {
+      "line": "acordándose de la misericordia., (La,,257)",
+      "sC": ""
+    },
+    {
+      "line": "AUXILIA A ISRAEL, SU SIERVO,, (Mi,,236)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ACORDÁNDOSE DE LA MISERICORDIA., (La,,310)",
+      "sC": "as"
+    },
+    {
+      "line": "Como lo había prometido, (Re,,120)(La,,215)",
+      "sC": "tc"
+    },
+    {
+      "line": "en favor de Abraham., (Mi,,64)(La,,172)",
+      "sC": ""
+    },
+    {
+      "line": "COMO LO HABÍA PROMETIDO, (Re,,10)(La,,247)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EN FAVOR DE ABRAHAM., (Mi,,75)(La,,207)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "PROCLAMA MI ALMA, (Re,,11)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LA GRANDEZA DEL SEÑOR,, (Mi,,236)",
+          "sC": "as r1"
+        },
+        {
+          "line": "SE ALEGRA MI ESPÍRITU, ",
+          "sC": "as"
+        },
+        {
+          "line": "EN DIOS MI SALVADOR., (Re,,194)(La,,242)(Mi,,266)(La,,292)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

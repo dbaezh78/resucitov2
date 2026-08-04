@@ -1,0 +1,283 @@
+{
+  "id": "delantedelosangeles",
+  "tt": "Delante De Los Ángeles",
+  "title": "Delante De Los Ángeles",
+  "subtitle": "Salmo 138 (137)",
+  "category": [
+    "PreCatecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "49",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/delantedelosangeles.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=decidlealosdecorazoncansado",
+  "sig": "/src/index.html?canto=diadereposo",
+  "lizq": [
+    {
+      "line": "DELANTE DE LOS ÁNGELES, (Do,,15)(Mi,,181)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PARA TI YO CANTARÉ, SEÑOR., (Re,m9,191)",
+      "sC": "as"
+    },
+    {
+      "line": "DELANTE DE LOS ÁNGELES, (Sol,,47)",
+      "sC": "as"
+    },
+    {
+      "line": "PARA TI SALMODIARÉ., (Mi,,210)",
+      "sC": "as"
+    },
+    {
+      "line": "DARÉ GRACIAS A TU NOMBRE,, (Re,m9,227)",
+      "sC": "as"
+    },
+    {
+      "line": "PARA TI SALMODIARÉ., (Fa,,69)(Mi,,209)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te doy gracias, Señor, de todo corazón,, (Do,,12)(Mi,,190)(Re,m9,345)",
+      "sC": "tc"
+    },
+    {
+      "line": "porque tus promesas han superado tu fama., (Sol,,159)(Mi,,380)",
+      "sC": ""
+    },
+    {
+      "line": "Cuando te invoqué, tú me escuchaste,, (Re,m9,323)",
+      "sC": ""
+    },
+    {
+      "line": "diste fuerza y vigor a mi alma., (Fa,,80)(Mi,,241)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "DELANTE DE LOS ÁNGELES, (Do,,15)(Mi,,181)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PARA TI YO CANTARÉ, SEÑOR., (Re,m9,191)",
+          "sC": "as"
+        },
+        {
+          "line": "DELANTE DE LOS ÁNGELES, (Sol,,47)",
+          "sC": "as"
+        },
+        {
+          "line": "PARA TI SALMODIARÉ., (Mi,,210)",
+          "sC": "as"
+        },
+        {
+          "line": "DARÉ GRACIAS A TU NOMBRE,, (Re,m9,227)",
+          "sC": "as"
+        },
+        {
+          "line": "PARA TI SALMODIARÉ., (Fa,,15)(Mi,,209)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te darán gracias, Señor,, (Do,,11)(Mi,,212)",
+      "sC": "tc"
+    },
+    {
+      "line": "los reyes de la tierra,, (Re,m9,164)",
+      "sC": ""
+    },
+    {
+      "line": "al escuchar las palabras de tu boca;, (Sol,,95)(Mi,,312)",
+      "sC": ""
+    },
+    {
+      "line": "y cantarán en el camino del Señor,, (Re,m9,312)",
+      "sC": ""
+    },
+    {
+      "line": "dirán: «¡Qué grande es tu amor!»., (Fa,,32)(Mi,,282)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "DELANTE DE LOS ÁNGELES, (Do,,15)(Mi,,181)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PARA TI YO CANTARÉ, SEÑOR., (Re,m9,191)",
+          "sC": "as"
+        },
+        {
+          "line": "DELANTE DE LOS ÁNGELES, (Sol,,47)",
+          "sC": "as"
+        },
+        {
+          "line": "PARA TI SALMODIARÉ., (Mi,,210)",
+          "sC": "as"
+        },
+        {
+          "line": "DARÉ GRACIAS A TU NOMBRE,, (Re,m9,227)",
+          "sC": "as"
+        },
+        {
+          "line": "PARA TI SALMODIARÉ., (Fa,,15)(Mi,,209)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Sublime es el Señor,, (Do,,10)(Mi,,177)",
+      "sC": "tc"
+    },
+    {
+      "line": "que mira hacia el humilde,, (Re,m9,213)",
+      "sC": ""
+    },
+    {
+      "line": "conoce al soberbio, le mira desde lejos., (Sol,,34)(Mi,,337)",
+      "sC": ""
+    },
+    {
+      "line": "Mas cuando yo camino, ",
+      "sC": ""
+    },
+    {
+      "line": "en medio de la angustia,, (Re,m9,193)",
+      "sC": ""
+    },
+    {
+      "line": "extiende su mano y su diestra me salva., (Fa,,11)(Mi,,342)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "DELANTE DE LOS ÁNGELES, (Do,,15)(Mi,,181)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PARA TI YO CANTARÉ, SEÑOR., (Re,m9,191)",
+          "sC": "as"
+        },
+        {
+          "line": "DELANTE DE LOS ÁNGELES, (Sol,,47)",
+          "sC": "as"
+        },
+        {
+          "line": "PARA TI SALMODIARÉ., (Mi,,210)",
+          "sC": "as"
+        },
+        {
+          "line": "DARÉ GRACIAS A TU NOMBRE,, (Re,m9,227)",
+          "sC": "as"
+        },
+        {
+          "line": "PARA TI SALMODIARÉ., (Fa,,15)(Mi,,209)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor terminará en mí lo comenzado,, (Do,,12)(Mi,,231)(Re,m9,346)",
+      "sC": "tc"
+    },
+    {
+      "line": "porque es eterno su amor., (Sol,,13)(Mi,,230)",
+      "sC": ""
+    },
+    {
+      "line": "No abandona la obra de sus manos., (Re,m9,295)",
+      "sC": ""
+    },
+    {
+      "line": "¡Señor, no nos abandones!, (Fa,,20)(Mi,,206)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "DELANTE DE LOS ÁNGELES, (Do,,15)(Mi,,181)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PARA TI YO CANTARÉ, SEÑOR., (Re,m9,191)",
+          "sC": "as"
+        },
+        {
+          "line": "DELANTE DE LOS ÁNGELES, (Sol,,47)",
+          "sC": "as"
+        },
+        {
+          "line": "PARA TI SALMODIARÉ., (Mi,,210)",
+          "sC": "as"
+        },
+        {
+          "line": "DARÉ GRACIAS A TU NOMBRE,, (Re,m9,227)",
+          "sC": "as"
+        },
+        {
+          "line": "PARA TI SALMODIARÉ., (Fa,,15)(Mi,,209)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

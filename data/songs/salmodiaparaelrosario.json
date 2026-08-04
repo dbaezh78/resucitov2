@@ -1,0 +1,152 @@
+{
+  "id": "salmodiaparaelrosario",
+  "tt": "Salmodia Para El Rosario",
+  "title": "Salmodia Para El Rosario",
+  "subtitle": "Santo Rosario",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "209",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/salmodiaparaelrosario.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=salmodiaparaelevangelio",
+  "sig": "/src/index.html?canto=salmodiaparaelsalmoresponsorial",
+  "lizq": [
+    {
+      "line": "PADRE NUESTRO ",
+      "sC": "ttred",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Padre nuestro, que estás en el cielo,, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "santificado sea tu Nombre; ",
+      "sC": ""
+    },
+    {
+      "line": "venga a nosotros tu reino; ",
+      "sC": ""
+    },
+    {
+      "line": "hágase tu voluntad en la tierra como en el cielo., (Si,7,419)(Mi,m,459)",
+      "sC": ""
+    },
+    {
+      "line": "DANOS HOY NUESTRO PAN DE CADA DÍA;, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PERDONA NUESTRAS OFENSAS, ",
+      "sC": "as"
+    },
+    {
+      "line": "COMO TAMBIÉN NOSOTROS",
+      "sC": "as"
+    },
+    {
+      "line": "PERDONAMOS A LOS QUE NOS OFENDEN; ",
+      "sC": "as"
+    },
+    {
+      "line": "NO NOS DEJES CAER EN LA TENTACIÓN, ",
+      "sC": "as"
+    },
+    {
+      "line": "Y LÍBRANOS DEL MAL, AMÉN., (Mi,m,245)(Si,7,289)(Mi,m,331)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AVE MARÍA ",
+      "sC": "ttred",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dios te Salve, María,, (Mi,m,18)",
+      "sC": "tc"
+    },
+    {
+      "line": "llena eres de gracia, el Señor es contigo",
+      "sC": ""
+    },
+    {
+      "line": "bendita tú eres entre todas las mujeres, ",
+      "sC": ""
+    },
+    {
+      "line": "y bendito es el fruto de tu vientre Jesús., (Si,7,350)(Mi,m,395)",
+      "sC": ""
+    },
+    {
+      "line": "SANTA MARIA, MADRE DE DIOS,, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "RUEGA POR NOSOTROS, PECADORES, AHORA ",
+      "sC": "as"
+    },
+    {
+      "line": "Y EN LA HORA DE NUESTRA MUERTE. AMÉN., (Mi,m,390)(Si,7,432)(Mi,m,474)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "GLORIA ",
+      "sC": "ttred",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Gloria al Padre, y al Hijo, y al Espíritu Santo., (Sol,,14)(Re,,381)(Sol,,413)",
+      "sC": "tc"
+    },
+    {
+      "line": "COMO ERA EN EL PRINCIPIO, AHORA Y SIEMPRE,(La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "POR LOS SIGLOS DE LOS SIGLOS. AMÉN., (Mi,m,353)(Si,7,398)(Mim,,440)",
+      "sC": "as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

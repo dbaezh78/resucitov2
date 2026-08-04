@@ -1,0 +1,481 @@
+{
+  "id": "cantodelosnumeros",
+  "tt": "Canto De Los Numeros",
+  "title": "Canto De Los Numeros",
+  "subtitle": "Tradición Hebrea",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Niños",
+    "Pentecostés"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "300",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/cantodelosnumeros.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=porqueestanocheesdiferente",
+  "sig": "/src/index.html?canto=seencontrarondosangeles",
+  "lizq": [
+    {
+      "line": "¿Quién sabe qué es el UNO?, (Mi,m,36)(Si,7,141)(Mi,m,236)",
+      "sC": "td as"
+    },
+    {
+      "line": "¿Quién sabe qué es el UNO?, (Si,7,141)(Mi,m,236)",
+      "sC": "td as"
+    },
+    {
+      "line": "Yo sé lo que es el UNO. Yo sé lo que es el UNO, (La,m,20)(Mi,m,194)(Si,7,269)(Mi,m,414)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Quién sabe qué es el DOS?, (Mi,m,20)(Si,7,141)(Mi,m,238)",
+      "sC": "td as"
+    },
+    {
+      "line": "¿Quién sabe qué es el DOS?, (Si,7,141)(Mi,m,238)",
+      "sC": "td as"
+    },
+    {
+      "line": "Yo sé lo que es el DOS. Yo sé lo que es el DOS, (La,m,20)(Mi,m,192)(Si,7,271)(Mi,m,416)",
+      "sC": ""
+    },
+    {
+      "line": "DOS las tablas de la Alianza,, (Sol,,14)(Re,,116)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Quién sabe qué es el TRES?, (Mi,m,20)(Si,7,140)(Mi,m,238)",
+      "sC": "td as"
+    },
+    {
+      "line": "¿Quién sabe qué es el TRES?, (Si,7,140)(Mi,m,238)",
+      "sC": "td as"
+    },
+    {
+      "line": "Yo sé lo que es el TRES. Yo sé lo que es el TRES, (La,m,20)(Mi,m,190)(Si,7,278)(Mi,m,425)",
+      "sC": ""
+    },
+    {
+      "line": "TRES, TRES son los patriarcas,, (Sol,,14)(Re,,225)",
+      "sC": ""
+    },
+    {
+      "line": "DOS las tablas de la ALIANZA,, (Mi,m,20)(Si,7,119)(Mi,m,225)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Quién sabe qué es el CUATRO?, (Mi,m,20)(Si,7,141)(Mi,m,239)",
+      "sC": "td as"
+    },
+    {
+      "line": "¿Quién sabe qué es el CUATRO?, (Si,7,141)(Mi,m,237)",
+      "sC": "td as"
+    },
+    {
+      "line": "Yo sé lo que es el Cuatro.Yo sé lo que es el Cuatro, (La,m,20)(Mi,m,196)(Si,7,293)(Mi,m,433)",
+      "sC": ""
+    },
+    {
+      "line": "CUATRO, CUATRO son las NOCHES,, (Sol,,14)(Re,,279)",
+      "sC": ""
+    },
+    {
+      "line": "TRES, TRES son los patriarcas,, (Mi,m,20)(Si,7,83)(Mi,m,234)",
+      "sC": ""
+    },
+    {
+      "line": "DOS las tablas de la ALIANZA,, (Mi,m,20)(Si,7,105)(Mi,m,239)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Quién sabe qué es el CINCO?, (Mi,m,20)(Si,7,141)(Mi,m,239)",
+      "sC": "td as"
+    },
+    {
+      "line": "¿Quién sabe qué es el CINCO?, (Si,7,141)(Mi,m,239)",
+      "sC": "td as"
+    },
+    {
+      "line": "Yo sé lo que es el CINCO. Yo sé lo que es el CINCO, (La,m,20)(Mi,m,193)(Si,7,287)(Mi,m,436)",
+      "sC": ""
+    },
+    {
+      "line": "CINCO, CINCO los libros de la Ley,, (Sol,,14)(Re,,299)",
+      "sC": ""
+    },
+    {
+      "line": "CUATRO, CUATRO son las NOCHES,, (Mi,m,20)(Si,7,121)(Mi,m,288)",
+      "sC": ""
+    },
+    {
+      "line": "TRES, TRES son los patriarcas,, (Mi,m,20)(Si,7,83)(Mi,m,242)",
+      "sC": ""
+    },
+    {
+      "line": "DOS las tablas de la ALIANZA,, (Mi,m,20)(Si,7,113)(Mi,m,236)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Quién sabe qué es el SEIS?, (Mi,m,20)(Si,7,141)(Mi,m,239)",
+      "sC": "td as"
+    },
+    {
+      "line": "¿Quién sabe qué es el SEIS?, (Si,7,141)(Mi,m,239)",
+      "sC": "td as"
+    },
+    {
+      "line": "Yo sé lo que es el SEIS. Yo sé lo que es el SEIS, (La,m,20)(Mi,m,192)(Si,7,271)(Mi,m,417)",
+      "sC": ""
+    },
+    {
+      "line": "SEIS los días de la creación,, (Sol,,14)(Re,,222)",
+      "sC": ""
+    },
+    {
+      "line": "CINCO, CINCO los libros de la Ley,, (Mi,m,20)(Si,7,99)(Mi,m,305)",
+      "sC": ""
+    },
+    {
+      "line": "CUATRO, CUATRO son las NOCHES,, (Mi,m,20)(Si,7,114)(Mi,m,278)",
+      "sC": ""
+    },
+    {
+      "line": "TRES, TRES son los patriarcas,, (Mi,m,20)(Si,7,90)(Mi,m,240)",
+      "sC": ""
+    },
+    {
+      "line": "DOS las tablas de la ALIANZA,, (Mi,m,20)(Si,7,113)(Mi,m,235)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "¿Quién sabe qué es el SIETE?, (Mi,m,20)(Si,7,141)(Mi,m,239)",
+      "sC": "td as"
+    },
+    {
+      "line": "¿Quién sabe qué es el SIETE?, (Si,7,141)(Mi,m,239)",
+      "sC": "td as"
+    },
+    {
+      "line": "Yo sé lo que es el SIETE. Yo sé lo que es el SIETE, (La,m,20)(Mi,m,190)(Si,7,284)(Mi,m,429)",
+      "sC": ""
+    },
+    {
+      "line": "SIETE, SIETE los pueblos enemigos,, (Sol,,14)(Re,,265)",
+      "sC": ""
+    },
+    {
+      "line": "SEIS los días de la creación,, (Mi,m,20)(Si,7,103)(Mi,m,226)",
+      "sC": ""
+    },
+    {
+      "line": "CINCO, CINCO los libros de la Ley,, (Mi,m,20)(Si,7,100)(Mi,m,306)",
+      "sC": ""
+    },
+    {
+      "line": "CUATRO, CUATRO son las NOCHES,, (Mi,m,20)(Si,7,119)(Mi,m,277)",
+      "sC": ""
+    },
+    {
+      "line": "TRES, TRES son los patriarcas,, (Mi,m,20)(Si,7,89)(Mi,m,234)",
+      "sC": ""
+    },
+    {
+      "line": "DOS las tablas de la ALIANZA,, (Mi,m,20)(Si,7,112)(Mi,m,238)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Quién sabe qué es el OCHO?, (Mi,m,20)(Si,7,141)(Mi,m,239)",
+      "sC": "td as"
+    },
+    {
+      "line": "¿Quién sabe qué es el OCHO?, (Si,7,141)(Mi,m,239)",
+      "sC": "td as"
+    },
+    {
+      "line": "Yo sé lo que es el OCHO. Yo sé lo que es el OCHO, (La,m,20)(Mi,m,194)(Si,7,283)(Mi,m,430)",
+      "sC": ""
+    },
+    {
+      "line": "OCHO, OCHO los nombres de arca,, (Sol,,14)(Re,,296)",
+      "sC": ""
+    },
+    {
+      "line": "SIETE, SIETE los pueblos enemigos,, (Mi,m,20)(Si,7,95)(Mi,m,285)",
+      "sC": ""
+    },
+    {
+      "line": "SEIS los días de la creación,, (Mi,m,20)(Si,7,105)(Mi,m,221)",
+      "sC": ""
+    },
+    {
+      "line": "CINCO, CINCO los libros de la Ley,, (Mi,m,20)(Si,7,99)(Mi,m,303)",
+      "sC": ""
+    },
+    {
+      "line": "CUATRO, CUATRO son las NOCHES,, (Mi,m,20)(Si,7,117)(Mi,m,266)",
+      "sC": ""
+    },
+    {
+      "line": "TRES, TRES son los patriarcas,, (Mi,m,20)(Si,7,86)(Mi,m,238)",
+      "sC": ""
+    },
+    {
+      "line": "DOS las tablas de la ALIANZA,, (Mi,m,20)(Si,7,113)(Mi,m,238)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Quién sabe qué es el NUEVE?, (Mi,m,20)(Si,7,141)(Mi,m,239)",
+      "sC": "td as"
+    },
+    {
+      "line": "¿Quién sabe qué es el NUEVE?, (Si,7,141)(Mi,m,239)",
+      "sC": "td as"
+    },
+    {
+      "line": "Yo sé lo que es el Nueve.Yo sé lo que es el Nueve,, (La,m,20)(Mi,m,191)(Si,7,290)(Mi,m,433)",
+      "sC": ""
+    },
+    {
+      "line": "NUEVE meses para dar a luz,, (Sol,,14)(Re,,256)",
+      "sC": ""
+    },
+    {
+      "line": "OCHO, OCHO los nombres de arca,, (Mi,m,20)(Si,7,95)(Mi,m,306)",
+      "sC": ""
+    },
+    {
+      "line": "SIETE, SIETE los pueblos enemigos,, (Mi,m,20)(Si,7,98)(Mi,m,283)",
+      "sC": ""
+    },
+    {
+      "line": "SEIS los días de la creación,, (Mi,m,20)(Si,7,104)(Mi,m,222)",
+      "sC": ""
+    },
+    {
+      "line": "CINCO, CINCO los libros de la Ley,, (Mi,m,20)(Si,7,102)(Mi,m,302)",
+      "sC": ""
+    },
+    {
+      "line": "CUATRO, CUATRO son las NOCHES,, (Mi,m,20)(Si,7,125)(Mi,m,268)",
+      "sC": ""
+    },
+    {
+      "line": "TRES, TRES son los patriarcas,, (Mi,m,20)(Si,7,85)(Mi,m,234)",
+      "sC": ""
+    },
+    {
+      "line": "DOS las tablas de la ALIANZA,, (Mi,m,20)(Si,7,113)(Mi,m,234)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Quién sabe qué es el DIEZ?, (Mi,m,20)(Si,7,141)(Mi,m,239)",
+      "sC": "td as"
+    },
+    {
+      "line": "¿Quién sabe qué es el DIEZ?, (Si,7,141)(Mi,m,239)",
+      "sC": "td as"
+    },
+    {
+      "line": "Yo sé lo que es el DIEZ. Yo sé lo que es el DIEZ, (La,m,20)(Mi,m,192)(Si,7,278)(Mi,m,419)",
+      "sC": ""
+    },
+    {
+      "line": "DIEZ, DIEZ son los mandamientos,, (Sol,,14)(Re,,256)",
+      "sC": ""
+    },
+    {
+      "line": "NUEVE meses para dar a luz,, (Mi,m,20)(Si,7,102)(Mi,m,263)",
+      "sC": ""
+    },
+    {
+      "line": "OCHO, OCHO los nombres del arca,, (Mi,m,20)(Si,7,96)(Mi,m,310)",
+      "sC": ""
+    },
+    {
+      "line": "SIETE, SIETE los pueblos enemigos,, (Mi,m,20)(Si,7,95)(Mi,m,287)",
+      "sC": ""
+    },
+    {
+      "line": "SEIS los días de la creación,, (Mi,m,20)(Si,7,103)(Mi,m,225)",
+      "sC": ""
+    },
+    {
+      "line": "CINCO, CINCO los libros de la Ley,, (Mi,m,20)(Si,7,103)(Mi,m,303)",
+      "sC": ""
+    },
+    {
+      "line": "CUATRO, CUATRO son las NOCHES,, (Mi,m,20)(Si,7,122)(Mi,m,281)",
+      "sC": ""
+    },
+    {
+      "line": "TRES, TRES son los patriarcas,, (Mi,m,20)(Si,7,89)(Mi,m,241)",
+      "sC": ""
+    },
+    {
+      "line": "DOS las tablas de la ALIANZA,, (Mi,m,20)(Si,7,115)(Mi,m,245)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)",
+      "sC": ""
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

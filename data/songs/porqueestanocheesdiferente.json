@@ -1,0 +1,209 @@
+{
+  "id": "porqueestanocheesdiferente",
+  "tt": "Por Qué Esta Noche Es Diferente",
+  "title": "Por Qué Esta Noche Es Diferente",
+  "subtitle": "Haggadá de Pesaj - Melodía hebraica",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Niños"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "5",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "133",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/porqueestanocheesdiferente.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=porelamordemisamigos",
+  "sig": "/src/index.html?canto=porquelasgentesconjuran",
+  "lizq": [
+    {
+      "line": "¿Por qué esta noche es diferente, (La,m,20)",
+      "sC": "tn"
+    },
+    {
+      "line": "de todas las otras noches?, (Re,m,46)(La,m,194)",
+      "sC": ""
+    },
+    {
+      "line": "DE TODAS LAS OTRAS NOCHES., (Re,m,49)(La,m,237)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Que todas las otras noches, (La,m,20)",
+      "sC": "tn"
+    },
+    {
+      "line": "nos vamos a la cama pronto, ",
+      "sC": "junte"
+    },
+    {
+      "line": "y no nos quedamos levantados., (Re,m,36)(La,m,255)",
+      "sC": ""
+    },
+    {
+      "line": "Y NO NOS QUEDAMOS LEVANTADOS., (Re,m,37)(La,m,301)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Mas esta noche, esta noche, (Re,m,64)(La,m,180)",
+      "sC": "tn"
+    },
+    {
+      "line": "estamos levantados., (Mi,,34)(La,m,153)",
+      "sC": ""
+    },
+    {
+      "line": "A MAS ESTA NOCHE, ESTA NOCHE, (Re,m,88)(La,m,219)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ESTAMOS LEVANTADOS., (Mi,,42)(La,m,178)",
+      "sC": "as"
+    },
+    {
+      "line": "¿Por qué esta noche es diferente, (La,m,20)",
+      "sC": "tn"
+    },
+    {
+      "line": "de todas las otras noches?, (Re,m,47)(La,m,194)",
+      "sC": ""
+    },
+    {
+      "line": "DE TODAS LAS OTRAS NOCHES., (Re,m,49)(La,m,234)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Que todas las otras noches, (La,m,20)",
+      "sC": "tn"
+    },
+    {
+      "line": "nos vamos a la cama pronto, ",
+      "sC": "junte"
+    },
+    {
+      "line": "después de haber cenado., (Re,m,64)(La,m,2214",
+      "sC": ""
+    },
+    {
+      "line": "DESPUÉS DE HABER CENADO., (Re,m,73)(La,m,253)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Mas esta noche, esta noche hemos ayunado., (Re,m,65)(La,m,172)(Mi,,290)(La,m,398)",
+      "sC": "tn"
+    },
+    {
+      "line": "MAS ESTA NOCHE, ESTA NOCHE, (Re,m,68)(La,m,195)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HEMOS AYUNADO., (Mi,,23)(La,m,135)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "¿Por qué esta noche es diferente, (La,m,20)",
+      "sC": "tn"
+    },
+    {
+      "line": "de todas las otras noches?, (Re,m,48)(La,m,194)",
+      "sC": ""
+    },
+    {
+      "line": "DE TODAS LAS OTRAS NOCHES., (Re,m,52)(La,m,236)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Que todas las otras noches, (La,m,20)",
+      "sC": "tn"
+    },
+    {
+      "line": "nos vamos a la cama pronto, ",
+      "sC": "junte"
+    },
+    {
+      "line": "y no esperamos nada., (Re,m,37)(La,m,175)",
+      "sC": ""
+    },
+    {
+      "line": "Y NO ESPERAMOS NADA., (Re,m,35)(La,m,203)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Mas esta noche, esta noche, (Re,m,65)(La,m,180)",
+      "sC": "tn"
+    },
+    {
+      "line": "estamos esperando., (Mi,,33)(La,m,143)",
+      "sC": ""
+    },
+    {
+      "line": "MAS ESTA NOCHE, ESTA NOCHE, (Re,m,67)(La,m,198)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ESTAMOS ESPERANDO., (Mi,,46)(La,m,170)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿POR QUÉ ESTA NOCHE ES DIFERENTE, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DE TODAS LAS OTRAS NOCHES?, (Re,m,52)(La,m,237)",
+      "sC": "as"
+    },
+    {
+      "line": "DE TODAS LAS OTRAS NOCHES., (Re,m,53)(La,m,243)",
+      "sC": "as"
+    },
+    {
+      "line": "Para estar levantados,, (Re,m,86)",
+      "sC": "tn"
+    },
+    {
+      "line": "para haber ayunado,, (La,m,90)",
+      "sC": ""
+    },
+    {
+      "line": "para estar todos esperando., (Mi,,83)(La,m,222)",
+      "sC": ""
+    },
+    {
+      "line": "PARA ESTAR LEVANTADOS,, (Re,m,104)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PARA HABER AYUNADO,, (La,m,109)",
+      "sC": "as"
+    },
+    {
+      "line": "PARA ESTAR TODOS ESPERANDO., (Mi,,103)(La,m,273)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,212 @@
+{
+  "id": "lapalomavolo",
+  "tt": "La Paloma Voló ",
+  "title": "La Paloma Voló ",
+  "subtitle": "Oda XXIV de Salomón",
+  "category": [
+    "Eleccion"
+  ],
+  "catCanto": "Eleccion",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "242",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/lapalomavolo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=hermosaeresamigamia",
+  "sig": "/src/index.html?canto=merobasteelcorazon",
+  "lizq": [
+    {
+      "line": "LA PALOMA VOLÓ, (Mi,m,20)",
+      "sC": "tc as"
+    },
+    {
+      "line": "SOBRE LA CABEZA DEL SEÑOR, (Si,7,281)",
+      "sC": "as"
+    },
+    {
+      "line": "Y SALMODIÓ SOBRE ÉL., (Mi,m,215)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y EL SEÑOR MOSTRÓ, ",
+      "sC": "as"
+    },
+    {
+      "line": "EL DISEÑO DE SU AMOR,, (La,m6,213)",
+      "sC": "as"
+    },
+    {
+      "line": "DISEÑO DE ARTE INEFABLE, (Si,7,43)",
+      "sC": "as"
+    },
+    {
+      "line": "PARA CADA HOMBRE., (Mi,m,141)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y los abismos se abrieron,, (La,m,20)(Si,7,214)",
+      "sC": "tc"
+    },
+    {
+      "line": "y se oyeron terribles gritos, (La,m,72)",
+      "sC": ""
+    },
+    {
+      "line": "como de mujeres en parto., (Si,7,222)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y el Señor destruyó los abismos, (Do,,78)",
+      "sC": ""
+    },
+    {
+      "line": "con la luz de su victoria., (Si,7,194)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LA PALOMA VOLÓ, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SOBRE LA CABEZA DEL SEÑOR, (Si,7,281)",
+          "sC": "as"
+        },
+        {
+          "line": "Y SALMODIÓ SOBRE ÉL., (Mi,m,215)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Y EL SEÑOR MOSTRÓ, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL DISEÑO DE SU AMOR,, (La,m6,213)",
+          "sC": "as"
+        },
+        {
+          "line": "DISEÑO DE ARTE INEFABLE, (Si,7,43)",
+          "sC": "as"
+        },
+        {
+          "line": "PARA CADA HOMBRE., (Mi,m,141)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Mas los diseños se perdieron, (La,m,20)(Si,7,242)",
+      "sC": "tc"
+    },
+    {
+      "line": "y lloraban los ángeles del cielo;, (La,m,53)(Si,7,266)",
+      "sC": ""
+    },
+    {
+      "line": "los diseños de aquellos, (Do,,66)",
+      "sC": ""
+    },
+    {
+      "line": "que no siguieron hacer su voluntad., (Si,7,316)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque el Señor ha mostrado su camino,, (Do,,14)(Si,7,361)",
+      "sC": ""
+    },
+    {
+      "line": "y ha dado a aquellos que lo siguen, (Do,,63)",
+      "sC": ""
+    },
+    {
+      "line": "la gracia de revestirse de su santidad., (Si,7,339)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LA PALOMA VOLÓ, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SOBRE LA CABEZA DEL SEÑOR, (Si,7,281)",
+          "sC": "as"
+        },
+        {
+          "line": "Y SALMODIÓ SOBRE ÉL., (Mi,m,215)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Y EL SEÑOR MOSTRÓ, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL DISEÑO DE SU AMOR,, (La,m6,213)",
+          "sC": "as"
+        },
+        {
+          "line": "DISEÑO DE ARTE INEFABLE, (Si,7,43)",
+          "sC": "as"
+        },
+        {
+          "line": "PARA CADA HOMBRE., (Mi,m,141)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

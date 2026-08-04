@@ -1,0 +1,250 @@
+{
+  "id": "benedictus",
+  "tt": "Benedictus",
+  "title": "Benedictus",
+  "subtitle": "Lucas 1,67-80",
+  "category": [
+    "PreCatecumenado",
+    "Antiguo Testamento",
+    "Salmodias"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "30",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/benedictus.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=benditoseadios",
+  "sig": "/src/index.html?canto=cantadadios",
+  "lizq": [
+    {
+      "line": "Bendito sea el Señor,,(Re,m,21)",
+      "sC": "tc"
+    },
+    {
+      "line": "DIOS DE ISRAEL,,(Sol,m,27)(Re,m,138)",
+      "sC": "ta as"
+    },
+    {
+      "line": "porque ha visitado y redimido a su pueblo,",
+      "sC": "tc"
+    },
+    {
+      "line": "SUSCITÁNDONOS, (Sol,m,78)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UNA FUERZA DE SALVACIÓN, (Re,m,250)",
+      "sC": "as"
+    },
+    {
+      "line": "EN LA CASA DE DAVID, SU SIERVO., (La,7,81)(Re,m,286)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Según lo había predicho desde antiguo, (Sol,m,23)(Re,m,336)",
+      "sC": "tc"
+    },
+    {
+      "line": "por boca de sus santos profetas., (Sol,m,56)(Re,m,270)",
+      "sC": ""
+    },
+    {
+      "line": "Es la salvación que nos libra de nuestros enemigos, (La,7,19)",
+      "sC": ""
+    },
+    {
+      "line": "y de la mano de todos los que nos odian., (Re,m,350)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Realizando así la misericordia, (Sol,m,66)",
+      "sC": ""
+    },
+    {
+      "line": "que tuvo con nuestros padres,,(Re,m,235)",
+      "sC": ""
+    },
+    {
+      "line": "recordando su santa alianza, (Sol,m,70)(Re,m,231)",
+      "sC": ""
+    },
+    {
+      "line": "y el juramento que juró, (La,7,103)",
+      "sC": ""
+    },
+    {
+      "line": "a nuestro padre Abraham,,(Re,m,220)",
+      "sC": ""
+    },
+    {
+      "line": "para concedernos que, libres de todo temor,,(Sol,m,129)(Re,m,400)",
+      "sC": ""
+    },
+    {
+      "line": "arrancados de la mano de nuestros enemigos,,(Sol,m,69)(Re,m,396)",
+      "sC": ""
+    },
+    {
+      "line": "le sirvamos con santidad y justicia,,(La,7,62)",
+      "sC": ""
+    },
+    {
+      "line": "en su presencia, todos nuestros días., (Re,m,104)(La,7,179)(Re,m,327)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "BENDITO SEA EL SEÑOR, (Re,m,21)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DIOS DE ISRAEL,(Sol,m,27)(Re,m,138)",
+          "sC": "as"
+        },
+        {
+          "line": "porque ha visitado y redimido a su pueblo,",
+          "sC": "tc"
+        },
+        {
+          "line": "SUSCITÁNDONOS, (Sol,m,78)",
+          "sC": "ta as"
+        },
+        {
+          "line": "UNA FUERZA DE SALVACIÓN, (Re,m,250)",
+          "sC": "as"
+        },
+        {
+          "line": "EN LA CASA DE DAVID, SU SIERVO., (La,7,81)(Re,m,286)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y a ti, niño,,(Sol,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "te llamarán profeta del Altísimo,,(Re,m,251)",
+      "sC": ""
+    },
+    {
+      "line": "porque irás delante del Señor, (Sol,m,95)",
+      "sC": ""
+    },
+    {
+      "line": "a preparar sus caminos,,(Re,m,189)",
+      "sC": ""
+    },
+    {
+      "line": "anunciando a su pueblo la salvación,,(La,7,68)",
+      "sC": ""
+    },
+    {
+      "line": "el perdón de todos sus pecados., (Re,m,259)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por la entrañable misericordia, (Sol,m,136)",
+      "sC": ""
+    },
+    {
+      "line": "de nuestro Dios,,(Re,m,131)",
+      "sC": ""
+    },
+    {
+      "line": "nos visitará el sol que nace de lo alto,,(Sol,m,102)(Re,m,335)",
+      "sC": ""
+    },
+    {
+      "line": "para iluminar a los que viven en tinieblas, (La,7,115)",
+      "sC": ""
+    },
+    {
+      "line": "y en sombra de muerte,,(Re,m,185)",
+      "sC": ""
+    },
+    {
+      "line": "para guiar nuestros pasos, (La,7,87)",
+      "sC": ""
+    },
+    {
+      "line": "por el camino de la paz., (Re,m,207)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "BENDITO SEA EL SEÑOR, (Re,m,21)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DIOS DE ISRAEL,(Sol,m,27)(Re,m,138)",
+          "sC": "as"
+        },
+        {
+          "line": "porque ha visitado y redimido a su pueblo,",
+          "sC": "tc"
+        },
+        {
+          "line": "SUSCITÁNDONOS, (Sol,m,78)",
+          "sC": "ta as"
+        },
+        {
+          "line": "UNA FUERZA DE SALVACIÓN, (Re,m,250)",
+          "sC": "as"
+        },
+        {
+          "line": "EN LA CASA DE DAVID, SU SIERVO., (La,7,81)(Re,m,286)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

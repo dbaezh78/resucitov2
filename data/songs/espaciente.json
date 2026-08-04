@@ -1,0 +1,264 @@
+{
+  "id": "espaciente",
+  "tt": "Es paciente",
+  "title": "Es paciente",
+  "subtitle": "Himno al Espíritu Santo (Kiko Argüello) ",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Entrada",
+    "Comunión"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "68",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/espaciente.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ereshermoso",
+  "sig": "/src/index.html?canto=escondemeenloocultodetutienda",
+  "lizq": [
+    {
+      "line": "El Espíritu Santo es el yugo suave,, (La,m,20)(Mi,,298)",
+      "sC": "tc"
+    },
+    {
+      "line": "es el yugo suave y ligero., (La,m,205)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "EL ESPÍRITU SANTO ES EL YUGO SUAVE,, (La,m,21)(Mi,,349)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ES EL YUGO SUAVE Y LIGERO., (La,m,244)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Lleno de comprensión,, (Re,m,21)(Mi,,196)",
+      "sC": "tc"
+    },
+    {
+      "line": "lleno de misericordia con nuestras faltas,, (Re,m,21)(Mi,,348)",
+      "sC": ""
+    },
+    {
+      "line": "lleno de ternura y compasión, (Fa,,11)",
+      "sC": ""
+    },
+    {
+      "line": "y de amor sin límites., (Mi,,145)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ES PACIENTE, ES BENIGNO,, (La,m,19)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ES EL SUMO BIEN,, (Mi,,151)",
+      "sC": "as"
+    },
+    {
+      "line": "ES EL DON DE DIOS,, (La,m,165)",
+      "sC": "as"
+    },
+    {
+      "line": "ES LA GARANTÍA DE LA VIDA ETERNA,, (Re,m,22)(Mi,,310)",
+      "sC": "as"
+    },
+    {
+      "line": "ES EL «PARÁCLITO»., (Re,m,21)(Mi,,116)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Habitando en el hombre,, (La,m,21)",
+      "sC": "tc"
+    },
+    {
+      "line": "nos perdona siempre,, (Mi,,148)",
+      "sC": ""
+    },
+    {
+      "line": "habitando en el hombre,, ",
+      "sC": ""
+    },
+    {
+      "line": "espera siempre., (La,m,96)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Lo comprende todo, lo excusa todo., (Re,m,21)(Mi,,307)",
+      "sC": ""
+    },
+    {
+      "line": "Nos defiende siempre,, (Re,m,21)",
+      "sC": ""
+    },
+    {
+      "line": "y nos enseña a ser pacientes, (Fa,,230)",
+      "sC": ""
+    },
+    {
+      "line": "con nuestros pecados., (Mi,,195)",
+      "sC": ""
+    },
+    {
+      "line": "Nos dice quiénes somos,, (Re,m,23)(Mi,,186)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "y nos dice dónde andamos,, (Re,m,19)(Mi,,209)",
+      "sC": ""
+    },
+    {
+      "line": "cuál es el camino y porqué sufrimos., (Fa,,10)(Mi,,299)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ES PACIENTE, ES BENIGNO, (La,m,19)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ES EL SUMO BIEN,, (Mi,,151)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL DON DE DIOS,, (La,m,165)",
+          "sC": "as"
+        },
+        {
+          "line": "ES LA GARANTÍA DE LA VIDA ETERNA,, (Re,m,22)(Mi,,310)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL «PARÁCLITO»., (Re,m,21)(Mi,,116)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Nos dice que en nuestra vida todo es santo,, (La,m,20)(Mi,,374)",
+      "sC": "tc"
+    },
+    {
+      "line": "que nuestra historia es santa,, (La,m,242)",
+      "sC": ""
+    },
+    {
+      "line": "y nos conduce al abandono total en Cristo., (Re,m,20)(Mi,,366)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En Él nada se pretende,, (Re,m,22)(Mi,,181)",
+      "sC": ""
+    },
+    {
+      "line": "se acepta todo, se soporta todo., (Fa,,57)(Mi,,274)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque parecerse al Señor sobre la Cruz, (Re,m,22)(Mi,,366)",
+      "sC": ""
+    },
+    {
+      "line": "es nuestra gloria, es la verdad,, (Re,m,129)",
+      "sC": ""
+    },
+    {
+      "line": "es la Santidad, es nuestro ser Cristiano., (Fa,,116)(Mi,,341)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ES PACIENTE, ES BENIGNO, (La,m,19)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ES EL SUMO BIEN,, (Mi,,151)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL DON DE DIOS,, (La,m,165)",
+          "sC": "as"
+        },
+        {
+          "line": "ES LA GARANTÍA DE LA VIDA ETERNA,, (Re,m,22)(Mi,,310)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL «PARÁCLITO»., (Re,m,21)(Mi,,116)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "sourceBook": "resucito"
+}

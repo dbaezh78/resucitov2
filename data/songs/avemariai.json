@@ -1,0 +1,104 @@
+{
+  "id": "avemariai",
+  "tt": "Ave María I",
+  "title": "Ave María I",
+  "subtitle": "Lc 1,28ss",
+  "category": [
+    "PreCatecumenado",
+    "Virgen Maria",
+    "Final",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "21",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/avemariai.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=asihablaelamen",
+  "sig": "/src/index.html?canto=avemariaii(1984)",
+  "lizq": [
+    {
+      "line": "Ave María,,(Do,,10)(Mi,,77)(La,m,110)",
+      "sC": "tc"
+    },
+    {
+      "line": "llena de gracia,,(Do,,10)(Mi,,105)(La,m,142)",
+      "sC": ""
+    },
+    {
+      "line": "el Señor es contigo,,(Fa,,10)(Mi,,155)",
+      "sC": ""
+    },
+    {
+      "line": "bendita tú eres, (La,m,121)",
+      "sC": ""
+    },
+    {
+      "line": "entre todas las mujeres,,(Rem,,73)(Mi,,189)",
+      "sC": ""
+    },
+    {
+      "line": "y bendito es el fruto, (La,m,163)",
+      "sC": ""
+    },
+    {
+      "line": "de tu vientre, Jesús., (Rem,,72)(Mi,,167)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SANTA MARÍA,,(Do,,10)(Mi,,112)(La,m,151)",
+      "sC": "ta as"
+    },
+    {
+      "line": "MADRE DE DIOS,,(Do,,10)(Mi,,133)(La,m,169)",
+      "sC": "as"
+    },
+    {
+      "line": "RUEGA POR NOSOTROS, (Fa,,10)(Mi,,172)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE SOMOS PECADORES,,(La,m,196)",
+      "sC": "as"
+    },
+    {
+      "line": "RUEGA AHORA, (Rem,,106)",
+      "sC": "as"
+    },
+    {
+      "line": "Y EN LA HORA DE NUESTRA MUERTE., (Mi,,308)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AMÉN, AMÉN, AMÉN., (La,m,36)(Fa,,78)(Mi,,111)(La,m,175)",
+      "sC": "as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

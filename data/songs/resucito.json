@@ -1,0 +1,233 @@
+{
+  "id": "resucito",
+  "tt": "Resucitó",
+  "title": "Resucitó",
+  "subtitle": "(Kiko Argüello)",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Comunión"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "142",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/resucito.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=quierocantar",
+  "sig": "/src/index.html?canto=resurrexit",
+  "lizq": [
+    {
+      "line": "RESUCITÓ, RESUCITÓ,, (La,m,20)(Sol,,199)",
+      "sC": "ta as"
+    },
+    {
+      "line": "RESUCITÓ, ALELUYA., (Fa,,89)(Mi,,186)",
+      "sC": "as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA,, (La,m,80)(Sol,,179)",
+      "sC": "as"
+    },
+    {
+      "line": "ALELUYA, RESUCITÓ., (Fa,,71)(Mi,,190)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La muerte,, (La,m,66)",
+      "sC": "tc"
+    },
+    {
+      "line": "¿dónde está la muerte?,, (Sol,,182)",
+      "sC": ""
+    },
+    {
+      "line": "¿dónde está mi muerte?,, (Fa,,187)",
+      "sC": ""
+    },
+    {
+      "line": "¿dónde su victoria?, (Mi,,144)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "RESUCITÓ, RESUCITÓ, (La,m,20)(Sol,,199)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "RESUCITÓ, ALELUYA., (Fa,,89)(Mi,,186)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA,, (La,m,80)(Sol,,179)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, RESUCITÓ., (Fa,,71)(Mi,,190)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Gracias, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "sean dadas al Padre,, (Sol,,157)",
+      "sC": ""
+    },
+    {
+      "line": "que nos pasó a su Reino,, (Fa,,197)",
+      "sC": ""
+    },
+    {
+      "line": "donde se vive de amor., (Mi,,203)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "RESUCITÓ, RESUCITÓ, (La,m,20)(Sol,,199)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "RESUCITÓ, ALELUYA., (Fa,,89)(Mi,,186)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA,, (La,m,80)(Sol,,179)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, RESUCITÓ., (Fa,,71)(Mi,,190)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Alegría,, (La,m,52)",
+      "sC": "tc"
+    },
+    {
+      "line": "alegría, hermanos,, (Sol,,132)",
+      "sC": ""
+    },
+    {
+      "line": "que si hoy nos queremos, (Fa,,189)",
+      "sC": ""
+    },
+    {
+      "line": "es porque resucitó., (Mi,,172)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "RESUCITÓ, RESUCITÓ, (La,m,20)(Sol,,199)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "RESUCITÓ, ALELUYA., (Fa,,89)(Mi,,186)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA,, (La,m,80)(Sol,,179)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, RESUCITÓ., (Fa,,71)(Mi,,190)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si con Él morimos,, (La,m,130)",
+      "sC": "tc"
+    },
+    {
+      "line": "con Él vivimos,, (Sol,,91)",
+      "sC": ""
+    },
+    {
+      "line": "con Él cantamos:, (Fa,,107)",
+      "sC": ""
+    },
+    {
+      "line": "¡Aleluya!, (Mi,,69)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "RESUCITÓ, RESUCITÓ, (La,m,20)(Sol,,199)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "RESUCITÓ, ALELUYA., (Fa,,89)(Mi,,186)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA,, (La,m,80)(Sol,,179)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, RESUCITÓ., (Fa,,71)(Mi,,190)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

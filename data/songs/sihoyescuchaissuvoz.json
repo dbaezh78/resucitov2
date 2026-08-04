@@ -1,0 +1,231 @@
+{
+  "id": "sihoyescuchaissuvoz",
+  "tt": "Si hoy Escucháis Su Voz ",
+  "title": "Si Hoy Escucháis Su Voz ",
+  "subtitle": "Salmo 95 (94)",
+  "category": [
+    "Precatecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "152",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/sihoyescuchaissuvoz.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 3.5,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=sihabeisresucitadoconcristo",
+  "sig": "/src/index.html?canto=simeherefugiadoenelsenor",
+  "lizq": [
+    {
+      "line": "SI HOY ESCUCHÁIS SU VOZ, (Mi,,10)(Fa#,m,249)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NO ENDUREZCÁIS EL CORAZÓN., (Si,7,153)(Mi,,285)",
+      "sC": "as r1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Venid, aclamemos al Señor,, (Do#,m,26)(Fa#,m,242)",
+      "sC": "tc"
+    },
+    {
+      "line": "demos vítores a la roca que nos salva;, (Si,7,82)(Mi,,327)",
+      "sC": ""
+    },
+    {
+      "line": "entremos a su presencia dándole gracias,, (Do#,m,195)(Sol#,,349)",
+      "sC": ""
+    },
+    {
+      "line": "aclamándolo con cantos y salmos., (Do#,m,280)(Mi,,331)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "expanded",
+      "triggerLine": "SI HOY ESCUCHÁIS SU VOZ (Mi,,10)(Fa#,m,249)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO ENDUREZCÁIS EL CORAZÓN., (Si,7,153)(Mi,,285)",
+          "sC": "as r1"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque el Señor es un Dios grande,, (Do#,m,26)(Fa#,m,290)",
+      "sC": "tc"
+    },
+    {
+      "line": "más grande que todos los dioses;, (Si,7,66)(Mi,,280)",
+      "sC": ""
+    },
+    {
+      "line": "suyo es el mar, suya es la tierra,, (Do#,m,26)(Sol#,,269)",
+      "sC": ""
+    },
+    {
+      "line": "son suyas las cumbres de los montes., (Do#,m,310)(Mi,,361)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "expanded",
+      "triggerLine": "SI HOY ESCUCHÁIS SU VOZ (Mi,,10)(Fa#,m,249)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO ENDUREZCÁIS EL CORAZÓN., (Si,7,153)(Mi,,285)",
+          "sC": "as r1"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Entrad, postrémonos por tierra,, (Do#,m,26)(Fa#,m,264)",
+      "sC": "tc"
+    },
+    {
+      "line": "bendiciendo al Señor, creador nuestro., (Si,7,27)(Mi,,264)",
+      "sC": ""
+    },
+    {
+      "line": "Porque El es nuestro Dios y nosotros su pueblo,, (Do#,m,81)(Sol#,,321)",
+      "sC": ""
+    },
+    {
+      "line": "el rebaño que Él conduce., (Do#,m,227)(MI,,275)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "expanded",
+      "triggerLine": "SI HOY ESCUCHÁIS SU VOZ (Mi,,10)(Fa#,m,249)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO ENDUREZCÁIS EL CORAZÓN., (Si,7,153)(Mi,,285)",
+          "sC": "as r1"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "¡Ojalá! ¡Ojalá escuchéis hoy su voz, (Do#,m,26)(Sol#,,113)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no endurezcáis el corazón!, (Do#,m,245)",
+      "sC": ""
+    },
+    {
+      "line": "Como en Meribá,, (Fa#,m,25)",
+      "sC": ""
+    },
+    {
+      "line": "como el día de Masá en el desierto,, (Si,7,99)(Mi,,298)",
+      "sC": ""
+    },
+    {
+      "line": "donde vuestros padres dudaron de mí,, (Do#,m,177)(Sol#,,353)",
+      "sC": ""
+    },
+    {
+      "line": "aunque habían visto mis obras, ",
+      "sC": ""
+    },
+    {
+      "line": "me obligaron a hacer su voluntad., (Do#,m,299)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Durante cuarenta años, (Fa#,m,25)",
+      "sC": ""
+    },
+    {
+      "line": "me disgustó aquella generación., (Si,7,110)(Mi,,285)",
+      "sC": ""
+    },
+    {
+      "line": "Y dije «Este es un pueblo, (Do#,m,25)",
+      "sC": ""
+    },
+    {
+      "line": "de corazón extraviado,, (Sol#,,180)",
+      "sC": ""
+    },
+    {
+      "line": "no quiere conocer mis caminos, ",
+      "sC": ""
+    },
+    {
+      "line": "por eso no entrarán en mi descanso»., (Do#,m,305)(Mi,,362)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "SI HOY ESCUCHÁIS SU VOZ, (Mi,,10)(Fa#,m,249)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO ENDUREZCÁIS EL CORAZÓN., (Si,7,153)(Mi,,285)",
+          "sC": "as r1"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

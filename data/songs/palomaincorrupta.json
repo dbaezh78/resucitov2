@@ -1,0 +1,224 @@
+{
+  "id": "palomaincorrupta",
+  "tt": "Paloma Incorrupta",
+  "title": "Paloma Incorrupta",
+  "subtitle": "Kontákion (Romano el Meloda)",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María",
+    "Pascua",
+    "Pentecostés"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "130",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/palomaincorrupta.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ostomaredeentrelasnaciones",
+  "sig": "/src/index.html?canto=pentecostes",
+  "lizq": [
+    {
+      "line": "Dios te salve, María,, (Mi,m,20)(Fa#,,175)",
+      "sC": "tc"
+    },
+    {
+      "line": "radiante como el sol., (Mi,m,20)(Fa#,,184)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú nos muestras el camino;, (Sol,,14)(Fa#,,230)",
+      "sC": ""
+    },
+    {
+      "line": "esperanza de los confines de la tierra;, (Sol,,13)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "tú eres la sola Paloma incorrupta., (Fa#,,283)",
+      "sC": ""
+    },
+    {
+      "line": "Está en ti toda la belleza del Espíritu;, (Mi,m,20)(Fa#,,313)",
+      "sC": ""
+    },
+    {
+      "line": "gloria que en el mundo, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "hace bella la creación., (Fa#,,194)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "expanded",
+      "triggerLine": "A DIOS TE SALVE, MARÍA, (Si,m,15)(Mi,m,225)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "RADIANTE COMO EL SOL., (Fa#,,218)",
+          "sC": "as"
+        },
+        {
+          "line": "PALOMA INCORRUPTA;, (Mi,m,172)",
+          "sC": "as"
+        },
+        {
+          "line": "REFUGIO DE LAS ALMAS DÉBILES; ",
+          "sC": "as"
+        },
+        {
+          "line": "ARCA DEL ESPÍRITU SANTO., (Sol,,14)(Fa#,,217)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Dios te salve, María,, (Mi,m,20)(Fa#,,172)",
+      "sC": "tc"
+    },
+    {
+      "line": "radiante como el sol., (Mi,m,20)(Fa#,,185)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú intercedes por todos los hombres;, (Sol,,14)(Fa#,,281)",
+      "sC": ""
+    },
+    {
+      "line": "tú eres el refugio de las almas débiles;, (Mi,m,20)(Fa#,,317)",
+      "sC": ""
+    },
+    {
+      "line": "filacteria de la perfecta castidad;, (Sol,,14)(Fa#,,292)",
+      "sC": ""
+    },
+    {
+      "line": "arca perfumadísima del Espíritu Santo., (Sol,,14)(Fa#,,331)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "A DIOS TE SALVE, MARÍA, (Si,m,15)(Mi,m,225)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "RADIANTE COMO EL SOL., (Fa#,,218)",
+          "sC": "as"
+        },
+        {
+          "line": "PALOMA INCORRUPTA;, (Mi,m,172)",
+          "sC": "as"
+        },
+        {
+          "line": "REFUGIO DE LAS ALMAS DÉBILES; ",
+          "sC": "as"
+        },
+        {
+          "line": "ARCA DEL ESPÍRITU SANTO., (Sol,,14)(Fa#,,217)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dios te salve, María,, (Mi,m,20)(Fa#,,175)",
+      "sC": "tc"
+    },
+    {
+      "line": "radiante como el sol., (Mi,m,20)(Fa#,,182)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A ti suplican todos los hombres., (Sol,,14)(Fa#,,236)",
+      "sC": ""
+    },
+    {
+      "line": "A ti pedimos por la Iglesia:, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "dale nuevo vigor de gracia y santidad., (Fa#,,337)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "A DIOS TE SALVE, MARÍA, (Si,m,15)(Mi,m,225)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "RADIANTE COMO EL SOL., (Fa#,,218)",
+          "sC": "as"
+        },
+        {
+          "line": "PALOMA INCORRUPTA;, (Mi,m,172)",
+          "sC": "as"
+        },
+        {
+          "line": "REFUGIO DE LAS ALMAS DÉBILES; ",
+          "sC": "as"
+        },
+        {
+          "line": "ARCA DEL ESPÍRITU SANTO., (Sol,,14)(Fa#,,217)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,277 @@
+{
+  "id": "aldespertar",
+  "tt": "Al Despertar",
+  "title": "Al Despertar",
+  "subtitle": "Salmo 17 (16) ",
+  "category": [
+    "PreCatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "10",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/aldespertar.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=aclamadalsenor",
+  "sig": "/src/index.html?canto=alabadalsenorenelcielo",
+  "lizq": [
+    {
+      "line": "AL DESPERTAR, (Si,m,15)",
+      "sC": "mt as ta"
+    },
+    {
+      "line": "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Sol,,115)(Si,m,262)",
+      "sC": "as"
+    },
+    {
+      "line": "AL DESPERTAR, (Mi,m,127)",
+      "sC": "as"
+    },
+    {
+      "line": "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Si,m,261)",
+      "sC": "as"
+    },
+    {
+      "line": "Escucha, Señor, mi oración,(Mi,m,15)(Si,m,241)",
+      "sC": "mt tc"
+    },
+    {
+      "line": "atiende, Señor, a mi clamor., (Mi,m,15)(Si,m,250)",
+      "sC": ""
+    },
+    {
+      "line": "Presta oídos a mi súplica,(Sol,,11)(Fa#,,188)",
+      "sC": ""
+    },
+    {
+      "line": "que mis labios no traicionan, Señor,(Sol,,96)(Fa#,,322)",
+      "sC": ""
+    },
+    {
+      "line": "salga de ti la sentencia., (Sol,,11)(Fa#,,175)",
+      "sC": ""
+    },
+    {
+      "line": "Porque tus ojos ven, tus ojos ven mi rectitud., (Mi,m,119)(Fa#,,404)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "AL DESPERTAR, (Si,m,15)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Sol,,115)(Si,m,262)",
+          "sC": "as"
+        },
+        {
+          "line": "AL DESPERTAR, (Mi,m,127)",
+          "sC": "as"
+        },
+        {
+          "line": "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Si,m,261)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "Sondea, Señor, mi corazón,(Mi,m,15)(Si,m,238)",
+      "sC": "mt tc"
+    },
+    {
+      "line": "escrútalo de noche, Señor,(Mi,m,15)(Si,m,233)",
+      "sC": ""
+    },
+    {
+      "line": "pruébame al crisol, pruébame al crisol., (Sol,,15)(Fa#,,229)",
+      "sC": ""
+    },
+    {
+      "line": "Porque tú sabes que no hay malicia en mí,(Sol,,15)(Fa#,,394)",
+      "sC": ""
+    },
+    {
+      "line": "que mi boca no miente como hacen los hombres., (Sol,,15)(Fa#,,299)",
+      "sC": ""
+    },
+    {
+      "line": "Que he guardado tu palabra,(Mi,m,136)",
+      "sC": ""
+    },
+    {
+      "line": "que no he seguido los caminos del violento,(Fa#,,377)",
+      "sC": ""
+    },
+    {
+      "line": "que a tus huellas he ajustado mis pasos,(Sol,,123)(Fa#,,342)",
+      "sC": ""
+    },
+    {
+      "line": "que no vacilaré, que no vacilaré., (Mi,m,58)(Fa#,,294)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "AL DESPERTAR, (Si,m,15)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Sol,,115)(Si,m,262)",
+          "sC": "as"
+        },
+        {
+          "line": "AL DESPERTAR, (Mi,m,127)",
+          "sC": "as"
+        },
+        {
+          "line": "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Si,m,261)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "A Ti te invoco, Señor,(Mi,m,15)(Si,m,178)",
+      "sC": "mt tc"
+    },
+    {
+      "line": "concédeme, Señor, una respuesta,(Mi,m,51)(Si,m,294)",
+      "sC": ""
+    },
+    {
+      "line": "muéstrame los prodigios de tu amor., (Sol,,13)(Fa#,,196)",
+      "sC": ""
+    },
+    {
+      "line": "Porque tú salvas al que se apoya en ti,(Sol,,112)(Fa#,,356)",
+      "sC": ""
+    },
+    {
+      "line": "porque tú ayudas, (Sol,,125)",
+      "sC": ""
+    },
+    {
+      "line": "al que se refugia a tu derecha., (Fa#,,244)",
+      "sC": ""
+    },
+    {
+      "line": "Como a la niña de tus ojos guárdame,(Mi,m,15)(Fa#,,291)",
+      "sC": ""
+    },
+    {
+      "line": "a la sombra de tus alas escóndeme,(Mi,m,53)(Fa#,,265)",
+      "sC": ""
+    },
+    {
+      "line": "mira que quieren matarme., (Sol,,21)(Fa#,,210)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "AL DESPERTAR, (Si,m,15)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Sol,,115)(Si,m,262)",
+          "sC": "as"
+        },
+        {
+          "line": "AL DESPERTAR, (Mi,m,127)",
+          "sC": "as"
+        },
+        {
+          "line": "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Si,m,261)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "Míralos, están cerrados en su orgullo,(Mi,m,15)(Si,m,322)",
+      "sC": "mt tc"
+    },
+    {
+      "line": "hablan, la arrogancia está en su boca., (Mi,m,15)(Si,m,330)",
+      "sC": ""
+    },
+    {
+      "line": "Avanzan contra mí, avanzan contra mí., (Sol,,15)(Fa#,,216)",
+      "sC": ""
+    },
+    {
+      "line": "Ayúdame tú, Señor,(Sol,,15)(Fa#,,167)",
+      "sC": ""
+    },
+    {
+      "line": "líbrame de los hombres de este mundo,(Sol,,15)(Fa#,,332)",
+      "sC": ""
+    },
+    {
+      "line": "de los hombres cuyo premio es esta vida., (Mi,m,80)(Fa#,,362)",
+      "sC": ""
+    },
+    {
+      "line": "Cólmalos de tus bienes, Señor,(Sol,,15)(Fa#,,273)",
+      "sC": ""
+    },
+    {
+      "line": "llénales el vientre y que sus hijos se sacien., (Sol,,11)(Fa#,,361)",
+      "sC": ""
+    },
+    {
+      "line": "Que yo al despertar, que yo por tu amor, (Mi,m,58)",
+      "sC": ""
+    },
+    {
+      "line": "me saciaré de tu rostro, Señor., (Sol,,96)(Fa#,,272)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "AL DESPERTAR, (Si,m,15)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Sol,,115)(Si,m,262)",
+          "sC": "as"
+        },
+        {
+          "line": "AL DESPERTAR, (Mi,m,127)",
+          "sC": "as"
+        },
+        {
+          "line": "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Si,m,261)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

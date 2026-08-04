@@ -1,0 +1,316 @@
+{
+  "id": "unagransenal",
+  "tt": "Una Gran Señal",
+  "title": "Una Gran Señal",
+  "subtitle": "Apocalipsis 12",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María",
+    "Adviento",
+    "Navidad",
+    "Pascua",
+    "Pentecostés",
+    "Final",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "163",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/unagransenal.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=unretonobrotadeltroncodejese",
+  "sig": "/src/index.html?canto=uriuriura",
+  "lizq": [
+    {
+      "line": "UNA GRAN SEÑAL APARECIÓ EN EL CIELO:, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UNA MUJER, UNA MUJER VESTIDA DEL SOL,, (Sol,,92)(La,m,393)",
+      "sC": "as"
+    },
+    {
+      "line": "CON LA LUNA BAJO SUS PIES, ",
+      "sC": "as"
+    },
+    {
+      "line": "Y UNA CORONA DE DOCE ESTRELLAS;, (Sol,,305)",
+      "sC": "as"
+    },
+    {
+      "line": "ESTÁ ENCINTA, Y GRITA, (La,m,198)",
+      "sC": "as"
+    },
+    {
+      "line": "CON LOS TORMENTOS DE DAR A LUZ., (Fa,,157)(Mi,,337)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y apareció otra señal en el cielo:, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "un enorme Dragón rojo,, (Sol,,198)",
+      "sC": ""
+    },
+    {
+      "line": "con siete cabezas y diez cuernos., (Fa,,61)(Mi,,264)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Dragón se detuvo delante de la Mujer,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "de la Mujer que iba a dar a luz,, (Sol,,272)",
+      "sC": ""
+    },
+    {
+      "line": "para devorar a su Hijo en cuanto naciera., (Fa,,188)(Mi,,363)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y la Mujer dio a luz un Hijo varón,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "aquel que ha de regir las naciones de la tierra,, (Sol,,404)",
+      "sC": ""
+    },
+    {
+      "line": "y su Hijo fue arrebatado, (Fa,,59)",
+      "sC": ""
+    },
+    {
+      "line": "hasta Dios y hasta su trono., (Mi,,233)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "UNA GRAN SEÑAL APARECIÓ EN EL CIELO..., (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "UNA MUJER, UNA MUJER VESTIDA DEL SOL,, (Sol,,92)(La,m,393)",
+          "sC": "as"
+        },
+        {
+          "line": "CON LA LUNA BAJO SUS PIES,, ",
+          "sC": "as"
+        },
+        {
+          "line": "Y UNA CORONA DE DOCE ESTRELLAS;, (Sol,,305)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTÁ ENCINTA, Y GRITA, (La,m,198)",
+          "sC": "as"
+        },
+        {
+          "line": "CON LOS TORMENTOS DE DAR A LUZ., (Fa,,157)(Mi,,337)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Entonces se entabló una batalla en el cielo:, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "Miguel y sus Ángeles combatieron, (Sol,,135)(Fa,,290)",
+      "sC": ""
+    },
+    {
+      "line": "con el Dragón, con el gran Dragón., (Mi,,308)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "También el Dragón y sus ángeles combatieron,, (La,m,20)(Sol,,405)",
+      "sC": ""
+    },
+    {
+      "line": "pero no prevalecieron, (Fa,,61)",
+      "sC": ""
+    },
+    {
+      "line": "y no hubo ya lugar para ellos en el cielo., (Mi,,352)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y fue arrojado el Dragón, el gran Dragón,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "la Serpiente antigua, el llamado Diablo, ",
+      "sC": ""
+    },
+    {
+      "line": "y Satanás, el seductor del mundo entero,, (Sol,,80)(Fa,,197)",
+      "sC": ""
+    },
+    {
+      "line": "fue arrojado a la tierra y sus ángeles con él., (Mi,,402)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "UNA GRAN SEÑAL APARECIÓ EN EL CIELO..., (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "UNA MUJER, UNA MUJER VESTIDA DEL SOL,, (Sol,,92)(La,m,393)",
+          "sC": "as"
+        },
+        {
+          "line": "CON LA LUNA BAJO SUS PIES,, ",
+          "sC": "as"
+        },
+        {
+          "line": "Y UNA CORONA DE DOCE ESTRELLAS;, (Sol,,305)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTÁ ENCINTA, Y GRITA, (La,m,198)",
+          "sC": "as"
+        },
+        {
+          "line": "CON LOS TORMENTOS DE DAR A LUZ., (Fa,,157)(Mi,,337)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cuando el Dragón vio que había sido, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "arrojado a la tierra, persiguió a la Mujer, (Sol,,144)(Fa,,364)",
+      "sC": ""
+    },
+    {
+      "line": "que había dado a luz al Hijo varón., (Mi,,304)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pero se le dieron a la Mujer las dos alas, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "del águila grande, para volar al desierto,, (Sol,,122)(Fa,,259)",
+      "sC": ""
+    },
+    {
+      "line": "donde tiene que ser alimentada, ",
+      "sC": ""
+    },
+    {
+      "line": "un tiempo, dos tiempos y medio tiempo., (Mi,,333)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Entonces, despechado contra la Mujer,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "el gran Dragón, se fue a hacer la guerra, (Sol,,346)",
+      "sC": ""
+    },
+    {
+      "line": "al resto de sus hijos, (Fa,,35)",
+      "sC": ""
+    },
+    {
+      "line": "los que guardan los mandamientos de Dios, ",
+      "sC": ""
+    },
+    {
+      "line": "y mantienen el testimonio de Jesús., (Mi,,317)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LA LA LAI, LA LAI, LA LA (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LA LA LAI, LA LAI, LA LA, (Sol,,219)",
+          "sC": "as"
+        },
+        {
+          "line": "LA LA LAI, LA LAI, LA LA, (Fa,,215)",
+          "sC": "as"
+        },
+        {
+          "line": "LA LA LAI, LA LAI, LA LA, (Mi,,215)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

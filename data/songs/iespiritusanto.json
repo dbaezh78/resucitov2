@@ -1,0 +1,66 @@
+{
+  "id": "iespiritusanto",
+  "tt": "Invocación Al Espiritu Santo",
+  "title": "Invocación Al Espiritu Santo",
+  "subtitle": "Celebración",
+  "category": [
+    "Precatecumenado",
+    "Celebración"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "211",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/invocacionalespiritusanto.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ohluzgozosa",
+  "sig": "/src/index.html?canto=#",
+  "lizq": [
+    {
+      "line": "OH SEÑOR, ENVIA TU ESPIRITU,, (Mi,m,19)(La,m,133)(Mi,m,311)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE RENUEVE LA FAZ, (Sol,,13)(Do,,152)(La,m,237)",
+      "sC": "as"
+    },
+    {
+      "line": "DE LA TIERRA, (Mi,m,46)(Si,7,83)(Mi,m,137)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "OH SEÑOR, ENVIA TU ESPIRITU,, (Mi,m,19)(La,m,133)(Mi,m,311)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE RENUEVE LA FAZ, (Sol,,13)(Do,,152)(La,m,237)",
+      "sC": "as"
+    },
+    {
+      "line": "DE LA TIERRA, (Mi,m,46)(Si,7,83)(Mi,m,137)",
+      "sC": "as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

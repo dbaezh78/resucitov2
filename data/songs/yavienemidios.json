@@ -1,0 +1,249 @@
+{
+  "id": "yavienemidios",
+  "tt": "Ya Viene Mi Dios",
+  "title": "Ya Viene Mi Dios",
+  "subtitle": "Villancico (Kiko Argüello)",
+  "category": [
+    "Precatecumenado",
+    "Adviento",
+    "Navidad",
+    "Niños"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "174",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/yavienemidios.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=vosotrossoislaluzdelmundo",
+  "sig": "/src/index.html?canto=yahvehtueresmidios",
+  "lizq": [
+    {
+      "line": "YA VIENE MI DIOS, YA VIENE MI REY,, (Mi,m,20)(Si,7,325)",
+      "sC": "ta as"
+    },
+    {
+      "line": "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,324)",
+      "sC": "as"
+    },
+    {
+      "line": "YA VIENE, YA VIENE MI SALVADOR,, (Si,7,302)",
+      "sC": "as"
+    },
+    {
+      "line": "YA VIENE, YA VIENE MI REY., (Mi,m,241)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Es un pobre obrero nacido en Belén,, (Mi,m,20)(Si,7,323)",
+      "sC": "tc"
+    },
+    {
+      "line": "su madre, María, su padre, José., (Mi,m,293)",
+      "sC": ""
+    },
+    {
+      "line": "Ya viene, ya viene mi Salvador,, (Si,7,277)",
+      "sC": ""
+    },
+    {
+      "line": "ya viene, ya viene mi Rey., (Mi,m,222)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "YA VIENE MI DIOS (Mi,m,20)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,20)(Si,7,325)",
+          "sC": "as sub"
+        },
+        {
+          "line": "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,324)",
+          "sC": "as"
+        },
+        {
+          "line": "YA VIENE, YA VIENE MI SALVADOR,, (Si,7,302)",
+          "sC": "as"
+        },
+        {
+          "line": "YA VIENE, YA VIENE MI REY., (Mi,m,241)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Él tiene unos ojos que hablan de amor,, (Mi,m,20)(Si,7,355)",
+      "sC": "tc"
+    },
+    {
+      "line": "que hablan del Padre, que hablan de Dios., (Mi,m,382)",
+      "sC": ""
+    },
+    {
+      "line": "Ya viene, ya viene mi Salvador,, (Si,7,277)",
+      "sC": ""
+    },
+    {
+      "line": "ya viene, ya viene mi Rey., (Mi,m,222)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "YA VIENE MI DIOS (Mi,m,20)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,20)(Si,7,325)",
+          "sC": "as sub"
+        },
+        {
+          "line": "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,324)",
+          "sC": "as"
+        },
+        {
+          "line": "YA VIENE, YA VIENE MI SALVADOR,, (Si,7,302)",
+          "sC": "as"
+        },
+        {
+          "line": "YA VIENE, YA VIENE MI REY., (Mi,m,241)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Murió en un madero lleno de dolor,, (Mi,m,20)(Si,7,318)",
+      "sC": "tc"
+    },
+    {
+      "line": "murió por los hombres muy lleno de amor., (Mi,m,391)",
+      "sC": ""
+    },
+    {
+      "line": "Ya viene, ya viene mi Salvador,, (Si,7,277)",
+      "sC": ""
+    },
+    {
+      "line": "ya viene, ya viene mi Rey., (Mi,m,221)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "YA VIENE MI DIOS (Mi,m,20)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,20)(Si,7,325)",
+          "sC": "as sub"
+        },
+        {
+          "line": "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,324)",
+          "sC": "as"
+        },
+        {
+          "line": "YA VIENE, YA VIENE MI SALVADOR,, (Si,7,302)",
+          "sC": "as"
+        },
+        {
+          "line": "YA VIENE, YA VIENE MI REY., (Mi,m,241)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ha entrado en la muerte, ha entrado mi Dios,, (Mi,m,20)(Si,7,413)",
+      "sC": "tc"
+    },
+    {
+      "line": "ya viene, ya sube, ya llega el Señor., (Mi,m,319)",
+      "sC": ""
+    },
+    {
+      "line": "Que canten, que griten: ¡Resucitó!, (Si,7,310)",
+      "sC": ""
+    },
+    {
+      "line": "Mi Dios ha vencido, salió por amor., (Mi,m,315)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "YA VIENE MI DIOS (Mi,m,20)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,20)(Si,7,325)",
+          "sC": "as sub"
+        },
+        {
+          "line": "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,324)",
+          "sC": "as"
+        },
+        {
+          "line": "YA VIENE, YA VIENE MI SALVADOR,, (Si,7,302)",
+          "sC": "as"
+        },
+        {
+          "line": "YA VIENE, YA VIENE MI REY., (Mi,m,241)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

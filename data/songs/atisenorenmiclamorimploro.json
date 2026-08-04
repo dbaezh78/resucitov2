@@ -1,0 +1,178 @@
+{
+  "id": "atisenorenmiclamorimploro",
+  "tt": "A ti, Señor, en mi clamor imploro",
+  "title": "A ti, Señor, en mi clamor imploro",
+  "subtitle": "Salmo 142 (141)",
+  "category": [
+    "PreCatecumenado",
+    "Cuaresma",
+    "Penitencial"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "2",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "4",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/atisenorenmiclamorimploro.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=atilevantomisojos",
+  "sig": "/src/index.html?canto=atisenorlevantomialma",
+  "lizq": [
+    {
+      "line": "A TI, SEÑOR, EN MI CLAMOR IMPLORO,(La,m,15)(Re,m,327)",
+      "sC": "as ta"
+    },
+    {
+      "line": "A TI, SEÑOR, EN MI CLAMOR SUPLICO,(La,m,327)",
+      "sC": "as"
+    },
+    {
+      "line": "A TI DERRAMO MI LAMENTO,(La,7,29)",
+      "sC": "as"
+    },
+    {
+      "line": "A TI MI ANGUSTIA EXPONGO. , (Fa,,29)(Mi,,222)",
+      "sC": "as"
+    },
+    {
+      "line": "Siento que el espíritu en mí se apaga, , (Re,m,15)",
+      "sC": "mt tc"
+    },
+    {
+      "line": "más tú conoces mi sendero. , (Mi,7,239)",
+      "sC": ""
+    },
+    {
+      "line": "Mira, Señor, que en el camino,(La,m,15)(Re,m,250)",
+      "sC": "mt"
+    },
+    {
+      "line": "mira, Señor, que me han tendido un lazo. , (La,m,263)",
+      "sC": ""
+    },
+    {
+      "line": "Mira, Señor, que a la derecha no hay ninguno,(Mi,,95)(Mi,7,401)",
+      "sC": ""
+    },
+    {
+      "line": "ninguno que me conozca. , (Fa,m,55)(La,m,214)",
+      "sC": ""
+    },
+    {
+      "line": "Que huye de mí todo consuelo,(Re,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "que no hay nadie que se cuide de mi alma., (Fa,m,135)(Mi,7,370)",
+      "sC": ""
+    },
+    {
+      "line": "A TI, YO CLAMO SEÑOR,(La,m,15)(Sol,,199)",
+      "sC": "ta as mt"
+    },
+    {
+      "line": "A TI, YO DIGO: TÚ SOLO ERES MI REFUGIO,(Mi,7,250)",
+      "sC": "as"
+    },
+    {
+      "line": "TÚ ERES MI PORCIÓN EN ESTA TIERRA,(Fa,,15)",
+      "sC": "as"
+    },
+    {
+      "line": "MI ÚNICA FELICIDAD., (Mi,,178)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Escúchame, Señor, que estoy llorando,(Re,m,15)(Mi,,318)",
+      "sC": "tc"
+    },
+    {
+      "line": "estoy tan deprimido., (Fa,,32)(Mi,,166)",
+      "sC": ""
+    },
+    {
+      "line": "¡Líbrame tú de estos enemigos, (Fa,,15)",
+      "sC": ""
+    },
+    {
+      "line": "que son más fuertes que yo!, (Sol,,58)(Mi,,258)",
+      "sC": ""
+    },
+    {
+      "line": "¡Saca mi alma de esta cárcel, (La,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "y yo daré gracias a tu Nombre!, (Sol,,11)(Mi,,228)",
+      "sC": ""
+    },
+    {
+      "line": "En torno a mí los santos harán corro,(Re,m,48)",
+      "sC": ""
+    },
+    {
+      "line": "me felicitarán por tu favor hacia mí. , (Fa,,115)(Mi,,331)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_atsemci_1",
+      "initialState": "collapsed",
+      "triggerLine": "A TI, SEÑOR, EN MI CLAMOR IMPLORO,(La,m,15)(Re,m,327)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "A TI, SEÑOR, EN MI CLAMOR SUPLICO,(La,m,327)",
+          "sC": "as"
+        },
+        {
+          "line": "A TI DERRAMO MI LAMENTO,(Mi,7,29)",
+          "sC": "as"
+        },
+        {
+          "line": "A TI MI ANGUSTIA EXPONGO. , (Fa,m,29)(Mi,,222)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_atsemci_2",
+      "initialState": "collapsed",
+      "triggerLine": "A TI, YO CLAMO SEÑOR,(La,m,15)(Sol,,199)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "A TI, YO DIGO: TÚ SOLO ERES MI REFUGIO,(Mi,7,250)",
+          "sC": "as"
+        },
+        {
+          "line": "TÚ ERES MI PORCIÓN EN ESTA TIERRA,(Fa,,15)",
+          "sC": "as"
+        },
+        {
+          "line": "MI ÚNICA FELICIDAD., (Mi,,178)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

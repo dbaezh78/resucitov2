@@ -1,0 +1,153 @@
+{
+  "id": "cristoeslaluz",
+  "tt": "Cristo Es La Luz",
+  "title": "Cristo Es La Luz",
+  "subtitle": "Himno - Juan 8,12; 14,6",
+  "category": [
+    "PreCatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "42",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/cristoeslaluz.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=consoladamipueblo",
+  "sig": "/src/index.html?canto=cuandoelsenor",
+  "lizq": [
+    {
+      "line": "Cristo es la Luz., (Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO ES LA LUZ., (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Cristo es la Luz., (Re,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO ES LA LUZ., (Sol,,13)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ÉL ES LA SALVACIÓN., (Do,,179)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cristo es el Camino., (Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO ES EL CAMINO., (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Cristo es el Camino., (Re,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO ES EL CAMINO., (Sol,,13)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ÉL ES LA SALVACIÓN., (Do,,179)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cristo es la Verdad., (Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO ES LA VERDAD., (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Cristo es la Verdad., (Re,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO ES LA VERDAD., (Sol,,13)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ÉL ES LA SALVACIÓN., (Do,,179)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Cristo es la Vida., (Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO ES LA VID, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Cristo es la Vida., (Re,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO ES LA VID, (Sol,,13)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ÉL ES LA SALVACIÓN., (Do,,179)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cristo es la Luz., (Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO ES EL CAMINO., (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Cristo es la Verdad., (Re,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO ES LA VID, (Sol,,13)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ÉL ES LA SALVACIÓN., (Do,,179)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,211 @@
+{
+  "id": "is3810141720",
+  "tt": "Salmodias",
+  "title": "Salmodias - Cántico",
+  "subtitle": "ANGUSTIA DE UN MORIBUNDO Y ALEGRÍA DE LA CURACIÓN - Is 38, 10-14. 17-20",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "salmodia": "",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "311",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/invocacionalespiritusanto.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ohluzgozosa",
+  "sig": "/src/index.html?canto=#",
+  "lizq": [
+    {
+      "line": "Yo pensé: «En medio de mis días, (La,m,20)(Sol,,298)",
+      "sC": "tc"
+    },
+    {
+      "line": "tengo que marchar hacia las puertas del abismo;, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "me privan del resto de mis años.», (Sol,,14)(La,m,293)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo pensé: «Ya no veré más al Señor, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "en la tierra de los vivos,, (Sol,,14)(La,m,204)",
+      "sC": ""
+    },
+    {
+      "line": "ya no miraré a los hombres, (Sol,,14)(La,m,242)",
+      "sC": "ta as"
+    },
+    {
+      "line": "entre los habitantes del mundo., (Sol,,14)(La,m,272)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Levantan y enrollan mi vida, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "como una tienda de pastores., (Sol,,14)(La,m,250)",
+      "sC": ""
+    },
+    {
+      "line": "Como un tejedor devanaba yo mi vida,, (Sol,,14)(La,m,338)",
+      "sC": "ta as"
+    },
+    {
+      "line": "y me cortan la trama.», (Sol,,14)(La,m,185)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Día y noche me estás acabando,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "sollozo hasta el amanecer., (Sol,,14)(La,m,250)",
+      "sC": ""
+    },
+    {
+      "line": "Me quiebras los huesos como un león,, (Sol,,14)(La,m,339)",
+      "sC": "ta as"
+    },
+    {
+      "line": "día y noche me estás acabando., (Sol,,14)(La,m,260)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Estoy piando como una golondrina,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "gimo como una paloma., (Sol,,14)(La,m,212)",
+      "sC": ""
+    },
+    {
+      "line": "Mis ojos mirando al cielo se consumen:, (Sol,,14)(La,m,352)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¡Señor, que me oprimen, sal fiador por mí!, (Sol,,14)(La,m,371)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Me has curado, me has hecho revivir,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "la amargura se me volvió paz, (Sol,,14)(La,m,251)",
+      "sC": ""
+    },
+    {
+      "line": "cuando detuviste mi alma ante la tumba vacía, (Sol,,14)(La,m,420)",
+      "sC": "ta as"
+    },
+    {
+      "line": "y volviste la espalda a todos mis pecados., (Sol,,14)(La,m,378)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El abismo no te da gracias,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "ni la muerte te alaba,, (Sol,,14)(La,m,185)",
+      "sC": ""
+    },
+    {
+      "line": "ni esperan en tu fidelidad, (Sol,,14)(La,m,229)",
+      "sC": "ta as"
+    },
+    {
+      "line": "los que bajan a la fosa., (Sol,,14)(La,m,195)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los vivos, los vivos son quienes te alaban:, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "como yo ahora., ",
+      "sC": ""
+    },
+    {
+      "line": "El Padre enseña a sus hijos tu fidelidad., (Sol,,14)(La,m,356)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sálvame, Señor, y tocaremos nuestras arpas, (Sol,,14)(La,m,406)",
+      "sC": "ta as"
+    },
+    {
+      "line": "todos nuestros días en la casa del Señor., (Sol,,14)(La,m,366)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Gloria al Padre, y al Hijo, y al Espíritu Santo., (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "Como era en el principio, ahora y siempre, (Sol,,14)(La,m,378)",
+      "sC": "ta as"
+    },
+    {
+      "line": "por los siglos de los siglos. Amén., (Sol,,14)(La,m,294)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "salmodias"
+}

@@ -1,0 +1,210 @@
+{
+  "id": "hijasdejerusalen",
+  "tt": "Hijas De Jerusalén",
+  "title": "Hijas De Jerusalén",
+  "subtitle": "Lucas 23,28-46",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Fracción Del Pan",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "84",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/hijasdejerusalen.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=heesperadoenelsenor",
+  "sig": "/src/index.html?canto=himnoacristoluz",
+  "lizq": [
+    {
+      "line": "HIJAS DE JERUSALÉN,, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NO LLORÉIS,, (Fa,,95)",
+      "sC": "as"
+    },
+    {
+      "line": "NO LLORÉIS POR MÍ., (La,m,189)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que si esto hacen con el leño verde,, (La,m,20)(Fa,,128)",
+      "sC": "tc"
+    },
+    {
+      "line": "con el seco, ¿qué se hará?,, (Sol,,76)(La,m,233)",
+      "sC": ""
+    },
+    {
+      "line": "con el seco, ¿qué se hará?, (Fa,,77)(Mi,,235)",
+      "sC": ""
+    },
+    {
+      "line": "¡Aaaay!, (La,m,52)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HIJAS DE JERUSALÉN, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO LLORÉIS,, (Fa,,95)",
+          "sC": "as"
+        },
+        {
+          "line": "NO LLORÉIS POR MÍ., (La,m,189)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Padre, perdónales,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "porque no saben qué es lo que hacen., (Fa,,118)(La,m,318)",
+      "sC": ""
+    },
+    {
+      "line": "Perdónales, perdónales., (Fa,,51)(Mi,,169)",
+      "sC": ""
+    },
+    {
+      "line": "¡Aaaay!, (La,m,55)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HIJAS DE JERUSALÉN, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO LLORÉIS,, (Fa,,95)",
+          "sC": "as"
+        },
+        {
+          "line": "NO LLORÉIS POR MÍ., (La,m,189)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Yo te aseguro:, (Fa,,10)(Mi,,107)",
+      "sC": "tc"
+    },
+    {
+      "line": "hoy estarás conmigo, (Fa,,167)",
+      "sC": ""
+    },
+    {
+      "line": "en el Paraíso., (Mi,,98)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HIJAS DE JERUSALÉN, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO LLORÉIS,, (Fa,,95)",
+          "sC": "as"
+        },
+        {
+          "line": "NO LLORÉIS POR MÍ., (La,m,189)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "e ¡Padre!, ¡Padre!,, (La,m,20)(Fa,,119)",
+      "sC": "tc"
+    },
+    {
+      "line": "en tus manos, (Sol,,88)",
+      "sC": ""
+    },
+    {
+      "line": "encomiendo mi espíritu., (La,m,191)",
+      "sC": ""
+    },
+    {
+      "line": "¡Ah! ¡Ah! ¡Ah!, (Fa,,10)(Mi,,54)(La,m,107)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HIJAS DE JERUSALÉN, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO LLORÉIS,, (Fa,,95)",
+          "sC": "as"
+        },
+        {
+          "line": "NO LLORÉIS POR MÍ., (La,m,189)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

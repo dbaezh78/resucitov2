@@ -1,0 +1,210 @@
+{
+  "id": "elmismodios",
+  "tt": "El Mismo Dios",
+  "title": "El Mismo Dios",
+  "subtitle": "2 Corintios 4,6-12",
+  "category": [
+    "Catecumenado",
+    "Comunión",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "224",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/elmismoDios.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=debora",
+  "sig": "/src/index.html?canto=elsembrador",
+  "lizq": [
+    {
+      "line": "El mismo Dios que dijo:, (Re,,12)(Fa#,,198)",
+      "sC": "tc"
+    },
+    {
+      "line": "«De las tinieblas brille la luz»,, (Si,m,110)",
+      "sC": ""
+    },
+    {
+      "line": "es el mismo que ha hecho brillar la luz, (Fa#,,15)",
+      "sC": ""
+    },
+    {
+      "line": "en nuestros corazones,, ",
+      "sC": ""
+    },
+    {
+      "line": "para irradiar el conocimiento de su gloria,, (Si,m,101)",
+      "sC": ""
+    },
+    {
+      "line": "que está en el rostro de Cristo,, (La,,77)(Si,m,252)",
+      "sC": ""
+    },
+    {
+      "line": "QUE ESTÁ EN EL ROSTRO DE CRISTO., (La,,90)(Si,m,309)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pero llevamos este tesoro en vasos de barro., (Fa#,,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "PERO LLEVAMOS ESTE TESORO, ",
+      "sC": "ta as"
+    },
+    {
+      "line": "EN VASOS DE BARRO. ",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Para que se manifieste, (Si,m,71)",
+      "sC": "tc"
+    },
+    {
+      "line": "que lo sublime de este amor, (La,,161)",
+      "sC": ""
+    },
+    {
+      "line": "viene de Dios,, (Si,m,113)(Sol,,153)",
+      "sC": ""
+    },
+    {
+      "line": "viene de Dios y que no viene de nosotros., (Fa#,,344)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "LLEVANDO SIEMPRE EN NUESTRO CUERPO, (Si,m,133)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EL MORIR DE JESÚS, PARA QUE, (La,,174)(Si,m,296)(Sol,,333)",
+      "sC": "as"
+    },
+    {
+      "line": "SE MANIFIESTE EN NUESTRO CUERPO, ",
+      "sC": "as"
+    },
+    {
+      "line": "QUE ESTÁ RESUCITADO., (Fa#,,196)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Atribulados en todo,, (Fa#,,18)",
+      "sC": "tc"
+    },
+    {
+      "line": "mas no desesperados;, ",
+      "sC": ""
+    },
+    {
+      "line": "perseguidos, mas nunca abandonados;, ",
+      "sC": ""
+    },
+    {
+      "line": "derribados, mas no aniquilados., ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LLEVANDO SIEMPRE EN NUESTRO CUERPO, (Si,m,133)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EL MORIR DE JESÚS, PARA QUE, (La,,174)(Si,m,296)(Sol,,333)",
+          "sC": "as"
+        },
+        {
+          "line": "SE MANIFIESTE EN NUESTRO CUERPO, ",
+          "sC": "as"
+        },
+        {
+          "line": "QUE ESTÁ RESUCITADO., (Fa#,,15)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y mientras nosotros morimos, (Fa#,,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "el mundo recibe la vida., ",
+      "sC": ""
+    },
+    {
+      "line": "Y MIENTRAS NOSOTROS MORIMOS, ",
+      "sC": "ta as"
+    },
+    {
+      "line": "EL MUNDO RECIBE LA VIDA., ",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LLEVANDO SIEMPRE EN NUESTRO CUERPO, (Si,m,133)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EL MORIR DE JESÚS, PARA QUE, (La,,174)(Si,m,296)(Sol,,333)",
+          "sC": "as"
+        },
+        {
+          "line": "SE MANIFIESTE EN NUESTRO CUERPO, ",
+          "sC": "as"
+        },
+        {
+          "line": "QUE ESTÁ RESUCITADO., (Fa#,,15)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

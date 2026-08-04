@@ -1,0 +1,206 @@
+{
+  "id": "enunanocheoscura",
+  "tt": "En Una Noche Oscura",
+  "title": "En Una Noche Oscura",
+  "subtitle": "Subida al Monte Carmelo – San Juan de la Cruz",
+  "category": [
+    "Precatecumenado",
+    "Comunión",
+    "Fracción del Pan",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "65",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/enunanocheoscura.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=enmediodeaquelgentio",
+  "sig": "/src/index.html?canto=eresdignodetomarellibro",
+  "lizq": [
+    {
+      "line": "EN UNA NOCHE OSCURA,, (La,m,21)",
+      "sC": "ta as"
+    },
+    {
+      "line": "CON ANSIAS, EN AMORES INFLAMADA,, (Re,m,60)(Mi,,337)",
+      "sC": "as r1"
+    },
+    {
+      "line": "¡OH DICHOSA VENTURA!,, (Re,m,22)(Fa,,190)",
+      "sC": "as"
+    },
+    {
+      "line": "SALÍ SIN SER NOTADA,, (Re,m,180)",
+      "sC": "as"
+    },
+    {
+      "line": "ESTANDO YA MI CASA SOSEGADA., (Mi,,289)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A oscuras y segura,, (La,m,89)",
+      "sC": "tc"
+    },
+    {
+      "line": "por la secreta escala, disfrazada,, (Re,m,105)(Mi,,277)",
+      "sC": ""
+    },
+    {
+      "line": "¡oh dichosa ventura!,, (Re,m,21)(Fa,,161)",
+      "sC": ""
+    },
+    {
+      "line": "a oscuras y en celada,, (Re,m,176)",
+      "sC": ""
+    },
+    {
+      "line": "estando ya mi casa sosegada., (Mi,,254)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En la noche dichosa,, (Re,m,21)(Mi,,163)",
+      "sC": ""
+    },
+    {
+      "line": "en secreto, que nadie me veía,, (Re,m,74)(Fa,,273)",
+      "sC": ""
+    },
+    {
+      "line": "ni yo miraba cosa,, ",
+      "sC": ""
+    },
+    {
+      "line": "sin otra luz y guía,, (Re,m,149)",
+      "sC": ""
+    },
+    {
+      "line": "sino la que en el corazón ardía., (Mi,,279)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Aquésta me guiaba, (La,m,15)(Re,m,153)",
+      "sC": "tc"
+    },
+    {
+      "line": "más cierto que la luz del mediodía,, (La,m,312)",
+      "sC": ""
+    },
+    {
+      "line": "adonde me esperaba, (Mi,,170)",
+      "sC": ""
+    },
+    {
+      "line": "quien yo bien me sabía,, (La,m,206)",
+      "sC": ""
+    },
+    {
+      "line": "en parte donde nadie parecía., (Re,m,46)(Mi,,266)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Oh noche que guiaste!, (La,m,24)(Re,m,182)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡oh noche amable más que la alborada!, (La,m,344)",
+      "sC": ""
+    },
+    {
+      "line": "¡oh noche que juntaste, (Mi,,185)",
+      "sC": ""
+    },
+    {
+      "line": "Amado con amada,, (Fa,,34)",
+      "sC": ""
+    },
+    {
+      "line": "amada en el Amado transformada!, (Re,m,45)(Mi,,297)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡OH NOCHE QUE GUIASTE!, (La,m,19)(Re,m,201)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¡OH NOCHE AMABLE MÁS QUE LA ALBORADA!, (La,m,401)",
+      "sC": "as"
+    },
+    {
+      "line": "¡OH NOCHE QUE JUNTASTE, (Mi,,215)",
+      "sC": "as"
+    },
+    {
+      "line": "AMADO CON AMADA,, (Fa,,41)",
+      "sC": "as"
+    },
+    {
+      "line": "AMADA EN EL AMADO TRANSFORMADA!, (Re,m,39)(Mi,,349)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EN UNA NOCHE OSCURA, (La,m,21)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CON ANSIAS, EN AMORES INFLAMADA,, (Re,m,60)(Mi,,337)",
+          "sC": "as r1"
+        },
+        {
+          "line": "¡OH DICHOSA VENTURA!,, (Re,m,22)(Fa,,190)",
+          "sC": "as"
+        },
+        {
+          "line": "SALÍ SIN SER NOTADA,, (Re,m,180)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTANDO YA MI CASA SOSEGADA. (Mi,,289)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

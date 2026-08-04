@@ -1,0 +1,183 @@
+{
+  "id": "sientatesolitarioysilencioso",
+  "tt": "Sientate Solitario Y Silencioso",
+  "title": "Sientate Solitario Y Silencioso",
+  "subtitle": "Lamentaciones 3",
+  "category": [
+    "Catecumenado",
+    "Cuaresma"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "235",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/sientatesolitarioysilencioso.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=shemaisrael",
+  "sig": "/src/index.html?canto=tueresmiesperanzasenor",
+  "lizq": [
+    {
+      "line": "Dios mío, Dios mío,, (Re,,12)(Fa#,m,214)",
+      "sC": "tc"
+    },
+    {
+      "line": "me has llevado, me has llevado, (Si,m,322)",
+      "sC": ""
+    },
+    {
+      "line": "y me has hecho caminar entre tinieblas., (Re,,333)",
+      "sC": ""
+    },
+    {
+      "line": "Has construido para mí un yugo,, (Fa#,m,331)",
+      "sC": ""
+    },
+    {
+      "line": "has atado mi cabeza, mi cabeza, (Si,m,327)",
+      "sC": ""
+    },
+    {
+      "line": "y la barbilla., (Re,,82)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Has tensado tu arco,, (Fa#,m,222)",
+      "sC": ""
+    },
+    {
+      "line": "y me has fijado, me has fijado, (Si,m,304)",
+      "sC": ""
+    },
+    {
+      "line": "como blanco de tus flechas., (Re,,212)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aun cuando grito y gimo,, (Fa#,m,259)",
+      "sC": ""
+    },
+    {
+      "line": "tú sofocas, sofocas, (Si,m,200)",
+      "sC": ""
+    },
+    {
+      "line": "mi oración., (Re,,84)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Contemplar mi miseria, (Mi,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "y mi vida errante, (La,,128)",
+      "sC": ""
+    },
+    {
+      "line": "es para mí hiel y amargura., (Re,,233)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "¿Mas qué puedo hacer, (Fa#,,15)",
+      "sC": ""
+    },
+    {
+      "line": "si hasta me falta la esperanza,, (Si,m,255)",
+      "sC": ""
+    },
+    {
+      "line": "la esperanza que viene del Señor,, (La,,82)(Sol,,304)",
+      "sC": ""
+    },
+    {
+      "line": "que viene del Señor?, (Fa#,,176)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SIÉNTATE SOLITARIO Y SILENCIOSO,, (Re, ,12)(Fa#,m,302)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PORQUE DIOS TE LO HA IMPUESTO., (Si,m,119)(Re,,291)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HUMILLA TU BOCA EN EL POLVO,, (Fa#,m,265)",
+      "sC": "as"
+    },
+    {
+      "line": "QUIZÁ HAYA ESPERANZA. (Si,m,43)(Re,,198)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PON LA MEJILLA A QUIEN TE HIERE:, (Mi,m,20)(La,7,304)",
+      "sC": "as"
+    },
+    {
+      "line": "PORQUE NO RECHAZA",
+      "sC": "as r1"
+    },
+    {
+      "line": "PARA SIEMPRE EL SEÑOR., (La,,89)",
+      "sC": "as"
+    },
+    {
+      "line": "AUN CUANDO AFLIGE, (sol,,32)",
+      "sC": "as"
+    },
+    {
+      "line": "USA DE MISERICORDIA,, (La,,166)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "según su gran amor., (La,7,20)(Re,,174)",
+      "sC": "tc"
+    }
+  ],
+  "sourceBook": "resucito"
+}

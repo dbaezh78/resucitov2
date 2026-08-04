@@ -1,0 +1,301 @@
+{
+  "id": "comodestilalamiel",
+  "tt": "Como Destila La Miel",
+  "title": "Como Destila La Miel",
+  "subtitle": "Oda XL de Salomón",
+  "category": [
+    "Eleccion"
+  ],
+  "catCanto": "Eleccion",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "239",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/comodestilalamiel.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=adondeteescondisteamado",
+  "sig": "/src/index.html?canto=comolirioentreloscardos",
+  "lizq": [
+    {
+      "line": "COMO DESTILA LA MIEL, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EL PANAL DE LAS ABEJAS, (Re,m,210)",
+      "sC": "as"
+    },
+    {
+      "line": "Y FLUYE LA LECHE, (Mi,,49)",
+      "sC": "as"
+    },
+    {
+      "line": "EN LA MUJER QUE AMA A SUS HIJOS;, (La,m,313)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO MANAN DE LA FUENTE, ",
+      "sC": "as"
+    },
+    {
+      "line": "LAS TRANQUILAS AGUAS,, (Re,m,191)",
+      "sC": "as"
+    },
+    {
+      "line": "ASÍ MI CORAZÓN, (Mi,,28)",
+      "sC": "as"
+    },
+    {
+      "line": "DERRAMA SU ALABANZA., (La,m,196)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y de mis labios brota, (Re,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "un nuevo canto hacia el Señor,, (Mi,,275)",
+      "sC": ""
+    },
+    {
+      "line": "y mi lengua siente, (Re,m,66)",
+      "sC": ""
+    },
+    {
+      "line": "la dulzura de su nombre,, (Mi,,173)",
+      "sC": ""
+    },
+    {
+      "line": "y mi cuerpo se deleita, (Re,m,73)",
+      "sC": ""
+    },
+    {
+      "line": "con sus canciones., (Mi,,135)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque su luz serena, (Fa,,113)",
+      "sC": ""
+    },
+    {
+      "line": "apacigua todos mis males,, (Mi,,215)",
+      "sC": ""
+    },
+    {
+      "line": "porque su mirada simple de amor, (Fa,,138)",
+      "sC": ""
+    },
+    {
+      "line": "cura mi corazón., (Mi,,136)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "PORQUE LA VIDA INMORTAL, (Fa,,252)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HA PUESTO SU TIENDA, ",
+      "sC": "as"
+    },
+    {
+      "line": "DENTRO DE NOSOTROS., (Mi,,171)",
+      "sC": "as"
+    },
+    {
+      "line": "AALELUYA, AALELUYA,, (Fa,,10)(Mi,,96)(Fa,,121)(Mi,,204)",
+      "sC": "as"
+    },
+    {
+      "line": "AAALELÚU,ALELÚ,ALELUYA., (Fa,,10)(Mi,,254)",
+      "sC": "as"
+    },
+    {
+      "line": "AALELUYA, AALELUYA,, (Fa,,10)(Mi,,96)(Fa,,121)(Mi,,204)",
+      "sC": "as"
+    },
+    {
+      "line": "AAALELÚU,ALELÚ,ALELUYA., (Fa,,10)(Mi,,254)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_miel_1",
+      "initialState": "collapsed",
+      "triggerLine": "COMO DESTILA LA MIEL (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EL PANAL DE LAS ABEJAS, (Re,m,210)",
+          "sC": "as"
+        },
+        {
+          "line": "Y FLUYE LA LECHE, (Mi,,49)",
+          "sC": "as"
+        },
+        {
+          "line": "EN LA MUJER QUE AMA A SUS HIJOS;, (La,m,313)",
+          "sC": "as"
+        },
+        {
+          "line": "COMO MANAN DE LA FUENTE, ",
+          "sC": "as"
+        },
+        {
+          "line": "LAS TRANQUILAS AGUAS,, (Re,m,191)",
+          "sC": "as"
+        },
+        {
+          "line": "ASÍ MI CORAZÓN, (Mi,,28)",
+          "sC": "as"
+        },
+        {
+          "line": "DERRAMA SU ALABANZA., (La,m,196)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y mi rostro se ilumina con su alegría,, (Re,m,69)(Mi,,333)",
+      "sC": "tc"
+    },
+    {
+      "line": "y mi espíritu se goza en sus amores., (Re,m,82)(Mi,,306)",
+      "sC": ""
+    },
+    {
+      "line": "Mi corazón lleno de su luz, (Fa,,86)",
+      "sC": ""
+    },
+    {
+      "line": "siente su mirada amorosa., (Mi,,223)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque el temor en Él se confía,, (Fa,,138)(Mi,,287)",
+      "sC": "tc"
+    },
+    {
+      "line": "PORQUE EL TEMOR EN ÉL SE CONFÍA,, (Fa,,164)(Mi,,344)",
+      "sC": "ta as"
+    },
+    {
+      "line": "porque la salvación en Él es segura., (Fa,,168)(Mi,,313)",
+      "sC": "tc"
+    },
+    {
+      "line": "PORQUE LA SALVACIÓN EN ÉL ES SEGURA., (Fa,,203)(Mi,,370)",
+      "sC": "ta as"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_miel_2",
+      "initialState": "collapsed",
+      "triggerLine": "PORQUE LA VIDA INMORTAL, (Fa,,252)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HA PUESTO SU TIENDA, ",
+          "sC": "as"
+        },
+        {
+          "line": "DENTRO DE NOSOTROS., (Mi,,171)",
+          "sC": "as"
+        },
+        {
+          "line": "AALELUYA, AALELUYA,, (Fa,,10)(Mi,,96)(Fa,,121)(Mi,,204)",
+          "sC": "as"
+        },
+        {
+          "line": "AAALELÚU,ALELÚ,ALELUYA., (Fa,,10)(Mi,,254)",
+          "sC": "as"
+        },
+        {
+          "line": "AALELUYA, AALELUYA,, (Fa,,10)(Mi,,96)(Fa,,121)(Mi,,204)",
+          "sC": "as"
+        },
+        {
+          "line": "AAALELÚU,ALELÚ,ALELUYA., (Fa,,10)(Mi,,254)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_miel_3",
+      "initialState": "collapsed",
+      "triggerLine": "COMO DESTILA LA MIEL, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EL PANAL DE LAS ABEJAS, (Re,m,210)",
+          "sC": "as"
+        },
+        {
+          "line": "Y FLUYE LA LECHE, (Mi,,49)",
+          "sC": "as"
+        },
+        {
+          "line": "EN LA MUJER QUE AMA A SUS HIJOS;, (La,m,313)",
+          "sC": "as"
+        },
+        {
+          "line": "COMO MANAN DE LA FUENTE, ",
+          "sC": "as"
+        },
+        {
+          "line": "LAS TRANQUILAS AGUAS,, (Re,m,191)",
+          "sC": "as"
+        },
+        {
+          "line": "ASÍ MI CORAZÓN, (Mi,,28)",
+          "sC": "as"
+        },
+        {
+          "line": "DERRAMA SU ALABANZA., (La,m,196)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

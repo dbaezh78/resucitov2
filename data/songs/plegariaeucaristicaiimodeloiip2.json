@@ -1,0 +1,220 @@
+{
+  "id": "plegariaeucaristicaiimodeloiip2",
+  "tt": "Plegaria Eucarística II Modelo II",
+  "title": "Plegaria Eucarística II",
+  "subtitle": "Modelo II (1987) ─ Página 2",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "197",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/plegariaeucaristicaiimodeloii.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=plegariaeucaristicaiimodeloiip1",
+  "sig": "/src/index.html?canto=plegariaeucaristicaiimodeloiip3",
+  "lizq": [
+    {
+      "line": "Transición, ",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Con la melodía de «El Señor anuncia una noticia». , ",
+      "sC": "ttgray top1 tx",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Santo eres en verdad, Señor,, (Sol,,14)",
+      "sC": "pa"
+    },
+    {
+      "line": "fuente de toda santidad:, (Mi,m,213)",
+      "sC": ""
+    },
+    {
+      "line": "Epíclesis. Oración Consecratoria",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "santifica estos dones, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "con la efusión de tu Espíritu,, (Mi,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "de manera que sean para nosotros, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "Cuerpo y,(Si,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "✠",
+      "sC": "sub cruz",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Sangre",
+      "sC": "sub sangre"
+    },
+    {
+      "line": "de Jesucristo, Nuestro Señor., (Mi,m,90)",
+      "sC": ""
+    },
+    {
+      "line": "Relato de la Institución",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "El cual, cuando iba a ser entregado a su Pasión,, (Sol,,14)",
+      "sC": "pa"
+    },
+    {
+      "line": "voluntariamente aceptada,, (Mi,m,223)",
+      "sC": ""
+    },
+    {
+      "line": "tomó pan,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "dándote gracias,, (Mi,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "lo partió, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "y lo dio a sus discípulos, diciendo:, (Mi,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tomad y comed todos de él,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "porque esto es mi Cuerpo,, (Si,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "que será entregado por vosotros., (Mi,m,156)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Del mismo modo, acabada la cena,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "tomó el cáliz,, (Mi,m,99)",
+      "sC": ""
+    },
+    {
+      "line": "y dándote gracias de nuevo,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "lo pasó a sus discípulos, diciendo:, (Mi,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tomad y bebed todos de él,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "éste es el cáliz de mi Sangre,, (Si,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "Sangre de la alianza nueva y eterna,, (La,m,20)(Mi,m,307)",
+      "sC": ""
+    },
+    {
+      "line": "que será derramada por vosotros, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "y por muchos,, ",
+      "sC": ""
+    },
+    {
+      "line": "para el perdón, (Si,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "para el perdón, (La,,20)",
+      "sC": ""
+    },
+    {
+      "line": "de los pecados., (Mi,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "Haced esto en conmemoración mía., (Sol,,14)(Si,m,129)(Mi,m,320)",
+      "sC": ""
+    },
+    {
+      "line": "Aclamación, ",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Este es el sacramento de nuestra fe., (Sol,,14)",
+      "sC": "pa"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ANUNCIAMOS TU MUERTE, SEÑOR,, (Sol,,14)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PROCLAMAMOS TU RESURRECCIÓN,, (Si,m,20)",
+      "sC": "as"
+    },
+    {
+      "line": "¡VEN, SEÑOR JESÚS!, (La,,20)(Mi,m,102)",
+      "sC": "as"
+    },
+    {
+      "line": "¡VEN, SEÑOR JESÚS!, (La,,20)(Mi,m,102)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

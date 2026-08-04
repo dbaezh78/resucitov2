@@ -1,0 +1,179 @@
+{
+  "id": "solaasolo",
+  "tt": "Sola A Solo",
+  "title": "Sola A Solo",
+  "subtitle": "(Kiko Argüello)",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María",
+    "Cuaresma",
+    "Penitencial",
+    "Fracción Del Pan"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "* Punteo en la 1ª cuerda: al aire 5º 4º 5º 7° 5° 4° y 5° traste. La 4ª cuerda en el 6° traste tres veces y la 1 ª al aire nuevamente.",
+  "nCanURL": "",
+  "dbno": "155",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/solaasolo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=sionmadredetodoslospueblos",
+  "sig": "/src/index.html?canto=stabatmaterdolorosa",
+  "lizq": [
+    {
+      "line": "Sola a solo, (Re,madd9*,47)(Sol,m,127)",
+      "sC": "tc"
+    },
+    {
+      "line": "bajo la cruz,, (La,,96)",
+      "sC": ""
+    },
+    {
+      "line": "María, ¿quién te podrá separar?, (Re,m,284)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Virgen sola,, (Sol,m,88)",
+      "sC": ""
+    },
+    {
+      "line": "Madre,, (La,,25)",
+      "sC": ""
+    },
+    {
+      "line": "torre atravesada., (Re,m,126)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Columna de amor,, (Sol,m,158)",
+      "sC": ""
+    },
+    {
+      "line": "tú sujetas el cielo, (La,,146)",
+      "sC": ""
+    },
+    {
+      "line": "de nuestra débil fe., (Re,m,164)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SOLA A SOLO,, (Re,m,18)(Do,,100)",
+      "sC": "ta as"
+    },
+    {
+      "line": "MADRE, LLENA DE DIOS., (Fa,,209)",
+      "sC": "as"
+    },
+    {
+      "line": "RUEGA POR NOSOTROS, (La,,36)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE SOMOS PECADORES., (Si♭,,71)(La,,200)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Sola a solo, (Re,m,21)(Sol,m,85)",
+      "sC": "tc"
+    },
+    {
+      "line": "bajo la cruz,, (La,,92)",
+      "sC": ""
+    },
+    {
+      "line": "María, ¿quién te podrá separar?, (Re,m,286)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "VIRGEN SOLA,, (Re,m,19)(Sol,m,101)",
+      "sC": "ta as"
+    },
+    {
+      "line": "MADRE,, (La,,26)",
+      "sC": "as"
+    },
+    {
+      "line": "TORRE ATRAVESADA., (Re,m,163)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Columna de amor,, (Re,m,23)(Sol,m,157)",
+      "sC": "tc"
+    },
+    {
+      "line": "tú sujetas el cielo, (La,,143)",
+      "sC": ""
+    },
+    {
+      "line": "de nuestra débil fe., (Re,m,165)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SOLA A SOLO, (Re,m,18)(Do,,100)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "MADRE, LLENA DE DIOS., (Fa,,209)",
+          "sC": "as"
+        },
+        {
+          "line": "RUEGA POR NOSOTROS, (La,,36)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE SOMOS PECADORES., (Si♭,,71)(La,,200)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,225 @@
+{
+  "id": "levantomisojosalosmontes",
+  "tt": "Levanto Mis Ojos A Los Montes",
+  "title": "Levanto Mis Ojos A Los Montes",
+  "subtitle": "Salmo 121 (120)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "105",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/levantomisojosalosmontes.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=laudasionc",
+  "sig": "/src/index.html?canto=lleguehastatupresenciamiclamor",
+  "lizq": [
+    {
+      "line": "LEVANTO MIS OJOS A LOS MONTES:, (Sol,,14)(Si,m,280)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¿DE DÓNDE ME VENDRÁ EL AUXILIO?, (Do,,65)(Re,7,232)(Sol,,317)",
+      "sC": "as"
+    },
+    {
+      "line": "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,69)(Sol,,297)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE HIZO EL CIELO Y LA TIERRA., (Re,,65)(Do,,152)(Sol,,260)",
+      "sC": "as"
+    },
+    {
+      "line": "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,74)(Re,7,171)(Sol,,300)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE HIZO EL CIELO Y LA TIERRA., (Do,,64)(Re,7,150)(Sol,,260)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No permitirá que resbale tu pie,, (Sol,,13)(Si,m,286)",
+      "sC": "tc"
+    },
+    {
+      "line": "tu guardián no duerme;, (Do,,10)(Re,7,90)(Sol,,174)",
+      "sC": ""
+    },
+    {
+      "line": "no duerme ni reposa, (Do,,57)(Sol,,167)",
+      "sC": ""
+    },
+    {
+      "line": "el guardián de Israel., (Re,,89)(Do,,128)(Sol,,184)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LEVANTO MIS OJOS A LOS MONTES, (Sol,,14)(Si,m,280)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¿DE DÓNDE ME VENDRÁ EL AUXILIO?, (Do,,65)(Re,7,232)(Sol,,317)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,69)(Sol,,297)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE HIZO EL CIELO Y LA TIERRA., (Re,,65)(Do,,152)(Sol,,260)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,74)(Re,7,171)(Sol,,300)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE HIZO EL CIELO Y LA TIERRA., (Do,,64)(Re,7,150)(Sol,,260)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "El Señor te guarda a su sombra,, (Sol,,14)(Si,m,246)",
+      "sC": "tc"
+    },
+    {
+      "line": "Él está a tu derecha;, (Do,,10)(Re,7,55)(Sol,,143)",
+      "sC": ""
+    },
+    {
+      "line": "de día el sol no te hará daño,, (Do,,42)(Sol,,237)",
+      "sC": ""
+    },
+    {
+      "line": "ni la luna de noche., (Re,,54)(Do,,80)(Sol,,135)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "LEVANTO MIS OJOS A LOS MONTES, (Sol,,14)(Si,m,280)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¿DE DÓNDE ME VENDRÁ EL AUXILIO?, (Do,,65)(Re,7,232)(Sol,,317)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,69)(Sol,,297)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE HIZO EL CIELO Y LA TIERRA., (Re,,65)(Do,,152)(Sol,,260)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,74)(Re,7,171)(Sol,,300)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE HIZO EL CIELO Y LA TIERRA., (Do,,64)(Re,7,150)(Sol,,260)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor te guarda de todo mal,, (Sol,,14)(Si,m,287)",
+      "sC": "tc"
+    },
+    {
+      "line": "él guarda tu alma;, (Do,,10)(Re,7,51)(Sol,,123)",
+      "sC": ""
+    },
+    {
+      "line": "vigila tus entradas y salidas,, (Do,,23)(Sol,,222)",
+      "sC": ""
+    },
+    {
+      "line": "ahora y por siempre., (Re,,28)(Do,,68)(Sol,,133)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "LEVANTO MIS OJOS A LOS MONTES, (Sol,,14)(Si,m,280)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¿DE DÓNDE ME VENDRÁ EL AUXILIO?, (Do,,65)(Re,7,232)(Sol,,317)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,69)(Sol,,297)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE HIZO EL CIELO Y LA TIERRA., (Re,,65)(Do,,152)(Sol,,260)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,74)(Re,7,171)(Sol,,300)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE HIZO EL CIELO Y LA TIERRA., (Do,,64)(Re,7,150)(Sol,,260)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "sourceBook": "resucito"
+}

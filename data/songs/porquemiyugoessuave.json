@@ -1,0 +1,186 @@
+{
+  "id": "porquemiyugoessuave",
+  "tt": "Porque Mi Yugo Es Suave",
+  "title": "Porque Mi Yugo Es Suave",
+  "subtitle": "Mateo 11,28ss",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "135",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/porquemiyugoessuave.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=porquelasgentesconjuran",
+  "sig": "/src/index.html?canto=queamablessontusmoradas",
+  "lizq": [
+    {
+      "line": "Venid a mí vosotros todos, (Do,,10)(Mi,,203)",
+      "sC": "tc"
+    },
+    {
+      "line": "que estáis cansados y agobiados,, (La,m,275)",
+      "sC": ""
+    },
+    {
+      "line": "que yo os aliviaré,, (Fa,,11)(Mi,,159)",
+      "sC": ""
+    },
+    {
+      "line": "que yo os aliviaré., (Fa,,57)(Mi,,159)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tomad sobre vosotros mi yugo, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "y aprended de mí,, (Mi,,163)",
+      "sC": ""
+    },
+    {
+      "line": "que soy manso y humilde de corazón,, (La,m,334)",
+      "sC": ""
+    },
+    {
+      "line": "y hallaréis descanso para vosotros,, (Fa,,20)(Mi,,284)",
+      "sC": ""
+    },
+    {
+      "line": "y encontraréis reposo para vuestras almas., (Fa,,175)(Mi,,355)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PORQUE MI YUGO ES SUAVE,, (Do,,10)(Mi,,242)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PORQUE MI YUGO ES SUAVE, (Fa,,241)",
+      "sC": "as"
+    },
+    {
+      "line": "Y MI CARGA LIGERA., (Mi,,158)",
+      "sC": "as"
+    },
+    {
+      "line": "PORQUE MI YUGO ES SUAVE, (Fa,,241)",
+      "sC": "as"
+    },
+    {
+      "line": "Y MI CARGA LIGERA., (Mi,,173)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "Venid a mí, (Do,,10)",
+      "sC": "tc",
+      "lines": [
+        {
+          "line": "que estáis cansados y agobiados,, (La,m,275)",
+          "sC": ""
+        },
+        {
+          "line": "que yo os aliviaré,, (Fa,,11)(Mi,,159)",
+          "sC": ""
+        },
+        {
+          "line": "que yo os aliviaré., (Fa,,57)(Mi,,159)",
+          "sC": ""
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Tomad sobre vosotros mi yugo, (Do,,10)",
+          "sC": ""
+        },
+        {
+          "line": "y aprended de mí,, (Mi,,163)",
+          "sC": ""
+        },
+        {
+          "line": "que soy manso y humilde de corazón,, (La,m,334)",
+          "sC": ""
+        },
+        {
+          "line": "y hallaréis descanso para vosotros,, (Fa,,20)(Mi,,284)",
+          "sC": ""
+        },
+        {
+          "line": "y encontraréis reposo para vuestras almas., (Fa,,175)(Mi,,355)",
+          "sC": ""
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "PORQUE MI YUGO ES SUAVE, (Do,,10)(Mi,,242)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PORQUE MI YUGO ES SUAVE, (Fa,,241)",
+          "sC": "as"
+        },
+        {
+          "line": "Y MI CARGA LIGERA., (Mi,,158)",
+          "sC": "as"
+        },
+        {
+          "line": "PORQUE MI YUGO ES SUAVE, (Fa,,241)",
+          "sC": "as"
+        },
+        {
+          "line": "Y MI CARGA LIGERA., (Mi,,173)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

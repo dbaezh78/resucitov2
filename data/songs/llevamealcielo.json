@@ -1,0 +1,304 @@
+{
+  "id": "llevamealcielo",
+  "tt": "Llévame Al Cielo",
+  "title": "Llévame Al Cielo",
+  "subtitle": "Filipenses 1,23",
+  "category": [
+    "Precatecumenado",
+    "Adviento",
+    "Navidad",
+    "Pascua",
+    "Pentecostés",
+    "Final",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "107",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/llevamealcielo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=lleguehastatupresenciamiclamor",
+  "sig": "/src/index.html?canto=magnificat",
+  "lizq": [
+    {
+      "line": "LLÉVAME AL CIELO,, (Mi,,11)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LLÉVAME AL CIELO, ",
+      "sC": "as"
+    },
+    {
+      "line": "OH, OH SEÑOR., (Do#,m,27)(Sol#,,124)",
+      "sC": "as"
+    },
+    {
+      "line": "PORQUE MORIR,, (Mi,,136)",
+      "sC": "as"
+    },
+    {
+      "line": "PORQUE MORIR, ",
+      "sC": "as"
+    },
+    {
+      "line": "ES CON MUCHO LO MEJOR,, (Do#,m,27)(Sol#,,238)",
+      "sC": "as"
+    },
+    {
+      "line": "ES CON MUCHO LO MEJOR,, (La,,10)(Mi,,233)",
+      "sC": "as"
+    },
+    {
+      "line": "ESTAR CONTIGO,, (Si,7,124)",
+      "sC": "as"
+    },
+    {
+      "line": "ESTAR CONTIGO., (Mi,,119)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Una cosa te ruego,, (Mi,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "eso solo te pido: ",
+      "sC": ""
+    },
+    {
+      "line": "no dudar nunca de tu amor,, (Do#,m,26)(Sol#,,246)",
+      "sC": ""
+    },
+    {
+      "line": "no dudar nunca de Ti,, (La,,10)(Mi,,196)",
+      "sC": ""
+    },
+    {
+      "line": "estar contigo,, (Si,7,95)",
+      "sC": ""
+    },
+    {
+      "line": "estar contigo., (Mi,,99)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LLÉVAME AL CIELO, (Mi,,11)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LLÉVAME AL CIELO, ",
+          "sC": "as"
+        },
+        {
+          "line": "OH, OH SEÑOR., (Do#,m,27)(Sol#,,124)",
+          "sC": "as"
+        },
+        {
+          "line": "PORQUE MORIR,, (Mi,,136)",
+          "sC": "as"
+        },
+        {
+          "line": "PORQUE MORIR, ",
+          "sC": "as"
+        },
+        {
+          "line": "ES CON MUCHO LO MEJOR,, (Do#,m,27)(Sol#,,238)",
+          "sC": "as"
+        },
+        {
+          "line": "ES CON MUCHO LO MEJOR,, (La,,10)(Mi,,233)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTAR CONTIGO,, (Si,7,124)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTAR CONTIGO., (Mi,,119)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Oh qué bueno,, (Mi,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "oh qué dulce, ",
+      "sC": ""
+    },
+    {
+      "line": "ha sido tu amor conmigo,, (Do#,m,27)(Sol#,,211)",
+      "sC": ""
+    },
+    {
+      "line": "ha sido tu amor conmigo,, (La,,10)(Mi,,210)",
+      "sC": ""
+    },
+    {
+      "line": "oh qué bueno,, (Si,7,101)",
+      "sC": ""
+    },
+    {
+      "line": "oh qué dulce., (Mi,,89)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "LLÉVAME AL CIELO, (Mi,,11)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LLÉVAME AL CIELO, ",
+          "sC": "as"
+        },
+        {
+          "line": "OH, OH SEÑOR., (Do#,m,27)(Sol#,,124)",
+          "sC": "as"
+        },
+        {
+          "line": "PORQUE MORIR,, (Mi,,136)",
+          "sC": "as"
+        },
+        {
+          "line": "PORQUE MORIR, ",
+          "sC": "as"
+        },
+        {
+          "line": "ES CON MUCHO LO MEJOR,, (Do#,m,27)(Sol#,,238)",
+          "sC": "as"
+        },
+        {
+          "line": "ES CON MUCHO LO MEJOR,, (La,,10)(Mi,,233)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTAR CONTIGO,, (Si,7,124)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTAR CONTIGO., (Mi,,119)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "Una cosa te ruego, (Mi,,10)",
+      "sC": "tc",
+      "lines": [
+        {
+          "line": "eso solo te pido: ",
+          "sC": ""
+        },
+        {
+          "line": "no dudar nunca de tu amor,, (Do#,m,26)(Sol#,,246)",
+          "sC": ""
+        },
+        {
+          "line": "no dudar nunca de Ti,, (La,,10)(Mi,,196)",
+          "sC": ""
+        },
+        {
+          "line": "estar contigo,, (Si,7,95)",
+          "sC": ""
+        },
+        {
+          "line": "estar contigo., (Mi,,99)",
+          "sC": ""
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "LLÉVAME AL CIELO, (Mi,,11)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LLÉVAME AL CIELO, ",
+          "sC": "as"
+        },
+        {
+          "line": "OH, OH SEÑOR., (Do#,m,27)(Sol#,,124)",
+          "sC": "as"
+        },
+        {
+          "line": "PORQUE MORIR,, (Mi,,136)",
+          "sC": "as"
+        },
+        {
+          "line": "PORQUE MORIR, ",
+          "sC": "as"
+        },
+        {
+          "line": "ES CON MUCHO LO MEJOR,, (Do#,m,27)(Sol#,,238)",
+          "sC": "as"
+        },
+        {
+          "line": "ES CON MUCHO LO MEJOR,, (La,,10)(Mi,,233)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTAR CONTIGO,, (Si,7,124)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTAR CONTIGO., (Mi,,119)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "sourceBook": "resucito"
+}

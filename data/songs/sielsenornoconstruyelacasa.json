@@ -1,0 +1,211 @@
+{
+  "id": "sielsenornoconstruyelacasa",
+  "tt": "Si El Señor No Construye La Casa",
+  "title": "Si El Señor No Construye La Casa",
+  "subtitle": "Salmo 127 (126)",
+  "category": [
+    "Precatecumenado",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "150",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/sielsenornoconstruyelacasa.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=shlomlejmariam",
+  "sig": "/src/index.html?canto=sihabeisresucitadoconcristo",
+  "lizq": [
+    {
+      "line": "SI EL SEÑOR, (Mi,,10)",
+      "sC": "tc as"
+    },
+    {
+      "line": "NO CONSTRUYE LA CASA,, (Do#,m,116)(La,,209)",
+      "sC": "as r1"
+    },
+    {
+      "line": "EN VANO SE CANSAN, (Si,,53)",
+      "sC": "as"
+    },
+    {
+      "line": "LOS CONSTRUCTORES., (Mi,,171)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si el Señor no guarda la ciudad,, (Do#,m,27)(Sol#,,281)",
+      "sC": "tc"
+    },
+    {
+      "line": "en vano vigilan los centinelas,, (Do#,m,255)",
+      "sC": ""
+    },
+    {
+      "line": "si el Señor no guarda la ciudad., (La,,10)(Sol#,,279)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SI EL SEÑOR, (Mi,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO CONSTRUYE LA CASA,, (Do#,m,116)(La,,209)",
+          "sC": "as r1"
+        },
+        {
+          "line": "EN VANO SE CANSAN, (Si,,53)",
+          "sC": "as"
+        },
+        {
+          "line": "LOS CONSTRUCTORES., (Mi,,171)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En vano madrugáis al levantaros,, (Do#,m,26)(Sol#,,279)",
+      "sC": "tc"
+    },
+    {
+      "line": "el descanso retrasáis, ",
+      "sC": ""
+    },
+    {
+      "line": "para conseguir el pan:, (Do#,m,196)",
+      "sC": ""
+    },
+    {
+      "line": "Dios lo da a sus amigos, (La,,10)",
+      "sC": ""
+    },
+    {
+      "line": "mientras duermen., (Sol#,,126)",
+      "sC": ""
+    },
+    {
+      "line": "DIOS LO DA A SUS AMIGOS, (La,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "MIENTRAS DUERMEN., (Sol#,,144)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "SI EL SEÑOR, (Mi,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO CONSTRUYE LA CASA,, (Do#,m,116)(La,,209)",
+          "sC": "as r1"
+        },
+        {
+          "line": "EN VANO SE CANSAN, (Si,,53)",
+          "sC": "as"
+        },
+        {
+          "line": "LOS CONSTRUCTORES., (Mi,,171)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Don del Señor son los hijos,, (Do#,m,26)(Sol#,,229)",
+      "sC": "tc"
+    },
+    {
+      "line": "son como flechas en manos de un guerrero, ",
+      "sC": ""
+    },
+    {
+      "line": "los hijos de la juventud., (Do#,m,204)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Dichoso el hombre, (La,,17)",
+      "sC": ""
+    },
+    {
+      "line": "que tiene llena su aljaba!, (Sol#,,206)",
+      "sC": ""
+    },
+    {
+      "line": "No temerá cuando lleguen, (La,,97)",
+      "sC": ""
+    },
+    {
+      "line": "sus enemigos., (Sol#,,97)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "SI EL SEÑOR, (Mi,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO CONSTRUYE LA CASA,, (Do#,m,116)(La,,209)",
+          "sC": "as r1"
+        },
+        {
+          "line": "EN VANO SE CANSAN, (Si,,53)",
+          "sC": "as"
+        },
+        {
+          "line": "LOS CONSTRUCTORES., (Mi,,171)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

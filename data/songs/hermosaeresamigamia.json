@@ -1,0 +1,219 @@
+{
+  "id": "hermosaeresamigamia",
+  "tt": "Hermosa Eres, Amiga Mía",
+  "title": "Hermosa Eres, Amiga Mía",
+  "subtitle": "Cantar de los cantares 6-7",
+  "category": [
+    "Eleccion",
+    "Pascua",
+    "Pentecostés",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Eleccion",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "241",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/hermosaeresamigamia.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=comolirioentreloscardos",
+  "sig": "/src/index.html?canto=lapalomavolo",
+  "lizq": [
+    {
+      "line": "HERMOSA ERES, (Re,m,22)",
+      "sC": "tc as"
+    },
+    {
+      "line": "AMIGA MÍA, COMO TIRSÁ,, (La,7,239)",
+      "sC": "as r1"
+    },
+    {
+      "line": "BELLÍSIMA, COMO JERUSALÉN., (Re,m,285)",
+      "sC": "as"
+    },
+    {
+      "line": "JERUSALÉN, JERUSALÉN,, (Sol,m,96)(La,7,215)",
+      "sC": "as"
+    },
+    {
+      "line": "JERUSALÉN, JERUSALÉN., (Sol,m,96)(La,7,215)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Qué lindos son tus pies en las sandalias,, (Sol,m,25)",
+      "sC": "tc"
+    },
+    {
+      "line": "hija de príncipe!, (La,7,94)",
+      "sC": ""
+    },
+    {
+      "line": "Las curvas de tus caderas,, (Sol,m,24)",
+      "sC": ""
+    },
+    {
+      "line": "obra de manos de un artista., (La,7,240)",
+      "sC": ""
+    },
+    {
+      "line": "Tu ombligo es como un ánfora redonda., (Si♭,,83)(La,7,333)",
+      "sC": ""
+    },
+    {
+      "line": "Tu cuello, es una torre de marfil., (Si♭,,57)(La,7,294)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tus ojos, como las piscinas de Jesbón,, (Sol,m,61)(La,7,341)",
+      "sC": ""
+    },
+    {
+      "line": "tu cabeza es como el monte Carmelo,, (Sol,m,65)(La,7,335)",
+      "sC": ""
+    },
+    {
+      "line": "tu pelo, es como la púrpura;, (Si♭,,44)(La,7,207)",
+      "sC": ""
+    },
+    {
+      "line": "¡un rey en él está prisionero!, (Si♭,,51)(La,7,240)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_amigamia_1",
+      "initialState": "collapsed",
+      "triggerLine": "HERMOSA ERES (Re,m,22)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "AMIGA MÍA, COMO TIRSÁ,, (La,7,239)",
+          "sC": "as r1"
+        },
+        {
+          "line": "BELLÍSIMA, COMO JERUSALÉN., (Re,m,285)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN, JERUSALÉN,, (Sol,m,96)(La,7,215)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN, JERUSALÉN., (Sol,m,96)(La,7,215)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [
+    {
+      "line": "«¿Quién es ésta que surge, (Re,7,12)",
+      "sC": "tc"
+    },
+    {
+      "line": "como la aurora,, (Sol,m,116)",
+      "sC": ""
+    },
+    {
+      "line": "bella como la luna,, (Si♭,,13)(La,7,148)",
+      "sC": ""
+    },
+    {
+      "line": "esplendente como el sol?», (Si♭,,85)(La,7,221)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Qué bella eres, oh amor,, (Re,m,22)(La,7,223)",
+      "sC": ""
+    },
+    {
+      "line": "qué bella eres, oh delicia!, (Re,m,208)",
+      "sC": ""
+    },
+    {
+      "line": "Bellísima como Jerusalén,, (Sol,m,26)(La,7,225)",
+      "sC": ""
+    },
+    {
+      "line": "bellísima como Jerusalén,, (Sol,m,26)(La,7,225)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Jerusalén ¡Aay! Jerusalén,, (Si♭,7,122)(La,7,226)",
+      "sC": ""
+    },
+    {
+      "line": "Jerusalén, Jerusalén., (Si♭,7,75)(La,7,177)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_amigamia_2",
+      "initialState": "collapsed",
+      "triggerLine": "HERMOSA ERES (Re,m,22)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "AMIGA MÍA, COMO TIRSÁ,, (La,7,239)",
+          "sC": "as r1"
+        },
+        {
+          "line": "BELLÍSIMA, COMO JERUSALÉN., (Re,m,285)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN, JERUSALÉN,, (Sol,m,96)(La,7,215)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN, JERUSALÉN., (Sol,m,96)(La,7,215)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,210 @@
+{
+  "id": "bendiciondelaguap1",
+  "tt": "Bendición Del Agua",
+  "title": "Bendición Del Agua",
+  "subtitle": "Parte I | De la liturgia bautismal de la Vigilia Pascual",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "183",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/bendiciondelagua.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=bendiciondelagua",
+  "sig": "/src/index.html?canto=bendiciondelaguap2",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "ast "
+    },
+    {
+      "line": "Oh Dios, (Mi,m,20)",
+      "sC": "pa"
+    },
+    {
+      "line": "que por medio de los signos sacramentales, (La,m,20)(Si,7,378)",
+      "sC": ""
+    },
+    {
+      "line": "tú obras con invisible potencia, ",
+      "sC": ""
+    },
+    {
+      "line": "las maravillas de la salvación., (Mi,m,262)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "mheight0"
+    },
+    {
+      "line": "De muchos modos, ",
+      "sC": "ast1"
+    },
+    {
+      "line": "a través de los tiempos, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "has preparado el agua, tu criatura,, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "para que fuese signo del Bautismo., (Si,7,288)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Desde los orígenes tu Espíritu, (Mi,m,20)",
+      "sC": "ast2"
+    },
+    {
+      "line": "aleteaba sobre las aguas,,(La,m,20)(Si,7,250) ",
+      "sC": ""
+    },
+    {
+      "line": "para que contuviesen la fuerza de santificar. ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y también en el Diluvio, (Mi,m,20)",
+      "sC": "ast3"
+    },
+    {
+      "line": "has prefigurado el Bautismo,,(La,m,20)(Si,7,230)",
+      "sC": ""
+    },
+    {
+      "line": "para que hoy como ayer, (Mi,m,218)",
+      "sC": ""
+    },
+    {
+      "line": "el agua señalase el fin del pecado, (Re,,33)(Do,,201)",
+      "sC": ""
+    },
+    {
+      "line": "y el inicio de la Vida Nueva.,  (Si,7,226)",
+      "sC": ""
+    },
+    {
+      "line": "Tú, has liberado de la esclavitud, (Mi,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "a los hijos de Abraham, (Re,,190)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "haciéndoles pasar ilesos el Mar Rojo,(Mi,m,283) ",
+      "sC": ""
+    },
+    {
+      "line": "para que fuesen la imagen, ",
+      "sC": ""
+    },
+    {
+      "line": "del futuro pueblo de bautizados., (Re,,127)(Mi,m,263)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por fin, en la plenitud de los tiempos,, (Re,,289)",
+      "sC": ""
+    },
+    {
+      "line": "tu Hijo, bautizado en el agua del Jordán,, (Mi,m,39)(Re,,360)",
+      "sC": ""
+    },
+    {
+      "line": "fue consagrado por el Espíritu Santo., (Do,,119)(Si,7,310)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "LEVANTADO EN LA CRUZ,, (Mi,m,20)(Re,,210)",
+      "sC": "pa as"
+    },
+    {
+      "line": "DE SU COSTADO SALIÓ, (Do,,210)",
+      "sC": "as r1"
+    },
+    {
+      "line": "SANGRE Y AGUA., (Si,7,119)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y después de su resurrección, (Mi,m,20)(Re,,210)",
+      "sC": "pa"
+    },
+    {
+      "line": "ordenó a sus discípulos:, (Mi,m,168)",
+      "sC": ""
+    },
+    {
+      "line": "«Id y anunciad el Evangelio, (Re,,221)",
+      "sC": ""
+    },
+    {
+      "line": "a todos los pueblos,, (Mi,m,134)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "BAUTIZÁNDOLOS, (Mi,m,20)",
+      "sC": "pa as"
+    },
+    {
+      "line": "EN EL NOMBRE DEL PADRE,, (Re,,217)",
+      "sC": "as r2"
+    },
+    {
+      "line": "Y DEL HIJO,, (Do,,78)",
+      "sC": "as"
+    },
+    {
+      "line": "Y DEL ESPÍRITU SANTO., (Si,7,177)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

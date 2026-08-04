@@ -1,0 +1,293 @@
+{
+  "id": "laudasion",
+  "tt": "Lauda Sión",
+  "title": "Lauda Sión",
+  "subtitle": "Secuencia del Corpus Christi (Santo Tomas de Aquino) ",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "103",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/laudasion1.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=lasarmasdelaluz",
+  "sig": "/src/index.html?canto=laudasionc",
+  "lizq": [
+    {
+      "line": "Alaba, Sión, al Salvador,, (La,m,20)(Re,m,216)",
+      "sC": "tc"
+    },
+    {
+      "line": "Él es tu guía y tu Pastor., (La,m,208)",
+      "sC": ""
+    },
+    {
+      "line": "Alábalo con himnos y cantos., (Mi,,25)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ESTE ES EL PAN DE LOS ÁNGELES,, (La,m,20)(Re,m,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PAN DE LOS QUE HACEN CAMINO., (La,m,288)",
+      "sC": "as"
+    },
+    {
+      "line": "ESTE ES EL PAN DE LOS HIJOS., (Mi,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Canta con todo fervor,, (La,m,20)(Re,m,190)",
+      "sC": "tc"
+    },
+    {
+      "line": "al pan vivo que da vida:, (La,m,193)",
+      "sC": ""
+    },
+    {
+      "line": "este es el tema del canto, ",
+      "sC": ""
+    },
+    {
+      "line": "y el objeto de alabanza., (Mi,,204)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ciertamente se donó,, (La,m,20)(Re,m,190)",
+      "sC": "tc"
+    },
+    {
+      "line": "al grupo de doce hermanos, (Lam,,217)",
+      "sC": ""
+    },
+    {
+      "line": "en fraterna y Santa Cena. (Mi,,209)",
+      "sC": ""
+    },
+    {
+      "line": "Esta es la fiesta solemne, (La,m,20)(Re,m,192)",
+      "sC": ""
+    },
+    {
+      "line": "en la cual celebramos, (La,m,162)",
+      "sC": ""
+    },
+    {
+      "line": "la primera y Santa Cena. (Mi,,73)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Es el banquete del nuevo Rey, (La,m,20)(Re,m,266)",
+      "sC": "tc"
+    },
+    {
+      "line": "la nueva Pascua y nueva Ley, (La,m,256)",
+      "sC": ""
+    },
+    {
+      "line": "donde lo antiguo termina. (Mi,,120)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Lo antiguo se verá nuevo, (La,m,20)(Re,m,204)",
+      "sC": ""
+    },
+    {
+      "line": "la realidad a la sombra; (La,m,160)",
+      "sC": ""
+    },
+    {
+      "line": "¡Es todo luz, ya no hay tinieblas!, (Mi,,91)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cristo deja en su memoria, (La,m,20)(Re,m,216)",
+      "sC": "tc"
+    },
+    {
+      "line": "lo que hizo en Santa Cena, (La,m,215)",
+      "sC": ""
+    },
+    {
+      "line": "nosotros lo renovamos. (Mi,,167)",
+      "sC": ""
+    },
+    {
+      "line": "Obedientes a su palabra, (La,m,20)(Re,m,194)",
+      "sC": ""
+    },
+    {
+      "line": "consagramos pan y vino, (La,m,201)",
+      "sC": ""
+    },
+    {
+      "line": "¡Hostia de la salvación!, (Mi,,24)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Es cierto a los cristianos, (La,m,20)(Re,m,188)",
+      "sC": "tc"
+    },
+    {
+      "line": "que se transforma el pan en carne,, (La,m,292)",
+      "sC": ""
+    },
+    {
+      "line": "y que el vino se hace sangre. (Mi,,88)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_5",
+      "initialState": "collapsed",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

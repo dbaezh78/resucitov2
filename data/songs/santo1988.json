@@ -1,0 +1,142 @@
+{
+  "id": "santo1988",
+  "tt": "Santo 1988",
+  "title": "Santo",
+  "subtitle": "1988",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "219",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/santo1988.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=santo1982",
+  "sig": "/src/index.html?canto=tedeum",
+  "lizq": [
+    {
+      "line": "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)",
+      "sC": "tc"
+    },
+    {
+      "line": "SANTO, SANTO, SANTO., (Sol,,84)(La,m,162)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los cielos y la tierra, (La,m,19)(Sol,,150)",
+      "sC": "tc"
+    },
+    {
+      "line": "están llenos de tu Gloria., (La,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "LOS CIELOS Y LA TIERRA, (Sol,,197)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ESTÁN LLENOS DE TU GLORIA., (La,m,181)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Hosanna en lo alto del Cielo., (Fa,,45)(Mi,,240)",
+      "sC": "tc"
+    },
+    {
+      "line": "HOSANNA EN LO ALTO DEL CIELO., (Fa,,46)(Mi,,288)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SANTO, SANTO, SANTO., (La,m,20)(Sol,,90)(La,m,173)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SANTO, SANTO, SANTO., (Sol,,90)(La,m,175)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Bendito es el que viene, (La,m,15)(Sol,,193)",
+      "sC": "tc"
+    },
+    {
+      "line": "en el nombre del Señor., (La,m,212)",
+      "sC": ""
+    },
+    {
+      "line": "BENDITO ES EL QUE VIENE, (Sol,,223)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EN EL NOMBRE DEL SEÑOR., (La,m,244)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Hosanna en lo alto del Cielo., (Fa,,38)(Mi,,242)",
+      "sC": "tc"
+    },
+    {
+      "line": "HOSANNA EN LO ALTO DEL CIELO., (Fa,,48)(Mi,,291)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SANTO, SANTO, SANTO., (La,m,20)(Sol,,90)(La,m,173)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SANTO, SANTO, SANTO., (Sol,,90)(La,m,175)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Santo, Santo, Santo., (Fa,,14)(Mi,,143)",
+      "sC": "tc"
+    },
+    {
+      "line": "SANTO, SANTO, SANTO., (Fa,,13)(Mi,,163)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

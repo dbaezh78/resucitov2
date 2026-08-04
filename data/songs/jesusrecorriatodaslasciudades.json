@@ -1,0 +1,219 @@
+{
+  "id": "jesusrecorriatodaslasciudades",
+  "tt": "Jesús Recorría Todas Las Ciudades ",
+  "title": "Jesús recorría todas las ciudades",
+  "subtitle": "Mateo 9,35ss; 10 ",
+  "category": [
+    "Precatecumenado",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "95",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/jesusrecorriatodaslasciudades.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=jerusalenreconstruida",
+  "sig": "/src/index.html?canto=lacorderadedios",
+  "lizq": [
+    {
+      "line": "Jesús recorría todas las ciudades., (La,m,20)(Fa,,121)(La,m,279)",
+      "sC": "tc"
+    },
+    {
+      "line": "Jesús de pueblo en pueblo, (Fa,,216)",
+      "sC": ""
+    },
+    {
+      "line": "anunciaba el Reino., (La,m,151)",
+      "sC": ""
+    },
+    {
+      "line": "Y viendo las gentes que lo seguían, (Re,m,39)(Mi,7,306)",
+      "sC": ""
+    },
+    {
+      "line": "se conmovió., (La,m,113)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ESTABAN CANSADOS,, (Mi,m,20)",
+      "sC": "tc as"
+    },
+    {
+      "line": "ESTABAN ABATIDOS, (Fa,,149)",
+      "sC": "as r1"
+    },
+    {
+      "line": "COMO OVEJAS SIN PASTOR., (Mi,,242)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Entonces Jesús dijo a sus discípulos:, (La,m,20)(Fa,,130)(Mi,7,293)",
+      "sC": "tc"
+    },
+    {
+      "line": "«La mies es grande,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "es verdaderamente grande,, (Sol,,216)",
+      "sC": ""
+    },
+    {
+      "line": "y los obreros son pocos., (La,m,87)(Mi,,185)",
+      "sC": ""
+    },
+    {
+      "line": "Rogad, hermanos, al dueño de la mies, (La,m,129)(Sol,,352)",
+      "sC": ""
+    },
+    {
+      "line": "que envíe obreros a su mies., (La,m,84)(Mi,,255)",
+      "sC": ""
+    },
+    {
+      "line": "Mirad que yo os envío, (Do,,10)(Sol,,192)",
+      "sC": ""
+    },
+    {
+      "line": "como ovejas entre lobos., (La,m,84)(Sol,,195)",
+      "sC": ""
+    },
+    {
+      "line": "Sed prudentes como serpientes, (Do,,92)(Sol,,256)",
+      "sC": ""
+    },
+    {
+      "line": "y sencillos como palomas,, (La,m,63)(Sol,,199)",
+      "sC": ""
+    },
+    {
+      "line": "COMO PALOMAS., (La,m,20)",
+      "sC": "ta as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "No llevéis ni bolsa ni dinero,, (Do,,10)(Sol,,234)",
+      "sC": "tc"
+    },
+    {
+      "line": "ni alforja, ni calzado., (La,m,57)(Sol,,159)",
+      "sC": ""
+    },
+    {
+      "line": "Y anunciad que el Reino está cerca,, (Do,,89)(Sol,,298)",
+      "sC": ""
+    },
+    {
+      "line": "Cristo ha resucitado y viene con nosotros,, (La,m,20)(Sol,,345)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "VIENE CON NOSOTROS., (La,m,157)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El que ama a su padre o a su madre más que a mí,, (Do,,10)",
+      "sC": "tc txcant"
+    },
+    {
+      "line": "NO ES DIGNO DE MÍ, NO ES DIGNO DE MÍ., (Sol,,82)(La,m,288)",
+      "sC": "ta as"
+    },
+    {
+      "line": "El que ama a su hijo o a su hija más que a mí, (Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "NO ES DIGNO DE MÍ, NO ES DIGNO DE MÍ., (Sol,,82)(La,m,285)",
+      "sC": "ta as"
+    },
+    {
+      "line": "El que no tome su cruz y me siga,, (Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "NO ES DIGNO DE MÍ, NO ES DIGNO DE MÍ., (Sol,,81)(La,m,285)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Porque el que busca en este mundo su vida,, (Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "LA PERDERÁ, LA PERDERÁ., (Sol,,122)(La,m,256)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y el que pierda su vida por el amor mío,, (Do,,107)",
+      "sC": "tc"
+    },
+    {
+      "line": "LA ENCONTRARÁ, LA ENCONTRARÁ., (Sol,,159)(La,m,334)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Quien os escucha,, (Sol,,124)",
+      "sC": "tc"
+    },
+    {
+      "line": "ME ESCUCHA A MÍ., (La,m,171)",
+      "sC": "ta as tleft"
+    },
+    {
+      "line": "Quien os acoge,, (Sol,m,126)",
+      "sC": "tc"
+    },
+    {
+      "line": "ME ACOGE A MÍ., (La,m,147)",
+      "sC": "ta as tleft"
+    },
+    {
+      "line": "QUIEN ME ACOGE A MÍ,, (Sol,,215)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ACOGE A DIOS, ACOGE A DIOS»., (Fa,,122)(Mi,,272)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

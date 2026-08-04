@@ -1,0 +1,241 @@
+{
+  "id": "sihabeisresucitadoconcristo",
+  "tt": "Si Habéis Resucitado Con Cristo",
+  "title": "Si Habéis Resucitado Con Cristo",
+  "subtitle": "Colosense 3,1-4",
+  "category": [
+    "Precatecumenado",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "1",
+  "nCan": "* Melisma",
+  "nCanURL": "",
+  "dbno": "151",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/sihabeisresucitadoconcristo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=sielsenornoconstruyelacasa",
+  "sig": "/src/index.html?canto=sihoyescuchaissuvoz",
+  "lizq": [
+    {
+      "line": "SI HABÉIS RESUCITADO CON CRISTO,, (Mi,m,20)(Si,7,308)",
+      "sC": "tc as"
+    },
+    {
+      "line": "BUSCAD LAS COSAS DE ARRIBA,, (Mi,m,276)",
+      "sC": "as r1"
+    },
+    {
+      "line": "DONDE ESTÁ CRISTO,, (Re,,20)(Do,,159)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DONDE ESTÁ CRISTO, ",
+      "sC": "as"
+    },
+    {
+      "line": "SENTADO A LA DIESTRA DE DIOS., (Si,7,295)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aspirad a las cosas del Cielo,, (Mi,m,55)(Si,7,246)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no a las de la tierra., (Mi,m,167)",
+      "sC": ""
+    },
+    {
+      "line": "ASPIRAD A LAS COSAS DEL CIELO,, (Si,7,295)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y NO A LAS DE LA TIERRA., (Mi,m,200)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque habéis muerto,, (Re,,10)(Do,,176)",
+      "sC": "tc"
+    },
+    {
+      "line": "porque habéis muerto, ",
+      "sC": ""
+    },
+    {
+      "line": "y vuestra vida está oculta, (La,m,207)",
+      "sC": ""
+    },
+    {
+      "line": "unida con Cristo en Dios., (Si,7,210)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y cuando  aparezca Cristo,, (La,m,20)(Si,7,212)",
+      "sC": "ast1"
+    },
+    {
+      "line": "que es vuestra vida,, (La,m,20)(Si,7,161)",
+      "sC": ""
+    },
+    {
+      "line": "entonces vosotros, (Do,,34)",
+      "sC": ""
+    },
+    {
+      "line": "apareceréis gloriosos con Él., (Si,7,263)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SI HABÉIS RESUCITADO CON CRISTO, (Mi,m,20)(Si,7,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "BUSCAD LAS COSAS DE ARRIBA,, (Mi,m,276)",
+          "sC": "as r1"
+        },
+        {
+          "line": "DONDE ESTÁ CRISTO,, (Re,,20)(Do,,159)",
+          "sC": "ta as"
+        },
+        {
+          "line": "DONDE ESTÁ CRISTO, ",
+          "sC": "as"
+        },
+        {
+          "line": "SENTADO A LA DIESTRA DE DIOS., (Si,7,295)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aspirad a las cosas del Cielo,, (Mi,m,53)(Si,7,248)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no a las de la tierra., (Mi,m,165)",
+      "sC": ""
+    },
+    {
+      "line": "ASPIRAD A LAS COSAS DEL CIELO,, (Si,7,296)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y NO A LAS DE LA TIERRA., (Mi,m,200)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque habéis muerto,, (Re,,10)(Do,,178)",
+      "sC": "tc"
+    },
+    {
+      "line": "y vuestra vida está oculta, (La,m,207)",
+      "sC": ""
+    },
+    {
+      "line": "unida con Cristo en Dios., (Si,7,207)",
+      "sC": ""
+    },
+    {
+      "line": "PORQUE HABÉIS MUERTO,, (Re,,10)(Do,,201)",
+      "sC": "tc as"
+    },
+    {
+      "line": "Y VUESTRA VIDA ESTÁ OCULTA, (La,m,253)",
+      "sC": "as"
+    },
+    {
+      "line": "UNIDA CON CRISTO EN DIOS., (Si,7,249)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y cuando  aparezca Cristo,, (La,m,20)(Si,7,214)",
+      "sC": "tc ast2"
+    },
+    {
+      "line": "que es vuestra vida,, (La,m,20)(Si,7,158)",
+      "sC": ""
+    },
+    {
+      "line": "entonces vosotros, (Do,,35)",
+      "sC": ""
+    },
+    {
+      "line": "apareceréis gloriosos con Él., (Si,7,261)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SI HABÉIS RESUCITADO CON CRISTO, (Mi,m,20)(Si,7,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "BUSCAD LAS COSAS DE ARRIBA,, (Mi,m,276)",
+          "sC": "as r1"
+        },
+        {
+          "line": "DONDE ESTÁ CRISTO,, (Re,,20)(Do,,159)",
+          "sC": "ta as"
+        },
+        {
+          "line": "DONDE ESTÁ CRISTO, ",
+          "sC": "as"
+        },
+        {
+          "line": "SENTADO A LA DIESTRA DE DIOS., (Si,7,295)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

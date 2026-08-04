@@ -1,0 +1,261 @@
+{
+  "id": "comolacierva",
+  "tt": "Como La Cierva",
+  "title": "Como La Cierva",
+  "subtitle": "Salmo 42-43 (41-42)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "39",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/comolacierva.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=comoesmaravilloso",
+  "sig": "/src/index.html?canto=comoovejaqueve",
+  "lizq": [
+    {
+      "line": "Como la cierva anhela las corrientes de agua,, (Mi,,11)",
+      "sC": "tc"
+    },
+    {
+      "line": "así mi alma te anhela a ti, Dios mío;, (Fa#,m,325)",
+      "sC": ""
+    },
+    {
+      "line": "mi alma tiene sed de Dios, del Dios vivo,, (Si,7,354)",
+      "sC": ""
+    },
+    {
+      "line": "¿cuándo podré ver el rostro de Dios?, (Mi,,319)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mis lágrimas son mi pan noche y día, ",
+      "sC": ""
+    },
+    {
+      "line": "mientras mis enemigos me dicen todo el día: ",
+      "sC": ""
+    },
+    {
+      "line": "«¿Dónde está tu Dios? ¿Dónde está tu Dios?, (Fa#,m,184)",
+      "sC": ""
+    },
+    {
+      "line": "¿Dónde está tu Dios?». ",
+      "sC": ""
+    },
+    {
+      "line": "Y cuando yo recuerdo, (Si,7,170)",
+      "sC": ""
+    },
+    {
+      "line": "el alma se me llena de tristeza,",
+      "sC": ""
+    },
+    {
+      "line": "cómo marchaba en medio ",
+      "sC": ""
+    },
+    {
+      "line": "de un pueblo en fiesta., (Mi,,180)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Por qué te abates, alma mía,, (Sol#,,15)",
+      "sC": ""
+    },
+    {
+      "line": "por qué tú gimes dentro de mí?, (Do#,m,286)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ESPERA EN DIOS, ESPERA EN DIOS,, (Fa#,m,143)(Si,7,322)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE VOLVERÁS A ALABARLO. (Mi,,233)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque Él, Él es tu salvación,, (Do#,m,27)(Do#,7,117)(Fa#,m,249)",
+      "sC": "tc"
+    },
+    {
+      "line": "Él es tu Dios, Él es tu Dios., (Si,7,15)(Do#,m,102)(La,,141)(Sol#,,227)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "ESPERA EN DIOS, ESPERA EN DIOS,, (La,,143)(Sol#,,318)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ESPERA EN DIOS, ESPERA EN DIOS,, (La,,141)(Si,,319)(Si,,360)(Si♭,,386)(La,,412)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE VOLVERÁS A ALABARLO. (Sol#,,231)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Cuántas veces le he dicho a mi roca:, (Mi,,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "¿Por qué me has abandonado?! ",
+      "sC": ""
+    },
+    {
+      "line": "¿Por qué camino triste, ",
+      "sC": ""
+    },
+    {
+      "line": "oprimido por mis enemigos?, (Fa#,m,226)",
+      "sC": ""
+    },
+    {
+      "line": "Se me rompen los huesos",
+      "sC": ""
+    },
+    {
+      "line": "de escuchar todo el día:, (Si,7,211)",
+      "sC": ""
+    },
+    {
+      "line": "¿Dónde está tu Dios? ¿Dónde está ese Dios?, (Mi,,403)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor, envíame tu luz y tu verdad,, (Fa#,m,299)",
+      "sC": ""
+    },
+    {
+      "line": "que ellas me guíen hasta tu monte santo., (Si,7,359)",
+      "sC": ""
+    },
+    {
+      "line": "Entonces podré cantar ",
+      "sC": ""
+    },
+    {
+      "line": "un canto de alegría con mi guitarra., (Mi,,301)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_1",
+      "initialState": "collapsed",
+      "triggerLine": "¿Por qué te abates, alma mía, (Sol#,,15)",
+      "sC": "tc",
+      "lines": [
+        {
+          "line": "por qué tú gimes dentro de mí?, (Do#,m,286)",
+          "sC": ""
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_2",
+      "initialState": "collapsed",
+      "triggerLine": "ESPERA EN DIOS, ESPERA EN DIOS, (Fa#,m,143)(Si,7,322)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUE VOLVERÁS A ALABARLO. (Mi,,233)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_3",
+      "initialState": "collapsed",
+      "triggerLine": "Porque Él, Él es tu salvación, (Do#,m,27)(Do#,7,117)(Fa#,m,249)",
+      "sC": "tc",
+      "lines": [
+        {
+          "line": "Él es tu Dios, Él es tu Dios., (Si,7,15)(Do#,m,102)(La,,141)(Sol#,,227)",
+          "sC": ""
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_4",
+      "initialState": "collapsed",
+      "triggerLine": "ESPERA EN DIOS, ESPERA EN DIOS, (La,,143)(Sol#,,318)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ESPERA EN DIOS, ESPERA EN DIOS,, (La,,141)(Si,,319)(Si,,360)(Si♭,,386)(La,,412)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE VOLVERÁS A ALABARLO. (Sol#,,231)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

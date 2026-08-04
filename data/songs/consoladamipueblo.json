@@ -1,0 +1,128 @@
+{
+  "id": "consoladamipueblo",
+  "tt": "Consolad A Mi Pueblo",
+  "title": "Consolad A Mi Pueblo",
+  "subtitle": "Isaías 40,1-11 - Melodía hebraica ",
+  "category": [
+    "PreCatecumenado",
+    "Entrada",
+    "Paz",
+    "Final",
+    "Adviento",
+    "Navidad",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "41",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/consoladamipueblo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=comoovejaqueve",
+  "sig": "/src/index.html?canto=cristoeslaluz",
+  "lizq": [
+    {
+      "line": "CONSOLAD A MI PUEBLO, (Mi,m,15)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y HABLAD AL CORAZÓN DE JERUSALÉN,, (La,m,79)(Si,7,365)",
+      "sC": "as"
+    },
+    {
+      "line": "Y DECIDLE QUE SE ACABA SU ESCLAVITUD., (Mi,m,383)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Ohey!, una voz en el desierto grita:, (Sol,,15)(La,,303)(Si,7,329)",
+      "sC": "tc"
+    },
+    {
+      "line": "«Preparad el camino, la senda al Señor»., (La,m,21)(Si,7,246)(Mi,m,361)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PORQUE EL SEÑOR VIENE CON POTENCIA,, (La,m,161)(Mi,m,348)",
+      "sC": "ta as"
+    },
+    {
+      "line": "TRAE CONSIGO EL PREMIO., (Si,7,215)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO EL PASTOR REÚNE A SU REBAÑO,, (La,m,151)(Mi,m,321)",
+      "sC": "as"
+    },
+    {
+      "line": "LLEVA AL CORDERILLO EN SUS BRAZOS., (Si,7,176)(Mi,m,336)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Como el pastor conduce con cuidado, (La,m,129)(Mi,m,322)",
+      "sC": "tc"
+    },
+    {
+      "line": "las ovejas que van a ser madres,, (Si,7,260)",
+      "sC": ""
+    },
+    {
+      "line": "como el pastor que lleva sobre sus hombros, (La,m,128)",
+      "sC": "melisma"
+    },
+    {
+      "line": "la oveja perdida., (Si,7,126)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "CONSOLAD A MI PUEBLO, (Mi,m,15)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "Y HABLAD AL CORAZÓN DE JERUSALÉN,, (La,m,79)(Si,7,365)",
+          "sC": "as"
+        },
+        {
+          "line": "Y DECIDLE QUE SE ACABA SU ESCLAVITUD., (Mi,m,383)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

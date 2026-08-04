@@ -1,0 +1,162 @@
+{
+  "id": "eljacaldelospastores",
+  "tt": "El Jacal De Los Pastores",
+  "title": "El Jacal De Los Pastores",
+  "subtitle": "Cantar de los Cantares 1,2-8",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Comunión",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "55",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/eljacaldelospastores.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=elespiritudelsenorestasobremi",
+  "sig": "/src/index.html?canto=ellagarero",
+  "lizq": [
+    {
+      "line": "Que me bese con besos de su boca,,(Re,m,21)",
+      "sC": "tc"
+    },
+    {
+      "line": "mejores son que el vino tus amores. (Si♭,,89)(La,,278)",
+      "sC": ""
+    },
+    {
+      "line": "Tu nombre es ungüento que se vierte,",
+      "sC": ""
+    },
+    {
+      "line": "por eso te aman las doncellas., (Re,m,254)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "LLÉVAME EN POS DE TI, SALGAMOS., (Re,m,21)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LLÉVAME TRAS DE TI, CORRAMOS., (Si♭,,89)(La,,278)",
+      "sC": "as"
+    },
+    {
+      "line": "CELEBRAREMOS TUS AMORES MÁS QUE EL VINO, ",
+      "sC": "as"
+    },
+    {
+      "line": "CON CUÁNTA RAZÓN ERES AMADO., (Re,m,300)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HAZME SABER, AMADO DE MI ALMA,, (Re,m,23)",
+      "sC": "as r1"
+    },
+    {
+      "line": "DÓNDE APACIENTAS EL REBAÑO,, (La,,280)",
+      "sC": "as"
+    },
+    {
+      "line": "PARA QUE YO NO ANDE VAGABUNDA, ",
+      "sC": "as"
+    },
+    {
+      "line": "DETRÁS DE OTROS COMPAÑEROS., (Re,m,280)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si no lo sabes, oh bella entre las bellas,, (Re,m,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "sigue la senda de mis ovejas, (Si♭,,15)(La,,250)",
+      "sC": ""
+    },
+    {
+      "line": "y lleva por allí tus cabras, ",
+      "sC": ""
+    },
+    {
+      "line": "hasta el jacal de los pastores., (Re,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LLÉVAME EN POS DE TI, SALGAMOS (Re,m,21)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LLÉVAME TRAS DE TI, CORRAMOS., (Si♭,,89)(La,,278)",
+          "sC": "as"
+        },
+        {
+          "line": "CELEBRAREMOS TUS AMORES MÁS QUE EL VINO, ",
+          "sC": "as"
+        },
+        {
+          "line": "CON CUÁNTA RAZÓN ERES AMADO., (Re,m,300)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "HAZME SABER, AMADO DE MI ALMA,, (Re,m,23)",
+          "sC": "as r1"
+        },
+        {
+          "line": "DÓNDE APACIENTAS EL REBAÑO,, (La,,280)",
+          "sC": "as"
+        },
+        {
+          "line": "PARA QUE YO NO ANDE VAGABUNDA, ",
+          "sC": "as"
+        },
+        {
+          "line": "DETRÁS DE OTROS COMPAÑEROS., (Re,m,280)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

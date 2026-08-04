@@ -1,0 +1,114 @@
+{
+  "id": "heaquiquenuestroespejoeselsenor",
+  "tt": "He Aquí Que Nuestro Espejo Es El Señor",
+  "title": "He Aquí Que Nuestro Espejo Es El Señor",
+  "subtitle": "Oda XIII de Salomón",
+  "category": [
+    "Catecumenado",
+    "Cuaresma"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "226",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/heaquiquenuestroespejoeselsenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=elsembrador",
+  "sig": "/src/index.html?canto=himnoalacruzgloriosa",
+  "lizq": [
+    {
+      "line": "¡He aquí que nuestro espejo es el Señor!, (Re,m,22)(La,m,401)",
+      "sC": "tc"
+    },
+    {
+      "line": "Abrid vuestros ojos y miraos en Él, (Sol,m,345)",
+      "sC": ""
+    },
+    {
+      "line": "y aprended cómo es vuestra imagen., (La,,306)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA,ALELUYA,ALELUYA., (Re,m,56)(Sol,m,299)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Aleluya, aleluya, aleluya., (La,,248)",
+      "sC": "tc r1"
+    },
+    {
+      "line": "DAD GLORIA A SU ESPÍRITU, ",
+      "sC": "ta as"
+    },
+    {
+      "line": "DAD GLORIA A SU ESPÍRITU. ",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y limpiad la inmundicia de vuestro rostro,, (Re,m,22)(La,m,419)",
+      "sC": "tc"
+    },
+    {
+      "line": "amad su santidad y revestíos, (Sol,m,303)",
+      "sC": ""
+    },
+    {
+      "line": "y seréis inmaculados siempre delante de Él., (La,,406)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA,ALELUYA,ALELUYA., (Re,m,56)(Sol,m,299)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Aleluya, aleluya, aleluya., (La,,248)",
+      "sC": "tc r1"
+    },
+    {
+      "line": "DAD GLORIA A SU ESPÍRITU, ",
+      "sC": "ta as"
+    },
+    {
+      "line": "DAD GLORIA A SU ESPÍRITU. ",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DAD GLORIA A SU ESPÍRITU., (Re,m,22)",
+      "sC": "as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

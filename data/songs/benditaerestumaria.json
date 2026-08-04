@@ -1,0 +1,155 @@
+{
+  "id": "benditaerestumaria",
+  "tt": "Bendita Eres Tú, María",
+  "title": "Bendita Eres Tú, María",
+  "subtitle": "Lucas 1,42-45",
+  "category": [
+    "PreCatecumenado",
+    "Entrada",
+    "Virgen Maria",
+    "Final"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "27",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/benditaerestumaria.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=bendicealmamiaayahveh",
+  "sig": "/src/index.html?canto=benditoeressenor",
+  "lizq": [
+    {
+      "line": "Bendita eres tú, María,,(La,m,15)(Sol,,138)(La,m,196)",
+      "sC": "tc"
+    },
+    {
+      "line": "entre todas las mujeres, María., (Sol,,193)(La,m,278)",
+      "sC": ""
+    },
+    {
+      "line": "Y bendito es el fruto, María,,(Sol,,166)(La,m,242)",
+      "sC": ""
+    },
+    {
+      "line": "el fruto de tu seno, Jesús., (Sol,,141)(La,m,222)",
+      "sC": ""
+    },
+    {
+      "line": "María, tú has creído., (Fa,,41)(Mi,,165)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y CÓMO ES QUE LA MADRE DEL SEÑOR, (La,m,15)",
+      "sC": "ta as"
+    },
+    {
+      "line": "VIENE A MÍ, VIENE A MÍ., (Sol,,99)(La,m,211)",
+      "sC": "as r1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque apenas he sentido tu voz,,(La,m,21)(Mi,,293)",
+      "sC": "tc"
+    },
+    {
+      "line": "algo se ha movido dentro de mí,,(Re,m,21)(Mi,,298)",
+      "sC": ""
+    },
+    {
+      "line": "mi niño ha exultado de gozo., (Re,m,48)(Mi,,242)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MARÍA, BENDITA MARÍA,,(La,m,18)(Fa,,217)",
+      "sC": "ta as"
+    },
+    {
+      "line": "TÚ HAS CREÍDO LA PALABRA DEL SEÑOR., (Mi,,376)",
+      "sC": "as r1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "Y CÓMO ES QUE LA MADRE DEL SEÑOR, (La,m,15)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "VIENE A MÍ, VIENE A MÍ., (Sol,,99)(La,m,211)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "Porque apenas he sentido tu voz, (La,m,21)(Fa,,291)",
+      "sC": "tc",
+      "lines": [
+        {
+          "line": "algo se ha movido dentro de mí,,(Re,m,21)(Mi,,298)",
+          "sC": ""
+        },
+        {
+          "line": "mi niño ha exultado de gozo., (Re,m,48)(Mi,,242)",
+          "sC": ""
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "MARÍA, BENDITA MARÍA,(La,m,18)(Fa,,217)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "TÚ HAS CREÍDO LA PALABRA DEL SEÑOR., (Mi,,376)",
+          "sC": "as r1"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

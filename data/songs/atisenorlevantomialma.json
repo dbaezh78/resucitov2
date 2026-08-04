@@ -1,0 +1,114 @@
+{
+  "id": "atisenorlevantomialma",
+  "tt": "A Ti, Señor, Levanto Mi Alma",
+  "title": "A Ti, Señor, Levanto Mi Alma",
+  "subtitle": "Salmo 25 (24)",
+  "category": [
+    "PreCatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "5",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/atisenorlevantomialma.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=atisenorenmiclamorimploro",
+  "sig": "/src/index.html?canto=atisenorsedebelaalabanzaension",
+  "lizq": [
+    {
+      "line": "A TI, SEÑOR, LEVANTO MI ALMA,(La,m,15)(Mi,,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "A TI, OH DIOS MÍO., (Re,m,60)(Fa,,94)(Mi,,159)",
+      "sC": "as"
+    },
+    {
+      "line": "En ti confío, Señor,(La,m,16)(Mi,,154)",
+      "sC": "mt tc"
+    },
+    {
+      "line": "no triunfen sobre mí mis enemigos., (Re,m,215)(Fa,,250)(Mi,,293)",
+      "sC": ""
+    },
+    {
+      "line": "Muéstrame, Señor, tu camino,(La,m,15)(Mi,,255)",
+      "sC": ""
+    },
+    {
+      "line": "enséñame, Señor, tu sendero., (Re,m,186)(Fa,,222)(Mi,,254)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_atslma_1",
+      "initialState": "collapsed",
+      "triggerLine": "A TI, SEÑOR, LEVANTO MI ALMA, (La,m,15)(Mi,,250)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "A TI, OH DIOS MÍO., (Re,m,60)(Fa,,94)(Mi,,159)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "Acuérdate, Señor, de tu ternura,(La,m,15)(Mi,,270)",
+      "sC": "mt tc"
+    },
+    {
+      "line": "de tu inmensa compasión, que son de siempre., (Re,m,275)(Fa,,315)(Mi,,393)",
+      "sC": ""
+    },
+    {
+      "line": "De mis pecados, Señor, no te acuerdes,(La,m,15)(Mi,,322)",
+      "sC": ""
+    },
+    {
+      "line": "acuérdate, Señor, que eres misericordia., (Re,m,192)(Fa,,239)(Mi,,339)",
+      "sC": ""
+    },
+    {
+      "line": "Rocíame, Señor, de tu misericordia., (Fa,,37)(Mi,,291)",
+      "sC": "mt"
+    },
+    {
+      "line": "Sumérgeme, Señor, en tu misericordia., (Fa,,51)(Mi,,323)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_atslma_2",
+      "initialState": "collapsed",
+      "triggerLine": "A TI, SEÑOR, LEVANTO MI ALMA, (La,m,15)(Mi,,250)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "A TI, OH DIOS MÍO., (Re,m,60)(Fa,,94)(Mi,,159)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

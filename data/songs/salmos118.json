@@ -1,0 +1,131 @@
+{
+  "id": "salmos118",
+  "tt": "Salmodias",
+  "title": "Salmodias",
+  "subtitle": "Salmo 118, 145-152 TE INVOCO DE TODO CORAZÓN",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "salmodia": "",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "311",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/invocacionalespiritusanto.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ohluzgozosa",
+  "sig": "/src/index.html?canto=#",
+  "lizq": [
+    {
+      "line": "Te invoco de todo corazón;, (Sol,m,24)(La,7,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "respóndeme, Señor, y guardaré tus leyes;, (Sol,m,24)(La,7,384)",
+      "sC": "ta as"
+    },
+    {
+      "line": "a ti grito: sálvame,, (Re,m,22)(La,7,172)",
+      "sC": "tc"
+    },
+    {
+      "line": "y cumpliré tus decretos;, (Sib,7,22)(La,7,224)",
+      "sC": "ta as"
+    },
+    {
+      "line": "me adelanto a la aurora pidiendo auxilio,, (Sol,m,24)(La,7,377)",
+      "sC": "tc"
+    },
+    {
+      "line": "esperando tus palabras., (Sol,m,24)(La,7,236)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mis ojos se adelantan a las vigilias de la noche,, (Re,m,22)(La,7,445)",
+      "sC": "tc"
+    },
+    {
+      "line": "meditando tu promesa;, (Sib,7,22)(La,7,228)",
+      "sC": "ta as"
+    },
+    {
+      "line": "escucha mi voz por tu misericordia,, (Sol,m,24)(La,7,325)",
+      "sC": "tc"
+    },
+    {
+      "line": "con tus mandamientos dame vida;, (Sol,m,24)(La,7,325)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ya se acercan mis inicuos perseguidores,, (Re,m,22)(La,7,386)",
+      "sC": "tc"
+    },
+    {
+      "line": "están lejos de tu voluntad., (Sib,7,22)(La,7,250)",
+      "sC": "ta as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú, Señor, estás cerca,, (Sol,m,24)(La,7,211)",
+      "sC": "tc"
+    },
+    {
+      "line": "y todos tus mandatos son estables;, (Sol,m,24)(La,7,321)",
+      "sC": "ta as"
+    },
+    {
+      "line": "hace tiempo comprendí que tus preceptos, (Re,m,22)(La,7,390)",
+      "sC": "tc"
+    },
+    {
+      "line": "los fundaste para siempre., (Sib,7,22)(La,7,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Gloria al Padre, y al Hijo, (Sol,m,24)(La,7,240)",
+      "sC": "tc"
+    },
+    {
+      "line": "y al Espíritu Santo., (Sol,m,24)(La,7,175)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Como era en el principio, ahora y siempre,(Sib,7,22)(La,7,349)",
+      "sC": "tc"
+    },
+    {
+      "line": "por los siglos de los siglos. Amén., (Sib,7,22)(La,7,279)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "salmodias"
+}

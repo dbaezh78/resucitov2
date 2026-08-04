@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESUCITÓ - Cantos Neocatecumenales</title>
+  <link rel="icon" href="img/ico.ico" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="theme-light">
+  <div class="app-container">
+    
+    <!-- BANNER DE ENCABEZADO -->
+    <header>
+      <div class="title-banner">
+        <img class="logo-app" src="img/logo_cantos.png" alt="Camino Neocatecumenal">
+        <h1>RESUCITÓ</h1>
+      </div>
+      <div class="marquee-banner">
+        <span class="marquee-content">
+          "Amad a vuestros enemigos, ¡Vengo pronto!, el cantor hace un servicio que lo ayuda a Él y a toda la comunidad, es un servicio de humildad sencillez y alabanza..."
+        </span>
+      </div>
+    </header>
+
+    <!-- VISTA 1: DASHBOARD / BUSCADOR -->
+    <div id="dashboard-view" class="view dashboard-view">
+      <!-- Flex contenedor superior para la imagen de Cristo fija a la izquierda y controles a la derecha -->
+      <div class="dashboard-top-flex">
+        <div class="dashboard-left-image-container">
+          <img src="img/christ.png" alt="Cristo" class="dashboard-christ-img">
+        </div>
+        <div class="dashboard-right-controls">
+          <!-- Pestañas de Libros (Book Tabs) -->
+          <div class="book-tabs">
+            <button class="book-tab active" data-book="resucito">Resucitó</button>
+            <button class="book-tab" data-book="joven">Canto Joven</button>
+            <button class="book-tab" data-book="aclamaciones">Aclamaciones</button>
+            <button class="book-tab" data-book="salmodias">Salmodias</button>
+            <button class="book-tab" data-book="catequesis">Catequesis</button>
+            <button class="book-tab" data-book="favoritos">Favoritos</button>
+          </div>
+
+          <!-- Buscador y Configuración -->
+          <div class="search-and-settings-row">
+            <!-- Botón de ajustes en la página principal -->
+            <button id="dashboard-settings-btn" class="dashboard-settings-btn" title="Opciones de configuración">
+              <span class="material-symbols-outlined">settings</span>
+            </button>
+
+            <!-- Contenedor del Buscador -->
+            <div class="search-box-container">
+              <!-- Botón de Toggle Filtros (dentro del buscador) -->
+              <button id="toggle-filters-btn" class="btn-inside-search" title="Filtros de Búsqueda">
+                <span class="material-symbols-outlined">filter_list</span>
+              </button>
+              
+              <input type="search" id="search-input" class="search-input" placeholder="Buscar canto..." autocomplete="off">
+              
+              <span class="material-symbols-outlined clear-search-btn" id="clear-search-btn" style="display: none;">close</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel de Filtros -->
+      <div id="filters-panel" class="filters-panel" style="display: none;">
+        <!-- Etapas -->
+        <div class="filter-section">
+          <h3>Etapas del Camino</h3>
+          <div class="filter-buttons-grid" id="stage-filters-container">
+            <button class="btn filter-pill stage-pill-pre" data-stage="Precatecumenado">Precatecumenado</button>
+            <button class="btn filter-pill stage-pill-cate" data-stage="Catecumenado">Catecumenado</button>
+            <button class="btn filter-pill stage-pill-ele" data-stage="Eleccion">Elección</button>
+            <button class="btn filter-pill stage-pill-lit" data-stage="Liturgia">Liturgia</button>
+            <button class="btn filter-pill stage-pill-cat" data-stage="Catolicos">Otros Católicos</button>
+          </div>
+        </div>
+
+        <!-- Filtros de los Cantos -->
+        <div class="filter-section">
+          <h3>Filtros de los Cantos</h3>
+          <div class="filter-buttons-grid" id="moment-filters-container">
+            <button class="btn filter-pill active" id="btn-filter-indice" data-moment="Indice de Cantos">Indice de Cantos</button>
+            <button class="btn filter-pill" data-moment="Vírgen María">Vírgen María</button>
+            <button class="btn filter-pill" data-moment="Entrada">Entrada</button>
+            <button class="btn filter-pill" data-moment="Comunión">Comunión</button>
+            <button class="btn filter-pill" data-moment="Celebración">Celebración</button>
+            <button class="btn filter-pill" data-moment="Paz">Paz</button>
+            <button class="btn filter-pill" data-moment="Final">Final</button>
+            <button class="btn filter-pill" data-moment="Niños">Niños</button>
+            <button class="btn filter-pill" data-moment="Fracción del Pan">Fracción del Pan</button>
+            <button class="btn filter-pill" data-moment="Salmodias">Salmodias</button>
+            <button class="btn filter-pill" data-moment="Adviento">Adviento</button>
+            <button class="btn filter-pill" data-moment="Navidad">Navidad</button>
+            <button class="btn filter-pill" data-moment="Pascua">Pascua</button>
+            <button class="btn filter-pill" data-moment="Pentecostés">Pentecostés</button>
+            <button class="btn filter-pill" data-moment="Aclamación">Aclamación</button>
+            <button class="btn filter-pill" data-moment="Penitencial">Penitencial</button>
+            <button class="btn filter-pill" data-moment="Nuevo Testamento">Nuevo Testamento</button>
+            <button class="btn filter-pill" data-moment="Antiguo Testamento">Antiguo Testamento</button>
+            <button class="btn filter-pill" data-moment="Villancicos">Villancicos</button>
+            <button class="btn filter-pill" data-moment="Católicos">Católicos</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cuadrícula de Canciones -->
+      <div id="songs-grid" class="songs-grid">
+        <!-- Tarjetas dinámicas -->
+      </div>
+    </div>
+
+    <!-- VISTA 2: VISUALIZADOR DE CANTO -->
+    <div id="song-viewer-view" class="view song-viewer-view" style="display: none;">
+      
+      <!-- Cabecera fija del visor (Toolbar y reproductor de audio) -->
+      <div class="viewer-sticky-header">
+        <!-- Toolbar del visor -->
+        <div class="viewer-toolbar">
+          <!-- Izquierda: Volver y pantalla de Tono/Cejilla -->
+          <div class="toolbar-left">
+            <button id="viewer-back-btn" class="btn btn-icon" title="Volver al buscador">
+              <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            
+            <div class="tone-capo-display" id="tone-capo-trigger" title="Cambiar tono o cejilla">
+
+              <span class="material-symbols-outlined tone-music-note">music_note</span>
+              <span id="key-badge" class="key-badge-text">La</span>
+              <img src="ima/cejilla.png" alt="Cejilla" class="cejilla-icon-img">
+              <span id="capo-badge" class="capo-badge-text">5/ 5º traste</span>
+            </div>
+
+            <button id="favorite-btn" class="btn btn-icon" title="Favorito" style="margin-left: 8px;">
+              <span class="material-symbols-outlined" id="favorite-icon">star</span>
+            </button>
+          </div>
+
+          <!-- Derecha: Iconos de control, navegación y buscador rápido -->
+          <div class="toolbar-right">
+            <!-- Abrir Modal de Acordes -->
+            <button id="chord-modal-trigger-btn" class="btn btn-icon" title="Transportar / Ver acordes">
+              <span class="material-symbols-outlined">music_note</span>
+            </button>
+
+            <!-- Dividir pantalla (Book icon) -->
+            <button id="split-layout-btn" class="btn btn-icon" title="Alternar vista en 2 columnas">
+              <span class="material-symbols-outlined">menu_book</span>
+            </button>
+
+            <!-- Asamblea Toggle -->
+            <button id="asamblea-toggle-btn" class="btn btn-icon" title="Alternar partes de asamblea">
+              <span class="material-symbols-outlined">visibility</span>
+            </button>
+
+            <!-- Reproducción de Audio -->
+            <button id="audio-play-btn" class="btn btn-icon" title="Reproducir audio" style="display: none;">
+              <span class="material-symbols-outlined">play_arrow</span>
+            </button>
+
+            <!-- Auto-scroll y velocidad -->
+            <div class="scroll-speed-panel">
+              <button id="scroll-play-btn" class="btn btn-icon" title="Iniciar auto-desplazamiento">
+                <span class="material-symbols-outlined">play_circle</span>
+              </button>
+              <button id="scroll-speed-toggle-btn" class="btn btn-icon" title="Ajustar velocidad">
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+              </button>
+              <div id="toolbar-speed-popover" class="speed-popover" style="display: none;">
+                <input type="range" id="scroll-speed-slider" class="scroll-slider" min="1" max="100" value="25" title="Velocidad de scroll">
+              </div>
+            </div>
+
+            <!-- Navegación de Cantos -->
+            <button id="prev-song-btn" class="btn btn-icon" title="Canto anterior">
+              <span class="material-symbols-outlined">arrow_left</span>
+            </button>
+            <button id="next-song-btn" class="btn btn-icon" title="Canto siguiente">
+              <span class="material-symbols-outlined">arrow_right</span>
+            </button>
+
+            <!-- Buscador rápido en barra superior -->
+            <div class="toolbar-search-container">
+              <input type="text" id="toolbar-search-input" class="toolbar-search-input" placeholder="Buscar..." autocomplete="off">
+              <div id="toolbar-search-suggestions" class="search-suggestions-dropdown" style="display: none;"></div>
+            </div>
+
+            <!-- Ajustes (Opcional oculto o discreto) -->
+            <button id="settings-open-btn" class="btn btn-icon" title="Ajustes visuales">
+              <span class="material-symbols-outlined">settings</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Reproductor de Audio -->
+        <div id="viewer-audio-container" class="audio-player-container">
+          <audio id="viewer-audio-player" controls preload="metadata"></audio>
+        </div>
+      </div>
+
+      <!-- Contenedor deslizante de tres diapositivas (carrusel interactivo) -->
+      <div id="canto-carousel-viewport" style="width: 100%; overflow: hidden; position: relative;">
+        <div id="canto-slider-container" style="display: flex; width: calc(300% + 80px); gap: 40px; transform: translate3d(calc(-100% / 3 - 13.333px), 0, 0); transition: none; user-select: none;">
+          <div id="canto-slide-prev" class="canto-slide" style="width: calc((100% - 80px) / 3); flex-shrink: 0; opacity: 0.8; box-sizing: border-box; padding: 0 10px;"></div>
+          
+          <div id="canto-slide-active" class="canto-slide" style="width: calc((100% - 80px) / 3); flex-shrink: 0; box-sizing: border-box; padding: 0 10px;">
+            <!-- Contenedor del contenido del canto para transiciones -->
+            <div id="canto-content-transition-wrapper" class="canto-content-transition-wrapper">
+              <!-- Cabecera del canto (Título e imagen de Cristo estilo libro) -->
+              <div id="canto-header-block" class="canto-header-block"></div>
+
+              <!-- Contenedor del Canto de dos columnas -->
+              <div id="canto-columns" class="canto-columns-container">
+                <div id="canto-left-col" class="canto-column"></div>
+                <div id="canto-right-col" class="canto-column"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="canto-slide-next" class="canto-slide" style="width: calc((100% - 80px) / 3); flex-shrink: 0; opacity: 0.8; box-sizing: border-box; padding: 0 10px;"></div>
+        </div>
+      </div>
+
+      <!-- Notas del Cantor -->
+      <div class="notes-cantor-section">
+        <h3>
+          <span class="material-symbols-outlined">edit_note</span>
+          Notas del Cantor (Guardado Local)
+        </h3>
+        <textarea id="notes-textarea" class="notes-textarea" placeholder="Escribe aquí anotaciones técnicas, recordatorios, violines, etc."></textarea>
+      </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <p>RESUCITÓ v2.0 • Diseñado para la comunidad neocatecumenal</p>
+      <p>Soporte sin conexión activado • Funciona 100% offline</p>
+    </footer>
+
+  </div>
+
+  <!-- MODAL: DIAGRAMA DE ACORDE -->
+  <div id="chord-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content" style="max-width: 440px; padding: 24px; border-radius: 18px; text-align: center;">
+      <div class="modal-header" style="justify-content: center; border: none; padding: 0; margin-bottom: 15px;">
+        <h2 id="chord-modal-title" style="font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.4rem; color: var(--text-color); margin: 0;">Transportar Acorde</h2>
+        <button id="chord-modal-close" class="btn btn-icon" style="display: none;">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      
+      <p id="chord-modal-subtitle" style="display: none;"></p>
+
+      <!-- Selector de Nota Base -->
+      <div class="chord-picker-row">
+        <label id="chord-picker-label" style="display: none;"></label>
+        <div class="chord-picker-grid" id="modal-chord-note-picker">
+          <button class="btn btn-picker" data-note="Do">Do</button>
+          <button class="btn btn-picker" data-note="Do#">Do#</button>
+          <button class="btn btn-picker" data-note="Re">Re</button>
+          <button class="btn btn-picker" data-note="Re#">Re#</button>
+          <button class="btn btn-picker" data-note="Mi">Mi</button>
+          <button class="btn btn-picker" data-note="Fa">Fa</button>
+          <button class="btn btn-picker" data-note="Fa#">Fa#</button>
+          <button class="btn btn-picker" data-note="Sol">Sol</button>
+          <button class="btn btn-picker" data-note="Sol#">Sol#</button>
+          <button class="btn btn-picker" data-note="La">La</button>
+          <button class="btn btn-picker" data-note="Sib">Sib</button>
+          <button class="btn btn-picker" data-note="Si">Si</button>
+        </div>
+      </div>
+      
+      <!-- Selector de Tipo/Variación -->
+      <div class="chord-picker-row" style="margin-top: 15px; border-top: 1px dashed var(--panel-border); padding-top: 12px;">
+        <h4 style="font-size: 0.85rem; margin-bottom: 8px; font-weight: 600; color: var(--text-color); opacity: 0.8;">Variación:</h4>
+        <div class="chord-picker-grid" id="modal-chord-type-picker" style="grid-template-columns: repeat(5, 1fr); gap: 6px;">
+          <button class="btn btn-type-picker" data-type="">Mayor</button>
+          <button class="btn btn-type-picker" data-type="m">m</button>
+          <button class="btn btn-type-picker" data-type="7">7</button>
+          <button class="btn btn-type-picker" data-type="m7">m7</button>
+          <button class="btn btn-type-picker" data-type="maj7">maj7</button>
+        </div>
+      </div>
+      
+      <div class="chord-diagram-view" style="margin-top: 15px; border-top: 1px solid var(--panel-border); padding-top: 15px;">
+        <h4 id="chord-diagram-title" style="font-size: 0.95rem; margin-bottom: 8px; text-align: center; color: var(--accent-color); font-weight: 700;">Digitación del acorde:</h4>
+        <img id="chord-diagram-img" src="" alt="Cargando diagrama..." style="max-height: 240px; display: block; margin: 0 auto; border-radius: 8px;">
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: AJUSTES -->
+  <div id="settings-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Ajustes Visuales</h2>
+        <button id="settings-modal-close" class="btn btn-icon">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <!-- Selector de Pestañas de Ajustes -->
+      <div class="settings-tabs">
+        <button class="settings-tab-btn active" data-tab="general">General</button>
+        <button class="settings-tab-btn" data-tab="theme">Tema</button>
+        <button class="settings-tab-btn" data-tab="canto">Canto</button>
+        <button class="settings-tab-btn" data-tab="account">Cuenta</button>
+      </div>
+
+      <div class="settings-grid">
+        <!-- Panel de Tema -->
+        <div id="settings-panel-theme" class="settings-panel-group">
+          <!-- Fila Tema -->
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Tema Visual</h4>
+              <p>Selecciona la paleta de colores</p>
+            </div>
+            <div class="setting-control">
+              <button class="btn theme-btn" data-theme="dark">Oscuro</button>
+              <button class="btn theme-btn" data-theme="light">Claro</button>
+              <button class="btn theme-btn" data-theme="sepia">Sepia</button>
+            </div>
+          </div>
+
+          <!-- Fila Estilo de Lista -->
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Estilo de Lista</h4>
+              <p>Elige el formato de la lista de cantos</p>
+            </div>
+            <div class="setting-control">
+              <button class="btn list-style-btn" data-style="cards">Tarjetas</button>
+              <button class="btn list-style-btn" data-style="detailed">Detallada</button>
+              <button class="btn list-style-btn" data-style="simple">Simple</button>
+            </div>
+          </div>
+
+          <!-- Tema del Libro de Canto -->
+          <div class="stage-colors-customizer collapsed">
+            <div class="stage-colors-header collapsible-header">
+              <h4>Tema del Libro de Canto</h4>
+              <span class="material-symbols-outlined toggle-icon">expand_more</span>
+            </div>
+            <div class="collapsible-content">
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px;">Personaliza el color de acento (botones) y fondo de la aplicación</p>
+              
+              <div class="btn-table-header">
+                <span class="btn-table-stage-col">Elemento</span>
+                <span class="btn-table-col-label" style="grid-column: span 3; text-align: right; padding-right: 12px;">Color</span>
+              </div>
+
+              <!-- Color de fondo -->
+              <div class="btn-table-row">
+                <span class="stage-color-label">Color de fondo</span>
+                <span></span>
+                <span></span>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-book-bg" title="Color de fondo">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="book-theme-input" data-type="bg">
+                </label>
+              </div>
+
+              <!-- Color de botones -->
+              <div class="btn-table-row">
+                <span class="stage-color-label">Color de botones</span>
+                <span></span>
+                <span></span>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-book-accent" title="Color de botones/acento">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="book-theme-input" data-type="accent">
+                </label>
+              </div>
+
+              <!-- Color de texto -->
+              <div class="btn-table-row">
+                <span class="stage-color-label">Color de texto</span>
+                <span></span>
+                <span></span>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-book-text" title="Color de texto">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="book-theme-input" data-type="text">
+                </label>
+              </div>
+
+              <div style="display: flex; justify-content: flex-end; margin-top: 12px; margin-bottom: 4px;">
+                <button class="btn theme-btn" id="reset-book-theme-btn" style="font-size: 0.75rem; padding: 5px 12px;">Restaurar por Defecto</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colores del Canto -->
+          <div class="stage-colors-customizer collapsed">
+            <div class="stage-colors-header collapsible-header">
+              <h4>Colores del Canto</h4>
+              <span class="material-symbols-outlined toggle-icon">expand_more</span>
+            </div>
+            <div class="collapsible-content">
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px;">Personaliza el color de los acordes (Cantor) y sus opuestos (Asamblea)</p>
+              
+              <div class="btn-table-header">
+                <span class="btn-table-stage-col">Elemento</span>
+                <span class="btn-table-col-label" style="grid-column: span 3; text-align: right; padding-right: 12px;">Color</span>
+              </div>
+
+              <!-- Acorde Principal -->
+              <div class="btn-table-row">
+                <span class="stage-color-label">Acorde</span>
+                <span></span>
+                <span></span>
+                <label class="color-picker-label-btn color-picker-square btn-pill-preview" id="preview-book-chord" title="Color de acordes">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="book-theme-input" data-type="chord">
+                </label>
+              </div>
+
+              <!-- Acorde Opuesto -->
+              <div class="btn-table-row">
+                <span class="stage-color-label">Acorde Opuesto</span>
+                <span></span>
+                <span></span>
+                <label class="color-picker-label-btn color-picker-square btn-pill-preview" id="preview-book-chord-alt" title="Color de acordes opuestos">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="book-theme-input" data-type="chord-alt">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personalización de Colores de Etapa -->
+          <div class="stage-colors-customizer collapsed">
+            <div class="stage-colors-header collapsible-header">
+              <h4>Colores de Etapas</h4>
+              <span class="material-symbols-outlined toggle-icon">expand_more</span>
+            </div>
+            <div class="collapsible-content">
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">Elige el color para identificar cada etapa de cantos</p>
+              
+              <!-- Precatecumenado -->
+              <div class="stage-color-row">
+                <span class="stage-color-label">Precatecumenado (Blancos / Gris)</span>
+                <div class="color-swatches" data-stage="pre">
+                  <button class="color-swatch-btn" data-color="#ffffff" style="background-color: #ffffff; border-color: #cdd3d9;" title="Blanco Limpio"></button>
+                  <button class="color-swatch-btn" data-color="#cdd3d9" style="background-color: #cdd3d9;" title="Gris Suave"></button>
+                  <button class="color-swatch-btn" data-color="#6c757d" style="background-color: #6c757d;" title="Gris Clásico"></button>
+                  <!-- Color personalizado -->
+                  <label class="color-picker-label-btn" title="Personalizar color">
+                    <span class="material-symbols-outlined">palette</span>
+                    <input type="color" class="stage-color-input" data-stage="pre" value="#ffffff">
+                  </label>
+                </div>
+              </div>
+
+              <!-- Catecumenado -->
+              <div class="stage-color-row">
+                <span class="stage-color-label">Catecumenado (Azul)</span>
+                <div class="color-swatches" data-stage="cate">
+                  <button class="color-swatch-btn" data-color="#0d6efd" style="background-color: #0d6efd;" title="Azul Eléctrico"></button>
+                  <button class="color-swatch-btn" data-color="#1976d2" style="background-color: #1976d2;" title="Azul Rey"></button>
+                  <button class="color-swatch-btn" data-color="#1e3a8a" style="background-color: #1e3a8a;" title="Azul Marino"></button>
+                  <!-- Color personalizado -->
+                  <label class="color-picker-label-btn" title="Personalizar color">
+                    <span class="material-symbols-outlined">palette</span>
+                    <input type="color" class="stage-color-input" data-stage="cate" value="#0d6efd">
+                  </label>
+                </div>
+              </div>
+
+              <!-- Elección -->
+              <div class="stage-color-row">
+                <span class="stage-color-label">Elección (Verde)</span>
+                <div class="color-swatches" data-stage="ele">
+                  <button class="color-swatch-btn" data-color="#8bc34a" style="background-color: #8bc34a;" title="Verde Claro (Lime)"></button>
+                  <button class="color-swatch-btn" data-color="#4caf50" style="background-color: #4caf50;" title="Verde Estándar"></button>
+                  <button class="color-swatch-btn" data-color="#198754" style="background-color: #198754;" title="Verde Oscuro"></button>
+                  <!-- Color personalizado -->
+                  <label class="color-picker-label-btn" title="Personalizar color">
+                    <span class="material-symbols-outlined">palette</span>
+                    <input type="color" class="stage-color-input" data-stage="ele" value="#8bc34a">
+                  </label>
+                </div>
+              </div>
+
+              <!-- Liturgia -->
+              <div class="stage-color-row">
+                <span class="stage-color-label">Liturgia (Amarillo)</span>
+                <div class="color-swatches" data-stage="lit">
+                  <button class="color-swatch-btn" data-color="#FFEB3B" style="background-color: #FFEB3B;" title="Amarillo Brillante"></button>
+                  <button class="color-swatch-btn" data-color="#ffc107" style="background-color: #ffc107;" title="Amarillo Ámbar"></button>
+                  <button class="color-swatch-btn" data-color="#fbc02d" style="background-color: #fbc02d;" title="Amarillo Oscuro"></button>
+                  <!-- Color personalizado -->
+                  <label class="color-picker-label-btn" title="Personalizar color">
+                    <span class="material-symbols-outlined">palette</span>
+                    <input type="color" class="stage-color-input" data-stage="lit" value="#FFEB3B">
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personalizar Botones de Etapas -->
+          <div class="stage-colors-customizer btn-colors-customizer collapsed">
+            <div class="stage-colors-header collapsible-header">
+              <h4>Personalizar Botones</h4>
+              <span class="material-symbols-outlined toggle-icon">expand_more</span>
+            </div>
+            <div class="collapsible-content">
+              <!-- Encabezado de columnas -->
+              <div class="btn-table-header">
+                <span class="btn-table-stage-col"></span>
+                <span class="btn-table-col-label">Por defecto</span>
+                <span class="btn-table-col-label">Seleccionado</span>
+                <span class="btn-table-col-label">Texto</span>
+              </div>
+
+              <!-- Precatecumenado -->
+              <div class="btn-table-row">
+                <span class="stage-color-label">Precatecumenado</span>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-pre-default" title="Color por defecto" style="background-color:#ffffff; border-color: #cdd3d9;">
+                  <span class="material-symbols-outlined" style="color:#212529;">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="pre" data-mode="default" value="#ffffff">
+                </label>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-pre-active" title="Color al seleccionar" style="background-color:#495057;">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="pre" data-mode="active" value="#495057">
+                </label>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-pre-text" title="Color del texto" style="background-color:#212529;">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="pre" data-mode="text" value="#212529">
+                </label>
+              </div>
+
+              <!-- Catecumenado -->
+              <div class="btn-table-row">
+                <span class="stage-color-label">Catecumenado</span>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-cate-default" title="Color por defecto" style="background-color:#0d6efd;">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="cate" data-mode="default" value="#0d6efd">
+                </label>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-cate-active" title="Color al seleccionar" style="background-color:#0a58ca;">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="cate" data-mode="active" value="#0a58ca">
+                </label>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-cate-text" title="Color del texto" style="background-color:#ffffff;">
+                  <span class="material-symbols-outlined" style="color:#212529;">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="cate" data-mode="text" value="#ffffff">
+                </label>
+              </div>
+
+              <!-- Elección -->
+              <div class="btn-table-row">
+                <span class="stage-color-label">Elección</span>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-ele-default" title="Color por defecto" style="background-color:#8bc34a;">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="ele" data-mode="default" value="#8bc34a">
+                </label>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-ele-active" title="Color al seleccionar" style="background-color:#558b2f;">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="ele" data-mode="active" value="#558b2f">
+                </label>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-ele-text" title="Color del texto" style="background-color:#ffffff;">
+                  <span class="material-symbols-outlined" style="color:#212529;">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="ele" data-mode="text" value="#ffffff">
+                </label>
+              </div>
+
+              <!-- Liturgia -->
+              <div class="btn-table-row">
+                <span class="stage-color-label">Liturgia</span>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-lit-default" title="Color por defecto" style="background-color:#FFEB3B;">
+                  <span class="material-symbols-outlined" style="color:#212529;">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="lit" data-mode="default" value="#FFEB3B">
+                </label>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-lit-active" title="Color al seleccionar" style="background-color:#f9a825;">
+                  <span class="material-symbols-outlined" style="color:#212529;">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="lit" data-mode="active" value="#f9a825">
+                </label>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-lit-text" title="Color del texto" style="background-color:#212529;">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="lit" data-mode="text" value="#212529">
+                </label>
+              </div>
+
+              <!-- Católicos -->
+              <div class="btn-table-row">
+                <span class="stage-color-label">Otros Católicos</span>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-cat-default" title="Color por defecto" style="background-color:#6f42c1;">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="cat" data-mode="default" value="#6f42c1">
+                </label>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-cat-active" title="Color al seleccionar" style="background-color:#4a1d96;">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="cat" data-mode="active" value="#4a1d96">
+                </label>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-cat-text" title="Color del texto" style="background-color:#ffffff;">
+                  <span class="material-symbols-outlined" style="color:#212529;">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="cat" data-mode="text" value="#ffffff">
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel General -->
+        <div id="settings-panel-general" class="settings-panel-group" style="display: none;">
+          <!-- Fila Cejilla Calculada -->
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Cejilla (Capo)</h4>
+              <p>Ajusta el traste de cejilla sugerido</p>
+            </div>
+            <div class="setting-control">
+              <select id="capo-select" style="padding: 6px; border-radius: 6px; background: var(--panel-bg); color: var(--text-color); border: 1px solid var(--panel-border);">
+                <option value="0">Sin cejilla</option>
+                <option value="1">1er traste</option>
+                <option value="2">2do traste</option>
+                <option value="3">3er traste</option>
+                <option value="4">4to traste</option>
+                <option value="5">5to traste</option>
+                <option value="6">6to traste</option>
+                <option value="7">7mo traste</option>
+                <option value="8">8vo traste</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Fila Tamaño de Letra -->
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Tamaño de Letra</h4>
+              <p>Ajusta el tamaño del texto del canto</p>
+            </div>
+            <div class="setting-control" style="display: flex; align-items: center; gap: 8px;">
+              <button id="settings-zoom-out-btn" class="btn btn-icon" style="width: 32px; height: 32px; padding: 0;" title="Reducir letra">-</button>
+              <span id="settings-zoom-badge" style="font-weight: 700; min-width: 45px; text-align: center;">100%</span>
+              <button id="settings-zoom-in-btn" class="btn btn-icon" style="width: 32px; height: 32px; padding: 0;" title="Aumentar letra">+</button>
+            </div>
+          </div>
+
+          <!-- Fila Tipografía -->
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Tipografía</h4>
+              <p>Fuente del texto de los cantos</p>
+            </div>
+            <div class="setting-control">
+              <select id="font-family-select" style="padding: 6px 10px; border-radius: 6px; background: var(--panel-bg); color: var(--text-color); border: 1px solid var(--panel-border); min-width: 160px;">
+                <option value="franklin" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;">Franklin Gothic Medium</option>
+                <option value="sans-serif" style="font-family: sans-serif;">Sans-serif</option>
+                <option value="arial" style="font-family: Arial, sans-serif;">Arial</option>
+                <option value="aptos" style="font-family: 'Aptos', sans-serif;">Aptos (Body)</option>
+                <option value="cavolini" style="font-family: 'Cavolini', sans-serif;">Cavolini</option>
+                <option value="comic-sans" style="font-family: 'Comic Sans MS', cursive;">Comic Sans MS</option>
+                <option value="fairwater-script" style="font-family: 'Fairwater Script', cursive;">Fairwater Script</option>
+                <option value="mv-boli" style="font-family: 'MV Boli', sans-serif;">MV Boli</option>
+                <option value="neocat" style="font-family: 'Neocat', sans-serif;">Neocat</option>
+                <option value="pristina" style="font-family: 'Pristina', cursive;">Pristina</option>
+                <option value="segoe-print" style="font-family: 'Segoe Print', cursive;">Segoe Print</option>
+                <option value="viner-hand" style="font-family: 'Viner Hand ITC', cursive;">Viner Hand ITC</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Fila Edición de Acordes -->
+          <div id="chord-edit-setting-row" class="setting-row">
+            <div class="setting-label">
+              <h4>Edición de Acordes</h4>
+              <p>Mueve la posición horizontal de los acordes</p>
+            </div>
+            <div class="setting-control" style="display: flex; gap: 8px;">
+              <button id="toggle-chord-edit-btn" class="btn" style="min-width: 110px;">Bloqueados</button>
+              <button id="save-chord-positions-btn" class="btn" style="font-size: 0.75rem; padding: 6px 12px; display: none;">Guardar en Archivo</button>
+            </div>
+          </div>
+
+          <!-- Fila Ancho del Contenedor -->
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Ancho de Página</h4>
+              <p>Ajusta el ancho máximo del cancionero</p>
+            </div>
+            <div class="setting-control" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; width: 100%; max-width: 250px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%;">
+                <input type="range" id="app-width-slider" min="384" max="1600" value="1200" style="flex-grow: 1; accent-color: var(--accent-color);">
+                <span id="app-width-badge" style="font-weight: 700; min-width: 60px; text-align: right;">1200px</span>
+              </div>
+              <button id="app-width-default-btn" class="btn" style="font-size: 0.75rem; padding: 4px 8px; align-self: flex-end;">1200px (Defecto)</button>
+            </div>
+          </div>
+          <!-- Copia de seguridad notas -->
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Notas del Cantor</h4>
+              <p>Exportar/Importar anotaciones</p>
+            </div>
+            <div class="setting-control">
+              <button id="export-notes-btn" class="btn">Exportar</button>
+              <button id="import-notes-btn" class="btn">Importar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel Cuenta -->
+        <div id="settings-panel-account" class="settings-panel-group" style="display: none;">
+          <div class="setting-row" style="flex-direction: column; align-items: stretch; text-align: center; gap: 16px; padding: 24px 12px; border-bottom: none;">
+            <div id="auth-unauthenticated" style="display: block;">
+              <span class="material-symbols-outlined" style="font-size: 4rem; color: var(--text-muted); opacity: 0.5; margin-bottom: 8px;">account_circle</span>
+              <h4>Inicia sesión en tu cuenta</h4>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 16px;">Conéctate para sincronizar tus acordes y notas con Firebase</p>
+              
+              <div style="max-width: 280px; margin: 0 auto;">
+                <button id="auth-login-btn" class="btn theme-btn" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 16px; font-weight: 600;">
+                  <svg viewBox="0 0 24 24" width="18" height="18" style="background: white; border-radius: 50%; padding: 2px;">
+                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
+                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+                  </svg>
+                  Iniciar Sesión con Google
+                </button>
+              </div>
+            </div>
+            
+            <div id="auth-authenticated" style="display: none;">
+              <span class="material-symbols-outlined" style="font-size: 4rem; color: var(--accent-color); margin-bottom: 8px;">account_circle</span>
+              <h4 id="auth-user-email" style="word-break: break-all;">usuario@correo.com</h4>
+              
+              <div id="auth-admin-badge" style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; background-color: rgba(208, 18, 18, 0.15); color: #d01212; padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: 700; margin: 8px auto 16px auto; width: fit-content; border: 1px solid rgba(208, 18, 18, 0.3);">
+                <span class="material-symbols-outlined" style="font-size: 1rem;">admin_panel_settings</span>
+                Administrador
+              </div>
+              <div id="auth-regular-badge" style="display: none; align-items: center; justify-content: center; gap: 6px; background-color: rgba(120, 120, 120, 0.15); color: var(--text-muted); padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: 700; margin: 8px auto 16px auto; width: fit-content;">
+                <span class="material-symbols-outlined" style="font-size: 1rem;">person</span>
+                Usuario
+              </div>
+              
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 16px; max-width: 320px; margin-left: auto; margin-right: auto;">
+                Sesión activa. Las funciones administrativas de edición y guardado de acordes están habilitadas.
+              </p>
+              
+              <button id="auth-logout-btn" class="btn" style="border: 1px solid var(--panel-border); font-size: 0.85rem; padding: 6px 16px; margin: 0 auto; display: block;">Cerrar Sesión</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel Canto -->
+        <div id="settings-panel-canto" class="settings-panel-group" style="display: none;">
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Indicador BIS</h4>
+            </div>
+            <div class="setting-control">
+              <label class="toggle-switch">
+                <input type="checkbox" id="bis-toggle">
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT PRINCIPAL -->
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

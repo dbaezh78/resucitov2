@@ -1,0 +1,176 @@
+{
+  "id": "hastacuando",
+  "tt": "Hasta Cuándo",
+  "title": "Hasta Cuándo",
+  "subtitle": "Salmo 13 (12)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "80",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/hastacuando.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=haciatimoradasanta",
+  "sig": "/src/index.html?canto=heaquimisiervo",
+  "lizq": [
+    {
+      "line": "¿Hasta cuándo,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "por fin te acordarás, Yahveh, de mí,, (Mi,,328)",
+      "sC": ""
+    },
+    {
+      "line": "y tu rostro, ",
+      "sC": ""
+    },
+    {
+      "line": "a mí lo volverás?, (La,m,133)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "CANTARÉ A YAHVEH,, (Mi,,88)(La,m,173)",
+      "sC": "ta as"
+    },
+    {
+      "line": "CANTARÉ AL QUE ES MI REDENTOR., (Mi,,88)(La,m,319)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mírame,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "respóndeme, Yahveh, amor de mí,, (Mi,,319)",
+      "sC": ""
+    },
+    {
+      "line": "alumbra mis ojos, ",
+      "sC": ""
+    },
+    {
+      "line": "no me duerma yo en la muerte., (La,m,267)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "CANTARÉ A YAHVEH, (Mi,,88)(La,m,173)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CANTARÉ AL QUE ES MI REDENTOR., (Mi,,88)(La,m,319)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Que no puedan,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "decir mis enemigos: «le vencí»,, (Mi,,274)",
+      "sC": ""
+    },
+    {
+      "line": "mis enemigos, ",
+      "sC": ""
+    },
+    {
+      "line": "se alegrarán si yo cayera., (La,m,212)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "CANTARÉ A YAHVEH, (Mi,,88)(La,m,173)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CANTARÉ AL QUE ES MI REDENTOR., (Mi,,88)(La,m,319)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pero yo, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "espero en tu piedad,, (Mi,,171)",
+      "sC": ""
+    },
+    {
+      "line": "y mi corazón, ",
+      "sC": ""
+    },
+    {
+      "line": "se alegrará en tu salvación., (La,m,238)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "CANTARÉ A YAHVEH, (Mi,,88)(La,m,173)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CANTARÉ AL QUE ES MI REDENTOR., (Mi,,88)(La,m,319)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

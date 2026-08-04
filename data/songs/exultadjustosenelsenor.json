@@ -1,0 +1,181 @@
+{
+  "id": "exultadjustosenelsenor",
+  "tt": "Exultad, Justos, En El Señor",
+  "title": "Exultad, Justos, En El Señor",
+  "subtitle": "Salmo 33 (32)",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Comunión",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "75",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/exultadjustosenelsenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=extiendomismanos",
+  "sig": "/src/index.html?canto=felicidadparaelhombre",
+  "lizq": [
+    {
+      "line": "EXULTAD, JUSTOS, EN EL SEÑOR,, (Sol,,14)(Mi,m,286)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DE LOS SANTOS ES PROPIA LA ALABANZA., (Do,,97)(Sol,,359)",
+      "sC": "as"
+    },
+    {
+      "line": "DAD GRACIAS AL SEÑOR CON LA CÍTARA,, (Mi,m,338)",
+      "sC": "as"
+    },
+    {
+      "line": "CON EL ARPA DE DIEZ CUERDAS, (Do,,86)",
+      "sC": "as"
+    },
+    {
+      "line": "TOCAD PARA ÉL., (Sol,,142)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cantad al Señor un cantar nuevo,, (La,m,22)(Si,7,289)",
+      "sC": "tc"
+    },
+    {
+      "line": "tocad la cítara con arte y aclamadle., (La,m,21)(Si,7,317)",
+      "sC": ""
+    },
+    {
+      "line": "Porque recta es la palabra del Señor,, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "verdad son todas sus obras., (Re,,10)(Si,7,222)",
+      "sC": ""
+    },
+    {
+      "line": "En Él están la justicia y el derecho,, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "de su amor está llena la tierra., (Re,,93)(Si,7,258)",
+      "sC": "melisma"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EXULTAD, JUSTOS, EN EL SEÑOR, (Sol,,14)(Mi,m,286)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DE LOS SANTOS ES PROPIA LA ALABANZA., (Do,,97)(Sol,,359)",
+          "sC": "as"
+        },
+        {
+          "line": "DAD GRACIAS AL SEÑOR CON LA CÍTARA,, (Mi,m,338)",
+          "sC": "as"
+        },
+        {
+          "line": "CON EL ARPA DE DIEZ CUERDAS, (Do,,86)",
+          "sC": "as"
+        },
+        {
+          "line": "TOCAD PARA ÉL., (Sol,,142)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [
+    {
+      "line": "La Palabra del Señor hizo los cielos,, (La,m,21)(Si,7,308)",
+      "sC": "tc"
+    },
+    {
+      "line": "el aliento de su boca sus ejércitos., (La,m,18)(Si,7,267)",
+      "sC": ""
+    },
+    {
+      "line": "El Señor anula los planes de las naciones,, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "hace vanos los proyectos de los pueblos., (Re,,10)(Si,7,339)",
+      "sC": ""
+    },
+    {
+      "line": "Mas el proyecto del Señor,, (Do,,114)",
+      "sC": ""
+    },
+    {
+      "line": "el proyecto del Señor, (Re,,69)",
+      "sC": ""
+    },
+    {
+      "line": "subsiste por siempre., (Si,7,145)",
+      "sC": "melisma1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "EXULTAD, JUSTOS, EN EL SEÑOR, (Sol,,14)(Mi,m,286)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DE LOS SANTOS ES PROPIA LA ALABANZA., (Do,,97)(Sol,,359)",
+          "sC": "as"
+        },
+        {
+          "line": "DAD GRACIAS AL SEÑOR CON LA CÍTARA,, (Mi,m,338)",
+          "sC": "as"
+        },
+        {
+          "line": "CON EL ARPA DE DIEZ CUERDAS, (Do,,86)",
+          "sC": "as"
+        },
+        {
+          "line": "TOCAD PARA ÉL., (Sol,,142)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

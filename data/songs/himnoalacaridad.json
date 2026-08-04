@@ -1,0 +1,181 @@
+{
+  "id": "himnoalacaridad",
+  "tt": "Himno A La Caridad",
+  "title": "Himno A La Caridad",
+  "subtitle": "1 Corintios 13,1-7",
+  "category": [
+    "PreCatecumenado",
+    "Cuaresma",
+    "Comunión",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "86",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/himnoalacaridad.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=himnoacristoluz",
+  "sig": "/src/index.html?canto=himnoalakenosis",
+  "lizq": [
+    {
+      "line": "Aunque hablara las lenguas de los ángeles,(Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "si no tengo amor, nada., (La,m,19)(Fa,,154)(Sol,,185)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aunque tuviera el don de profecía, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "y conociera todos los misterios,(La,m,252)",
+      "sC": ""
+    },
+    {
+      "line": "aunque tuviera plenitud de fe, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "y pudiera trasladar montañas,(La,m,241)",
+      "sC": ""
+    },
+    {
+      "line": "si no tengo amor, nada., (Fa,,149)(Sol,,186)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aunque repartiera, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "todos mis bienes a los pobres ",
+      "sC": ""
+    },
+    {
+      "line": "y entregara mi cuerpo a las llamas,(La,m,285)",
+      "sC": ""
+    },
+    {
+      "line": "si no tengo amor, nada., (Fa,,150)(Sol,,186)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PORQUE EL AMOR,(Do,,160)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EL AMOR, EL AMOR,(La,m,71)(Do,,171)",
+      "sC": "as"
+    },
+    {
+      "line": "ES PACIENTE, ES SERVICIAL, ",
+      "sC": "as"
+    },
+    {
+      "line": "NO ES ENVIDIOSO,(La,m,138)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "NO SE JACTA, NO SE ENGRÍE,(Do,,79)",
+      "sC": "as"
+    },
+    {
+      "line": "ES DECOROSO,(La,m,105)",
+      "sC": "as"
+    },
+    {
+      "line": "NO BUSCA LO SUYO, NO SE IRRITA., (Fa,,158)(Sol,,307)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "NO TOMA EN CUENTA EL MAL,(Do,,265)",
+      "sC": "as"
+    },
+    {
+      "line": "NO TOMA EN CUENTA EL MAL,(La,m,267)",
+      "sC": "as"
+    },
+    {
+      "line": "NO SE ALEGRA DE LA INJUSTICIA,(Fa,,283)",
+      "sC": "as"
+    },
+    {
+      "line": "SE ALEGRA CON LA VERDAD., (Sol,,256)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "TODO LO CREE,(Do,,127)",
+      "sC": "as r1"
+    },
+    {
+      "line": "TODO LO EXCUSA,(La,m,135)",
+      "sC": "as"
+    },
+    {
+      "line": "TODO LO ESPERA,(Do,,139)",
+      "sC": "as"
+    },
+    {
+      "line": "SOPORTA TODO, SOPORTA TODO. ",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PORQUE EL AMOR, EL AMOR,(Do,,10)(La,m,259)",
+      "sC": "as"
+    },
+    {
+      "line": "PORQUE EL AMOR ES DIOS, (Do,,159)",
+      "sC": "as"
+    },
+    {
+      "line": "ES DIOS, ES DIOS.",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

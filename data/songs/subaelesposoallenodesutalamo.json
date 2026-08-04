@@ -1,0 +1,180 @@
+{
+  "id": "subaelesposoallenodesutalamo",
+  "tt": "Suba El Esposo Al Leño De Su Tálamo ",
+  "title": "Suba El Esposo Al Leño De Su Tálamo ",
+  "subtitle": "Himno (San Quodvultdeus)",
+  "category": [
+    "Eleccion"
+  ],
+  "catCanto": "Eleccion",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "244",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/subaelesposoallenodesutalamo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=merobasteelcorazon",
+  "sig": "/",
+  "lizq": [
+    {
+      "line": "SUBA EL ESPOSO,, (La,m,20)(Re,m,137)",
+      "sC": "tc as"
+    },
+    {
+      "line": "SUBA, AL LEÑO DE SU TÁLAMO;, (Mi,,22)(La,m,235)",
+      "sC": "as r1"
+    },
+    {
+      "line": "SUBA NUESTRO ESPOSO,, (Re,m,204)",
+      "sC": "as"
+    },
+    {
+      "line": "AL LECHO, AL LECHO DE SU TÁLAMO., (Mi,,50)(La,m,291)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Duerma muriendo y se abra su costado, (La,m,20)(Re,m,350)",
+      "sC": "tc"
+    },
+    {
+      "line": "y salga la Iglesia virgen., (Mi,,28)(La,m,184)",
+      "sC": ""
+    },
+    {
+      "line": "Herido en su costado al instante salió, (Re,m,351)",
+      "sC": ""
+    },
+    {
+      "line": "Sangre y agua, Sangre y agua., (Mi,,98)(La,m,252)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Agua con la que la Esposa fue lavada,, (Re,m,22)(Mi,,327)",
+      "sC": ""
+    },
+    {
+      "line": "Sangre que recibe como dote., (Re,m,22)(Mi,,257)",
+      "sC": ""
+    },
+    {
+      "line": "Duerme Adán y es creada Eva,, (Fa,,10)(Mi,,265)",
+      "sC": ""
+    },
+    {
+      "line": "muere Cristo y es formada la Iglesia., (Fa,,88)(Re,m,322)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_esposo_1",
+      "initialState": "collapsed",
+      "triggerLine": "SUBA EL ESPOSO, (Mi,,20)(Re,m,137)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SUBA, AL LEÑO DE SU TÁLAMO;, (La,m,20)(Re,m,237)",
+          "sC": "as r1"
+        },
+        {
+          "line": "SUBA NUESTRO ESPOSO,, (Mi,,22)(La,m,235)",
+          "sC": "as"
+        },
+        {
+          "line": "AL LECHO, AL LECHO DE SU TÁLAMO., (Mi,,50)(La,m,291)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "¡Oh, qué grande el sacramento de estas bodas!, (Re,,12)(Mi,,405)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡Qué misterio este Esposo y esta Esposa!, (Re,m,99)(Mi,,355)",
+      "sC": ""
+    },
+    {
+      "line": "La Esposa toma el velo, (Re,m,78)",
+      "sC": ""
+    },
+    {
+      "line": "cuando muere el Esposo,, (Fa,,206)",
+      "sC": ""
+    },
+    {
+      "line": "y el Esposo se une a la Esposa, (Fa,,76)(Re,m,266)",
+      "sC": ""
+    },
+    {
+      "line": "cuando de la muerte se separa., (Mi,,274)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y cuando el Esposo es elevado a los Cielos,, (Fa,,46)",
+      "sC": ""
+    },
+    {
+      "line": "la Esposa se hace fecunda en toda la tierra., (Mi,,379)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_esposo_2",
+      "initialState": "collapsed",
+      "triggerLine": "SUBA EL ESPOSO, (Mi,,20)(Re,m,137)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SUBA, AL LEÑO DE SU TÁLAMO;, (La,m,20)(Re,m,236)",
+          "sC": "as r1"
+        },
+        {
+          "line": "SUBA NUESTRO ESPOSO,, (Mi,,20)(La,m,200)",
+          "sC": "as"
+        },
+        {
+          "line": "AL LECHO, AL LECHO DE SU TÁLAMO., (Re,m,60)(La,m,291)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

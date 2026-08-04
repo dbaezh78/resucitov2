@@ -1,0 +1,134 @@
+{
+  "id": "heaquimisiervo",
+  "tt": "He Aquí Mi Siervo",
+  "title": "He Aquí Mi Siervo",
+  "subtitle": "Isaías 42,1-4; Mateo 12,18-21 - Primer canto de Siervo de Yahveh",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Fracción Del Pan",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "81",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/heaquimisiervo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=hastacuando",
+  "sig": "/src/index.html?canto=heaquiquevengopresto",
+  "lizq": [
+    {
+      "line": "He aquí mi siervo a quien elegí,, (La,m,20)(Re,m,223)(La,m,291)",
+      "sC": "tc"
+    },
+    {
+      "line": "he aquí mi siervo a quien elegí,, (Re,m,221)(La,m,288)",
+      "sC": ""
+    },
+    {
+      "line": "mi amado,, (Mi,,71)",
+      "sC": ""
+    },
+    {
+      "line": "en quien mi alma se complace,, (La,m,263)",
+      "sC": ""
+    },
+    {
+      "line": "mi amado, (Mi,,72)",
+      "sC": ""
+    },
+    {
+      "line": "a quien elegí., (La,m,118)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Haré descansar mi espíritu sobre Él,, (La,7,278)(Re,m,330)",
+      "sC": ""
+    },
+    {
+      "line": "y anunciará el derecho a las naciones,, (La,m,103)(Mi,,175)(La,m,319)",
+      "sC": ""
+    },
+    {
+      "line": "y anunciará el derecho a las naciones., (Mi,,101)(La,m,178)(Mi,7,254)(La,m,314)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No disputará ni gritará,, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "nadie oirá su voz, (Fa,,10)(Mi,,145)",
+      "sC": ""
+    },
+    {
+      "line": "en las plazas., (La,m,85)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "LA CAÑA CASCADA NO LA QUEBRARÁ,, (La,m,20)(Mi,,357)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LA MECHA HUMEANTE NO APAGARÁ,, (La,m,341)",
+      "sC": "as"
+    },
+    {
+      "line": "HASTA HACER TRIUNFAR EL DERECHO,, (Mi,,118)(La,m,319)",
+      "sC": "as"
+    },
+    {
+      "line": "HASTA HACER TRIUNFAR EL DERECHO., (Mi,,118)(La,m,319)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y en su nombre,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "y en su nombre, ",
+      "sC": ""
+    },
+    {
+      "line": "pondrán las naciones, (Fa,,59)(Mi,,183)",
+      "sC": ""
+    },
+    {
+      "line": "su esperanza., (La,m,87)",
+      "sC": ""
+    }
+  ],
+  "sourceBook": "resucito"
+}

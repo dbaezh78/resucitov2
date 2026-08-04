@@ -1,0 +1,202 @@
+{
+  "id": "noestaaquiresucito",
+  "tt": "No Está Aquí, Resucitó",
+  "title": "No Está Aquí, Resucitó",
+  "subtitle": "Mateo 28,1-8",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "2",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "120",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/noestaaquiresucito.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=muchomehanperseguido",
+  "sig": "/src/index.html?canto=nohayenelparecer",
+  "lizq": [
+    {
+      "line": "Pasado el sábado,, (Do,,10)(Mi,,180)",
+      "sC": "tc"
+    },
+    {
+      "line": "al alba del primer día de la semana,, (Fa,,305)",
+      "sC": ""
+    },
+    {
+      "line": "María Magdalena y la otra María, (Re,m,297)",
+      "sC": ""
+    },
+    {
+      "line": "fueron al sepulcro., (Mi,,132)",
+      "sC": ""
+    },
+    {
+      "line": "Cuando de pronto se produjo un terremoto,, (Re,m,132)(Mi,,381)",
+      "sC": ""
+    },
+    {
+      "line": "el Ángel del Señor bajó del cielo,, (Fa,,11)(Sol,,199)(Sol,,321)(Mi,,353)",
+      "sC": ""
+    },
+    {
+      "line": "e hizo rodar la piedra., ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y el Ángel dijo a las mujeres:, (Re,m,20)(Mi,,236)",
+      "sC": ""
+    },
+    {
+      "line": "«No temáis, sé que buscáis a Jesús,, (Re,7,22)(Do,7,132)",
+      "sC": ""
+    },
+    {
+      "line": "el Crucificado., (Re,7,20)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No está aquí, ha resucitado., (Sol,m,24)(Re,7,115)(Sol,m,234)",
+      "sC": "tc"
+    },
+    {
+      "line": "NO ESTÁ AQUÍ, HA RESUCITADO., (Re,7,130)(Sol,m,267)",
+      "sC": "ta as"
+    },
+    {
+      "line": "No está aquí, resucitó,, (Do,m,112)(Re,7,202)",
+      "sC": "tc"
+    },
+    {
+      "line": "NO ESTÁ AQUÍ, RESUCITÓ., (Do,m,128)(Re,7,241)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Id de prisa a decir a sus discípulos:, (Sol,m,24)(Re,7,274)",
+      "sC": "tc"
+    },
+    {
+      "line": "ha resucitado de entre los muertos., (Sol,m,286)",
+      "sC": ""
+    },
+    {
+      "line": "Id de prisa a decir a sus discípulos:, (Re,7,272)",
+      "sC": ""
+    },
+    {
+      "line": "ha resucitado de entre los muertos, (Sol,m,289)",
+      "sC": ""
+    },
+    {
+      "line": "y os precede en Galilea., (Do,m,21)(Re,7,207)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "NO ESTÁ AQUÍ, RESUCITÓ., (Sol,m,24)(Re,7,133)(Sol,m,233)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NO ESTÁ AQUÍ, RESUCITÓ., (Re,7,133)(Sol,m,233)",
+      "sC": "as"
+    },
+    {
+      "line": "NO ESTÁ AQUÍ, RESUCITÓ., (Do,m,139)(Re,7,230)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y os precede en Galilea,, (Do,m,18)(Re,7,209)",
+      "sC": "tc"
+    },
+    {
+      "line": "Y OS PRECEDE EN GALILEA;, (Do,m,18)(Re,7,241)",
+      "sC": "ta as"
+    },
+    {
+      "line": "allí le veréis,, (Do,m,21)(Re,7,92)",
+      "sC": "tc "
+    },
+    {
+      "line": "ALLÍ LE VERÉIS., (Do,m,21)(Re,7,124)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "NO ESTÁ AQUÍ, RESUCITÓ..., (Sol,m,24)(Re,7,133)(Sol,m,233)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO ESTÁ AQUÍ, RESUCITÓ., (Re,7,133)(Sol,m,233)",
+          "sC": "as"
+        },
+        {
+          "line": "NO ESTÁ AQUÍ, RESUCITÓ., (Do,m,139)(Re,7,230)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y os precede en Galilea,, (Do,m,20)(Re,7,208)",
+      "sC": "tc"
+    },
+    {
+      "line": "Y OS PRECEDE EN GALILEA;, (Do,m,20)(Re,7,243)",
+      "sC": "ta as"
+    },
+    {
+      "line": "allí le veréis,, (Do,m,20)(Re,7,90)",
+      "sC": "tc"
+    },
+    {
+      "line": "ALLÍ LE VERÉIS»., (Do,m,20)(Re,7,120)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

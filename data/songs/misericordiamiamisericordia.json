@@ -1,0 +1,463 @@
+{
+  "id": "misericordiamiamisericordia",
+  "tt": "Misericordia Mía, Misericordia",
+  "title": "Misericordia Mía, Misericordia",
+  "subtitle": "Salmo 51 (50)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "118",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/misericordiadiosmio.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=misericordiadiosmio",
+  "sig": "/src/index.html?canto=muchomehanperseguido",
+  "lizq": [
+    {
+      "line": "MISERICORDIA MÍA, MISERICORDIA… (Mi,m,20)(Re,,248)(Mi,m,291)",
+      "sC": "tc as r1"
+    },
+    {
+      "line": "Misericordia, Dios mío, por tu bondad, (Mi,m,20)(La,m,345)",
+      "sC": "tc"
+    },
+    {
+      "line": "por tu inmensa compasión borra mi culpa; (Mi,m,368)",
+      "sC": ""
+    },
+    {
+      "line": "lava del todo mi delito,, (La,m,196)",
+      "sC": ""
+    },
+    {
+      "line": "limpia mi pecado. (Mi,m,134)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "MISERICORDIA MÍA (Mi,m,20)",
+      "sC": "ta as zindex junte",
+      "lines": [
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as sub"
+        },
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "line": "Pues yo reconozco mi culpa, ",
+      "sC": "junte"
+    },
+    {
+      "line": "tengo siempre presente mi pecado: ",
+      "sC": "junte"
+    },
+    {
+      "line": "contra Ti, contra Ti sólo pequé, ",
+      "sC": "junte"
+    },
+    {
+      "line": "cometí la maldad que aborreces. ",
+      "sC": "junte"
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "MISERICORDIA MÍA (Mi,m,20)",
+      "sC": "ta as zindex junte",
+      "lines": [
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as sub"
+        },
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "line": "En la sentencia tendrás razón, ",
+      "sC": "junte"
+    },
+    {
+      "line": "en el juicio resultarás inocente. ",
+      "sC": "junte"
+    },
+    {
+      "line": "Mira, en la culpa nací, ",
+      "sC": "junte"
+    },
+    {
+      "line": "pecador me concibió mi madre. ",
+      "sC": "junte"
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "MISERICORDIA MÍA (Mi,m,20)",
+      "sC": "ta as zindex",
+      "lines": [
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as sub"
+        },
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "line": "Te gusta un corazón sincero, ",
+      "sC": "junte"
+    },
+    {
+      "line": "y en mi interiorme inculcas sabiduría. ",
+      "sC": "junte"
+    },
+    {
+      "line": "Rocíame con el hisopo: quedaré limpio; ",
+      "sC": "junte"
+    },
+    {
+      "line": "lávame: quedaré más blanco que la nieve. ",
+      "sC": "junte"
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "MISERICORDIA MÍA (Mi,m,20)",
+      "sC": "ta as zindex",
+      "lines": [
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as sub"
+        },
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "line": "Hazme oír el gozo y la alegría, ",
+      "sC": "junte"
+    },
+    {
+      "line": "que se alegren los huesos quebrantados., ",
+      "sC": "junte"
+    },
+    {
+      "line": "Aparta de mi pecado tu vista, ",
+      "sC": "junte"
+    },
+    {
+      "line": "borra en mí toda culpa., ",
+      "sC": "junte"
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_5",
+      "initialState": "collapsed",
+      "triggerLine": "MISERICORDIA MÍA (Mi,m,20)",
+      "sC": "ta as zindex",
+      "lines": [
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as sub"
+        },
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Oh Dios, crea en mí un corazón puro, (Mi,m,20)(La,m,324)",
+      "sC": "junte"
+    },
+    {
+      "line": "renuévame por dentro con espíritu firme; ",
+      "sC": "junte"
+    },
+    {
+      "line": "no me arrojes lejos de tu rostro, ",
+      "sC": "junte"
+    },
+    {
+      "line": "no me quites tu Santo Espíritu. ",
+      "sC": "junte"
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_6",
+      "initialState": "collapsed",
+      "triggerLine": "MISERICORDIA MÍA (Mi,m,20)",
+      "sC": "ta as zindex",
+      "lines": [
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as sub"
+        },
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "line": "Devuélveme la alegría de tu salvación, ",
+      "sC": "junte"
+    },
+    {
+      "line": "afiánzame con espíritu generoso; ",
+      "sC": "junte"
+    },
+    {
+      "line": "enseñaré a los malvados tus caminos, ",
+      "sC": "junte"
+    },
+    {
+      "line": "los pecadores volverán a ti., ",
+      "sC": "junte"
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_7",
+      "initialState": "collapsed",
+      "triggerLine": "MISERICORDIA MÍA (Mi,m,20)",
+      "sC": "ta as zindex",
+      "lines": [
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as sub"
+        },
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "line": "Líbrame de la sangre, oh Dios, ",
+      "sC": "junte"
+    },
+    {
+      "line": "Dios, Salvador mío,, ",
+      "sC": "junte"
+    },
+    {
+      "line": "y cantará mi lengua tu justicia. ",
+      "sC": "junte"
+    },
+    {
+      "line": "Señor, me abrirás los labios, ",
+      "sC": "junte"
+    },
+    {
+      "line": "y mi boca proclamará tu alabanza. ",
+      "sC": "junte"
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_8",
+      "initialState": "collapsed",
+      "triggerLine": "MISERICORDIA MÍA (Mi,m,20)",
+      "sC": "ta as zindex",
+      "lines": [
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as sub"
+        },
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "line": "Los sacrificios no te satisfacen: ",
+      "sC": "junte"
+    },
+    {
+      "line": "si te ofreciera un holocausto, tú no lo querrías. ",
+      "sC": "junte"
+    },
+    {
+      "line": "Mi sacrificio es un espíritu quebrantado; ",
+      "sC": "junte"
+    },
+    {
+      "line": "un corazón quebrantado y humillado, ",
+      "sC": "junte"
+    },
+    {
+      "line": "tú no lo desprecias., ",
+      "sC": "junte"
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_9",
+      "initialState": "collapsed",
+      "triggerLine": "MISERICORDIA MÍA (Mi,m,20)",
+      "sC": "ta as zindex",
+      "lines": [
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as sub"
+        },
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "line": "Señor, por tu bondad, favorece a Sión, ",
+      "sC": "junte"
+    },
+    {
+      "line": "reconstruye las murallas de Jerusalén: ",
+      "sC": "junte"
+    },
+    {
+      "line": "Entonces aceptarás los sacrificios rituales, ",
+      "sC": "junte"
+    },
+    {
+      "line": "ofrendas y holocaustos,, ",
+      "sC": "junte"
+    },
+    {
+      "line": "sobre tu altar se inmolarán novillos. ",
+      "sC": "junte"
+    },
+    {
+      "line": "",
+      "sC": "adb1 junte"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_10",
+      "initialState": "collapsed",
+      "triggerLine": "MISERICORDIA MÍA (Mi,m,20)",
+      "sC": "ta as zindex",
+      "lines": [
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as sub"
+        },
+        {
+          "line": "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

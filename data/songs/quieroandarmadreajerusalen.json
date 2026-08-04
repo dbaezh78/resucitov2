@@ -1,0 +1,162 @@
+{
+  "id": "quieroandarmadreajerusalen",
+  "tt": "Quiero Andar, Madre, A Jerusalén",
+  "title": "Quiero Andar, Madre, A Jerusalén",
+  "subtitle": "Canto sefardí",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Final"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "140",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/quieroandarmadreajerusalen.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=quiennosseparara",
+  "sig": "/src/index.html?canto=quierocantar",
+  "lizq": [
+    {
+      "line": "Quiero andar, madre,, (Mi,,10)(La,m,189)",
+      "sC": "tc"
+    },
+    {
+      "line": "a Jerusalén, Jerusalén., (Re,m,22)(Mi,,62)",
+      "sC": ""
+    },
+    {
+      "line": "A comer las hierbas, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "y a saciarme de ellas,, (Re,m,22)(Mi,,59)",
+      "sC": ""
+    },
+    {
+      "line": "saciarme de ellas. ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "EN EL SENDERO ME ENCUENTRO YO., (Fa,,10)(La,m,339)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EN EL SENDERO CAMINO YO., (Fa,,10)(La,m,265)",
+      "sC": "as"
+    },
+    {
+      "line": "EN EL SEÑOR DE TODO EL MUNDO,, (Re,m,20)(Mi,,57)",
+      "sC": "as"
+    },
+    {
+      "line": "DE TODO EL MUNDO. ",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "LA LA, LA LA LA LA LA LA LALA ..., (Mi,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "LA LA, LA ... LA, (Re,m,46)(Mi,,138)",
+      "sC": "as"
+    },
+    {
+      "line": "LA LA LA ... ",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Hazme comer las hierbas,, (Mi,,10)(La,m,223)",
+      "sC": "tc"
+    },
+    {
+      "line": "que pueda saciar mis ansias,, (Re,m,22)(Mi,,62)",
+      "sC": ""
+    },
+    {
+      "line": "que son ansias de amistad, ",
+      "sC": ""
+    },
+    {
+      "line": "que son ansias de humildad, ",
+      "sC": ""
+    },
+    {
+      "line": "que son ansias,, (Re,m,95)(Mi,,135)",
+      "sC": ""
+    },
+    {
+      "line": "que son ansias de obediencia., ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EN EL SENDERO ME ENCUENTRO YO, (Fa,,10)(La,m,339)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EN EL SENDERO CAMINO YO., (Fa,,10)(La,m,265)",
+          "sC": "as"
+        },
+        {
+          "line": "EN EL SEÑOR DE TODO EL MUNDO,, (Re,m,20)(Mi,,57)",
+          "sC": "as"
+        },
+        {
+          "line": "DE TODO EL MUNDO. ",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ADONAI ELOHENU,, (Mi,,11)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ADONAI ELOHENU,, (Re,m,63)(Mi,,140)",
+      "sC": "as"
+    },
+    {
+      "line": "ADONAI EJAD., (Fa,,62)(Mi,,108)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,203 @@
+{
+  "id": "pregonpascualp1",
+  "tt": "Pregón Pascual",
+  "title": "Pregón Pascual",
+  "subtitle": "«Exsultet» ─ Página 1",
+  "category": [
+    "Liturgia",
+    "Pascua"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "206",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/pregonpascual.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=pregonpascual",
+  "sig": "/src/index.html?canto=pregonpascualp2",
+  "lizq": [
+    {
+      "line": "Exulten los coros de los ángeles,, (La,m,20)(Sol,,122)(La,m,245)",
+      "sC": "tc"
+    },
+    {
+      "line": "exulte la asamblea celeste,, (Do,,24)(La,m,223)",
+      "sC": ""
+    },
+    {
+      "line": "y un himno de gloria, (Sol,,60)",
+      "sC": ""
+    },
+    {
+      "line": "aclame el triunfo del Señor resucitado., (La,m,338)",
+      "sC": ""
+    },
+    {
+      "line": "Alégrese la tierra, inundada por la nueva luz., (Fa,,11)(Mi,7,131)(Fa,,235)(Mi,7,412)",
+      "sC": ""
+    },
+    {
+      "line": "EL ESPLENDOR DEL REY, (La,m,219)",
+      "sC": "tc as"
+    },
+    {
+      "line": "DESTRUYÓ LAS TINIEBLAS,, (Sol,,200)",
+      "sC": "as r1"
+    },
+    {
+      "line": "DESTRUYÓ LAS TINIEBLAS,, (Fa,,195)",
+      "sC": "as"
+    },
+    {
+      "line": "LAS TINIEBLAS DEL MUNDO., (Mi7,,215)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que se alegre nuestra madre la Iglesia,, (La,m,20)(Sol,,337)",
+      "sC": "tc"
+    },
+    {
+      "line": "resplandeciente de la gloria de su Señor;, (La,m,122)(Do,,236)(La,m,374)",
+      "sC": ""
+    },
+    {
+      "line": "y que en este lugar resuene unánime, (Sol,,98)",
+      "sC": ""
+    },
+    {
+      "line": "la aclamación de un pueblo en fiesta., (La,m,320)",
+      "sC": ""
+    },
+    {
+      "line": "El Señor esté con vosotros., (Sol,,14)(La,m,208)",
+      "sC": "tc"
+    },
+    {
+      "line": "Y CON TU ESPÍRITU., (Sol,,14)(La,m,141)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Levantemos el corazón., (Fa,,12)(Mi,,202)",
+      "sC": "tc"
+    },
+    {
+      "line": "LO TENEMOS LEVANTADO HACIA EL SEÑOR., (Fa,,10)(Mi,,392)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Demos gracias al Señor, nuestro Dios., (La,m,340)",
+      "sC": "tc"
+    },
+    {
+      "line": "ES JUSTO Y NECESARIO., (Sol,,47)(La,m,188)",
+      "sC": "ta as r2"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Realmente es justo y necesario, (La,m,20)(Sol,,267)",
+      "sC": "tc"
+    },
+    {
+      "line": "exaltar con el canto la alegría del espíritu, (La,m,52)(Do,,151)(La,m,361)",
+      "sC": ""
+    },
+    {
+      "line": "y elevar un himno al Padre Todopoderoso,, (Sol,,62)",
+      "sC": ""
+    },
+    {
+      "line": "y a su único Hijo, Jesucristo., (La,m,230)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Él ha pagado por todos al eterno Padre, (Sol,,336)",
+      "sC": ""
+    },
+    {
+      "line": "la deuda de Adán,, (La,m,152)",
+      "sC": ""
+    },
+    {
+      "line": "y con su Sangre, derramada por amor,, (Do,,102)(La,m,349)",
+      "sC": ""
+    },
+    {
+      "line": "ha cancelado la condena antigua del pecado., (Sol,,97)(La,m,395)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Esta es la Pascua,, (Fa,,10)(Mi7,,118)",
+      "sC": ""
+    },
+    {
+      "line": "en que se inmola el Cordero., (Fa,,139)(Mi,,242)",
+      "sC": ""
+    },
+    {
+      "line": "Esta es la noche, (Fa,,57)(Mi7,,112)",
+      "sC": ""
+    },
+    {
+      "line": "en que fueron liberados, (Fa,,94)",
+      "sC": ""
+    },
+    {
+      "line": "nuestros padres de Egipto., (Mi7,,216)",
+      "sC": ""
+    },
+    {
+      "line": "Esta es la noche, (Fa,,56)(Mi7,,115)",
+      "sC": ""
+    },
+    {
+      "line": "que nos salva de la oscuridad del mal., (Fa,,91)(Mi,,341)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ESTA ES LA NOCHE, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EN QUE CRISTO HA VENCIDO LA MUERTE, (Sol,,347)",
+      "sC": "as r3"
+    },
+    {
+      "line": "Y DEL INFIERNO RETORNA VICTORIOSO., (Fa,,107)(Mi,,343)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

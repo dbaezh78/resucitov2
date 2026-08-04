@@ -1,0 +1,171 @@
+{
+  "id": "salmo98",
+  "tt": "Salmo 98 - Santo Es El Señor, Nuestro Dios.",
+  "title": "Salmo 98",
+  "subtitle": "SANTO ES EL SEÑOR, NUESTRO DIOS.",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "salmodia": "2",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "300",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/salmo98.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=salmo97",
+  "sig": "/src/index.html?canto=salmo99",
+  "lizq": [
+    {
+      "line": "El Señor reina, tiemblen las naciones;, (Fa,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "sentado sobre querubines, vacile la tierra., (Re,m,22)(La,m,203)(Re,m,375)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es grande en Sión,, (Fa,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "encumbrado sobre todos los pueblos., (Re,m,22)(La,m,210)(Re,m,350)",
+      "sC": "as"
+    },
+    {
+      "line": "Reconozcan tu nombre, grande y terrible:, (Fa,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "Él es santo., (Re,m,22)(La,m,65)(Re,m,113)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Reinas con poder y amas la justicia,, (Fa,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "tú has establecido la rectitud;, (Re,m,22)(La,m,127)(Re,m,261)",
+      "sC": "as"
+    },
+    {
+      "line": "tú administras la justicia y el derecho,, (Fa,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "tú actúas en Jacob., (Re,m,22)(La,m,75)(Re,m,161)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ensalzad al Señor, Dios nuestro;, (Fa,,10)(Re,m,280)",
+      "sC": "ta as"
+    },
+    {
+      "line": "postraos ante el estrado de sus pies:, (Fa,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "Él es santo., (Re,m,22)(La,m,66)(Re,m,115)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Moisés y Aarón con sus sacerdotes,, (Fa,,10)(Re,m,308)",
+      "sC": "tc"
+    },
+    {
+      "line": "Samuel con los que invocan su nombre,, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "invocaban al Señor, y él respondía., (Re,m,22)(La,m,167)(Re,m,299)",
+      "sC": ""
+    },
+    {
+      "line": "Dios les hablaba desde la columna de nube;, (Fa,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "oyeron sus mandatos y la ley que les dio., (Re,m,22)(La,m,175)(Re,m,358)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor, Dios nuestro, tú les respondías,, (Fa,,10)(Re,m,338)",
+      "sC": "tc"
+    },
+    {
+      "line": "tú eras para ellos un Dios de perdón, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "y un Dios vengador de sus maldades., (Re,m,22)(La,m,150)(Re,m,326)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ensalzad al Señor, Dios nuestro;, (Fa,,10)(Re,m,283)",
+      "sC": "ta as"
+    },
+    {
+      "line": "postraos ante su monte santo:, (Fa,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "Santo es el Señor, nuestro Dios., (Re,m,22)(La,m,150)(Re,m,278)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Gloria al Padre, y al Hijo, y al Espíritu Santo., (Fa,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "Como era en el principio, ahora y siempre, (Re,m,22)(La,m,185)",
+      "sC": "ta as"
+    },
+    {
+      "line": "por los siglos de los siglos. Amén., (Re,m,22)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "salmodias"
+}

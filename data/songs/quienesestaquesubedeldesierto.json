@@ -1,0 +1,160 @@
+{
+  "id": "quienesestaquesubedeldesierto",
+  "tt": "Quién Es Esta Que Sube Del Desierto",
+  "title": "Quién Es Esta Que Sube Del Desierto",
+  "subtitle": "Cantar de los Cantares 8,5-7",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Comunión",
+    "Final",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "138",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/quienesestaquesubedeldesierto.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=queestupendoquealegria",
+  "sig": "/src/index.html?canto=quiennosseparara",
+  "lizq": [
+    {
+      "line": "¿QUIÉN ES ESTA QUE SUBE DEL DESIERTO,, (La,m,20)(Re,m,227)(La,m,359)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUIÉN ES ESTA QUE SUBE DEL DESIERTO,, (Fa,,211)(La,m,349)",
+      "sC": "as"
+    },
+    {
+      "line": "APOYADA EN SU AMADO, EN SU AMADO,, (Fa,,60)(Mi,,348)",
+      "sC": "as"
+    },
+    {
+      "line": "APOYADA EN SU AMADO?, (Fa,,60)(La,m,198)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Debajo del manzano te desperté,, (Sol,,12)(Fa,,168)(La,m,305)",
+      "sC": "tc"
+    },
+    {
+      "line": "allí donde te concibió tu madre,, (Sol,,12)(Fa,,139)(La,m,257)",
+      "sC": ""
+    },
+    {
+      "line": "allí donde tu madre te dio a luz,, (Fa,,10)(Mi,,280)",
+      "sC": ""
+    },
+    {
+      "line": "allí donde tu madre te dio a luz., (Fa,,10)(La,m,285)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¿QUIÉN ES ESTA QUE SUBE DEL DESIERTO (La,m,20)(Re,m,227)(La,m,359)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUIÉN ES ESTA QUE SUBE DEL DESIERTO,, (Fa,,211)(La,m,349)",
+          "sC": "as"
+        },
+        {
+          "line": "APOYADA EN SU AMADO, EN SU AMADO,, (Fa,,60)(Mi,,348)",
+          "sC": "as"
+        },
+        {
+          "line": "APOYADA EN SU AMADO?, (Fa,,60)(La,m,198)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Llévame como un sello en tu corazón,, (Sol,,14)(Fa,,191)(La,m,340)",
+      "sC": "tc"
+    },
+    {
+      "line": "como un tatuaje en tu brazo,, (Sol,,14)(Fa,,129)(La,m,238)",
+      "sC": ""
+    },
+    {
+      "line": "porque es fuerte el amor como la muerte, (Fa,,122)(Mi,,362)",
+      "sC": ""
+    },
+    {
+      "line": "y las aguas no lo pueden apagar,, (Fa,,55)(Mi,,293)",
+      "sC": ""
+    },
+    {
+      "line": "ni los ríos lo pueden anegar., (Fa,,69)(Mi,,252)",
+      "sC": ""
+    },
+    {
+      "line": "Que si tú dieras los bienes de tu casa por el amor, (Fa,,112)(Mi,,461)",
+      "sC": ""
+    },
+    {
+      "line": "sólo encontrarías el desprecio., (Fa,,10)(Mi,,253)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "¿QUIÉN ES ESTA QUE SUBE DEL DESIERTO, (La,m,20)(Re,m,227)(La,m,359)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUIÉN ES ESTA QUE SUBE DEL DESIERTO,, (Fa,,211)(La,m,349)",
+          "sC": "as"
+        },
+        {
+          "line": "APOYADA EN SU AMADO, EN SU AMADO,, (Fa,,60)(Mi,,348)",
+          "sC": "as"
+        },
+        {
+          "line": "APOYADA EN SU AMADO?, (Fa,,60)(La,m,198)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

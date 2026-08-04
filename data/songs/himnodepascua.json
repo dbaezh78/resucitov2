@@ -1,0 +1,115 @@
+{
+  "id": "himnodepascua",
+  "tt": "Himno De Pascua",
+  "title": "Himno De Pascua",
+  "subtitle": "Himno lat. «Aurora lucis rutiiat»",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "90",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/himnodepascua.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=himnodelaascension",
+  "sig": "/src/index.html?canto=huyeamadomio",
+  "lizq": [
+    {
+      "line": "La aurora tiñe de púrpura el cielo,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "resuena en los aires el eco de las alabanzas,, (Mi,7,373)",
+      "sC": ""
+    },
+    {
+      "line": "el mundo triunfante se alegra,, ",
+      "sC": ""
+    },
+    {
+      "line": "tenebroso el infierno brama., (La,m,226)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MIENTRAS EL REY, CRISTO,, (La,7,20)(Re,m,159)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LIBRA A TODOS DE LA CÁRCEL, (La,m,242)",
+      "sC": "as r1"
+    },
+    {
+      "line": "TENEBROSA QUE ES LA MUERTE, (Mi,7,271)",
+      "sC": "as"
+    },
+    {
+      "line": "Y NOS CONDUCE A LA VIDA., (La,m,230)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Una piedra sellaba su sepulcro,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "muchos guardias lo custodiaban,, (Mi,7,272)",
+      "sC": ""
+    },
+    {
+      "line": "pero Él triunfa glorioso, ",
+      "sC": ""
+    },
+    {
+      "line": "y de la muerte se levanta., (La,m,205)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "NO MÁS LUTOS, NI LLANTOS,, (La,7,20)(Re,m,103)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NI PESARES,, (La,m,73)",
+      "sC": "as r2"
+    },
+    {
+      "line": "¡RESUCITÓ!, (Mi,,98)",
+      "sC": "as"
+    },
+    {
+      "line": "¡RESUCITÓ!, (La,m,96)",
+      "sC": "as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

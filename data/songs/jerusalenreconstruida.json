@@ -1,0 +1,289 @@
+{
+  "id": "jerusalenreconstruida",
+  "tt": "Jerusalén Reconstruida",
+  "title": "Jerusalén Reconstruida",
+  "subtitle": "Tobias 13,11-17",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Paz",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "5",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "94",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/jerusalenreconstruida.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=improperios",
+  "sig": "/src/index.html?canto=jesusrecorriatodaslasciudades",
+  "lizq": [
+    {
+      "line": "Bendice, alma mía al Señor,, (Mi,m,20)(Re,,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "bendice, alma mía, al gran Rey,, (Mi,m,283)",
+      "sC": ""
+    },
+    {
+      "line": "porque será reconstruida, (Re,,216)",
+      "sC": ""
+    },
+    {
+      "line": "Jerusalén, Jerusalén., (Mi,m,177)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "JERUSALÉN, JERUSALÉN,, (Mi,m,20)(Re,,217)",
+      "sC": "ta as"
+    },
+    {
+      "line": "JERUSALÉN, JERUSALÉN., (Mi,m,216)",
+      "sC": "as"
+    },
+    {
+      "line": "JERUSALÉN RECONSTRUIDA,, (Re,,239)",
+      "sC": "as"
+    },
+    {
+      "line": "JERUSALÉN PARA SIEMPRE., (Mi,m,207)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Jerusalén será reconstruida,, (Mi,m,20)(Re,,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "con zafiros y esmeraldas,, (Mi,m,193)",
+      "sC": ""
+    },
+    {
+      "line": "de piedras preciosas sus murallas,, (Re,,287)",
+      "sC": ""
+    },
+    {
+      "line": "sus torres con oro puro., (Mi,m,194)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sus plazas serán de rubí,, (Re,,232)",
+      "sC": ""
+    },
+    {
+      "line": "sus calles de oro de Ofir,, (Mi,m,220)",
+      "sC": ""
+    },
+    {
+      "line": "sobre sus puertas se exultará, (Re,,275)",
+      "sC": ""
+    },
+    {
+      "line": "y en sus casas se cantará., (Mi,m,238)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "JERUSALÉN, JERUSALÉN, (Mi,m,20)(Re,,217)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "JERUSALÉN, JERUSALÉN., (Mi,m,216)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN RECONSTRUIDA,, (Re,,239)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN PARA SIEMPRE., (Mi,m,207)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Brillará tu luz hasta los confines de la tierra,, (Mi,m,20)(Re,,383)",
+      "sC": ""
+    },
+    {
+      "line": "vendrán a ti pueblos numerosos,, (Mi,m,270)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "vendrán a ti todas las naciones,, (Re,,260)",
+      "sC": ""
+    },
+    {
+      "line": "hasta la casa de tu Nombre., (Mi,m,207)",
+      "sC": ""
+    },
+    {
+      "line": "Las generaciones te cantarán,, (Re,,267)",
+      "sC": ""
+    },
+    {
+      "line": "todos los pueblos exultarán, (Mi,m,243)",
+      "sC": ""
+    },
+    {
+      "line": "y en ella el nombre de tu Elegido, (Re,,283)",
+      "sC": ""
+    },
+    {
+      "line": "será para siempre, será para siempre., (Mi,m,300)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "JERUSALÉN, JERUSALÉN, (Mi,m,20)(Re,,217)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "JERUSALÉN, JERUSALÉN., (Mi,m,216)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN RECONSTRUIDA,, (Re,,239)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN PARA SIEMPRE., (Mi,m,207)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Malditos sean los que te dicen palabras crueles,, (Mi,m,20)(Re,,421)",
+      "sC": "tc"
+    },
+    {
+      "line": "malditos sean los que te destruyen,, (Mi,m,293)",
+      "sC": ""
+    },
+    {
+      "line": "todos los que derriban tus murallas,, (Re,,299)",
+      "sC": ""
+    },
+    {
+      "line": "y tiran por tierra tus torres., (Mi,m,211)",
+      "sC": ""
+    },
+    {
+      "line": "Mas sean benditos, benditos para siempre,, (Re,,149)(Mi,m,352)",
+      "sC": ""
+    },
+    {
+      "line": "los que te construyen, los que te edifican., (Re,,163)(Mi,m,356)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Benditos los que te aman,, (Re,,197)",
+      "sC": ""
+    },
+    {
+      "line": "los que lloran por tus castigos,, (Mi,m,248)",
+      "sC": ""
+    },
+    {
+      "line": "porque en tus puertas exultarán,, (Re,,288)",
+      "sC": ""
+    },
+    {
+      "line": "porque en sus casas te cantarán., (Mi,m,293)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "JERUSALÉN, JERUSALÉN, (Mi,m,20)(Re,,217)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "JERUSALÉN, JERUSALÉN., (Mi,m,216)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN RECONSTRUIDA,, (Re,,239)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN PARA SIEMPRE., (Mi,m,207)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Mi,m,20)(Re,,154)(Mi,m,347)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Re,,155)(Mi,m,347)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

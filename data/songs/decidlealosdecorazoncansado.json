@@ -1,0 +1,180 @@
+{
+  "id": "decidlealosdecorazoncansado",
+  "tt": "Decidle A Los De Corazón Cansado",
+  "title": "Decidle A Los De Corazón Cansado",
+  "subtitle": "Isaías 35,4ss",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Adviento",
+    "Navidad",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "48",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/decidlealosdecorazoncansado.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=deprofundis",
+  "sig": "/src/index.html?canto=delantedelosangeles",
+  "lizq": [
+    {
+      "line": "Decidle a los de corazón cansado,, (La,m,15)(Re,m9,286)",
+      "sC": "tc"
+    },
+    {
+      "line": "decídselo, decídselo a los pobres:, (La,m,267)",
+      "sC": ""
+    },
+    {
+      "line": "«¡Ánimo, no temáis!, (Fa,,75)(Mi,,155)",
+      "sC": ""
+    },
+    {
+      "line": "que vuestro Dios viene a salvaros»., (Fa,,144)(Mi,,283)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ya se abren los ojos de los ciegos,, (La,m,19)(Re,m9,280)",
+      "sC": ""
+    },
+    {
+      "line": "se abren los oídos de los sordos., (La,m,258)",
+      "sC": ""
+    },
+    {
+      "line": "El cojo salta como un ciervo,, (Fa,,62)(Mi,,230)",
+      "sC": ""
+    },
+    {
+      "line": "grita de júbilo la lengua del mudo., (Fa,,88)(Mi,,287)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PORQUE SE ABRIRÁ UN CAMINO,, (Do,,10)(Mi,m,180)(Do,,282)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UN CAMINO DE SALVACIÓN;, (Mi,m,81)(La,m,236)",
+      "sC": "as"
+    },
+    {
+      "line": "UNA SENDA, UNA VÍA, (Do,,77)(Mi,m,191)",
+      "sC": "as"
+    },
+    {
+      "line": "PARA LOS POBRES., (La,m,123)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y por ella retornarán, (Mi,m,70)",
+      "sC": "tc"
+    },
+    {
+      "line": "los rescatados del Señor., (La,m,98)",
+      "sC": ""
+    },
+    {
+      "line": "Y POR ELLA RETORNARÁN, (Mi,m,81)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LOS RESCATADOS DEL SEÑOR., (La,m,127)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Todos los pobres, ciegos y cojos,, (Mi,m,109)",
+      "sC": "tc"
+    },
+    {
+      "line": "los alejados del Señor., (La,m,75)",
+      "sC": ""
+    },
+    {
+      "line": "TODOS LOS POBRES, CIEGOS Y COJOS,, (Mi,m,136)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LOS ALEJADOS DEL SEÑOR., (La,m,101)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Los pecadores!, (Mi,m,108)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y CANTARÁN FELICIDAD,, (Fa,,100)(Mi,,206)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y CANTARÁN FELICIDAD., (Fa,,100)(Mi,,206)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA., (Fa,,100)(Mi,,174)",
+      "sC": "as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA., (Fa,,100)(Mi,,174)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA., (Fa,,100)(Mi,,174)",
+      "sC": "as"
+    },
+    {
+      "line": "ALELUYA, ALELUY, (Fa,,100)(Mi,,174)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,266 @@
+{
+  "id": "noresistaisalmal",
+  "tt": "No Resistáis Al Mal ",
+  "title": "No Resistáis Al Mal ",
+  "subtitle": "Mateo 5,38ss",
+  "category": [
+    "Catecumenado",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "230",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/noresistaisalmal.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ningunopuedeserviradossenores",
+  "sig": "/src/index.html?canto=nosufrasporlosmalvados",
+  "lizq": [
+    {
+      "line": "Habéis oído que se dijo:, (Re,,12)",
+      "sC": "tc"
+    },
+    {
+      "line": "«Ojo por ojo, y diente por diente»., (Si,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "Mas yo os digo, mas yo os digo:, (La,,10)(Si,m,274)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "NO RESISTÁIS AL MAL,, (Re,,12)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NO RESISTÁIS AL MAL,, (Si,m,20)",
+      "sC": "as"
+    },
+    {
+      "line": "NO RESISTÁIS AL MAL,, (La,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "NO RESISTÁIS AL MAL., (Si,m,200)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y si alguno te golpea en la mejilla derecha, (Si,m,20)(Re,,365)",
+      "sC": "tc"
+    },
+    {
+      "line": "preséntale también la otra., (La,,46)(Si,m,234)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y si alguno, (Si,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "te lleva a juicio para quitarte la túnica, (Re,,315)",
+      "sC": ""
+    },
+    {
+      "line": "déjale también el manto., (La,,10)(Si,m,200)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Al que te obligue a andar una milla,, (La,,10)",
+      "sC": ""
+    },
+    {
+      "line": "vete con él dos., (Si,m,128)",
+      "sC": ""
+    },
+    {
+      "line": "Y al que te robe lo que es tuyo,, (La,,10)",
+      "sC": ""
+    },
+    {
+      "line": "no se lo reclames., (Si,m,124)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_nralmal_1",
+      "initialState": "collapsed",
+      "triggerLine": "NO RESISTÁIS AL MAL, (Re,,12)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO RESISTÁIS AL MAL,, (Si,m,20)",
+          "sC": "as"
+        },
+        {
+          "line": "NO RESISTÁIS AL MAL,, (La,,10)",
+          "sC": "as"
+        },
+        {
+          "line": "NO RESISTÁIS AL MAL., (Si,m,200)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Habéis oído que se dijo:, (Re,,12)",
+      "sC": "tc"
+    },
+    {
+      "line": "«Amarás a tu prójimo y odiarás a tu enemigo»., (Si,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "Mas yo os digo, mas yo os digo:, (La,,10)(Si,m,273)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Amad a vuestros enemigos,, (Re,,12)",
+      "sC": ""
+    },
+    {
+      "line": "haced el bien a los que os odian,, (Si,m,112)",
+      "sC": ""
+    },
+    {
+      "line": "rezad por los que os persiguen,, (La,,36)",
+      "sC": ""
+    },
+    {
+      "line": "bendecid a los que os calumnian., (Si,m,74)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y seréis hijos de vuestro Padre celeste,, (Re,,332)",
+      "sC": ""
+    },
+    {
+      "line": "que hace salir su sol sobre buenos y malos, (La, ,10)(Si,m,379)",
+      "sC": ""
+    },
+    {
+      "line": "y manda la lluvia también, (La,,10)",
+      "sC": ""
+    },
+    {
+      "line": "sobre los pecadores., (Si,m,160)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_nralmal_2",
+      "initialState": "collapsed",
+      "triggerLine": "NO RESISTÁIS AL MAL, (Re,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO RESISTÁIS AL MAL,, (Si,m,20)",
+          "sC": "as"
+        },
+        {
+          "line": "NO RESISTÁIS AL MAL,, (La,,10)",
+          "sC": "as"
+        },
+        {
+          "line": "NO RESISTÁIS AL MAL., (Si,m,200)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sed perfectos, (Sol,,14)",
+      "sC": "tc"
+    },
+    {
+      "line": "como vuestro Padre celestial es perfecto,, (Si,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "porque Él es bueno con los malvados,, (Sol,,14)(La,,315)",
+      "sC": ""
+    },
+    {
+      "line": "porque Él es bueno con los pecadores., (Sol,,14)(La,,301)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_nralmal_3",
+      "initialState": "collapsed",
+      "triggerLine": "NO RESISTÁIS AL MAL, (Re,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO RESISTÁIS AL MAL,, (Si,m,20)",
+          "sC": "as"
+        },
+        {
+          "line": "NO RESISTÁIS AL MAL,, (La,,10)",
+          "sC": "as"
+        },
+        {
+          "line": "NO RESISTÁIS AL MAL., (Si,m,200)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

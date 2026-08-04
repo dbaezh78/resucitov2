@@ -1,0 +1,271 @@
+{
+  "id": "amenamenamen",
+  "tt": "Amén, Amén, Amén",
+  "title": "Amén, Amén, Amén",
+  "subtitle": "Apocalipsis 7,12-14 ",
+  "category": [
+    "PreCatecumenado",
+    "Cuaresma",
+    "Salmodias",
+    "Visperas",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "17",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/amenamenamen.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=alzaospuertas",
+  "sig": "/src/index.html?canto=amoalsenor",
+  "lizq": [
+    {
+      "line": "AMÉN, AMÉN, AMÉN., (Do,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "AMÉN, AMÉN, AMÉN., (La,m,41)",
+      "sC": "as"
+    },
+    {
+      "line": "AMÉN, AMÉN, AMÉN., (Sol,,38)(Do,,181)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "BENDICIÓN Y GLORIA,,(Do,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SABIDURÍA,,(Sol,,92)",
+      "sC": "as"
+    },
+    {
+      "line": "ACCIÓN DE GRACIAS",
+      "sC": "as"
+    },
+    {
+      "line": "DEMOS A DIOS., (Do,,123)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "AMÉN, AMÉN, AMÉN (Do,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "AMÉN, AMÉN, AMÉN., (La,m,41)",
+          "sC": "as"
+        },
+        {
+          "line": "AMÉN, AMÉN, AMÉN., (Sol,,38)(Do,,181)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Honor y poder, (Fa,,40)",
+      "sC": "tc"
+    },
+    {
+      "line": "y fortaleza,(Mi,,71)",
+      "sC": ""
+    },
+    {
+      "line": "honor y poder, (Fa,,37)",
+      "sC": ""
+    },
+    {
+      "line": "demos a Dios., (Mi,,113)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "BENDICIÓN Y GLORIA, (Do,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SABIDURÍA,,(Sol,,92)",
+          "sC": "as"
+        },
+        {
+          "line": "ACCIÓN DE GRACIAS ",
+          "sC": "as"
+        },
+        {
+          "line": "DEMOS A DIOS., (Do,,123)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "AMÉN, AMÉN, AMÉN, (Do,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "AMÉN, AMÉN, AMÉN., (La,m,41)",
+          "sC": "as"
+        },
+        {
+          "line": "AMÉN, AMÉN, AMÉN., (Sol,,38)(Do,,181)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [
+    {
+      "line": "¿Quiénes son, (Fa,,108)",
+      "sC": "tc"
+    },
+    {
+      "line": "y de dónde vienen?, (Mi,,130)",
+      "sC": ""
+    },
+    {
+      "line": "¿QUIÉNES SON, (Fa,,123)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y DE DÓNDE VIENEN?, (Mi,,151)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ESTOS SON LOS QUE VIENEN, (Sol,7,22)(Do,,228)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DE LA GRAN TRIBULACIÓN., (Sol,,99)(Do,,235)",
+      "sC": "as b17"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y LAVARON SUS TÚNICAS, (Fa,,62)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y LAS BLANQUEARON, (Do,,165)",
+      "sC": "as"
+    },
+    {
+      "line": "EN LA SANGRE DEL CORDERO,,(Fa,,85)(Mi,,261)",
+      "sC": "as"
+    },
+    {
+      "line": "EN LA SANGRE DEL CORDERO., (Fa,,85)(Mi,,261)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ESTOS SON LOS QUE VIENEN, (Sol,7,22)(Do,,228)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DE LA GRAN TRIBULACIÓN., (Sol,,99)(Do,,235)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Y LAVARON SUS TÚNICAS, (Fa,,62)",
+          "sC": "as"
+        },
+        {
+          "line": "Y LAS BLANQUEARON, (Do,,165)",
+          "sC": "as"
+        },
+        {
+          "line": "EN LA SANGRE DEL CORDERO,,(Fa,,85)(Mi,,261)",
+          "sC": "as"
+        },
+        {
+          "line": "EN LA SANGRE DEL CORDERO., (Fa,,85)(Mi,,261)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "AMÉN, AMÉN, AMÉN, (Do,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "AMÉN, AMÉN, AMÉN., (La,m,41)",
+          "sC": "as"
+        },
+        {
+          "line": "AMÉN, AMÉN, AMÉN., (Sol,,38)(Do,,181)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "aetcsssa",
+  "tt": "Aleluya Pascual",
+  "title": "Vigilia Pascual",
+  "subtitle": "Aleluya Pascual",
+  "category": [
+    "Liturgia",
+    "Pascua"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "La asamblea se divide para cantar a tres voces: A1, A2 y A3 y cada voz va entrando tal y como se indica en el esquema.",
+  "nCanURL": "",
+  "dbno": "181",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/aleluyapascual.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=aetcsvsa",
+  "sig": "/src/index.html?canto=aetps1a",
+  "lizq": [
+    {
+      "line": "Cristo Jesús ha resucitado., (La,,10)(Mi,,100)(La,,218)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)",
+      "sC": "ta1 as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)",
+      "sC": "ta2 as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Mi,,105)(La,,200)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Mi,,105)(La,,200)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cristo Jesús ha resucitado., (La,,10)(Mi,,100)(La,,218)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)",
+      "sC": "ta2 as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Mi,,105)(La,,200)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)",
+      "sC": "ta1 as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cristo Jesús ha resucitado., (La,,10)(Mi,,100)(La,,218)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Mi,,105)(La,,200)",
+      "sC": "ta3 as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)",
+      "sC": "ta1 as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)",
+      "sC": "ta2 as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)",
+      "sC": "as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "aclamaciones"
+}

@@ -1,0 +1,259 @@
+{
+  "id": "shemaisrael",
+  "tt": "Shemá Israel ",
+  "title": "Shemá Israel ",
+  "subtitle": "Deuteronomio 6,4-9",
+  "category": [
+    "Catecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "4",
+  "nCan": "* Se canta a dos voces intercalando el estribillo en hebreo \"Shemá Israel\" con una segunda voz más aguda.",
+  "nCanURL": "",
+  "dbno": "234",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/shemaisrael.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=senortumeescrutasyconoces",
+  "sig": "/src/index.html?canto=sientatesolitarioysilencioso",
+  "lizq": [
+    {
+      "line": "Shemá Israel, Shemá Israel,, (La,m,20)(Sol,,200)",
+      "sC": "tc"
+    },
+    {
+      "line": "Adonai Elohenu, Adonai Ejad., (Fa,,55)(La,m,261)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SHEMÁ ISRAEL, SHEMÁ ISRAEL,, (La,m,20)(Sol,,220)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ADONAI ELOHENU, ADONAI EJAD., (Fa,,67)(La,m,300)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ESCUCHA ISRAEL, ESCUCHA ISRAEL,, (La,m,20)(Sol,,224)",
+      "sC": "as ast"
+    },
+    {
+      "line": "EL SEÑOR ES NUESTRO DIOS,, (Fa,,77)",
+      "sC": "as"
+    },
+    {
+      "line": "EL SEÑOR ES UNO., (La,m,147)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Amarás al Señor tu Dios, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "con todo tu corazón,, (Fa,,53)(La,m,176)",
+      "sC": ""
+    },
+    {
+      "line": "con toda tu alma,, (Fa,,53)(La,m,131)",
+      "sC": ""
+    },
+    {
+      "line": "con todas tus fuerzas., (Fa,,53)(Mi,,156)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Graba estas palabras, (La,m,20)(Re,m,162)",
+      "sC": ""
+    },
+    {
+      "line": "como señal en las palmas de tus manos,, (Sol,,99)(La,m,346)",
+      "sC": ""
+    },
+    {
+      "line": "como memorial entre tus ojos,, (Re,m,270)",
+      "sC": ""
+    },
+    {
+      "line": "en las jambas de tu casa y en las puertas., (Sol,,73)(Mi,,352)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_shema_1",
+      "initialState": "collapsed",
+      "triggerLine": "SHEMÁ ISRAEL, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SHEMÁ ISRAEL, (Sol,,64)",
+          "sC": "as sub"
+        },
+        {
+          "line": "ADONAI ELOHENU, ADONAI EJAD., (Fa,,67)(La,m,300)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_shema_2",
+      "initialState": "collapsed",
+      "triggerLine": "ESCUCHA ISRAEL, (La,m,20)",
+      "sC": "as",
+      "lines": [
+        {
+          "line": "ESCUCHA ISRAEL, (Sol,,46)",
+          "sC": "as sub1"
+        },
+        {
+          "line": "EL SEÑOR ES NUESTRO DIOS,, (Fa,,77)",
+          "sC": "as"
+        },
+        {
+          "line": "EL SEÑOR ES UNO., (La,m,147)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Enséñalo a tus hijos, Israel,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "háblales en casa,, (Fa,,10)(La,m,137)",
+      "sC": ""
+    },
+    {
+      "line": "cuando camines por la calle,, (Fa,,121)(La,m,243)",
+      "sC": ""
+    },
+    {
+      "line": "cuando te acuestes y te levantes., (Fa,,138)(Mi,,264)",
+      "sC": ""
+    },
+    {
+      "line": "Este es el primer mandamiento de la vida,, (La,m,20)(Re,m,370)",
+      "sC": ""
+    },
+    {
+      "line": "el segundo es igual a este:, (Sol,,70)(La,m,228)",
+      "sC": ""
+    },
+    {
+      "line": "Ama a tu prójimo como a ti mismo, (Re,m,194)",
+      "sC": ""
+    },
+    {
+      "line": "y tendrás, tendrás la Vida Eterna., (Sol,,74)(Mi,,275)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_shema_1",
+      "initialState": "collapsed",
+      "triggerLine": "SHEMÁ ISRAEL, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SHEMÁ ISRAEL, (Sol,,64)",
+          "sC": "as sub"
+        },
+        {
+          "line": "ADONAI ELOHENU, ADONAI EJAD., (Fa,,67)(La,m,300)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_shema_2",
+      "initialState": "collapsed",
+      "triggerLine": "ESCUCHA ISRAEL, (La,m,20)",
+      "sC": "as",
+      "lines": [
+        {
+          "line": "ESCUCHA ISRAEL, (Sol,,46)",
+          "sC": "as sub1"
+        },
+        {
+          "line": "EL SEÑOR ES NUESTRO DIOS,, (Fa,,77)",
+          "sC": "as"
+        },
+        {
+          "line": "EL SEÑOR ES UNO., (La,m,147)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Shemá Israel,, (La,m,20)",
+      "sC": "melisma"
+    },
+    {
+      "line": "SHEMÁ ISRAEL,, (Sol,,65)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ADONAI ELOHENU,, (Fa,,63)",
+      "sC": "as"
+    },
+    {
+      "line": "ADONAI EJAD., (La,m,111)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,214 @@
+{
+  "id": "enmediodeaquelgentio",
+  "tt": "En Medio De Aquel Gentío",
+  "title": "En Medio De Aquel Gentío",
+  "subtitle": "Lucas 8,42b-48",
+  "category": [
+    "Precatecumenado",
+    "Comunión",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "64",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/enmediodeaquelgentio.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=elielilamasabactani",
+  "sig": "/src/index.html?canto=enunanocheoscura",
+  "lizq": [
+    {
+      "line": "EN MEDIO DE AQUEL GENTÍO,, (La,m,21)",
+      "sC": "tc as"
+    },
+    {
+      "line": "EN MEDIO DE TODA AQUELLA GENTE, (Sol,,316)",
+      "sC": "as r1"
+    },
+    {
+      "line": "UNA MUJER, UNA MUJER LE TOCÓ., (Mi,,97)(Fa,,216)(Mi,,319)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«¿Quién es el que me ha tocado?, (La,m,19)",
+      "sC": "tc"
+    },
+    {
+      "line": "¿Quién es el que me ha tocado?», (Sol,,265)",
+      "sC": ""
+    },
+    {
+      "line": "dijo Cristo, dijo Cristo y se paró., (Mi,,12)(Fa,,170)(Mi,,288)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Una mujer temblorosa,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "una mujer temblorosa, (Sol,,186)",
+      "sC": ""
+    },
+    {
+      "line": "dijo a Cristo: «¡He sido yo!, (Fa,,10)(Mi,,231)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«Que soy una mujer impura,, (La,m,24)",
+      "sC": ""
+    },
+    {
+      "line": "que soy una mujer impura, (Sol,,224)",
+      "sC": ""
+    },
+    {
+      "line": "que sufro flujo de sangre., (Fa,,57)(Mi,,194)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "QUE SOY UNA MUJER IMPURA,, (La,m,22)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE SOY UNA MUJER IMPURA, (Sol,,252)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE SUFRO FLUJO DE SANGRE., (Fa,,68)(Mi,,236)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Mas al tocar tu vestido,, (La,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "mas al tocar tu vestido, (Sol,,193)",
+      "sC": ""
+    },
+    {
+      "line": "el flujo de sangre se curó»., (Fa,,40)(Mi,,233)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«Hija, tu fe,, (La,m,27)(Sol,,94)",
+      "sC": ""
+    },
+    {
+      "line": "tu fe te ha salvado»., (Fa,,38)(Mi,,149)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EN MEDIO DE AQUEL GENTÍO, (La,m,21)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EN MEDIO DE TODA AQUELLA GENTE, (Sol,,316)",
+          "sC": "as r1"
+        },
+        {
+          "line": "UNA MUJER, UNA MUJER LE TOCÓ., (Mi,,97)(Fa,,216)(Mi,,319)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si quieres tú tocar a Cristo,, (La,m,19)",
+      "sC": "tc"
+    },
+    {
+      "line": "si quieres tú tocar a Cristo,, (Sol,,217)",
+      "sC": ""
+    },
+    {
+      "line": "lo puedes tocar con la fe., (Fa,,51)(Mi,,224)",
+      "sC": ""
+    },
+    {
+      "line": "Que Él es el Hijo de Dios,, (La,m,21)",
+      "sC": ""
+    },
+    {
+      "line": "que Él es el Hijo de Dios, (Sol,,214)",
+      "sC": ""
+    },
+    {
+      "line": "que ha venido para curarte,, (Fa,,106)",
+      "sC": ""
+    },
+    {
+      "line": "para salvarte., (Mi,,93)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EN MEDIO DE AQUEL GENTÍO, (La,m,21)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EN MEDIO DE TODA AQUELLA GENTE, (Sol,,316)",
+          "sC": "as r1"
+        },
+        {
+          "line": "UNA MUJER, UNA MUJER LE TOCÓ., (Mi,,97)(Fa,,216)(Mi,,319)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

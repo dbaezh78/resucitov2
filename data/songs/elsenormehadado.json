@@ -1,0 +1,222 @@
+{
+  "id": "elsenormehadado",
+  "tt": "El Señor me ha dado",
+  "title": "El Señor me ha dado",
+  "subtitle": "Isaías 50,4-10  - Tercer canto del Siervo de Yahveh",
+  "category": [
+    "Precatecumenado",
+    "Penitencial",
+    "Fracción Del Pan",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "62",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/elsenormehadado.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=elsenoresmipastor",
+  "sig": "/src/index.html?canto=elielilamasabactani",
+  "lizq": [
+    {
+      "line": "El Señor me ha dado, (Si,m,15)(Do,,168)",
+      "sC": "tc"
+    },
+    {
+      "line": "lengua de discípulo,, (Si,m,141)",
+      "sC": ""
+    },
+    {
+      "line": "para que pueda llevar al cansado, (Do,,287)",
+      "sC": ""
+    },
+    {
+      "line": "una palabra alentadora., (Si,m,200)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mañana tras mañana, (Do,,179)",
+      "sC": ""
+    },
+    {
+      "line": "despiertas tú mi oído,, (Si,m,179)",
+      "sC": ""
+    },
+    {
+      "line": "para hacerme escuchar, (Do,,212)",
+      "sC": ""
+    },
+    {
+      "line": "como un discípulo., (Si,m,134)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "EL SEÑOR, EL SEÑOR, (Re,,12)(Fa#,m,188)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EL SEÑOR ME HA ABIERTO EL OÍDO., (Sol,,78)(Fa#,,306)",
+      "sC": "as r1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y yo no me resistí, no me resistí., (Re,,10)(Fa#,m,166)",
+      "sC": "tc"
+    },
+    {
+      "line": "Ofrecí mis espaldas a los que me pegaban., (Re,,54)(Sol,,143)(Fa#,,365)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y YO NO ME RESISTÍ, NO ME RESISTÍ., (Re,,10)(Fa#,m,185)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Ofrecí mis mejillas a los que mesaban mi barba., (Re,,12)(Sol,,142)(Fa#,,418)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y YO NO ME RESISTÍ, NO ME RESISTÍ., (Re,,10)(Fa#,m,185)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Mi rostro no esquivó insultos ni salivazos., (Re,,12)(Fa#,m,364)",
+      "sC": "tc"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Porque yo ya sabía, (Si,m,19)(Do,,165)",
+      "sC": "tc"
+    },
+    {
+      "line": "que tú habrías de ayudarme,, (Si,m,227)",
+      "sC": ""
+    },
+    {
+      "line": "por eso puse mi cara, (Do,,174)",
+      "sC": ""
+    },
+    {
+      "line": "dura como la piedra,, (Si,m,159)",
+      "sC": ""
+    },
+    {
+      "line": "estaba yo seguro, (Do,,159)",
+      "sC": ""
+    },
+    {
+      "line": "que no quedaría avergonzado., (Si,m,259)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "CERCA ESTÁS, CERCA ESTÁS TÚ,, (Re,,10)(Fa#,m,297)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SI TÚ SALVAS, ¿QUIÉN PELEARÁ CONMIGO?, (Sol,,74)(Fa#,,372)",
+      "sC": "as"
+    },
+    {
+      "line": "SI TÚ AYUDAS, SI TÚ ME AYUDAS,, (Re,,88)(Fa#,m,269)",
+      "sC": "as"
+    },
+    {
+      "line": "SI TÚ SÁLVAS, ¿QUIÉN ME CONDENARÁ?, (Sol,,78)(Fa#,,366)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Vosotros que teméis a Dios,, (Si,m,18)(Do,,245)",
+      "sC": "tc"
+    },
+    {
+      "line": "escuchad la voz de su siervo., (Si,m,236)",
+      "sC": ""
+    },
+    {
+      "line": "Y si alguno se encuentra en las tinieblas, (Do,,340)",
+      "sC": ""
+    },
+    {
+      "line": "ponga su confianza en Él,, (Si,m,233)",
+      "sC": ""
+    },
+    {
+      "line": "que se apoye, (Do,,103)",
+      "sC": ""
+    },
+    {
+      "line": "en su Nombre., (Si,m,79)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "CERCA ESTÁS, CERCA ESTÁS TÚ, (Re,,10)(Fa#,m,297)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SI TÚ SALVAS, ¿QUIÉN PELEARÁ CONMIGO?, (Sol,,74)(Fa#,,372)",
+          "sC": "as"
+        },
+        {
+          "line": "SI TÚ AYUDAS, SI TÚ ME AYUDAS,, (Re,,88)(Fa#,m,269)",
+          "sC": "as"
+        },
+        {
+          "line": "SI TÚ SÁLVAS, ¿QUIÉN ME CONDENARÁ?, (Sol,,78)(Fa#,,366)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

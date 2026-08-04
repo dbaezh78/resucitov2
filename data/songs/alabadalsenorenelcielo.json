@@ -1,0 +1,192 @@
+{
+  "id": "alabadalsenorenelcielo",
+  "tt": "Alabad Al Señor En El Cielo",
+  "title": "Alabad Al Señor En El Cielo",
+  "subtitle": "Salmo 148 ",
+  "category": [
+    "PreCatecumenado",
+    "Salmodias",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "11",
+  "notes": "",
+  "mant": "",
+  "audioSrc": "https://audio.resucito.do/alabadalsenorenelcielo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=aldespertar",
+  "sig": "/src/index.html?canto=alegriahanacidoelsalvador",
+  "lizq": [
+    {
+      "line": "Alabad al Señor en el Cielo,(La,,8)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡ALABADLO!, ",
+      "sC": "as ta"
+    },
+    {
+      "line": "alabad al Señor en lo alto,(Fa#,m,219)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡ALABADLO!, ",
+      "sC": "as ta"
+    },
+    {
+      "line": "Alabadlo, todos sus ángeles;, (La,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡ALABADLO!, ",
+      "sC": "as ta"
+    },
+    {
+      "line": "alabadlo, todos sus ejércitos., (Fa#,m,213)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡ALABADLO!, ",
+      "sC": "as ta"
+    },
+    {
+      "line": "",
+      "sC": "tc1"
+    },
+    {
+      "line": "Alabadlo, sol y luna;",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "alabadlo, estrellas lucientes. ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "Alabadlo, espacios celestes, ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "y aguas que cuelgan en el cielo. ",
+      "sC": "sdb ptop0 alabadlo"
+    },
+    {
+      "line": "Alaben el nombre del Señor, ",
+      "sC": "alabadlo"
+    },
+    {
+      "line": "porque Él lo mandó, y existieron. ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "Les dio consistencia perpetua, ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "y una ley que no pasará. ",
+      "sC": "ptop0 alabadlo sdb"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Alabad al Señor en la tierra, ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "cetáceos y abismos del mar, ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "rayos, granizo, nieve y bruma, ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "viento huracanado, ",
+      "sC": "ptop1 ptop0"
+    },
+    {
+      "line": "que cumple sus órdenes, ",
+      "sC": "alabadlo sdb"
+    },
+    {
+      "line": "montes y todas las sierras, ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "árboles frutales y cedros, ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "fieras y animales domésticos, ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "reptiles y pájaros que vuelan. ",
+      "sC": "alabadlo sdb"
+    },
+    {
+      "line": "Reyes y pueblos del orbe, ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "príncipes y jefes del mundo, ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "los jóvenes, ",
+      "sC": "ptop1 ptop0"
+    },
+    {
+      "line": "y también las doncellas, ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "los viejos a una con los niños, ",
+      "sC": "alabadlo sdb"
+    },
+    {
+      "line": "alaben el nombre del Señor, ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "el único nombre sublime. ",
+      "sC": "ptop0 sdb alabadlo"
+    },
+    {
+      "line": "Su majestad,",
+      "sC": "ptop1"
+    },
+    {
+      "line": "​     sobre el cielo y la tierra; ",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "Él da fuerza y vigor a su pueblo. ",
+      "sC": "alabadlo sdb"
+    },
+    {
+      "line": "Alabanza de todos sus fieles,",
+      "sC": "ptop0 alabadlo"
+    },
+    {
+      "line": "de Israel, su pueblo elegido., ",
+      "sC": "ptop0 alabadlo"
+    }
+  ],
+  "sourceBook": "resucito"
+}

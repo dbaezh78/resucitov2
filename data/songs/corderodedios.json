@@ -1,0 +1,152 @@
+{
+  "id": "corderodedios",
+  "tt": "Cordero De Dios",
+  "title": "Cordero De Dios",
+  "subtitle": "Después de la consagración",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "2",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "186",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/corderodedios.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=celebracionpenitencial",
+  "sig": "/src/index.html?canto=credo",
+  "lizq": [
+    {
+      "line": "ESPAÑOL",
+      "sC": "as",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "",
+      "sC": "hr"
+    },
+    {
+      "line": "Cordero de Dios,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "que quitas el pecado del mundo,, (Sol,,69)(La,m,264)",
+      "sC": ""
+    },
+    {
+      "line": "ten piedad de nosotros., (Fa,,10)(Mi,,173)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "CORDERO DE DIOS,, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE QUITAS EL PECADO DEL MUNDO,, (Sol,,74)(La,m,305)",
+      "sC": "as"
+    },
+    {
+      "line": "TEN PIEDAD DE NOSOTROS., (Fa,,15)(Mi,,200)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "CORDERO DE DIOS,, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE QUITAS EL PECADO DEL MUNDO,, (Sol,,73)(La,m,307)",
+      "sC": "as"
+    },
+    {
+      "line": "DANOS LA PAZ,, (Fa,,18)(Mi,,121)",
+      "sC": "as"
+    },
+    {
+      "line": "DANOS LA PAZ., (Fa,,18)(Mi,,121)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "LATÍN",
+      "sC": "as",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "",
+      "sC": ""
+    },
+    {
+      "line": "Agnus Dei,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "qui tollis peccata mundi:, (Sol,,47)(La,m,264)",
+      "sC": ""
+    },
+    {
+      "line": "miserere nobis., (Fa,,18)(Mi,,104)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AGNUS DEI,, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUI TOLLIS PECCATA MUNDI:, (Sol,,55)(La,m,231)",
+      "sC": "as"
+    },
+    {
+      "line": "MISERERE NOBIS., (Fa,,20)(Mi,,126)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AGNUS DEI,, (La,m,20)",
+      "sC": "as"
+    },
+    {
+      "line": "QUI TOLLIS PECCATA MUNDI:, (Sol,,55)(La,m,230)",
+      "sC": "as"
+    },
+    {
+      "line": "DONA NOBIS PACEM,, (Fa,,20)(Mi,,148)",
+      "sC": "as"
+    },
+    {
+      "line": "DONA NOBIS PACEM., (Fa,,20)(Mi,,148)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

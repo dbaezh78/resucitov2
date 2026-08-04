@@ -1,0 +1,327 @@
+{
+  "id": "quierocantar",
+  "tt": "Quiero Cantar",
+  "title": "Quiero Cantar",
+  "subtitle": "Salmo 57 (56)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "141",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/quierocantar.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=quieroandarmadreajerusalen",
+  "sig": "/src/index.html?canto=resucito",
+  "lizq": [
+    {
+      "line": "QUIERO CANTAR, (Re,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "A TI QUIERO CANTAR,, (Fa#,m,34)",
+      "sC": "as r1"
+    },
+    {
+      "line": "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)",
+      "sC": "as"
+    },
+    {
+      "line": "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Misericordia, Dios mío, misericordia,, (Re,,12)(Fa#,m,300)",
+      "sC": "tc"
+    },
+    {
+      "line": "que mi alma se refugia en Ti., (Sol,,267)",
+      "sC": ""
+    },
+    {
+      "line": "Me refugio a la sombra de tus alas,, (Mi,m,167)",
+      "sC": ""
+    },
+    {
+      "line": "hasta que pase el peligro., (La,7,20)(Re,,207)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "QUIERO CANTAR, (Re,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "A TI QUIERO CANTAR,, (Fa#,m,34)",
+          "sC": "as r1"
+        },
+        {
+          "line": "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)",
+          "sC": "as"
+        },
+        {
+          "line": "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Invoco a Dios, al Dios Altísimo,, (Re,,10)(Fa#,m,242)",
+      "sC": "tc"
+    },
+    {
+      "line": "a Dios, que ha hecho tanto por mí., (Sol,,321)",
+      "sC": ""
+    },
+    {
+      "line": "Desde el cielo me envía la salvación,, (Mi,m,212)",
+      "sC": ""
+    },
+    {
+      "line": "confunde a los que ansían matarme., (La,7,49)(Re,,300)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "QUIERO CANTAR, (Re,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "A TI QUIERO CANTAR,, (Fa#,m,34)",
+          "sC": "as r1"
+        },
+        {
+          "line": "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)",
+          "sC": "as"
+        },
+        {
+          "line": "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Misericordia, Dios mío, misericordia,, (Re,,10)(Fa#,m,300)",
+      "sC": ""
+    },
+    {
+      "line": "que estoy echado entre leones,, (Sol,,248)",
+      "sC": ""
+    },
+    {
+      "line": "leones devoradores de hombres,, (Mi,m,146)",
+      "sC": ""
+    },
+    {
+      "line": "sus dientes son lanzas y flechas., (La,7,64)(Re,,251)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "QUIERO CANTAR, (Re,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "A TI QUIERO CANTAR,, (Fa#,m,34)",
+          "sC": "as r1"
+        },
+        {
+          "line": "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)",
+          "sC": "as"
+        },
+        {
+          "line": "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Misericordia, Dios mío, misericordia,, (Re,,10)(Fa#,m,302)",
+      "sC": "tc"
+    },
+    {
+      "line": "que han tendido una red a mis pasos,, (Sol,,313)",
+      "sC": ""
+    },
+    {
+      "line": "una red a mis pasos,, ",
+      "sC": ""
+    },
+    {
+      "line": "me han cavado delante una fosa,, (Mi,m,190)",
+      "sC": ""
+    },
+    {
+      "line": "pero han sido ellos los que han caído en ella., (La,7,150)(Re,,397)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "QUIERO CANTAR, (Re,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "A TI QUIERO CANTAR,, (Fa#,m,34)",
+          "sC": "as r1"
+        },
+        {
+          "line": "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)",
+          "sC": "as"
+        },
+        {
+          "line": "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mi corazón está firme, Dios mío,, (Re,,10)(Fa#,m,284)",
+      "sC": "tc"
+    },
+    {
+      "line": "para Ti, oh Dios, quiero cantar,, (Sol,,270)",
+      "sC": ""
+    },
+    {
+      "line": "a la aurora yo quiero despertar,, (Mi,m,166)",
+      "sC": ""
+    },
+    {
+      "line": "despertad, arpa y cítara., (La,7,79)(Re,,189)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "QUIERO CANTAR, (Re,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "A TI QUIERO CANTAR,, (Fa#,m,34)",
+          "sC": "as r1"
+        },
+        {
+          "line": "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)",
+          "sC": "as"
+        },
+        {
+          "line": "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te daré gracias ante los pueblos, Señor,, (Re,,10)(Fa#,m,360)",
+      "sC": "tc"
+    },
+    {
+      "line": "cantaré, cantaré ante las naciones,, (Sol,,289)",
+      "sC": ""
+    },
+    {
+      "line": "porque tu amor ha sido grande conmigo,, (Mi,m,250)",
+      "sC": ""
+    },
+    {
+      "line": "tu bondad más alta que los cielos., (La,7,79)(Re,,288)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "QUIERO CANTAR, (Re,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "A TI QUIERO CANTAR,, (Fa#,m,34)",
+          "sC": "as r1"
+        },
+        {
+          "line": "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)",
+          "sC": "as"
+        },
+        {
+          "line": "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

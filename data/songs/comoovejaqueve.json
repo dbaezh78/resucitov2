@@ -1,0 +1,221 @@
+{
+  "id": "comoovejaqueve",
+  "tt": "Como Oveja Que Ve",
+  "title": "Como Oveja Que Ve",
+  "subtitle": "Kontáklon (Romano el Meloda)",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María",
+    "Cuaresma",
+    "Penitencial",
+    "Pascua",
+    "Pentecostés",
+    "Fracción Del Pan"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "2",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "40",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/comoovejaqueve.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=comolacierva",
+  "sig": "/src/index.html?canto=consoladamipueblo",
+  "lizq": [
+    {
+      "line": "Como oveja que ve cómo se llevan, (Mi,m,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "su corderito al matadero,, (La,m,211)",
+      "sC": ""
+    },
+    {
+      "line": "María lo seguía consumida de dolor., (Mi,m,328)",
+      "sC": ""
+    },
+    {
+      "line": "Y le decía: «¿Dónde te llevan, Hijo mío?, (La,m,349)",
+      "sC": ""
+    },
+    {
+      "line": "¿Cómo se acaba tan pronto ",
+      "sC": ""
+    },
+    {
+      "line": "el curso de tu vida?, (Si,7,149)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Háblame: no pases, te ruego, sin hablarme., (Do,,11)(Si,7,379)",
+      "sC": ""
+    },
+    {
+      "line": "Hijo mío, Hijo mío y Dios mío!, (La,m,20)(Si,7,261)",
+      "sC": ""
+    },
+    {
+      "line": "¡HIJO MÍO, HIJO MÍO Y DIOS MÍO!, (La,m,20)(Si,7,295)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Nunca hubiera podido imaginar, (Mi,m,21)",
+      "sC": "tc"
+    },
+    {
+      "line": "que llegaría a verte en este estado,, (La,m,304)",
+      "sC": ""
+    },
+    {
+      "line": "nunca hubiera creído ",
+      "sC": ""
+    },
+    {
+      "line": "que llegarían a tal punto de odio y de furor,, (Mi,m,394)",
+      "sC": ""
+    },
+    {
+      "line": "apresándote contra toda justicia., (Si,7,284)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Quisiera comprender! ¡Ay de mí!, (Do,,59)(La,m,304)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡QUISIERA COMPRENDER! ¡AY DE MÍ!, (Do,,67)(La,m,347)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¡Cómo es posible que la luz se apague!, (Si,7,327)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡CÓMO ES POSIBLE QUE LA LUZ SE APAGUE!, (La,m,18)(Si,7,372)",
+      "sC": "ta as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "¡Cómo es posible que te claven en una cruz!, (La,m,131)(Si,7,399)",
+      "sC": "tc"
+    },
+    {
+      "line": "Hijo mío, Hijo mío y Dios mío!, (La,m,19)(Si,7,267)",
+      "sC": ""
+    },
+    {
+      "line": "¡HIJO MÍO, HIJO MÍO Y DIOS MÍO!»., (La,m,22)(Si,7,294)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«¿Por qué lloras, por qué lloras, madre mía?, (Mi,m,20)(La,m,294)",
+      "sC": "tc"
+    },
+    {
+      "line": "¿Por qué lloras, por qué lloras, madre mía?, (Mi,m,386)",
+      "sC": ""
+    },
+    {
+      "line": "¿Acaso no debería sufrir?, (La,m6,218)",
+      "sC": ""
+    },
+    {
+      "line": "¿Acaso no debo morir?, (Si,7,199)",
+      "sC": ""
+    },
+    {
+      "line": "Entonces, ¿cómo podría salvar a Adán?, (Do,,36)(Si,7,346)",
+      "sC": ""
+    },
+    {
+      "line": "Entonces, ¿cómo podrías ver a Eva, (La,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "que vuelve a la vida?»., (Si,7,162)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "COMO OVEJA QUE VE CÓMO SE LLEVAN, (Mi,m,21)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SU CORDERITO AL MATADERO,, (La,m,254)",
+          "sC": "as"
+        },
+        {
+          "line": "MARÍA LO SEGUÍA CONSUMIDA DE DOLOR., (Mi,m,375)",
+          "sC": "as"
+        },
+        {
+          "line": "Y LE DECÍA: «¿DÓNDE TE LLEVAN, HIJO MÍO?, (La,m,397)",
+          "sC": "as"
+        },
+        {
+          "line": "¿CÓMO SE ACABA TAN PRONTO, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL CURSO DE TU VIDA?, (Si,7,185)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Háblame: no pases, te ruego, sin hablarme,, (Do,,11)(Si,7,377)",
+      "sC": ""
+    },
+    {
+      "line": "Hijo mío, Hijo mío y Dios mío!, (La,m,21)(Si,7,265)",
+      "sC": ""
+    },
+    {
+      "line": "¡HIJO MÍO, HIJO MÍO Y DIOS MÍO!, (La,m,20)(Si,7,297)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

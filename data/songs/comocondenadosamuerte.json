@@ -1,0 +1,229 @@
+{
+  "id": "comocondenadosamuerte",
+  "tt": "Como Condenados A Muerte",
+  "title": "Como Condenados A Muerte",
+  "subtitle": "1ª Corintios 4,9-13",
+  "category": [
+    "PreCatecumenado",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "37",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/comocondenadosamuerte.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=carmen63",
+  "sig": "/src/index.html?canto=comoesmaravilloso",
+  "lizq": [
+    {
+      "line": "Hasta el presente, pasamos hambre,, (La,m,15)(Sol,,287)",
+      "sC": "tc"
+    },
+    {
+      "line": "pasamos sed y desnudez., (La,m,227)",
+      "sC": ""
+    },
+    {
+      "line": "Somos abofeteados,, (Sol,,13)",
+      "sC": ""
+    },
+    {
+      "line": "y andamos errantes., (La,m,144)",
+      "sC": ""
+    },
+    {
+      "line": "SOMOS ABOFETEADOS,, (Sol,,12)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y ANDAMOS ERRANTES., (La,m,170)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Insultados, bendecimos,, (Sol,,59)(La,m,183)",
+      "sC": "tc"
+    },
+    {
+      "line": "perseguidos, lo soportamos., (Sol,,84)(La,m,217)",
+      "sC": ""
+    },
+    {
+      "line": "Si somos difamados,, (Sol,,15)",
+      "sC": ""
+    },
+    {
+      "line": "respondemos con amor., (La,m,216)",
+      "sC": ""
+    },
+    {
+      "line": "SI SOMOS DIFAMADOS,, (Sol,,15)",
+      "sC": "ta as"
+    },
+    {
+      "line": "RESPONDEMOS CON AMOR., (La,m,247)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HEMOS VENIDO A SER,, (La,m,13)(Sol,,196)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HEMOS VENIDO A SER,, (La,m,198)",
+      "sC": "as"
+    },
+    {
+      "line": "HEMOS VENIDO A SER,, (Sol,,195)",
+      "sC": "as"
+    },
+    {
+      "line": "LA BASURA DEL MUNDO,, (La,m,187)",
+      "sC": "as"
+    },
+    {
+      "line": "EL ESTROPAJO DE TODOS., (Sol,,13)(La,m,200)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Porque pienso que a nosotros,, (La,m,21)(Sol,,243)",
+      "sC": "tc"
+    },
+    {
+      "line": "los apóstoles,, (La,m,66)",
+      "sC": ""
+    },
+    {
+      "line": "Dios nos ha asignado, (Sol,,175)",
+      "sC": ""
+    },
+    {
+      "line": "el último lugar., (La,m,126)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "COMO CONDENADOS A MUERTE,, (Sol,,11)",
+      "sC": "ta as"
+    },
+    {
+      "line": "COMO CONDENADOS A MUERTE., (La,m,19)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO CONDENADOS A MUERTE,, (Sol,,11)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO CONDENADOS A MUERTE., (La,m,19)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Puestos como espectáculo, (La,m,15)(Sol,,209)",
+      "sC": "tc"
+    },
+    {
+      "line": "para el mundo,, (La,m,96)",
+      "sC": ""
+    },
+    {
+      "line": "para los ángeles,, (Sol,,94)",
+      "sC": ""
+    },
+    {
+      "line": "para los hombres,, (Fa,,97)",
+      "sC": ""
+    },
+    {
+      "line": "para los hombres., (Mi,,98)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "COMO CONDENADOS A MUERTE, (Sol,,11)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "COMO CONDENADOS A MUERTE., (La,m,19)",
+          "sC": "as"
+        },
+        {
+          "line": "COMO CONDENADOS A MUERTE,, (Sol,,11)",
+          "sC": "as"
+        },
+        {
+          "line": "COMO CONDENADOS A MUERTE., (La,m,19)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "HEMOS VENIDO A SER, (La,m,13)(Sol,,196)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HEMOS VENIDO A SER,, (La,m,198)",
+          "sC": "as"
+        },
+        {
+          "line": "HEMOS VENIDO A SER,, (Sol,,195)",
+          "sC": "as"
+        },
+        {
+          "line": "LA BASURA DEL MUNDO,, (La,m,187)",
+          "sC": "as"
+        },
+        {
+          "line": "EL ESTROPAJO DE TODOS., (Sol,,13)(La,m,200)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

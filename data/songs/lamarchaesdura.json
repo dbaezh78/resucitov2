@@ -1,0 +1,108 @@
+{
+  "id": "lamarchaesdura",
+  "tt": "La Marcha Es Dura",
+  "title": "La Marcha Es Dura",
+  "subtitle": "Espiritual negro «Go down, Moses»",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "98",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/lamarchaesdura.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=laespada",
+  "sig": "/src/index.html?canto=lasalve",
+  "lizq": [
+    {
+      "line": "La marcha es dura, recio el sol,, (Mi,m,20)(Si,7,154)(Mi,m,281)",
+      "sC": "tc"
+    },
+    {
+      "line": "lento el caminar., (Si,7,92)(Mi,m,142)",
+      "sC": ""
+    },
+    {
+      "line": "Moisés caudillo de Israel, (Si,7,126)(Mi,m,221)",
+      "sC": ""
+    },
+    {
+      "line": "lo va a liberar., (Si,7,80)(Mi,m,121)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "OYE, PADRE, EL GRITO DE TU PUEBLO., (Mi,m,20)(La,m,70)(Si,7,143)(Mi,m,316)",
+      "sC": "ta as"
+    },
+    {
+      "line": "OYE, PADRE, MANDA AL SALVADOR., (Si,7,256)(Mi,m,318)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El pueblo anhela vida y paz,, (Mi,m,20)(Si,7,135)(Mi,m,244)",
+      "sC": "tc"
+    },
+    {
+      "line": "quiere resurgir., (Si,7,82)(Mi,m,128)",
+      "sC": ""
+    },
+    {
+      "line": "Moisés caudillo de Israel, (Si,7,124)(Mi,m,222)",
+      "sC": ""
+    },
+    {
+      "line": "va a librarlo al fin., (Si,7,77)(Mi,m,152)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "OYE, PADRE (Mi,m,20)(La,m,70)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EL GRITO DE TU PUEBLO., (Si,7,16)(Mi,m,191)",
+          "sC": "as"
+        },
+        {
+          "line": "OYE, PADRE, MANDA AL SALVADOR., (Si,7,256)(Mi,m,316)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

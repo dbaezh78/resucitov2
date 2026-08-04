@@ -1,0 +1,178 @@
+{
+  "id": "gritadjubilosos",
+  "tt": "Gritad Jubilosos",
+  "title": "Gritad Jubilosos",
+  "subtitle": "Isaías 12,1ss",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Comunión",
+    "Final",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "78",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/gritadjubilosos.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=graciasayahveh",
+  "sig": "/src/index.html?canto=haciatimoradasanta",
+  "lizq": [
+    {
+      "line": "GRITAD JUBILOSOS:, (La,m,22)",
+      "sC": "ta as"
+    },
+    {
+      "line": "«QUÉ GRANDE ES EN MEDIO DE TI, (Sol,,326)",
+      "sC": "as r1"
+    },
+    {
+      "line": "EL SANTO DE ISRAEL»., (Fa,,43)(Mi,,191)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es mi Dios y mi Salvador,, (Mi,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "confiaré y no temeré,, (La,m,70)",
+      "sC": ""
+    },
+    {
+      "line": "porque mi fuerza y mi canto es el Señor,, (Fa,,125)(Sol,,366)",
+      "sC": ""
+    },
+    {
+      "line": "Él es mi salvación., (Fa,,31)(Mi,,151)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "GRITAD JUBILOSOS, (La,m,22)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "«QUÉ GRANDE ES EN MEDIO DE TI, (Sol,,326)",
+          "sC": "as r1"
+        },
+        {
+          "line": "EL SANTO DE ISRAEL»., (Fa,,43)(Mi,,191)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sacaréis agua con gozo, (Mi,,10)(La,m,202)",
+      "sC": "tc"
+    },
+    {
+      "line": "de las fuentes de la salvación., (Mi,,84)(La,m,263)",
+      "sC": ""
+    },
+    {
+      "line": "Dad gracias al Señor,, (Sol,,73)",
+      "sC": ""
+    },
+    {
+      "line": "invocad su nombre,, (Fa,,123)",
+      "sC": ""
+    },
+    {
+      "line": "proclamad entre los pueblos sus hazañas., (Mi,,353)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "GRITAD JUBILOSOS, (La,m,22)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "«QUÉ GRANDE ES EN MEDIO DE TI, (Sol,,326)",
+          "sC": "as r1"
+        },
+        {
+          "line": "EL SANTO DE ISRAEL»., (Fa,,43)(Mi,,191)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Cantad al Señor, que hizo proezas,, (Mi,,12)(La,m,292)",
+      "sC": "tc"
+    },
+    {
+      "line": "anunciadlas por toda la tierra,, (Fa,,70)(Sol,,248)",
+      "sC": ""
+    },
+    {
+      "line": "gritad jubilosos,, (Fa,,107)",
+      "sC": ""
+    },
+    {
+      "line": "exultad, habitantes de Sión., (Mi,,244)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "GRITAD JUBILOSOS, (La,m,22)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "«QUÉ GRANDE ES EN MEDIO DE TI, (Sol,,326)",
+          "sC": "as r1"
+        },
+        {
+          "line": "EL SANTO DE ISRAEL»., (Fa,,43)(Mi,,191)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

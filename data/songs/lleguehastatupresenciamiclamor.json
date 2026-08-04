@@ -1,0 +1,181 @@
+{
+  "id": "lleguehastatupresenciamiclamor",
+  "tt": "Llegue Hasta Tu Presencia Mi Clamor",
+  "title": "Llegue Hasta Tu Presencia Mi Clamor",
+  "subtitle": "Salmo 119 (118)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Adviento",
+    "Navidad",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "106",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/lleguehastatupresenciamiclamor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=levantomisojosalosmontes",
+  "sig": "/src/index.html?canto=llevamealcielo",
+  "lizq": [
+    {
+      "line": "¡Señor, Señor Jesús!, (La,m,20)(Fa,,66)(Mi,,174)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Llegue hasta tu presencia mi clamor,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "brota de mis labios tu canción,, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "canta mi lengua tus palabras,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "alma mía, Jesús., (Fa,,74)(Mi,,143)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sea conmigo tu mano para ayudarme,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "de ti anhelo la salvación,, (Fa,,37)",
+      "sC": ""
+    },
+    {
+      "line": "viva mi alma para alabarte,, (Sol,,12)",
+      "sC": ""
+    },
+    {
+      "line": "mírame, ando errante., (Fa,,66)(Mi,,171)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "VEN, EN BUSCA DE TU SIERVO,, (La,m,20)(Sol,,244)",
+      "sC": "ta as"
+    },
+    {
+      "line": "VEN, SEÑOR JESÚS., (Fa,,16)(Mi,,166)",
+      "sC": "as"
+    },
+    {
+      "line": "VEN, QUE YO SIN TI ME PIERDO,, (La,m,19)(Sol,,253)",
+      "sC": "as"
+    },
+    {
+      "line": "VEN, SEÑOR JESÚS., (Fa,,20)(Mi,,166)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "Llegue hasta tu presencia mi clamor, (La,m,20)",
+      "sC": "tc",
+      "lines": [
+        {
+          "line": "brota de mis labios tu canción,, (Fa,,10)",
+          "sC": ""
+        },
+        {
+          "line": "canta mi lengua tus palabras,, (Sol,,14)",
+          "sC": ""
+        },
+        {
+          "line": "alma mía, Jesús., (Fa,,74)(Mi,,143)",
+          "sC": ""
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Sea conmigo tu mano para ayudarme,, (La,m,20)",
+          "sC": ""
+        },
+        {
+          "line": "de ti anhelo la salvación, (Fa,,37)",
+          "sC": ""
+        },
+        {
+          "line": "viva mi alma para alabarte, (Sol,,12)",
+          "sC": ""
+        },
+        {
+          "line": "mírame, ando errante., (Fa,,66)(Mi,,171)",
+          "sC": ""
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "VEN, EN BUSCA DE TU SIERVO, (La,m,20)(Sol,,244)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "VEN, SEÑOR JESÚS., (Fa,,16)(Mi,,166)",
+          "sC": "as"
+        },
+        {
+          "line": "VEN, QUE YO SIN TI ME PIERDO,, (La,m,19)(Sol,,253)",
+          "sC": "as"
+        },
+        {
+          "line": "VEN, SEÑOR JESÚS., (Fa,,20)(Mi,,166)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

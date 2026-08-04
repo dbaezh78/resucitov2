@@ -1,0 +1,200 @@
+{
+  "id": "eresdignodetomarellibro",
+  "tt": "Eres Digno De Tomar El Libro",
+  "title": "Eres Digno De Tomar El Libro",
+  "subtitle": "Apocalipsis 5,9ss",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Fracción Del Pan",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "66",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/eresdignodetomarellibro.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=enunanocheoscura",
+  "sig": "/src/index.html?canto=ereshermoso",
+  "lizq": [
+    {
+      "line": "Eres digno de tomar el libro, (Re,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "y abrir sus sellos, (Sol,m,45)(La,,119)",
+      "sC": ""
+    },
+    {
+      "line": "porque tú has sido inmolado, (La,7,88)(Re,m,246)",
+      "sC": ""
+    },
+    {
+      "line": "y has comprado con tu sangre, (La,,237)",
+      "sC": ""
+    },
+    {
+      "line": "hombres de toda raza, (Re,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "lengua, pueblo y nación;, ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y HAS HECHO DE ELLOS, (Fa,,8)(La,m,182)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PARA NUESTRO DIOS, (Fa,,182)",
+      "sC": "as"
+    },
+    {
+      "line": "UN REINO DE SACERDOTES,, (La,m,54)(Fa,,222)",
+      "sC": "as"
+    },
+    {
+      "line": "Y REINAN, Y REINAN, (La,m,143)",
+      "sC": "as"
+    },
+    {
+      "line": "SOBRE LA TIERRA., (Re,m,127)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Eres digno, Cordero degollado,, (Re,m,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "de tomar el libro, (Sol,m,72)(La,,126)",
+      "sC": ""
+    },
+    {
+      "line": "y abrir sus sellos, (La,7,50)(Re,m,120)",
+      "sC": ""
+    },
+    {
+      "line": "porque has comprado con tu sangre, (La,,296)",
+      "sC": ""
+    },
+    {
+      "line": "hombres de toda raza,, (Re,m,21)",
+      "sC": ""
+    },
+    {
+      "line": "lengua, pueblo y nación;, ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "Y HAS HECHO DE ELLOS, (Fa,,8)(La,m,182)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PARA NUESTRO DIOS, (Fa,,182)",
+          "sC": "as"
+        },
+        {
+          "line": "UN REINO DE SACERDOTES,, (La,m,54)(Fa,,222)",
+          "sC": "as"
+        },
+        {
+          "line": "Y REINAN, Y REINAN, (La,m,143)",
+          "sC": "as"
+        },
+        {
+          "line": "SOBRE LA TIERRA., (Re,m,127)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Digno eres, Cordero degollado,, (Re,m,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "de recibir el poder, la riqueza y la gloria,, (Sol,m,81)(La,,344)",
+      "sC": ""
+    },
+    {
+      "line": "la sabiduría, el honor y la alabanza,, (La,7,100)(Re,m,293)",
+      "sC": ""
+    },
+    {
+      "line": "porque has comprado con tu sangre, (La,7,296)",
+      "sC": ""
+    },
+    {
+      "line": "hombres de toda raza,, (Re,m,23)",
+      "sC": ""
+    },
+    {
+      "line": "lengua, pueblo y nación;, ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "Y HAS HECHO DE ELLOS, (Fa,,8)(La,m,182)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PARA NUESTRO DIOS, (Fa,,182)",
+          "sC": "as"
+        },
+        {
+          "line": "UN REINO DE SACERDOTES,, (La,m,54)(Fa,,222)",
+          "sC": "as"
+        },
+        {
+          "line": "Y REINAN, Y REINAN, (La,m,143)",
+          "sC": "as"
+        },
+        {
+          "line": "SOBRE LA TIERRA., (Re,m,127)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

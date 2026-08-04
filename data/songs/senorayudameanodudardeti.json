@@ -1,0 +1,197 @@
+{
+  "id": "senorayudameanodudardeti",
+  "tt": "Señor, Ayúdame A No Dudar De Ti",
+  "title": "Señor, Ayúdame A No Dudar De Ti",
+  "subtitle": "(Kiko Argüello)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "146",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/senorayudameanodudardeti.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=seencontrarondosangeles",
+  "sig": "/src/index.html?canto=senornomecorrijasentucolera",
+  "lizq": [
+    {
+      "line": "¡Señor, ayúdame, Señor!, (Si,m,20)(La,,99)(Si,m,216)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡SEÑOR, AYÚDAME, SEÑOR!, (La,,119)(Si,m,240)",
+      "sC": "ta as"
+    },
+    {
+      "line": "A no dudar de Ti., (Fa#,,35)",
+      "sC": "tc"
+    },
+    {
+      "line": "A NO DUDAR DE TI., ",
+      "sC": "ta as"
+    },
+    {
+      "line": "¡Señor, ayúdame, Señor!, (Si,m,50)(La,,104)(Si,m,217)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡SEÑOR, AYÚDAME, SEÑOR!, (La,,121)(Si,m,239)",
+      "sC": "ta as"
+    },
+    {
+      "line": "A no dudar nunca de tu amor., (Sol,,29)(Fa#,,263)",
+      "sC": "tc"
+    },
+    {
+      "line": "A NO DUDAR NUNCA DE TU AMOR., (Sol,,39)(Fa#,,302)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tu gracia derramando, (La,,10)(Re,,166)",
+      "sC": "tc"
+    },
+    {
+      "line": "dejó mi corazón ya florecido, (Si,m,20)(Sol,,131)(Fa#,,241)",
+      "sC": ""
+    },
+    {
+      "line": "de mil ansias de amor,, (Mi,m,49)(Fa#,,199)",
+      "sC": ""
+    },
+    {
+      "line": "de mil ansias de amor., (Mi,m,49)(Fa#,,199)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que más no puedo que sufrir, (La,,10)(Sol,,150)(Fa#,,264)",
+      "sC": ""
+    },
+    {
+      "line": "que vivir en un gemido., (Sol,,67)(Fa#,,187)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Y en esta llama de tu amor oscura,, (Re,,10)(La,,306)",
+      "sC": ""
+    },
+    {
+      "line": "en esta tela que envuelve mi alma, ",
+      "sC": ""
+    },
+    {
+      "line": "y la sofoca,, (Re,,75)",
+      "sC": ""
+    },
+    {
+      "line": "siento mi corazón que se disloca,, (Sol,,23)(Fa#,,284)",
+      "sC": ""
+    },
+    {
+      "line": "que se abre y se derrama, (Sol,,79)(Fa#,,211)",
+      "sC": ""
+    },
+    {
+      "line": "como agua que inunda tu jardín., (Mi,m,77)(Fa#,,289)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡SEÑOR, AYÚDAME, SEÑOR \n ...A NO DUDAR NUNCA DE TU AMOR., (Si,m,20)(La,,116)(Si,m,236)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡SEÑOR, AYÚDAME, SEÑOR!, (La,,119)(Si,m,240)",
+          "sC": "as sub1"
+        },
+        {
+          "line": "A no dudar de Ti., (Fa#,,35)",
+          "sC": ""
+        },
+        {
+          "line": "A NO DUDAR DE TI., ",
+          "sC": "as"
+        },
+        {
+          "line": "¡Señor, ayúdame, Señor!, (Si,m,50)(La,,104)(Si,m,217)",
+          "sC": ""
+        },
+        {
+          "line": "¡SEÑOR, AYÚDAME, SEÑOR!, (La,,121)(Si,m,239)",
+          "sC": "as"
+        },
+        {
+          "line": "A no dudar nunca de tu amor., (Sol,,29)(Fa#,,263)",
+          "sC": ""
+        },
+        {
+          "line": "A NO DUDAR NUNCA DE TU AMOR., (Sol,,29)(Fa#,,302)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y EN ESTA LLAMA DE TU AMOR OSCURA,, (Re,,10)(La,,352)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EN ESTA TELA QUE ENVUELVE MI ALMA, ",
+      "sC": "as"
+    },
+    {
+      "line": "Y LA SOFOCA,, (Re,,91)",
+      "sC": "as"
+    },
+    {
+      "line": "SIENTO MI CORAZÓN QUE SE DISLOCA,, (Sol,,26)(Fa#,,338)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE SE ABRE Y SE DERRAMA, (Sol,,87)(Fa#,,245)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO AGUA QUE INUNDA TU JARDÍN., (Mi,m,84)(Fa#,,336)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

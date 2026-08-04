@@ -1,0 +1,283 @@
+{
+  "id": "ningunopuedeserviradossenores",
+  "tt": "Ninguno Puede Servir A Dos Señores",
+  "title": "Ninguno Puede Servir A Dos Señores",
+  "subtitle": "Mateo 6,24-33 ",
+  "category": [
+    "Catecumenado",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "229",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/ningunopuedeserviradossenores.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=jacob",
+  "sig": "/src/index.html?canto=noresistaisalmal",
+  "lizq": [
+    {
+      "line": "Ninguno puede servir a dos señores,, (Mi,m,20)(Re,,99)(Do,,245)",
+      "sC": "tc"
+    },
+    {
+      "line": "porque amando a uno desprecia al otro., (Re,,22)(Do,,188)(Mi,m,276)",
+      "sC": ""
+    },
+    {
+      "line": "No podéis servir a Dios y al dinero., (La,m,20)(Re,7,118)(Do,,204)(Si,7,303)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por eso os digo:, (Mi,m,121)",
+      "sC": ""
+    },
+    {
+      "line": "No os angustiéis por vuestra vida,, (Re,,10)(Do,,290)",
+      "sC": ""
+    },
+    {
+      "line": "qué comeréis, qué beberéis,, (Re,,10)(Do,,154)",
+      "sC": ""
+    },
+    {
+      "line": "con qué os vestiréis., (Mi,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "¿Acaso, la vida, (La,m,20)(Do,,118)",
+      "sC": ""
+    },
+    {
+      "line": "no vale más que el alimento?, (Si,7,235)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MIRAD LAS AVES DEL CIELO:, (Sol,,14)(Si,m,129)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NO SIEMBRAN, NI COSECHAN,, (Si,7,62)(Do,7,228)(Do,,275)",
+      "sC": "as r1"
+    },
+    {
+      "line": "VUESTRO PADRE CELESTIAL ",
+      "sC": "as"
+    },
+    {
+      "line": "LAS ALIMENTA., (Si,7,100)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por lo demás, ¿quién de vosotros, (Mi,m,20)(Re,,232)",
+      "sC": "tc"
+    },
+    {
+      "line": "por más que se preocupe,, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "puede añadir una hora sola, (Re,,10)(Do,,232)",
+      "sC": ""
+    },
+    {
+      "line": "a la medida de su vida?, (Mi,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "Y del vestido, ¿por qué preocuparos?, (La,m,20)(Re,7,156)(Do,,206)(Si,7,303)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "MIRAD LOS LIRIOS DEL CAMPO;, (Sol,,14)(Si,m,130)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NO SE FATIGAN, NI HILAN,, (Si,7,103)(Do,7,197)(Do,,239)",
+      "sC": "as r2"
+    },
+    {
+      "line": "SALOMÓN NO VESTÍA COMO ELLOS., (Si,7,288)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Buscad primero el Reino de Dios,, (Sol,,14)(Si,m,,294)",
+      "sC": "tc"
+    },
+    {
+      "line": "y todo os será dado., (Si,7,35)(Do,7,154)(Do,,193)",
+      "sC": ""
+    },
+    {
+      "line": "No podéis servir a Dios y al dinero., (Si,7,303)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "BUSCAD EL REINO DE DIOS,, (Sol,,14)(Si,m,139)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y TODO OS SERÁ DADO., (Si,7,38)(Do7,,187)(Do,,228)",
+      "sC": "as"
+    },
+    {
+      "line": "NO PODÉIS SERVIR A DOS SEÑORES., (Si,7,307)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "Ninguno puede servir a dos señores, (Mi,m,20)(Re,,99)(Do,,245)",
+      "sC": "tc",
+      "lines": [
+        {
+          "line": "porque amando a uno desprecia al otro., (Re,,22)(Do,,188)(Mi,m,276)",
+          "sC": ""
+        },
+        {
+          "line": "No podéis servir a Dios y al dinero., (La,m,20)(Re,7,118)(Do,,204)(Si,7,303)",
+          "sC": ""
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Por eso os digo:, (Mi,m,121)",
+          "sC": ""
+        },
+        {
+          "line": "No os angustiéis por vuestra vida,, (Re,,10)(Do,,290)",
+          "sC": ""
+        },
+        {
+          "line": "qué comeréis, qué beberéis,, (Re,,10)(Do,,154)",
+          "sC": ""
+        },
+        {
+          "line": "con qué os vestiréis., (Mi,m,20)",
+          "sC": ""
+        },
+        {
+          "line": "¿Acaso, la vida, (La,m,20)(Do,,118)",
+          "sC": ""
+        },
+        {
+          "line": "no vale más que el alimento?, (Si,7,235)",
+          "sC": ""
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "MIRAD LAS AVES DEL CIELO, (Sol,,14)(Si,m,129)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO SIEMBRAN, NI COSECHAN,, (Si,7,62)(Do,7,228)(Do,,275)",
+          "sC": "as r1"
+        },
+        {
+          "line": "VUESTRO PADRE CELESTIAL ",
+          "sC": "as"
+        },
+        {
+          "line": "LAS ALIMENTA., (Si,7,100)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "MIRAD LOS LIRIOS DEL CAMPO, (Sol,,14)(Si,m,130)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO SE FATIGAN, NI HILAN,, (Si,7,103)(Do,7,197)(Do,,239)",
+          "sC": "as r2"
+        },
+        {
+          "line": "SALOMÓN NO VESTÍA COMO ELLOS., (Si,7,288)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "BUSCAD EL REINO DE DIOS, (Sol,,14)(Si,m,139)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "Y TODO OS SERÁ DADO., (Si,7,38)(Do7,,187)(Do,,228)",
+          "sC": "as"
+        },
+        {
+          "line": "NO PODÉIS SERVIR A DOS SEÑORES., (Si,7,307)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

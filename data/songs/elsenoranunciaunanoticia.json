@@ -1,0 +1,157 @@
+{
+  "id": "elsenoranunciaunanoticia",
+  "tt": "El Señor Anuncia Una Noticia",
+  "title": "El Señor Anuncia Una Noticia",
+  "subtitle": "Salmo 68 (67)",
+  "category": [
+    "Precatecumenado",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "60",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/elsenoranunciaunanoticia.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=elpuebloquecaminabaenlastinieblas",
+  "sig": "/src/index.html?canto=elsenoresmipastor",
+  "lizq": [
+    {
+      "line": "EL SEÑOR ANUNCIA UNA NOTICIA,, (Sol,,14)(Mi,m,292)",
+      "sC": "tc as"
+    },
+    {
+      "line": "LOS MENSAJEROS SON UN EJÉRCITO INMENSO., (La,m,134)(Mi,m,202)",
+      "sC": "as r1"
+    },
+    {
+      "line": "LOS REYES ENEMIGOS HUYEN, HUYEN,, (La,m,64)(Mi,m,243)",
+      "sC": "as"
+    },
+    {
+      "line": "LA BELLA DE LA CASA REPARTE EL BOTÍN., (Sol,,47)(Si,m,263)(Mi,m,388)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y mientras vosotros dormís, (Sol,,11)",
+      "sC": "tc"
+    },
+    {
+      "line": "entre las tapias del aprisco,, (Si,m,21)",
+      "sC": ""
+    },
+    {
+      "line": "se cubren de plata las alas de la paloma,, (La,m,48)(Mi,m,233)",
+      "sC": ""
+    },
+    {
+      "line": "sus plumas de destellos de oro., (La,m,60)(Mi,m,197)",
+      "sC": ""
+    },
+    {
+      "line": "Por ella cae la nieve sobre el Monte,, (Sol,,51)(Si,m,305)",
+      "sC": ""
+    },
+    {
+      "line": "sobre el Monte Umbrío., (La,,107)(Mi,m,202)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EL SEÑOR ANUNCIA UNA NOTICIA, (Sol,,14)(Mi,m,292)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LOS MENSAJEROS SON UN EJÉRCITO INMENSO., (La,m,134)(Mi,m,202)",
+          "sC": "as r1"
+        },
+        {
+          "line": "LOS REYES ENEMIGOS HUYEN, HUYEN,, (La,m,64)(Mi,m,243)",
+          "sC": "as"
+        },
+        {
+          "line": "LA BELLA DE LA CASA REPARTE EL BOTÍN., (Sol,,47)(Si,m,263)(Mi,m,388)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cantad a Dios, cantad,, (Sol,,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "salmodiad todos al Señor,, (Si,m,17)",
+      "sC": ""
+    },
+    {
+      "line": "que cabalga los cielos, los antiguos cielos., (La,m,22)(Mi,m,238)",
+      "sC": ""
+    },
+    {
+      "line": "Ved que viene sobre las nubes,, (Sol,,17)",
+      "sC": ""
+    },
+    {
+      "line": "él lanza su voz, su voz potente., (Si,m,39)(La,,196)(Mi,m,251)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "EL SEÑOR ANUNCIA UNA NOTICIA, (Sol,,15)(Mi,m,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LOS MENSAJEROS SON UN EJÉRCITO INMENSO., (La,m,15)(Mi,m,250)",
+          "sC": "as r1"
+        },
+        {
+          "line": "LOS REYES ENEMIGOS HUYEN, HUYEN,, (La,m,15)(Mi,m,250)",
+          "sC": "as"
+        },
+        {
+          "line": "LA BELLA DE LA CASA REPARTE EL BOTÍN., (Sol,,15)(Si,m,250)(Mi,m,388)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

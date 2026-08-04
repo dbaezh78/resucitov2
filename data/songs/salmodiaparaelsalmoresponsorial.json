@@ -1,0 +1,256 @@
+{
+  "id": "salmodiaparaelsalmoresponsorial",
+  "tt": "Salmodia Para El Salmo Responsorial",
+  "title": "Salmodia Para El Salmo Responsorial",
+  "subtitle": "Modelo I, II, III",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "210",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/salmodiaparaelsalmoresponsorial.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=salmodiaparaelrosario",
+  "sig": "/src/index.html?canto=salmodiasparalaoraciondelosfieles",
+  "lizq": [
+    {
+      "line": "Modelo I, ",
+      "sC": "",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "XXII Domingo del Tiempo ordinario - Ciclo A -\n Salmo 63 [62] ",
+      "sC": "ttpeq"
+    },
+    {
+      "line": "MI ALMA ESTÁ SEDIENTA DE TI,, (Mi,m,20)(La,m,292)",
+      "sC": "tc as"
+    },
+    {
+      "line": "SEÑOR, DIOS MÍO;, (Si,7,152)",
+      "sC": "as  r1"
+    },
+    {
+      "line": "MI ALMA ESTÁ SEDIENTA DE TI., (Do,,39)(Si,7,292)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Oh Dios, tú eres mi Dios, por ti madrugo,, (La,m,20)(Si,7,356)",
+      "sC": "tc"
+    },
+    {
+      "line": "mi alma está sedienta de ti,, (La,m,20)(Si,7,261)",
+      "sC": ""
+    },
+    {
+      "line": "mi carne tiene ansia de ti,, (Do,,10)(Si,7,239)",
+      "sC": ""
+    },
+    {
+      "line": "como tierra reseca, agostada, sin agua., (Do,,10)(La,m,154)(Si,7,346)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_spsr_1",
+      "initialState": "collapsed",
+      "triggerLine": "MI ALMA ESTÁ SEDIENTA DE TI, (Mi,m,20)(La,m,292)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SEÑOR, DIOS MÍO;, (Si,7,152)",
+          "sC": "as  r1"
+        },
+        {
+          "line": "MI ALMA ESTÁ SEDIENTA DE TI., (Do,,39)(Si,7,292)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Cómo te contemplaba en el santuario, (La,m,20)(Si,7,357)",
+      "sC": "tc"
+    },
+    {
+      "line": "viendo tu fuerza y tu gloria!, (La,m,20)(Si,7,259)",
+      "sC": ""
+    },
+    {
+      "line": "Tu gracia vale más que la vida,, (Do,,10)(Si,7,260)",
+      "sC": ""
+    },
+    {
+      "line": "te alabarán mis labios., (Do,,10)(La,m,90)(Si,7,170)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_spsr_2",
+      "initialState": "collapsed",
+      "triggerLine": "MI ALMA ESTÁ SEDIENTA DE TI, (Mi,m,20)(La,m,292)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SEÑOR, DIOS MÍO;, (Si,7,152)",
+          "sC": "as  r1"
+        },
+        {
+          "line": "MI ALMA ESTÁ SEDIENTA DE TI., (Do,,39)(Si,7,292)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Modelo II, ",
+      "sC": "",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "IV Domingo de Pascua - Ciclo A -\n Sal 23 [22] ",
+      "sC": "ttpeq"
+    },
+    {
+      "line": "EL SEÑOR ES MI PASTOR,, (Sol,,14)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NADA ME FALTA;, ",
+      "sC": "as r2"
+    },
+    {
+      "line": "EL SEÑOR ES MI PASTOR,, (Do,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "NADA ME FALTA., (Sol,,119)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Preparas una mesa ante mí,, (Sol,,14)",
+      "sC": "tc"
+    },
+    {
+      "line": "enfrente de mis enemigos, ",
+      "sC": ""
+    },
+    {
+      "line": "me unges la cabeza con perfume,, (Do,,45)",
+      "sC": ""
+    },
+    {
+      "line": "y mi copa rebosa., (Sol,,113)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_spsr_3",
+      "initialState": "collapsed",
+      "triggerLine": "EL SEÑOR ES MI PASTOR, (Sol,,14)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NADA ME FALTA; ",
+          "sC": "as r2"
+        },
+        {
+          "line": "EL SEÑOR ES MI PASTOR,, (Do,,10)",
+          "sC": "as"
+        },
+        {
+          "line": "NADA ME FALTA., (Sol,,119)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tu bondad y tu misericordia me acompañan, (Sol,,14)",
+      "sC": "tc"
+    },
+    {
+      "line": "todos los días de mi vida,, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "y habitaré en la casa del Señor, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "por años sin término., (Do,,10)(Sol,,136)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_spsr_4",
+      "initialState": "collapsed",
+      "triggerLine": "EL SEÑOR ES MI PASTOR, (Sol,,14)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NADA ME FALTA; ",
+          "sC": "as r2"
+        },
+        {
+          "line": "EL SEÑOR ES MI PASTOR,, (Do,,10)",
+          "sC": "as"
+        },
+        {
+          "line": "NADA ME FALTA., (Sol,,119)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

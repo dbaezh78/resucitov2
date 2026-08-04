@@ -1,0 +1,134 @@
+{
+  "id": "tueresmiesperanzasenor",
+  "tt": "Tú Eres Mi Esperanza, Señor",
+  "title": "Tú Eres Mi Esperanza, Señor",
+  "subtitle": "Oda XXIX de Salomón",
+  "category": [
+    "Catecumenado",
+    "Adviento",
+    "Navidad",
+    "Cuaresma",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "236",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/tueresmiesperanzasenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=sientatesolitarioysilencioso",
+  "sig": "/src/index.html?canto=alacenadelcordero",
+  "lizq": [
+    {
+      "line": "Tú eres mi esperanza, Señor,, (Do#,dim7,40)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no seré confundido., (Si♭,7,35)(La,7,176)",
+      "sC": ""
+    },
+    {
+      "line": "Con tu gloria tú me has creado,, (Do#,dim7,41)(La,7,268)",
+      "sC": ""
+    },
+    {
+      "line": "en la misericordia tú me has formado., (Si♭,7,130)(La,7,333)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ME HAS SACADO DE LO PROFUNDO DEL SEOL,, (Re,m,23)(La,7,426)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DE LA BOCA DE LA MUERTE ME HAS ARRANCADO., (Si♭,7,223)(La,7,446)",
+      "sC": "as"
+    },
+    {
+      "line": "PORQUE HE CREÍDO EN TU MESÍAS, (Re,m,161)(La,7,312)",
+      "sC": "as"
+    },
+    {
+      "line": "Y QUE ÉL ES EL SEÑOR HE CONFESADO., (Si♭,7,80)(La,7,343)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú me has dado la señal grande,, (Sol,m,24)(La,7,265)",
+      "sC": "tc"
+    },
+    {
+      "line": "el misterio escondido a los ángeles,, (Sol,m,75)(La,7,276)",
+      "sC": ""
+    },
+    {
+      "line": "para hacer la guerra con tu palabra,, (Si♭,7,165)(La,7,300)",
+      "sC": ""
+    },
+    {
+      "line": "y volver victorioso de las naciones., (Si♭,7,142)(La,7,282)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "TÚ ERES MI ESPERANZA, SEÑOR,, (Re,m,21)(La,7,297)",
+      "sC": "tc as"
+    },
+    {
+      "line": "Y NO SERÉ CONFUNDIDO., (Si♭,7,40)(La,7,208)",
+      "sC": "as r1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_esperanza_1",
+      "initialState": "collapsed",
+      "triggerLine": "ME HAS SACADO DE LO PROFUNDO DEL SEOL, (Re,m,23)(La7,,426)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DE LA BOCA DE LA MUERTE ME HAS ARRANCADO., (Si♭,7,223)(La,7,446)",
+          "sC": "as"
+        },
+        {
+          "line": "PORQUE HE CREÍDO EN TU MESÍAS, (Re,m,161)(La,7,312)",
+          "sC": "as"
+        },
+        {
+          "line": "Y QUE ÉL ES EL SEÑOR HE CONFESADO., (Si♭,7,80)(La,7,343)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,160 @@
+{
+  "id": "conmiburritosabanero",
+  "tt": "Con Mi Burrito Sabanero",
+  "title": "Con Mi Burrito Sabanero",
+  "subtitle": "Villancicos",
+  "category": [
+    "Precatecumenado",
+    "Adviento",
+    "Navidad",
+    "Catolicos",
+    "Villancicos"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "303",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "/audio/conmiburritosabanero.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/resucito/src/index.html?canto=tuqueeresfiel",
+  "sig": "/resucito/src/index.html?canto=unagransenal",
+  "lizq": [
+    {
+      "line": "Con mi burrito sabanero voy camino de Belén,, (Sol,m,25)(Do,m,200)(Re,m,300)(Sol,m,428)",
+      "sC": "tc"
+    },
+    {
+      "line": "Con mi burrito sabanero voy camino de Belén,, (Sol,m,25)(Do,m,200)(Re,m,300)(Sol,m,428)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SI ME VEN, SI ME VEN VOY CAMINO DE BELÉN, (Do,m,96)(Sol,m,207)(Re,m,308)(Sol,m,435)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SI ME VEN, SI ME VEN VOY CAMINO DE BELÉN, (Do,m,96)(Sol,m,207)(Re,m,308)(Sol,m,435)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El lucerito mañanero ilumina mi sendero,, (Sol,m,25)(Do,m,168)(Re,m,240)(Sol,m,371)",
+      "sC": "tc"
+    },
+    {
+      "line": "El lucerito mañanero ilumina mi sendero,, (Sol,m,25)(Do,m,168)(Re,m,240)(Sol,m,371)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SI ME VEN, SI ME VEN VOY CAMINO DE BELÉN, (Do,m,96)(Sol,m,207)(Re,m,308)(Sol,m,435)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SI ME VEN, SI ME VEN VOY CAMINO DE BELÉN, (Do,m,96)(Sol,m,207)(Re,m,308)(Sol,m,435)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En mi burrito voy cantando, mi burrito va trotando, (Sol,m,25)(Do,m,218)(Re,m,342)(Sol,m,445)",
+      "sC": ""
+    },
+    {
+      "line": "En mi burrito voy cantando, mi burrito va trotando, (Sol,m,25)(Do,m,218)(Re,m,342)(Sol,m,445)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SI ME VEN, SI ME VEN VOY CAMINO DE BELÉN, (Do,m,96)(Sol,m,207)(Re,m,308)(Sol,m,435)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SI ME VEN, SI ME VEN VOY CAMINO DE BELÉN, (Do,m,96)(Sol,m,207)(Re,m,308)(Sol,m,435)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tuki tuki tuki tuki,tuki tuki tuki ta, (Sol,m,25)(Do,m,156)(Re,m,202)(Sol,m,316)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Apúrate mi burrito que ya vamos a llegar, (Sol,m,25)(Do,m,158)(Re,m,207)(Sol,m,381)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tuki tuki tuki tuki,tuki tuki tuki ta, (Sol,m,25)(Do,m,156)(Re,m,202)(Sol,m,316)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Apúrate mi burrito vamos a ver a Jesús, (Sol,m,25)(Do,m,169)(Re,m,271)(Sol,m,384)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "CON MI BURRITO SABANERO VOY CAMINO DE BELÉN, (Sol,m,14)(Do,m,250)(Re,m,350)(Sol,m,450)",
+      "sC": "ta as"
+    },
+    {
+      "line": "CON MI BURRITO SABANERO VOY CAMINO DE BELÉN, (Sol,m,14)(Do,m,250)(Re,m,350)(Sol,m,450)",
+      "sC": "as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "joven"
+}

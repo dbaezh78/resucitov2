@@ -1,0 +1,324 @@
+{
+  "id": "pentecostes",
+  "tt": "Pentecostés",
+  "title": "Pentecostés",
+  "subtitle": "Hchos de los Apostoles 2,1-13 ",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Comunión"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "131",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/pentecostes.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=palomaincorrupta",
+  "sig": "/src/index.html?canto=porelamordemisamigos",
+  "lizq": [
+    {
+      "line": "SI SIENTES UN SOPLO DEL CIELO,, (Re,m,22)(Do,,284)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UN VIENTO QUE MUEVE LAS PUERTAS,, (Re,m,60)(La,,306)",
+      "sC": "as"
+    },
+    {
+      "line": "ESCUCHA LA VOZ QUE TE LLAMA,, (Re,m,46)(Do,,273)",
+      "sC": "as"
+    },
+    {
+      "line": "TE INVITA A CAMINAR LEJOS., (Re,m,64)(La,,235)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ES FUEGO QUE NACE, (Re,m,60)(Sol,,168)",
+      "sC": "as"
+    },
+    {
+      "line": "EN QUIEN SABE ESPERAR,, (La,,72)(Re,m,227)",
+      "sC": "as"
+    },
+    {
+      "line": "EN QUIEN SABE NUTRIR, (Fa,,212)",
+      "sC": "as"
+    },
+    {
+      "line": "ESPERANZAS DE AMOR., (La,7,75)(Re,m,206)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Eran pobres hombres,, (Re,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "como tú, como yo,, (Fa,,70)",
+      "sC": ""
+    },
+    {
+      "line": "habían echado las redes al lago,, (Si♭,,40)",
+      "sC": ""
+    },
+    {
+      "line": "recogido los impuestos a la puerta de la ciudad., (Fa,,57)(La,7,438)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que yo recuerde, (Re,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "entre ellos no había ningún doctor,, (Fa,,68)",
+      "sC": ""
+    },
+    {
+      "line": "y aquel que llamaban Maestro, (Si♭,,58)",
+      "sC": ""
+    },
+    {
+      "line": "estaba muerto y sepultado., (Fa,,11)(La,7,228)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SI SIENTES UN SOPLO DEL CIELO, (Re,m,22)(Do,,284)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "UN VIENTO QUE MUEVE LAS PUERTAS,, (Re,m,60)(La,,306)",
+          "sC": "as"
+        },
+        {
+          "line": "ESCUCHA LA VOZ QUE TE LLAMA,, (Re,m,46)(Do,,273)",
+          "sC": "as"
+        },
+        {
+          "line": "TE INVITA A CAMINAR LEJOS., (Re,m,64)(La,,235)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "ES FUEGO QUE NACE, (Re,m,60)(Sol,,168)",
+          "sC": "as"
+        },
+        {
+          "line": "EN QUIEN SABE ESPERAR,, (La,,72)(Re,m,227)",
+          "sC": "as"
+        },
+        {
+          "line": "EN QUIEN SABE NUTRIR, (Fa,,212)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPERANZAS DE AMOR., (La,7,75)(Re,m,206)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Tenían un corazón, (Re,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "como tú, como yo,, (Fa,,71)",
+      "sC": ""
+    },
+    {
+      "line": "que una mano de hielo oprimía,, (Si♭,,112)",
+      "sC": ""
+    },
+    {
+      "line": "tenían los ojos llenos de lágrimas., (Fa,,35)(La,7,248)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pensaban sin duda en el amigo perdido,, (Re,m,22)(Fa,,351)",
+      "sC": ""
+    },
+    {
+      "line": "en la mujer dejada en la puerta de la casa,, (Si♭,,97)",
+      "sC": ""
+    },
+    {
+      "line": "en la cruz levantada en la cima del monte., (Fa,,74)(La,7,267)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SI SIENTES UN SOPLO DEL CIELO, (Re,m,22)(Do,,284)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "UN VIENTO QUE MUEVE LAS PUERTAS,, (Re,m,60)(La,,306)",
+          "sC": "as"
+        },
+        {
+          "line": "ESCUCHA LA VOZ QUE TE LLAMA,, (Re,m,46)(Do,,273)",
+          "sC": "as"
+        },
+        {
+          "line": "TE INVITA A CAMINAR LEJOS., (Re,m,64)(La,,235)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "ES FUEGO QUE NACE, (Re,m,60)(Sol,,168)",
+          "sC": "as"
+        },
+        {
+          "line": "EN QUIEN SABE ESPERAR,, (La,,72)(Re,m,227)",
+          "sC": "as"
+        },
+        {
+          "line": "EN QUIEN SABE NUTRIR, (Fa,,212)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPERANZAS DE AMOR., (La,7,75)(Re,m,206)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y el viento llamó a la puerta de la casa,, (Re,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "entró como un rayo en toda la estancia, (Fa,,42)",
+      "sC": ""
+    },
+    {
+      "line": "y tuvieron los ojos y el corazón llenos de fuego,, (Si♭,,61)",
+      "sC": ""
+    },
+    {
+      "line": "salieron a la calle gritando de alegría., (Fa,,38)(La,7,213)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Hombre que esperas escondido en las sombras,, (Re,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "la voz que canta es para ti;, (Fa,,38)",
+      "sC": ""
+    },
+    {
+      "line": "te trae la alegría de una buena noticia:, (Si♭,,44)",
+      "sC": ""
+    },
+    {
+      "line": "¡EL REINO DE DIOS HA LLEGADO YA!, (Fa,,65)(La,7,277)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SI SIENTES UN SOPLO DEL CIELO, (Re,m,22)(Do,,284)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "UN VIENTO QUE MUEVE LAS PUERTAS,, (Re,m,60)(La,,306)",
+          "sC": "as"
+        },
+        {
+          "line": "ESCUCHA LA VOZ QUE TE LLAMA,, (Re,m,46)(Do,,273)",
+          "sC": "as"
+        },
+        {
+          "line": "TE INVITA A CAMINAR LEJOS., (Re,m,64)(La,,235)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "ES FUEGO QUE NACE, (Re,m,60)(Sol,,168)",
+          "sC": "as"
+        },
+        {
+          "line": "EN QUIEN SABE ESPERAR,, (La,,72)(Re,m,227)",
+          "sC": "as"
+        },
+        {
+          "line": "EN QUIEN SABE NUTRIR, (Fa,,212)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPERANZAS DE AMOR., (La,7,75)(Re,m,206)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

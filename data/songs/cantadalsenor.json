@@ -1,0 +1,126 @@
+{
+  "id": "cantadalsenor",
+  "tt": "Cantad Al Señor",
+  "title": "Cantad Al Señor",
+  "subtitle": "Salmo 117 (116)",
+  "category": [
+    "PreCatecumenado",
+    "Salmodias",
+    "Visperas",
+    "Entrada",
+    "Final"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "* Melisma",
+  "dbno": "32",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/cantadalsenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=cantadadios",
+  "sig": "/src/index.html?canto=canticodelostresjovenes",
+  "lizq": [
+    {
+      "line": "CANTAD AL SEÑOR,,(Sol,,15)(La,m,207)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PUEBLOS TODOS DE LA TIERRA,",
+      "sC": "as"
+    },
+    {
+      "line": "NACIONES, DADLE GLORIA., (Do,,57)(Si,7,217)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque grande es su amor hacia nosotros,,(Sol,,15)(La,m,421)",
+      "sC": "tc a321"
+    },
+    {
+      "line": "es eterna su misericordia, ",
+      "sC": "a322"
+    },
+    {
+      "line": "naciones, dadle gloria., (Do,,46)(Si,7,186)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "CANTAD AL SEÑOR,(Sol,,15)(La,m,207)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PUEBLOS TODOS DE LA TIERRA,",
+          "sC": "as"
+        },
+        {
+          "line": "NACIONES, DADLE GLORIA., (Do,,57)(Si,7,217)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque firme es su amor hacia nosotros,,(Sol,,15)(La,m,405)",
+      "sC": "tc a323"
+    },
+    {
+      "line": "su fidelidad dura por siempre,",
+      "sC": "a324"
+    },
+    {
+      "line": "naciones, dadle gloria., (Do,,46)(Si,7,184)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "CANTAD AL SEÑOR, (Sol,,15)(La,m,207)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PUEBLOS TODOS DE LA TIERRA, ",
+          "sC": "as"
+        },
+        {
+          "line": "NACIONES, DADLE GLORIA., (Do,,57)(Si,7,217)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

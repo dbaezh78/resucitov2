@@ -1,0 +1,252 @@
+{
+  "id": "balaam",
+  "tt": "Balaam",
+  "title": "Balaam",
+  "subtitle": "Nm 23,7-24",
+  "category": [
+    "PreCatecumenado",
+    "Paz",
+    "Comunión",
+    "Final",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "24",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/balaam.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=babiloniacriminal",
+  "sig": "/src/index.html?canto=bendecirealsenorentodotiempo",
+  "lizq": [
+    {
+      "line": "De Aram me ha hecho venir, (Mi,m,22)(Re,,255)",
+      "sC": "tc"
+    },
+    {
+      "line": "Balaq, el rey de Moab,,(Mi,m,41)(Re,,192)",
+      "sC": ""
+    },
+    {
+      "line": "desde los montes de Oriente:, (Mi,m,238)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«Ven y maldice a Jacob;, (Re,,25)(Mi,m,204)",
+      "sC": ""
+    },
+    {
+      "line": "ven y profetiza contra Israel»., (Re,,15)(Mi,m,250)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Cómo maldeciré, si Dios no quiere?, (Sol,,10)(Re,,168)(Sol,,216)(Si,m,258)(Mi,m,310)",
+      "sC": ""
+    },
+    {
+      "line": "¿Cómo profetizaré, si Dios no me deja?, (Sol,,10)(Re,,168)(Sol,,216)(Si,m,258)(Mi,m,342)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "De lo alto de esta cima yo diviso,,(Re,,67)(Mi,m,284)",
+      "sC": ""
+    },
+    {
+      "line": "desde lo alto de esta roca yo contemplo:, (Re,,94)(Mi,m,330)",
+      "sC": ""
+    },
+    {
+      "line": "este es un pueblo distinto, (Re,,11)",
+      "sC": ""
+    },
+    {
+      "line": "a todas las naciones., (Mi,m,155)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡QUÉ BELLAS SON TUS TIENDAS,,(Mi,m,19)(Re,,246)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUÉ BELLAS SON, ISRAEL!, (Mi,m,230)",
+      "sC": "as b24"
+    },
+    {
+      "line": "¡QUÉ BELLAS SON TUS TIENDAS,,(Re,,245)",
+      "sC": "as"
+    },
+    {
+      "line": "QUÉ BELLAS SON, ISRAEL!, (Mi,m,229)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Quién contará, contará tu multitud?, (Sol,,15)(Re,,142)(Sol,,224)(Si,m,262)(Mi,m,324)",
+      "sC": "tc"
+    },
+    {
+      "line": "JACOB, JACOB, JACOB, JACOB., (Re,,44)(Mi,m,112)(Re,,191)(Mi,m,262)",
+      "sC": "ta as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Sea, sea mi muerte, (Sol,,13)(Re,,160)",
+      "sC": "tc"
+    },
+    {
+      "line": "como la muerte de su Justo., (Sol,,121)(Si,m,154)(Mi,m,232)",
+      "sC": ""
+    },
+    {
+      "line": "Vaya mi vida donde Él,,(Re,,15)(Mi,m,209)",
+      "sC": ""
+    },
+    {
+      "line": "VAYA MI VIDA DONDE ÉL., (Re,,15)(Mi,m,226)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡QUÉ BELLAS SON TUS TIENDAS,(Mi,m,19)(Re,,246)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUÉ BELLAS SON, ISRAEL!, (Mi,m,230)",
+          "sC": "as b24"
+        },
+        {
+          "line": "¡QUÉ BELLAS SON TUS TIENDAS,,(Re,,245)",
+          "sC": "as"
+        },
+        {
+          "line": "QUÉ BELLAS SON, ISRAEL!, (Mi,m,229)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«¿Pero qué es lo que estás haciendo?, (Mi,m,15)(Re,,305)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡Tú lo estás bendiciendo!, (Mi,m,190)",
+      "sC": ""
+    },
+    {
+      "line": "Ven, quizá desde otra parte, (Re,,10)",
+      "sC": ""
+    },
+    {
+      "line": "Dios lo quiera maldecir»., (Mi,m,205)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Escucha, hijo de Sippor, pon el oído rey Balaq;, (Sol,,13)(Re,,205)(Sol,,312)(Si,m,346)(Mi,m,419)",
+      "sC": "tc"
+    },
+    {
+      "line": "que Dios no es un hombre, (Re,,67)",
+      "sC": ""
+    },
+    {
+      "line": "que dice y se arrepiente., (Mi,m,197)",
+      "sC": ""
+    },
+    {
+      "line": "Una estrella surge de Jacob,,(Re,,86)(Mi,m,241)",
+      "sC": ""
+    },
+    {
+      "line": "se oyen aclamaciones por su Rey., (Re,,36)(Mi,m,300)",
+      "sC": ""
+    },
+    {
+      "line": "Dios es su Padre., (Re,,25)(Mi,m,123)",
+      "sC": ""
+    },
+    {
+      "line": "Se acuesta como león,,(Re,,68)(Mi,m,193)",
+      "sC": ""
+    },
+    {
+      "line": "se echa como leona, nadie lo hará levantar»., (Re,,36)(Mi,m,159)(Re,,221)(Mi,m,399)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡QUÉ BELLAS SON TUS TIENDAS,(Mi,m,19)(Re,,246)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUÉ BELLAS SON, ISRAEL!, (Mi,m,230)",
+          "sC": "as b24"
+        },
+        {
+          "line": "¡QUÉ BELLAS SON TUS TIENDAS,,(Re,,245)",
+          "sC": "as"
+        },
+        {
+          "line": "QUÉ BELLAS SON, ISRAEL!, (Mi,m,229)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

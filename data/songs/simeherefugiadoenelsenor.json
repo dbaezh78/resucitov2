@@ -1,0 +1,158 @@
+{
+  "id": "simeherefugiadoenelsenor",
+  "tt": "Si Me He Refugiado En El Señor",
+  "title": "Si Me He Refugiado En El Señor",
+  "subtitle": "Salmo 11(10)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "153",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/simeherefugiadoenelsenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=sihoyescuchaissuvoz",
+  "sig": "/src/index.html?canto=sionmadredetodoslospueblos",
+  "lizq": [
+    {
+      "line": "SI ME HE REFUGIADO EN EL SEÑOR,, (Sol,,14)(Si,7,172)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¿CÓMO PODÉIS DECIRME, ",
+      "sC": "as"
+    },
+    {
+      "line": "CÓMO PODÉIS DECIRME, (Mi,m,190)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE HUYA COMO EL PÁJARO AL MONTE,, (Do,,64)(Si,7,339)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE HUYA COMO EL PÁJARO AL MONTE?, (Do,,64)(Si,7,339)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo sé que los malvados tensan el arco,, (Do,,10)(Si,7,335)",
+      "sC": "tc"
+    },
+    {
+      "line": "que ajustan las flechas a la cuerda,, (Do,,66)(Si,7,297)",
+      "sC": ""
+    },
+    {
+      "line": "para herir en la sombra al inocente., (Do,,64)(Si,7,303)",
+      "sC": ""
+    },
+    {
+      "line": "Mas cuando fallan los cimientos,, (La,m,20)(Si,7,263)",
+      "sC": ""
+    },
+    {
+      "line": "¿qué puede hacer el justo?,, (La,m,20)(Si,7,215)",
+      "sC": ""
+    },
+    {
+      "line": "¿qué puede hacer el justo?, (Do,,10)(Si,7,216)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Mas el Señor, el Señor, (Sol,,14)(Si,7,200)",
+      "sC": ""
+    },
+    {
+      "line": "está en su templo santo,, (Mi,m,197)",
+      "sC": ""
+    },
+    {
+      "line": "tiene su trono en el cielo;, (Do,,10)(Si,7,213)",
+      "sC": ""
+    },
+    {
+      "line": "sus ojos observan el mundo,, (Do,,46)(Si,7,226)",
+      "sC": ""
+    },
+    {
+      "line": "sus pupilas las acciones de los hombres., (Do,,77)(Si,7,318)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor escruta a los justos,, (Sol,,14)(Si,7,79)(Mi,m,230)",
+      "sC": ""
+    },
+    {
+      "line": "mas también escruta a los malvados;, (Do,,10)(Si,7,312)",
+      "sC": ""
+    },
+    {
+      "line": "y el Señor no ama la violencia,, (La,m,81)(Si,7,241)",
+      "sC": ""
+    },
+    {
+      "line": "el Señor no ama la violencia., (La,m,69)(Si,7,226)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SI ME HE REFUGIADO EN EL SEÑOR (Sol,,14)(Si,7,172)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¿CÓMO PODÉIS DECIRME, ",
+          "sC": "as"
+        },
+        {
+          "line": "CÓMO PODÉIS DECIRME, (Mi,m,190)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE HUYA COMO EL PÁJARO AL MONTE,, (Do,,64)(Si,7,339)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE HUYA COMO EL PÁJARO AL MONTE?, (Do,,64)(Si,7,339)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

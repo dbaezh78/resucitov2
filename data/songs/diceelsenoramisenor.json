@@ -1,0 +1,227 @@
+{
+  "id": "diceelsenoramisenor",
+  "tt": "Dice El Señor A Mi Señor",
+  "title": "Dice El Señor A Mi Señor",
+  "subtitle": "Salmo 110 (109)",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "51",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/diceelsenoramisenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=diadereposo",
+  "sig": "/src/index.html?canto=dichosoelhombre",
+  "lizq": [
+    {
+      "line": "DICE EL SEÑOR A MI SEÑOR:, (Mi,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "«SIÉNTATE A MI DERECHA,, (Sol#,,39)",
+      "sC": "as"
+    },
+    {
+      "line": "HASTA QUE PONGA A TUS ENEMIGOS, (La,,21)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO ESCABEL DE TUS PIES;, (Mi,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "DEBAJO DE TUS PIES,, (Si,7,47)(Mi,,184)",
+      "sC": "as"
+    },
+    {
+      "line": "DEBAJO DE TUS PIES»., (Si,7,49)(Mi,,186)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El cetro de tu poder, (Do#,m,27)(Sol#,,173)",
+      "sC": "tc"
+    },
+    {
+      "line": "extiende el Señor desde Sión:, (Si,,10)(Sol#,,266)",
+      "sC": ""
+    },
+    {
+      "line": "¡domina en medio de tus enemigos,, (La,,10)(Mi,,301)",
+      "sC": ""
+    },
+    {
+      "line": "domina en medio de tus enemigos!, (Si,7,15)(Mi,,295)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«Desde el seno de la aurora, (Do#,m,31)(Sol#,,243)",
+      "sC": ""
+    },
+    {
+      "line": "como rocío yo te he engendrado;, (Si,,10)(Sol#,,280)",
+      "sC": ""
+    },
+    {
+      "line": "desde antes de la aurora, (La,,10)(Mi,,209)",
+      "sC": ""
+    },
+    {
+      "line": "como rocío yo te he engendrado»., (Si,7,15)(Mi,,277)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "DICE EL SEÑOR A MI SEÑOR, (Mi,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "«SIÉNTATE A MI DERECHA,, (Sol#,,39)",
+          "sC": "as"
+        },
+        {
+          "line": "HASTA QUE PONGA A TUS ENEMIGOS, (La,,21)",
+          "sC": "as"
+        },
+        {
+          "line": "COMO ESCABEL DE TUS PIES;, (Mi,,10)",
+          "sC": "as"
+        },
+        {
+          "line": "DEBAJO DE TUS PIES,, (Si,7,47)(Mi,,184)",
+          "sC": "as"
+        },
+        {
+          "line": "DEBAJO DE TUS PIES»., (Si,7,49)(Mi,,186)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "El Señor ha jurado y no se arrepiente:, (Do#,m,26)(Sol#,,323)",
+      "sC": "tc"
+    },
+    {
+      "line": "Tú eres sacerdote para siempre,, (Si,,10)(Sol#,,255)",
+      "sC": ""
+    },
+    {
+      "line": "a semejanza de Melquisedec,, (La,,12)(Mi,,218)",
+      "sC": ""
+    },
+    {
+      "line": "a semejanza de Melquisedec»., (Si,7,15)(Mi,,220)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque el Señor está a tu derecha,, (Do#,m,25)(Sol#,,291)",
+      "sC": ""
+    },
+    {
+      "line": "destruirá tus enemigos,, (Si,,10)(Sol#,,182)",
+      "sC": ""
+    },
+    {
+      "line": "tú juzgarás los pueblos,, (La,,10)(Mi,,170)",
+      "sC": ""
+    },
+    {
+      "line": "sentenciarás a las naciones., (Si,7,15)(Mi,,227)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En el camino bebe del torrente,, (Do#,m,27)(Sol#,,250)",
+      "sC": ""
+    },
+    {
+      "line": "y levanta la cabeza,, (Si,,7)(Sol#,,156)",
+      "sC": ""
+    },
+    {
+      "line": "levanta la cabeza,, (La,,10)(Mi,,136)",
+      "sC": ""
+    },
+    {
+      "line": "levanta la cabeza., (Si,7,15)(Mi,,135)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "DICE EL SEÑOR A MI SEÑOR, (Mi,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "«SIÉNTATE A MI DERECHA,, (Sol#,,39)",
+          "sC": "as"
+        },
+        {
+          "line": "HASTA QUE PONGA A TUS ENEMIGOS, (La,,21)",
+          "sC": "as"
+        },
+        {
+          "line": "COMO ESCABEL DE TUS PIES;, (Mi,,10)",
+          "sC": "as"
+        },
+        {
+          "line": "DEBAJO DE TUS PIES,, (Si,7,47)(Mi,,184)",
+          "sC": "as"
+        },
+        {
+          "line": "DEBAJO DE TUS PIES»., (Si,7,49)(Mi,,186)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,172 @@
+{
+  "id": "santomelodiahebraica",
+  "tt": "Santo Melodía Hebraica",
+  "title": "Santo",
+  "subtitle": "Melodía hebraica ",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "215",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/santomelodiahebraica.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=santopalomeras65",
+  "sig": "/src/index.html?canto=santopalestina74",
+  "lizq": [
+    {
+      "line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Re,m,23)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,15)",
+      "sC": "as"
+    },
+    {
+      "line": "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,24)(Re,m,326)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los cielos y la tierra, (Re,m,20)(Sol,m,110)(Re,m,164)",
+      "sC": "tc"
+    },
+    {
+      "line": "están llenos de Ti., (Sol,m,24)(Re,m,163)",
+      "sC": ""
+    },
+    {
+      "line": "LOS CIELOS Y LA TIERRA, (Sol,m,129)(Re,m,189)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ESTÁN LLENOS DE TI., (Sol,m,23)(Re,m,197)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Hosanna en el cielo,, (Sol,m,104)(Re,m,165)",
+      "sC": "tc"
+    },
+    {
+      "line": "hosanna., (Sol,m,21)(Re,m,75)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA EN EL CIELO,, (Sol,m,122)(Re,m,187)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HOSANNA., (Sol,m,21)(Re,m,90)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SANTO, ES SANTO, SANTO, ES SANTO..., (Re,m,23)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,15)",
+          "sC": "as"
+        },
+        {
+          "line": "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,24)(Re,m,326)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendito el que viene,, (Re,m,21)(Sol,m,97)(Re,m,162)",
+      "sC": "tc"
+    },
+    {
+      "line": "en el nombre del Señor., (Sol,m,22)(Re,m,210)",
+      "sC": ""
+    },
+    {
+      "line": "A BENDITO EL QUE VIENE,, (Re,m,20)(Sol,m,123)(Re,m,208)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EN EL NOMBRE DEL SEÑOR., (Sol,m,24)(Re,m,242)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Hosanna en el cielo,, (Sol,m,104)(Re,m,165)",
+      "sC": "tc"
+    },
+    {
+      "line": "hosanna., (Sol,m,22)(Re,m,75)",
+      "sC": ""
+    },
+    {
+      "line": "HOSANNA EN EL CIELO,, (Sol,m,126)(Re,m,190)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HOSANNA., (Sol,m,22)(Re,m,89)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SANTO, ES SANTO, SANTO, ES SANTO..., (Re,m,23)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,15)",
+          "sC": "as"
+        },
+        {
+          "line": "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,24)(Re,m,326)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,261 @@
+{
+  "id": "ohjesusamormio",
+  "tt": "Oh Jesús, Amor Mío",
+  "title": "Oh Jesús, Amor Mío",
+  "subtitle": "(Kiko Argüello)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Fracción Del Pan"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "Melisma",
+  "nCanURL": "",
+  "dbno": "126",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/ohjesusamormio.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ohdiostueresmidios",
+  "sig": "/src/index.html?canto=ohmuertedondeestatuvictoria",
+  "lizq": [
+    {
+      "line": "Oh Jesús , amor mío,, (La,m,20)(Fa,,174)",
+      "sC": "tc ast"
+    },
+    {
+      "line": "¡cuánto me has amado, ",
+      "sC": ""
+    },
+    {
+      "line": "cuánto me has amado!, (Mi,,189)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "OH JESÚS, AMOR MÍO,, (La,m,75)(Fa,,191)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¡CUÁNTO ME HAS AMADO, ",
+      "sC": "as"
+    },
+    {
+      "line": "CUÁNTO ME HAS AMADO!, (Mi,,207)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú has recibido las espinas de la soberbia de mí,, (La,m,20)(Sol,,117)(La,m,451)",
+      "sC": "tc"
+    },
+    {
+      "line": "para que yo reciba la humildad de ti., (Fa,,148)(Mi,,339)",
+      "sC": ""
+    },
+    {
+      "line": "Tú has recibido los azotes de la lujuria de mí,, (La,m,20)(Sol,,116)(La,m,417)",
+      "sC": ""
+    },
+    {
+      "line": "para que yo reciba el amor y la pureza de ti., (Fa,,149)(Mi,,408)",
+      "sC": ""
+    },
+    {
+      "line": "Tú has sido por la avaricia despojado por mí,, (La,m,20)(Sol,,79)(La,m,414)",
+      "sC": ""
+    },
+    {
+      "line": "para que yo reciba la riqueza de ti., (Fa,,150)(Mi,,319)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "OH JESÚS, AMOR MÍO, (La,m,75)(Fa,,191)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡CUÁNTO ME HAS AMADO, ",
+          "sC": "as"
+        },
+        {
+          "line": "CUÁNTO ME HAS AMADO!, (Mi,,207)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú has recibido la hiel y el vinagre de mí,, (La,m,20)(Sol,,119)(La,m,382)",
+      "sC": "tc"
+    },
+    {
+      "line": "para que yo reciba la dulzura de ti., (Fa,,147)(Mi,,318)",
+      "sC": ""
+    },
+    {
+      "line": "Tú has recibido el desprecio y los insultos de mí,, (La,m,20)(Sol,,119)(La,m,451)",
+      "sC": ""
+    },
+    {
+      "line": "para que yo reciba la mansedumbre de ti., (Fa,,148)(Mi,,391)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Tú has recibido, (La,m,20)(Sol,,117)",
+      "sC": ""
+    },
+    {
+      "line": "los clavos y la lanzada de mí,, (La,m,267)",
+      "sC": ""
+    },
+    {
+      "line": "para que yo reciba la obediencia de ti., (Fa,,147)(Mi,,353)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "OH JESÚS, AMOR MÍO, (La,m,75)(Fa,,191)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡CUÁNTO ME HAS AMADO, ",
+          "sC": "as"
+        },
+        {
+          "line": "CUÁNTO ME HAS AMADO!, (Mi,,207)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú has sido crucificado por mí,, (La,m,20)(Sol,,111)(La,m,280)",
+      "sC": "tc"
+    },
+    {
+      "line": "para que yo reciba la salvación de ti., (Fa,,147)(Mi,,337)",
+      "sC": ""
+    },
+    {
+      "line": "Tú has recibido la muerte de mí,, (La,m,20)(Sol,,213)(La,m,286)",
+      "sC": ""
+    },
+    {
+      "line": "para que yo reciba la vida de ti., (Fa,,147)(Mi,,286)",
+      "sC": ""
+    },
+    {
+      "line": "Tú has recibido la sepultura de mí,, (La,m,20)(Sol,,238)(La,m,316)",
+      "sC": ""
+    },
+    {
+      "line": "para que yo reciba la resurrección de ti., (Fa,,147)(Mi,,367)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "OH JESÚS, AMOR MÍO, (La,m,75)(Fa,,191)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡CUÁNTO ME HAS AMADO, ",
+          "sC": "as"
+        },
+        {
+          "line": "CUÁNTO ME HAS AMADO!, (Mi,,207)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "De mí, Señor, tú has recibido, (Mi,,10)(La,m,114)(Sol,,247)",
+      "sC": "tc"
+    },
+    {
+      "line": "el mal, la muerte y el pecado,, (La,m,248)",
+      "sC": ""
+    },
+    {
+      "line": "para que yo reciba de ti sólo a ti mismo., (Fa,,147)(Mi,,331)",
+      "sC": ""
+    },
+    {
+      "line": "A mí, a mí tú te has donado., (Fa,,40)(Mi,,232)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "OH JESÚS, AMOR MÍO, (La,m,75)(Fa,,191)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡CUÁNTO ME HAS AMADO, ",
+          "sC": "as"
+        },
+        {
+          "line": "CUÁNTO ME HAS AMADO!, (Mi,,207)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

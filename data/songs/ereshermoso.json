@@ -1,0 +1,292 @@
+{
+  "id": "ereshermoso",
+  "tt": "Eres Hermoso",
+  "title": "Eres Hermoso",
+  "subtitle": "Salmo 45 (44) ",
+  "category": [
+    "Precatecumenado",
+    "Comunión",
+    "Final",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "67",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/ereshermoso.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=eresdignodetomarellibro",
+  "sig": "/src/index.html?canto=espaciente",
+  "lizq": [
+    {
+      "line": "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DE LOS HIJOS DE ADÁN, ",
+      "sC": "as"
+    },
+    {
+      "line": "DE LOS HIJOS DE ADÁN. ",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "LA GRACIA ESTÁ EN TUS LABIOS. ",
+      "sC": "as"
+    },
+    {
+      "line": "ERES BENDITO, ",
+      "sC": "as"
+    },
+    {
+      "line": "EL BENDITO PARA SIEMPRE. ",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ciñe la espada a tu flanco, oh valiente,, (Do#,m,28)(Sol#,,335)",
+      "sC": "tc"
+    },
+    {
+      "line": "y marcha lleno de gloria y esplendor,, (La,,46)(Sol#,,334)",
+      "sC": ""
+    },
+    {
+      "line": "cabalga por la verdad,, (Fa#,m,26)",
+      "sC": ""
+    },
+    {
+      "line": "la mansedumbre, la justicia., (Sol#,,233)",
+      "sC": ""
+    },
+    {
+      "line": "¡Tensa tu arco,, ",
+      "sC": ""
+    },
+    {
+      "line": "que hace temible tu derecha!, (La,,15)(Sol#,,230)",
+      "sC": ""
+    },
+    {
+      "line": "Agudas son tus flechas,, (Fa#,m,27)(Sol#,,170)",
+      "sC": ""
+    },
+    {
+      "line": "te han sido entregados los pueblos., (Si,,8)(La,,179)(Sol#,,290)",
+      "sC": ""
+    },
+    {
+      "line": "TE HAN SIDO ENTREGADOS, (Si,,8)(La,,218)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LOS PUEBLOS., (Sol#,,76)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DE LOS HIJOS DE ADÁN, ",
+          "sC": "as"
+        },
+        {
+          "line": "DE LOS HIJOS DE ADÁN. ",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "LA GRACIA ESTÁ EN TUS LABIOS. ",
+          "sC": "as"
+        },
+        {
+          "line": "ERES BENDITO, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL BENDITO PARA SIEMPRE. ",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Desde los palacios de marfil, (Do#,m,26)(Sol#,,264)",
+      "sC": "tc"
+    },
+    {
+      "line": "las cítaras cantan para ti., (La,,46)(Sol#,,234)",
+      "sC": ""
+    },
+    {
+      "line": "Hijas de reyes son tus favoritas;, (Fa#,m,25)(Sol#,,264)",
+      "sC": ""
+    },
+    {
+      "line": "a tu derecha está la reina, (Si,,80)(La,,207)",
+      "sC": ""
+    },
+    {
+      "line": "en oro de Ofir. (Sol#,,123)",
+      "sC": ""
+    },
+    {
+      "line": "A TU DERECHA ESTÁ LA REINA, (Si,,100)(La,,259)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EN ORO DE OFIR. (Sol#,,148)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DE LOS HIJOS DE ADÁN, ",
+          "sC": "as"
+        },
+        {
+          "line": "DE LOS HIJOS DE ADÁN. ",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "LA GRACIA ESTÁ EN TUS LABIOS. ",
+          "sC": "as"
+        },
+        {
+          "line": "ERES BENDITO, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL BENDITO PARA SIEMPRE. ",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Escucha, hija, y mira, inclina el oído,, (Do#,m,29)(Sol#,,171)(La,,243)(Sol#,,315)",
+      "sC": "tc"
+    },
+    {
+      "line": "olvida tu pueblo y la casa de tu padre,, (Fa#,m,34)(Sol#,,318)",
+      "sC": ""
+    },
+    {
+      "line": "y el rey se prendará de tu belleza., (Si,,54)(La,,179)(Sol#,,288)",
+      "sC": ""
+    },
+    {
+      "line": "Y EL REY SE PRENDARÁ, (Si,,70)(La,,222)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DE TU BELLEZA. (Sol#,,119)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El es tu Señor, ¡entrégate a él!, (Fa#,m,27)(Sol#,,119)(Fa#,m,193)(Sol#,,272)",
+      "sC": "tc"
+    },
+    {
+      "line": "Y en lugar de padres, tendrás hijos,, (Si,,8)(La,,298)",
+      "sC": ""
+    },
+    {
+      "line": "que serán príncipes sobre la tierra., (Sol#,,297)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DE LOS HIJOS DE ADÁN, ",
+          "sC": "as"
+        },
+        {
+          "line": "DE LOS HIJOS DE ADÁN. ",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "LA GRACIA ESTÁ EN TUS LABIOS. ",
+          "sC": "as"
+        },
+        {
+          "line": "ERES BENDITO, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL BENDITO PARA SIEMPRE. ",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

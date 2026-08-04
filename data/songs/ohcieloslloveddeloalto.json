@@ -1,0 +1,265 @@
+{
+  "id": "ohcieloslloveddeloalto",
+  "tt": "Oh Cielos, Lloved De Lo Alto",
+  "title": "Oh Cielos, Lloved De Lo Alto",
+  "subtitle": "Isaías 45,8",
+  "category": [
+    "Precatecumenado",
+    "Adviento",
+    "Navidad",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "123",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/ohcieloslloveddeloalto.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=nolimetangere",
+  "sig": "/src/index.html?canto=ohdiosportunombre",
+  "lizq": [
+    {
+      "line": "OH CIELOS, LLOVED DE LO ALTO,, (La,m,20)(Fa,,264)",
+      "sC": "ta as"
+    },
+    {
+      "line": "OH NUBES, MANDADNOS AL SANTO., (Sol,,53)(La,m,298)",
+      "sC": "as"
+    },
+    {
+      "line": "OH TIERRA, ÁBRETE, OH TIERRA,, (Mi,,100)(La,m,263)",
+      "sC": "as"
+    },
+    {
+      "line": "Y BROTE EL SALVADOR., (Mi,,52)(La,m,197)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Somos desierto, somos arena., (La,m,20)(Sol,,254)",
+      "sC": "tc"
+    },
+    {
+      "line": "Marana thá,, (Mi,,104)",
+      "sC": "tc"
+    },
+    {
+      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "sC": "ta as jte"
+    },
+    {
+      "line": "Somos el viento, nadie nos oye., (La,m,20)(Sol,,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "Marana thá,, (Mi,,104)",
+      "sC": "tc"
+    },
+    {
+      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "sC": "ta as jte"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "OH CIELOS, LLOVED DE LO ALTO, (La,m,20)(Fa,,264)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "OH NUBES, MANDADNOS AL SANTO., (Sol,,53)(La,m,298)",
+          "sC": "as"
+        },
+        {
+          "line": "OH TIERRA, ÁBRETE, OH TIERRA,, (Mi,,100)(La,m,263)",
+          "sC": "as"
+        },
+        {
+          "line": "Y BROTE EL SALVADOR., (Mi,,52)(La,m,197)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Somos tinieblas, nadie nos guía., (La,m,20)(Sol,,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "Marana thá,, (Mi,,104)",
+      "sC": "tc"
+    },
+    {
+      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "sC": "ta as jte"
+    },
+    {
+      "line": "Somos cadenas, nadie nos libra., (La,m,20)(Sol,,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "Marana thá,, (Mi,,104)",
+      "sC": "tc"
+    },
+    {
+      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "sC": "ta as jte"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "OH CIELOS, LLOVED DE LO ALTO, (La,m,20)(Fa,,264)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "OH NUBES, MANDADNOS AL SANTO., (Sol,,53)(La,m,298)",
+          "sC": "as"
+        },
+        {
+          "line": "OH TIERRA, ÁBRETE, OH TIERRA,, (Mi,,100)(La,m,263)",
+          "sC": "as"
+        },
+        {
+          "line": "Y BROTE EL SALVADOR., (Mi,,52)(La,m,197)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Tenemos frío, nadie nos cubre., (La,m,20)(Sol,,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "Marana thá,, (Mi,,104)",
+      "sC": "tc"
+    },
+    {
+      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "sC": "ta as jte"
+    },
+    {
+      "line": "Tenemos hambre, nadie nos sacia., (La,m,20)(Sol,,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Marana thá,, (Mi,,104)",
+      "sC": "tc"
+    },
+    {
+      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "sC": "ta as jte"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "OH CIELOS, LLOVED DE LO ALTO, (La,m,20)(Fa,,264)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "OH NUBES, MANDADNOS AL SANTO., (Sol,,53)(La,m,298)",
+          "sC": "as"
+        },
+        {
+          "line": "OH TIERRA, ÁBRETE, OH TIERRA,, (Mi,,100)(La,m,263)",
+          "sC": "as"
+        },
+        {
+          "line": "Y BROTE EL SALVADOR., (Mi,,52)(La,m,197)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Somos las lágrimas, que nadie enjuga., (La,m,20)(Sol,,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "Marana thá,, (Mi,,104)",
+      "sC": "tc"
+    },
+    {
+      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "sC": "ta as jte"
+    },
+    {
+      "line": "Somos dolor, nadie nos mira., (La,m,20)(Sol,,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "Marana thá,, (Mi,,104)",
+      "sC": "tc"
+    },
+    {
+      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "sC": "ta as jte"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "OH CIELOS, LLOVED DE LO ALTO, (La,m,20)(Fa,,264)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "OH NUBES, MANDADNOS AL SANTO., (Sol,,53)(La,m,298)",
+          "sC": "as"
+        },
+        {
+          "line": "OH TIERRA, ÁBRETE, OH TIERRA,, (Mi,,100)(La,m,263)",
+          "sC": "as"
+        },
+        {
+          "line": "Y BROTE EL SALVADOR., (Mi,,52)(La,m,197)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

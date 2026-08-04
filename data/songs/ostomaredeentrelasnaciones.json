@@ -1,0 +1,147 @@
+{
+  "id": "ostomaredeentrelasnaciones",
+  "tt": "Os Tomaré De Entre Las Naciones",
+  "title": "Os Tomaré De Entre Las Naciones",
+  "subtitle": "Ezequiel 36,24-28",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "129",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/ostomaredeentrelasnaciones.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ohsenornuestrodios",
+  "sig": "/src/index.html?canto=palomaincorrupta",
+  "lizq": [
+    {
+      "line": "OS TOMARÉ DE ENTRE LAS NACIONES,, (Re,m,21)(Re,7,110)",
+      "sC": "ta as"
+    },
+    {
+      "line": "OS REUNIRÉ DE TODOS LOS PUEBLOS,, (Sol,m,309)",
+      "sC": "as"
+    },
+    {
+      "line": "OS ROCIARÉ CON AGUA PURA, (La,,119)(Re,m,253)",
+      "sC": "as"
+    },
+    {
+      "line": "Y YO OS PURIFICARÉ., (Si♭,,10)(La,,192)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Os daré un corazón nuevo,, (Re,7,19)",
+      "sC": "tc"
+    },
+    {
+      "line": "infundiré en vosotros un espíritu nuevo,, (Sol,m,338)",
+      "sC": ""
+    },
+    {
+      "line": "os quitaré el corazón de piedra,, (La,,90)(Re,m,255)",
+      "sC": ""
+    },
+    {
+      "line": "os daré un corazón de carne., (Si♭,,64)(La,,231)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "OS TOMARÉ DE ENTRE LAS NACIONES, (Re,m,21)(Re,7,110)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "OS REUNIRÉ DE TODOS LOS PUEBLOS,, (Sol,m,309)",
+          "sC": "as"
+        },
+        {
+          "line": "OS ROCIARÉ CON AGUA PURA, (La,,119)(Re,m,253)",
+          "sC": "as"
+        },
+        {
+          "line": "Y YO OS PURIFICARÉ., (Si♭,,10)(La,,192)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pondré mi Espíritu dentro de vosotros, (Re,7,20)(Sol,m,318)",
+      "sC": "tc"
+    },
+    {
+      "line": "y haré que caminéis según mi Palabra., (La,,53)(Rem,,332)",
+      "sC": ""
+    },
+    {
+      "line": "Vosotros seréis mi pueblo, (Si♭,,12)",
+      "sC": ""
+    },
+    {
+      "line": "y yo seré vuestro Dios., (La,,184)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "OS TOMARÉ DE ENTRE LAS NACIONES, (Re,m,21)(Re,7,110)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "OS REUNIRÉ DE TODOS LOS PUEBLOS,, (Sol,m,309)",
+          "sC": "as"
+        },
+        {
+          "line": "OS ROCIARÉ CON AGUA PURA, (La,,119)(Re,m,253)",
+          "sC": "as"
+        },
+        {
+          "line": "Y YO OS PURIFICARÉ., (Si♭,,10)(La,,192)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

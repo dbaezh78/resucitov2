@@ -1,0 +1,241 @@
+{
+  "id": "mehasseducidosenor",
+  "tt": "Me Has Seducido, Señor ",
+  "title": "Me Has Seducido, Señor ",
+  "subtitle": "Jeremias 20,7-18",
+  "category": [
+    "Precatecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "115",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/mehasseducidosenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=meensenaraselcaminodelavida",
+  "sig": "/src/index.html?canto=miradqueestupendo",
+  "lizq": [
+    {
+      "line": "ME HAS SEDUCIDO, SEÑOR,, (La,m,20)(Mi,7,242)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y ME HE DEJADO SEDUCIR., (La,m,235)",
+      "sC": "as r1"
+    },
+    {
+      "line": "HAS LUCHADO CONMIGO, (Mi,7,207)",
+      "sC": "as"
+    },
+    {
+      "line": "Y ME HAS VENCIDO., (La,m,154)",
+      "sC": "as"
+    },
+    {
+      "line": "HAS SIDO MÁS FUERTE QUE YO,, (Fa,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "ME HAS PODIDO., (Mi,7,127)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cuando hablo debo gritar:, (La,m,20)(Mi,7,229)",
+      "sC": "tc"
+    },
+    {
+      "line": "«¡Violencia!», «¡Opresión!», (La,m,202)",
+      "sC": ""
+    },
+    {
+      "line": "Así tu palabra es para mí befa y oprobio., (Mi,7,95)(La,m,337)",
+      "sC": ""
+    },
+    {
+      "line": "Me decía: «No pensaré más en Él,, (Mi,7,74)",
+      "sC": ""
+    },
+    {
+      "line": "no hablaré más en su nombre•., (La,m,231)",
+      "sC": ""
+    },
+    {
+      "line": "Mas en mi corazón, (Mi,7,16)",
+      "sC": ""
+    },
+    {
+      "line": "había un fuego ardiente,, ",
+      "sC": ""
+    },
+    {
+      "line": "que corría por mis huesos., (Fa,,79)(Mi,,206)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MAS EN MI CORAZÓN, (Mi,7,17)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HABÍA UN FUEGO ARDIENTE,, ",
+      "sC": "as"
+    },
+    {
+      "line": "QUE CORRÍA POR MIS HUESOS., (Fa,,107)(Mi,,255)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ME HAS SEDUCIDO, SEÑOR, (La,m,20)(Mi,7,242)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "Y ME HE DEJADO SEDUCIR., (La,m,235)",
+          "sC": "as"
+        },
+        {
+          "line": "HAS LUCHADO CONMIGO, (Mi,7,207)",
+          "sC": "as"
+        },
+        {
+          "line": "Y ME HAS VENCIDO., (La,m,154)",
+          "sC": "as"
+        },
+        {
+          "line": "HAS SIDO MÁS FUERTE QUE YO,, (Fa,,10)",
+          "sC": "as"
+        },
+        {
+          "line": "ME HAS PODIDO., (Mi,7,124)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Maldito el día en que nací. (Mi,7,16)",
+      "sC": "tc"
+    },
+    {
+      "line": "Maldito el hombre ",
+      "sC": ""
+    },
+    {
+      "line": "que le dio la noticia a mi padre: ",
+      "sC": ""
+    },
+    {
+      "line": "«Te ha nacido un hijo». ",
+      "sC": ""
+    },
+    {
+      "line": "¿Por qué he salido del seno de mi madre, ",
+      "sC": ""
+    },
+    {
+      "line": "si sólo debo ver penas y aflicción?, ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MAS EL SEÑOR ESTÁ CONMIGO,, (Do,,10)(Sol,,272)",
+      "sC": "ta as"
+    },
+    {
+      "line": "COMO UN HÉROE VALEROSO., (Do,,235)",
+      "sC": "as r2"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cantad himnos al Señor, alabad su Nombre, (La,m,20)(Mi,7,88)(La,m,360)",
+      "sC": "tc"
+    },
+    {
+      "line": "que ha salvado la vida de este pobre., (Fa,,114)(Mi,7,311)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MAS EL SEÑOR ESTÁ CONMIGO,, (Do,,10)(Sol,,270)",
+      "sC": "ta as"
+    },
+    {
+      "line": "COMO UN HÉROE VALEROSO., (Do,,239)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ME HAS SEDUCIDO, SEÑOR, (La,m,20)(Mi,7,242)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "Y ME HE DEJADO SEDUCIR., (La,m,235)",
+          "sC": "as"
+        },
+        {
+          "line": "HAS LUCHADO CONMIGO, (Mi,7,207)",
+          "sC": "as"
+        },
+        {
+          "line": "Y ME HAS VENCIDO., (La,m,154)",
+          "sC": "as"
+        },
+        {
+          "line": "HAS SIDO MÁS FUERTE QUE YO,, (Fa,,10)",
+          "sC": "as"
+        },
+        {
+          "line": "ME HAS PODIDO., (Mi,7,124)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

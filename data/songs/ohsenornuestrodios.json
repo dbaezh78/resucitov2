@@ -1,0 +1,157 @@
+{
+  "id": "ohsenornuestrodios",
+  "tt": "Oh Señor, Nuestro Dios",
+  "title": "Oh Señor, Nuestro Dios",
+  "subtitle": "Salmo 8",
+  "category": [
+    "Precatecumenado",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "2",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "128",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/ohSenornuestroDios.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ohmuerte¿dondeestatuvictoria?",
+  "sig": "/src/index.html?canto=ostomaredeentrelasnaciones",
+  "lizq": [
+    {
+      "line": "¡OH SEÑOR, NUESTRO DIOS,, (Re,m,22)(La,7,134)(Re,m,237)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUÉ ADMIRABLE ES TU NOMBRE, (Fa,,117)",
+      "sC": "as"
+    },
+    {
+      "line": "POR TODA LA TIERRA, TU NOMBRE,, (La,7,160)(Sol,m,245)",
+      "sC": "as"
+    },
+    {
+      "line": "HASTA EL CIELO SE ELEVA TU AMOR!, (La,7,327)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Con la boca de los niños pequeños, (Sol,m,14)(La,7,291)",
+      "sC": "tc"
+    },
+    {
+      "line": "afirmas tu gloria, oh Señor,, (Sol,m,24)(La,7,242)",
+      "sC": ""
+    },
+    {
+      "line": "y reduces al silencio enemigos y rebeldes., (Si♭,,52)(La,7,350)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡OH SEÑOR, NUESTRO DIOS, (Re,m,22)(La,7,134)(Re,m,237)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUÉ ADMIRABLE ES TU NOMBRE, (Fa,,117)",
+          "sC": "as"
+        },
+        {
+          "line": "POR TODA LA TIERRA, TU NOMBRE,, (La,7,160)(Sol,m,245)",
+          "sC": "as"
+        },
+        {
+          "line": "HASTA EL CIELO SE ELEVA TU AMOR!, (La,7,327)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si contemplo el cielo, obra de tus manos,, (Sol,m,24)(La,7,347)",
+      "sC": "tc"
+    },
+    {
+      "line": "la luna y las estrellas que has creado,, (Sol,m,42)(La,7,325)",
+      "sC": ""
+    },
+    {
+      "line": "¿qué es el hombre para que te acuerdes de él,, (Si♭,,39)(La,7,430)",
+      "sC": ""
+    },
+    {
+      "line": "el hijo del hombre para darle poder?, (Si♭,,34)(La,7,326)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Lo hiciste, lo hiciste poco menos que los ángeles,, (Fa,,10)(La,7,156)(Re,m,406)",
+      "sC": ""
+    },
+    {
+      "line": "de gloria y de honor lo has coronado,, (Si♭,,55)(La,7,318)",
+      "sC": ""
+    },
+    {
+      "line": "todo lo has sometido bajo sus pies., (Si♭,,18)(La,7,326)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "¡OH SEÑOR, NUESTRO DIOS, (Re,m,22)(La,7,134)(Re,m,237)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUÉ ADMIRABLE ES TU NOMBRE, (Fa,,117)",
+          "sC": "as"
+        },
+        {
+          "line": "POR TODA LA TIERRA, TU NOMBRE,, (La,7,160)(Sol,m,245  )",
+          "sC": "as"
+        },
+        {
+          "line": "HASTA EL CIELO SE ELEVA TU AMOR!, (La,7,327)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

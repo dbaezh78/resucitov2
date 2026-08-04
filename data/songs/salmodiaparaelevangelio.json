@@ -1,0 +1,153 @@
+{
+  "id": "salmodiaparaelevangelio",
+  "tt": "Salmodia Para El Evangelio",
+  "title": "Salmodia Para El Evangelio",
+  "subtitle": "Juan 3,11-20 ",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "208",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/salmodiaparaelevangelio.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=pregonpascualp2",
+  "sig": "/src/index.html?canto=salmodiaparaelrosario",
+  "lizq": [
+    {
+      "line": "El Señor esté con vosotros., (Mi,m,20)(Si,7,207)(Mi,m,245)",
+      "sC": "pa"
+    },
+    {
+      "line": "Y CON TU ESPÍRITU., (La,m,20)(Mi,m,126)(Si,7,163)(Mi,m,200)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Del evangelio según San Juan., (Mi,m,20)(Si,7,263)(Mi,m,306)",
+      "sC": "pa"
+    },
+    {
+      "line": "GLORIA A TI, SEÑOR., (La,m,20)(MI,m,164)(Si,7,206)(Mi,m,248)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En aquel tiempo Jesús dijo:, (Mi,m,20)",
+      "sC": "pa"
+    },
+    {
+      "line": "«En verdad, en verdad te digo:, ",
+      "sC": ""
+    },
+    {
+      "line": "nosotros hablamos de lo que sabemos, ",
+      "sC": ""
+    },
+    {
+      "line": "y damos testimonio de lo que hemos visto,, ",
+      "sC": ""
+    },
+    {
+      "line": "pero vosotros no aceptáis nuestro testimonio., (Si,7,392)(Mi,m,432)",
+      "sC": ""
+    },
+    {
+      "line": "Si al deciros cosas de la tierra, no creéis,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "¿cómo vais a creer si os digo cosas del cielo?, (Mi,m,20)(Si,7,376)(Mi,m,424)",
+      "sC": ""
+    },
+    {
+      "line": "Nadie ha subido al cielo, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "sino el que bajó del cielo,, ",
+      "sC": ""
+    },
+    {
+      "line": " el Hijo del hombre., (Si,7,128)(Sol,,171)",
+      "sC": ""
+    },
+    {
+      "line": "Y como Moisés levantó, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "la serpiente en el desierto,, ",
+      "sC": ""
+    },
+    {
+      "line": "así tiene que ser levantado, ",
+      "sC": ""
+    },
+    {
+      "line": "el Hijo del hombre,, (Mi,m,115)(Si,7,159)(Mi,m,200)",
+      "sC": ""
+    },
+    {
+      "line": "para que todo el que crea, (Sol ,,12)",
+      "sC": ""
+    },
+    {
+      "line": "tenga por él vida eterna., (Si,7,204)(Sol,,241)",
+      "sC": ""
+    },
+    {
+      "line": "Porque tanto amó Dios al mundo, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "que dio a su Hijo único,, ",
+      "sC": ""
+    },
+    {
+      "line": "para que todo el que crea en él, ",
+      "sC": ""
+    },
+    {
+      "line": "no perezca, sino que tenga vida eterna»., (Mi,m,324)(Si,7,364)(Mi,m,406)",
+      "sC": ""
+    },
+    {
+      "line": "[…]",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Palabra del Señor., (Sol,,14)(Si,7,168)(Sol,,206)",
+      "sC": "pa"
+    },
+    {
+      "line": "GLORIA A TI, SEÑOR JESÚS., (La,m,20)(Mi,m,233)(Si,7,278)(Mi,m,323)",
+      "sC": "ta as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

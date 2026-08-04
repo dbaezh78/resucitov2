@@ -1,0 +1,191 @@
+{
+  "id": "lasarmasdelaluz",
+  "tt": "Las Armas De La Luz",
+  "title": "Las Armas De La Luz",
+  "subtitle": "cf Efesios 6,11.ss",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Adviento",
+    "Navidad",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "102",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/lasarmasdelaluz.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=lavozdemiamado",
+  "sig": "/src/index.html?canto=laudasion",
+  "lizq": [
+    {
+      "line": "Revestíos de la armadura de Dios,, (La,m,20)(Re,m9,306)",
+      "sC": "tc"
+    },
+    {
+      "line": "empuñando las armas de la luz., (Mi,7,76)(La,m,290)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "REVESTÍOS DE LA ARMADURA DE DIOS,, (La,m,20)(Re,m9,359)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EMPUÑANDO LAS ARMAS DE LA LUZ., (Mi,7,80)(La,m,336)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque nuestra lucha, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "no es contra la carne ni la sangre,, (Mi,7,271)",
+      "sC": ""
+    },
+    {
+      "line": "más contra los espíritus del mal, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "que viven en el mundo tenebroso., (Mi,7,258)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "CEÑIDOS CON LA VERDAD,, (La,m,20)(Mi,7,228)",
+      "sC": "ta as"
+    },
+    {
+      "line": "REVESTIDOS DE LA JUSTICIA DE LA CRUZ., (La,m,376)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que no se resiste al mal,, (Fa,,58)(Mi,7,219)",
+      "sC": "tc"
+    },
+    {
+      "line": "mas lleva sobre sí los pecados de los demás., (Fa,,64)(Mi,7,408)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "CALZADOS CON EL CELO, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "POR ANUNCIAR EL EVANGELIO,, (Mi,7,253)",
+      "sC": "as"
+    },
+    {
+      "line": "MAS SOBRE TODO, ",
+      "sC": "as"
+    },
+    {
+      "line": "CON EL ESCUDO DE LA FE., (La,m,245)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Que Cristo te ama ciertamente,, (Fa,,10)(Mi,7,256)",
+      "sC": "tc"
+    },
+    {
+      "line": "que ha dado su vida por ti, (Fa,,88)(Mi,7,248)",
+      "sC": ""
+    },
+    {
+      "line": "cuando eras malvado y pecador., (Fa,,84)(Mi,7,296)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "CON LA ESPADA DEL ESPÍRITU,, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE ES LA PALABRA DE DIOS,, (Mi,7,263)",
+      "sC": "as"
+    },
+    {
+      "line": "Y CORONADOS, ",
+      "sC": "as"
+    },
+    {
+      "line": "CON EL YELMO DE LA SALVACIÓN., (La,m,305)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que Cristo Jesús resucitó,, (Fa,,66)(Mi,7,238)",
+      "sC": "tc"
+    },
+    {
+      "line": "que él es el Señor,, (Fa,,49)(Mi,7,160)",
+      "sC": ""
+    },
+    {
+      "line": "que volverá, que volverá, (Re,m,101)",
+      "sC": ""
+    },
+    {
+      "line": "y nos llevará con él., (Mi,7,178)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELÚ, ALELÚ, ALELUYA., (La,m,79)(Mi,7,326)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ALELUYA, ALELÚ, ALELÚ, ALELUYA., (La,m,87)(Mi,7,326)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

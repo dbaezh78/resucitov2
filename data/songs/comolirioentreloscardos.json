@@ -1,0 +1,183 @@
+{
+  "id": "comolirioentreloscardos",
+  "tt": "Como Lirio Entre Los Cardos ",
+  "title": "Como Lirio Entre Los Cardos ",
+  "subtitle": "Cantar de los cantares 1,13ss ",
+  "category": [
+    "Eleccion",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Eleccion",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "240",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/comolirioentreloscardos.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=comodestilalamiel",
+  "sig": "/src/index.html?canto=hermosaeresamigamia",
+  "lizq": [
+    {
+      "line": "Como perfume de mirra es mi amado,, (Si,m,20)(Mi,m,329)",
+      "sC": "tc"
+    },
+    {
+      "line": "así es mi amado,, (Fa#,,130)",
+      "sC": ""
+    },
+    {
+      "line": "reposa sobre mi pecho., (Sol,,33)(Fa#,,181)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Como lirio entre los cardos es mi amada,, (Si,m,20)(Mi,m,356)",
+      "sC": ""
+    },
+    {
+      "line": "así es mi amada,, (Fa#,,129)",
+      "sC": ""
+    },
+    {
+      "line": "así es mi amada entre las doncellas., (Sol,,127)(Fa#,,307)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡QUÉ BELLA ERES, AMADA MÍA!, (Sol,,130)(Fa#,,280)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¡QUÉ BELLA ERES, QUÉ BELLA ERES!, (Sol,,128)(Fa#,,307)",
+      "sC": "as"
+    },
+    {
+      "line": "PALOMAS SON TUS OJOS,, (Mi,m,20)(Fa#,,202)",
+      "sC": "as"
+    },
+    {
+      "line": "PALOMAS SON TUS OJOS., (Mi,m,20)(Fa#,,202)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡QUÉ HERMOSO ERES, AMADO MÍO!, (Sol,,169)(Fa#,,319)",
+      "sC": "as"
+    },
+    {
+      "line": "¡QUÉ HERMOSO ERES, QUÉ DELICIOSO!, (Sol,,169)(Fa#,,336)",
+      "sC": "as"
+    },
+    {
+      "line": "PURO VERDOR ES NUESTRO LECHO,, (Mi,m,20)(Fa#,,300)",
+      "sC": "as"
+    },
+    {
+      "line": "PURO VERDOR ES NUESTRO LECHO., (Mi,m,20)(Fa#,,300)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Como el manzano entre los árboles silvestres,, (Si,m,20)(Mi,m,385)",
+      "sC": "tc"
+    },
+    {
+      "line": "así es mi amado,, (Fa#,,127)",
+      "sC": ""
+    },
+    {
+      "line": "así es mi amado entre los jóvenes., (Sol,,127)(Fa#,,265)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "A su sombra que anhelaba estoy sentada,, (Si,m,20)(Mi,m,367)",
+      "sC": ""
+    },
+    {
+      "line": "y es dulce su fruto,, (Fa#,,146)",
+      "sC": ""
+    },
+    {
+      "line": "¡qué dulce al paladar!, (Sol,,63)(Fa#,,190)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ME HA INTRODUCIDO, (Sol,,173)",
+      "sC": "tc as"
+    },
+    {
+      "line": "EN LA SALA DEL BANQUETE,, (Fa#,,238)",
+      "sC": "as r1"
+    },
+    {
+      "line": "Y LA BANDERA QUE ENARBOLA, (Mi,m,110)",
+      "sC": "as"
+    },
+    {
+      "line": "SOBRE MÍ ES EL AMOR., (Fa#,,203)",
+      "sC": "as r1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Su izquierda sobre mi cabeza,, (Mi,m,84)(Fa#,,252)",
+      "sC": "tc"
+    },
+    {
+      "line": "y con su diestra me abraza., (Mi,m,110)(Fa#,,226)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "YO OS CONJURO, HIJAS DE JERUSALÉN, (Si,m,123)(La,,179)(Si,m,356)",
+      "sC": "ta as ast"
+    },
+    {
+      "line": "NO DESPERTÉIS AL AMOR,, (Sol,,14)(Fa#,,230)",
+      "sC": "as"
+    },
+    {
+      "line": "HASTA QUE A ELLA LE PLAZCA., (Sol,,14)(Fa#,,250)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

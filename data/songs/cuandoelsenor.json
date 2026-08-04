@@ -1,0 +1,165 @@
+{
+  "id": "cuandoelsenor",
+  "tt": "Cuando El Señor",
+  "title": "Cuando El Señor",
+  "subtitle": "Salmo 126 (125)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Adviento",
+    "Navidad",
+    "Antiguo Testamento",
+    "Entrada"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "43",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/cuandoelsenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=cristoeslaluz",
+  "sig": "/src/index.html?canto=cuandoisraelsaliodeegipto",
+  "lizq": [
+    {
+      "line": "Cuando el Señor, (Re,,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "hizo volver, (Mi,m,85)",
+      "sC": ""
+    },
+    {
+      "line": "a los cautivos, (Re,,95)",
+      "sC": ""
+    },
+    {
+      "line": "de Sión,, (Mi,m,55)",
+      "sC": ""
+    },
+    {
+      "line": "nos parecía soñar;, (Re,,155)",
+      "sC": ""
+    },
+    {
+      "line": "la boca, (Mi,m,40)",
+      "sC": ""
+    },
+    {
+      "line": "se nos llenaba de risas,, (Re,,183)",
+      "sC": ""
+    },
+    {
+      "line": "la lengua, (Mi,m,36)",
+      "sC": ""
+    },
+    {
+      "line": "de cantares., (Re,,76)(Re,7,137)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PORQUE AL IR,, (Sol,,127)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SE VA LLORANDO,, (La,,21)(Re,,164)",
+      "sC": "as"
+    },
+    {
+      "line": "LLEVANDO LA SEMILLA;, (Mi,m,58)(Re,,184)(Re,7,239)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MAS AL VOLVER,, (Sol,,132)",
+      "sC": "as"
+    },
+    {
+      "line": "SE VIENE CANTANDO,, (La,,53)(Re,,203)",
+      "sC": "as"
+    },
+    {
+      "line": "TRAYENDO LAS GAVILLAS., (Mi,m,63)(Re,,197)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "¡Grandes cosas ha hecho,, (Re,,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "maravillas,, (Mi,m,62)",
+      "sC": ""
+    },
+    {
+      "line": "ha hecho el Señor con nosotros!, (Re,,254)",
+      "sC": ""
+    },
+    {
+      "line": "Por eso, (Mi,m,53)",
+      "sC": ""
+    },
+    {
+      "line": "estamos alegres., (Re,,110)(Re,7,185)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "PORQUE AL IR, (Sol,,127)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SE VA LLORANDO,, (La,,21)(Re,,164)",
+          "sC": "as"
+        },
+        {
+          "line": "LLEVANDO LA SEMILLA;, (Mi,m,58)(Re,,184)(Re,7,239)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "MAS AL VOLVER,, (Sol,,132)",
+          "sC": "as"
+        },
+        {
+          "line": "SE VIENE CANTANDO,, (La,,53)(Re,,203)",
+          "sC": "as"
+        },
+        {
+          "line": "TRAYENDO LAS GAVILLAS., (Mi,m,63)(Re,,197)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

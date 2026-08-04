@@ -1,0 +1,232 @@
+{
+  "id": "merobasteelcorazon",
+  "tt": "Me Robaste El Corazón ",
+  "title": "Me Robaste El Corazón ",
+  "subtitle": "Cantar de los cantares 4,9 - 5,1",
+  "category": [
+    "Eleccion",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Eleccion",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "243",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/merobasteelcorazon.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=lapalomavolo",
+  "sig": "/src/index.html?canto=subaelesposoallenodesutalamo",
+  "lizq": [
+    {
+      "line": "ME ROBASTE EL CORAZÓN,, (Re,m,22)(Sol,m,238)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ME ROBASTE EL CORAZÓN,, (Re,m,238)",
+      "sC": "as r1"
+    },
+    {
+      "line": "HERMANA MÍA, ESPOSA,, (Sol,m,203)",
+      "sC": "as"
+    },
+    {
+      "line": "ME ROBASTE,, (La,,89)",
+      "sC": "as"
+    },
+    {
+      "line": "ME ROBASTE EL CORAZÓN., (Re,m,237)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Qué hermosos tus amores,, (Re,m,22)(Sol,m,221)",
+      "sC": "tc"
+    },
+    {
+      "line": "qué hermosos tus amores!, (Re,m,215)",
+      "sC": ""
+    },
+    {
+      "line": "La fragancia de tus perfumes,, (Sol,m,239)",
+      "sC": ""
+    },
+    {
+      "line": "más que todos los bálsamos de amor., (La,,104)(Re,m,350)",
+      "sC": ""
+    },
+    {
+      "line": "Miel destilan tus labios,, (Sol,m,185)",
+      "sC": ""
+    },
+    {
+      "line": "esposa mía, hermana,, ",
+      "sC": ""
+    },
+    {
+      "line": "miel y leche debajo de tu lengua., (La,,75)(Re,m,266)",
+      "sC": ""
+    },
+    {
+      "line": "La fragancia de tus vestidos, ",
+      "sC": ""
+    },
+    {
+      "line": "es la fragancia del Líbano, esposa, esposa mía,, (Sol,m,203)",
+      "sC": ""
+    },
+    {
+      "line": "más sabrosos son tus amores que el vino., (La,,94)(Re,m,374)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Huerto eres cerrado, hermana mía,, (Do,,10)(Re,m,313)",
+      "sC": ""
+    },
+    {
+      "line": "fuente sellada, esposa mía., (Do,,10)(Re,m,243)",
+      "sC": ""
+    },
+    {
+      "line": "Tus frutos un paraíso de granados,, (Sol,m,59)(La,,283)",
+      "sC": ""
+    },
+    {
+      "line": "de nardo y azafrán, de mirra y áloe., (Sol,m,52)(La,,297)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "¡Levántate, cierzo, ábrego, y ven!, (Do,,10)(Fa,,286)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡LEVÁNTATE, CIERZO, ÁBREGO, Y VEN!, (Do,,10)(Fa,,341)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sopla en mi huerto, (La,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "para que exhale sus aromas., (Re,m,224)",
+      "sC": ""
+    },
+    {
+      "line": "SOPLA EN MI HUERTO, (La,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PARA QUE EXHALE SUS AROMAS., (Re,m,266)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y pueda entrar mi amado en su huerto, (Do,,10)(Fa,,336)",
+      "sC": ""
+    },
+    {
+      "line": "y coma de sus frutos exquisitos., (La,,10)(Re,m,272)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ya he entrado en mi huerto, esposa mía;, (Sol,m,103)(La,,368)",
+      "sC": ""
+    },
+    {
+      "line": "he comido mi miel en su panal,, (Sol,m,75)(La,,285)",
+      "sC": ""
+    },
+    {
+      "line": "he bebido mi vino con su leche., (Sol,m,73)(La,,254)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Amigos, venid, bebed,, (Re,m,22)(Do,,125)(Si♭,,194)",
+      "sC": "tc"
+    },
+    {
+      "line": "oh queridos y embriagaos!, (La,,221)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡AMIGOS, VENID, BEBED,, (Re,m,22)(Do,,133)(Si♭,,218)",
+      "sC": "ta as"
+    },
+    {
+      "line": "OH QUERIDOS Y EMBRIAGAOS!, (La,,259)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ME ROBASTE EL CORAZÓN, (Re,m,22)(Sol,m,238)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ME ROBASTE EL CORAZÓN,, (Re,m,238)",
+          "sC": "as r1"
+        },
+        {
+          "line": "HERMANA MÍA, ESPOSA,, (Sol,m,203)",
+          "sC": "as"
+        },
+        {
+          "line": "ME ROBASTE,, (La,,89)",
+          "sC": "as"
+        },
+        {
+          "line": "ME ROBASTE EL CORAZÓN., (Re,m,237)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

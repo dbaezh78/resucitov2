@@ -1,0 +1,185 @@
+{
+  "id": "santoroma77",
+  "tt": "Santo Roma 77",
+  "title": "Santo Roma 77",
+  "subtitle": "Roma 77",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "217",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/santoroma77.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=santopalestina74",
+  "sig": "/src/index.html?canto=santo1982",
+  "lizq": [
+    {
+      "line": "SANTO, SANTO, SANTO, (La,m,18)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)",
+      "sC": "as r1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los cielos y la tierra, (La,m,21)(Sol,,63)(La,m,158)",
+      "sC": "tc"
+    },
+    {
+      "line": "están llenos, están llenos de Ti., (Sol,,75)(La,m,287)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)",
+      "sC": "as"
+    },
+    {
+      "line": "EN LO ALTO DEL CIELO. (Fa,,71)(Mi,,188)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)",
+      "sC": "as"
+    },
+    {
+      "line": "EN LO ALTO DEL CIELO. (La,m,185)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SANTO, SANTO, SANTO, (La,m,18)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)",
+          "sC": "as r1"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendito es el que viene,, (La,m,18)(Sol,,55)(La,m,189)",
+      "sC": "tc"
+    },
+    {
+      "line": "en el nombre, en el nombre del Señor., (Sol,,67)(La,m,346)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)",
+          "sC": "as"
+        },
+        {
+          "line": "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)",
+          "sC": "as"
+        },
+        {
+          "line": "EN LO ALTO DEL CIELO., (Fa,,71)(Mi,,188)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "HOSANNA, HOSANNA, (Fa,,15)(Mi,,157)",
+          "sC": "as"
+        },
+        {
+          "line": "HOSANNA, HOSANNA, (Fa,,15)(Mi,,157)",
+          "sC": "as"
+        },
+        {
+          "line": "HOSANNA, HOSANNA, (Fa,,15)(Sol,,157)",
+          "sC": "as"
+        },
+        {
+          "line": "EN LO ALTO DEL CIELO., (La,m,185)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SANTO, SANTO, SANTO, (La,m,18)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)",
+          "sC": "as r1"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

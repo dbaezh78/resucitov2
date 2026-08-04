@@ -1,0 +1,121 @@
+{
+  "id": "bendicealmamiaayahveh",
+  "tt": "Bendice, Alma Mía, A Yahveh",
+  "title": "Bendice, Alma Mía, A Yahveh",
+  "subtitle": "Sal 103 (102)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "26",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/bendicealmamiaayahveh.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=bendecirealsenorentodotiempo",
+  "sig": "/src/index.html?canto=benditaerestumaria",
+  "lizq": [
+    {
+      "line": "BENDICE, ALMA MÍA, A YAHVEH,,(La,m,19)(Mi,,285)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DEL FONDO DE MI SER, SU NOMBRE., (La,m,284)",
+      "sC": "as"
+    },
+    {
+      "line": "BENDICE, ALMA MÍA, A YAHVEH,,(Mi,,281)",
+      "sC": "as"
+    },
+    {
+      "line": "NO OLVIDES SUS AMORES., (La,m,209)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Él, que tus culpas perdona,,(Re,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "que todas tus dolencias cura,,(La,m,251)",
+      "sC": ""
+    },
+    {
+      "line": "saca tu vida de la muerte,,(Mi,,209)",
+      "sC": ""
+    },
+    {
+      "line": "te colma de gracia y amor., (La,m,235)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Él, que te hace justicia,,(Re,m,21)",
+      "sC": ""
+    },
+    {
+      "line": "que defiende a los más pobres,,(La,m,246)",
+      "sC": ""
+    },
+    {
+      "line": "a Moisés enseñó sus caminos,,(Mi,,245)",
+      "sC": ""
+    },
+    {
+      "line": "a Israel sus hazañas mostró., (La,m,262)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "BENDICE, ALMA MÍA, A YAHVEH,(La,m,19)(Mi,,285)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DEL FONDO DE MI SER, SU NOMBRE., (La,m,284)",
+          "sC": "as"
+        },
+        {
+          "line": "BENDICE, ALMA MÍA, A YAHVEH,,(Mi,,281)",
+          "sC": "as"
+        },
+        {
+          "line": "NO OLVIDES SUS AMORES., (La,m,209)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

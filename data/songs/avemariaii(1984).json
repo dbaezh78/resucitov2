@@ -1,0 +1,104 @@
+{
+  "id": "avemariaii(1984)",
+  "tt": "Ave María II (1984)",
+  "title": "Ave María II",
+  "subtitle": "Lc 1,28ss - 1984 ",
+  "category": [
+    "PreCatecumenado",
+    "Cuaresma",
+    "Salmodias",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "22",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/avemariaii.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=avemariai",
+  "sig": "/src/index.html?canto=babiloniacriminal",
+  "lizq": [
+    {
+      "line": "Ave       María,,(Do,,10)(Mi,,42)(Fa,,72)(Mi,,124)",
+      "sC": "tc"
+    },
+    {
+      "line": "llena     de gracia,,(Do,,10)(Mi,,45)(Fa,,72)(Mi,,135)",
+      "sC": ""
+    },
+    {
+      "line": "el Señor es contigo,,(Fa,,64)(Mi,,157)",
+      "sC": ""
+    },
+    {
+      "line": "bendita tú eres, (Fa,,52)",
+      "sC": ""
+    },
+    {
+      "line": "entre todas las mujeres,,(Mi,,192)",
+      "sC": ""
+    },
+    {
+      "line": "y bendito es el fruto, (Fa,,67)",
+      "sC": ""
+    },
+    {
+      "line": "de tu vientre, Jesús., (Mi,,169)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SANTA MARÍA,,(Do,,10)(Mi,,39)(Fa,,65)(Mi,,129)",
+      "sC": "ta as"
+    },
+    {
+      "line": "MADRE DE DIOS,,(Do,,10)(Mi,,42)(Fa,,68)(Mi,,138)",
+      "sC": "as"
+    },
+    {
+      "line": "RUEGA POR NOSOTROS, (Fa,,129)(Mi,,130)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE SOMOS PECADORES,,(Fa,,68)(Mi,,200)",
+      "sC": "as"
+    },
+    {
+      "line": "RUEGA AHORA, (Fa,,111)",
+      "sC": "as"
+    },
+    {
+      "line": "Y EN LA HORA DE NUESTRA MUERTE., (Mi,,311)(Fa,,343)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AMÉN., (Mi,,42)",
+      "sC": "as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

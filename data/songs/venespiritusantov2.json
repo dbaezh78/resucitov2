@@ -1,0 +1,381 @@
+{
+  "id": "venespiritusantov2",
+  "tt": "Ven, Espíritu Santo",
+  "title": "Ven, Espíritu Santo",
+  "subtitle": "Secuencia de Pentecostés - Himno latin. «Veni, Sancte Spiritus»",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "167",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/venespiritusanto.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=vendellibano",
+  "sig": "/src/index.html?canto=venhijodelhombre",
+  "lizq": [
+    {
+      "line": "VEN, ESPÍRITU SANTO,, (Do,,10)(Fa,,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,20)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ven, padre de los pobres,, (Do,,10)(Fa,,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "ven, luz del corazón., (Mi,,20)",
+      "sC": ""
+    },
+    {
+      "line": "Ven, consolador buenísimo,, (Do,,10)(Fa,,250)",
+      "sC": ""
+    },
+    {
+      "line": "dulce huésped del alma., (Mi,,20)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ven, dulce refrigerio,, (Do,,10)(Fa,,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "en la fatiga tú eres descanso;, (Mi,,20)",
+      "sC": ""
+    },
+    {
+      "line": "en el calor tú eres nuestro alivio;, (Do,,10)(Fa,,250)",
+      "sC": ""
+    },
+    {
+      "line": "en el llanto eres consuelo., (Mi,,20)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Oh luz dichosísima, (Do,,10)(Fa,,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "inunda de tu resplandor, (Mi,,20)",
+      "sC": ""
+    },
+    {
+      "line": "lo íntimo del corazón de tus fieles,, (Do,,10)(Fa,,250)",
+      "sC": ""
+    },
+    {
+      "line": "llega hasta el fondo del alma., (Mi,,20)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sin tu luz nada hay puro en el hombre,, ",
+      "sC": "tc"
+    },
+    {
+      "line": "nada hay inocente., ",
+      "sC": ""
+    },
+    {
+      "line": "Mira la fuerza del pecado,, ",
+      "sC": ""
+    },
+    {
+      "line": "cuando tú no estás con nosotros., ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Lava lo que está sucio,, ",
+      "sC": "tc"
+    },
+    {
+      "line": "riega lo que está árido,, ",
+      "sC": ""
+    },
+    {
+      "line": "sana lo que está enfermo., ",
+      "sC": ""
+    },
+    {
+      "line": "Convierte al duro y al rígido., ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Inflama lo que está tibio,, ",
+      "sC": "tc"
+    },
+    {
+      "line": "encamina al que se ha extraviado., ",
+      "sC": ""
+    },
+    {
+      "line": "Danos tus siete dones,, ",
+      "sC": ""
+    },
+    {
+      "line": "danos tu amor y tu alegría., ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Danos virtud y premio,, ",
+      "sC": "tc"
+    },
+    {
+      "line": "danos la alegría de la salvación,, ",
+      "sC": ""
+    },
+    {
+      "line": "danos una muerte santa,, ",
+      "sC": ""
+    },
+    {
+      "line": "danos el gozo eterno., ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Danos sabiduría y entendimiento,, ",
+      "sC": "tc"
+    },
+    {
+      "line": "danos ciencia y piedad,, ",
+      "sC": ""
+    },
+    {
+      "line": "danos consejo y fortaleza,, ",
+      "sC": ""
+    },
+    {
+      "line": "danos el temor de Dios., ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Danos tus santos frutos:, ",
+      "sC": "tc"
+    },
+    {
+      "line": "danos paciencia y bondad,, ",
+      "sC": ""
+    },
+    {
+      "line": "danos amor y alegría,, ",
+      "sC": ""
+    },
+    {
+      "line": "danos justicia y verdad., ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "sourceBook": "resucito"
+}

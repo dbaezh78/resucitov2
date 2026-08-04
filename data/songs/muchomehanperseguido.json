@@ -1,0 +1,213 @@
+{
+  "id": "muchomehanperseguido",
+  "tt": "Mucho Me Han Perseguido ",
+  "title": "Mucho Me Han Perseguido ",
+  "subtitle": "Salmo 129 (128)",
+  "category": [
+    "Precatecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "119",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/muchomehanperseguido.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=misericordiamiamisericordia",
+  "sig": "/src/index.html?canto=noestaaquiresucito",
+  "lizq": [
+    {
+      "line": "Mucho me han perseguido desde mi juventud,, (La,m,20)(Mi,,422)",
+      "sC": "tc"
+    },
+    {
+      "line": "mucho me han perseguido, que lo diga Israel., (La,m,418)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MUCHO ME HAN PERSEGUIDO, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DESDE MI JUVENTUD,, (Mi,,178)",
+      "sC": "as"
+    },
+    {
+      "line": "MUCHO ME HAN PERSEGUIDO, ",
+      "sC": "as"
+    },
+    {
+      "line": "PERO NO HAN PODIDO CONMIGO., (La,m,286)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sobre mi espalda araron aradores,, (La,m,20)(Mi,,291)",
+      "sC": "tc"
+    },
+    {
+      "line": "sobre mi espalda alargaron sus surcos., (La,m,324)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SOBRE MI ESPALDA ARARON, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LOS ARADORES,, (Mi,,107)",
+      "sC": "as"
+    },
+    {
+      "line": "SOBRE MI ESPALDA ALARGARON, ",
+      "sC": "as"
+    },
+    {
+      "line": "SUS SURCOS., (La,m,63)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mas el Señor, que es justo,, (La,m,20)(Mi,,214)",
+      "sC": "tc"
+    },
+    {
+      "line": "rompió las coyundas de los malvados., (La,m,315)",
+      "sC": ""
+    },
+    {
+      "line": "Mas el Señor, que es justo,, (Mi,,214)",
+      "sC": ""
+    },
+    {
+      "line": "rompió las coyundas de los malvados., (La,m,314)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Retrocedan los que odian a Sión,, (La,m,20)(Mi,,294)",
+      "sC": "tc"
+    },
+    {
+      "line": "retrocedan los que odian a Sión., (La,m,285)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "RETROCEDAN LOS QUE ODIAN A SIÓN,, (La,m,20)(Mi,,343)",
+      "sC": "ta as"
+    },
+    {
+      "line": "RETROCEDAN LOS QUE ODIAN A SIÓN., (La,m,341)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que sean como la hierba, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "que crece en el tejado,, (Mi,,180)",
+      "sC": ""
+    },
+    {
+      "line": "como la hierba que se seca, ",
+      "sC": ""
+    },
+    {
+      "line": "antes de arrancarla., (La,m,154)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "De ella no llena el segador su mano,, (Mi,,306)",
+      "sC": ""
+    },
+    {
+      "line": "de ella no llena su regazo el gavillador., (La,m,354)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "RETROCEDAN LOS QUE ODIAN A SIÓN, (La,m,20)(Mi,,344)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "RETROCEDAN LOS QUE ODIAN A SIÓN., (La,m,341)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "MUCHO ME HAN PERSEGUIDO, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DESDE MI JUVENTUD,, (Mi,,178)",
+          "sC": "as"
+        },
+        {
+          "line": "MUCHO ME HAN PERSEGUIDO, ",
+          "sC": "as"
+        },
+        {
+          "line": "PERO NO HAN PODIDO CONMIGO., (La,m,286)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

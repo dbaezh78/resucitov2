@@ -1,0 +1,248 @@
+{
+  "id": "himnoalacruzgloriosa",
+  "tt": "Himno A La Cruz Gloriosa",
+  "title": "Himno A La Cruz Gloriosa",
+  "subtitle": "Homilía La Santa Pascua (Anónimo s. II)",
+  "category": [
+    "Catecumenado"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "227",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/himnoalacruzgloriosa.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=heaquiquenuestroespejoeselsenor",
+  "sig": "/src/index.html?canto=jacob",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "LA CRUZ GLORIOSA, (Mi,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DEL SEÑOR RESUCITADO, (Sol#,,18)(Do#,m,210)",
+      "sC": "as"
+    },
+    {
+      "line": "ES EL ÁRBOL DE LA SALVACIÓN., (Fa#,m,80)(Sol#,,281)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DE ÉL YO ME NUTRO,, (Mi,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "EN ÉL ME DELEITO,, (Sol#,,18)(Do#,m,145)",
+      "sC": "as"
+    },
+    {
+      "line": "EN SUS RAÍCES CREZCO,, (Fa#,m,55)",
+      "sC": "as"
+    },
+    {
+      "line": "EN SUS RAMAS YO ME EXTIENDO., (Si,7,16)(Mi,,273)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Su rocío me da fuerza,, (Sol#,,19)(La,,173)",
+      "sC": "tc"
+    },
+    {
+      "line": "su Espíritu como brisa me fecunda;, (Sol#,,292)",
+      "sC": ""
+    },
+    {
+      "line": "a su sombra he puesto yo mi tienda., (Fa#,m,69)(Sol#,,300)",
+      "sC": ""
+    },
+    {
+      "line": "En el hambre es la comida,, (La,,68)",
+      "sC": ""
+    },
+    {
+      "line": "en la desnudez es mi vestido,, ",
+      "sC": ""
+    },
+    {
+      "line": "en la sed es agua viva., (Sol#,,187)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Angosto sendero, mi puerta estrecha,, (Fa#,m,24)(Sol#,,314)",
+      "sC": ""
+    },
+    {
+      "line": "escala de Jacob, lecho de amor, (Fa#,m,39)",
+      "sC": ""
+    },
+    {
+      "line": "donde nos ha desposado el Señor., (Sol#,,309)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LA CRUZ GLORIOSA, (Mi,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DEL SEÑOR RESUCITADO, (Sol#,,18)(Do#,m,210)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL ÁRBOL DE LA SALVACIÓN., (Fa#,m,80)(Sol#,,210)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "DE ÉL YO ME NUTRO,, (Mi,,10)",
+          "sC": "as"
+        },
+        {
+          "line": "EN ÉL ME DELEITO,, (Sol#,,18)(Do#,m,145)",
+          "sC": "as"
+        },
+        {
+          "line": "EN SUS RAÍCES CREZCO,, (Fa#,m,15)",
+          "sC": "as"
+        },
+        {
+          "line": "EN SUS RAMAS YO ME EXTIENDO., (Si,7,16)(Mi,,273)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [
+    {
+      "line": "En el temor es mi defensa,, (Sol#,,19)(La,,207)",
+      "sC": "tc"
+    },
+    {
+      "line": "en el tropiezo me da fuerzas,, (Sol#,,227)",
+      "sC": ""
+    },
+    {
+      "line": "en la victoria es la corona,, (La,,92)",
+      "sC": ""
+    },
+    {
+      "line": "en la lucha ella es mi premio., (Sol#,,236)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Árbol de vida eterna,, (Fa#,m,24)(Sol#,,159)",
+      "sC": ""
+    },
+    {
+      "line": "misterio del universo., (Fa#,m,47)(Sol#,,163)",
+      "sC": ""
+    },
+    {
+      "line": "Columna de la tierra,, (La,,10)",
+      "sC": ""
+    },
+    {
+      "line": "tu cima toca el cielo, ",
+      "sC": ""
+    },
+    {
+      "line": "y en tus brazos abiertos, ",
+      "sC": ""
+    },
+    {
+      "line": "brilla el amor de Dios., (Sol#,,184)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LA CRUZ GLORIOSA, (Mi,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DEL SEÑOR RESUCITADO, (Sol#,,18)(Do#,m,210)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL ÁRBOL DE LA SALVACIÓN., (Fa#,m,80)(Sol#,,210)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "DE ÉL YO ME NUTRO,, (Mi,,10)",
+          "sC": "as"
+        },
+        {
+          "line": "EN ÉL ME DELEITO,, (Sol#,,18)(Do#,m,145)",
+          "sC": "as"
+        },
+        {
+          "line": "EN SUS RAÍCES CREZCO,, (Fa#,m,15)",
+          "sC": "as"
+        },
+        {
+          "line": "EN SUS RAMAS YO ME EXTIENDO., (Si,7,16)(Mi,,273)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

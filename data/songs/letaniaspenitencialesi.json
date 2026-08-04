@@ -1,0 +1,328 @@
+{
+  "id": "letaniaspenitencialesi",
+  "tt": "Letanías Penitenciales I",
+  "title": "Letanías Penitenciales I",
+  "subtitle": "Letanía para la Celebración Penitencial – modelo abreviado",
+  "category": [
+    "Liturgia",
+    "Penitencial"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "191",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/letaniaspenitencialesi.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=letaniasdelossantos",
+  "sig": "/src/index.html?canto=letaniaspenitencialesii",
+  "lizq": [
+    {
+      "line": "Tú que al ciego que gritaba le diste la vista,, (Mi,m,20)(La,m,383)",
+      "sC": "tc"
+    },
+    {
+      "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Señor, ten piedad., (Do,,39)(Si,7,151)",
+      "sC": "tc"
+    },
+    {
+      "line": "SEÑOR, TEN PIEDAD., (Do,,47)(Si,7,176)",
+      "sC": "ta as srtp"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú que no condenaste a la adúltera,, (Mi,m,20)(La,m,291)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
+          "sC": "as sub"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú que comiste con publicanos y pecadores,, (Mi,m,20)(La,m,380)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
+          "sC": "as sub"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú que llevaste la salvación a la casa de Zaqueo,, (Mi,m,20)(La,m,445)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
+          "sC": "as sub"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú que de la muerte llamaste a Lázaro,, (Mi,m,20)(La,m,323)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
+          "sC": "as sub"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú que a Judas lo amaste hasta el final,, (Mi,m,20)(La,m,260)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_5",
+      "initialState": "collapsed",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
+          "sC": "as sub"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor, ten piedad., (Do,,10)(Si,7,151)",
+      "sC": "tc"
+    },
+    {
+      "line": "SEÑOR, TEN PIEDAD., (Do,,50)(Si,7,170)",
+      "sC": "ta as srtp"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú que desde la cruz perdonaste al ladrón,, (Mi,m,20)(La,m,387)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_6",
+      "initialState": "collapsed",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
+          "sC": "as sub"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú que eres el único que no te escandalizas de mí,, (Mi,m,20)(La,m,468)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_7",
+      "initialState": "collapsed",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
+          "sC": "as sub"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú que eres el único que amas al enemigo, (Mi,m,20)(La,m,381)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_8",
+      "initialState": "collapsed",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
+          "sC": "as sub"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú que has entrado en la muerte por mis pecados, Señor,, (Mi,m,20)(La,m,436)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_9",
+      "initialState": "collapsed",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
+          "sC": "as sub"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú que para mi salvación has resucitado de la muerte,, (Mi,m,20)(La,m,483)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_10",
+      "initialState": "collapsed",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
+          "sC": "as sub"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor, ten piedad., (Do,,10)(Si,7,151)",
+      "sC": "tc"
+    },
+    {
+      "line": "SEÑOR, TEN PIEDAD., (Do,,50)(Si,7,170)",
+      "sC": "ta as srtp"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

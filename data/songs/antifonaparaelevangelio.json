@@ -1,0 +1,204 @@
+{
+  "id": "antifonaparaelevangelio",
+  "tt": "Antífona Para El Evangelio",
+  "title": "Antífona Para El Evangelio",
+  "subtitle": "Tiempo de Cuaresma",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "182",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/antifonaparaelevangelio.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=aleluyapascual",
+  "sig": "/src/index.html?canto=bendiciondelagua",
+  "lizq": [
+    {
+      "line": "Modelo I",
+      "sC": "as",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "La estrofa que hace el cantor se canta con la, melodía del «Aleluya interleccional - Modelo I».",
+      "sC": "fsize",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Gloria a ti, oh Cristo,, (Sol,,14)(Do,,158)",
+      "sC": "tc"
+    },
+    {
+      "line": "Rey de eterna gloria,, (Re,,162)",
+      "sC": ""
+    },
+    {
+      "line": "Rey de eterna gloria., (Sol,,160)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "GLORIA A TI, OH CRISTO,, (Sol,,14)(Do,,191)",
+      "sC": "ta as"
+    },
+    {
+      "line": "REY DE ETERNA GLORIA,, (Re,,194)",
+      "sC": "as"
+    },
+    {
+      "line": "REY DE ETERNA GLORIA., (Sol,,194)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo soy la vid, vosotros los sarmientos., (Mi,m,20)(Re,,80)(Mi,m,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "El que permanece en mí y yo en él,, (Re,,228)(Mi,m,317)",
+      "sC": ""
+    },
+    {
+      "line": "ese da fruto abundante., (Re,,10)(Mi,m,184)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "GLORIA A TI, OH CRISTO, (Sol,,14)(Do,,191)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "REY DE ETERNA GLORIA,, (Re,,194)",
+          "sC": "as"
+        },
+        {
+          "line": "REY DE ETERNA GLORIA., (Sol,,194)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Modelo II",
+      "sC": "as",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Toda la antífona se canta con la misma melodía del «Aleluya interleccional - Modelo I».",
+      "sC": "fsize",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Gloria al Señor, gloria al Señor,, (Sol,,14)",
+      "sC": "tc"
+    },
+    {
+      "line": "gloria al Señor, gloria al Señor,, (Do,,121)(Re,,272)",
+      "sC": ""
+    },
+    {
+      "line": "gloria al Señor., (Sol,,125)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Sol,,14)",
+      "sC": "ta as"
+    },
+    {
+      "line": "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Do,,159)(Re,,348)",
+      "sC": "as"
+    },
+    {
+      "line": "GLORIA AL SEÑOR., (Sol,,157)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En el esplendor de la nube,, (Mi,m,20)(Re,,223)",
+      "sC": "tc"
+    },
+    {
+      "line": "se oyó la voz del Padre:, (Mi,m,177)",
+      "sC": ""
+    },
+    {
+      "line": "Este es mi Hijo amado, escuchadle,, (Re,,183)(Mi,m,300)",
+      "sC": ""
+    },
+    {
+      "line": "este es mi Hijo amado, escuchadle»., (Re,,179)(Mi,m,302)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "GLORIA AL SEÑOR, (Sol,,14)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Sol,,14)",
+          "sC": "as sub"
+        },
+        {
+          "line": "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Do,,159)(Re,,348)",
+          "sC": "as"
+        },
+        {
+          "line": "GLORIA AL SEÑOR., (Sol,,157)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

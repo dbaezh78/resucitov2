@@ -1,0 +1,306 @@
+{
+  "id": "debora",
+  "tt": "Débora",
+  "title": "Débora",
+  "subtitle": "Jueces 5",
+  "category": [
+    "Catecumenado",
+    "Vírgen María",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "223",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/debora.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=cuandodormia",
+  "sig": "/src/index.html?canto=elmismodios",
+  "lizq": [
+    {
+      "line": "Cuando Israel reúne la asamblea,, (Re,7,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "cuando el pueblo se ofrece voluntario: ",
+      "sC": "s1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "BENDECID A YAHVEH,, (Mi,m,20)(Fa,,184)",
+      "sC": "ta as"
+    },
+    {
+      "line": "BENDECID A YAHVEH., (Mi,,184)",
+      "sC": "as"
+    },
+    {
+      "line": "BENDECID A YAHVEH,, (Mi,m,20)(Fa,,184)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE A YAHVEH QUIERO CANTAR., (Mi,,287)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DESPIERTA, DÉBORA,, (La,m,66)",
+      "sC": "as"
+    },
+    {
+      "line": "DESPIERTA, DÉBORA,, (Fa,,65)",
+      "sC": "as"
+    },
+    {
+      "line": "¡ENTONA EL CANTAR!, (Mi,,180)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DESPIERTA, DÉBORA,, (La,m,67)",
+      "sC": "as"
+    },
+    {
+      "line": "DESPIERTA, DÉBORA,, (Fa,,64)",
+      "sC": "as"
+    },
+    {
+      "line": "¡ARRIBA BARAC!, (Mi,,139)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En los días de Samgar, hijo de Anat,, (Re,7,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "en los días de Yael, ",
+      "sC": "s1"
+    },
+    {
+      "line": "ya no había caravanas, ",
+      "sC": "s1"
+    },
+    {
+      "line": "no se podía andar por los caminos, ",
+      "sC": "s1"
+    },
+    {
+      "line": "porque Israel se había buscado otros dioses, ",
+      "sC": "s1"
+    },
+    {
+      "line": "por eso la guerra era a sus puertas, ",
+      "sC": "s1"
+    },
+    {
+      "line": "y no había guerrero en Israel, ",
+      "sC": "s1"
+    },
+    {
+      "line": "no se encontraba una lanza entre diez mil. ",
+      "sC": "s1"
+    }
+  ],
+  "lder": [
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_debora_1",
+      "initialState": "collapsed",
+      "triggerLine": "BENDECID A YAHVEH, (Mi,m,20)(Fa,,184)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "BENDECID A YAHVEH., (Mi,,184)",
+          "sC": "as"
+        },
+        {
+          "line": "BENDECID A YAHVEH,, (Mi,m,20)(Fa,,184)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE A YAHVEH QUIERO CANTAR., (Mi,,287)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "DESPIERTA, DÉBORA,, (La,m,66)",
+          "sC": "as"
+        },
+        {
+          "line": "DESPIERTA, DÉBORA,, (Fa,,65)",
+          "sC": "as"
+        },
+        {
+          "line": "¡ENTONA EL CANTAR!, (Mi,,180)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "DESPIERTA, DÉBORA,, (La,m,67)",
+          "sC": "as"
+        },
+        {
+          "line": "DESPIERTA, DÉBORA,, (Fa,,64)",
+          "sC": "as"
+        },
+        {
+          "line": "¡ARRIBA BARAC!, (Mi,,139)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cuando salías de Seír, Yahveh, Dios mío,, (Re,7,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "cuando avanzabas por los campos de Edom, ",
+      "sC": "s1"
+    },
+    {
+      "line": "tembló la tierra, se estremeció el cielo, ",
+      "sC": "s1"
+    },
+    {
+      "line": "las nubes en agua se fundieron, ",
+      "sC": "s1"
+    },
+    {
+      "line": "delante de Ti los montes se licuaron, ",
+      "sC": "s1"
+    },
+    {
+      "line": "delante de Ti, Dios de Israel. ",
+      "sC": "s1"
+    },
+    {
+      "line": "Desde los cielos lucharon las estrellas, ",
+      "sC": ""
+    },
+    {
+      "line": "DESDE LOS CIELOS, ",
+      "sC": "ta as"
+    },
+    {
+      "line": "LUCHARON LAS ESTRELLAS, ",
+      "sC": "as"
+    },
+    {
+      "line": "Desde los cielos lucharon contra Sísara, ",
+      "sC": "tc"
+    },
+    {
+      "line": "DESDE LOS CIELOS, ",
+      "sC": "ta as"
+    },
+    {
+      "line": "LUCHARON CONTRA SÍSARA, ",
+      "sC": "as"
+    },
+    {
+      "line": "el torrente Quisón, ",
+      "sC": "tc"
+    },
+    {
+      "line": "el torrente sagrado los barrió. ",
+      "sC": "s1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_debora_1",
+      "initialState": "collapsed",
+      "triggerLine": "BENDECID A YAHVEH, (Mi,m,20)(Fa,,184)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "BENDECID A YAHVEH., (Mi,,184)",
+          "sC": "as"
+        },
+        {
+          "line": "BENDECID A YAHVEH,, (Mi,m,20)(Fa,,184)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE A YAHVEH QUIERO CANTAR., (Mi,,287)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "DESPIERTA, DÉBORA,, (La,m,66)",
+          "sC": "as"
+        },
+        {
+          "line": "DESPIERTA, DÉBORA,, (Fa,,65)",
+          "sC": "as"
+        },
+        {
+          "line": "¡ENTONA EL CANTAR!, (Mi,,180)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "DESPIERTA, DÉBORA,, (La,m,67)",
+          "sC": "as"
+        },
+        {
+          "line": "DESPIERTA, DÉBORA,, (Fa,,64)",
+          "sC": "as"
+        },
+        {
+          "line": "¡ARRIBA BARAC!, (Mi,,139)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

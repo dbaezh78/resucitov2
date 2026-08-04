@@ -1,0 +1,159 @@
+{
+  "id": "santopalestina74",
+  "tt": "Santo Palestina 74",
+  "title": "Santo",
+  "subtitle": "Palestina 74",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "216",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/santopalestina74.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=santomelodiahebraica",
+  "sig": "/src/index.html?canto=santoroma77",
+  "lizq": [
+    {
+      "line": "SANTO, SANTO, SANTO,, (Re,m,22)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SANTO, SANTO, SANTO,, (Sol,m,21)",
+      "sC": "as"
+    },
+    {
+      "line": "SANTO, SANTO, SANTO,, (La,,18)",
+      "sC": "as"
+    },
+    {
+      "line": "SANTO ES EL SEÑOR., (Sol,m,22)(La,,175)",
+      "sC": "as"
+    },
+    {
+      "line": "YAHVEH SEBAOTH,, (Sol,m,22)(La,,144)",
+      "sC": "as"
+    },
+    {
+      "line": "YAHVEH SEBAOTH., (Sol,m,21)(La,,143)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los cielos, (Re,m,21)(Sol,m,74)",
+      "sC": "tc"
+    },
+    {
+      "line": "y la tierra, (Re,m,58)",
+      "sC": ""
+    },
+    {
+      "line": "están llenos,, (Sol,m,77)",
+      "sC": ""
+    },
+    {
+      "line": "están llenos de Ti., (La,,160)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA, HOSANNA,, (Re,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HOSANNA, HOSANNA., (La,,25)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA, HOSANNA,, (Re,m,21)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA, HOSANNA,, (La,,23)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA EN LO ALTO DEL CIELO,, (Sol,m,52)(La,,293)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA, HOSANNA., (Sol,m,49)(La,,209)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Bendito, (Re,m,21)(Sol,m,72)",
+      "sC": "tc"
+    },
+    {
+      "line": "es el que viene,, (Re,m,111)",
+      "sC": ""
+    },
+    {
+      "line": "en el nombre,, (Sol,m,65)",
+      "sC": ""
+    },
+    {
+      "line": "en el nombre del Señor., (La,,205)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HOSANNA, HOSANNA,, (Re,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HOSANNA, HOSANNA., (La,,25)",
+          "sC": "as"
+        },
+        {
+          "line": "HOSANNA, HOSANNA,, (Re,m,21)",
+          "sC": "as"
+        },
+        {
+          "line": "HOSANNA, HOSANNA,, (La,,23)",
+          "sC": "as"
+        },
+        {
+          "line": "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,,293)",
+          "sC": "as"
+        },
+        {
+          "line": "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

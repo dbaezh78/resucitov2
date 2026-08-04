@@ -1,0 +1,216 @@
+{
+  "id": "salmo5",
+  "tt": "Salmodias",
+  "title": "Salmo 5",
+  "subtitle": "ORACIÓN DE LA MAÑANA DE UN JUSTO PERSEGUIDO - Salmo 5, 2-10. 12-13",
+  "category": [
+    "Precatecumenado",
+    "Celebración"
+  ],
+  "catCanto": "Liturgia",
+  "salmodia": "1,2,4,5,7,17 | Cuaresma, Súplica",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "311",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/invocacionalespiritusanto.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ohluzgozosa",
+  "sig": "/src/index.html?canto=#",
+  "lizq": [
+    {
+      "line": "Señor, escucha mis palabras,, (Sol,m,23)(La,7,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "atiende a mis gemidos,, (Sol,m,23)(La,7,250)",
+      "sC": ""
+    },
+    {
+      "line": "haz caso de mis gritos de auxilio,, (Re,m,22)(La,7,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Rey mío y Dios mío., (Sib,7,)(La,7,250)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A ti te suplico, Señor;, (Sol,m,23)(La,7,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "por la mañana escucharás mi voz,, (Sol,m,23)(La,7,250)",
+      "sC": ""
+    },
+    {
+      "line": "por la mañana te expongo mi causa,, (Re,m,22)(La,7,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "y me quedo aguardando., (Sib,7,)(La,7,250)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú no eres un Dios que ame la maldad,, (Sol,m,23)(La,7,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "ni el malvado es tu huésped,, (Re,m,22)(La,7,250)",
+      "sC": ""
+    },
+    {
+      "line": "ni el arrogante se mantiene en tu presencia., (Sib,7,)(La,7,250)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Detestas a los malhechores,, (Sol,m,23)(La,7,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "destruyes a los mentirosos;, (Sol,m,23)(La,7,250)",
+      "sC": "as"
+    },
+    {
+      "line": "al hombre sanguinario y traicionero, (Re,m,22)(La,7,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "lo aborrece el Señor., (Sib,7,)(La,7,250)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pero yo, por tu gran bondad,, (Sol,m,23)(La,7,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "entraré en tu casa,, (Sol,m,23)(La,7,250)",
+      "sC": "as"
+    },
+    {
+      "line": "me postraré ante tu templo santo, (Re,m,22)(La,7,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "con toda reverencia., (Sib,7,)(La,7,250)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Señor, guíame con tu justicia,, (Sol,m,23)(La,7,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "porque tengo enemigos;, (Re,m,22)(La,7,250)",
+      "sC": "as"
+    },
+    {
+      "line": "alláname tu camino., (Sib,7,)(La,7,250)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En su boca no hay sinceridad,, (Sol,m,23)(La,7,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "su corazón es perverso;, (Sol,m,23)(La,7,250)",
+      "sC": ""
+    },
+    {
+      "line": "su garganta es un sepulcro abierto,, (Re,m,22)(La,7,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "mientras halagan con la lengua., (Sib,7,)(La,7,250)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que se alegren los que se acogen a ti,, (Sol,m,23)(La,7,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "con júbilo eterno;, (Sol,m,23)(La,7,250)",
+      "sC": ""
+    },
+    {
+      "line": "protégelos, para que se llenen de gozo, (Re,m,22)(La,7,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "los que aman tu nombre., (Sib,7,)(La,7,250)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque tú, Señor, bendices al justo,, (Sol,m,23)(La,7,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "y como un escudo lo rodea tu favor., (Sib,7,)(La,7,250)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Gloria al Padre, y al Hijo, y al Espíritu Santo., (Sol,m,23)(La,7,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Como era en el principio, ahora y siempre, (Sib,7,20)",
+      "sC": "as"
+    },
+    {
+      "line": "por los siglos de los siglos. Amén., (La,7,260)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "salmodias"
+}

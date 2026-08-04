@@ -1,0 +1,286 @@
+{
+  "id": "escuchadislaslejanas",
+  "tt": "Escuchad, Islas Lejanas",
+  "title": "Escuchad, Islas Lejanas",
+  "subtitle": "Isaias 49,1-16 - Segundo canto de Siervo de Yahveh",
+  "category": [
+    "Precatecumenado",
+    "Adviento",
+    "Navidad",
+    "Entrada",
+    "Comunión",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "70",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/escuchadislaslejanas.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=escondemeenloocultodetutienda",
+  "sig": "/src/index.html?canto=esteeseldiaenqueactuoelsenor",
+  "lizq": [
+    {
+      "line": "Escuchad, islas lejanas,, (La,7,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "prestad atención, naciones,, ",
+      "sC": ""
+    },
+    {
+      "line": "así habla el Señor, el Santo de Israel:, ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aquel que tiene la vida despreciada, (Re,,10)",
+      "sC": ""
+    },
+    {
+      "line": "y es el abominio de las gentes,, (Fa#,,16)(Sol,,245)",
+      "sC": ""
+    },
+    {
+      "line": "al esclavo de los dominadores:, (Fa#,,16)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "TE VERÁN LOS REYES,, (Re,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SE PONDRÁN EN PIE. ",
+      "sC": "as r1"
+    },
+    {
+      "line": "LOS PRÍNCIPES DE LA TIERRA, (Fa#,m,75)",
+      "sC": "as"
+    },
+    {
+      "line": "SE INCLINARÁN,, (Sol,,135)",
+      "sC": "as"
+    },
+    {
+      "line": "YO TE HE ELEGIDO, ",
+      "sC": "as"
+    },
+    {
+      "line": "TE HE ELEGIDO., (Fa#,,111)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En el día favorable te ayudaré,, (Re,,11)",
+      "sC": "tc"
+    },
+    {
+      "line": "en el día de la muerte te asistiré,, (Fa#,m,75)(Sol,,302)",
+      "sC": ""
+    },
+    {
+      "line": "pues te he elegido, ",
+      "sC": ""
+    },
+    {
+      "line": "como alianza a las naciones., (Fa#,,233)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "TE VERÁN LOS REYES, (Re,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SE PONDRÁN EN PIE. ",
+          "sC": "as r1"
+        },
+        {
+          "line": "LOS PRÍNCIPES DE LA TIERRA, (Fa#,m,75)",
+          "sC": "as"
+        },
+        {
+          "line": "SE INCLINARÁN,, (Sol,,135)",
+          "sC": "as"
+        },
+        {
+          "line": "YO TE HE ELEGIDO, ",
+          "sC": "as"
+        },
+        {
+          "line": "TE HE ELEGIDO., (Fa#,,111)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Dirás a los prisioneros: «Salid»;, (Re,,12)",
+      "sC": "tc"
+    },
+    {
+      "line": "dirás a los ciegos: «Mirad»;, (Fa#,m,27)(Sol,,217)",
+      "sC": ""
+    },
+    {
+      "line": "conducirás a los pueblos, ",
+      "sC": ""
+    },
+    {
+      "line": "por el camino de la vida., (Fa#,,200)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "TE VERÁN LOS REYES, (Re,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SE PONDRÁN EN PIE. ",
+          "sC": "as r1"
+        },
+        {
+          "line": "LOS PRÍNCIPES DE LA TIERRA, (Fa#,m,75)",
+          "sC": "as"
+        },
+        {
+          "line": "SE INCLINARÁN,, (Sol,,135)",
+          "sC": "as"
+        },
+        {
+          "line": "YO TE HE ELEGIDO, ",
+          "sC": "as"
+        },
+        {
+          "line": "TE HE ELEGIDO. (Fa#,,111)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mas Sión dice: «Yahveh me ha abandonado,, (Si,m,20)(Mi,m,202)(Si,m,383)",
+      "sC": "tc"
+    },
+    {
+      "line": "Yahveh me ha olvidado»., (Mi,m,51)(Si,m,193)",
+      "sC": ""
+    },
+    {
+      "line": "¿Acaso una madre olvida a su hijo de pecho,, (Sol,,13)(Fa#,,381)",
+      "sC": ""
+    },
+    {
+      "line": "es que se olvida del hijo de su seno?, (Sol,,13)(Fa#,,307)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PUES AUNQUE UNA MADRE, (Re,,12)(Fa#,m,214)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SE OLVIDASE DE SU HIJO,, (Sol,,208)",
+      "sC": "as"
+    },
+    {
+      "line": "YO JAMÁS TE OLVIDARÉ., (Fa#,,221)",
+      "sC": "as"
+    },
+    {
+      "line": "MÍRAME, EN LAS PALMAS DE MIS MANOS, (Sol,,15)",
+      "sC": "as"
+    },
+    {
+      "line": "TE LLEVO TATUADA., (Fa#,,147)",
+      "sC": "as"
+    },
+    {
+      "line": "MÍRAME, EN LAS PALMAS DE MIS MANOS, (Sol,,15)",
+      "sC": "as"
+    },
+    {
+      "line": "TE LLEVO TATUADA., (Fa#,,158)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "TE VERÁN LOS REYES, (Re,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SE PONDRÁN EN PIE. ",
+          "sC": "as r1"
+        },
+        {
+          "line": "LOS PRÍNCIPES DE LA TIERRA, (Fa#,m,75)",
+          "sC": "as"
+        },
+        {
+          "line": "SE INCLINARÁN,, (Sol,,135)",
+          "sC": "as"
+        },
+        {
+          "line": "YO TE HE ELEGIDO, ",
+          "sC": "as"
+        },
+        {
+          "line": "TE HE ELEGIDO. (Fa#,,111)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

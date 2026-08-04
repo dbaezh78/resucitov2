@@ -1,0 +1,183 @@
+{
+  "id": "is401017",
+  "tt": "Salmodia",
+  "title": "Salmodias - Cántico",
+  "subtitle": "EL BUEN PASTOR ES EL DIOS ALTISIMO Y SAPIENTÍSIMO - Is 40, 10-17",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "salmodia": "",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "300",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/is401017.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=elmismodios",
+  "sig": "/src/index.html?canto=heaquiquenuestroespejoeselsenor",
+  "lizq": [
+    {
+      "line": "Mirad, el Señor Dios llega con poder,, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "y su brazo manda., (La,m,20)(Mi,m,154)",
+      "sC": ""
+    },
+    {
+      "line": "Mirad, viene con él su salario, (Mi,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "y su recompensa lo precede., (La,m,20)(Mi,m,250)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Como un pastor que apacienta el rebaño,, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "su brazo lo reúne,, (La,m,20)(Mi,m,151)",
+      "sC": ""
+    },
+    {
+      "line": "toma en brazos los corderos, (Mi,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "y hace recostar a las madres., (La,m,20)(Mi,m,250)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Quién ha medido a puñados el mar, (Mi,m,20)(La,m,321)",
+      "sC": "tc"
+    },
+    {
+      "line": "o mensurado a palmos el cielo,, (Mi,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "o a cuartillos el polvo de la tierra?, (La,m,20)(Mi,m,301)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Quién ha pesado en la balanza los montes, (Mi,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "y en la báscula las colinas?, (La,m,20)(Mi,m,239)",
+      "sC": "as"
+    },
+    {
+      "line": "¿Quién ha medido el aliento del Señor?, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "¿Quién le ha sugerido su proyecto?, (La,m,20)(Mi,m,303)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "¿Con quién se aconsejó para entenderlo,, (Mi,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "para que le enseñara el camino exacto,, (La,m,20)(Mi,m,350)",
+      "sC": "as"
+    },
+    {
+      "line": "para que le enseñara el saber, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "y le sugiriese el método inteligente?, (La,m,20)(Mi,m,322)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mirad, las naciones son gotas de un cubo, (Mi,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "y valen lo que el polvillo de balanza., (La,m,20)(Mi,m,317)",
+      "sC": "as"
+    },
+    {
+      "line": "Mirad, las islas pesan lo que un grano,, (Mi,m,20)(La,m,338)",
+      "sC": "tc"
+    },
+    {
+      "line": "el Líbano no basta para leña,, (Mi,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "sus fieras no bastan para el holocausto., (La,m,20)(Mi,m,347)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En su presencia, las naciones todas,, (Mi,m,20)(La,m,317)",
+      "sC": "ta as"
+    },
+    {
+      "line": "como si no existieran,, (Mi,m,20)",
+      "sC": "as"
+    },
+    {
+      "line": "son ante él como nada y vacío., (La,m,20)(Mi,m,262)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Gloria al Padre, y al Hijo, y al Espíritu Santo., (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "Como era en el principio, ahora y siempre, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "por los siglos de los siglos. Amén., (Mi,m,294)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "salmodias"
+}

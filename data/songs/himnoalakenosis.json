@@ -1,0 +1,227 @@
+{
+  "id": "himnoalakenosis",
+  "tt": "Himno A La Kenosis",
+  "title": "Himno A La Kenosis",
+  "subtitle": "Filipenses 2,1-11",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Fracción Del Pan",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "87",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/himnoalakenosis.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=himnoalacaridad",
+  "sig": "/src/index.html?canto=himnodeadviento",
+  "lizq": [
+    {
+      "line": "Con un mismo amor,, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "con un mismo espíritu,, (Si,7,183)",
+      "sC": ""
+    },
+    {
+      "line": "con los mismos sentimientos., (Mi,m,231)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Nada por rivalidad,, ",
+      "sC": ""
+    },
+    {
+      "line": "ni por vanagloria,, (Si,7,131)",
+      "sC": ""
+    },
+    {
+      "line": "mas todo con humildad., (Mi,m,210)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Considerando a los otros como superiores a ti,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "no buscando tu propio interés,, (Si,7,273)",
+      "sC": ""
+    },
+    {
+      "line": "teniendo los sentimientos de Jesús., (Mi,m,319)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El cual, siendo Dios,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "no retuvo ávidamente su dignidad,, (Si,7,308)",
+      "sC": ""
+    },
+    {
+      "line": "sino que se hizo hombre., (Mi,m,180)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y hecho hombre, se humilló a sí mismo,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "tomando condición de esclavo,, (Si,7,265)",
+      "sC": ""
+    },
+    {
+      "line": "obedeciendo hasta la muerte., (Mi,m,250)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Y qué muerte!:, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "muerte de pecador, muerte de malhechor,, (La,m,93)(Mi,m,169)(La,m,287)(Mi,m,387)",
+      "sC": ""
+    },
+    {
+      "line": "¡muerte de cruz!, (Si,7,47)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Por eso Dios lo resucitó, lo exaltó, (Sol,,14)(La,m,217)",
+      "sC": ""
+    },
+    {
+      "line": "y le dio el Nombre más alto que existe:, (Si,7,63)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "tc1"
+    },
+    {
+      "line": "Cristo Jesús es el Señor,, (Mi,m,20)",
+      "sC": "aleluya"
+    },
+    {
+      "line": "Cristo Jesús es el Señor,, (Re,,10)",
+      "sC": "aleluya"
+    },
+    {
+      "line": "Cristo Jesús es el Señor,, (Do,,10)",
+      "sC": "aleluya"
+    },
+    {
+      "line": "¡ALELUYA!, (Si,7,85)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA,ALELUYA,ALELUYA., (Mi,m,53)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ALELUYA,ALELUYA,ALELUYA., (Re,,55)",
+      "sC": "as"
+    },
+    {
+      "line": "ALELUYA,ALELUYA,ALELUYA., (Do,,55)",
+      "sC": "as"
+    },
+    {
+      "line": "¡ALELUYA!, (Si,7,86)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "tc1"
+    },
+    {
+      "line": "Cristo Jesús es mi Señor,, (Mi,m,20)",
+      "sC": "aleluya"
+    },
+    {
+      "line": "Cristo Jesús es tu Señor,, (Re,,10)",
+      "sC": "aleluya"
+    },
+    {
+      "line": "Cristo Jesús es el Señor,, (Do,,10)",
+      "sC": "aleluya"
+    },
+    {
+      "line": "¡ALELUYA!, (Si,7,86)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ALELUYA, ALELUYA, ALELUYA, (Mi,m,53)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Re,,55)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,55)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "sourceBook": "resucito"
+}

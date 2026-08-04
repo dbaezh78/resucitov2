@@ -1,0 +1,163 @@
+{
+  "id": "aleluyayallegoelreino",
+  "tt": "Aleluya, Ya Llegó El Reino",
+  "title": "Aleluya, Ya Llegó El Reino",
+  "subtitle": "Apocalipsis 19,6-9",
+  "category": [
+    "PreCatecumenado",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "15",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/aleluyayallegoelreino.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=aleluyabendecidalsenor",
+  "sig": "/src/index.html?canto=alzaospuertas",
+  "lizq": [
+    {
+      "line": "ALELUYA,ALELUYA,ALELUYA., (Do,,15)(Mi,,149)(La,m,262)",
+      "sC": "as ta"
+    },
+    {
+      "line": "ALELUYA,ALELUYA,ALELUYA., (Do,,53)(Mi,,148)(La,m,262)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ya llegó el Reino, (Do,,11)(Mi,,124)",
+      "sC": "tc"
+    },
+    {
+      "line": "del Señor y su Cristo., (La,m,159)",
+      "sC": ""
+    },
+    {
+      "line": "Ya llegó el Reino, (Do,,11)(Mi,,121)",
+      "sC": ""
+    },
+    {
+      "line": "del Señor nuestro Dios., (La,m,202)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ALELUYA, ALELUYA, ALELUYA (Do,,15)(Mi,,149)(La,m,262)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA. (Do,,53)(Mi,,149)(La,m,262)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Démosle gloria,(Do,,10)(Mi,,113)",
+      "sC": "tc"
+    },
+    {
+      "line": "han llegado las bodas., (La,m,170)",
+      "sC": ""
+    },
+    {
+      "line": "Démosle gloria,(Do,,10)(Mi,,112)",
+      "sC": ""
+    },
+    {
+      "line": "las bodas con nuestro Dios., (La,m,240)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "ALELUYA, ALELUYA, ALELUYA., (Do,,15)(Mi,,149)(La,m,262)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,53)(Mi,,149)(La,m,262)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Bienaventurados, (Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "los invitados a bodas,(Mi,,10)",
+      "sC": ""
+    },
+    {
+      "line": "a las bodas del Cordero., (La,m,201)",
+      "sC": ""
+    },
+    {
+      "line": "Bienaventurados, (Do,,10)",
+      "sC": "mt"
+    },
+    {
+      "line": "los invitados a bodas,(Mi,,10)",
+      "sC": ""
+    },
+    {
+      "line": "a las bodas con el Señor., (La,m,222)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "ALELUYA, ALELUYA, ALELUYA., (Do,,15)(Mi,,149)(La,m,262)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,53)(Mi,,149)(La,m,262)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

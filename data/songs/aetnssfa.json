@@ -1,0 +1,204 @@
+{
+  "id": "aetnssfa",
+  "tt": "Fiesta de la Sagrada Familia",
+  "title": "Fiesta de la Sagrada Familia",
+  "subtitle": "Aleluya InterLeccional, Modelo I, II, III - Año A, Colosenses 3, 15a. 16a - La Sagrada Familia",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "180",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/aleluyainterleccional.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=aetns25dicmda",
+  "sig": "/src/index.html?canto=aetn1ea",
+  "lizq": [
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_ae_1",
+      "initialState": "collapsed",
+      "triggerLine": "Modelo I",
+      "sC": "as mod1",
+      "color": "red",
+      "lines": [
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Aleluya, aleluya, aleluya, aleluya., (Sol,,11)(Do,,200)(Re,,230)(Sol,,301)",
+          "sC": "tc"
+        },
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,11)(Do,,245)(Re,,275)(Sol,,369)",
+          "sC": "ta as bg"
+        },
+        {
+          "line": "Acordes:",
+          "sC": "anota"
+        },
+        {
+          "line": "(Mi,m,10)(Re,,80)(Mi,m,150)",
+          "sC": "bnota"
+        },
+        {
+          "line": "Que la paz de Cristo actúe de árbitro",
+          "sC": "tc"
+        },
+        {
+          "line": "en vuestro corazón;",
+          "sC": ""
+        },
+        {
+          "line": "la palabra de Cristo habite entre vosotros",
+          "sC": ""
+        },
+        {
+          "line": "en toda su riqueza.",
+          "sC": ""
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "ALELUYA ... (Sol,,11)",
+          "sC": "ta as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_ae_2",
+      "initialState": "collapsed",
+      "triggerLine": "Modelo II",
+      "sC": "as mod2",
+      "color": "red",
+      "lines": [
+        {
+          "line": "Con la música del «Aleluya, ya llegó el Reino».",
+          "sC": "fssmall",
+          "color": "gray"
+        },
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)",
+          "sC": "ta as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)",
+          "sC": "as bg"
+        },
+        {
+          "line": "Acordes:",
+          "sC": "anota"
+        },
+        {
+          "line": "(Do,,10)(Mi,,80)(La,m,150)",
+          "sC": "bnota"
+        },
+        {
+          "line": "Que la paz de Cristo actúe de árbitro",
+          "sC": "tc"
+        },
+        {
+          "line": "en vuestro corazón;",
+          "sC": "tc"
+        },
+        {
+          "line": "la palabra de Cristo habite entre vosotros",
+          "sC": "tc"
+        },
+        {
+          "line": "en toda su riqueza.",
+          "sC": "tc"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "ALELUYA ... (Do,,11)",
+          "sC": "ta as"
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_ae_3",
+      "initialState": "expanded",
+      "triggerLine": "Modelo III",
+      "sC": "as mod3",
+      "color": "red",
+      "lines": [
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)",
+          "sC": "tc"
+        },
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)",
+          "sC": "ta as"
+        },
+        {
+          "line": "Acordes:",
+          "sC": "anota"
+        },
+        {
+          "line": "(Mi,m,10)(La,m,80)(Mi,m,150)",
+          "sC": "bnota"
+        },
+        {
+          "line": "Que la paz de Cristo actúe de árbitro",
+          "sC": "tc"
+        },
+        {
+          "line": "en vuestro corazón;",
+          "sC": "bg"
+        },
+        {
+          "line": "la palabra de Cristo habite entre vosotros",
+          "sC": "bg"
+        },
+        {
+          "line": "en toda su riqueza.",
+          "sC": "bg"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "ALELUYA ... (Mi,m,19)",
+          "sC": "ta as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "aclamaciones"
+}

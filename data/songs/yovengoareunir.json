@@ -1,0 +1,163 @@
+{
+  "id": "yovengoareunir",
+  "tt": "Yo Vengo A Reunir",
+  "title": "Yo Vengo A Reunir",
+  "subtitle": "Isaías 66,18-21",
+  "category": [
+    "Precatecumenado",
+    "Entrada",
+    "Final",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "177",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/yovengoareunir.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 4,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=yoteamosenor",
+  "sig": "/src/index.html?canto=zaqueo",
+  "lizq": [
+    {
+      "line": "Yo vengo a reunir,, (Mi,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "YO VENGO A REUNIR, ",
+      "sC": "ta as"
+    },
+    {
+      "line": "a todas las naciones,, (La,,10)(Mi,,155)",
+      "sC": ""
+    },
+    {
+      "line": "A TODAS LAS NACIONES., (La,,10)(Mi,,186)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Vendrán y verán mi gloria,, (Fa#,,60)(Si,7,212)",
+      "sC": ""
+    },
+    {
+      "line": "VENDRÁN Y VERÁN MI GLORIA., (La,,74)(Mi,,252)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)",
+      "sC": "ta as"
+    },
+    {
+      "line": "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y pondré en ellos una señal, (Do#,m,14)",
+      "sC": ""
+    },
+    {
+      "line": "y los enviaré a las naciones más lejanas,, (La,,20)(Mi,,345)",
+      "sC": ""
+    },
+    {
+      "line": "para que anuncien mi gloria,, (Si,7,120)(Mi,,239)",
+      "sC": ""
+    },
+    {
+      "line": "para que anuncien mi gloria., (Si,7,120)(Mi,,239)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "GLORIA, GLORIA, GLORIA, (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Y traerán a vuestros hermanos, (Sol#,,16)(La,,259)",
+      "sC": "tc"
+    },
+    {
+      "line": "de entre todas las naciones,, (Mi,,222)",
+      "sC": ""
+    },
+    {
+      "line": "como oblación al Señor,, (Si,7,120)(Mi,,212)",
+      "sC": ""
+    },
+    {
+      "line": "como oblación al Señor., (Si,7,120)(Mi,,212)",
+      "sC": ""
+    },
+    {
+      "line": "Y de entre ellos tomaré, (Do#,m,24)(Sol#,,214)",
+      "sC": ""
+    },
+    {
+      "line": "sacerdotes para mí,, (Si,,10)(Sol#,,179)",
+      "sC": ""
+    },
+    {
+      "line": "sacerdotes que anunciarán mi gloria,, (La,,66)(Mi,,320)",
+      "sC": ""
+    },
+    {
+      "line": "sacerdotes que anunciarán mi gloria., (Si,7,70)(Mi,,320)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "GLORIA, GLORIA, GLORIA, (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

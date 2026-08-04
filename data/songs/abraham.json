@@ -1,0 +1,164 @@
+{
+  "id": "abraham",
+  "tt": "Abraham",
+  "title": "Abraham",
+  "subtitle": "Génesis 18,1–5 – Teofanía de Mambré",
+  "category": [
+    "PreCatecumenado",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "cejilla": "",
+  "catCanto": "Precatecumenado",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "8",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/abraham.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=abbapadre",
+  "sig": "/src/index.html?canto=aclamadalsenor",
+  "lizq": [
+    {
+      "line": "Hacía calor aquel día, (La,m,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "cuando Abraham, (Re,m,28)(Mi,,139)",
+      "sC": ""
+    },
+    {
+      "line": "estaba sentado delante de su tienda., (La,m,307)",
+      "sC": ""
+    },
+    {
+      "line": "Hacía calor aquel día, ",
+      "sC": "mt"
+    },
+    {
+      "line": "cuando Abraham, (Re,m,27)(Mi,,137)",
+      "sC": ""
+    },
+    {
+      "line": "estaba sentado, ",
+      "sC": ""
+    },
+    {
+      "line": "cerca del encinar de Mambré., (La,m,266)",
+      "sC": ""
+    },
+    {
+      "line": "Alzando los ojos, miró, (Sol,,125)(Fa,,201)",
+      "sC": "mt"
+    },
+    {
+      "line": "y tres hombres de pie, (Mi,,199)",
+      "sC": ""
+    },
+    {
+      "line": "estaban delante., (La,m,121)",
+      "sC": ""
+    },
+    {
+      "line": "En cuanto los vio,(Mi,,154)",
+      "sC": "mt"
+    },
+    {
+      "line": "se inclinó hasta el suelo y dijo: (La,m,267)",
+      "sC": ""
+    },
+    {
+      "line": "«Oh Señor mío,(Sol,,123)",
+      "sC": "mt"
+    },
+    {
+      "line": "no pases, te ruego, sin detenerte., (Fa,,143)(Mi,,284)",
+      "sC": ""
+    },
+    {
+      "line": "«SIN DETENERTE,(La,m,119)",
+      "sC": "ta as mt"
+    },
+    {
+      "line": "NO PASES, TE RUEGO,(Sol,,168)",
+      "sC": "as"
+    },
+    {
+      "line": "SIN DETENERTE, SIN DETENERTE»., (Fa,,112)(Mi,,274)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "«Os traeré un poco de agua,(La,m,15)(Mi,,221)",
+      "sC": "tc"
+    },
+    {
+      "line": "os lavaré los pies, ",
+      "sC": ""
+    },
+    {
+      "line": "y reposaréis a la sombra., (La,m,180)",
+      "sC": ""
+    },
+    {
+      "line": "Os traeré un bocado,(Mi,,167)",
+      "sC": "mt"
+    },
+    {
+      "line": "os reconfortaréis, ",
+      "sC": ""
+    },
+    {
+      "line": "y lúego seguiréis adelante., (La,m,214)",
+      "sC": ""
+    },
+    {
+      "line": "No por casualidad, (Sol,,154)",
+      "sC": "mt"
+    },
+    {
+      "line": "habéis pasado hoy delante de mí., (Fa,,161)(Mi,,310)",
+      "sC": ""
+    },
+    {
+      "line": "«OH SEÑOR MÍO,(La,m,135)",
+      "sC": "ta as mt"
+    },
+    {
+      "line": "NO PASES, TE RUEGO,(Sol,,171)",
+      "sC": "as"
+    },
+    {
+      "line": "SIN DETENERTE, SIN DETENERTE., (Fa,,106)(Mi,,270)",
+      "sC": "as"
+    },
+    {
+      "line": "SIN DETENERTE,(La,m,110)",
+      "sC": "as mt"
+    },
+    {
+      "line": "NO PASES, TE RUEGO,(Sol,,170)",
+      "sC": "as"
+    },
+    {
+      "line": "SIN DETENERTE, SIN DETENERTE»., (Fa,,108)(Mi,,273)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

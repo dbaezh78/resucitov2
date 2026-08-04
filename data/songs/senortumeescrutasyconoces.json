@@ -1,0 +1,183 @@
+{
+  "id": "senortumeescrutasyconoces",
+  "tt": "Señor, Tú Me Escrutas Y Conoces",
+  "title": "Señor, Tú Me Escrutas Y Conoces",
+  "subtitle": "Salmo 139 (138)",
+  "category": [
+    "Catecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "2",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "233",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/senortumeescrutasyconoces.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ohsenormicorazonyanoesambicioso",
+  "sig": "/src/index.html?canto=shemaisrael",
+  "lizq": [
+    {
+      "line": "Señor, tú me escrutas y conoces,, (Re,m,22)(Sol,m,275)",
+      "sC": "tc"
+    },
+    {
+      "line": "tú sabes cuando me acuesto y me levanto., (Re,m,365)",
+      "sC": ""
+    },
+    {
+      "line": "Sondeas mis pensamientos desde lejos,, (Sol,m,354)",
+      "sC": ""
+    },
+    {
+      "line": "te son familiares todas mis sendas., (Sol,m6,132)(Re,m,287)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que no está aún en mi lengua la palabra,, (Do,,10)(Do,7,243)(Fa,,353)",
+      "sC": ""
+    },
+    {
+      "line": "y ya tú, Señor, te la sabes toda., (La,,117)(Re,m,267)",
+      "sC": ""
+    },
+    {
+      "line": "Me acosas por detrás,, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "me atacas por delante,, (Fa,,181)",
+      "sC": ""
+    },
+    {
+      "line": "y al mismo tiempo, (La,,132)",
+      "sC": ""
+    },
+    {
+      "line": "tienes puesta sobre mí tu mano., (Re,m,273)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y esto es ciencia misteriosa para mí,, (Sol,m,22)(La,,340)",
+      "sC": ""
+    },
+    {
+      "line": "ciencia que no llego a comprender,, (Sol,m,25)(La,,317)",
+      "sC": ""
+    },
+    {
+      "line": "ciencia tan alta, que yo no la entiendo., (Sol,m,25)(La,,323)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿A DÓNDE IRÉ YO LEJOS DE TU ESPÍRITU?, (Fa,,20)(La,m,346)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¿A DÓNDE DE TU ROSTRO ESCAPARÉ?, (Si♭,,342)",
+      "sC": "as"
+    },
+    {
+      "line": "SI SUBO HASTA EL CIELO, ALLÍ ESTÁS TÚ,, (La,,381)",
+      "sC": "as"
+    },
+    {
+      "line": "SI DESCIENDO HASTA LA MUERTE,, (Si♭,,91)",
+      "sC": "as"
+    },
+    {
+      "line": "ALLÍ TE ENCUENTRO., (La,,139)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "ME ACOSAS POR DETRÁS,, (Fa,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ME ATACAS POR DELANTE,, (La,m,210)",
+      "sC": "as"
+    },
+    {
+      "line": "Y AL MISMO TIEMPO, ",
+      "sC": "as"
+    },
+    {
+      "line": "TIENES PUESTA SOBRE MÍ TU MANO., (Si♭,,247)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y ESTO ES CIENCIA MISTERIOSA PARA MÍ,, (La,,393)",
+      "sC": "as"
+    },
+    {
+      "line": "CIENCIA QUE NO LLEGO A COMPRENDER,, (Si♭,,25)(La,,375)",
+      "sC": "as"
+    },
+    {
+      "line": "CIENCIA TAN ALTA,, (Si♭,,25)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE YO NO LA ENTIENDO., (La,,192)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor, tú me escrutas y conoces,, (Re,m,22)(Sol,m,277)",
+      "sC": "tc"
+    },
+    {
+      "line": "sondeas y pruebas mi corazón,, (Re,m,275)",
+      "sC": ""
+    },
+    {
+      "line": "para que no siga un camino de doblez,, (Sol,m,349)",
+      "sC": ""
+    },
+    {
+      "line": "para que no me aparte nunca, ",
+      "sC": ""
+    },
+    {
+      "line": "de tu camino., (Re,m,101)",
+      "sC": ""
+    }
+  ],
+  "sourceBook": "resucito"
+}

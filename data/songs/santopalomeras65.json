@@ -1,0 +1,160 @@
+{
+  "id": "santopalomeras65",
+  "tt": "Santo Palomeras 65 ",
+  "title": "Santo",
+  "subtitle": "Palomeras 65",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "214",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/santopalomeras65.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=salmodiasparalaudes2",
+  "sig": "/src/index.html?canto=santomelodiahebraica",
+  "lizq": [
+    {
+      "line": "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SANTO ES EL SEÑOR,, (Mi,,181)",
+      "sC": "as"
+    },
+    {
+      "line": "DIOS DEL UNIVERSO,, (Si,7,154)",
+      "sC": "as"
+    },
+    {
+      "line": "SANTO ES EL SEÑOR., (Mi,,180)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Llenos están los cielos, (Do,,11)",
+      "sC": "tc"
+    },
+    {
+      "line": "y la tierra de tu gloria., (Si,7,178)",
+      "sC": ""
+    },
+    {
+      "line": "Hosanna, hosanna, hosanna,, (Do,,11)",
+      "sC": ""
+    },
+    {
+      "line": "hosanna en las alturas., (Si,7,180)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SANTO ES EL SEÑOR,, (Mi,,181)",
+          "sC": "as"
+        },
+        {
+          "line": "DIOS DEL UNIVERSO,, (Si,7,154)",
+          "sC": "as"
+        },
+        {
+          "line": "SANTO ES EL SEÑOR., (Mi,,180)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Bendito es el que viene, (Mi,m,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "en nombre del Señor,, (Si,7,15)",
+      "sC": ""
+    },
+    {
+      "line": "bendito es el que viene, ",
+      "sC": ""
+    },
+    {
+      "line": "en nombre del Señor., (Mi,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA EN LAS ALTURAS,, (Mi,m,15)",
+      "sC": "ta as"
+    },
+    {
+      "line": "BENDITO ES EL QUE VIENE,, (Si,7,219)",
+      "sC": "as"
+    },
+    {
+      "line": "BENDITO ES EL QUE VIENE, ",
+      "sC": "as"
+    },
+    {
+      "line": "EN NOMBRE DEL SEÑOR., (Mi,,215)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SANTO ES EL SEÑOR,, (Mi,,181)",
+          "sC": "as"
+        },
+        {
+          "line": "DIOS DEL UNIVERSO,, (Si,7,154)",
+          "sC": "as"
+        },
+        {
+          "line": "SANTO ES EL SEÑOR., (Mi,,180)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

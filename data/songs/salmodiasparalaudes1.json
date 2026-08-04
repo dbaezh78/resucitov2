@@ -1,0 +1,256 @@
+{
+  "id": "salmodiasparalaudes1",
+  "tt": "Salmodias Para Laudes",
+  "title": "Salmodias Para Laudes",
+  "subtitle": "Modelo I, II, III, IV, V",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "Desde el inicio de la etapa del Padre Nuestro en los tiempos de Adviento y Cuaresma. ",
+  "nCanURL": "",
+  "dbno": "212",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/salmodiasparalaudes.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=salmodiasparalaoraciondelosfieles",
+  "sig": "/src/index.html?canto=salmodiasparalaudes2",
+  "lizq": [
+    {
+      "line": "SALMODIA I, ",
+      "sC": "negrita",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Sal 64 [63] ",
+      "sC": "sub",
+      "color": "gray"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A ti acude todo mortal, (Sol,m,25)(La,7,202)",
+      "sC": "tc"
+    },
+    {
+      "line": "A CAUSA DE SUS CULPAS;, (Sol,m,25)(La,7,185)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Nuestros delitos nos abruman,, (Re,m,22)(La,7,233)",
+      "sC": "tc"
+    },
+    {
+      "line": "PERO TÚ LOS PERDONAS., (Si♭,7,17)(La,7,191)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SALMODIA II, ",
+      "sC": "negrita",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Is 38, ",
+      "sC": "sub",
+      "color": "gray"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Levantan y enrollan mi vida, (La,m,20)(Sol,,236)",
+      "sC": "tc"
+    },
+    {
+      "line": "como una tienda de pastores., (La,m,247)",
+      "sC": ""
+    },
+    {
+      "line": "COMO UN TEJEDOR, DEVANABA YO MI VIDA,, (Sol,,14)(La,m,387)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y ME CORTAN LA TRAMA., (Sol,,14)(La,m,197)",
+      "sC": "as"
+    },
+    {
+      "line": "Día y noche me estás acabando,, (La,m,17)",
+      "sC": "tc"
+    },
+    {
+      "line": "sollozo hasta el amanecer., (Sol,,14)(La,m,235)",
+      "sC": "tc"
+    },
+    {
+      "line": "ME QUIEBRAS LOS HUESOS COMO UN LEÓN,, (Sol,,14)(La,m,398)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DÍA Y NOCHE ME ESTÁS ACABANDO., (Sol,,14)(La,m,295)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SALMODIA III, ",
+      "sC": "negrita",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Sal 43 [42], ",
+      "sC": "sub",
+      "color": "gray"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú eres mi Dios y protector,, (Re,m,22)(Sol,m,244)",
+      "sC": "tc"
+    },
+    {
+      "line": "¿por qué me rechazas?,, (Re,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "¿POR QUÉ VOY ANDANDO SOMBRÍO,, (Re,m,22)(Sol,m,329)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HOSTIGADO POR MI ENEMIGO?, (Re,m,259)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "SALMODIA IV, ",
+      "sC": "negrita",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Dt 32",
+      "sC": "sub",
+      "color": "gray"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Escuchad, cielos, y hablaré,, (La,m,20)(Mi,,251)",
+      "sC": "tc"
+    },
+    {
+      "line": "oye, tierra, los dichos de mi boca:, (Re,m,22)(Mi,,282)",
+      "sC": ""
+    },
+    {
+      "line": "DESCIENDA COMO LLUVIA MI DOCTRINA,, (La,m,20)(Mi,,360)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DESTILE COMO ROCÍO MI PALABRA., (Re,m,22)(Mi,,294)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SALMODIA V, ",
+      "sC": "negrita",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Sal 46 [45], ",
+      "sC": "sub",
+      "color": "gray"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dios es nuestro refugio y nuestra fuerza,, (Mi,m,20)(Sol,,346)",
+      "sC": "tc"
+    },
+    {
+      "line": "Poderoso defensor en el peligro., (La,,20)(Mi,m,272)",
+      "sC": ""
+    },
+    {
+      "line": "POR ESO NO TEMEMOS AUNQUE TIEMBLE LA TIERRA,, (Mi,m,20)(Sol,,449)",
+      "sC": "ta as width"
+    },
+    {
+      "line": "Y LOS MONTES SE DESPLOMEN EN EL MAR., (La,,20)(Mi,m,403)",
+      "sC": "as width"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que hiervan y bramen sus olas,, (Sol,,14)(Mi,m,275)",
+      "sC": "tc"
+    },
+    {
+      "line": "que sacudan a los montes con su furia., (La,,20)(Mi,m,341)",
+      "sC": ""
+    },
+    {
+      "line": "EL SEÑOR DE LOS EJÉRCITOS ESTÁ CON NOSOTROS,, (Mi,m,20)(Sol,,426)",
+      "sC": "ta as width"
+    },
+    {
+      "line": "NUESTRO ALCÁZAR ES EL DIOS DE JACOB., (La,,20)(Mi,m,380)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El correr de las acequias alegra la ciudad de Dios,, (Mi,m,20)(Sol,,446)",
+      "sC": "tc width"
+    },
+    {
+      "line": "el Altísimo consagra su morada., (La,,20)(Mi,m,274)",
+      "sC": ""
+    },
+    {
+      "line": "TENIENDO A DIOS EN MEDIO, NO VACILA;, (Sol,,14)(Mi,m,356)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DIOS LAS SOCORRE AL DESPUNTAR LA AURORA., (La,,20)(Mi,m,432)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,131 @@
+{
+  "id": "salmo86",
+  "tt": "Salmodias",
+  "title": "Salmo 86",
+  "subtitle": "Salmo 86 - HIMNO A JERUSALÉN, MADRE DE TODOS LOS PUEBLOS.",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "salmodia": "1,2,3",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "311",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/invocacionalespiritusanto.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ohluzgozosa",
+  "sig": "/src/index.html?canto=#",
+  "lizq": [
+    {
+      "line": "Él la ha cimentado sobre el monte santo;, (La,m,20)(Mi,m,370)",
+      "sC": "tc"
+    },
+    {
+      "line": "y el Señor prefiere las puertas de Sión, (La,m,20)(Mi,m,339)",
+      "sC": ""
+    },
+    {
+      "line": "a todas las moradas de Jacob., (Re,,22)(La,m,265)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Qué pregón tan glorioso para ti,, (La,m,20)(Mi,m,282)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ciudad de Dios!, (Re,,22)(La,m,127)",
+      "sC": "as"
+    },
+    {
+      "line": "«Contaré a Egipto y a Babilonia, (La,m,20)(Mi,m,274)",
+      "sC": "tc"
+    },
+    {
+      "line": "entre mis fieles;, (Re,,22)(La,m,131)",
+      "sC": ""
+    },
+    {
+      "line": "filisteos, tirios y etíopes, (La,m,20)(Mi,m,202)",
+      "sC": "ta as"
+    },
+    {
+      "line": "han nacido allí.», (Re,,22)(La,m,131)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Se dirá de Sión: «Uno por uno, (La,m,20)(Mi,m,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "todos han nacido en ella;, (La,m,20)(Mi,m,213)",
+      "sC": ""
+    },
+    {
+      "line": "el Altísimo en persona la ha fundado.», (Re,,22)(La,m,332)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor escribirá en el registro de los pueblos:, (La,m,20)(Mi,m,417)",
+      "sC": "ta as"
+    },
+    {
+      "line": "«Éste ha nacido allí.», (Re,,22)(La,m,166)",
+      "sC": "as"
+    },
+    {
+      "line": "Y cantarán mientras danzan:, (La,m,20)(Mi,m,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "«Todas mis fuentes están en ti.», (Re,,22)(La,m,264)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Gloria al Padre, y al Hijo, y al Espíritu Santo., (La,m,20)(Mi,m,208)(La,m,251)(Mi,m,384)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Como era en el principio, ahora y siempre, (La,m,20)(Mi,m,376)",
+      "sC": "tc"
+    },
+    {
+      "line": "por los siglos de los siglos. Amén., (Re,,20)(La,m,280)",
+      "sC": "tc"
+    }
+  ],
+  "sourceBook": "salmodias"
+}

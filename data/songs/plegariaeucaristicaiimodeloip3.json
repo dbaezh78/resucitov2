@@ -1,0 +1,224 @@
+{
+  "id": "plegariaeucaristicaiimodeloip3",
+  "tt": "Plegaria Eucarística II",
+  "title": "Plegaria Eucarística II",
+  "subtitle": "Modelo I ─ Página 3",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "Me lodía adaptable para los prefacios de solemnidade s o de varios tiempos litúrgicos.",
+  "nCanURL": "",
+  "dbno": "194",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/plegariaeucaristicaiimodeloip3.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=plegariaeucaristicaiimodeloip2",
+  "sig": "/src/index.html?canto=plegariaeucaristicaiimodeloii",
+  "lizq": [
+    {
+      "line": "Acuérdate, Señor, de tu Iglesia (Sol,,15)",
+      "sC": "pa"
+    },
+    {
+      "line": "extendida por toda la tierra; (Mi,m,228)",
+      "sC": ""
+    },
+    {
+      "line": "y con el Papa ... N/., con nuestro obispo ... N/., (La,m,15)(Mi,m,275)",
+      "sC": ""
+    },
+    {
+      "line": "N/",
+      "sC": "n1",
+      "color": "#C24F4D"
+    },
+    {
+      "line": "N/",
+      "sC": "n2",
+      "color": "#C24F4D"
+    },
+    {
+      "line": "y de todos los que en ella cuidan de tu pueblo,, (La,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "llévala a su perfección por la caridad., (Sol,,15)(Si,m,195)(Mi,m,333)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Acuérdate también de nuestros hermanos, (Sol,,13)",
+      "sC": ""
+    },
+    {
+      "line": "que durmieron en la esperanza, (Si,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "de la resurrección, ",
+      "sC": ""
+    },
+    {
+      "line": "y de todos los que han muerto, (La,m,19)",
+      "sC": ""
+    },
+    {
+      "line": "en tu misericordia; (Mi,m,132)",
+      "sC": ""
+    },
+    {
+      "line": "admítelos a contemplar la luz de tu rostro., (Sol,,13)(Si,m,212)(Mi,m,360)",
+      "sC": ""
+    },
+    {
+      "line": "Conmemoración de los Santos",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Ten misericordia de todos nosotros,, (Sol,,15)(Mi,m,250)",
+      "sC": ""
+    },
+    {
+      "line": "y así, con María, la Virgen Madre de Dios,, (La,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "su esposo San José, los apóstoles,(Mi,m,15)(La,m,250)",
+      "sC": ""
+    },
+    {
+      "line": "y cuantos vivieron en tu amistad, (Mi,m,15) ",
+      "sC": ""
+    },
+    {
+      "line": "a través de los tiempos",
+      "sC": ""
+    },
+    {
+      "line": "merezcamos, por tu Hijo Jesucristo,, (Sol,,15)",
+      "sC": ""
+    },
+    {
+      "line": "compartir la vida eterna, (Si,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "y cantar tus alabanzas., (La,,15)(Mi,m,167) ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Doxología y Conclusión de la Plegaria Eucarística",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Por Cristo, con Cristo y en Cristo,(Sol,,15)",
+      "sC": "pa"
+    },
+    {
+      "line": "a ti, Dios Padre omnipotente, (Si,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "en la unidad del Espíritu Santo, (La,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "todo honor y toda gloria, (Mi,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "por los siglos de los siglos., (Sol,,15)",
+      "sC": ""
+    },
+    {
+      "line": "AMÉN, AMÉN, AMÉN., (Sol,,15)(Si,m,101)(La,,135)(Mi,m,181)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "space1941"
+    },
+    {
+      "line": "Cuando el 'Memorial y la Ofrenda' se hace recitada,",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "puede cantarse la Doxología con la siguiente melodía:",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por Cristo, con Cristo y en Cristo,, (Sol,,15)(Re,7,272)",
+      "sC": "pa"
+    },
+    {
+      "line": "a ti, Dios Padre omnipotente,, (Sol,,235)",
+      "sC": ""
+    },
+    {
+      "line": "en la unidad del Espíritu Santo,, (Mi,m,15)(Si,7,250)",
+      "sC": ""
+    },
+    {
+      "line": "todo honor y toda gloria, (Mi,m,194)",
+      "sC": ""
+    },
+    {
+      "line": "por los siglos de los siglos., (Do,,12)(Si,7,210)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AMÉN, AMÉN, AMÉN., (Sol,,13)",
+      "sC": "ta as"
+    },
+    {
+      "line": "AMÉN, AMÉN, AMÉN., (Mi,m,42)",
+      "sC": "as"
+    },
+    {
+      "line": "AMÉN, AMÉN, AMÉN., (Re,,35)(Sol,,176)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "sourceBook": "resucito"
+}

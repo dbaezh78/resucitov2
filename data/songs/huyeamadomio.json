@@ -1,0 +1,123 @@
+{
+  "id": "huyeamadomio",
+  "tt": "Huye, Amado Mío",
+  "title": "Huye, Amado Mío",
+  "subtitle": "Cantar de los Cantares 8,10-14",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Comunión",
+    "Final",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "* Golpe en Fa# m, golpe al aire y Mi",
+  "nCanURL": "",
+  "dbno": "91",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/huyeamadomio.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=himnodepascua",
+  "sig": "/src/index.html?canto=idyanunciadamishermanos",
+  "lizq": [
+    {
+      "line": "Tú, que vives en los jardines,, (La,m,20)(Re,m,230)",
+      "sC": "tc"
+    },
+    {
+      "line": "donde tus compañeros te están escuchando:, (Mi,7,384)",
+      "sC": ""
+    },
+    {
+      "line": "hazme oír tu voz,, (Fa,,14)",
+      "sC": ""
+    },
+    {
+      "line": "hazme oír tu voz., (Mi,,140)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HUYE, AMADO MÍO,, (La,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "COMO UNA GACELA,, (Mi,,162)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO UN CERVATILLO,, (Fa#,m,23)",
+      "sC": "as ast"
+    },
+    {
+      "line": "HASTA EL MONTE DE LAS BALSAMERAS., (Mi,,25)(La,,342)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo soy para mi amado, (La,m,20)(Re,m,179)",
+      "sC": "tc"
+    },
+    {
+      "line": "como aquella que encontró la paz., (La,m,310)",
+      "sC": ""
+    },
+    {
+      "line": "Mi viña está aquí, está ante mí,, (Mi,,161)(La,m,288)",
+      "sC": ""
+    },
+    {
+      "line": "mi viña está aquí, está ante mí., (Mi,,161)(La,m,287)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HUYE, AMADO MÍO, (La,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "COMO UNA GACELA,, (Mi,,162)",
+          "sC": "as"
+        },
+        {
+          "line": "COMO UN CERVATILLO,, (Fa#,m,23)",
+          "sC": "as ast"
+        },
+        {
+          "line": "HASTA EL MONTE DE LAS BALSAMERAS., (Mi,,25)(La,,342)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

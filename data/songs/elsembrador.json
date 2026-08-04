@@ -1,0 +1,211 @@
+{
+  "id": "elsembrador",
+  "tt": "El Sembrador ",
+  "title": "El Sembrador ",
+  "subtitle": "Marcos 4,3ss",
+  "category": [
+    "Catecumenado",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "225",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/elsembrador.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=elmismodios",
+  "sig": "/src/index.html?canto=heaquiquenuestroespejoeselsenor",
+  "lizq": [
+    {
+      "line": "SALIÓ EL SEMBRADOR A SEMBRAR, (Re,m,22)(Do,,323)",
+      "sC": "tc as"
+    },
+    {
+      "line": "Y UNA PARTE CAYÓ EN EL CAMINO., (Re,m,86)",
+      "sC": "as r1"
+    },
+    {
+      "line": "Vinieron las aves,, (Fa,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "se la comieron,, (Sol,,12)",
+      "sC": ""
+    },
+    {
+      "line": "se la comieron,, (La,,104)",
+      "sC": ""
+    },
+    {
+      "line": "SE LA COMIERON., (Re,m,123)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SALIÓ EL SEMBRADOR A SEMBRAR, (Re,m,22)(Do,,323)",
+      "sC": "tc as"
+    },
+    {
+      "line": "Y UNA PARTE CAYÓ EN LA PIEDRA., (Re,m,85)",
+      "sC": "as r1"
+    },
+    {
+      "line": "Salió el sol,, (Fa,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "la secó,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "no había tierra,, (La,,111)",
+      "sC": ""
+    },
+    {
+      "line": "NO HABÍA TIERRA., (Re,m,127)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SALIÓ EL SEMBRADOR A SEMBRAR, (Re,m,22)(Do,,323)",
+      "sC": "tc as"
+    },
+    {
+      "line": "Y UNA PARTE CAYÓ EN EL ESPINO., (Re,m,84)",
+      "sC": "as r1"
+    },
+    {
+      "line": "Creció la semilla,, (Fa,,12)",
+      "sC": "tc"
+    },
+    {
+      "line": "creció el espino,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "la sofocó,, (La,,81)",
+      "sC": ""
+    },
+    {
+      "line": "LA SOFOCÓ., (Re,m,105)",
+      "sC": "ta as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "SALIÓ EL SEMBRADOR A SEMBRAR, (Re,m,22)(Do,,321)",
+      "sC": "tc as"
+    },
+    {
+      "line": "Y UNA PARTE CAYÓ EN LA TIERRA., (Re,m,93)",
+      "sC": "as r1"
+    },
+    {
+      "line": "Y dio fruto,, (Fa,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "unos treinta,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "otros sesenta,, (La,,93)",
+      "sC": ""
+    },
+    {
+      "line": "Y ALGUNOS CIENTO., (Re,m,143)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El que tenga oídos, (Sol,m,25)(Re,m,144)",
+      "sC": "tc"
+    },
+    {
+      "line": "y quiera oír:, (Sol,m,23)(La,,97)",
+      "sC": ""
+    },
+    {
+      "line": "¡Que oiga!, (Re,m,69)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡QUE OIGA!",
+      "sC": "ta as sub width"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No seas camino,, (Sol,m,24)(Re,m,130)",
+      "sC": "tc"
+    },
+    {
+      "line": "NO SEAS CAMINO., (Sol,m,24)(Re,m,142)",
+      "sC": "ta as sub width"
+    },
+    {
+      "line": "No seas la piedra,, (Sol,m,24)(Re,m,130)",
+      "sC": "tc"
+    },
+    {
+      "line": "NO SEAS LA PIEDRA., (Sol,m,24)(Re,m,143)",
+      "sC": "ta as sub width"
+    },
+    {
+      "line": "No seas espino,, (Sol,m,24)(Re,m,129)",
+      "sC": "tc"
+    },
+    {
+      "line": "NO SEAS ESPINO., (Sol,m,24)(Re,m,136)",
+      "sC": "ta as sub width"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que seas la tierra,, (Sol,m,26)(La,,137)",
+      "sC": "tc"
+    },
+    {
+      "line": "LA BUENA TIERRA,, (Sol,m,25)(La,,128)",
+      "sC": "ta as"
+    },
+    {
+      "line": "donde Jesús pueda crecer,, (Re,m,102)(La,7,155)(Re,m,231)",
+      "sC": "tc"
+    },
+    {
+      "line": "DONDE JESÚS PUEDA CRECER., (La,7,176)(Re,m,275)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

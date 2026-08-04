@@ -1,0 +1,221 @@
+{
+  "id": "elneciopiensaquediosnoexiste",
+  "tt": "El Necio Piensa Que Dios No Existe",
+  "title": "El Necio Piensa Que Dios No Existe",
+  "subtitle": "Salmo 14 (13)",
+  "category": [
+    "Precatecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "58",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/elneciopiensaquediosnoexiste.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=elmesiasleon",
+  "sig": "/src/index.html?canto=elpuebloquecaminabaenlastinieblas",
+  "lizq": [
+    {
+      "line": "EL NECIO PIENSA, (Re,m,21)",
+      "sC": "tc as"
+    },
+    {
+      "line": "QUE DIOS NO EXISTE,, (La,7,164)",
+      "sC": "as r1"
+    },
+    {
+      "line": "SE HAN CORROMPIDO, ",
+      "sC": "as"
+    },
+    {
+      "line": "Y HACEN COSAS ABOMINABLES., (Re,m,250)",
+      "sC": "as"
+    },
+    {
+      "line": "NO HAY QUIEN OBRE EL BIEN,, (Sol,m,59)(La,7,263)",
+      "sC": "as"
+    },
+    {
+      "line": "NO HAY QUIEN OBRE EL BIEN., (Si♭,,49)(La,7,260)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor desde el cielo, (Re,m,21)",
+      "sC": "tc"
+    },
+    {
+      "line": "se inclina hacia los hombres,, (La,7,205)",
+      "sC": ""
+    },
+    {
+      "line": "para ver si hay alguno que sea justo,, (Re,m,314)",
+      "sC": ""
+    },
+    {
+      "line": "un hombre que busque a Dios,, (Sol,m,53)(La,7,268)",
+      "sC": ""
+    },
+    {
+      "line": "un hombre que busque a Dios., (Si♭,,48)(La,7,269)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Todos se han desviado,, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "están pervertidos., (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "Nadie que haga el bien, (Si♭,,11)",
+      "sC": ""
+    },
+    {
+      "line": "ni siquiera uno., (La,7,114)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EL NECIO PIENSA, (Re,m,21)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUE DIOS NO EXISTE,, (La,7,164)",
+          "sC": "as r1"
+        },
+        {
+          "line": "SE HAN CORROMPIDO, ",
+          "sC": "as"
+        },
+        {
+          "line": "Y HACEN COSAS ABOMINABLES., (Re,m,250)",
+          "sC": "as"
+        },
+        {
+          "line": "NO HAY QUIEN OBRE EL BIEN,, (Sol,m,59)(La,7,263)",
+          "sC": "as"
+        },
+        {
+          "line": "NO HAY QUIEN OBRE EL BIEN., (Si♭,,49)(La,7,260)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "No entienden nada los malvados, (Sol,m,23)(La,7,274)",
+      "sC": "tc"
+    },
+    {
+      "line": "que devoran a mi pueblo como pan., (Sol,m,24)(La,7,320)",
+      "sC": ""
+    },
+    {
+      "line": "No invocan nunca al Señor,, (Si♭,,13)",
+      "sC": ""
+    },
+    {
+      "line": "mas temblarán de espanto., (La,7,222)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque Dios está con el justo:, (Fa,,10)(La,7,247)",
+      "sC": ""
+    },
+    {
+      "line": "el Señor es su refugio., (Si♭,,11)(La,7,178)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque Dios está con el justo:, (Re,m,22)(Do,,131)(La,7,244)",
+      "sC": "tc"
+    },
+    {
+      "line": "el Señor es su refugio., (Si♭,,15)(La,7,175)",
+      "sC": ""
+    },
+    {
+      "line": "PORQUE DIOS ESTÁ CON EL JUSTO:, (Re,m,22)(Do,,152)(La,7,288)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EL SEÑOR ES SU REFUGIO., (Si♭,,15)(La,7,211)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "EL NECIO PIENSA, (Re,m,21)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUE DIOS NO EXISTE,, (La,7,164)",
+          "sC": "as r1"
+        },
+        {
+          "line": "SE HAN CORROMPIDO, ",
+          "sC": "as"
+        },
+        {
+          "line": "Y HACEN COSAS ABOMINABLES., (Re,m,250)",
+          "sC": "as"
+        },
+        {
+          "line": "NO HAY QUIEN OBRE EL BIEN,, (Sol,m,59)(La,7,263)",
+          "sC": "as"
+        },
+        {
+          "line": "NO HAY QUIEN OBRE EL BIEN., (Si♭,,49)(La,7,260)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

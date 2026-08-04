@@ -1,0 +1,226 @@
+{
+  "id": "nohayenelparecer",
+  "tt": "No Hay En Él Parecer",
+  "title": "No Hay En Él Parecer",
+  "subtitle": "Isaías 53,2ss - Cuarto canto del Siervo de Yahveh",
+  "category": [
+    "Precatecumenado",
+    "Fracción Del Pan",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "121",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/nohayenelparecer.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=noestaaquiresucito",
+  "sig": "/src/index.html?canto=nolimetangere",
+  "lizq": [
+    {
+      "line": "No hay en Él parecer,, (Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "no hay hermosura, (La,m,147)",
+      "sC": ""
+    },
+    {
+      "line": "que atraiga las miradas,, (Sol,7,189)",
+      "sC": ""
+    },
+    {
+      "line": "no hay en él belleza que agrade., (Do,,271)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Despreciado,, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "desecho de los hombres,, (La,m,169)",
+      "sC": ""
+    },
+    {
+      "line": "varón de dolores,, (Do,,121)",
+      "sC": ""
+    },
+    {
+      "line": "conocedor de todos los quebrantos., (La,m,283)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ANTE QUIEN SE VUELVE EL ROSTRO,, (Do,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ANTE QUIEN SE VUELVE EL ROSTRO,, (La,m,277)",
+      "sC": "as"
+    },
+    {
+      "line": "ANTE QUIEN SE VUELVE EL ROSTRO,, (Sol,7,277)",
+      "sC": "as"
+    },
+    {
+      "line": "ANTE QUIEN SE VUELVE EL ROSTRO., (Do,,275)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Menospreciado,, (Do,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "estimado en nada., (La,m,144)",
+      "sC": ""
+    },
+    {
+      "line": "Despreciado,, (Do,,90)",
+      "sC": ""
+    },
+    {
+      "line": "desecho de los hombres,, (La,m,163)",
+      "sC": ""
+    },
+    {
+      "line": "varón de dolores,, (Do,,123)",
+      "sC": ""
+    },
+    {
+      "line": "conocedor de todos los quebrantos., (La,m,286)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ANTE QUIEN SE VUELVE EL ROSTRO, (Do,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ANTE QUIEN SE VUELVE EL ROSTRO,, (La,m,277)",
+          "sC": "as"
+        },
+        {
+          "line": "ANTE QUIEN SE VUELVE EL ROSTRO,, (Sol,7,277)",
+          "sC": "as"
+        },
+        {
+          "line": "ANTE QUIEN SE VUELVE EL ROSTRO., (Do,,275)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pero fue Él, el que cargó con los pecados., (Do,,10)(La,m,355)",
+      "sC": "tc"
+    },
+    {
+      "line": "Pero fue Él, el que cargó con los dolores., (Do,,97)(La,m,347)",
+      "sC": ""
+    },
+    {
+      "line": "TODOS NOSOTROS, (Fa,,123)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ANDÁBAMOS ERRANTES., (Sol,,180)",
+      "sC": "as"
+    },
+    {
+      "line": "MALTRATADO,, (Do,,96)",
+      "sC": "as"
+    },
+    {
+      "line": "MAS ÉL SE SOMETIÓ,, (La,m,190)",
+      "sC": "as"
+    },
+    {
+      "line": "NO ABRIÓ LA BOCA,, (Do,,151)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO CORDERO LLEVADO AL MATADERO., (La,m,367)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "ANTE QUIEN SE VUELVE EL ROSTRO, (Do,,10)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ANTE QUIEN SE VUELVE EL ROSTRO,, (La,m,277)",
+          "sC": "as"
+        },
+        {
+          "line": "ANTE QUIEN SE VUELVE EL ROSTRO,, (Sol,7,277)",
+          "sC": "as"
+        },
+        {
+          "line": "ANTE QUIEN SE VUELVE EL ROSTRO., (Do,,275)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡MALTRATADO!, (Do,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¡MALTRATADO!, ",
+      "sC": "as"
+    },
+    {
+      "line": "¡MALTRATADO!, ",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "padrenuestro",
+  "tt": "Padre Nuestro",
+  "title": "Padre Nuestro",
+  "subtitle": "Tiempo de la Elección",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "2",
+  "nCan": "⚠️Pueden cantarlo aquellas comunidades que han vivido la última parte de la etapa del Padre nuestro.",
+  "nCanURL": "",
+  "dbno": "193",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/padrenuestro.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=letaniaspenitencialesii",
+  "sig": "/src/index.html?canto=plegariaeucaristicaiimodeloi",
+  "lizq": [
+    {
+      "line": "¡ABBÁ, ABBÁ PADRE!, (Re,m,22)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PADRE NUESTRO QUE ESTÁS EN EL CIELO, ",
+      "sC": "as"
+    },
+    {
+      "line": "SANTIFICADO SEA TU NOMBRE;, (Fa,,10)(La,m,158)",
+      "sC": "as"
+    },
+    {
+      "line": "VENGA A NOSOTROS TU REINO;, (Sol,m,24)(La,,261)",
+      "sC": "as"
+    },
+    {
+      "line": "HÁGASE TU VOLUNTAD, (Si♭,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "EN LA TIERRA COMO EN EL CIELO., (La,,291)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DANOS HOY NUESTRO PAN DE CADA DÍA;, (Re,m,22)",
+      "sC": "as"
+    },
+    {
+      "line": "PERDONA NUESTRAS OFENSAS,, (Fa,,11)(La,m,247)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO TAMBIÉN NOSOTROS PERDONAMOS;, (Sol,m,27)",
+      "sC": "as"
+    },
+    {
+      "line": "A LOS QUE NOS OFENDEN;, (La,,188)",
+      "sC": "as"
+    },
+    {
+      "line": "NO NOS DEJES CAER EN LA TENTACIÓN,, (Si♭,,10)(La,,354)",
+      "sC": "as"
+    },
+    {
+      "line": "Y LÍBRANOS DEL MAL., (Re,m,194)",
+      "sC": "as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

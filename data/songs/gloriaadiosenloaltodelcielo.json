@@ -1,0 +1,165 @@
+{
+  "id": "gloriaadiosenloaltodelcielo",
+  "tt": "Gloria A Dios En Lo Alto Del Cielo",
+  "title": "Gloria A Dios En Lo Alto Del Cielo",
+  "subtitle": "Himno Litúrgico",
+  "category": [
+    "Liturgia",
+    "Navidad",
+    "Orinario",
+    "Pascua"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "188",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/gloriaadiosenloaltodelcielo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=credo",
+  "sig": "/src/index.html?canto=letaniasdelossantos",
+  "lizq": [
+    {
+      "line": "GLORIA DIOS EN LO ALTO DEL CIELO,, (Re,,10)(La,,322)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y PAZ EN LA TIERRA, (Sol,,43)",
+      "sC": "as"
+    },
+    {
+      "line": "A LOS HOMBRES QUE AMA EL SEÑOR., (La,,339)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "TE ALABAMOS, TE GLORIFICAMOS,, (Re,,91)(La,,276)",
+      "sC": "as"
+    },
+    {
+      "line": "TE ADORAMOS, TE DAMOS GRACIAS, (Sol,,95)",
+      "sC": "as"
+    },
+    {
+      "line": "POR TU INMENSA GLORIA., (La,,209)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor Dios, Rey celestial,, (Sol,,89)",
+      "sC": "tc"
+    },
+    {
+      "line": "Dios Padre todopoderoso., (Fa#,m,221)",
+      "sC": ""
+    },
+    {
+      "line": "Señor, Hijo único,, (Mi,m,125)",
+      "sC": ""
+    },
+    {
+      "line": "JESUCRISTO., (La,,77)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor Dios, Cordero de Dios,, (Sol,,89)",
+      "sC": "tc"
+    },
+    {
+      "line": "Hijo del Padre;, (Fa#,m,100)",
+      "sC": ""
+    },
+    {
+      "line": "tú que quitas el pecado del mundo,, (Mi,m,293)",
+      "sC": ""
+    },
+    {
+      "line": "TEN PIEDAD DE NOSOTROS., (La,,204              )",
+      "sC": "ta as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Tú que quitas el pecado del mundo,, (Sol,,96)",
+      "sC": "tc"
+    },
+    {
+      "line": "atiende a nuestra súplica;, (Fa#,m,196)",
+      "sC": ""
+    },
+    {
+      "line": "tú, que estás sentado, ",
+      "sC": ""
+    },
+    {
+      "line": "a la derecha del Padre,, (Mi,m,176)",
+      "sC": ""
+    },
+    {
+      "line": "TEN PIEDAD DE NOSOTROS;, (La,,204)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PORQUE SOLO TÚ ERES SANTO,, (Sol,,107)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SOLO TÚ SEÑOR,, (Fa#,m,138)",
+      "sC": "as"
+    },
+    {
+      "line": "SOLO TÚ ALTÍSIMO,, (Mi,m,130)",
+      "sC": "as"
+    },
+    {
+      "line": "JESUCRISTO,, (La,,78)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "con el Espíritu Santo, ",
+      "sC": "tc"
+    },
+    {
+      "line": "en la gloria de Dios Padre., (Re,,207)",
+      "sC": ""
+    },
+    {
+      "line": "AMÉN, AMÉN, (Sol,,12)(Re,,83)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,206 @@
+{
+  "id": "shlomlejmariam",
+  "tt": "Shlom Lej Mariam",
+  "title": "Shlom Lej Mariam",
+  "subtitle": "Ave María en arameo antiguo",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "149",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/shlomlejmariam.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=sermondelamontana",
+  "sig": "/src/index.html?canto=sielsenornoconstruyelacasa",
+  "lizq": [
+    {
+      "line": "SHLOM LEJ MARIAM,, (Mi,m,20)(Si,7,95)(Mi,m,170)",
+      "sC": "tc as"
+    },
+    {
+      "line": "MALIATH TAi BUTHA., (Si,7,110)(Mi,m,149)",
+      "sC": "as r1"
+    },
+    {
+      "line": "MARAN, MARAN AMEJ,, (Do,,52)(Si,7,203)",
+      "sC": "as"
+    },
+    {
+      "line": "MARAN, MARAN AMEJ., (Do,,52)(Si,7,203)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ave María, llena de gracia,, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "el Señor, el Señor es contigo,, (Do,,65)(Si,7,243)",
+      "sC": ""
+    },
+    {
+      "line": "bendita tú eres entre todas las mujeres,, (Do,,47)(Si,7,347)",
+      "sC": ""
+    },
+    {
+      "line": "y bendito es el fruto de tu seno, Jesús., (Do,,63)(La,m,161)(Si,7,344)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SANTA, SANTA MARÍA,, (Mi,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "MADRE, MADRE DE DIOS, ",
+      "sC": "as r2"
+    },
+    {
+      "line": "RUEGA, RUEGA POR NOSOTROS, (Do,,33)(Si,7,249)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE SOMOS, QUE SOMOS PECADORES., (Do,,10)(Si,7,327)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡María, no llores!, (La,m,20)(Si,7,119)",
+      "sC": "tc"
+    },
+    {
+      "line": "María, María, María., (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "¡Ayaay, ayaay, aay!, (Si,7,160)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SANTA, SANTA MARÍA, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "MADRE, MADRE DE DIOS, ",
+          "sC": "as r2"
+        },
+        {
+          "line": "RUEGA, RUEGA POR NOSOTROS, (Do,,33)(Si,7,249)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE SOMOS, QUE SOMOS PECADORES., (Do,,10)(Si,7,327)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "María, ayúdanos,, (Sol,,14)(Si,7,93)",
+      "sC": "tc"
+    },
+    {
+      "line": "María, ayúdanos., (La,m,43)(Si,7,96)",
+      "sC": ""
+    },
+    {
+      "line": "¡Virgen María!, (La,m,113)",
+      "sC": ""
+    },
+    {
+      "line": "¡Ay ay aaay aaaaaaaaay!, ",
+      "sC": "melisma"
+    },
+    {
+      "line": "¡Ayúdanos!, (Si,7,36)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SANTA, SANTA MARÍA, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "MADRE, MADRE DE DIOS, ",
+          "sC": "as r2"
+        },
+        {
+          "line": "RUEGA, RUEGA POR NOSOTROS, (Do,,33)(Si,7,249)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE SOMOS, QUE SOMOS PECADORES., (Do,,10)(Si,7,327)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SHLOM LEJ MARIAM, (Mi,m,20)(Si,7,95)(Mi,m,170)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "MALIATH TAi BUTHA., (Si,7,110)(Mi,m,149)",
+          "sC": "as r1"
+        },
+        {
+          "line": "MARAN, MARAN AMEJ,, (Do,,52)(Si,7,203)",
+          "sC": "as"
+        },
+        {
+          "line": "MARAN, MARAN AMEJ., (Do,,52)(Si,7,203)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

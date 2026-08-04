@@ -1,0 +1,215 @@
+{
+  "id": "uriuriura",
+  "tt": "Urí, Urí, Urá",
+  "title": "Urí, Urí, Urá",
+  "subtitle": "Villancico (Kiko Argüello)",
+  "category": [
+    "Precatecumenado",
+    "Adviento",
+    "Navidad",
+    "Niños"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "164",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/uriuriura.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=unagransenal",
+  "sig": "/src/index.html?canto=vamosyapastores",
+  "lizq": [
+    {
+      "line": "Urí, urí, urí, urá,, (Mi,m,20)(Si,7,133)",
+      "sC": "tc"
+    },
+    {
+      "line": "urí, urí, urí, urá., (Mi,m,130)",
+      "sC": ""
+    },
+    {
+      "line": "URÍ, URÍ, URÍ, URÁ., (Si,7,172)",
+      "sC": "ta as"
+    },
+    {
+      "line": "URÍ, URÍ, URÍ, URÁ., (Mi,m,167)",
+      "sC": "as"
+    },
+    {
+      "line": "URÍ, URÍ, URÍ, URÁ., (Si,7,168)",
+      "sC": "as"
+    },
+    {
+      "line": "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Mi,m,386)",
+      "sC": "as"
+    },
+    {
+      "line": "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Si,7,382)",
+      "sC": "as"
+    },
+    {
+      "line": "LALALALÁ LALÁ., (Mi,m,147)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Un niño pequeño va a nacer,, (Mi,m,20)(Si,7,257)",
+      "sC": "tc"
+    },
+    {
+      "line": "un niñito pequeño., (Mi,m,146)",
+      "sC": ""
+    },
+    {
+      "line": "UN NIÑO PEQUEÑO VA A NACER,, (Si,7,288)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UN NIÑITO PEQUEÑO., (Mi,m,167)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Cómo se llamará? Emmanuel., (Si,7,284)",
+      "sC": "tc"
+    },
+    {
+      "line": "¿CÓMO SE LLAMARÁ? EMMANUEL., (Mi,m,315)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¿CÓMO SE LLAMARÁ? EMMANUEL., (Si,7,317)",
+      "sC": "as"
+    },
+    {
+      "line": "VEN CHIQUITITO, VEN., (Mi,m,183)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "URÍ, URÍ, URÍ, URÁ, (Mi,m,20)(Si,7,172)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "URÍ, URÍ, URÍ, URÁ., (Mi,m,167)",
+          "sC": "as"
+        },
+        {
+          "line": "URÍ, URÍ, URÍ, URÁ., (Si,7,168)",
+          "sC": "as"
+        },
+        {
+          "line": "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Mi,m,386)",
+          "sC": "as"
+        },
+        {
+          "line": "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Si,7,382)",
+          "sC": "as"
+        },
+        {
+          "line": "LALALALÁ LALÁ., (Mi,m,147)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Su madrecita está en Belén,, (Mi,m,20)(Si,7,248)",
+      "sC": "tc"
+    },
+    {
+      "line": "su padre es carpintero., (Mi,m,191)",
+      "sC": ""
+    },
+    {
+      "line": "SU MADRECITA ESTÁ EN BELÉN,, (Si,7,285)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SU PADRE ES CARPINTERO., (Mi,m,229)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Cómo se llamará? Emmanuel., (Si,7,284)",
+      "sC": "tc"
+    },
+    {
+      "line": "¿CÓMO SE LLAMARÁ? EMMANUEL., (Mi,m,314)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¿CÓMO SE LLAMARÁ? EMMANUEL., (Si,7,315)",
+      "sC": "as"
+    },
+    {
+      "line": "VEN CHIQUITITO, VEN., (Mi,m,184)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "URÍ, URÍ, URÍ, URÁ (Mi,m,20)(Si,7,172)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "URÍ, URÍ, URÍ, URÁ., (Mi,m,167)",
+          "sC": "as"
+        },
+        {
+          "line": "URÍ, URÍ, URÍ, URÁ., (Si,7,168)",
+          "sC": "as"
+        },
+        {
+          "line": "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Mi,m,386)",
+          "sC": "as"
+        },
+        {
+          "line": "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Si,7,382)",
+          "sC": "as"
+        },
+        {
+          "line": "LALALALÁ LALÁ., (Mi,m,147)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

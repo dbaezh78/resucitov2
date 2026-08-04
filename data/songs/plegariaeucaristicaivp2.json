@@ -1,0 +1,211 @@
+{
+  "id": "plegariaeucaristicaivp2",
+  "tt": "Plegaria Eucarística IV ",
+  "title": "Plegaria Eucarística IV ",
+  "subtitle": "(1988) ─ Página 2",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "200",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=plegariaeucaristicaivp1",
+  "sig": "/src/index.html?canto=plegariaeucaristicaivp3",
+  "lizq": [
+    {
+      "line": "Reiteraste tu alianza a los hombres;, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "por los profetas los fuiste llevando, (Re,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "con la esperanza de la salvación., (Mi,,290)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Padre Santo, tanto amaste al mundo, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "que, al cumplirse la plenitud de los tiempos,, (La,m,361)",
+      "sC": ""
+    },
+    {
+      "line": "nos enviaste como salvador, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "a tu único Hijo., (La,m,122)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El cual se encarnó, (Do,,168)",
+      "sC": ""
+    },
+    {
+      "line": "por obra del Espíritu Santo,, (Re,,10)",
+      "sC": ""
+    },
+    {
+      "line": "nació de María, la Virgen,, (La,m,196)",
+      "sC": ""
+    },
+    {
+      "line": "y así compartió en todo, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "nuestra condición humana, ",
+      "sC": ""
+    },
+    {
+      "line": "menos en el pecado;, (La,m,163)",
+      "sC": ""
+    },
+    {
+      "line": "anunció la salvación a los pobres,, (Do,,10)(La,m,268)",
+      "sC": ""
+    },
+    {
+      "line": "la liberación a los oprimidos, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "y a los afligidos el consuelo., (La,m,238)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Para cumplir tus designios,, (Sol,,200)",
+      "sC": ""
+    },
+    {
+      "line": "él mismo se entregó a la muerte, (La,m,282)",
+      "sC": ""
+    },
+    {
+      "line": "y, resucitando, destruyó la muerte., (Sol,,90)(La,m,289)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "RESUCITANDO,, (Do,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DESTRUYÓ LA MUERTE, ",
+      "sC": "as r2"
+    },
+    {
+      "line": "Y NOS DIO NUEVA VIDA., (La,m,196)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y porque no vivamos ya para nosotros mismos,, (La,m,20)(Do,,389)",
+      "sC": "pa"
+    },
+    {
+      "line": "sino para él, (Re,,104)",
+      "sC": ""
+    },
+    {
+      "line": "que por nosotros murió y resucitó,, ",
+      "sC": ""
+    },
+    {
+      "line": "envió, Padre, desde tu seno, (La,m,80)",
+      "sC": ""
+    },
+    {
+      "line": "al Espíritu Santo, (Sol,,61)(La,m,117)",
+      "sC": ""
+    },
+    {
+      "line": "como primicia para los creyentes,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "a fin de santificar todas las cosas,, ",
+      "sC": ""
+    },
+    {
+      "line": "llevando a plenitud su obra en el mundo., (La,m,44)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Epíclesis. Oración Consecratoria",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Y este mismo Espíritu, (Do,,10)",
+      "sC": "pa"
+    },
+    {
+      "line": "santifique, Señor,, (Re,,11)",
+      "sC": ""
+    },
+    {
+      "line": "estas ofrendas,, (La,m,92)",
+      "sC": ""
+    },
+    {
+      "line": "para que sean Cuerpo y   Sangre, (Re,,18)",
+      "sC": ""
+    },
+    {
+      "line": "de Jesucristo, nuestro Señor,, (La,m,91)",
+      "sC": ""
+    },
+    {
+      "line": "y así celebremos el gran misterio, (Re,,42)",
+      "sC": ""
+    },
+    {
+      "line": "que nos dejó, como alianza eterna., (La,m,114)",
+      "sC": ""
+    }
+  ],
+  "sourceBook": "resucito"
+}

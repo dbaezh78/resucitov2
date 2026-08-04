@@ -1,0 +1,221 @@
+{
+  "id": "meensenaraselcaminodelavida",
+  "tt": "Me Enseñarás El Camino De La Vida",
+  "title": "Me Enseñarás El Camino De La Vida",
+  "subtitle": "Salmo 16 (15)",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "114",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/meensenaraselcaminodelavida.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=mariapequenamaria",
+  "sig": "/src/index.html?canto=mehasseducidosenor",
+  "lizq": [
+    {
+      "line": "ME ENSEÑARÁS EL CAMINO DE LA VIDA,, (La,m,20)(Fa,,352)",
+      "sC": "tc as"
+    },
+    {
+      "line": "ME ENSEÑARÁS EL CAMINO DE LA VIDA,, (Re,m,22)(La,m,358)",
+      "sC": "as"
+    },
+    {
+      "line": "ME SACIARÁS DE GOZO EN TU PRESENCIA,, (Mi,,118)",
+      "sC": "as"
+    },
+    {
+      "line": "DE ALEGRÍA PERPETUA A TU DERECHA., (Re,m,103)(Mi,,331)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Protégeme, Dios mío, en ti me refugio., (La,m,20)(Fa,,185)(Re,m,228)(La,m,328)",
+      "sC": "tc"
+    },
+    {
+      "line": "Yo digo a Dios: «Tú eres mi Señor,, (La,m,20)(Fa,,116)(Re,m,165)(La,m,303)",
+      "sC": ""
+    },
+    {
+      "line": "sin ti no tengo nada»., (Mi,,43)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ME ENSEÑARÁS EL CAMINO DE LA VIDA, (La,m,20)(Fa,,352)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ME ENSEÑARÁS EL CAMINO DE LA VIDA,, (Re,m,22)(La,m,358)",
+          "sC": "as"
+        },
+        {
+          "line": "ME SACIARÁS DE GOZO EN TU PRESENCIA,, (Mi,,118)",
+          "sC": "as"
+        },
+        {
+          "line": "DE ALEGRÍA PERPETUA A TU DERECHA., (Re,m,103)(Mi,,331)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es mi heredad y mi copa,, (La,m,20)(Fa,,289)",
+      "sC": "tc"
+    },
+    {
+      "line": "mi vida está en sus manos;, (Re,m,22)(La,m,214)",
+      "sC": ""
+    },
+    {
+      "line": "me ha tocado en suerte un lote hermoso,, (Fa,,355)",
+      "sC": ""
+    },
+    {
+      "line": "me encanta mi heredad., (Re,m,22)(Mi,,211)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendigo al Señor que me aconseja,, (La,m,20)(Fa,,308)",
+      "sC": "tc"
+    },
+    {
+      "line": "hasta de noche instruye mi corazón,, (Re,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "tengo siempre delante de mí al Señor,, (Mi,,80)",
+      "sC": ""
+    },
+    {
+      "line": "está a mi derecha, no vacilaré., (Re,m,22)(Mi,,285)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "ME ENSEÑARÁS EL CAMINO DE LA VIDA, (La,m,20)(Fa,,352)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ME ENSEÑARÁS EL CAMINO DE LA VIDA,, (Re,m,22)(La,m,358)",
+          "sC": "as"
+        },
+        {
+          "line": "ME SACIARÁS DE GOZO EN TU PRESENCIA,, (Mi,,118)",
+          "sC": "as"
+        },
+        {
+          "line": "DE ALEGRÍA PERPETUA A TU DERECHA., (Re,m,103)(Mi,,331)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Por eso se alegra mi corazón,, (La,m,20)(Fa,,258)",
+      "sC": "tc"
+    },
+    {
+      "line": "exulta mi alma,, (Re,m,22)(La,m,109)",
+      "sC": ""
+    },
+    {
+      "line": "y mi carne descansa serena;, (Mi,,60)",
+      "sC": ""
+    },
+    {
+      "line": "porque no abandonarás, (Re,m,91)",
+      "sC": ""
+    },
+    {
+      "line": "mi vida en el sepulcro,, (Mi,,170)",
+      "sC": ""
+    },
+    {
+      "line": "ni dejarás que tu santo, (Re,m,79)",
+      "sC": ""
+    },
+    {
+      "line": "experimente la corrupción,, (Mi,,233)",
+      "sC": ""
+    },
+    {
+      "line": "la corrupción., (Re,m,22)(Mi,,106)",
+      "sC": "melisma"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ME ENSEÑARÁS EL CAMINO DE LA VIDA, (La,m,20)(Fa,,352)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ME ENSEÑARÁS EL CAMINO DE LA VIDA,, (Re,m,22)(La,m,358)",
+          "sC": "as"
+        },
+        {
+          "line": "ME SACIARÁS DE GOZO EN TU PRESENCIA,, (Mi,,118)",
+          "sC": "as"
+        },
+        {
+          "line": "DE ALEGRÍA PERPETUA A TU DERECHA., (Re,m,103)(Mi,,331)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

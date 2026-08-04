@@ -1,0 +1,212 @@
+{
+  "id": "plegariaeucaristicaivp1",
+  "tt": "Plegaria Eucarística IV ",
+  "title": "Plegaria Eucarística IV ",
+  "subtitle": "(1988) ─ Página 1",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "200",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=plegariaeucaristicaiv",
+  "sig": "/src/index.html?canto=plegariaeucaristicaivp2",
+  "lizq": [
+    {
+      "line": "Prefacio",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "El Señor esté con vosotros., (Sol,,14)(La,m,215)",
+      "sC": "pa"
+    },
+    {
+      "line": "Y CON TU ESPÍRITU., (Sol,,14)(La,m,142)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Levantemos el corazón., (Fa,,12)(Mi,,205)",
+      "sC": "pa"
+    },
+    {
+      "line": "LO TENEMOS LEVANTADO HACIA EL SEÑOR., (Fa,,10)(Mi,,395)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Demos gracias al Señor, nuestro Dios., (La,m,340)",
+      "sC": "pa"
+    },
+    {
+      "line": "ES JUSTO Y NECESARIO., (Sol,,14)(La,m,186)",
+      "sC": "ta as r1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Realmente es justo darte gracias,, (La,m,20)(Do,,273)",
+      "sC": "pa"
+    },
+    {
+      "line": "y deber nuestro glorificarte, Padre santo,, (Re,,107)(La,m,224)",
+      "sC": ""
+    },
+    {
+      "line": "porque tú eres el único Dios vivo y verdadero, (Do,,84)(Lam,,401)",
+      "sC": ""
+    },
+    {
+      "line": "que existes desde siempre y vives para siempre;, (Sol,,64)",
+      "sC": ""
+    },
+    {
+      "line": "luz sobre toda luz., (La,m,157)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque tú solo eres bueno y fuente de vida,, (Do,,380)",
+      "sC": ""
+    },
+    {
+      "line": "hiciste todas las cosas, (Re,,31)",
+      "sC": ""
+    },
+    {
+      "line": "para colmarlas de tus bendiciones, (La,m,109)",
+      "sC": ""
+    },
+    {
+      "line": "y alegrar su multitud con la claridad de tu gloria., (Sol,,70)(La,m,424)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por eso, innumerables ángeles en tu presencia,, (Do,,10)(La,m,407)",
+      "sC": ""
+    },
+    {
+      "line": "contemplando la gloria de tu rostro,, (Re,,94)",
+      "sC": ""
+    },
+    {
+      "line": "te sirven siempre y te glorifican sin cesar., (La,m,380)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Y con ellos también nosotros, llenos de alegría,, (Sol,,14)(La,m,434)",
+      "sC": ""
+    },
+    {
+      "line": "y por nuestra voz las demás criaturas,, (Do,,147)",
+      "sC": ""
+    },
+    {
+      "line": "aclamamos tu nombre cantando:, (Re,,60)(Mi,,272)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SANTO, SANTO, SANTO... ",
+      "sC": "as"
+    },
+    {
+      "line": "Transición ",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Te alabamos, Padre santo, porque eres grande, (La,m,20)(Do,,403)",
+      "sC": "pa"
+    },
+    {
+      "line": "y porque hiciste todas las cosas, (Re,,119)",
+      "sC": ""
+    },
+    {
+      "line": "con sabiduría y amor., (La,m,189)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A imagen tuya creaste al hombre, (Do,,260)",
+      "sC": ""
+    },
+    {
+      "line": "y le encomendaste el universo entero,, (Re,,148)",
+      "sC": ""
+    },
+    {
+      "line": "para que, sirviéndote solo a ti, su Creador,, (Fa,,142)",
+      "sC": ""
+    },
+    {
+      "line": "dominara todo lo creado., (Sol,,109)(La,m,205)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y cuando por desobediencia perdió tu amistad,, (Sol,,14)(La,m,430)",
+      "sC": ""
+    },
+    {
+      "line": "no lo abandonaste al poder de la muerte,, (Do,,141)",
+      "sC": ""
+    },
+    {
+      "line": "sino que, compadecido,, (Re,,193)",
+      "sC": ""
+    },
+    {
+      "line": "tendiste la mano a todos,, (Mi,,195)",
+      "sC": ""
+    },
+    {
+      "line": "para que te encuentre, (Re,,165)",
+      "sC": ""
+    },
+    {
+      "line": "el que te busca, (Mi,,104)",
+      "sC": ""
+    }
+  ],
+  "sourceBook": "resucito"
+}

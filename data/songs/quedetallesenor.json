@@ -1,0 +1,136 @@
+{
+  "id": "quedetallesenor",
+  "tt": "Que detalle Señor has tenico conmigo",
+  "title": "Que detalle Señor has tenico conmigo",
+  "subtitle": "Brotes de Olivo",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "120",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/noestaaquiresucito.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=muchomehanperseguido",
+  "sig": "/src/index.html?canto=nohayenelparecer",
+  "lizq": [
+    {
+      "line": "QUE DETALLE, SEÑOR, HAS TENIDO CONMIGO, (Sol,,14)(Re,7,174)(Sol,,420)",
+      "sC": "ta as"
+    },
+    {
+      "line": "CUANDO ME LLAMASTE, CUANDO ME ELEGISTE,, (Sol,,14)(Re,7,189)(Sol,,432)",
+      "sC": "as"
+    },
+    {
+      "line": "CUANDO ME DIJISTE QUE TÚ ERAS MI AMIGO., (Do,,10)(Sol,,286)(Do,,413)",
+      "sC": "as"
+    },
+    {
+      "line": "QUÉ DETALLE, SEÑOR, HAS TENIDO CONMIGO., (Re,7,124)(Sol,,356)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te acercaste a mi puerta y pronunciaste mi nombre., (Sol,,14)(Do,,206)(La,7,323)(Re,7,465)",
+      "sC": "tc"
+    },
+    {
+      "line": "Yo temblando te dije: aquí estoy, Señor., (Re,7,22)(Sol,,259)",
+      "sC": ""
+    },
+    {
+      "line": "Tú me hablaste de un Reino, de un tesoro escondido,, (Sol,,14)(Do,,169)(La,7,304)(Re,7,438)",
+      "sC": ""
+    },
+    {
+      "line": "de un mensaje fraterno que encendió mi ilusión., (Re,7,22)(Do,,165)(Re,7,330)(Sol,,432)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "QUE DETALLE, SEÑOR, HAS TENIDO CONMIGO, (Sol,,14)(Re,7,174)(Sol,,420)",
+      "sC": "ta as"
+    },
+    {
+      "line": "CUANDO ME LLAMASTE, CUANDO ME ELEGISTE,, (Sol,,14)(Re,7,189)(Sol,,432)",
+      "sC": "as"
+    },
+    {
+      "line": "CUANDO ME DIJISTE QUE TÚ ERAS MI AMIGO., (Do,,10)(Sol,,286)(Do,,413)",
+      "sC": "as"
+    },
+    {
+      "line": "QUÉ DETALLE, SEÑOR, HAS TENIDO CONMIGO., (Re,7,124)(Sol,,356)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo deje casa y pueblo por vivir tu aventura, (Sol,,14)(Do,,174)(La,7,280)(Re,7,378)",
+      "sC": "tc"
+    },
+    {
+      "line": "Codo a codo contigo comencé a caminar, (Re,7,22)(Sol,,247)",
+      "sC": ""
+    },
+    {
+      "line": "Han pasado los años y aunque apriete el cansancio, (Sol,,14)(Do,,177)(La,7,334)(Re,7,467)",
+      "sC": ""
+    },
+    {
+      "line": "Paso a paso te sigo sin mirar hacia atrás., (Re,7,22)(Do,,147)(Re,7,223)(Sol,,349)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "QUE DETALLE, SEÑOR, HAS TENIDO CONMIGO, (Sol,,14)(Re,7,174)(Sol,,420)",
+      "sC": "ta as"
+    },
+    {
+      "line": "CUANDO ME LLAMASTE, CUANDO ME ELEGISTE,, (Sol,,14)(Re,7,189)(Sol,,432)",
+      "sC": "as"
+    },
+    {
+      "line": "CUANDO ME DIJISTE QUE TÚ ERAS MI AMIGO., (Do,,10)(Sol,,286)(Do,,413)",
+      "sC": "as"
+    },
+    {
+      "line": "QUÉ DETALLE, SEÑOR, HAS TENIDO CONMIGO., (Re,7,124)(Sol,,356)",
+      "sC": "as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "joven"
+}

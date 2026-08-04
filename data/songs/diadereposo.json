@@ -1,0 +1,132 @@
+{
+  "id": "diadereposo",
+  "tt": "Día De Reposo",
+  "title": "Día De Reposo",
+  "subtitle": "Juan 8,52",
+  "category": [
+    "Precatecumenado",
+    "Final",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "50",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/diadereposo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=delantedelosangeles",
+  "sig": "/src/index.html?canto=diceelsenoramisenor",
+  "lizq": [
+    {
+      "line": "Si alguno guarda mi Palabra, (Mi,m,15)(La,m,131)(Mi,m,237)",
+      "sC": "tc"
+    },
+    {
+      "line": "no gustará la muerte, ¡no!, ",
+      "sC": ""
+    },
+    {
+      "line": "TÚ ERES ÚNICO, EL ÚNICO CON ALEGRÍA., (Mi,m,19)(La,m,203)(Mi,m,374)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¿QUIÉN ES COMO EL SEÑOR?, ",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Corona de salvación,, (Mi,m,21)(La,m,63)(Mi,m,107)",
+      "sC": "tc"
+    },
+    {
+      "line": "MEMORIAL DE ALEGRÍA., (La,m,21)(Mi,m,92)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DÍA DE REPOSO Y DE SANTIDAD, (Mi,m,20)(La,m,171)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HAS DADO A TU PUEBLO. (Mi,m,70)",
+      "sC": "as r1"
+    },
+    {
+      "line": "DÍA DE REPOSO Y DE SANTIDAD (La,m,175), ",
+      "sC": "as"
+    },
+    {
+      "line": "HAS DADO A TU PUEBLO., (Mi,m,68)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Abraham vio este día, (Mi,m,15)(La,m,65)(Mi,m,112)",
+      "sC": "tc"
+    },
+    {
+      "line": "Y EN ISAAC SE ALEGRÓ., (La,m,15)(Mi,m,94)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Jacob y sus hijos en él descansaron., (La,m,67)(Mi,m,203)",
+      "sC": "tc"
+    },
+    {
+      "line": "JACOB Y SUS HIJOS EN ÉL DESCANSARON., (La,m,80)(Mi,m,236)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "DÍA DE REPOSO Y DE SANTIDAD, (Mi,m,20)(La,m,171)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HAS DADO A TU PUEBLO., (Mi,m,70)",
+          "sC": "as r1"
+        },
+        {
+          "line": "DÍA DE REPOSO Y DE SANTIDAD, (La,m,175) ",
+          "sC": "as"
+        },
+        {
+          "line": "HAS DADO A TU PUEBLO., (Mi,m,68)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

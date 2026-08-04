@@ -1,0 +1,131 @@
+{
+  "id": "salvereinadeloscielos",
+  "tt": "Salve, Reina De Los Cielos",
+  "title": "Salve, Reina De Los Cielos",
+  "subtitle": "Himno lat. «Ave, Regina Caelorum»",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "144",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/salvereinadeloscielos.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=resurrexit",
+  "sig": "/src/index.html?canto=seencontrarondosangeles",
+  "lizq": [
+    {
+      "line": "Salve, Reina de los Cielos,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "Señora, Señora de los Ángeles., (Sol,,40)(La,m,222)",
+      "sC": ""
+    },
+    {
+      "line": "Salve raíz, Salve puerta,, (Fa,,77)(Mi,,185)",
+      "sC": ""
+    },
+    {
+      "line": "tú, tú, tú abriste el camino a nuestra luz., (Mi,7,15)(La,m,368)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALÉGRATE, VIRGEN MARÍA,, (La,m,17)(Mi,7,238)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ENTRE TODAS LA MÁS BELLA., (La,m,243)",
+      "sC": "as"
+    },
+    {
+      "line": "SALVE, ETERNA DONCELLA,, (Re,m,20)(La,m,216)",
+      "sC": "as"
+    },
+    {
+      "line": "RUEGA A CRISTO POR NOSOTROS., (Mi,7,123)(La,m,264)",
+      "sC": "as"
+    },
+    {
+      "line": "SALVE, ETERNA DONCELLA,, (Re,m,22)(La,m,216)",
+      "sC": "as"
+    },
+    {
+      "line": "RUEGA A CRISTO POR NOSOTROS., (Mi,7,123)(La,m,267)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "I..     I...    I..., (La,m,20)(Sol,,57)(La,m,108)",
+      "sC": "tc melisma"
+    },
+    {
+      "line": "Salve raíz, Salve puerta,, (Fa,,78)(Mi,,186)",
+      "sC": ""
+    },
+    {
+      "line": "tú, tú, tú abriste el camino a nuestra luz., (Mi,7,17)(La,m,367)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ALÉGRATE, VIRGEN MARÍA, (La,m,17)(Mi,7,238)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ENTRE TODAS LA MÁS BELLA., (La,m,243)",
+          "sC": "as"
+        },
+        {
+          "line": "SALVE, ETERNA DONCELLA,, (Re,m,20)(La,m,216)",
+          "sC": "as"
+        },
+        {
+          "line": "RUEGA A CRISTO POR NOSOTROS., (Mi,7,123)(La,m,264)",
+          "sC": "as"
+        },
+        {
+          "line": "SALVE, ETERNA DONCELLA,, (Re,m,22)(La,m,216)",
+          "sC": "as"
+        },
+        {
+          "line": "RUEGA A CRISTO POR NOSOTROS., (Mi,7,123)(La,m,267)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

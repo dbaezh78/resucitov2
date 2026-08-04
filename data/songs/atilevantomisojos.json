@@ -1,0 +1,118 @@
+{
+  "id": "atilevantomisojos",
+  "tt": "A ti levanto mis ojos",
+  "title": "A TI LEVANTO MIS OJOS",
+  "subtitle": "Salmo 123 (122)",
+  "category": [
+    "PreCatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=anadiedemosocasiondetropiezo",
+  "sig": "/src/index.html?canto=atisenorenmiclamorimploro",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "3",
+  "notes": "Este canto se usa en la liturgia de Pascua.",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/atilevantomisojos.mp3",
+  "lizq": [
+    {
+      "line": "A TI LEVANTO MIS OJOS, (Re,m,16)(La,7,189)",
+      "sC": "as tc"
+    },
+    {
+      "line": "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)",
+      "sC": "as b2"
+    },
+    {
+      "line": "Como los ojos de los siervos,  (Re,m,15)",
+      "sC": "tc mt"
+    },
+    {
+      "line": "miran a las manos de sus señores,  (La,7,287)"
+    },
+    {
+      "line": "como los ojos de la esclava,(Sol,m,105)",
+      "sC": "mt"
+    },
+    {
+      "line": "a las manos de su señora,(La,7,216)"
+    },
+    {
+      "line": "así nuestros ojos miran al Señor,(Si♭,,12)(La,7,290)",
+      "sC": "mt"
+    },
+    {
+      "line": "esperando que tenga piedad, (Si♭,7,59)(La,7,255)",
+      "sC": "mt"
+    },
+    {
+      "line": "esperando que tenga piedad. (Si♭,7,59)(La,7,255)"
+    },
+    {
+      "line": "¡PIEDAD DE NOSOTROS, SEÑOR! (Re,m,86)(La,7,315)",
+      "sC": "mujeres as mt aleft"
+    },
+    {
+      "line": "¡PIEDAD DE NOSOTROS, SEÑOR! (Si♭,,86)(La,7,315)",
+      "sC": "hombres as aleft"
+    },
+    {
+      "line": "¡QUE DEMASIADO SE HAN BURLADO DE NOSOTROS (Re,m,130)(La,7,435)",
+      "sC": "mujeres as mt aleft"
+    },
+    {
+      "line": "QUE NUESTRA ALMA ESTÁ SACIADA DE DESPRECIOS! (Si♭,7,150)(La,7,456)",
+      "sC": "hombres as aleft"
+    },
+    {
+      "line": "¡DE LAS BURLAS DE LOS SATISFECHOS,(Re,m,100)(La,7,313)",
+      "sC": "mujeres as mt aleft"
+    },
+    {
+      "line": "DEL DESPRECIO DE LOS SOBERBIOS!(Si♭,7,119)(La,7,282)",
+      "sC": "hombres as aleft"
+    },
+    {
+      "line": "¡PIEDAD DE NOSOTROS, SEÑOR!, (Re,m,57)(La,7,286)",
+      "sC": "mujeres as mt ndb aleft"
+    },
+    {
+      "line": "¡PIEDAD DE NOSOTROS, SEÑOR!, (Si♭,7,57)(La,7,286)",
+      "sC": "hombres as aleft"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_atilevantomisojos",
+      "initialState": "collapsed",
+      "triggerLine": "A TI LEVANTO MIS OJOS (Re,m,16)(La,7,189)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)",
+          "sC": "as b2"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,169 @@
+{
+  "id": "ellagarero",
+  "tt": "El Lagarero",
+  "title": "El Lagarero",
+  "subtitle": "Isaías 63,1-6",
+  "category": [
+    "Precatecumenado",
+    "Fracción Del Pan",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "56",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/ellagarero.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=eljacaldelospastores",
+  "sig": "/src/index.html?canto=elmesiasleon",
+  "lizq": [
+    {
+      "line": "¿QUIÉN ES ESE QUE VIENE DE EDOM?, (Mi,m,21)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¿QUIÉN ES ESE TODO MANCHADO DE ROJO,, (La,m,122)(Mi,m,382)",
+      "sC": "as"
+    },
+    {
+      "line": "ESE DEL VESTIDO ESPLENDOROSO,, (Si,7,17)",
+      "sC": "as"
+    },
+    {
+      "line": "Y DE ANDAR TAN ESFORZADO?, (Mi,m,252)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Soy yo, soy yo que hablo con justicia,, (Re,,10)(Mi,m,315)",
+      "sC": "tc"
+    },
+    {
+      "line": "soy yo un gran libertador., (Si,7,53)(Mi,m,225)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y ¿POR QUÉ,, (Mi,m,18)",
+      "sC": "ta as"
+    },
+    {
+      "line": "POR QUÉ ESTÁ DE ROJO TU VESTIDO?, ",
+      "sC": "as"
+    },
+    {
+      "line": "¿POR QUÉ PARECES UN LAGARERO?, (La,m,94)(Mi,m,305)",
+      "sC": "as"
+    },
+    {
+      "line": "¿POR QUÉ? ¿POR QUÉ?, (Si,7,102)(Mi,m,207)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El lagar, el lagar, he pisado yo solo,, (Re,,11)(Mi,m,309)",
+      "sC": "tc"
+    },
+    {
+      "line": "de mi pueblo, no hubo nadie conmigo., (Si,7,91)(Mi,m,332)",
+      "sC": ""
+    },
+    {
+      "line": "Miré bien, miré bien, y no había auxiliador,, (Re,,11)(Mi,m,387)",
+      "sC": ""
+    },
+    {
+      "line": "me asombré, de que ninguno me ayudase., (Si,7,116)(Mi,m,376)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "POR ESO, LA FUERZA MÍA,, (La,m,67)",
+      "sC": "ta as"
+    },
+    {
+      "line": "FUERZA MÍA ME SOSTUVO., (Mi,m,220)",
+      "sC": "as"
+    },
+    {
+      "line": "EL DÍA DE LA VENGANZA ERA LLEGADO, (Si,7,344)",
+      "sC": "as"
+    },
+    {
+      "line": "PISOTEÉ LOS PUEBLOS EN MI IRA., (Mi,m,301)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "LOS PISÉ, LOS PISÉ CON FURIA,, (La,m,81)(Mi,m,261)",
+      "sC": "as"
+    },
+    {
+      "line": "E HICE CORRER, ",
+      "sC": "as"
+    },
+    {
+      "line": "POR LA TIERRA SU SANGRE,, (Si,7,216)",
+      "sC": "as"
+    },
+    {
+      "line": "Y TODOS MIS VESTIDOS HE MANCHADO., (Mi,m,351)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¿QUIÉN ES ESE QUE VIENE DE EDOM?, (Mi,m,21)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¿QUIÉN ES ESE TODO MANCHADO DE ROJO,, (La,m,122)(Mi,m,382)",
+          "sC": "as"
+        },
+        {
+          "line": "ESE DEL VESTIDO ESPLENDOROSO,, (Si,7,17)",
+          "sC": "as"
+        },
+        {
+          "line": "Y DE ANDAR TAN ESFORZADO?, (Mi,m,252)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

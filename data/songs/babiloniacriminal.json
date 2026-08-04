@@ -1,0 +1,206 @@
+{
+  "id": "babiloniacriminal",
+  "tt": "Babilonia Criminal",
+  "title": "Babilonia Criminal",
+  "subtitle": "Sal 137 (136)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "23",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/babiloniacriminal.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=avemariaii(1984)",
+  "sig": "/src/index.html?canto=balaam",
+  "lizq": [
+    {
+      "line": "JUNTO A LOS CANALES DE BABILONIA,,(Mi,m,15)(La,m,177)(Mi,m,321)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ACORDÁNDONOS DE TI,,(Si,7,222)",
+      "sC": "as"
+    },
+    {
+      "line": "NOS SENTAMOS A LLORAR., (Mi,m,240)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DE LOS SAUCES COLGABAN, (La,m,221)",
+      "sC": "as"
+    },
+    {
+      "line": "LAS GUITARRAS,,(Mi,m,96)",
+      "sC": "as"
+    },
+    {
+      "line": "ACORDÁNDONOS DE TI,,(Si,7,222)",
+      "sC": "as"
+    },
+    {
+      "line": "NOS SENTAMOS A LLORAR., (Mi,m,238)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«CANTADNOS», NOS DECÍAN, (La,m,242)",
+      "sC": "as"
+    },
+    {
+      "line": "NUESTROS ENEMIGOS., (Mi,m,170)",
+      "sC": "as"
+    },
+    {
+      "line": "«CANTADNOS», NOS DECÍAN, (La,m,241)",
+      "sC": "as"
+    },
+    {
+      "line": "NUESTROS OPRESORES., (Mi,m,184)",
+      "sC": "as"
+    },
+    {
+      "line": "ELLOS QUERÍAN QUE NOSOTROS, (Si,7,263)",
+      "sC": "as"
+    },
+    {
+      "line": "LES DIVIRTIÉRAMOS., (Mi,m,118)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Cómo cantar un cántico del Señor, (Re,,13)",
+      "sC": "tc"
+    },
+    {
+      "line": "en tierra extraña?, (Mi,m,128)",
+      "sC": ""
+    },
+    {
+      "line": "Si de Ti yo me olvidare,,(Si,7,191)",
+      "sC": ""
+    },
+    {
+      "line": "que se me seque la mano derecha., (Mi,m,292)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Que se me pegue la lengua al paladar,,(Mi,m,15)(La,m,216)(Mi,m,351)",
+      "sC": ""
+    },
+    {
+      "line": "si de ti yo me olvidare, Jerusalén,,(Si,7,183)",
+      "sC": ""
+    },
+    {
+      "line": "en la cumbre de mi alegría., (Mi,m,241)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SEÑOR, TOMA CUENTAS, (Mi,m,18)(La,m,179)",
+      "sC": "ta as"
+    },
+    {
+      "line": "A NUESTROS ENEMIGOS., (Mi,m,196)",
+      "sC": "as"
+    },
+    {
+      "line": "SEÑOR, TOMA CUENTAS, (La,m,180)",
+      "sC": "as"
+    },
+    {
+      "line": "A NUESTROS OPRESORES., (Mi,m,207)",
+      "sC": "as"
+    },
+    {
+      "line": "CUANDO ELLOS SE DECÍAN:, (Si,7,233)",
+      "sC": "as"
+    },
+    {
+      "line": "¡ARRASADLA HASTA EL CIMIENTO!, (Mi,m,279)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Capital de Babilonia criminal,,(Re,,10)(Mi,m,266)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡quién pudiera pagarte, (Re,,110)",
+      "sC": ""
+    },
+    {
+      "line": "los males que nos has hecho!, (Mi,m,237)",
+      "sC": ""
+    },
+    {
+      "line": "¡Quién pudiera estrellar, (Si,7,213)",
+      "sC": ""
+    },
+    {
+      "line": "tus hijos contra la piedra!, (Mi,m,198)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "JUNTO A LOS CANALES DE BABILONIA,(Mi,m,15)(La,m,177)(Mi,m,321)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ACORDÁNDONOS DE TI,,(Si,7,222)",
+          "sC": "as"
+        },
+        {
+          "line": "NOS SENTAMOS A LLORAR., (Mi,m,240)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

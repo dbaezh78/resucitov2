@@ -1,0 +1,229 @@
+{
+  "id": "comoelimpulsoquesientelaira",
+  "tt": "Como El Impulso Que Siente La Ira",
+  "title": "Como El Impulso Que Siente La Ira",
+  "subtitle": "Oda VII de Salomón",
+  "category": [
+    "Catecumenado"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "221",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/comoelimpulsoquesientelaira.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=tedeum",
+  "sig": "/src/index.html?canto=cuandodormia",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "cantoscatecumenado",
+      "color": "#544d47"
+    },
+    {
+      "line": "Como el impulso que siente la ira, (Do,,10)(La,m,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "hacia el enemigo,, (Re,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "como el impulso que siente el amor, (Sol,7,14)",
+      "sC": ""
+    },
+    {
+      "line": "hacia el amado,, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "así siento yo un impulso hacia Ti,, (La,7,20)(Re,m,250)",
+      "sC": ""
+    },
+    {
+      "line": "Tú, el inmortal, la plenitud de los tiempos., (Sol,,14)(Do,,250)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "TÚ ERES EL CAMINO,, (La,m,164)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¡CÓMO ES MARAVILLOSO!, (Mi,,210)",
+      "sC": "as"
+    },
+    {
+      "line": "TÚ ERES EL CAMINO, TÚ ERES EL AMOR., (La,m,360)",
+      "sC": "as"
+    },
+    {
+      "line": "TÚ ERES EL CAMINO, TÚ ERES LA VIDA., (Sol,,161)(La,m,337)",
+      "sC": "as"
+    },
+    {
+      "line": "TÚ ERES EL CAMINO, TÚ ERES LA VERDAD., (Sol,,161)(La,m,380)",
+      "sC": "as"
+    },
+    {
+      "line": "TÚ ERES EL CAMINO, TÚ ERES LA VERDAD,, (Sol,,161)(Fa,,341)",
+      "sC": "as"
+    },
+    {
+      "line": "TÚ ERES LA VIDA., (Mi,,130)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Te has entregado a mí sin ninguna reserva,, (Do,,10)(La,m,209)(Re,m,373)",
+      "sC": "tc"
+    },
+    {
+      "line": "lleno de suavidad, (Sol,7,153)",
+      "sC": ""
+    },
+    {
+      "line": "hiciste pequeña tu grandeza., (Do,,241)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te hiciste pecado por mí lleno de misericordia,, (La,7,20)(Re,m,397)",
+      "sC": ""
+    },
+    {
+      "line": "para que mis pecados no me apartasen de Ti., (Sol,,14)(Do,,428)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "TÚ ERES EL CAMINO (La,m,164)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡CÓMO ES MARAVILLOSO!, (Mi,,210)",
+          "sC": "as"
+        },
+        {
+          "line": "TÚ ERES EL CAMINO, TÚ ERES EL AMOR., (La,m,360)",
+          "sC": "as"
+        },
+        {
+          "line": "TÚ ERES EL CAMINO, TÚ ERES LA VIDA., (Sol,,161)(La,m,337)",
+          "sC": "as"
+        },
+        {
+          "line": "TÚ ERES EL CAMINO, TÚ ERES LA VERDAD., (Sol,,161)(La,m,380)",
+          "sC": "as"
+        },
+        {
+          "line": "TÚ ERES EL CAMINO, TÚ ERES LA VERDAD,, (Sol,,161)(Fa,,341)",
+          "sC": "as"
+        },
+        {
+          "line": "TÚ ERES LA VIDA., (Mi,,130)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te hiciste como yo para que te recibiera,, (Do,,10)(La,m,209)(Re,m,369)",
+      "sC": "tc"
+    },
+    {
+      "line": "en el aspecto como yo, (Sol,7,209)",
+      "sC": ""
+    },
+    {
+      "line": "para que de Ti me revistiera,, (Do,,241)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "y así no tuviera miedo al encontrarte,, (La,7,20)(Re,m,317)",
+      "sC": ""
+    },
+    {
+      "line": "a Ti, el inmortal, la plenitud de los tiempos., (Sol,,14)(Do,,346)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "TÚ ERES EL CAMINO (La,m,164)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡CÓMO ES MARAVILLOSO!, (Mi,,210)",
+          "sC": "as"
+        },
+        {
+          "line": "TÚ ERES EL CAMINO, TÚ ERES EL AMOR., (La,m,360)",
+          "sC": "as"
+        },
+        {
+          "line": "TÚ ERES EL CAMINO, TÚ ERES LA VIDA., (Sol,,161)(La,m,337)",
+          "sC": "as"
+        },
+        {
+          "line": "TÚ ERES EL CAMINO, TÚ ERES LA VERDAD., (Sol,,161)(La,m,380)",
+          "sC": "as"
+        },
+        {
+          "line": "TÚ ERES EL CAMINO, TÚ ERES LA VERDAD,, (Sol,,161)(Fa,,341)",
+          "sC": "as"
+        },
+        {
+          "line": "TÚ ERES LA VIDA., (Mi,,130)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,141 @@
+{
+  "id": "credo",
+  "tt": "Credo",
+  "title": "Credo",
+  "subtitle": "Símbolo Apostólico",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "Pueden cantarlo aquellas comunidades que ya han vivido la Redditio Symboli.",
+  "nCanURL": "",
+  "dbno": "187",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/credo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=corderodedios",
+  "sig": "/src/index.html?canto=gloriaadiosenloaltodelcielo",
+  "lizq": [
+    {
+      "line": "CREO EN DIOS PADRE TODOPODEROSO,, (Re,m,22)(Fa,,56)",
+      "sC": "ta as"
+    },
+    {
+      "line": "CREADOR DEL CIELO Y DE LA TIERRA., (Do,,10)(Re,m,311)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "CREO EN JESUCRISTO, (Re,m,22)(Fa,,55)",
+      "sC": "as"
+    },
+    {
+      "line": "SU ÚNICO HIJO, NUESTRO SEÑOR,",
+      "sC": "as"
+    },
+    {
+      "line": "QUE FUE CONCEBIDO POR OBRA Y GRACIA,, (Do,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "DEL ESPÍRITU SANTO,",
+      "sC": "as"
+    },
+    {
+      "line": "NACIÓ DE SANTA MARÍA VIRGEN., (Re,m,49)",
+      "sC": "as"
+    },
+    {
+      "line": "PADECIÓ BAJO EL PODER DE PONCIO PILATO,, (Fa,,11)",
+      "sC": "as"
+    },
+    {
+      "line": "FUE CRUCIFICADO, MUERTO Y SEPULTADO,, (Do,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "DESCENDIÓ A LOS INFIERNOS., (Re,m,102)",
+      "sC": "as"
+    },
+    {
+      "line": "AL TERCER DÍA RESUCITÓ,, (Fa,,10)(Do,,165)",
+      "sC": "as"
+    },
+    {
+      "line": "RESUCITÓ DE ENTRE LOS MUERTOS,, (Fa,,78)(La,m,111)(Re,m,286)",
+      "sC": "as"
+    },
+    {
+      "line": "SUBIÓ AL CIELO , (Si♭,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "Y ESTÁ SENTADO A LA DERECHA DE DIOS,, (La,,377)",
+      "sC": "as"
+    },
+    {
+      "line": "DESDE ALLÍ HA DE VENIR A JUZGAR, (Si♭,,15)",
+      "sC": "as"
+    },
+    {
+      "line": "A LOS VIVOS Y A LOS MUERTOS., (La,,246)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "CREO EN EL ESPÍRITU SANTO,, (Re,m,22)(Fa,,55)",
+      "sC": "as"
+    },
+    {
+      "line": "LA SANTA IGLESIA CATÓLICA, ",
+      "sC": "as"
+    },
+    {
+      "line": "LA COMUNIÓN DE LOS SANTOS, ",
+      "sC": "as"
+    },
+    {
+      "line": "EL PERDÓN DE LOS PECADOS,, (Do,,94)",
+      "sC": "as"
+    },
+    {
+      "line": "LA RESURRECCIÓN DE LA CARNE, (Fa,,151)(La,m,186)(Re,m,271)",
+      "sC": "as"
+    },
+    {
+      "line": "Y LA VIDA ETERNA., (Si♭,,12)(La,,131)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AMÉN., (Re,m,43)",
+      "sC": "as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

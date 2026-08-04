@@ -1,0 +1,195 @@
+{
+  "id": "caritaschristiurgetnos",
+  "tt": "Caritas Christi Urget Nos",
+  "title": "Caritas Christi Urget Nos",
+  "subtitle": "2ª Corintios 5,14.15.17.21",
+  "category": [
+    "PreCatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "35",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/caritaschristiurgetnos.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=cantodemoises",
+  "sig": "/src/index.html?canto=carmen63",
+  "lizq": [
+    {
+      "line": "¡CARITAS CHRISTI URGET NOS!, (La,m,19)(Do,,184)(Mi,,271)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¡CARITAS CHRISTI URGET NOS!, (Fa,,11)(Mi,,273)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El amor de Cristo, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "nos apremia al pensar,, (Do,,12)(Mi,,198)",
+      "sC": ""
+    },
+    {
+      "line": "EL AMOR DE CRISTO, (Fa,,12)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NOS APREMIA AL PENSAR,, (Mi,,229)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "que si uno murió por todos,, (La,m,21)",
+      "sC": "tc"
+    },
+    {
+      "line": "todos por tanto murieron., (Do,,12)(Mi,,200)",
+      "sC": ""
+    },
+    {
+      "line": "QUE SI CRISTO MURIÓ POR TODOS,, (Fa,,11)",
+      "sC": "ta as"
+    },
+    {
+      "line": "TODOS MURIERON., (Mi,,129)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y murió por todos para que los que viven, (Re,m,15)(Mi,,356)",
+      "sC": "tc"
+    },
+    {
+      "line": "no vivan más para sí,, (Re,m,21)(Mi,,189)",
+      "sC": ""
+    },
+    {
+      "line": "sino para aquel que murió, (Fa,,15)(Re,m9,250)",
+      "sC": ""
+    },
+    {
+      "line": "y resucitó por ellos., (Sol,,11)(Mi,,140)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡CARITAS CHRISTI URGET NOS!, (La,m,19)(Do,,184)(Mi,,271)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡CARITAS CHRISTI URGET NOS!, (Fa,,11)(Mi,,273)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "El que está en Cristo es una nueva creación;, (Re,m,20)(Mi,,397)",
+      "sC": "tc"
+    },
+    {
+      "line": "pasó lo viejo, todo es nuevo., (Re,m,21)(Mi,,231)",
+      "sC": ""
+    },
+    {
+      "line": "A quien no conoció pecado,, (Fa,,10)(Re,m9,229)",
+      "sC": ""
+    },
+    {
+      "line": "Dios le hizo pecado, ",
+      "sC": ""
+    },
+    {
+      "line": "para que fuésemos justicia de Dios en Él., (Sol,,12)(Mi,,381)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Ay de mí si no anunciase, (La,m,15)(La,7,82)",
+      "sC": "tc"
+    },
+    {
+      "line": "el Evangelio!, (Re,m,90)",
+      "sC": ""
+    },
+    {
+      "line": "¡Ay de mí! ¡Ay de mí!, (Mi,,83)(La,m,182)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡AY DE MÍ SI NO ANUNCIASE, (La,7,81)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EL EVANGELIO!, (Re,m,99)",
+      "sC": "as"
+    },
+    {
+      "line": "¡AY DE MÍ! ¡AY DE MÍ!, (Mi,,100)(La,m,189)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "¡CARITAS CHRISTI URGET NOS!, (La,m,19)(Do,,184)(Mi,,271)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡CARITAS CHRISTI URGET NOS!, (Fa,,11)(Mi,,273)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

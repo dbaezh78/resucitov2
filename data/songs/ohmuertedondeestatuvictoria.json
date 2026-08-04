@@ -1,0 +1,268 @@
+{
+  "id": "ohmuertedondeestatuvictoria",
+  "tt": "Oh Muerte ¿Dónde Está Tu Victoria?",
+  "title": "Oh Muerte ¿Dónde Está Tu Victoria?",
+  "subtitle": "1 Corintios 15",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Comunión",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "127",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/ohmuertedondeestatuvictoria.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ohjesusamormio",
+  "sig": "/src/index.html?canto=ohsenornuestrodios",
+  "lizq": [
+    {
+      "line": "En un instante, en un pestañear de ojos,, (Re,madd9,41)",
+      "sC": "tc"
+    },
+    {
+      "line": "al toque de la trompeta final,, (La,m,20)(La,m6,200)(Re,7,260)",
+      "sC": ""
+    },
+    {
+      "line": "porque sonará la trompeta, ",
+      "sC": ""
+    },
+    {
+      "line": "y los muertos resucitarán incorruptibles, (Sol,,14)(Si,m,151)",
+      "sC": ""
+    },
+    {
+      "line": "y nosotros seremos transformados., (Do,,55)(La,m,139)(Fa#,,293)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "POR ESO CANTAMOS:, (Re,,152)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LA MUERTE ES ABSORBIDA, ",
+      "sC": "as"
+    },
+    {
+      "line": "EN LA VICTORIA. ",
+      "sC": "as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA. ",
+      "sC": "as"
+    },
+    {
+      "line": "OH MUERTE, ¿DÓNDE ESTÁ TU VICTORIA?, (Fa#,,348)",
+      "sC": "as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA., ",
+      "sC": "as"
+    },
+    {
+      "line": "OH MUERTE, ¿DÓNDE ESTÁ TU AGUIJÓN?, (Si,m,362)",
+      "sC": "as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA., ",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El aguijón de la muerte es el pecado, (La,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "y la fuerza del pecado está en la Ley,, (Sol,,330)",
+      "sC": ""
+    },
+    {
+      "line": "pero nosotros vencemos en Cristo resucitado., (Fa#,,398)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "POR ESO CANTAMOS, (Re,,152)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LA MUERTE ES ABSORBIDA, ",
+          "sC": "as"
+        },
+        {
+          "line": "EN LA VICTORIA. ",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA. ",
+          "sC": "as"
+        },
+        {
+          "line": "OH MUERTE, ¿DÓNDE ESTÁ TU VICTORIA?, (Fa#,,330)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA. ",
+          "sC": "as"
+        },
+        {
+          "line": "OH MUERTE, ¿DÓNDE ESTÁ TU AGUIJÓN?, (Si,m,398)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA. ",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (La,,56)(Sol,,149)(Fa#,,271)",
+      "sC": "ta as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Yo os recuerdo, hermanos,, (Re,,205)",
+      "sC": "tc"
+    },
+    {
+      "line": "el Evangelio que yo os he anunciado,, (Fa#,,84)(Si,m,316)",
+      "sC": ""
+    },
+    {
+      "line": "el mismo que yo he recibido., (Sol,,44)(Fa#,,239)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A saber:, (Re,,57)",
+      "sC": ""
+    },
+    {
+      "line": "que Cristo murió por los pecados,, ",
+      "sC": ""
+    },
+    {
+      "line": "SEGÚN LAS ESCRITURAS; ",
+      "sC": "ta as"
+    },
+    {
+      "line": "que Él ha resucitado,, (Fa#,,166)",
+      "sC": "tc"
+    },
+    {
+      "line": "SEGÚN LAS ESCRITURAS; ",
+      "sC": "ta as"
+    },
+    {
+      "line": "que se apareció primero a Pedro,, (Si,m,277)",
+      "sC": ""
+    },
+    {
+      "line": "luego a los Doce,, (La,,128)",
+      "sC": ""
+    },
+    {
+      "line": "después a más, ",
+      "sC": ""
+    },
+    {
+      "line": "de quinientos hermanos a la vez, (Sol,,189)",
+      "sC": ""
+    },
+    {
+      "line": "y por último se me apareció a mí., (Fa#,,309)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "POR ESO CANTAMOS, (Re,,152)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LA MUERTE ES ABSORBIDA, ",
+          "sC": "as"
+        },
+        {
+          "line": "EN LA VICTORIA. ",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA. ",
+          "sC": "as"
+        },
+        {
+          "line": "OH MUERTE, ¿DÓNDE ESTÁ TU VICTORIA?, (Fa#,,330)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA. ",
+          "sC": "as"
+        },
+        {
+          "line": "OH MUERTE, ¿DÓNDE ESTÁ TU AGUIJÓN?, (Si,m,398)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA. ",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (La,,56)(Sol,,149)(Fa#,,271)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

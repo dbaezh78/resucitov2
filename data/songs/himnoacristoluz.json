@@ -1,0 +1,140 @@
+{
+  "id": "himnoacristoluz",
+  "tt": "Himno A Cristo Luz",
+  "title": "Himno A Cristo Luz",
+  "subtitle": "Himno vespertino (San Gregorio Nacianceno)",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "85",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/himnoacristoluz.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=hijasdejerusalen",
+  "sig": "/src/index.html?canto=himnoalacaridad",
+  "lizq": [
+    {
+      "line": "TE BENDECIMOS EN ESTA HORA,, (Mi,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¡OH CRISTO MÍO!, VERBO DE DIOS,, (La,m,138)",
+      "sC": "as"
+    },
+    {
+      "line": "LUZ DE LA LUZ SIN COMIENZO., (Mi,m,242)",
+      "sC": "as"
+    },
+    {
+      "line": "TE BENDECIMOS, VERBO DE DIOS,, (Si,7,111)(Mi,m,303)",
+      "sC": "as"
+    },
+    {
+      "line": "TE BENDECIMOS, VERBO DE DIOS., (Si,7,111)(Mi,m,303)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te bendecimos, ¡oh triple luz, (Re,7,20)(Sol,,256)",
+      "sC": "tc"
+    },
+    {
+      "line": "de una indivisa gloria!, (Si,7,173)",
+      "sC": ""
+    },
+    {
+      "line": "Has dominado las tinieblas,, (Mi,m,211)",
+      "sC": ""
+    },
+    {
+      "line": "has hecho resurgir la luz, (Si,7,219)",
+      "sC": ""
+    },
+    {
+      "line": "resucitando de la noche., (Mi,m,188)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú eres la eterna luz, (Si,7,180)",
+      "sC": "tc"
+    },
+    {
+      "line": "que ilumina nuestras vidas., (Mi,m,222)",
+      "sC": ""
+    },
+    {
+      "line": "Tú eres la eterna luz, (Si,7,179)",
+      "sC": ""
+    },
+    {
+      "line": "que alboreas sobre el mundo., (Mi,m,240)",
+      "sC": ""
+    },
+    {
+      "line": "Tú eres la eterna luz,, (Si,7,178)",
+      "sC": ""
+    },
+    {
+      "line": "te bendecimos, Señor., (Mi,m,190)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "TE BENDECIMOS EN ESTA HORA, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡OH CRISTO MÍO!, VERBO DE DIOS,, (La,m,138)",
+          "sC": "as"
+        },
+        {
+          "line": "LUZ DE LA LUZ SIN COMIENZO., (Mi,m,242)",
+          "sC": "as"
+        },
+        {
+          "line": "TE BENDECIMOS, VERBO DE DIOS,, (Si,7,111)(Mi,m,303)",
+          "sC": "as"
+        },
+        {
+          "line": "TE BENDECIMOS, VERBO DE DIOS., (Si,7,111)(Mi,m,303)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,628 @@
+{
+  "id": "cantodemoises",
+  "tt": "Canto de Moisés",
+  "title": "Canto de Moisés",
+  "subtitle": "Éxodo 15,1-18",
+  "category": [
+    "PreCatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "Version 2",
+  "nCanURL": "index.html?canto=cantodemoises1",
+  "dbno": "34",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/cantodemoises.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=canticodelostresjovenes",
+  "sig": "/src/index.html?canto=caritaschristiurgetnos",
+  "lizq": [
+    {
+      "line": "Cantemos al Señor,, (Do,7,19)(Fa,,167)",
+      "sC": "tc"
+    },
+    {
+      "line": "cantemos al Señor,, (La,7,164)",
+      "sC": ""
+    },
+    {
+      "line": "que se cubrió de gloria,,(Re,7,188)",
+      "sC": ""
+    },
+    {
+      "line": "de gloria, de gloria,",
+      "sC": ""
+    },
+    {
+      "line": "precipitó en el mar, (Sol,7,161)",
+      "sC": ""
+    },
+    {
+      "line": "caballo y caballero. (Do,7,156)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MI FUERZA Y MI CANCIÓN, (Fa,,229)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ES EL SEÑOR., (La,7,110)",
+      "sC": "as"
+    },
+    {
+      "line": "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)",
+      "sC": "as"
+    },
+    {
+      "line": "Y YO LO ENSALZARÉ. (Sol,7,188)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+      "sC": "as"
+    },
+    {
+      "line": "CABALLO Y CABALLERO,",
+      "sC": "as"
+    },
+    {
+      "line": "CABALLO Y CABALLERO. ",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es un guerrero,,(Fa,,196)",
+      "sC": "tc"
+    },
+    {
+      "line": "su nombre es Yahveh., (La,7,187)",
+      "sC": ""
+    },
+    {
+      "line": "Precipitó en el mar a los valientes,,(Re,7,167)",
+      "sC": ""
+    },
+    {
+      "line": "la flor del Faraón. (Sol,7,144)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "MI FUERZA Y MI CANCIÓN, (Fa,,229)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL SEÑOR., (La,7,110)",
+          "sC": "as"
+        },
+        {
+          "line": "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)",
+          "sC": "as"
+        },
+        {
+          "line": "Y YO LO ENSALZARÉ. (Sol,7,188)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Tu diestra poderosa,",
+      "sC": "tc nSpace"
+    },
+    {
+      "line": "gloriosa por su fuerza, ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "tu diestra, oh Señor, aplasta al enemigo,",
+      "sC": "nSpace"
+    },
+    {
+      "line": "aplasta al enemigo. ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "MI FUERZA Y MI CANCIÓN, (Fa,,229)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL SEÑOR., (La,7,110)",
+          "sC": "as"
+        },
+        {
+          "line": "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)",
+          "sC": "as"
+        },
+        {
+          "line": "Y YO LO ENSALZARÉ. (Sol,7,188)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El enemigo había dicho: ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "«Les perseguiré y alcanzaré,",
+      "sC": "nSpace"
+    },
+    {
+      "line": "desnudaré la espada, se saciará mi alma,",
+      "sC": "nSpace"
+    },
+    {
+      "line": "los aniquilaré». ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "MI FUERZA Y MI CANCIÓN, (Fa,,229)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL SEÑOR., (La,7,110)",
+          "sC": "as"
+        },
+        {
+          "line": "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)",
+          "sC": "as"
+        },
+        {
+          "line": "Y YO LO ENSALZARÉ. (Sol,7,188)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Soplaste con tu aliento ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "y el mar los sepultó. ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "Se hundieron como plomo ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "en las aguas de la muerte,",
+      "sC": "nSpace"
+    },
+    {
+      "line": "en las aguas formidables. ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "MI FUERZA Y MI CANCIÓN, (Fa,,229)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL SEÑOR., (La,7,110)",
+          "sC": "as"
+        },
+        {
+          "line": "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)",
+          "sC": "as"
+        },
+        {
+          "line": "Y YO LO ENSALZARÉ. (Sol,7,188)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "¿Quién como tú, Señor,",
+      "sC": "nSpace"
+    },
+    {
+      "line": "glorioso en santidad,",
+      "sC": "nSpace"
+    },
+    {
+      "line": "terrible en las empresas, autor de maravillas,",
+      "sC": "nSpace"
+    },
+    {
+      "line": "autor de maravillas?, ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "MI FUERZA Y MI CANCIÓN, (Fa,,229)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL SEÑOR. (La,7,110)",
+          "sC": "as"
+        },
+        {
+          "line": "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)",
+          "sC": "as"
+        },
+        {
+          "line": "Y YO LO ENSALZARÉ. (Sol,7,188)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "Rescatas a tu pueblo,",
+      "sC": "nSpace"
+    },
+    {
+      "line": "lo llevas a tu casa., ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "Los príncipes de Edom, se estremecen, ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "al paso de Jacob. ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_5",
+      "initialState": "collapsed",
+      "triggerLine": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "MI FUERZA Y MI CANCIÓN, (Fa,,229)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL SEÑOR., (La,7,110)",
+          "sC": "as"
+        },
+        {
+          "line": "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)",
+          "sC": "as"
+        },
+        {
+          "line": "Y YO LO ENSALZARÉ. (Sol,7,188)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "Lo llevas y lo plantas, ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "en el lugar sagrado, ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "sobre tu monte santo, el santuario, ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "que tus manos prepararon. ",
+      "sC": "nSpace"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_6",
+      "initialState": "collapsed",
+      "triggerLine": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "MI FUERZA Y MI CANCIÓN, (Fa,,229)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL SEÑOR., (La,7,110)",
+          "sC": "as"
+        },
+        {
+          "line": "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)",
+          "sC": "as"
+        },
+        {
+          "line": "Y YO LO ENSALZARÉ. (Sol,7,188)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "PRECIPITÓ EN EL MAR, (Do,7,15)",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO,",
+          "sC": "as"
+        },
+        {
+          "line": "CABALLO Y CABALLERO. ",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

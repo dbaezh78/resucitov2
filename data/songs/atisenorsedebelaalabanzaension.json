@@ -1,0 +1,174 @@
+{
+  "id": "atisenorsedebelaalabanzaension",
+  "tt": "A Ti, Señor, Se Debe La Alabanza En Sión",
+  "title": "A Ti, Señor, Se Debe La Alabanza En Sión",
+  "subtitle": "Salmo 65 (64)",
+  "category": [
+    "PreCatecumenado",
+    "Cuaresma",
+    "Penitencial"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "6",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/atisenorsedebelaalabanzaension.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=atisenorlevantomialma",
+  "sig": "/src/index.html?canto=atuluzsenorvemoslaluz",
+  "lizq": [
+    {
+      "line": "A ti, Señor, se debe la alabanza, en Sión., (Re,m,15)(La,7,364)",
+      "sC": "tc"
+    },
+    {
+      "line": "A ti se te cumple el voto, en Jerusalén., (Re,m,342)",
+      "sC": ""
+    },
+    {
+      "line": "A ti que escuchas la oración,(Sol,m,28)(Re,m,246)",
+      "sC": ""
+    },
+    {
+      "line": "viene todo mortal, viene todo mortal., (La,7,156)(Re,m,330)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)",
+      "sC": "ta as"
+    },
+    {
+      "line": "VIENE TODO MORTAL,(Si♭,,25)",
+      "sC": "as"
+    },
+    {
+      "line": "VIENE TODO MORTAL., (La,7,189)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pesan sobre nosotros nuestros pecados,(Re,m,15)(La,7,340)",
+      "sC": "tc"
+    },
+    {
+      "line": "mas tú perdonas nuestras culpas., (Re,m,273)",
+      "sC": ""
+    },
+    {
+      "line": "Dichoso el que tú eliges, el que tú llamas,(La,7,345)",
+      "sC": ""
+    },
+    {
+      "line": "vivirá en tus atrios., (Re,m,137)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A ti que escuchas la oración,(Sol,m,31)(Re,m,247)",
+      "sC": ""
+    },
+    {
+      "line": "viene todo mortal, viene todo mortal., (La,7,158)(Re,m,333)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_atssdlaes_1",
+      "initialState": "collapsed",
+      "triggerLine": "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "VIENE TODO MORTAL,(Si♭,,25)",
+          "sC": "as"
+        },
+        {
+          "line": "VIENE TODO MORTAL., (La,7,189)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Nos saciaremos de los bienes de tu casa,(Re,m,15)(La,7,361)",
+      "sC": "tc"
+    },
+    {
+      "line": "de la santidad de tu templo., (Re,m,214)",
+      "sC": ""
+    },
+    {
+      "line": "Con los prodigios de tu amor tú nos hablas,(La,7,360)",
+      "sC": ""
+    },
+    {
+      "line": "con los portentos de tu justicia nos respondes., (Re,m,380)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A ti que escuchas la oración,(Sol,m,31)(Re,m,246)",
+      "sC": ""
+    },
+    {
+      "line": "viene todo mortal, viene todo mortal., (La,7,156)(Re,m,331)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_atssdlaes_2",
+      "initialState": "collapsed",
+      "triggerLine": "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "VIENE TODO MORTAL,(Si♭,,25)",
+          "sC": "as"
+        },
+        {
+          "line": "VIENE TODO MORTAL., (La,7,189)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

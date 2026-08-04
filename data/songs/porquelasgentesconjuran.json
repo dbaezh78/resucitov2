@@ -1,0 +1,263 @@
+{
+  "id": "porquelasgentesconjuran",
+  "tt": "Por Qué Las Gentes Conjuran",
+  "title": "Por Qué Las Gentes Conjuran",
+  "subtitle": "Salmo 2",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "134",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/porquelasgentesconjuran.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=porqueestanocheesdiferente",
+  "sig": "/src/index.html?canto=porquemiyugoessuave",
+  "lizq": [
+    {
+      "line": "¿POR QUÉ LAS GENTES CONJURAN, (Mi,m,20)(La,m,289)",
+      "sC": "ta as"
+    },
+    {
+      "line": "POR QUÉ CONSPIRAN LOS PUEBLOS?, (Mi,m,296)",
+      "sC": "as"
+    },
+    {
+      "line": "SE ALZAN LOS REYES DE LA TIERRA,, (La,m,303)",
+      "sC": "as"
+    },
+    {
+      "line": "Y LOS PRÍNCIPES SE REÚNEN, (Si,7,239)",
+      "sC": "as"
+    },
+    {
+      "line": "CONTRA EL SEÑOR Y CONTRA SU MESÍAS., (Mi,m,373)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«Rompamos sus coyundas y cadenas,, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "alejemos de nosotros su yugo»., (La,m,255)",
+      "sC": ""
+    },
+    {
+      "line": "El que habita en los cielos se ríe,, (Si,7,295)",
+      "sC": ""
+    },
+    {
+      "line": "el Señor se burla de ellos. ",
+      "sC": ""
+    },
+    {
+      "line": "De repente les habla con ira, ",
+      "sC": ""
+    },
+    {
+      "line": "y en su cólera los espanta:, (Mi,m,213)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«PORQUE YO LE HE CONSTITUIDO SOBERANO, (La,m,113)(Mi,m,399)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EN SIÓN MI SANTO MONTE,, (Si,7,61)",
+      "sC": "as"
+    },
+    {
+      "line": "EN SIÓN MI SANTO MONTE»., (Mi,m,215)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "YO LE HE CONSTITUIDO SOBERANO, (La,m,20)(Mi,m,301)",
+      "sC": "as"
+    },
+    {
+      "line": "EN SIÓN MI SANTO MONTE,, (Si,7,62)",
+      "sC": "as"
+    },
+    {
+      "line": "EN SIÓN MI SANTO MONTE»., (Mi,m,212)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Anunciaré el decreto del Señor;, (Mi,m,20)(La,m,282)",
+      "sC": "tc"
+    },
+    {
+      "line": "Él me ha dicho: «Tú eres mi hijo;, (Si,7,107)",
+      "sC": ""
+    },
+    {
+      "line": "yo te he engendrado hoy., (Mi,m,220)",
+      "sC": ""
+    },
+    {
+      "line": "Pídeme, y te daré en herencia las naciones,, (La,m,369)",
+      "sC": ""
+    },
+    {
+      "line": "y en dominio los confines de la tierra., (Si,7,320)",
+      "sC": ""
+    },
+    {
+      "line": "Los quebrantarás con cetro de hierro,, ",
+      "sC": ""
+    },
+    {
+      "line": "como vasos de arcilla los quebrarás»., (Mi,m,328)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "«PORQUE YO LE HE CONSTITUIDO SOBERANO, (La,m,113)(Mi,m,399)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EN SIÓN MI SANTO MONTE,, (Si,7,61)",
+          "sC": "as"
+        },
+        {
+          "line": "EN SIÓN MI SANTO MONTE»., (Mi,m,215)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "YO LE HE CONSTITUIDO SOBERANO, (La,m,20)(Mi,m,301)",
+          "sC": "as"
+        },
+        {
+          "line": "EN SIÓN MI SANTO MONTE,, (Si,7,62)",
+          "sC": "as"
+        },
+        {
+          "line": "EN SIÓN MI SANTO MONTE»., (Mi,m,212)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y ahora, soberanos, sed sensatos,, (La,m,49)(Si,7,284)",
+      "sC": "tc"
+    },
+    {
+      "line": "instruíos, jueces de la tierra., (La,m,63)(Si,7,234)",
+      "sC": ""
+    },
+    {
+      "line": "Servid al Señor con temor,, ",
+      "sC": ""
+    },
+    {
+      "line": "y con temblor exultad., (Mi,m,189)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No sea que se irrite, ",
+      "sC": ""
+    },
+    {
+      "line": "y perezcáis en el camino, (La,m,208)",
+      "sC": ""
+    },
+    {
+      "line": "porque de pronto se enciende su ira., (Si,7,328)",
+      "sC": ""
+    },
+    {
+      "line": "¡Mas dichoso el que se refugia en Él!, (Mi,m,338)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "«PORQUE YO LE HE CONSTITUIDO SOBERANO, (La,m,113)(Mi,m,399)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EN SIÓN MI SANTO MONTE,, (Si,7,61)",
+          "sC": "as"
+        },
+        {
+          "line": "EN SIÓN MI SANTO MONTE»., (Mi,m,215)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "YO LE HE CONSTITUIDO SOBERANO, (La,m,20)(Mi,m,301)",
+          "sC": "as"
+        },
+        {
+          "line": "EN SIÓN MI SANTO MONTE,, (Si,7,62)",
+          "sC": "as"
+        },
+        {
+          "line": "EN SIÓN MI SANTO MONTE»., (Mi,m,212)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

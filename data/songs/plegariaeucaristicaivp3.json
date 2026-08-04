@@ -1,0 +1,208 @@
+{
+  "id": "plegariaeucaristicaivp3",
+  "tt": "Plegaria Eucarística IV ",
+  "title": "Plegaria Eucarística IV ",
+  "subtitle": "(1988) ─ Página 3",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "200",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=plegariaeucaristicaivp2",
+  "sig": "/src/index.html?canto=plegariaeucaristicaivp4",
+  "lizq": [
+    {
+      "line": "Relato de la Institución",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Porque él mismo, llegada la hora, (Do,,10)",
+      "sC": "pa"
+    },
+    {
+      "line": "en que había de ser glorificado por ti, Padre santo,, (La,m,354)",
+      "sC": ""
+    },
+    {
+      "line": "habiendo amado a los suyos, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "que estaban en el mundo, ",
+      "sC": ""
+    },
+    {
+      "line": "los amó hasta el extremo., (La,m,203)",
+      "sC": ""
+    },
+    {
+      "line": "Y, mientras cenaba con sus discípulos,, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "tomó pan, te bendijo,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "lo partió y se lo dio, diciendo:, (Fa,,10)(Sol,,230)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tomad y comed todos de él,, (La,m,20)(Sol,,168)(La,m,254)",
+      "sC": ""
+    },
+    {
+      "line": "porque esto es mi Cuerpo,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "que será entregado por vosotros., (La,m,265)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Del mismo modo,, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "tomó el cáliz lleno del fruto de la vid, ",
+      "sC": ""
+    },
+    {
+      "line": "y te dio gracias,, (La,m,97)",
+      "sC": ""
+    },
+    {
+      "line": "lo pasó a sus discípulos, diciendo:, (Re,m,22)(Mi,,276)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tomad y bebed todos de él,, (Sol,,14)(La,m,250)",
+      "sC": ""
+    },
+    {
+      "line": "porque este es el cáliz de mi Sangre,, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "Sangre de la alianza nueva y eterna,, (La,m,307)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "que será derramada por muchos,, (Sol,,13)",
+      "sC": ""
+    },
+    {
+      "line": "para el perdón de los pecados., (La,m,248)",
+      "sC": ""
+    },
+    {
+      "line": "Haced esto en conmemoración mía., (Fa,,10)(Mi,,325)",
+      "sC": ""
+    },
+    {
+      "line": "Aclamación, ",
+      "sC": "ttgray"
+    },
+    {
+      "line": "Este es el sacramento de nuestra fe., (Sol,,14)(La,m,335)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ANUNCIAMOS TU MUERTE, SEÑOR,, (Do,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PROCLAMAMOS TU RESURRECCIÓN,, (La,m,326)",
+      "sC": "as r1"
+    },
+    {
+      "line": "¡VEN, SEÑOR JESÚS!, (Fa,,10)(Mi,,168)",
+      "sC": "as"
+    },
+    {
+      "line": "Memorial y Ofrenda",
+      "sC": "ttgray",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "Por eso, nosotros, Señor, al celebrar ahora, (La,m,20)",
+      "sC": "pa"
+    },
+    {
+      "line": "el memorial de nuestra redención,, (Sol,,182)(La,m,310)",
+      "sC": ""
+    },
+    {
+      "line": "recordamos la muerte de Cristo, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "y su descenso al lugar de los muertos,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "proclamamos su resurrección, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "y ascensión a tu derecha;, (Mi,,195)",
+      "sC": ""
+    },
+    {
+      "line": "y, mientras esperamos su venida gloriosa,, (Fa,,10)(La,m,290)",
+      "sC": ""
+    },
+    {
+      "line": "te ofrecemos su Cuerpo y su Sangre,, (Sol,,12)",
+      "sC": ""
+    },
+    {
+      "line": "sacrificio agradabíe a Ti, (La,m,64)",
+      "sC": ""
+    },
+    {
+      "line": "y salvación para todo el mundo., (Sol,,87)(La,m,257)",
+      "sC": ""
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,201 @@
+{
+  "id": "esteeselmandamientomio",
+  "tt": "Este Es El Mandamiento Mío",
+  "title": "Este Es El Mandamiento Mío",
+  "subtitle": "Juan 15,12ss",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "* La nota Re m que se indica en esta frase, es un tono disonante de la melodía que refuerza el sentido del texto, tal y como Kiko indicó durante el ensayo del canto; no es, por tanto, un error de la transcripción.",
+  "nCanURL": "",
+  "dbno": "72",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/esteeselmandamientomio.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=esteeseldiaenqueactuoelsenor",
+  "sig": "/src/index.html?canto=evenushalomalejem",
+  "lizq": [
+    {
+      "line": "ESTE ES EL MANDAMIENTO MÍO:, (La,m,21)(Do,,62)(Mi,,290)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE OS AMÉIS., (La,m,119)",
+      "sC": "as"
+    },
+    {
+      "line": "ESTE ES EL MANDAMIENTO MÍO:, (Do,,11)(Mi,,288)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE OS AMÉIS, (La,m,120)",
+      "sC": "as"
+    },
+    {
+      "line": "LOS UNOS A LOS OTROS, (Do,,12)(Mi,,175)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO YO OS HE AMADO,, (La,m,203)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO YO OS HE AMADO,, (Fa,,10)(Mi,,200)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO YO OS HE AMADO., (Fa,,10)(Mi,,200)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Nadie tiene mayor amor, (La,7,19)",
+      "sC": "tc"
+    },
+    {
+      "line": "que el que da su vida por sus amigos., (Re,m,316)",
+      "sC": ""
+    },
+    {
+      "line": "Vosotros sois mis amigos,, (Mi,,204)",
+      "sC": ""
+    },
+    {
+      "line": "vosotros sois mis amigos., (Fa,,10)(Mi,,202)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Vosotros sois mis amigos,, (La,m,20)(Sol,,201)",
+      "sC": ""
+    },
+    {
+      "line": "vosotros sois mis amigos., (Fa,,101)(Mi,,203)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No me habéis elegido vosotros a mí,, (Re,m,23)(Mi,,339)",
+      "sC": "tc"
+    },
+    {
+      "line": "NO ME HABÉIS ELEGIDO, (Re,m,23)",
+      "sC": "ta as"
+    },
+    {
+      "line": "VOSOTROS A MÍ,, (Mi,,153)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "sino que yo os he elegido a vosotros,, (Re,m,20)(Mi,,301)",
+      "sC": "tc"
+    },
+    {
+      "line": "SINO QUE YO, (Re,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "OS HE ELEGIDO A VOSOTROS., (Mi,,18)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si el mundo os odia, (La,7,17)",
+      "sC": "tc"
+    },
+    {
+      "line": "sabed que antes me ha odiado a mí;, (Re,m,339)",
+      "sC": ""
+    },
+    {
+      "line": "si el mundo os odia., (Mi,,153)",
+      "sC": ""
+    },
+    {
+      "line": "Padre, como tú estás en mí y yo estoy en ti,, (La,7,18)(Re,m,255)(Mi,,403)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "ast"
+    },
+    {
+      "line": "que ellos sean uno en nosotros,, (Re,m,159)(Mi,,251)",
+      "sC": ""
+    },
+    {
+      "line": "QUE ELLOS SEAN UNO EN NOSOTROS,, (Re,m,20)(Mi,,301)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "para que el mundo crea, (Fa,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "que tú me has enviado,, (Mi,,186)",
+      "sC": ""
+    },
+    {
+      "line": "PARA QUE EL MUNDO CREA, (Fa,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE TÚ ME HAS ENVIADO., (Mi,,209)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ESTE ES EL MANDAMIENTO MÍO:, (Re,m,20)(Mi,,286)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE OS AMÉIS COMO YO OS HE AMADO,, (Re,m,20)(Mi,,347)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE OS AMÉIS COMO YO OS HE AMADO., (Fa,,12)(Mi,,342)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

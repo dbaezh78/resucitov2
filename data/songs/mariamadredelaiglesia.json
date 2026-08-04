@@ -1,0 +1,228 @@
+{
+  "id": "mariamadredelaiglesia",
+  "tt": "María, Madre De La Iglesia",
+  "title": "María, Madre De La Iglesia",
+  "subtitle": "Juan 19,26-34",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María",
+    "Cuaresma",
+    "Penitencial",
+    "Fracción Del Pan",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "111",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/mariamadredelaiglesia.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=mariadejasnagora",
+  "sig": "/src/index.html?canto=mariamadredelcaminoardiente",
+  "lizq": [
+    {
+      "line": "«Mujer, he ahí a tu hijo,, (Mi,,12)",
+      "sC": "tc"
+    },
+    {
+      "line": "he ahí a tu hijo, he ahí a tu hijo, ",
+      "sC": ""
+    },
+    {
+      "line": "ahí tienes a tu hijo., ",
+      "sC": ""
+    },
+    {
+      "line": "Ahí tienes a tu Madre,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "ahí tienes a tu Madre»., (Re,m,22)(Mi,,166)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MARÍA, MADRE MÍA,, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "MARÍA, MADRE NUESTRA:, (Sol,7,20)(La,m,191)",
+      "sC": "as"
+    },
+    {
+      "line": "VEN A VIVIR CONMIGO,, (Sol,,14)(Mi,,182)",
+      "sC": "as"
+    },
+    {
+      "line": "VEN A MI CASA., (Sol,,10)(Mi,,115)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y ENSÉÑANOS A AMAR A TU HIJO, (Mi,7,65)(Fa,maj7,302)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO LO HAS AMADO TÚ,, (Mi,,242)",
+      "sC": "as"
+    },
+    {
+      "line": "Y ENSÉÑANOS A AMAR A TU HIJO, (Mi,7,61)(Fa,maj7,302)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO LO HAS AMADO TÚ., (Mi,,244)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«Tengo sed, tengo sed,, (Mi,,17)",
+      "sC": "tc"
+    },
+    {
+      "line": "todo se ha cumplido, todo se ha cumplido,, ",
+      "sC": ""
+    },
+    {
+      "line": "todo se ha cumplido»., ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "MARÍA, MADRE MÍA, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "MARÍA, MADRE NUESTRA:, (Sol,7,22)(La,m,191)",
+          "sC": "as"
+        },
+        {
+          "line": "VEN A VIVIR CONMIGO,, (Sol,,14)(Mi,,182)",
+          "sC": "as"
+        },
+        {
+          "line": "VEN A MI CASA., (Sol,,10)(Mi,,115)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Y ENSÉÑANOS A AMAR A TU HIJO, (Mi,7,65)(Fa,maj7,301)",
+          "sC": "as"
+        },
+        {
+          "line": "COMO LO HAS AMADO TÚ,, (Mi,,242)",
+          "sC": "as"
+        },
+        {
+          "line": "Y ENSÉÑANOS A AMAR A TU HIJO, (Mi,7,61)(Fa,maj7,302)",
+          "sC": "as"
+        },
+        {
+          "line": "COMO LO HAS AMADO TÚ., (Mi,,244)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Llegaron, pues, los soldados,, (Mi,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "y viendo que estaba muerto, ",
+      "sC": ""
+    },
+    {
+      "line": "no le quebraron las piernas,, ",
+      "sC": ""
+    },
+    {
+      "line": "mas uno de los soldados, ",
+      "sC": ""
+    },
+    {
+      "line": "le atravesó el costado con la lanza, ",
+      "sC": ""
+    },
+    {
+      "line": "y al instante salió sangre y agua,, (Fa,maj7,162)(Mi,,267)",
+      "sC": ""
+    },
+    {
+      "line": "sangre y agua., ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MARÍA, MADRE MÍA,, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "MARÍA, MADRE NUESTRA:, (Sol,7,20)(La,m,193)",
+      "sC": "as"
+    },
+    {
+      "line": "TÚ ERES MADRE DE LA IGLESIA,, (Sol,,12)(Mi,,270)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "QUE NACE DEL COSTADO DE CRISTO, (Mi,7,63)(Fa,maj7,308)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO ESPOSA, NUEVA EVA., (Mi,,236)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE NACE DEL COSTADO DE CRISTO, (Mi,7,70)(Fa,maj7,305)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO ESPOSA, NUEVA EVA., (Mi,,237)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

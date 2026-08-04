@@ -1,0 +1,215 @@
+{
+  "id": "adondeteescondisteamado",
+  "tt": "Adónde Te Escondiste, Amado ",
+  "title": "Adónde Te Escondiste, Amado ",
+  "subtitle": "Cántico espiritual (San Juan de la Cruz) ",
+  "category": [
+    "Eleccion"
+  ],
+  "catCanto": "Eleccion",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "238",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/adondeteescondisteamado.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=alacenadelcordero",
+  "sig": "/src/index.html?canto=comodestilalamiel",
+  "lizq": [
+    {
+      "line": "¿Adónde te escondiste, amado,, (Mi,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "y me dejaste con gemido? ",
+      "sC": ""
+    },
+    {
+      "line": "Como el ciervo huiste, ",
+      "sC": ""
+    },
+    {
+      "line": "habiéndome herido; ",
+      "sC": ""
+    },
+    {
+      "line": "salí tras ti, clamando, y eras ido., (La,m,20)(Fa,,156)(Mi,,282)(Fa,maj 713,347)(Mi,,413)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pastores, los que fuerdes, (Mi,,10)",
+      "sC": ""
+    },
+    {
+      "line": "allá, por las majadas, al otero, ",
+      "sC": ""
+    },
+    {
+      "line": "si por ventura vierdes, ",
+      "sC": ""
+    },
+    {
+      "line": "aquel que yo más quiero, ",
+      "sC": ""
+    },
+    {
+      "line": "decidle que adolezco, peno y muero., (La,m,20)(Fa,,164)(Mi,,317)(Fa,maj 713,383)(Mi,,443)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Buscando mis amores,, (Mi,,10)",
+      "sC": ""
+    },
+    {
+      "line": "iré por esos montes y riberas; ",
+      "sC": ""
+    },
+    {
+      "line": "ni cogeré las flores, ",
+      "sC": ""
+    },
+    {
+      "line": "ni temeré las fieras, ",
+      "sC": ""
+    },
+    {
+      "line": "y pasaré los fuertes y fronteras., (La,m,20)(Fa,,145)(Fa,maj 713,344)(Mi,,406)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Oh bosques y espesuras,, (Mi,,10)",
+      "sC": ""
+    },
+    {
+      "line": "plantadas por la mano del amado!, ",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "¡Oh prado de verduras, ",
+      "sC": ""
+    },
+    {
+      "line": "de flores esmaltado, ",
+      "sC": ""
+    },
+    {
+      "line": "decid si por vosotros ha pasado!, (La,m,20)(Fa,,151)(Mi,,270)(Fa,maj 713,354)(Mi,,422)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MIL GRACIAS DERRAMANDO,, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PASÓ POR ESTOS SOTOS CON PRESURA,, (Sol,,356)",
+      "sC": "as"
+    },
+    {
+      "line": "Y YÉNDOLOS MIRANDO,, (Fa,,177)",
+      "sC": "as"
+    },
+    {
+      "line": "CON SOLA SU FIGURA, ",
+      "sC": "as"
+    },
+    {
+      "line": "VESTIDOS LOS DEJÓ DE SU HERMOSURA., (Mi,,358)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Ay, quién podrá sanarme!, (Mi,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "Acaba de entregarte ya de vero;, (La,m,275)",
+      "sC": ""
+    },
+    {
+      "line": "no quieras enviarme, ",
+      "sC": ""
+    },
+    {
+      "line": "de hoy más mensajero,, (Sol,,194)",
+      "sC": ""
+    },
+    {
+      "line": "que no saben decirme lo que quiero., (Fa,,59)(Mi,,319)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Ay! ¡Ay!, (Fa,maj 713,48)(Mi,,115)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "MIL GRACIAS DERRAMANDO, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PASÓ POR ESTOS SOTOS CON PRESURA,, (Sol,,354)",
+          "sC": "as"
+        },
+        {
+          "line": "Y YÉNDOLOS MIRANDO,, (Fa,,177)",
+          "sC": "as"
+        },
+        {
+          "line": "CON SOLA SU FIGURA, ",
+          "sC": "as"
+        },
+        {
+          "line": "VESTIDOS LOS DEJÓ DE SU HERMOSURA., (Mi,,358)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

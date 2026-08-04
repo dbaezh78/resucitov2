@@ -1,0 +1,210 @@
+{
+  "id": "elpuebloquecaminabaenlastinieblas",
+  "tt": "El Pueblo Que Caminaba En Las Tinieblas",
+  "title": "El Pueblo Que Caminaba En Las Tinieblas",
+  "subtitle": "Isaías 9,1-5",
+  "category": [
+    "Precatecumenado",
+    "Adviento",
+    "Navidad",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "59",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/elpuebloquecaminabaenlastinieblas.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=elneciopiensaquediosnoexiste",
+  "sig": "/src/index.html?canto=elsenoranunciaunanoticia",
+  "lizq": [
+    {
+      "line": "El pueblo que caminaba en las tinieblas, (Do,,12)(La,m,333)",
+      "sC": "tc"
+    },
+    {
+      "line": "ha visto una gran luz., (Fa,,41)(La,m,187)",
+      "sC": ""
+    },
+    {
+      "line": "Sobre los que vivían en tierras tenebrosas,, (Sol,,15)(La,m,360)",
+      "sC": ""
+    },
+    {
+      "line": "una gran luz ha brillado., (Sol,,15)(La,m,195)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Has acrecentado el gozo,, (Do,,13)(La,m,211)",
+      "sC": ""
+    },
+    {
+      "line": "hiciste grande la alegría., (Fa,,94)(La,m,216)",
+      "sC": ""
+    },
+    {
+      "line": "Se han alegrado cuando te han visto,, (Sol,,12)(La,m,323)",
+      "sC": ""
+    },
+    {
+      "line": "como se alegran durante la siega,, (Sol,,110)(La,m,288)",
+      "sC": ""
+    },
+    {
+      "line": "como se alegran al reparto del botín., (Sol,,110)(La,m,335)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "EL DOMINIO ESTARÁ, (Do,,11)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SOBRE SUS HOMBROS,, (La,m,139)",
+      "sC": "as"
+    },
+    {
+      "line": "Y SU NOMBRE SERÁ,, (Sol#,,199)",
+      "sC": "as"
+    },
+    {
+      "line": "Y SU NOMBRE SERÁ:, (Sol,,192)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "CONSEJERO MARAVILLOSO,, (Do,,12)(La,m,228)",
+      "sC": "as"
+    },
+    {
+      "line": "DIOS FUERTE, PADRE ETERNO,, (Do,,88)(La,m,246)",
+      "sC": "as"
+    },
+    {
+      "line": "PRÍNCIPE DE PAZ,, (Sol,,27)(La,m,150)",
+      "sC": "as"
+    },
+    {
+      "line": "PRÍNCIPE DE PAZ., (Sol,,28)(La,m,150)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Porque el yugo que pesaba sobre el pueblo,, (Do,,12)(La,m,383)",
+      "sC": "tc"
+    },
+    {
+      "line": "el yugo que oprimía sus espaldas,, (Fa,,47)(La,m,273)",
+      "sC": ""
+    },
+    {
+      "line": "la vara del opresor, (Sol,,13)(La,m,168)",
+      "sC": ""
+    },
+    {
+      "line": "tú la has quebrado, como en Madián., (Sol,,14)(La,m,337)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y todo el que pisa con dominio,, (Do,,11)(La,m,262)",
+      "sC": ""
+    },
+    {
+      "line": "todo manto manchado de sangre, (Fa,,76)(La,m,270)",
+      "sC": ""
+    },
+    {
+      "line": "será para la quema, pasto del fuego., (Sol,,33)(La,m,316)",
+      "sC": ""
+    },
+    {
+      "line": "Porque nos ha nacido un niño,, (Sol,,58)(La,m,260)",
+      "sC": ""
+    },
+    {
+      "line": "porque un hijo se nos ha dado., (Sol,,58)(La,m,256)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EL DOMINIO ESTARÁ, (Do,,11)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SOBRE SUS HOMBROS,, (La,m,139)",
+          "sC": "as"
+        },
+        {
+          "line": "Y SU NOMBRE SERÁ,, (Sol#,,199)",
+          "sC": "as"
+        },
+        {
+          "line": "Y SU NOMBRE SERÁ:, (Sol,,192)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "CONSEJERO MARAVILLOSO,, (Do,,12)(La,m,228)",
+          "sC": "as"
+        },
+        {
+          "line": "DIOS FUERTE, PADRE ETERNO,, (Do,,88)(La,m,246)",
+          "sC": "as"
+        },
+        {
+          "line": "PRÍNCIPE DE PAZ,, (Sol,,27)(La,m,150)",
+          "sC": "as"
+        },
+        {
+          "line": "PRÍNCIPE DE PAZ., (Sol,,27)(La,m,150)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

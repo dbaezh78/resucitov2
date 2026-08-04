@@ -1,0 +1,134 @@
+{
+  "id": "heaquiquevengopresto",
+  "tt": "He Aquí Que Vengo Presto",
+  "title": "He Aquí Que Vengo Presto",
+  "subtitle": "Apocalipsis 22,12-16",
+  "category": [
+    "Precatecumenado",
+    "Adviento",
+    "Navidad",
+    "Entrada",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "82",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/heaquiquevengopresto.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=heaquimisiervo",
+  "sig": "/src/index.html?canto=heesperadoenelsenor",
+  "lizq": [
+    {
+      "line": "He aquí que vengo presto, (La,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "y conmigo mi recompensa, (Mi,,69)",
+      "sC": ""
+    },
+    {
+      "line": "para dar a cada uno, (Si,7,68)",
+      "sC": ""
+    },
+    {
+      "line": "según sus obras, (Mi,,112)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo soy el Alfa y la Omega,, (Mi,7,17)(La,,207)",
+      "sC": ""
+    },
+    {
+      "line": "el Primero y el Último,, (Mi,,154)",
+      "sC": ""
+    },
+    {
+      "line": "el Primero y el Último, (Si,7,158)",
+      "sC": ""
+    },
+    {
+      "line": "el Principio y el Fin., (Mi,,163)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "BIENAVENTURADOS, (Mi,7,18)(La,,114)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LOS QUE LAVAN SUS TÚNICAS, (Mi,,227)",
+      "sC": "as r1"
+    },
+    {
+      "line": "PARA TENER DERECHO, (Si,7,182)",
+      "sC": "as"
+    },
+    {
+      "line": "AL ÁRBOL DE LA VIDA., (Mi,,185)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo soy la raíz y el linaje de David, (Do#,,14)(Fa#,,189)",
+      "sC": "tc"
+    },
+    {
+      "line": "la Estrella de la mañana., (Sol#,,65)(Fa#,,196)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "BIENAVENTURADOS, (Mi,7,18)(La,,114)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LOS QUE LAVAN SUS TÚNICAS, (Mi,,227)",
+          "sC": "as r1"
+        },
+        {
+          "line": "PARA TENER DERECHO, (Si,7,182)",
+          "sC": "as"
+        },
+        {
+          "line": "AL ÁRBOL DE LA VIDA., (Mi,,185)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,263 @@
+{
+  "id": "lasiegadelasnaciones",
+  "tt": "La Siega De Las Naciones",
+  "title": "La Siega De Las Naciones",
+  "subtitle": "Juan 4,31-38",
+  "category": [
+    "Precatecumenado",
+    "Final",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "100",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/lasiegadelasnaciones.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=lasalve",
+  "sig": "/src/index.html?canto=lavozdemiamado",
+  "lizq": [
+    {
+      "line": "Llegaron sus discípulos y le dijeron:, (Re,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "«Rabbí, come, Rabbí, come»., (Sol,m,51)(La,,90)(Sol,m,180)(La,,227)",
+      "sC": ""
+    },
+    {
+      "line": "Pero Él les dijo: «Yo tengo para comer, (Si♭,,13)",
+      "sC": ""
+    },
+    {
+      "line": "un alimento que vosotros no conocéis:, (La,,344)",
+      "sC": ""
+    },
+    {
+      "line": "mi alimento es hacer la voluntad, (Si♭,,13)",
+      "sC": ""
+    },
+    {
+      "line": "de Aquel que me ha enviado, (La,,242)",
+      "sC": ""
+    },
+    {
+      "line": "y llevar a cabo su obra»., (Sol,m,49)(La,,179)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿NO DECÍS VOSOTROS:, (Re,m,157)(La,,198)",
+      "sC": "ta as"
+    },
+    {
+      "line": "TODAVÍA CUATRO MESES, ",
+      "sC": "as"
+    },
+    {
+      "line": "Y LLEGA YA LA SIEGA?, (Re,m,170)",
+      "sC": "as"
+    },
+    {
+      "line": "¿NO DECÍS VOSOTROS:, (Do,,95)(Si♭,,129)(La,,160)",
+      "sC": "as"
+    },
+    {
+      "line": "TODAVÍA CUATRO MESES, ",
+      "sC": "as"
+    },
+    {
+      "line": "Y LLEGA YA LA SIEGA?, (Re,m,176)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pues bien, yo os digo:, (Sol,m,23)",
+      "sC": "tc"
+    },
+    {
+      "line": "alzad vuestros ojos y ved los campos, (Do,,10)",
+      "sC": ""
+    },
+    {
+      "line": "que ya blanquean para la siega,, (La,,269)",
+      "sC": ""
+    },
+    {
+      "line": "QUE YA BLANQUEAN PARA LA SIEGA., (Si♭,,170)(La,,320)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¿NO DECÍS VOSOTROS (Re,m,157)(La,,198)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "TODAVÍA CUATRO MESES, ",
+          "sC": "as"
+        },
+        {
+          "line": "Y LLEGA YA LA SIEGA?, (Re,m,170)",
+          "sC": "as"
+        },
+        {
+          "line": "¿NO DECÍS VOSOTROS:, (Do,,95)(Si♭,,129)(La,,160)",
+          "sC": "as"
+        },
+        {
+          "line": "TODAVÍA CUATRO MESES, ",
+          "sC": "as"
+        },
+        {
+          "line": "Y LLEGA YA LA SIEGA?, (Re,m,176)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Ya se reúnen los segadores,, (Si♭,,10)(La,,225)",
+      "sC": "tc"
+    },
+    {
+      "line": "YA SE REÚNEN LOS SEGADORES,, (Si♭,,10)(La,,268)",
+      "sC": "ta as"
+    },
+    {
+      "line": "y reciben el salario y recogen fruto, (Sol,m,51)",
+      "sC": "tc"
+    },
+    {
+      "line": "para la vida eterna,, (La,,143)",
+      "sC": ""
+    },
+    {
+      "line": "A PARA LA VIDA ETERNA., (Si♭,,10)(La,,194)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "¿NO DECÍS VOSOTROS (Re,m,157)(La,,198)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "TODAVÍA CUATRO MESES, ",
+          "sC": "as"
+        },
+        {
+          "line": "Y LLEGA YA LA SIEGA?, (Re,m,170)",
+          "sC": "as"
+        },
+        {
+          "line": "¿NO DECÍS VOSOTROS:, (Do,,95)(Si♭,,129)(La,,160)",
+          "sC": "as"
+        },
+        {
+          "line": "TODAVÍA CUATRO MESES, ",
+          "sC": "as"
+        },
+        {
+          "line": "Y LLEGA YA LA SIEGA?, (Re,m,176)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo os he mandado a segar, (Sol,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "lo que vosotros no habéis trabajado;, (Do,,10)(La,,312)",
+      "sC": ""
+    },
+    {
+      "line": "otros se fatigaron, (Si♭,,11)",
+      "sC": ""
+    },
+    {
+      "line": "y vosotros os aprovecháis de su fatiga;, (La,,334)",
+      "sC": ""
+    },
+    {
+      "line": "de modo que el sembrador, (Sol,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "se alegra, se alegra con el segador., (Do,,10)(Si♭,,153)(La,,320)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¿NO DECÍS VOSOTROS (Re,m,157)(La,,198)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "TODAVÍA CUATRO MESES, ",
+          "sC": "as"
+        },
+        {
+          "line": "Y LLEGA YA LA SIEGA?, (Re,m,170)",
+          "sC": "as"
+        },
+        {
+          "line": "¿NO DECÍS VOSOTROS:, (Do,,95)(Si♭,,129)(La,,160)",
+          "sC": "as"
+        },
+        {
+          "line": "TODAVÍA CUATRO MESES, ",
+          "sC": "as"
+        },
+        {
+          "line": "Y LLEGA YA LA SIEGA?, (Re,m,176)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

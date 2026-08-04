@@ -1,0 +1,236 @@
+{
+  "id": "salmodiasparalaudes2",
+  "tt": "Salmodias Para Laudes",
+  "title": "Salmodias Para Laudes",
+  "subtitle": "Modelo del VI al X",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "213",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/salmodiasparalaudes.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=salmodiasparalaudes1",
+  "sig": "/src/index.html?canto=santopalomeras65",
+  "lizq": [
+    {
+      "line": "SALMODIA VI ",
+      "sC": "negrita",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Sal 49 [48] ",
+      "sC": "sub",
+      "color": "gray"
+    },
+    {
+      "line": "Con la melodía de «El Señor anuncia una noticia»., ",
+      "sC": "tt s1"
+    },
+    {
+      "line": "MI BOCA HABLARÁ SABIAMENTE;, (Sol,,14)(Mi,m,214)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y SERÁN MUY SENSATAS MIS REFLEXIONES;, (La,m,20)(Mi,m,268)",
+      "sC": "as"
+    },
+    {
+      "line": "prestaré oído al proverbio, (La,m,20)(Mi,m,151)",
+      "sC": "tc"
+    },
+    {
+      "line": "Y propondré mi problema al son de la cítara., (Sol,,14)(Si,m,206)(Mi,m,383)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SALMODIA VII ",
+      "sC": "negrita",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Ap 11",
+      "sC": "sub",
+      "color": "gray"
+    },
+    {
+      "line": "Gracias te damos, Señor Dios omnipotente,, (Mi,m,20)(Sol,,376)",
+      "sC": "tc"
+    },
+    {
+      "line": "EL QUE ERES Y EL QUE ERAS,, (Re,,22)(Mi,m,244)",
+      "sC": "ta as"
+    },
+    {
+      "line": "porque has asumido el gran poder,, (Mi,m,20)(Sol,,315)",
+      "sC": "tc"
+    },
+    {
+      "line": "Y COMENZASTE A REINAR., (Re,,217)(Mi,m,256)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Ahora se estableció la salud y el poderío,, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "y el reinado de nuestro Dios,, (La,m,242)(Mi,m,286)",
+      "sC": ""
+    },
+    {
+      "line": "Y LA POTESTAD DE SU CRISTO., (Sol,,14)(Re,,246)(Mi,m,282)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SALMODIA VIII ",
+      "sC": "negrita",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Sal 96 [95]",
+      "sC": "sub",
+      "color": "gray"
+    },
+    {
+      "line": "El Señor reina la tierra goza,, (Sol,,14)",
+      "sC": "tc"
+    },
+    {
+      "line": "se alegran las islas innumerables., (Do,,10)(Sol,,278)",
+      "sC": ""
+    },
+    {
+      "line": "TINIEBLA Y NUBE LO RODEAN,, (Sol,,14)",
+      "sC": "ta as"
+    },
+    {
+      "line": "JUSTICIA Y DERECHO SOSTIENEN SU TRONO., (Do,,10)(Sol,,387)",
+      "sC": "as"
+    },
+    {
+      "line": "Delante de él avanza fuego,, (Sol,,14)",
+      "sC": "tc"
+    },
+    {
+      "line": "abrasando en torno a los enemigos;, ",
+      "sC": ""
+    },
+    {
+      "line": "SUS RELÁMPAGOS DESLUMBRAN EL ORBE,, (Do,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y, VIÉNDOLOS, LA TIERRA SE ESTREMECE., (Sol,,397)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [
+    {
+      "line": "SALMODIA IX ",
+      "sC": "negrita",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Sal 149 ",
+      "sC": "sub",
+      "color": "gray"
+    },
+    {
+      "line": "Cantad al Señor un cántico nuevo,, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "resuene su alabanza en la asamblea de los fieles., (Re,,14)(Mi,m,440)",
+      "sC": "width"
+    },
+    {
+      "line": "QUE SE ALEGRE ISRAEL POR SU CREADOR,, (Mi,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LOS HIJOS DE SIÓN POR SU REY., (Do,,10)(Si,m,275)(Mi,m,318)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Alabad su nombre con danzas,, (Mi,m,20)(Re,,238)",
+      "sC": "tc"
+    },
+    {
+      "line": "cantadle con tambores y cítaras;, (Mi,m,262)",
+      "sC": ""
+    },
+    {
+      "line": "PORQUE EL SEÑOR AMA A SU PUEBLO, (Mi,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y ADORNA CON LA VICTORIA A LOS HUMILDES., (Do,,10)(Si,m,391)(Mi,m,432)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SALMODIA X ",
+      "sC": "negrita",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Sb 9 ",
+      "sC": "sub",
+      "color": "gray"
+    },
+    {
+      "line": "Dios de los padres y Señor de la misericordia, (Re,m,22)(La,7,388)",
+      "sC": "tc"
+    },
+    {
+      "line": "QUE CON TU PALABRA HICISTE TODAS LAS COSAS,, ",
+      "sC": "ta as"
+    },
+    {
+      "line": "y en tu sabiduría formaste al hombre,, (Sol,m,24)(La,7,299)(Re,m,343)",
+      "sC": "tc"
+    },
+    {
+      "line": "PARA QUE DOMINASE SOBRE TUS CRIATURAS., (Si♭,7,17)(La,7,396)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

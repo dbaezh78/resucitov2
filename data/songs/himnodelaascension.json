@@ -1,0 +1,187 @@
+{
+  "id": "himnodelaascension",
+  "tt": "Himno De La Ascensión",
+  "title": "Himno De La Ascensión",
+  "subtitle": "Himno de Laudes del tiempo Pascual, de la Ascensión a Pentecostés  / Himno de la liturgia de las horas ",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "89",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/himnodelaascension.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=himnodeadviento",
+  "sig": "/src/index.html?canto=himnodepascua",
+  "lizq": [
+    {
+      "line": "EL BUEN PASTOR HA SUBIDO, (La,m,20)(Sol,,250)",
+      "sC": "ta as"
+    },
+    {
+      "line": "A LA DERECHA DEL PADRE,, (La,m,212)",
+      "sC": "as r1"
+    },
+    {
+      "line": "VELA EL PEQUEÑO REBAÑO, (Sol,,229)",
+      "sC": "as"
+    },
+    {
+      "line": "CON MARÍA EN EL CENÁCULO., (La,m,228)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Del esplendor eterno, (La,m,20)(Sol,,162)",
+      "sC": "tc"
+    },
+    {
+      "line": "desciende el crisma profético,, (La,m,245)",
+      "sC": ""
+    },
+    {
+      "line": "que consagra a los apóstoles, (Sol,,212)",
+      "sC": ""
+    },
+    {
+      "line": "en heraldos del Evangelio., (La,m,216)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EL BUEN PASTOR HA SUBIDO, (La,m,20)(Sol,,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "A LA DERECHA DEL PADRE,, (La,m,212)",
+          "sC": "as r1"
+        },
+        {
+          "line": "VELA EL PEQUEÑO REBAÑO, (Sol,,229)",
+          "sC": "as"
+        },
+        {
+          "line": "CON MARÍA EN EL CENÁCULO., (La,m,228)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ven, oh divino Espíritu,, (La,m,20)(Sol,,162)",
+      "sC": "tc"
+    },
+    {
+      "line": "con tus santos dones, (La,m,245)",
+      "sC": ""
+    },
+    {
+      "line": "y transforma nuestros cuerpos, (Sol,,212)",
+      "sC": ""
+    },
+    {
+      "line": "en el templo de tu santa gloria., (La,m,216)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "EL BUEN PASTOR HA SUBIDO, (La,m,20)(Sol,,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "A LA DERECHA DEL PADRE,, (La,m,212)",
+          "sC": "as r1"
+        },
+        {
+          "line": "VELA EL PEQUEÑO REBAÑO, (Sol,,229)",
+          "sC": "as"
+        },
+        {
+          "line": "CON MARÍA EN EL CENÁCULO., (La,m,228)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Oh luz de eterna sabiduría,, (La,m,20)(Sol,,233)",
+      "sC": "tc"
+    },
+    {
+      "line": "revélanos el gran misterio, (La,m,217)",
+      "sC": ""
+    },
+    {
+      "line": "del Dios uno y trino, (Sol,,155)",
+      "sC": ""
+    },
+    {
+      "line": "fuente de eterno amor., (La,m,196)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "EL BUEN PASTOR HA SUBIDO, (La,m,20)(Sol,,250)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "A LA DERECHA DEL PADRE,, (La,m,212)",
+          "sC": "as r1"
+        },
+        {
+          "line": "VELA EL PEQUEÑO REBAÑO, (Sol,,229)",
+          "sC": "as"
+        },
+        {
+          "line": "CON MARÍA EN EL CENÁCULO., (La,m,228)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

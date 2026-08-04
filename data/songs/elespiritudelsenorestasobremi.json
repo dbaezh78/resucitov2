@@ -1,0 +1,151 @@
+{
+  "id": "elespiritudelsenorestasobremi",
+  "tt": "El Espíritu del Señor Está sobre mí",
+  "title": "El Espíritu del Señor Está sobre mí",
+  "subtitle": "Lucas 4,18 – Isaías 61,1-3",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Entrada",
+    "Comunión",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "54",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/elespiritudelsenorestasobremi.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=elcombateescatologico",
+  "sig": "/src/index.html?canto=eljacaldelospastores",
+  "lizq": [
+    {
+      "line": "EL ESPÍRITU DEL SEÑOR ESTÁ SOBRE MÍ,, (La,m,19)(Mi,,215)(La,m,388)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EL ESPÍRITU DEL SEÑOR ESTÁ SOBRE MÍ., (Mi,,214)(La,m,389)",
+      "sC": "as"
+    },
+    {
+      "line": "PUES ME HA UNGIDO,, (Sol,,172)",
+      "sC": "as"
+    },
+    {
+      "line": "ME HA ENVIADO,, (Fa,,121)",
+      "sC": "as"
+    },
+    {
+      "line": "PARA ANUNCIAR LA SALVACIÓN., (Mi,,287)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PARA ANUNCIAR LA SALVACIÓN,, (La,m,294)",
+      "sC": "as"
+    },
+    {
+      "line": "PARA ANUNCIAR LA SALVACIÓN, (Sol,,286)",
+      "sC": "as"
+    },
+    {
+      "line": "A LOS POBRES, (Fa,,77)",
+      "sC": "as"
+    },
+    {
+      "line": "DE QUEBRANTADO CORAZÓN., (Mi,,262)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Para que los ciegos vean,, (La,m,206)",
+      "sC": "tc"
+    },
+    {
+      "line": "los cojos anden,, (Sol,,99)",
+      "sC": ""
+    },
+    {
+      "line": "los leprosos queden limpios,, (Fa,,203)",
+      "sC": ""
+    },
+    {
+      "line": "para anunciar la salvación., (Mi,,233)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "EL ESPÍRITU DEL SEÑOR ESTÁ SOBRE MÍ, (La,m,19)(Mi,,215)(La,m,388)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EL ESPÍRITU DEL SEÑOR ESTÁ SOBRE MÍ., (Mi,,214)(La,m,389)",
+          "sC": "as"
+        },
+        {
+          "line": "PUES ME HA UNGIDO,, (Sol,,172)",
+          "sC": "as"
+        },
+        {
+          "line": "ME HA ENVIADO,, (Fa,,121)",
+          "sC": "as"
+        },
+        {
+          "line": "PARA ANUNCIAR LA SALVACIÓN., (Mi,,287)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "PARA ANUNCIAR LA SALVACIÓN,, (La,m,294)",
+          "sC": "as"
+        },
+        {
+          "line": "PARA ANUNCIAR LA SALVACIÓN, (Sol,,286)",
+          "sC": "as"
+        },
+        {
+          "line": "A LOS POBRES, (Fa,,77)",
+          "sC": "as"
+        },
+        {
+          "line": "DE QUEBRANTADO CORAZÓN., (Mi,,262)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

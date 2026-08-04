@@ -1,0 +1,138 @@
+{
+  "id": "alavictimapascual",
+  "tt": "A la Víctima Pascual",
+  "title": "A la Víctima Pascual",
+  "subtitle": "Secuencia de Pascua - Himno lat. «Victimae paschall laudes»",
+  "category": [
+    "PreCatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Comunión"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "5",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "1",
+  "notes": "Este canto se usa en la liturgia de Pascua.",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/alavictimapascual.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/",
+  "sig": "/src/index.html?canto=anadiedemosocasiondetropiezo",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "cantosprecatecumenado",
+      "color": "#544d47"
+    },
+    {
+      "line": "A la víctima pascual, (La,m,18)(La,7,200)",
+      "sC": "tc"
+    },
+    {
+      "line": "ofrecemos hoy"
+    },
+    {
+      "line": "el sacrificio de alabanza. (Re,m9,186)"
+    },
+    {
+      "line": "El cordero ha redimido el rebaño, (Fa,maj7,27)(Mi,,280)"
+    },
+    {
+      "line": "el inocente ha reconciliado, (Re,m9,18)(Fa,,225)"
+    },
+    {
+      "line": "los pecadores al Padre, (Mi,,176)"
+    },
+    {
+      "line": "Muerte y vida se han enfrentado, (La,m,15)(La,7,101)",
+      "sC": "mt"
+    },
+    {
+      "line": "en un prodigioso duelo: (Re,m9,186)"
+    },
+    {
+      "line": "el Señor de la Vida estaba muerto, (Fa,maj7,27)(Mi,,290)"
+    },
+    {
+      "line": "mas ahora está vivo y triunfa. (Re,m9,78)(Fa,,143)(Mi,,229)"
+    },
+    {
+      "line": "Dinos tú, María: (La,7,15)",
+      "sC": "mt"
+    },
+    {
+      "line": "¿qué has visto en el camino?, "
+    },
+    {
+      "line": "«La tumba de Cristo vacía, (Fa,maj7,27)(Mi,,228)"
+    },
+    {
+      "line": "la Gloria del Señor y vivo Cristo, (Re,m9,21)(Fa,,158)(Mi,,263)"
+    },
+    {
+      "line": "los ángeles, las vendas y el sudario». (Fa,,10)(Mi,,303)"
+    }
+  ],
+  "lder": [
+    {
+      "line": "PORQUE CRISTO, MI ESPERANZA, (Fa,,115)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¡HA RESUCITADO! (Mi,,130)",
+      "sC": "as"
+    },
+    {
+      "line": "Y NOS PRECEDE EN GALILEA, (Fa,,8)(Mi,,257)",
+      "sC": "as"
+    },
+    {
+      "line": "Y NOS PRECEDE EN GALILEA. (Fa,,8)(Mi,,257)",
+      "sC": "as"
+    },
+    {
+      "line": "SÍ QUE ES CIERTO,   (Re,m,15)(Mi,,125)",
+      "sC": "as mt"
+    },
+    {
+      "line": "CRISTO HA RESUCITADO. (Fa,maj 7,28)(Fa,,128)(Mi,,195)",
+      "sC": "as"
+    },
+    {
+      "line": "SÍ QUE ES CIERTO, (Re,m,10)(Mi,,198)",
+      "sC": "as"
+    },
+    {
+      "line": "CRISTO HA RESUCITADO. (Fa,,10)(Mi,,122)",
+      "sC": "as"
+    },
+    {
+      "line": "Y NOS PRECEDE EN GALILEA, (Fa,,10)(Mi,,254)",
+      "sC": "as"
+    },
+    {
+      "line": "Y NOS PRECEDE EN GALILEA. (Fa,,10)(Mi,,254)",
+      "sC": "as"
+    },
+    {
+      "line": "Tú, Rey victorioso, danos tú la salvación. (Fa,,10)(Mi,,356)",
+      "sC": "mt tc"
+    }
+  ],
+  "sourceBook": "resucito"
+}

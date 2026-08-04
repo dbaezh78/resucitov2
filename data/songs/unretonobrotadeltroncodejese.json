@@ -1,0 +1,274 @@
+{
+  "id": "unretonobrotadeltroncodejese",
+  "tt": "Un Retoño Brota Del Tronco De Jesé",
+  "title": "Un Retoño Brota Del Tronco De Jesé",
+  "subtitle": "Isaías 11,1-11",
+  "category": [
+    "Precatecumenado",
+    "Adviento",
+    "Navidad",
+    "Pascua",
+    "Pentecostés",
+    "Comunión",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "162",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/unretonobrotadeltroncodejese.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=tuqueeresfiel",
+  "sig": "/src/index.html?canto=unagransenal",
+  "lizq": [
+    {
+      "line": "UN RETOÑO BROTA DEL TRONCO DE JESÉ,, (Sol,,14)(Mi,m,418)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UN GERMEN DE SUS RAÍCES., (Sol,,231)",
+      "sC": "as"
+    },
+    {
+      "line": "SOBRE ÉL SE POSA EL ESPÍRITU DEL SEÑOR:, (Do,,82)(Sol,,406)",
+      "sC": "as"
+    },
+    {
+      "line": "ESPÍRITU DE SABIDURÍA E INTELIGENCIA,, (Re,,40)(Sol,,339)",
+      "sC": "as"
+    },
+    {
+      "line": "ESPÍRITU DE CONSEJO Y FORTALEZA,, (Re,,40)(Sol,,323)",
+      "sC": "as"
+    },
+    {
+      "line": "ESPÍRITU DE CIENCIA Y DE PIEDAD,, (Do,,40)(Sol,,313)",
+      "sC": "as"
+    },
+    {
+      "line": "ESPÍRITU DE TEMOR DEL SEÑOR., (Re,,40)(Sol,,290)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No juzgará de oídas,, (Do,,10)(Sol,,149)",
+      "sC": "tc"
+    },
+    {
+      "line": "sino que ayudará a los oprimidos., (Re,,10)(Sol,,279)",
+      "sC": ""
+    },
+    {
+      "line": "Su palabra será una vara contra el violento, (Do,,65)(Sol,,373)",
+      "sC": ""
+    },
+    {
+      "line": "y con el soplo de su boca matará al malvado., (Re,,92)(Sol,,398)",
+      "sC": ""
+    },
+    {
+      "line": "El lobo vivirá con el cordero,, (Do,,34)(Sol,,235)",
+      "sC": ""
+    },
+    {
+      "line": "la pantera se echará con el cabrito,, (Do,,71)(Sol,,309)",
+      "sC": ""
+    },
+    {
+      "line": "el león y el novillo pacerán juntos,, (Re,,45)(Sol,,269)",
+      "sC": ""
+    },
+    {
+      "line": "y un niño los guiará, y un niño los guiará., (Do,,57)(Sol,,176)(Re,,258)(Sol,,376)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "UN RETOÑO BROTA DEL TRONCO DE JESÉ, (Sol,,14)(Mi,m,418)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "UN GERMEN DE SUS RAÍCES., (Sol,,231)",
+          "sC": "as"
+        },
+        {
+          "line": "SOBRE ÉL SE POSA EL ESPÍRITU DEL SEÑOR:, (Do,,82)(Sol,,406)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPÍRITU DE SABIDURÍA E INTELIGENCIA,, (Re,,40)(Sol,,339)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPÍRITU DE CONSEJO Y FORTALEZA,, (Re,,40)(Sol,,323)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPÍRITU DE CIENCIA Y DE PIEDAD,, (Do,,40)(Sol,,313)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPÍRITU DE TEMOR DEL SEÑOR., (Re,,40)(Sol,,290)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La vaca y la osa estarán juntas,, (Do,,10)(Sol,,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "el león, como el buey, comerá paja., (Do,,45)(Sol,,310)",
+      "sC": ""
+    },
+    {
+      "line": "El niño de pecho hurgará, (Re,,37)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "en el agujero del áspid,, (Sol,,173)",
+      "sC": ""
+    },
+    {
+      "line": "el recién nacido meterá la mano, (Do,,123)",
+      "sC": ""
+    },
+    {
+      "line": "en la hura de la víbora., (Sol,,167)",
+      "sC": ""
+    },
+    {
+      "line": "Porque ya nadie hará daño., (Re,,56)(Sol,,223)",
+      "sC": "tc"
+    },
+    {
+      "line": "PORQUE YA NADIE HARÁ DAÑO., (Re,,74)(Sol,,271)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Porque la tierra estará llena, (Re,,114)",
+      "sC": "tc"
+    },
+    {
+      "line": "del conocimiento del Señor., (Sol,,247)",
+      "sC": ""
+    },
+    {
+      "line": "PORQUE LA TIERRA ESTARÁ LLENA, (Re,,145)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DEL CONOCIMIENTO DEL SEÑOR., (Sol,,288)",
+      "sC": "as"
+    },
+    {
+      "line": "Porque aquel día, (Si,7,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "la raíz de Jesé se levantará, ",
+      "sC": ""
+    },
+    {
+      "line": "como estandarte de los pueblos,, (Mi,m,260)",
+      "sC": ""
+    },
+    {
+      "line": "y las gentes lo seguirán con ansia., (La,m,67)(Si,7,283)",
+      "sC": ""
+    },
+    {
+      "line": "En aquel día el Señor extenderá su mano, (Do,,104)(Si,7,362)",
+      "sC": ""
+    },
+    {
+      "line": "y un camino se formará,, (Do,,86)(Si,7,220)",
+      "sC": ""
+    },
+    {
+      "line": "Y UN CAMINO SE FORMARÁ;, (Do,,97)(Si,7,262)",
+      "sC": "ta as"
+    },
+    {
+      "line": "una vía para todas las naciones,, (Do,,58)(Si,7,263)",
+      "sC": "tc"
+    },
+    {
+      "line": "UNA VÍA PARA TODAS LAS NACIONES, (Do,,63)(Si,7,312)",
+      "sC": "ta as"
+    },
+    {
+      "line": "que la Virgen indicará., (La,m,20)(Si,7,200)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "UN RETOÑO BROTA DEL TRONCO DE JESÉ, (Sol,,14)(Mi,m,418)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "UN GERMEN DE SUS RAÍCES., (Sol,,231)",
+          "sC": "as"
+        },
+        {
+          "line": "SOBRE ÉL SE POSA EL ESPÍRITU DEL SEÑOR:, (Do,,82)(Sol,,406)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPÍRITU DE SABIDURÍA E INTELIGENCIA,, (Re,,40)(Sol,,339)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPÍRITU DE CONSEJO Y FORTALEZA,, (Re,,40)(Sol,,323)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPÍRITU DE CIENCIA Y DE PIEDAD,, (Do,,40)(Sol,,313)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPÍRITU DE TEMOR DEL SEÑOR., (Re,,40)(Sol,,290)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

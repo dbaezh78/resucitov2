@@ -1,0 +1,229 @@
+{
+  "id": "yoteamosenor",
+  "tt": "Yo Te Amo, Señor",
+  "title": "Yo Te Amo, Señor",
+  "subtitle": "Salmo 18 (17)",
+  "category": [
+    "Precatecumenado",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "176",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/yoteamosenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=yahvehtueresmidios",
+  "sig": "/src/index.html?canto=yovengoareunir",
+  "lizq": [
+    {
+      "line": "Yo te amo, Señor, tú eres mi roca,, (Re,,11)(Fa#,,150)(Si,m,293)",
+      "sC": "tc"
+    },
+    {
+      "line": "tú eres mi liberador, tú eres mi Dios., (Sol,,14)(Fa#,,327)",
+      "sC": ""
+    },
+    {
+      "line": "Yo te amo, yo te amo, Señor., (Sol,,63)(Fa#,,255)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "mheight0"
+    },
+    {
+      "line": "[Violin *]",
+      "sC": "fontstyle",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "",
+      "sC": "mheight2"
+    },
+    {
+      "line": "LAS OLAS DE LA MUERTE ME ENVOLVÍAN,, (Re,,11)(Si,m,369)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ME ESPANTABAN LAS TROMBAS DE BELIAL,, (Sol,,117)(Re,,399)",
+      "sC": "as"
+    },
+    {
+      "line": "ME RODEABAN LOS LAZOS DEL SEOL,, (La,,96)(Sol,,338)",
+      "sC": "as"
+    },
+    {
+      "line": "HABÍA CAÍDO EN LOS CEPOS DE LA MUERTE., (Re,,379)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "mheight0"
+    },
+    {
+      "line": "[Violin **]",
+      "sC": "fontstyle",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "",
+      "sC": "mheight2"
+    },
+    {
+      "line": "Clamé al Señor en mi angustia,, (Fa#,,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "a mi Dios, a mi Dios invoqué,, (Si,m,263)",
+      "sC": ""
+    },
+    {
+      "line": "y escuchó mi voz desde su templo,, (La,,11)(Sol,,274)",
+      "sC": ""
+    },
+    {
+      "line": "llegó mi llamada a sus oídos., (Fa#,,234)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y la tierra fue sacudida y vaciló,, (Sol,,58)(Fa#,,290)",
+      "sC": ""
+    },
+    {
+      "line": "retemblaron las bases de los montes., (Sol,,91)(Fa#,,304)",
+      "sC": ""
+    },
+    {
+      "line": "Porque inclinó los cielos y bajó., (Sol,,14)(Fa#,,284)",
+      "sC": "melisma"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Y el fondo del mar quedó a la vista,, (La,,10)(Fa#,,299)",
+      "sC": ""
+    },
+    {
+      "line": "los cimientos del orbe aparecieron., (La,,79)(Fa#,,294)",
+      "sC": ""
+    },
+    {
+      "line": "Extendió su mano para asirme,, (Sol,,77)",
+      "sC": ""
+    },
+    {
+      "line": "me sacó de lo profundo de las aguas., (Fa#,,306)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "YO TE AMO, SEÑOR (Re,,10)(Fa#,,150)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "YO TE AMO, SEÑOR, TÚ ERES MI ROCA, (Re,,10)(Fa#,,150)(Si,m,293)",
+          "sC": "as sub"
+        },
+        {
+          "line": "TÚ ERES MI LIBERADOR, TÚ ERES MI DIOS., (Sol,,14)(Fa#,,327)",
+          "sC": "as"
+        },
+        {
+          "line": "YO TE AMO, YO TE AMO, SEÑOR., (Sol,,70)(Fa#,,276)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LAS OLAS DE LA MUERTE (Re,,11)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "LAS OLAS DE LA MUERTE ME ENVOLVÍAN, (Re,,11)(Si,m,369)",
+          "sC": "as sub"
+        },
+        {
+          "line": "ME ESPANTABAN LAS TROMBAS DE BELIAL,, (Sol,,117)(Re,,399)",
+          "sC": "as"
+        },
+        {
+          "line": "ME RODEABAN LOS LAZOS DEL SEOL,, (La,,96)(Sol,,338)",
+          "sC": "as"
+        },
+        {
+          "line": "HABÍA CAÍDO EN LOS CEPOS DE LA MUERTE., (Re,,379)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb"
+    },
+    {
+      "img": "/src/img/yoteamo1.png",
+      "chords": "(Si,m,93)(La,,348)",
+      "sC": "img ast"
+    },
+    {
+      "img": "/src/img/yoteamo2.png",
+      "chords": "(Si,m,71)(La,,281)(Si,m,380)",
+      "sC": "img"
+    },
+    {
+      "img": "/src/img/yoteamo3.png",
+      "chords": "(Sol,,65)(Fa#,,173)(Sol,,236)(Fa#,,430)",
+      "sC": "img"
+    },
+    {
+      "line": "",
+      "sC": "adb"
+    },
+    {
+      "img": "/src/img/yoteamo4.png",
+      "chords": "(Si,m,88)(Sol,,213)(La,,382)",
+      "sC": "img astd"
+    },
+    {
+      "img": "/src/img/yoteamo5.png",
+      "chords": "(Sol,,67)(Fa#,,188)(Sol,,301)(Fa#,,425)",
+      "sC": "img"
+    }
+  ],
+  "sourceBook": "resucito"
+}

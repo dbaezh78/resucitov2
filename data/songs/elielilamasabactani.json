@@ -1,0 +1,322 @@
+{
+  "id": "elielilamasabactani",
+  "tt": "Elí, Elí, Lamá Sabactaní ",
+  "title": "Elí, Elí, Lamá Sabactaní ",
+  "subtitle": "Salmo 22 (21)",
+  "category": [
+    "Precatecumenado",
+    "Antiguo Testamento",
+    "Adviento",
+    "Navidad",
+    "Cuaresma",
+    "Penitencial"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "63",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/elielilamasabactani.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 5,
+      "i": 0.5
+    },
+    "tablet": {
+      "v": 3,
+      "i": 0.4
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=elsenormehadado",
+  "sig": "/src/index.html?canto=enmediodeaquelgentio",
+  "lizq": [
+    {
+      "line": "ELÍ, ELÍ, LAMÁ SABACTANÍ., (Mi,m,15)(La,m,125)(Mi,m,251)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DIOS MÍO, DIOS MÍO, ",
+      "sC": "as"
+    },
+    {
+      "line": "¿POR QUÉ ME HAS ABANDONADO?, (La,m,91)(Mi,m,292)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Qué lejos te siento de mis gritos!, (Si,7,15)",
+      "sC": "tc ptop00"
+    },
+    {
+      "line": "De día clamo, y no respondes,",
+      "sC": "ptop00"
+    },
+    {
+      "line": "grito de noche, y no hay reposo para mí.,(Mi,m,372) ",
+      "sC": "ptop00"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ELÍ, ELÍ, LAMÁ SABACTANÍ, (Mi,m,15)(La,m,125)(Mi,m,251)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DIOS MÍO, DIOS MÍO, ",
+          "sC": "as"
+        },
+        {
+          "line": "¿POR QUÉ ME HAS ABANDONADO?, (La,m,91)(Mi,m,292)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Mas tú eres el Santo,, (Si,7,15)",
+      "sC": "tc ptop00"
+    },
+    {
+      "line": "tú que vives en medio de mi pueblo!, ",
+      "sC": "ptop00"
+    },
+    {
+      "line": "A ti clamaron nuestros padres, ",
+      "sC": "ptop00"
+    },
+    {
+      "line": "y tú les ayudaste,",
+      "sC": "ptop00"
+    },
+    {
+      "line": "en ti confiaron y nunca quedaron confundidos.(Mi,m,398)",
+      "sC": "ptop00"
+    },
+    {
+      "line": "Entonces yo, ¿por qué no me ayudas?, (La,m,313)",
+      "sC": ""
+    },
+    {
+      "line": "¿Acaso no soy un hombre?, (Mi,m,192)",
+      "sC": ""
+    },
+    {
+      "line": "Eso soy yo: soy un gusano,, (Si,7,15)",
+      "sC": ""
+    },
+    {
+      "line": "desprecio de la gente, asco del pueblo, ",
+      "sC": "ptop00"
+    },
+    {
+      "line": "todos los que me ven de mí se ríen, ",
+      "sC": "ptop00"
+    },
+    {
+      "line": "menean la cabeza y dicen: ",
+      "sC": "ptop00"
+    },
+    {
+      "line": "«Se confió a Dios, ¡que él lo libre,",
+      "sC": "ptop00"
+    },
+    {
+      "line": "que él le salve, si tanto dice que le ama!»,  (Mi,m,351)",
+      "sC": "ptop00"
+    },
+    {
+      "line": "Sí, que tú me amas, sí, que tú me quieres,, (La,m,358)",
+      "sC": ""
+    },
+    {
+      "line": "en el seno de mi madre me formaste;, (Mi,m,319)",
+      "sC": ""
+    },
+    {
+      "line": "cuando me dio a luz ya me ofreció a ti,, (Si,7,183)",
+      "sC": ""
+    },
+    {
+      "line": "desde el vientre de mi madre tú ya eras mi Dios., (Mi,m,436)",
+      "sC": "ptop00"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "ELÍ, ELÍ, LAMÁ SABACTANÍ, (Mi,m,15)(La,m,125)(Mi,m,251)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DIOS MÍO, DIOS MÍO, ",
+          "sC": "as"
+        },
+        {
+          "line": "¿POR QUÉ ME HAS ABANDONADO?, (La,m,91)(Mi,m,292)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Soy agua sucia que se tira,, (Si,7,15)",
+      "sC": "tc "
+    },
+    {
+      "line": "todos mis huesos se dislocan, ",
+      "sC": "ptop00"
+    }
+  ],
+  "lder": [
+    {
+      "line": "mi corazón como cera, se derrite en mis entrañas.",
+      "sC": "font15"
+    },
+    {
+      "line": "Mi paladar está seco como teja,",
+      "sC": "ptop00"
+    },
+    {
+      "line": "y mi lengua está pegada a la garganta. (Mi,m,333)",
+      "sC": "ptop00"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "ELÍ, ELÍ, LAMÁ SABACTANÍ, (Mi,m,15)(La,m,125)(Mi,m,251)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DIOS MÍO, DIOS MÍO, ",
+          "sC": "as"
+        },
+        {
+          "line": "¿POR QUÉ ME HAS ABANDONADO?, (La,m,91)(Mi,m,292)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Perros innumerables me rodean,, (Si,7,15)",
+      "sC": "tc"
+    },
+    {
+      "line": "una banda de malhechores me acomete,, ",
+      "sC": "ptop00"
+    },
+    {
+      "line": "taladran mis manos y mis pies. ",
+      "sC": "ptop00"
+    },
+    {
+      "line": "Se pueden contar mis huesos; ",
+      "sC": "ptop00"
+    },
+    {
+      "line": "me observan y me miran,",
+      "sC": "ptop00"
+    },
+    {
+      "line": "se reparten mis vestidos, se sortean mi túnica. (Mi,m,397)",
+      "sC": "ptop00"
+    },
+    {
+      "line": "¡Mas tú, Dios mío, no estés lejos!, (La,m,278)",
+      "sC": ""
+    },
+    {
+      "line": "Ven en mi ayuda, fuerza mía,, (Mi,m,253)",
+      "sC": ""
+    },
+    {
+      "line": "libra mi alma de la espada,, (Si,7,15)",
+      "sC": ""
+    },
+    {
+      "line": "libra mi vida de las fauces del león,",
+      "sC": "ptop00"
+    },
+    {
+      "line": "libra mi alma de los cuernos de los búfalos.(Mi,m,362) ",
+      "sC": "ptop00"
+    },
+    {
+      "line": "¡Anunciaré, yo, tu nombre a mis hermanos,, (La,m,362)",
+      "sC": ""
+    },
+    {
+      "line": "en medio de la asamblea te cantaré!:, (Mi,m,338)",
+      "sC": ""
+    },
+    {
+      "line": "«Los que a Yahveh amáis, dadle alabanza,, (Si,7,218)",
+      "sC": ""
+    },
+    {
+      "line": "raza de Jacob, glorificad a Yahveh,, ",
+      "sC": "ptop00"
+    },
+    {
+      "line": "temedle, pueblo de Israel»., (Mi,m,229)",
+      "sC": ""
+    },
+    {
+      "line": "Porque ha sido el único,",
+      "sC": ""
+    },
+    {
+      "line": "que no ha tenido asco de este pobre, (La,m,262)",
+      "sC": ""
+    },
+    {
+      "line": "ni ha desdeñado la miseria de mi vida;(Mi,m,341)",
+      "sC": ""
+    },
+    {
+      "line": "no me ha ocultado su rostro cuando le invocaba, (Si,7,227)",
+      "sC": ""
+    },
+    {
+      "line": "por eso, yo ahora sé que los pobres vivirán. (Mi,m,388)",
+      "sC": ""
+    },
+    {
+      "line": "Los pobres comerán, serán saciados, (La,m,305)",
+      "sC": ""
+    },
+    {
+      "line": "los que buscan a Yahveh lo encontrarán:, (Mi,m,376)",
+      "sC": "ptop00"
+    },
+    {
+      "line": "¡su corazón, su corazón, vivirá para siempre!, (Si,7,91)(Mi,m,359) ",
+      "sC": ""
+    }
+  ],
+  "sourceBook": "resucito"
+}

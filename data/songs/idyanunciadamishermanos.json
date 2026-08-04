@@ -1,0 +1,220 @@
+{
+  "id": "idyanunciadamishermanos",
+  "tt": "Id Y Anunciad A Mis Hermanos",
+  "title": "Id Y Anunciad A Mis Hermanos",
+  "subtitle": "Mateo 28,10.16-20",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Final",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "92",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/idyanunciadamishermanos.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=huyeamadomio",
+  "sig": "/src/index.html?canto=improperios",
+  "lizq": [
+    {
+      "line": "«ID Y ANUNCIAD A MIS HERMANOS, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE VAYAN A GALILEA., (Sol,,14)(La,m,196)",
+      "sC": "as r1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que allí me verán,, (Mi,,69)",
+      "sC": "tc"
+    },
+    {
+      "line": "QUE ALLÍ ME VERÁN»., (La,m,175)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los discípulos fueron a Galilea,, (La,m,20)(Re,m,162)(La,m,275)",
+      "sC": "tc"
+    },
+    {
+      "line": "al monte que Jesús les había indicado., (Re,m,172)(La,m,340)",
+      "sC": ""
+    },
+    {
+      "line": "Cuando lo vieron le adoraron., (Mi,,125)(La,m,238)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y Jesús les dijo:, (Fa,,55)(Mi,,122)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«Me ha sido dado todo poder, (Do,,10)(Sol,,257)",
+      "sC": ""
+    },
+    {
+      "line": "en el cielo y en la tierra., (Do,,194)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ME HA SIDO DADO TODO PODER, (Do,,10)(Sol,,291)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EN EL CIELO Y EN LA TIERRA., (Do,,232)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Id, pues, y haced discípulos, (Do,,10)(Sol,,205)",
+      "sC": "tc"
+    },
+    {
+      "line": "a todas las gentes, (Do,,125)",
+      "sC": ""
+    },
+    {
+      "line": "bautizándolas en el nombre del Padre, (La,m,67)(Mi,,329)",
+      "sC": ""
+    },
+    {
+      "line": "y del Hijo y del Espíritu Santo,, (La,m,242)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "y enseñándoles a poner en práctica,, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "todo lo que yo os he mandado., (Mi,,260)(La,m,311)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "«ID Y ANUNCIAD A MIS HERMANOS, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUE VAYAN A GALILEA., (Sol,,63)(La,m,196)",
+          "sC": "as r1"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ved que yo estoy con vosotros,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "ved que yo estoy con vosotros, (Sol,,238)",
+      "sC": ""
+    },
+    {
+      "line": "todos los días., (La,m,109)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "VED QUE YO ESTOY CON VOSOTROS,, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "VED QUE YO ESTOY CON VOSOTROS, (Sol,,278)",
+      "sC": "as"
+    },
+    {
+      "line": "TODOS LOS DÍAS., (La,m,139)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Hasta el fin del mundo,, (Mi,,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "HASTA EL FIN DEL MUNDO, (La,m,207)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "«ID Y ANUNCIAD A MIS HERMANOS, (La,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUE VAYAN A GALILEA., (Sol,,63)(La,m,196)",
+          "sC": "as r1"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "sourceBook": "resucito"
+}

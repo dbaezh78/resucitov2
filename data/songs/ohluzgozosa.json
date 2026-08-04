@@ -1,0 +1,59 @@
+{
+  "id": "ohluzgozosa",
+  "tt": "Oh Luz Gozosa",
+  "title": "Oh Luz Gozosa",
+  "subtitle": "Salmo 17 (16) ",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "310",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/ohluzgozosa.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=salmo96",
+  "sig": "/src/index.html?canto=iespiritusanto",
+  "lizq": [
+    {
+      "line": "Oh luz gozosa, (Sol,,13)(Do,,101)",
+      "sC": "tc"
+    },
+    {
+      "line": "de la santa Gloria, (Sol,,15)(Re,,106)",
+      "sC": ""
+    },
+    {
+      "line": "del Padre celeste inmortal, (Mi,m,22)(Do,,107)(Re,,195)",
+      "sC": ""
+    },
+    {
+      "line": "Santo y feliz, (Sol,,13)(Do,,106)",
+      "sC": ""
+    },
+    {
+      "line": "Jesucristo, (Sol,,48)",
+      "sC": "as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

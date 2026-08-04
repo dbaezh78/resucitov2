@@ -1,0 +1,194 @@
+{
+  "id": "nosufrasporlosmalvados",
+  "tt": "No Sufras Por Los Malvados",
+  "title": "No Sufras Por Los Malvados",
+  "subtitle": "Salmo 37 (36)",
+  "category": [
+    "Catecumenado",
+    "Cuaresma",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "231",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/nosufrasporlosmalvados.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=noresistaisalmal",
+  "sig": "/src/index.html?canto=ohsenormicorazonyanoesambicioso",
+  "lizq": [
+    {
+      "line": "NO SUFRAS POR LOS MALVADOS,, (La,m,20)(Fa,,273)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NO ENVIDIES A LOS QUE OBRAN MAL., (Mi,,341)",
+      "sC": "as"
+    },
+    {
+      "line": "SE SECARÁN COMO LA HIERBA,, (Re,m,103)(Mi,,253)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO EL CÉSPED SE AGOSTARÁN., (Fa,,116)(Mi,,308)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Confía en el Señor y haz el bien,, (La,m,20)(Fa,,282)",
+      "sC": "tc"
+    },
+    {
+      "line": "habita tu tierra y sé leal,, (Mi,,214)",
+      "sC": ""
+    },
+    {
+      "line": "sea el Señor tu delicia, (Re,m,108)(Mi,,181)",
+      "sC": ""
+    },
+    {
+      "line": "y él te dará lo que ansía tu corazón., (Fa,,99)(Mi,,315)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Encomienda tu camino al Señor, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "y espera en Él,, (Fa,,125)",
+      "sC": ""
+    },
+    {
+      "line": "confía en Él, que actuará;, (Mi,,232)",
+      "sC": ""
+    },
+    {
+      "line": "hará brillar tu justicia,, (Re,m,93)(Mi,,172)",
+      "sC": ""
+    },
+    {
+      "line": "hará brillar tu lealtad., (Fa,,90)(Mi,,183)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_nsplmalvador_1",
+      "initialState": "collapsed",
+      "triggerLine": "NO SUFRAS POR LOS MALVADOS (La,m,20)(Fa,,273)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO ENVIDIES A LOS QUE OBRAN MAL., (Mi,,341)",
+          "sC": "as"
+        },
+        {
+          "line": "SE SECARÁN COMO LA HIERBA,, (Re,m,103)(Mi,,253)",
+          "sC": "as"
+        },
+        {
+          "line": "COMO EL CÉSPED SE AGOSTARÁN., (Fa,,116)(Mi,,308)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Cohíbe tu ira, reprime el coraje,, (La,m,20)(Fa,,271)",
+      "sC": "tc"
+    },
+    {
+      "line": "no te exasperes, no sea que obres mal;, (Mi,,353)",
+      "sC": ""
+    },
+    {
+      "line": "los que obran mal son excluidos,, (Re,m,155)(Mi,,271)",
+      "sC": ""
+    },
+    {
+      "line": "los que esperan en el Señor, (Fa,,112)",
+      "sC": ""
+    },
+    {
+      "line": "en la tierra entrarán., (Mi,,175)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aguarda un momento,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "desapareció el malvado,, (Fa,,196)",
+      "sC": ""
+    },
+    {
+      "line": "fíjate en su sitio: ya no está;, (Mi,,253)",
+      "sC": ""
+    },
+    {
+      "line": "en cambio los mansos poseen la tierra,, (Re,m,166)(Mi,,339)",
+      "sC": ""
+    },
+    {
+      "line": "gozan de paz, de paz disfrutarán., (Fa,,109)(Mi,,291)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_nsplmalvador_1",
+      "initialState": "collapsed",
+      "triggerLine": "NO SUFRAS POR LOS MALVADOS (La,m,20)(Fa,,273)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NO ENVIDIES A LOS QUE OBRAN MAL., (Mi,,341)",
+          "sC": "as"
+        },
+        {
+          "line": "SE SECARÁN COMO LA HIERBA,, (Re,m,103)(Mi,,253)",
+          "sC": "as"
+        },
+        {
+          "line": "COMO EL CÉSPED SE AGOSTARÁN., (Fa,,116)(Mi,,308)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

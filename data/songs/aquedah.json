@@ -1,0 +1,149 @@
+{
+  "id": "aquedah",
+  "tt": "Aquedah",
+  "title": "Aquedah",
+  "subtitle": "Gn 22,1-19 - Del Targum Neofiti sobre el sacrificio de Isaac",
+  "category": [
+    "PreCatecumenado",
+    "Cuaresma"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "19",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/aquedah.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=amoalsenor",
+  "sig": "/src/index.html?canto=asihablaelamen",
+  "lizq": [
+    {
+      "line": "Era todavía de noche cuando Abraham, (La,m,22)(Re,m9,351)",
+      "sC": "tc"
+    },
+    {
+      "line": "se disponía a sacrificar a su hijo;, (La,m,288)",
+      "sC": ""
+    },
+    {
+      "line": "los dos se miraban fijamente, (Re,m9,251)",
+      "sC": ""
+    },
+    {
+      "line": "cuando le dijo su hijo Isaac:, (Mi,,241)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«AQUEDAH, AQUEDAH,,(La,m,73)(Re,m9,183)",
+      "sC": "ta as"
+    },
+    {
+      "line": "AQUEDAH, AQUEDAH»., (La,m,179)",
+      "sC": "as b19"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«Átame, átame fuerte, padre mío,,(La,m,21)(Re,m9,303)",
+      "sC": "tc"
+    },
+    {
+      "line": "no sea que por el miedo me resista, (La,m,308)",
+      "sC": ""
+    },
+    {
+      "line": "y no sea válido tu sacrificio, (Re,m9,236)",
+      "sC": ""
+    },
+    {
+      "line": "y los dos seamos rechazados.», (Mi,,238)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "«AQUEDAH, AQUEDAH,(La,m,73)(Re,m9,183)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "AQUEDAH, AQUEDAH»., (La,m,179)",
+          "sC": "as b19"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«ÁTAME, ÁTAME FUERTE,,(La,m,21)(Re,m9,182)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PADRE MÍO, QUE YO NO ME RESISTA»., (La,m,315)",
+      "sC": "as b19b"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Venid y ved la fe sobre la tierra,(La,m,18)",
+      "sC": "tc"
+    },
+    {
+      "line": "venid y ved la fe sobre la tierra,(Re,m,258)",
+      "sC": ""
+    },
+    {
+      "line": "el Padre que sacrifica a su hijo,(Re,m9,276)",
+      "sC": ""
+    },
+    {
+      "line": "y el hijo querido que le ofrece su cuello., (Mi,7,342)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "«AQUEDAH, AQUEDAH,(La,m,73)(Re,m9,183)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "AQUEDAH, AQUEDAH»., (La,m,179)",
+          "sC": "as b19"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

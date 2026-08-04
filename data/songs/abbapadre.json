@@ -1,0 +1,113 @@
+{
+  "id": "abbapadre",
+  "tt": "Abbá, Padre",
+  "title": "Abbá, Padre",
+  "subtitle": "Rm 8,15–17",
+  "category": [
+    "PreCatecumenado",
+    "Entrada",
+    "Pascua",
+    "Pentecostés",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "7",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/abbapadre.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=atuluzsenorvemoslaluz",
+  "sig": "/src/index.html?canto=abraham",
+  "lizq": [
+    {
+      "line": "¡ABBÁ, PADRE, PADRE!, (Do,,9)(Sol,,90)(Fa,,174)(Do,,220)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No hemos recibido, (La,m,17)",
+      "sC": "tc"
+    },
+    {
+      "line": "el espíritu de siervos, (Re,m,56)(La,m,147)",
+      "sC": ""
+    },
+    {
+      "line": "para recaer en el temor,(Fa,,10)(Mi,,209)",
+      "sC": ""
+    },
+    {
+      "line": "para recaer en el temor., (Fa,,10)(Mi,,209)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ESTE MISMO ESPÍRITU, (La,m,15)",
+      "sC": "as ta"
+    },
+    {
+      "line": "DA TESTIMONIO A NUESTRO ESPÍRITU, (Re,m,15)(La,m,111)(Fa,,165)(Mi,,320)",
+      "sC": "as"
+    },
+    {
+      "line": "DE QUE SOMOS HIJOS DE DIOS., (Mi,7,15)(La,m,278)",
+      "sC": "as"
+    },
+    {
+      "line": "Y, SI HIJOS, TAMBIÉN HEREDEROS,(Sol,7,61)(Do,,281)",
+      "sC": "mt as"
+    },
+    {
+      "line": "COHEREDEROS DE CRISTO,(Mi,7,214)",
+      "sC": "as"
+    },
+    {
+      "line": "HEREDEROS DE DIOS., (La,m,189)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y, SI HIJOS, TAMBIÉN HEREDEROS,(Sol,7,63)(Do,,284)",
+      "sC": "as"
+    },
+    {
+      "line": "COHEREDEROS DE CRISTO,(Mi,7,213)",
+      "sC": "as"
+    },
+    {
+      "line": "HEREDEROS DE DIOS., (La,m,179)",
+      "sC": "as"
+    },
+    {
+      "line": "¡ABBÁ, PADRE, PADRE!, (Do,,15)(Sol,,89)(Fa,,173)(Do,,214)",
+      "sC": "as mt"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,350 @@
+{
+  "id": "tedeum",
+  "tt": "Te Deum",
+  "title": "Te Deum",
+  "subtitle": "Himno",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "220",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/tedeum.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=santo1988",
+  "sig": "/src/index.html?canto=comoelimpulsoquesientelaira",
+  "lizq": [
+    {
+      "line": "A ti, oh Dios, te alabamos,, (Re,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "a ti, Señor, te reconocemos., (La,,26)",
+      "sC": ""
+    },
+    {
+      "line": "A ti, Eterno Padre,, (Si,m,26)",
+      "sC": ""
+    },
+    {
+      "line": "te venera toda la creación., (Fa#,,53)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A TI CANTAN LOS ÁNGELES,, (Re,,12)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y TODAS LAS POTENCIAS DEL CIELO:, (La,,36)",
+      "sC": "as"
+    },
+    {
+      "line": "SANTO, SANTO, SANTO,, (Si,m,18)",
+      "sC": "as"
+    },
+    {
+      "line": "SANTO, SANTO, SANTO,, (Fa#,,14)",
+      "sC": "as"
+    },
+    {
+      "line": "EL SEÑOR, DIOS DEL UNIVERSO., (Si,m,259)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los cielos y la tierra están llenos, (Re,,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "de la majestad de tu gloria. ",
+      "sC": ""
+    },
+    {
+      "line": "A ti te ensalza el glorioso, (La,,20)",
+      "sC": ""
+    },
+    {
+      "line": "coro de los apóstoles, ",
+      "sC": ""
+    },
+    {
+      "line": "la multitud adorable de los profetas,, (Si,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "el cándido ejército de los mártires., (Fa#,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A ti la Iglesia santa, extendida por toda la tierra,, (Re,,22)",
+      "sC": ""
+    },
+    {
+      "line": "te proclama: Padre de inmensa majestad,, (La,,20)",
+      "sC": ""
+    },
+    {
+      "line": "Hijo único y verdadero, digno de adoración,, (Si,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "Espíritu Santo, Defensor., (Fa#,m,15)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "A TI CANTAN LOS ÁNGELES (Re,,12)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "Y TODAS LAS POTENCIAS DEL CIELO:, (La,,36)",
+          "sC": "as"
+        },
+        {
+          "line": "SANTO, SANTO, SANTO,, (Si,m,18)",
+          "sC": "as"
+        },
+        {
+          "line": "SANTO, SANTO, SANTO,, (Fa#,,14)",
+          "sC": "as"
+        },
+        {
+          "line": "EL SEÑOR, DIOS DEL UNIVERSO., (Si,m,259)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Tú eres el Rey de la gloria, Cristo. ",
+      "sC": "tc s1"
+    },
+    {
+      "line": "Tú eres el Hijo único del Padre. ",
+      "sC": "s1"
+    },
+    {
+      "line": "Tú, para liberar al hombre, ",
+      "sC": "s1"
+    },
+    {
+      "line": "aceptaste la condición humana, ",
+      "sC": "s1"
+    },
+    {
+      "line": "sin desdeñar el seno de la Virgen. ",
+      "sC": "s1"
+    },
+    {
+      "line": "Tú, rotas las cadenas de la muerte, ",
+      "sC": "s1"
+    },
+    {
+      "line": "abriste a los creyentes el reino de los cielos. ",
+      "sC": "s1"
+    },
+    {
+      "line": "Tú te sientas a la derecha de Dios, ",
+      "sC": "s1"
+    },
+    {
+      "line": "en la gloria del Padre. ",
+      "sC": "s1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "A TI CANTAN LOS ÁNGELES (Re,,12)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "Y TODAS LAS POTENCIAS DEL CIELO:, (La,,36)",
+          "sC": "as"
+        },
+        {
+          "line": "SANTO, SANTO, SANTO,, (Si,m,18)",
+          "sC": "as"
+        },
+        {
+          "line": "SANTO, SANTO, SANTO,, (Fa#,,14)",
+          "sC": "as"
+        },
+        {
+          "line": "EL SEÑOR, DIOS DEL UNIVERSO., (Si,m,259)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Creemos que un día, ",
+      "sC": "tc s1"
+    },
+    {
+      "line": "has de venir como juez. ",
+      "sC": "s1"
+    },
+    {
+      "line": "Te rogamos, que vengas en ayuda de tus siervos, ",
+      "sC": "s1"
+    },
+    {
+      "line": "a quienes redimiste con tu preciosa sangre. ",
+      "sC": "s1"
+    },
+    {
+      "line": "Haz que en la gloria eterna, ",
+      "sC": "s1"
+    },
+    {
+      "line": "nos asociemos a tus santos. ",
+      "sC": "s1"
+    },
+    {
+      "line": "Salva a tu pueblo, Señor, y bendice tu heredad. ",
+      "sC": "s1"
+    },
+    {
+      "line": "Sé su pastor, ensálzalo eternamente. ",
+      "sC": "s1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "A TI CANTAN LOS ÁNGELES (Re,,12)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "Y TODAS LAS POTENCIAS DEL CIELO:, (La,,36)",
+          "sC": "as"
+        },
+        {
+          "line": "SANTO, SANTO, SANTO,, (Si,m,18)",
+          "sC": "as"
+        },
+        {
+          "line": "SANTO, SANTO, SANTO,, (Fa#,,14)",
+          "sC": "as"
+        },
+        {
+          "line": "EL SEÑOR, DIOS DEL UNIVERSO., (Si,m,259)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Día tras día te bendecimos, ",
+      "sC": "tc s1"
+    },
+    {
+      "line": "y alabamos tu nombre para siempre, ",
+      "sC": "s1"
+    },
+    {
+      "line": "por eternidad de eternidades. ",
+      "sC": "s1"
+    },
+    {
+      "line": "Dígnate, Señor, en este día, ",
+      "sC": "s1"
+    },
+    {
+      "line": "guardarnos del pecado. ",
+      "sC": "s1"
+    },
+    {
+      "line": "Ten piedad de nosotros, Señor, ",
+      "sC": "s1"
+    },
+    {
+      "line": "ten piedad de nosotros. ",
+      "sC": "s1"
+    },
+    {
+      "line": "Que tu misericordia venga sobre nosotros, ",
+      "sC": "s1"
+    },
+    {
+      "line": "como lo esperamos de ti. ",
+      "sC": "s1"
+    },
+    {
+      "line": "En ti, Señor, confiamos, ",
+      "sC": "s1"
+    },
+    {
+      "line": "que no quedemos confundidos eternamente. ",
+      "sC": "s1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "A TI CANTAN LOS ÁNGELES (Re,,12)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "Y TODAS LAS POTENCIAS DEL CIELO:, (La,,36)",
+          "sC": "as"
+        },
+        {
+          "line": "SANTO, SANTO, SANTO,, (Si,m,18)",
+          "sC": "as"
+        },
+        {
+          "line": "SANTO, SANTO, SANTO,, (Fa#,,14)",
+          "sC": "as"
+        },
+        {
+          "line": "EL SEÑOR, DIOS DEL UNIVERSO., (Si,m,259)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

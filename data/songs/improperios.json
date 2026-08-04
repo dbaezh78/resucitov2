@@ -1,0 +1,256 @@
+{
+  "id": "improperios",
+  "tt": "Improperios",
+  "title": "Improperios",
+  "subtitle": "Adoración de la santa Cruz el Viernes santo",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Fracción Del Pan"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "93",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/improperios.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=idyanunciadamishermanos",
+  "sig": "/src/index.html?canto=jerusalenreconstruida",
+  "lizq": [
+    {
+      "line": "¡OH PUEBLO MÍO! ¡OH PUEBLO MÍO!, (Mi,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¿QUÉ MAL YO TE HE HECHO?, ",
+      "sC": "as"
+    },
+    {
+      "line": "¿QUÉ MAL YO TE HE HECHO?, (La,m,45)",
+      "sC": "as"
+    },
+    {
+      "line": "¿EN QUÉ TE HE CONTRISTADO?, ",
+      "sC": "as"
+    },
+    {
+      "line": "RESPÓNDEME., ",
+      "sC": "as"
+    },
+    {
+      "line": "¿EN QUÉ TE HE CONTRISTADO?, (Si,7,28)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo te he hecho salir de Egipto,, (La,m,20)(La,m6,248)",
+      "sC": "tc"
+    },
+    {
+      "line": "yo te he abierto el mar en dos partes,, (La,m,18)",
+      "sC": ""
+    },
+    {
+      "line": "yo te he liberado del Faraón, (La,m,18)",
+      "sC": ""
+    },
+    {
+      "line": "y tú, y tú, me has preparado la cruz., (Si,7,30)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡OH PUEBLO MÍO! ¡OH PUEBLO MÍO!, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¿QUÉ MAL YO TE HE HECHO?, ",
+          "sC": "as"
+        },
+        {
+          "line": "¿QUÉ MAL YO TE HE HECHO?, (La,m,45)",
+          "sC": "as"
+        },
+        {
+          "line": "¿EN QUÉ TE HE CONTRISTADO?, ",
+          "sC": "as"
+        },
+        {
+          "line": "RESPÓNDEME., ",
+          "sC": "as"
+        },
+        {
+          "line": "¿EN QUÉ TE HE CONTRISTADO?, (Si,7,28)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo te he abierto un camino en el desierto,, (La,m,20)(La,m6,359)",
+      "sC": ""
+    },
+    {
+      "line": "yo te he alimentado con el maná,, (La,m,20)(La,m6,300)",
+      "sC": ""
+    },
+    {
+      "line": "te he introducido en la Tierra Prometida,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "y tú, y tú, me has preparado la cruz., (Si,7,28)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡OH PUEBLO MÍO! ¡OH PUEBLO MÍO!, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¿QUÉ MAL YO TE HE HECHO?, ",
+          "sC": "as"
+        },
+        {
+          "line": "¿QUÉ MAL YO TE HE HECHO?, (La,m,45)",
+          "sC": "as"
+        },
+        {
+          "line": "¿EN QUÉ TE HE CONTRISTADO?, ",
+          "sC": "as"
+        },
+        {
+          "line": "RESPÓNDEME., ",
+          "sC": "as"
+        },
+        {
+          "line": "¿EN QUÉ TE HE CONTRISTADO?, (Si,7,28)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "¿Qué más he podido hacer por ti, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "que no haya hecho?, (La,m6,147)",
+      "sC": ""
+    },
+    {
+      "line": "Yo te llamé: «Mi viña amada»,, (La,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "y tú, y tú me has dado fruto amargo., (Si,7,31)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Hágios o Théos,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "SANCTUS DEUS., (Si,7,112)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Hágios lschyrós,, (La,m,21)",
+      "sC": "tc"
+    },
+    {
+      "line": "SANCTUS FORTIS., (Si,7,114)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Hágios Athánatos,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "ELÉISON HIMÁS., (Si,7,134)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Sanctus et inmortalis,, (La,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "MISERERE NOBIS., (Si,7,128)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡OH PUEBLO MÍO! ¡OH PUEBLO MÍO!, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¿QUÉ MAL YO TE HE HECHO?, ",
+          "sC": "as"
+        },
+        {
+          "line": "¿QUÉ MAL YO TE HE HECHO?, (La,m,45)",
+          "sC": "as"
+        },
+        {
+          "line": "¿EN QUÉ TE HE CONTRISTADO?, ",
+          "sC": "as"
+        },
+        {
+          "line": "RESPÓNDEME., ",
+          "sC": "as"
+        },
+        {
+          "line": "¿EN QUÉ TE HE CONTRISTADO?, (Si,7,28)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,560 @@
+{
+  "id": "dayenucompleto",
+  "tt": "Dayenú",
+  "title": "Dayenú",
+  "subtitle": "De la Hagadá de Pésaj hebrea (Completo)",
+  "category": [
+    "PreCatecumenado",
+    "Paz",
+    "Pascua",
+    "Pentecostés"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "45",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/dayenu.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=cuandoisraelsaliodeegipto",
+  "sig": "/src/index.html?canto=deprofundis",
+  "lizq": [
+    {
+      "line": "Cuántos bienes nos ha dado el Señor., (Mi,m,18)(La,m,107)(Mi,m,343)",
+      "sC": "tc"
+    },
+    {
+      "line": "CUÁNTOS BIENES, (La,m,126)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NOS HA DADO EL SEÑOR., (Mi,m,218)",
+      "sC": "as"
+    },
+    {
+      "line": "Cuántos bienes nos ha dado el Señor., (Re,,108)(Do,,240)(Mi,m,344)",
+      "sC": "tc"
+    },
+    {
+      "line": "CUÁNTOS BIENES, (Re,,123)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NOS HA DADO EL SEÑOR., (Do,,106)(Mi,m,219)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si Cristo nos hubiera hecho salir de Egipto, (La,m,222)(Si,7,370)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no hubiera hecho justicia del Faraón:, (Mi,m,345)",
+      "sC": ""
+    },
+    {
+      "line": "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NOS HABRÍA BASTADO., (Mi,m,187)",
+      "sC": "as"
+    },
+    {
+      "line": "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si hubiera hecho justicia del Faraón, (Re,,122)(Do,,324)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no nos hubiera librado de todos los ídolos:, (Si,7,202)(Mi,m,372)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NOS HABRÍA BASTADO., (Mi,m,187)",
+          "sC": "as"
+        },
+        {
+          "line": "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si nos hubiera librado de todos los ídolos, (Mi,m,15)(La,m,175)(Si,7,350)",
+      "sC": ""
+    },
+    {
+      "line": "y no nos hubiera dado todas sus riquezas:, (Mi,m,358)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NOS HABRÍA BASTADO., (Mi,m,187)",
+          "sC": "as"
+        },
+        {
+          "line": "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si nos hubiera dado todas sus riquezas, (Re,,161)(Do,,303)",
+      "sC": ""
+    },
+    {
+      "line": "y no hubiera abierto el mar para nosotros:, (Si,7,158)(Mi,m,357)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NOS HABRÍA BASTADO., (Mi,m,187)",
+          "sC": "as"
+        },
+        {
+          "line": "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si hubiera abierto el mar para nosotros, (Mi,m,15)(La,m,136)(Si,7,333)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no hubiera hundido a nuestros opresores:, (Mi,m,376)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NOS HABRÍA BASTADO., (Mi,m,187)",
+          "sC": "as"
+        },
+        {
+          "line": "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si hubiera hundido a nuestros opresores, (Re,,150)(Do,,353)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no nos hubiera abierto un camino en el desierto:, (Si,7,199)(Mi,m,440)",
+      "sC": "full"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_5",
+      "initialState": "collapsed",
+      "triggerLine": "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NOS HABRÍA BASTADO., (Mi,m,187)",
+          "sC": "as"
+        },
+        {
+          "line": "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si nos hubiera abierto un camino en el desierto, (Mi,m,11)(La,m,175)(Si,7,423)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no nos hubiera nutrido con el pan de la vida:, (Mi,m,411)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_6",
+      "initialState": "collapsed",
+      "triggerLine": "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NOS HABRÍA BASTADO., (Mi,m,187)",
+          "sC": "as"
+        },
+        {
+          "line": "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si nos hubiera nutrido con el pan de la vida, (Re,,10)(Do,,184)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no nos hubiera dado el día del Señor:, (Si,7,183)(Mi,m,351)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_7",
+      "initialState": "collapsed",
+      "triggerLine": "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NOS HABRÍA BASTADO., (Mi,m,187)",
+          "sC": "as"
+        },
+        {
+          "line": "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Si nos hubiera dado el día del Señor, (Mi,m,20)(La,m,162)(Si,7,331)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no nos hubiera sellado una nueva Alianza:, (Mi,m,376)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_8",
+      "initialState": "collapsed",
+      "triggerLine": "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NOS HABRÍA BASTADO., (Mi,m,187)",
+          "sC": "as"
+        },
+        {
+          "line": "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si hubiera hecho con nosotros una nueva Alianza, (Re,,245)(Do,,428)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no nos hubiera hecho entrar en su Iglesia:, (Si,7,182)(Mi,m,376)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_9",
+      "initialState": "collapsed",
+      "triggerLine": "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NOS HABRÍA BASTADO., (Mi,m,187)",
+          "sC": "as"
+        },
+        {
+          "line": "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si nos hubiera hecho entrar en su Iglesia, (Mi,m,20)(La,m,163)(Si,7,358)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no hubiera construido en nosotros su templo:, (Mi,m,393)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_10",
+      "initialState": "collapsed",
+      "triggerLine": "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NOS HABRÍA BASTADO., (Mi,m,187)",
+          "sC": "as"
+        },
+        {
+          "line": "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "Si hubiera construido en nosotros su templo, (Re,,178)(Do,,366)",
+      "sC": "tc"
+    },
+    {
+      "line": "y no lo hubiera llenado de su Santo Espíritu:, (Si,7,186)(Mi,m,375)",
+      "sC": ""
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NOS HABRÍA BASTADO., (Mi,m,187)",
+          "sC": "as"
+        },
+        {
+          "line": "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cuánto más tenemos que dar gracias al Señor., (La,m,150)(Mi,m,426)",
+      "sC": "tc"
+    },
+    {
+      "line": "CUÁNTO MÁS TENEMOS, (La,m,180)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE DAR GRACIAS AL SEÑOR., (Mi,m,261)",
+      "sC": "as"
+    },
+    {
+      "line": "Cuánto más tenemos que dar gracias al Señor., (Re,,153)(Do,,314)(Mi,m,432)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "CUÁNTO MÁS TENEMOS, (Re,,176)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE DAR GRACIAS AL SEÑOR., (Do,,123)(Mi,m,261)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "tc1"
+    },
+    {
+      "line": "Que nos ha hecho salir de Egipto., (La,m,130)(Mi,m,280)",
+      "sC": "r1"
+    },
+    {
+      "line": "Que ha hecho justicia del Faraón., (La,m,91)(Mi,m,291)",
+      "sC": "r1"
+    },
+    {
+      "line": "Que nos ha librado de todos los enemigo, (Re,,150)(Do,,226)(Mi,m,359)",
+      "sC": "r1"
+    },
+    {
+      "line": "",
+      "sC": "tc1"
+    },
+    {
+      "line": "Que nos ha dado todas sus riqueza, (La,m,132)(Mi,m,303)",
+      "sC": "r1"
+    },
+    {
+      "line": "Que ha abierto el mar para nosotro, (La,m,106)(Mi,m,301)",
+      "sC": "r1"
+    },
+    {
+      "line": "Que ha hundido a nuestros opresore, (Re,,122)(Do,,203)(Mi,m,316)",
+      "sC": "r1"
+    },
+    {
+      "line": "",
+      "sC": "tc1"
+    },
+    {
+      "line": "Que nos ha dado un camino en el desierto., (La,m,131)(Mi,m,368)",
+      "sC": "r1"
+    },
+    {
+      "line": "Que nos ha nutrido con el pan de la vida., (La,m,152)(Mi,m,360)",
+      "sC": "r1"
+    },
+    {
+      "line": "Que nos ha dado el día del Señor., (Re,,130)(Do,,202)(Mi,m,301)",
+      "sC": "r1"
+    },
+    {
+      "line": "Que nos ha hecho una nueva Alianza., (La,m,129)(Mi,m,316)",
+      "sC": "r1"
+    },
+    {
+      "line": "Que nos ha hecho entrar en su Iglesia., (La,m,129)(Mi,m,325)",
+      "sC": "r1"
+    },
+    {
+      "line": "Que ha construido en nosotros su templo., (Re,,149)(Do,,250)(Mi,m,339)",
+      "sC": "r1"
+    },
+    {
+      "line": "Y lo ha llenado de su Espíritu Santo, (Re,,106)(Do,,296)",
+      "sC": "tc"
+    },
+    {
+      "line": "en el perdón de los pecados., (Si,7,102)(Mi,m,237)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "tc2"
+    },
+    {
+      "line": "Cristo nuestra Pascua está resucitado., (Mi,m,21)(La,m,159)(Mi,m,332)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO NUESTRA PASCUA, (La,m,193)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ESTÁ RESUCITADO., (Mi,m,144)",
+      "sC": "as"
+    },
+    {
+      "line": "Cristo nuestra Pascua está resucitado., (Re,,154)(Do,,247)(Mi,m,332)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO NUESTRA PASCUA, (Re,,191)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ESTÁ RESUCITADO., (Do,,45)(Mi,m,144)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aleluya, aleluya., (La,m,43)(Mi,m,95)",
+      "sC": "tc"
+    },
+    {
+      "line": "ALELUYA, ALELUYA., (La,m,55)(Mi,m,113)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Aleluya, aleluya, aleluya, (La,m,94)(Mi,m,176)",
+      "sC": "tc"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (La,m,112)(Mi,m,206)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Aleluya, aleluya, aleluya., (Re,,86)(Do,,166)(Mi,m,217)",
+      "sC": "tc"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Re,,101)(Do,,200)(Mi,m,269)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

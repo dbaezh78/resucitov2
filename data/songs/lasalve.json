@@ -1,0 +1,141 @@
+{
+  "id": "lasalve",
+  "tt": "La Salve",
+  "title": "La Salve",
+  "subtitle": "Himno lat. «Salve Regina»",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María",
+    "Cuaresma",
+    "Penitencial"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "99",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/lasalve.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=lamarchaesdura",
+  "sig": "/src/index.html?canto=lasiegadelasnaciones",
+  "lizq": [
+    {
+      "line": "Dios te salve,, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "Reina y Madre de misericordia,, (La,m,97)(Mi,m,247)",
+      "sC": ""
+    },
+    {
+      "line": "vida, dulzura y esperanza nuestra., (Fa,,10)(Mi,,276)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dios te salve., (Mi,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "A ti llamamos los desterrados hijos de Eva,, (La,m,84)(Mi,m,382)",
+      "sC": ""
+    },
+    {
+      "line": "a ti suspiramos, gimiendo y llorando, (La,m,102)(Mi,m,301)",
+      "sC": ""
+    },
+    {
+      "line": "en este valle de lágrimas,, (Fa,,35)(Mi,,165)",
+      "sC": ""
+    },
+    {
+      "line": "en este valle de lágrimas., (Fa,,35)(Mi,,165)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ea, pues, Señora, abogada nuestra,, (La,m,20)(Fa,,177)(Mi,,289)",
+      "sC": ""
+    },
+    {
+      "line": "vuelve a nosotros, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "esos tus ojos misericordiosos,, (Mi,,241)",
+      "sC": ""
+    },
+    {
+      "line": "y después de este destierro, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "muéstranos a Jesús,, (Mi,,172)",
+      "sC": ""
+    },
+    {
+      "line": "fruto bendito de tu vientre.",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "¡Oh, clementísima!, (Mi,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "¡Oh, piadosa!, (La,m,94)",
+      "sC": ""
+    },
+    {
+      "line": "¡Oh, dulce Virgen María!, (Mi,m,209)",
+      "sC": ""
+    },
+    {
+      "line": "Ruega por nosotros,, (Fa,,29)",
+      "sC": ""
+    },
+    {
+      "line": "Santa Madre de Dios,, (Mi,,183)",
+      "sC": ""
+    },
+    {
+      "line": "para que seamos dignos, ",
+      "sC": ""
+    },
+    {
+      "line": "de alcanzar las promesas, (Fa,,200)",
+      "sC": ""
+    },
+    {
+      "line": "de Jesucristo,, (Mi,,92)",
+      "sC": ""
+    },
+    {
+      "line": "de Jesucristo. ",
+      "sC": ""
+    }
+  ],
+  "sourceBook": "resucito"
+}

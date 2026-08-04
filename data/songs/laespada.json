@@ -1,0 +1,236 @@
+{
+  "id": "laespada",
+  "tt": "La Espada",
+  "title": "La Espada",
+  "subtitle": "Ezequiel 21,14-22",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "* Se puede sustituir por Sol# dim 7",
+  "nCanURL": "",
+  "dbno": "97",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/laespada.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=lacorderadedios",
+  "sig": "/src/index.html?canto=lamarchaesdura",
+  "lizq": [
+    {
+      "line": "Espada, espada, bruñida para matar., (La,m,20)(Mi,7,121)(Fa,,208)(Mi,7,338)",
+      "sC": "tc"
+    },
+    {
+      "line": "ESPADA, ESPADA, BRUÑIDA PARA MATAR., (La,m,20)(Mi,7,133)(Fa,,239)(Mi,7,382)",
+      "sC": "ta as"
+    },
+    {
+      "line": "María, María, madre de Dios., (Do,,10)(Mi,7,105)(Fa,,153)(Mi,7,254)",
+      "sC": "tc"
+    },
+    {
+      "line": "MARÍA, MARÍA, MADRE DE DIOS., (Do,,10)(Mi,7,125)(Fa,,181)(Mi,7,296)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Grita, hijo de hombre,, (La,m,20)(Mi,7,146)",
+      "sC": "tc"
+    },
+    {
+      "line": "grita, hijo de hombre:, (La,m,142)",
+      "sC": ""
+    },
+    {
+      "line": "la espada es para mi pueblo,, (Re,m,61)(Mi,7,234)",
+      "sC": ""
+    },
+    {
+      "line": "espada para mi pueblo., (Fa,,38)(Mi,7,187)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ESPADA, ESPADA, , (La,m,20)(Mi,7,134)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "BRUÑIDA PARA MATAR., (Fa,,60)(Mi,7,202)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPADA, ESPADA, BRUÑIDA PARA MATAR., (La,m,20)(Mi,7,133)(Fa,,237)(Mi,7,382)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "MARÍA, MARÍA,, (Do,,10)(Mi,7,125)",
+      "sC": "as",
+      "lines": [
+        {
+          "line": "MADRE DE DIOS., (Fa,,29)(Mi,7,143)",
+          "sC": "as"
+        },
+        {
+          "line": "MARÍA, MARÍA, MADRE DE DIOS., (Do,,10)(Mi,7,127)(Fa,,182)(Mi,7,295)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Gira a tu derecha,, (La,m,20)(Mi,7,131)",
+      "sC": "tc"
+    },
+    {
+      "line": "gira hacia tu izquierda,, (Re,m,22)(Mi,7,174)",
+      "sC": ""
+    },
+    {
+      "line": "allí donde tus filos quedarán saciados,, (Re,m,22)(Mi,7,318)",
+      "sC": ""
+    },
+    {
+      "line": "allí donde se saciará mi alma., (Fa,,20)(Mi,7,243)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ESPADA, ESPADA, (La,m,20)(Mi,7,134)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "BRUÑIDA PARA MATAR., (Fa,,60)(Mi,7,202)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPADA, ESPADA, BRUÑIDA PARA MATAR., (La,m,20)(Mi,7,133)(Fa,,237)(Mi,7,382)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "MARÍA, MARÍA, (Do,,10)(Mi,7,125)",
+      "sC": "as",
+      "lines": [
+        {
+          "line": "MADRE DE DIOS., (Fa,,29)(Mi,7,143)",
+          "sC": "as"
+        },
+        {
+          "line": "MARÍA, MARÍA, MADRE DE DIOS., (Do,,10)(Mi,7,127)(Fa,,182)(Mi,7,295)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Bruñida para matar,, (Re,m,22)(Mi,7,176)",
+      "sC": "tc"
+    },
+    {
+      "line": "bruñida para matar., (Fa,,44)(Mi,7,177)",
+      "sC": ""
+    },
+    {
+      "line": "Grita, hijo de hombre,, (La,m,20)(Mi,7,145)",
+      "sC": ""
+    },
+    {
+      "line": "Grita, hijo de hombre:, (La,m,149)",
+      "sC": ""
+    },
+    {
+      "line": "La espada es para mi pueblo,, (Re,m,70)(Mi,7,246)",
+      "sC": ""
+    },
+    {
+      "line": "espada para mi pueblo., (Fa,,39)(Mi,7,186)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ESPADA, ESPADA, (La,m,20)(Mi,7,134)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "BRUÑIDA PARA MATAR., (Fa,,60)(Mi,7,202)",
+          "sC": "as"
+        },
+        {
+          "line": "ESPADA, ESPADA, BRUÑIDA PARA MATAR., (La,m,20)(Mi,7,133)(Fa,,237)(Mi,7,382)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "MARÍA, MARÍA, (Do,,10)(Mi,7,125)",
+      "sC": "as",
+      "lines": [
+        {
+          "line": "MADRE DE DIOS., (Fa,,29)(Mi,7,143)",
+          "sC": "as"
+        },
+        {
+          "line": "MARÍA, MARÍA, MADRE DE DIOS., (Do,,10)(Mi,7,127)(Fa,,182)(Mi,7,295)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

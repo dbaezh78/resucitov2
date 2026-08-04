@@ -1,0 +1,196 @@
+{
+  "id": "stabatmaterdolorosa",
+  "tt": "Stabat Mater Dolorosa",
+  "title": "Stabat Mater Dolorosa",
+  "subtitle": "Himno latin",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María",
+    "Cuaresma",
+    "Penitencial",
+    "Fracción Del Pan"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "156",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/stabatmaterdolorosa.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=solaasolo",
+  "sig": "/src/index.html?canto=subediosentreaclamaciones",
+  "lizq": [
+    {
+      "line": "STABAT MATER DOLOROSA, (Re,m add9,42)",
+      "sC": "ta as"
+    },
+    {
+      "line": "IUXTA CRUCEM LACRIMOSA,, (Do,7,19)(Si♭,7,237)",
+      "sC": "as r1"
+    },
+    {
+      "line": "DUM PENDEBAT FILIUS., (La,,201)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Era su alma un gemido,, (Re,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "era un dolor, era un grito,, (Do,7,107)(Si♭,7,209)",
+      "sC": ""
+    },
+    {
+      "line": "cuando una espada la atravesó., (La,,291)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Oh qué triste y afligida, (Re,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "está la bendita Madre, (Do,7,33)(Si♭,7,169)",
+      "sC": ""
+    },
+    {
+      "line": "del Unigénito., (La,,83)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "STABAT MATER DOLOROSA, (Re,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "IUXTA CRUCEM LACRIMOSA,, (Do,7,19)(Si♭,7,237)",
+          "sC": "as r1"
+        },
+        {
+          "line": "DUM PENDEBAT FILIUS., (La,,201)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Cuál es el hombre que no llora, (Re,m,22)",
+      "sC": "tc"
+    },
+    {
+      "line": "al ver a la Madre de Cristo, (Do,7,41)(Si♭,7,216)",
+      "sC": ""
+    },
+    {
+      "line": "en tanto suplicio?, (La,,131)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por los pecados de su gente, (Re,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "Ella ve a Jesús en tormentos,, (Do,7,59)(Si♭,7,226)",
+      "sC": ""
+    },
+    {
+      "line": "y sometido a los azotes., (La,,189)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "STABAT MATER DOLOROSA, (Re,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "IUXTA CRUCEM LACRIMOSA,, (Do,7,19)(Si♭,7,237)",
+          "sC": "as r1"
+        },
+        {
+          "line": "DUM PENDEBAT FILIUS., (La,,201)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Ella ve a su Hijo amado, (Re,m,21)",
+      "sC": "tc"
+    },
+    {
+      "line": "que muere desolado,, (Do,7,80)(Si♭,7,171)",
+      "sC": ""
+    },
+    {
+      "line": "y que entrega su Espíritu., (La,,200)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Oh, Cristo, cuando yo deba morir,, (Re,m,21)(Sol,m,294)",
+      "sC": ""
+    },
+    {
+      "line": "por tu bendita Madre hazme conseguir, (Si♭,7,355)",
+      "sC": ""
+    },
+    {
+      "line": "la palma de la victoria., (La,,183)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AMÉN, AMÉN, AMÉN., (Re,m,36)(Si♭,7,112)(La,7,179)",
+      "sC": "ta as r2"
+    }
+  ],
+  "sourceBook": "resucito"
+}

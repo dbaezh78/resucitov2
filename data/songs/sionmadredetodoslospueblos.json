@@ -1,0 +1,133 @@
+{
+  "id": "sionmadredetodoslospueblos",
+  "tt": "Sión, Madre De Todos Los Pueblos",
+  "title": "Sión, Madre De Todos Los Pueblos",
+  "subtitle": "Salmo 87 (86)",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María",
+    "Final",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "2",
+  "nCan": "* Punteo: al aire la 5ª cuerda, 3e, traste la 6ª cuerda, 1e, traste la 6ª cuerda, enlazando con el acorde de Fa",
+  "nCanURL": "",
+  "dbno": "154",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/sionmadredetodoslospueblos.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=simeherefugiadoenelsenor",
+  "sig": "/src/index.html?canto=solaasolo",
+  "lizq": [
+    {
+      "line": "Su fundación está sobre los montes santos,, (La,m,15)(Fa,,421)",
+      "sC": "tc ast"
+    },
+    {
+      "line": "el Señor ama las puertas de Sión, ",
+      "sC": ""
+    },
+    {
+      "line": "más que todas las moradas de Jacob., (Mi,,339)(Si,7,377)",
+      "sC": ""
+    },
+    {
+      "line": "De ti se dicen cosas estupendas,, ",
+      "sC": ""
+    },
+    {
+      "line": "ciudad de Dios., (Mi,,125)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Recuerdo Ráhab y Babilonia,, (La,m,15)(Fa,,286)",
+      "sC": "ast1"
+    },
+    {
+      "line": "Palestina, Tiro y Etiopía,, ",
+      "sC": ""
+    },
+    {
+      "line": "Cuando alguno nace en ellas se dice:, ",
+      "sC": ""
+    },
+    {
+      "line": "Fulano nació allí»,, (Mi,,149)(Si,7,188)",
+      "sC": ""
+    },
+    {
+      "line": "Mas de Sión se dice: Madre»., (Mi,,226)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PORQUE TODOS HAN NACIDO EN ELLA., (La,m,20)(Re,m,102)(Mi,,182)(La,m,335)",
+      "sC": "tc as r1"
+    },
+    {
+      "line": "EL SEÑOR, ÉL MISMO LA FUNDÓ., (Sol,,14)(Fa,,78)(Mi,,300)",
+      "sC": "tc as r1"
+    },
+    {
+      "line": "¡MADRE, MADRE, CIUDAD DE DIOS!, (La,m,35)(Sol,,114)(Fa,,227)(Mi,,310)",
+      "sC": "ta as r1"
+    }
+  ],
+  "lder": [
+    {
+      "line": "El Señor escribe en el libro de los pueblos:, (La,m,20)(Fa,,412)",
+      "sC": "tc ast2"
+    },
+    {
+      "line": "Este ha nacido en ella»,, ",
+      "sC": ""
+    },
+    {
+      "line": "y danzando cantarán:, (Mi,,182)(Si,7,240)",
+      "sC": ""
+    },
+    {
+      "line": "Están en ti todas mis fuentes»., (Mi,,231)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y DANZANDO, DANZANDO CANTARÁN:, (La,m,20)(Re,m,80)(Mi,,203)(La,m,345)",
+      "sC": "tc as r1"
+    },
+    {
+      "line": "«TODAS MIS FUENTES ESTÁN EN TI., (Sol,,25)(Fa,,149)(Mi,,329)",
+      "sC": "tc as r1"
+    },
+    {
+      "line": "¡MADRE, MADRE, CIUDAD DE DIOS!, (La,m,34)(Sol,,112)(Fa,,226)(Mi,,307)",
+      "sC": "ta as r1"
+    }
+  ],
+  "sourceBook": "resucito"
+}

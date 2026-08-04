@@ -1,0 +1,203 @@
+{
+  "id": "sermondelamontana",
+  "tt": "Sermón De La Montaña ",
+  "title": "Sermón De La Montaña ",
+  "subtitle": "Lucas 6,20-38",
+  "category": [
+    "Precatecumenado",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "148",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/sermondelamontana.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=senornomecorrijasentucolera",
+  "sig": "/src/index.html?canto=shlomlejmariam",
+  "lizq": [
+    {
+      "line": "Alzando los ojos hacia, (Re,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "sus discípulos, Jesús decía:, (La,7,182)(Re,,239)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DICHOSOS LOS POBRES,, (Sol,,171)(Re,,212)",
+      "sC": "tca as"
+    },
+    {
+      "line": "PORQUE VUESTRO, (La,7,124)",
+      "sC": "as"
+    },
+    {
+      "line": "ES EL REINO DE DIOS., (Re,,181)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DICHOSOS LOS QUE AHORA, ",
+      "sC": "tca as"
+    },
+    {
+      "line": "TENÉIS HAMBRE,, (Sol,,93)(Re,,152)",
+      "sC": "as"
+    },
+    {
+      "line": "PORQUE SERÉIS SACIADOS., (La,7,20)(Re,,214)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DICHOSOS LOS QUE LLORÁIS AHORA,, (Sol,,321)(Re,,354)",
+      "sC": "tca as"
+    },
+    {
+      "line": "PORQUE REIRÉIS., (La,7,20)(Re,,144)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dichosos seréis cuando os odien,, (Si,m,136)(La,,269)",
+      "sC": "tc"
+    },
+    {
+      "line": "os injurien a causa del Hijo del hombre., (Sol,,59)(Fa#,,318)",
+      "sC": ""
+    },
+    {
+      "line": "Alegraos ese día, que vuestra recompensa, (Sol,,53)",
+      "sC": ""
+    },
+    {
+      "line": "será grande en el cielo., (Fa#,,189)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡AY DE VOSOTROS, LOS RICOS!, (Re,,12)(Sol,,242)(Re,,272)",
+      "sC": "tc as"
+    },
+    {
+      "line": "PORQUE HABÉIS RECIBIDO, (La,7,227)",
+      "sC": "as"
+    },
+    {
+      "line": "VUESTRO CONSUELO., (Re,,166)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "¡AY DE LOS QUE REÍS AHORA!, (Sol,,243)(Re,,275)",
+      "sC": "tca as"
+    },
+    {
+      "line": "PORQUE TENDRÉIS AFLICIÓN, (La,7,261)",
+      "sC": "as"
+    },
+    {
+      "line": "Y LLANTO., (Re,,60)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AMAD A VUESTROS ENEMIGOS,, (Mi,,10)(La,,252)(Mi,,279)",
+      "sC": "tca as"
+    },
+    {
+      "line": "HACED EL BIEN A LOS QUE OS ODIAN., (Si,7,129)(Mi,,304)",
+      "sC": "as"
+    },
+    {
+      "line": "AL QUE TE HIERE EN UNA MEJILLA,, (La,,191)(Mi,,320)",
+      "sC": "tca as"
+    },
+    {
+      "line": "PRESÉNTALE TAMBIÉN LA OTRA;, (Si,7,59)(Mi,,265)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AL QUE TE QUITE EL MANTO,, (Fa#,,15)(Si,,221)(Fa#,,256)",
+      "sC": "tca as"
+    },
+    {
+      "line": "NO LE NIEGUES LA TÚNICA;, (Do#,7,88)(Fa#,,201)",
+      "sC": "as"
+    },
+    {
+      "line": "AL QUE TE QUITE LO QUE ES TUYO,, (Si,,285)(Fa#,,318)",
+      "sC": "tca as"
+    },
+    {
+      "line": "NO SE LO RECLAMES., (Do#,7,22)(Fa#,,152)",
+      "sC": "as"
+    },
+    {
+      "line": "AMAD A VUESTROS ENEMIGOS,, (Mi,,10)(La,,249)(Mi,,278)",
+      "sC": "tca as"
+    },
+    {
+      "line": "HACED EL BIEN A LOS QUE OS ODIAN., (Si,7,127)(Mi,,301)",
+      "sC": "as"
+    },
+    {
+      "line": "NO JUZGUÉIS,, (Fa#,,15)(Si,,98)(Fa#,,127)",
+      "sC": "tca as"
+    },
+    {
+      "line": "NO CONDENÉIS;, (Si,,120)(Fa#,,147)",
+      "sC": "tca as"
+    },
+    {
+      "line": "PERDONAD, (Si,,82)(Fa#,,113)",
+      "sC": "tca as"
+    },
+    {
+      "line": "Y SERÉIS PERDONADOS, (Do#,7,69)(Fa#,,181)",
+      "sC": "tca as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

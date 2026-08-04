@@ -1,0 +1,300 @@
+{
+  "id": "miradqueestupendo",
+  "tt": "Mirad Qué Estupendo",
+  "title": "¡Mirad Qué Estupendo!",
+  "subtitle": "Salmo 133 (132)",
+  "category": [
+    "Precatecumenado",
+    "Paz",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "116",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/miradqueestupendo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=mehasseducidosenor",
+  "sig": "/src/index.html?canto=misericordiadiosmio",
+  "lizq": [
+    {
+      "line": "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "GUSTAD QUÉ ALEGRÍA, ",
+      "sC": "as"
+    },
+    {
+      "line": "EL AMOR ENTRE LOS HERMANOS!, (Do,,66)(Si,7,275)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)",
+      "sC": "as"
+    },
+    {
+      "line": "GUSTAD QUÉ ALEGRÍA, ",
+      "sC": "as"
+    },
+    {
+      "line": "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,252)(Do,,288)(Si,7,318)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Es ungüento perfumado que desciende,, (La,m,80)(Si,7,335)",
+      "sC": "tc"
+    },
+    {
+      "line": "que desciende por la barba de Aarón., (La,m,96)(Si,7,337)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ES UNGÜENTO PERFUMADO, (Do,,100)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE DESCIENDE, (Si,7,110)",
+      "sC": "as"
+    },
+    {
+      "line": "HASTA EL BORDE DEL MANTO., (Do,,61)(Si,7,242)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡MIRAD QUÉ ESTUPENDO, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GUSTAD QUÉ ALEGRÍA, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,275)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)",
+          "sC": "as"
+        },
+        {
+          "line": "GUSTAD QUÉ ALEGRÍA, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,252)(Do,,288)(Si,7,318)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Es como rocío del Hermón, (La,m,44)(Si,7,193)",
+      "sC": "tc"
+    },
+    {
+      "line": "que desciende sobre el monte Sión;, (La,m,97)(Si,7,306)",
+      "sC": ""
+    },
+    {
+      "line": "ES ROCÍO DEL HERMÓN QUE DESCIENDE, (Do,,70)(Si,7,344)",
+      "sC": "as"
+    },
+    {
+      "line": "SOBRE EL MONTE SIÓN., (Do,,62)(Si,7,187)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡MIRAD QUÉ ESTUPENDO, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GUSTAD QUÉ ALEGRÍA, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,275)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)",
+          "sC": "as"
+        },
+        {
+          "line": "GUSTAD QUÉ ALEGRÍA, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,252)(Do,,288)(Si,7,318)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Porque allí el Señor nos ha dado,, (La,m,101)(Si,7,277)",
+      "sC": "tc"
+    },
+    {
+      "line": "nos ha dado su bendición., (La,m,88)(Si,7,225)",
+      "sC": ""
+    },
+    {
+      "line": "PORQUE ALLÍ EL SEÑOR NOS HA DADO,, (Do,,126)(Si,7,339)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NOS HA DADO SU AMOR., (Do,,65)(Si,7,211)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡MIRAD QUÉ ESTUPENDO, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GUSTAD QUÉ ALEGRÍA, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,275)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)",
+          "sC": "as"
+        },
+        {
+          "line": "GUSTAD QUÉ ALEGRÍA, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,252)(Do,,288)(Si,7,318)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque allí el Señor nos ha dado, (La,m,97)(Si,7,277)",
+      "sC": "tc"
+    },
+    {
+      "line": "la vida eternamente., (La,m,39)(Si,7,151)",
+      "sC": ""
+    },
+    {
+      "line": "PORQUE ALLÍ EL SEÑOR NOS HA DADO, (Do,,129)(Si,7,336)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LA VIDA PARA SIEMPRE., (Do,,45)(Si,7,166)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡MIRAD QUÉ ESTUPENDO, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GUSTAD QUÉ ALEGRÍA, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,275)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)",
+          "sC": "as"
+        },
+        {
+          "line": "GUSTAD QUÉ ALEGRÍA, ",
+          "sC": "as"
+        },
+        {
+          "line": "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,252)(Do,,288)(Si,7,318)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

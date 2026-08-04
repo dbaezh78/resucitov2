@@ -1,0 +1,208 @@
+{
+  "id": "senornomecorrijasentucolera",
+  "tt": "Señor, No Me Corrijas En Tu Cólera",
+  "title": "Señor, No Me Corrijas En Tu Cólera",
+  "subtitle": "Salmo 6",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "147",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/senornomecorrijasentucolera",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=senorayudameanodudardeti",
+  "sig": "/src/index.html?canto=sermondelamontana",
+  "lizq": [
+    {
+      "line": "SEÑOR, NO ME CORRIJAS EN TU CÓLERA,, (Fa#,5/9 dim,47)(Sol,,210)(Fa#,,335)",
+      "sC": "tc as"
+    },
+    {
+      "line": "EN TU FUROR NO ME CASTIGUES., (Sol,,107)(Fa#,,258)",
+      "sC": "as r1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ten piedad de mí, ten piedad Señor,, (Si,m,18)(La,,324)",
+      "sC": "tc"
+    },
+    {
+      "line": "que estoy sin fuerzas,, (Fa#,,158)",
+      "sC": ""
+    },
+    {
+      "line": "sáname tú, Señor,, (Si,m,18)(La,,157)",
+      "sC": ""
+    },
+    {
+      "line": "que se desmoronan mis huesos., (Fa#,,267)",
+      "sC": ""
+    },
+    {
+      "line": "Hundida tengo el alma,, (Sol,,14)(Fa#,,179)",
+      "sC": ""
+    },
+    {
+      "line": "y tú, Señor, ¿hasta cuándo?, (La,,27)(Fa#,,213)",
+      "sC": ""
+    },
+    {
+      "line": "Y TÚ, SEÑOR, ¿HASTA CUÁNDO?, (La,,36)(Fa#,,248)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "SEÑOR, NO ME CORRIJAS EN TU CÓLERA, (Fa#,5/9 dim,47)(Sol,,250)(Fa#,,335)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EN TU FUROR NO ME CASTIGUES., (Sol,,107)(Fa#,,258)",
+          "sC": "as r1"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Vuélvete, Señor, recobra mi alma,, (Si,m,17)(La,,135)(Fa#,,282)",
+      "sC": "tc"
+    },
+    {
+      "line": "sáname tú, Señor, por tu misericordia., (Si,m,18)(La,,159)(Fa#,,317)",
+      "sC": ""
+    },
+    {
+      "line": "Que nadie entre los muertos te recuerda,, (La,,58)(Fa#,,350)",
+      "sC": ""
+    },
+    {
+      "line": "ni en los infiernos se canta tu alabanza., (La,,120)(Fa#,,336)",
+      "sC": ""
+    },
+    {
+      "line": "QUE NADIE ENTRE LOS MUERTOS, (La,,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "TE RECUERDA, NI EN LOS INFIERNOS, (Fa#,,88)(La,,296)",
+      "sC": "as"
+    },
+    {
+      "line": "SE CANTA TU ALABANZA., (Fa#,,187)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "SEÑOR, NO ME CORRIJAS EN TU CÓLERA, (Fa#,5/9 dim,47)(Sol,,250)(Fa#,,335)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EN TU FUROR NO ME CASTIGUES., (Sol,,107)(Fa#,,258)",
+          "sC": "as r1"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Estoy cansado de gemir,, (Si,m,17)",
+      "sC": "tc"
+    },
+    {
+      "line": "inundo de lágrimas mi cama,, (La,,10)(Si,m,236)",
+      "sC": ""
+    },
+    {
+      "line": "mis ojos se consumen en la angustia,, (La,,313)",
+      "sC": ""
+    },
+    {
+      "line": "envejezco entre enemigos., (Fa#,,215)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Apartaos de mí, malvados,, (La,,10)(Fa#,,209)",
+      "sC": ""
+    },
+    {
+      "line": "que el Señor escucha mis sollozos,, (La,,111)(Fa#,,293)",
+      "sC": ""
+    },
+    {
+      "line": "que el Señor acoge mi oración., (La,,111)(Fa#,,275)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "SEÑOR, NO ME CORRIJAS EN TU CÓLERA, (Fa#,5/9 dim,47)(Sol,,250)(Fa#,,335)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "EN TU FUROR NO ME CASTIGUES., (Sol,,107)(Fa#,,258)",
+          "sC": "as r1"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y tú, Señor, ¿hasta cuándo?, (La,,29)(Fa#,,215)",
+      "sC": "tc"
+    },
+    {
+      "line": "Y TÚ, SEÑOR, ¿HASTA CUÁNDO?, (La,,34)(Fa#,,246)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

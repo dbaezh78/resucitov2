@@ -1,0 +1,202 @@
+{
+  "id": "elcombateescatologico",
+  "tt": "El Combate Escatológico",
+  "title": "El Combate Escatológico",
+  "subtitle": "Apocalipsis 19,11-20",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Entrada",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "53",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/elcombateescatologico.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=dichosoelhombre",
+  "sig": "/src/index.html?canto=elespiritudelsenorestasobremi",
+  "lizq": [
+    {
+      "line": "Veo el cielo abierto,, (Mi,,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "y un caballo blanco,, (Fa,,143)",
+      "sC": ""
+    },
+    {
+      "line": "el que lo monta lleva un manto,, (Sol,,111)(Fa,,259)",
+      "sC": ""
+    },
+    {
+      "line": "lleno de sangre, lleno de sangre., (Mi,,95)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sus ojos, llamas de fuego,, (Fa,,213)",
+      "sC": ""
+    },
+    {
+      "line": "y en su boca hay una espada, (Sol,,87)(Fa,,241)",
+      "sC": ""
+    },
+    {
+      "line": "para herir, para herir., (Mi,,83)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Cuál es su nombre?, (Do,,12)",
+      "sC": "tc"
+    },
+    {
+      "line": "¿Cuál es su nombre?, ",
+      "sC": "r1"
+    },
+    {
+      "line": "SU NOMBRE ES,, (Mi,,135)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SU NOMBRE ES,",
+      "sC": "as"
+    },
+    {
+      "line": "PALABRA DE DIOS., (La,m,157)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Veo una bestia y un profeta, (Mi,,10)(Fa,,233)",
+      "sC": "tc"
+    },
+    {
+      "line": "que se reúnen para un combate,, (Sol,,92)(Fa,,282)",
+      "sC": ""
+    },
+    {
+      "line": "para un combate,, (Mi,,135)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "contra el que monta en el caballo, (Fa,,288)",
+      "sC": ""
+    },
+    {
+      "line": "y lleva el manto lleno de sangre,, (Sol,,112)(Fa,,250)",
+      "sC": ""
+    },
+    {
+      "line": "lleno de sangre., (Mi,,96)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "ÉL PISA SOLO EN EL LAGAR, (La,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DE LA FURIOSA CÓLERA DE DIOS., (Mi,,117)(La,m,294)",
+      "sC": "as r2"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Veo la bestia que es capturada,, (Do,,10)(Mi,,263)",
+      "sC": "tc"
+    },
+    {
+      "line": "y con ella el profeta,, (La,m,159)",
+      "sC": ""
+    },
+    {
+      "line": "por el que monta en el caballo, (Mi,,259)",
+      "sC": ""
+    },
+    {
+      "line": "y lleva el manto lleno de sangre., (La,m,253)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA,, (La,m,18)(Mi,,154)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA,, (La,m,153)",
+      "sC": "as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA,, (Mi,,151)",
+      "sC": "as"
+    },
+    {
+      "line": "¡ALELUYA!, (La,m,84)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Cuál es su nombre?, (Do,,12)",
+      "sC": "tc"
+    },
+    {
+      "line": "¿Cuál es su nombre?, ",
+      "sC": "r1"
+    },
+    {
+      "line": "SU NOMBRE ES,, (Mi,,133)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SU NOMBRE ES,",
+      "sC": "as"
+    },
+    {
+      "line": "PALABRA DE DIOS., (La,m,156)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

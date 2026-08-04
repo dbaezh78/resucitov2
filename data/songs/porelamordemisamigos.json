@@ -1,0 +1,320 @@
+{
+  "id": "porelamordemisamigos",
+  "tt": "Por El Amor De Mis Amigos",
+  "title": "Por El Amor De Mis Amigos",
+  "subtitle": "Salmo 122 (121) - Melodía hebraica ",
+  "category": [
+    "Precatecumenado",
+    "Paz",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "132",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/porelamordemisamigos.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=pentecostes",
+  "sig": "/src/index.html?canto=porqueestanocheesdiferente",
+  "lizq": [
+    {
+      "line": "Por el amor de mis amigos,, (Mi,m,20)(La,m,221)",
+      "sC": "tc"
+    },
+    {
+      "line": "por el amor de mis hermanos,, (Mi,m,246)",
+      "sC": ""
+    },
+    {
+      "line": "déjame que yo te diga:, (Si,7,188)",
+      "sC": ""
+    },
+    {
+      "line": "la paz contigo., (Mi,m,109)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Qué alegría cuando me dijeron:, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "vamos a la casa del Señor!, (La,m,20)(Mi,m,240)",
+      "sC": ""
+    },
+    {
+      "line": "YA ESTÁN PISANDO NUESTROS PIES, (Si,7,333)",
+      "sC": "ta as"
+    },
+    {
+      "line": "TUS UMBRALES JERUSALÉN., (Mi,m,251)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "JERUSALÉN, JERUSALÉN, (Mi,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DE NUEVO REEDIFICADA., (La,m,72)(Mi,m,200)",
+      "sC": "as"
+    },
+    {
+      "line": "JERUSALÉN,JERUSALÉN, ",
+      "sC": "as"
+    },
+    {
+      "line": "DE NUEVO REEDIFICADA., (Si,7,67)(Mi,m,200)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "JERUSALÉN,JERUSALÉN,, (Mi,m,20)",
+      "sC": "as"
+    },
+    {
+      "line": "DE NUEVO REEDIFICADA., (La,m,68)(Mi,m,201)",
+      "sC": "as"
+    },
+    {
+      "line": "JERUSALÉN,JERUSALÉN, ",
+      "sC": "as"
+    },
+    {
+      "line": "DE NUEVO REEDIFICADA., (Si,7,65)(Mi,m,201)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "Por el amor... ...paz contigo, (Mi,m,20)",
+      "sC": "tc",
+      "lines": [
+        {
+          "line": "Por el amor de mis amigos, (Mi,m,20)(La,m,221)",
+          "sC": "sub1"
+        },
+        {
+          "line": "por el amor de mis hermanos, (Mi,m,246)",
+          "sC": ""
+        },
+        {
+          "line": "déjame que yo te diga:, (Si,7,188)",
+          "sC": ""
+        },
+        {
+          "line": "la paz contigo. (Mi,m,109)",
+          "sC": ""
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Allá suben las tribus,, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "las tribus del Señor,, (La,m,51)(Mi,m,167)",
+      "sC": ""
+    },
+    {
+      "line": "SEGÚN LA COSTUMBRE DE ISRAEL,, (Si,7,317)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PARA CANTAR AL SEÑOR., (Mi,m,222)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "JERUSALÉN, JERUSALÉN, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DE NUEVO REEDIFICADA., (La,m,72)(Mi,m,200)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN,JERUSALÉN, ",
+          "sC": "as"
+        },
+        {
+          "line": "DE NUEVO REEDIFICADA., (Si,7,67)(Mi,m,200)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "JERUSALÉN,JERUSALÉN,, (Mi,m,20)",
+          "sC": "as"
+        },
+        {
+          "line": "DE NUEVO REEDIFICADA., (La,m,68)(Mi,m,201)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN,JERUSALÉN, ",
+          "sC": "as"
+        },
+        {
+          "line": "DE NUEVO REEDIFICADA., (Si,7,65)(Mi,m,201)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "Por el amor... ...paz contigo, (Mi,m,20)",
+      "sC": "tc",
+      "lines": [
+        {
+          "line": "Por el amor de mis amigos, (Mi,m,20)(La,m,221)",
+          "sC": "sub1"
+        },
+        {
+          "line": "por el amor de mis hermanos, (Mi,m,246)",
+          "sC": ""
+        },
+        {
+          "line": "déjame que yo te diga:, (Si,7,188)",
+          "sC": ""
+        },
+        {
+          "line": "la paz contigo. (Mi,m,109)",
+          "sC": ""
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pedid la paz, pedid la paz, (Mi,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "para Jerusalén:, (La,m,20)(Mi,m,125)",
+      "sC": ""
+    },
+    {
+      "line": "QUE SEA LA PAZ, QUE SEA LA PAZ, ",
+      "sC": "ta as"
+    },
+    {
+      "line": "CON TODOS LOS QUE TE AMAN., (Si,7,20)(Mi,m,250)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "JERUSALÉN, JERUSALÉN, (Mi,m,20)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DE NUEVO REEDIFICADA., (La,m,72)(Mi,m,200)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN,JERUSALÉN, ",
+          "sC": "as"
+        },
+        {
+          "line": "DE NUEVO REEDIFICADA., (Si,7,67)(Mi,m,200)",
+          "sC": "as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "JERUSALÉN,JERUSALÉN,, (Mi,m,20)",
+          "sC": "as"
+        },
+        {
+          "line": "DE NUEVO REEDIFICADA., (La,m,68)(Mi,m,201)",
+          "sC": "as"
+        },
+        {
+          "line": "JERUSALÉN,JERUSALÉN, ",
+          "sC": "as"
+        },
+        {
+          "line": "DE NUEVO REEDIFICADA., (Si,7,65)(Mi,m,201)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "LA LALALALALA, LA LALALALALA,, (Mi,m,20)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LA LA LALALA., (La,m,20)(Mi,m,104)",
+      "sC": "as"
+    },
+    {
+      "line": "LA LALALALALA, LA LALALALALA, ",
+      "sC": "as"
+    },
+    {
+      "line": "LA LA LALALA., (Si,7,20)(Mi,m,104)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

@@ -1,0 +1,181 @@
+{
+  "id": "haciatimoradasanta",
+  "tt": "Hacia Ti, Morada Santa",
+  "title": "Hacia Ti, Morada Santa",
+  "subtitle": "Himno procesional eucarístico (Kiko Argüello)",
+  "category": [
+    "Precatecumenado",
+    "Entrada"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "79",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/haciatimoradasanta.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=gritadjubilosos",
+  "sig": "/src/index.html?canto=hastacuando",
+  "lizq": [
+    {
+      "line": "HACIA TI, MORADA SANTA,, (La,m,19)(Mi,,211)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HACIA TI, TIERRA DEL SALVADOR,, (La,m,295)",
+      "sC": "as"
+    },
+    {
+      "line": "PEREGRINOS, CAMINANTES,, (Sol,,80)(Fa,,210)",
+      "sC": "as"
+    },
+    {
+      "line": "VAMOS HACIA TI., (Mi,,152)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Venimos a tu mesa,, (La,m,155)",
+      "sC": "tc"
+    },
+    {
+      "line": "sellaremos tu pacto,, (Sol,,153)",
+      "sC": ""
+    },
+    {
+      "line": "comeremos tu carne,, (Fa,,165)",
+      "sC": ""
+    },
+    {
+      "line": "tu sangre nos limpiará., (Mi,,209)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Reinaremos contigo, (La,m,166)",
+      "sC": ""
+    },
+    {
+      "line": "en tu morada santa,, (Sol,,151)",
+      "sC": ""
+    },
+    {
+      "line": "beberemos tu sangre,, (Fa,,156)",
+      "sC": ""
+    },
+    {
+      "line": "tu Fe nos salvará., (Mi,,155)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HACIA TI, MORADA SANTA, (La,m,19)(Mi,,211)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HACIA TI, TIERRA DEL SALVADOR,, (La,m,295)",
+          "sC": "as"
+        },
+        {
+          "line": "PEREGRINOS, CAMINANTES,, (Sol,,80)(Fa,,210)",
+          "sC": "as"
+        },
+        {
+          "line": "VAMOS HACIA TI., (Mi,,152)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Somos tu pueblo santo,, (La,m,185)",
+      "sC": "tc"
+    },
+    {
+      "line": "que hoy camina unido,, (Sol,,183)",
+      "sC": ""
+    },
+    {
+      "line": "tú vas entre nosotros,, (Fa,,155)",
+      "sC": ""
+    },
+    {
+      "line": "tu amor nos guiará., (Mi,,173)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú eres el Camino,, (La,m,143)",
+      "sC": ""
+    },
+    {
+      "line": "tú eres la esperanza,, (Sol,,150)",
+      "sC": ""
+    },
+    {
+      "line": "hermano de los pobres., (Fa,,170)",
+      "sC": ""
+    },
+    {
+      "line": "Amén. Aleluya., (Mi,,129)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "HACIA TI, MORADA SANTA, (La,m,19)(Mi,,211)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "HACIA TI, TIERRA DEL SALVADOR,, (La,m,295)",
+          "sC": "as"
+        },
+        {
+          "line": "PEREGRINOS, CAMINANTES,, (Sol,,80)(Fa,,210)",
+          "sC": "as"
+        },
+        {
+          "line": "VAMOS HACIA TI., (Mi,,152)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

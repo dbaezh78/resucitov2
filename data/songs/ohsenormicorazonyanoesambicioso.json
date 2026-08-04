@@ -1,0 +1,136 @@
+{
+  "id": "ohsenormicorazonyanoesambicioso",
+  "tt": "Oh Señor, Mi Corazón Ya No Es Ambicioso",
+  "title": "Oh Señor, Mi Corazón Ya No Es Ambicioso",
+  "subtitle": "Salmo 131 (130)",
+  "category": [
+    "Catecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Catecumenado",
+  "cejilla": "2",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "232",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/ohsenormicorazonyanoesambicioso.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=nosufrasporlosmalvados",
+  "sig": "/src/index.html?canto=senortumeescrutasyconoces",
+  "lizq": [
+    {
+      "line": "OH SEÑOR, MI CORAZÓN YA NO ES AMBICIOSO, (Mi,m,20)(La,m,220)(Mi,m,418)",
+      "sC": "tc as"
+    },
+    {
+      "line": "NI SE ELEVA CON SOBERBIA MI MIRADA,, (La,m,218)(Si,7,347)",
+      "sC": "as r1"
+    },
+    {
+      "line": "NI VOY EN BUSCA DE COSAS GRANDES, ",
+      "sC": "as"
+    },
+    {
+      "line": "QUE SON SUPERIORES A MIS FUERZAS., (Mi,m,322)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aquietada y acallada está mi alma, (Mi,m,20)(La,m,301)",
+      "sC": "tc"
+    },
+    {
+      "line": "como un niño pequeño en brazos de su madre,, (Do,,106)(Mi,m,404)",
+      "sC": ""
+    },
+    {
+      "line": "como un niño amamantado está mi espíritu,, (Si,7,391)",
+      "sC": ""
+    },
+    {
+      "line": "como un niño dentro de mí., (Mi,m,251)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_osmyneambisioso_1",
+      "initialState": "collapsed",
+      "triggerLine": "OH SEÑOR, MI CORAZÓN YA NO ES AMBICIOSO, (Mi,m,20)(La,m,220)(Mi,m,418)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "NI SE ELEVA CON SOBERBIA MI MIRADA,, (La,m,218)(Si,7,347)",
+          "sC": "as r1"
+        },
+        {
+          "line": "NI VOY EN BUSCA DE COSAS GRANDES, ",
+          "sC": "as"
+        },
+        {
+          "line": "QUE SON SUPERIORES A MIS FUERZAS., (Mi,m,322)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_osmyneambisioso_2",
+      "initialState": "collapsed",
+      "triggerLine": "Aquietada y acallada está mi alma, (Mi,m,20)(La,m,301)",
+      "sC": "tc",
+      "lines": [
+        {
+          "line": "como un niño pequeño en brazos de su madre,, (Do,,106)(Mi,m,404)",
+          "sC": ""
+        },
+        {
+          "line": "como un niño amamantado está mi espíritu,, (Si,7,391)",
+          "sC": ""
+        },
+        {
+          "line": "como un niño dentro de mí., (Mi,m,251)",
+          "sC": ""
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Espera Israel, en el Señor., (Mi,m,20)(La,m,112)(Mi,m,228)",
+      "sC": "tc"
+    },
+    {
+      "line": "Espera Israel en el Señor, ahora y siempre., (La,m,222)(Mi,m,344)",
+      "sC": ""
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

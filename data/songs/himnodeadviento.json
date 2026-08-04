@@ -1,0 +1,119 @@
+{
+  "id": "himnodeadviento",
+  "tt": "Himno De Adviento",
+  "title": "Himno De Adviento",
+  "subtitle": "Himno lat. «Vox clara ecce Intonat»",
+  "category": [
+    "Precatecumenado",
+    "Adviento",
+    "Navidad"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "88",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/himnodeadviento.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=himnoalakenosis",
+  "sig": "/src/index.html?canto=himnodelaascension",
+  "lizq": [
+    {
+      "line": "Una voz recia disipa con sus ecos la oscuridad,, (Re,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "lejos el ensueño, Jesús brilla ya., (La,7,294)",
+      "sC": ""
+    },
+    {
+      "line": "Levántese el alma entorpecida, (Re,m,268)",
+      "sC": ""
+    },
+    {
+      "line": "y deje de arrastrarse por el suelo:, (La,7,293)",
+      "sC": ""
+    },
+    {
+      "line": "amanece una nueva estrella., (Re,m,240)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ved, que se nos envía un Cordero, (Sol,m,22)",
+      "sC": ""
+    },
+    {
+      "line": "para satisfacer gratuitamente nuestras deudas:, (Re,m,411)",
+      "sC": ""
+    },
+    {
+      "line": "vayamos a Él con lágrimas,, (La,7,182)",
+      "sC": ""
+    },
+    {
+      "line": "pidámosle todos perdón., (Re,m,214)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PARA QUE, CUANDO APAREZCA GLORIOSO, (Sol,m,84)",
+      "sC": "ta as"
+    },
+    {
+      "line": "EN SU SEGUNDA VENIDA,, (Re,m,205)",
+      "sC": "as"
+    },
+    {
+      "line": "Y LLENE EL MUNDO DE ESPANTO,, (La,7,273)",
+      "sC": "as"
+    },
+    {
+      "line": "ÉL NOS PROTEJA PIADOSO., (Re,m,224)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "POR ESO, (Sol,m,63)",
+      "sC": "ta as"
+    },
+    {
+      "line": "YO LE CANTO ESTA BALADA, (Re,m,229)",
+      "sC": "as r1"
+    },
+    {
+      "line": "AL PADRE, AL HIJO Y AL ESPÍRITU,, (La,7,278)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE ELLOS VIVAN, AMÉN., (Re,m,223)",
+      "sC": "as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

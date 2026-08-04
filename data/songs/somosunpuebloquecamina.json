@@ -1,0 +1,218 @@
+{
+  "id": "somosunpuebloquecamina",
+  "tt": "Somos Un Pueblo Que Camina",
+  "title": "Somos Un Pueblo Que Camina",
+  "subtitle": "Cancionero 54",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "54",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/somosunpuebloquecamina.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=conmiburritosabanero",
+  "sig": "/src/index.html?canto=hablame",
+  "lizq": [
+    {
+      "line": "SOMOS UN PUEBLO QUE CAMINA, (Sol,,13)(Mi,m,272)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y JUNTOS CAMINANDO PODREMOS ALCANZAR, (Do,,161)(Re,,422)",
+      "sC": "as"
+    },
+    {
+      "line": "OTRA CIUDAD QUE NO SE ACABA, (Do,,12)(Sol,,276)",
+      "sC": "as"
+    },
+    {
+      "line": "SIN PENAS NI TRISTEZAS, CIUDAD DE ETERNIDAD,, (Do,,193)(Re,,283)(Sol,,450)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Somos un pueblo que camina, (Sol,,14)(Do,,113)(Sol,,253)",
+      "sC": ""
+    },
+    {
+      "line": "que marcha por el mundo, buscando otra ciudad., (Do,,54)(Sol,,195)(Re,,312)(Sol,,445)",
+      "sC": ""
+    },
+    {
+      "line": "Somos errantes peregrinos, (Do,,97)(Sol,,217)",
+      "sC": ""
+    },
+    {
+      "line": "en busca de un destino, destino de unidad., (Do,,12)(Sol,,200)(Re,,280)(Sol,,384)(Sol,7,424)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Siempre seremos caminantes, (Do,,12)(Sol,,234)",
+      "sC": ""
+    },
+    {
+      "line": "pues sólo caminando podremos alcanzar, (Mi,,155)(Re,,378)",
+      "sC": ""
+    },
+    {
+      "line": "otra ciudad que no se acaba, (Do,,12)(Sol,,240)",
+      "sC": ""
+    },
+    {
+      "line": "sin penas ni tristezas, ciudad de eternidad., (Do,,160)(Re,,250)(Sol,,380)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Danos valor para la lucha, (Sol,,14)(Do,,100)(Sol,,205)",
+      "sC": ""
+    },
+    {
+      "line": "valor en las tristezas, valor en nuestro afán., (Do,,33)(Sol,,159)(Re,,241)(Sol,,397)",
+      "sC": ""
+    },
+    {
+      "line": "Danos la luz de tu Palabra, (Do,,102)(Sol,,216)",
+      "sC": ""
+    },
+    {
+      "line": "que guíe nuestros pasos, en este caminar., (Do,,50)(Sol,,189)(Re,,290)(Sol,,381)(Sol,7,423)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Marcha Señor junto a nosotros, (Do,,12)(Sol,,248)",
+      "sC": ""
+    },
+    {
+      "line": "pues sólo en tu presencia, podremos alcanzar, (Mi,m,202)(Re,,431)",
+      "sC": ""
+    },
+    {
+      "line": "otra ciudad que no se acaba, (Do,,12)(Sol,,239)",
+      "sC": ""
+    },
+    {
+      "line": "sin penas ni tristezas, ciudad de eternidad., (Do,,162)(Re,,252)(Sol,,380)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Dura se hace nuestra marcha, (Do,,14)(Sol,,250)",
+      "sC": ""
+    },
+    {
+      "line": "andando entre las sombras, y en tanta oscuridad., (Re,,12)(Sol,,230)(Re,,296)(Sol,,452)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Todos los cuerpos desatados, (Sol,,20)(Do,,150)(Sol,,250)",
+      "sC": ""
+    },
+    {
+      "line": "ya sienten el cansancio, de tanto caminar., (Re,,12)(Sol,,193)(Re,,250)(Sol,,384)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PERO TENEMOS LA ESPERANZA, (Sol,,12)(Do,,110)(Sol,,290)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DE QUE NUESTRAS FATIGAS, AL FIN ALCANRARÁN, (Re,,12)(Sol,,238)(Re,,290)(Sol,,438)",
+      "sC": "as"
+    },
+    {
+      "line": "OTRA CIUDAD QUE NO SE ACABA, (Do,,13)(Sol,,277)",
+      "sC": "as"
+    },
+    {
+      "line": "SIN PENAS NI TRISTEZAS, CIUDAD DE ETERNIDAD., (Do,,190)(Re,,293)(Sol,,443)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sufren los hombres, mis hermanos,, (Sol,,14)(Do,,122)(Sol,,286)",
+      "sC": ""
+    },
+    {
+      "line": "buscando entre las piedras, la parte de su pan (Do,,48)(La,,199)(Re,,305)(Sol,,422)",
+      "sC": ""
+    },
+    {
+      "line": "Sufren los hombres oprimidos,, (Do,7,123)(Sol,,243)",
+      "sC": ""
+    },
+    {
+      "line": "los hombres que no tienen ni paz ni libertad., (Do,,45)(Sol,,210)(Re,,300)(Sol,,400)(Sol,7,442)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sufren los hombres, mis hermanos,, (Do,,10)(Sol,,288)",
+      "sC": ""
+    },
+    {
+      "line": "mas Tú vienes con ellos y en Ti alcanzarán., (Mi,,190)(Re,,374)",
+      "sC": ""
+    },
+    {
+      "line": "otra ciudad que no se acaba, (Do,,12)(Sol,,242)",
+      "sC": ""
+    },
+    {
+      "line": "sin penas ni tristezas, ciudad de eternidad., (Do,,162)(Re,,252)(Sol,,381)",
+      "sC": ""
+    }
+  ],
+  "sourceBook": "joven"
+}

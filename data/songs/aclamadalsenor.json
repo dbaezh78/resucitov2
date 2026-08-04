@@ -1,0 +1,180 @@
+{
+  "id": "aclamadalsenor",
+  "tt": "Aclamad Al Señor",
+  "title": "Aclamad Al Señor",
+  "subtitle": "Salmo 100 (99)",
+  "category": [
+    "PreCatecumenado",
+    "Entrada",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "* Melisma",
+  "dbno": "9",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/aclamadalsenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=abraham",
+  "sig": "/src/index.html?canto=aldespertar",
+  "lizq": [
+    {
+      "line": "ACLAMAD AL SEÑOR, (Re,m,15)",
+      "sC": "ta as"
+    },
+    {
+      "line": "TODA LA TIERRA,(Sol,m,15)(Re,m,118)",
+      "sC": "as"
+    },
+    {
+      "line": "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,58)(Sol,,154)(La,,297)",
+      "sC": "as"
+    },
+    {
+      "line": "Acercaos a Él *, (Re,m,55)(La,7,138)",
+      "sC": "tc mt"
+    },
+    {
+      "line": "con gritos de júbilo., (Re,m,175)",
+      "sC": "ast91"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_aas_1",
+      "initialState": "collapsed",
+      "triggerLine": "ACLAMAD AL SEÑOR, (Re,m,15)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "TODA LA TIERRA,(Sol,m,15)(Re,m,118)",
+          "sC": "as"
+        },
+        {
+          "line": "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "Porque el Señor es nuestro Dios *, (Re,m,15)(La,7,250)",
+      "sC": "tc mt"
+    },
+    {
+      "line": "y nosotros su pueblo., (Re,m,15)",
+      "sC": "ast92"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_aas_2",
+      "initialState": "collapsed",
+      "triggerLine": "ACLAMAD AL SEÑOR, (Re,m,15)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "TODA LA TIERRA,(Sol,m,15)(Re,m,118)",
+          "sC": "as"
+        },
+        {
+          "line": "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "¡Entrad por sus puertas *, (Re,m,15)(La,7,234)",
+      "sC": "tc mt"
+    },
+    {
+      "line": "con himnos de alegría!, (Re,m,205)",
+      "sC": "ast93"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_aas_3",
+      "initialState": "collapsed",
+      "triggerLine": "ACLAMAD AL SEÑOR, (Re,m,15)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "TODA LA TIERRA,(Sol,m,15)(Re,m,118)",
+          "sC": "as"
+        },
+        {
+          "line": "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Bendecid su nombre *, (Re,m,73)(La,7,207)",
+      "sC": "mt tc"
+    },
+    {
+      "line": "dándole gracias, (Re,m,135)",
+      "sC": "ast94"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_aas_4",
+      "initialState": "collapsed",
+      "triggerLine": "ACLAMAD AL SEÑOR, (Re,m,15)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "TODA LA TIERRA,(Sol,m,15)(Re,m,118)",
+          "sC": "as"
+        },
+        {
+          "line": "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "Porque es bueno el Señor,(Re,m,15)(La,7,254)",
+      "sC": "mt tc"
+    },
+    {
+      "line": "es eterno su amor *,",
+      "sC": "ast95"
+    },
+    {
+      "line": "con nosotros., (Re,m,103)",
+      "sC": "ast96"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_aas_5",
+      "initialState": "collapsed",
+      "triggerLine": "ACLAMAD AL SEÑOR, (Re,m,15)",
+      "sC": "mt as ta",
+      "lines": [
+        {
+          "line": "TODA LA TIERRA,(Sol,m,15)(Re,m,118)",
+          "sC": "as"
+        },
+        {
+          "line": "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

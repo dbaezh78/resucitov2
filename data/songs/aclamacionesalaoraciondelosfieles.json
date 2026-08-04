@@ -1,0 +1,115 @@
+{
+  "id": "aclamacionesalaoraciondelosfieles",
+  "tt": "Aclamaciones A La Oración De Los Fieles",
+  "title": "Aclamaciones A La Oración De Los Fieles",
+  "subtitle": "Respuestas a las oraciones de los fieles, Modelo I, II, III, IV",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "179",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/aclamacionesalaoraciondelosfieles.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=zaqueo",
+  "sig": "/src/index.html?canto=aleluyapascual",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "cantosliturgicos",
+      "color": "#544d47"
+    },
+    {
+      "line": "Modelo I ",
+      "sC": "as left",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te lo pedimos Señor., (Sol,,15)(Re,,193)(Sol,,236)",
+      "sC": "tc"
+    },
+    {
+      "line": "TE LO PEDIMOS SEÑOR., (La,m,15)(Mi,m,194)(Si,7,240)(Mi,m,287)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Modelo II ",
+      "sC": "as left",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ESCÚCHANOS, OH SEÑOR., (Mi,m,15)(Re,,154)(Mi,m,229)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Modelo III ",
+      "sC": "as left",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Misma música Modelo I",
+      "sC": "mmmi",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "ACUÉRDATE DE NOSOTROS,, (Sol,,15)(Re,,209)(Sol,,240)",
+      "sC": "ta as"
+    },
+    {
+      "line": "AHORA QUE ESTÁS EN TU REINO., (La m,,15)(Mi m,,262)(Si 7,,305)(Mi m,,345)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Modelo IV ",
+      "sC": "as left",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "OYE, PADRE, EL GRITO DE TU PUEBLO, (Mi,m,15)(La,m,70)(Si,7,139)(Mi,m,310)",
+      "sC": "ta as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

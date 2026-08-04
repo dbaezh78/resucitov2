@@ -1,0 +1,243 @@
+{
+  "id": "resurrexit",
+  "tt": "Resurrexit",
+  "title": "Resurrexit",
+  "subtitle": "Juan 11,25s",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "3",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "143",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/resurrexit.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=resucito",
+  "sig": "/src/index.html?canto=salvereinadeloscielos",
+  "lizq": [
+    {
+      "line": "RESURREXIT, RESURREXIT,, (La,m,20)(Mi,7,218)",
+      "sC": "ta as"
+    },
+    {
+      "line": "RESURREXIT, RESURREXIT., (Fa,,92)(Mi,,223)",
+      "sC": "as"
+    },
+    {
+      "line": "GLORIA, GLORIA, GLORIA, GLORIA., (La,m,20)(Mi,7,116)(Fa,,199)(Mi,,287)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo soy la Resurrección,, (La,m,20)(Mi,7,198)",
+      "sC": ""
+    },
+    {
+      "line": "la Resurrección, la Resurrección., (Re,m,22)(Mi,7,291)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "YO SOY LA RESURRECCIÓN,, (La,m,20)(Mi,7,238)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LA RESURRECCIÓN,, (Re,m,20)",
+      "sC": "as"
+    },
+    {
+      "line": "LA RESURRECCIÓN., (Mi,7,165)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El que cree en mí, aunque muera vivirá,, (Re,m,86)(Mi,7,363)",
+      "sC": "tc"
+    },
+    {
+      "line": "y todo el que vive y cree en mí,, (Re,m,17)(Fa,,280)",
+      "sC": ""
+    },
+    {
+      "line": "no morirá jamás, no morirá jamás., (Mi,7,145)(Fa,,179)(Mi,7,311)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "RESURREXIT, RESURREXIT, (La,m,20)(Mi,7,220)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "RESURREXIT, RESURREXIT., (Fa,,92)(Mi,,223)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_2",
+      "initialState": "collapsed",
+      "triggerLine": "GLORIA, GLORIA, (La,m,32)(Mi,7,116)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GLORIA, GLORIA,, (Fa,,33)(Mi,,117)",
+          "sC": "as gloria"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Crees tú esto? ¿Crees tú esto?, (Re,m,22)(Mi,,103)(Re,m,185)(Mi,,258)",
+      "sC": "tc"
+    },
+    {
+      "line": "Sí, yo creo que tú eres el Cristo,, (Fa,,10)",
+      "sC": ""
+    },
+    {
+      "line": "el Hijo de Dios, que ha de venir al mundo., (Mi,7,120)(Fa,,205)(Mi,7,347)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_3",
+      "initialState": "collapsed",
+      "triggerLine": "RESURREXIT, RESURREXIT, (La,m,20)(Mi,7,220)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "RESURREXIT, RESURREXIT., (Fa,,92)(Mi,,223)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_4",
+      "initialState": "collapsed",
+      "triggerLine": "GLORIA, GLORIA, (La,m,32)(Mi,7,116)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GLORIA, GLORIA,, (Fa,,33)(Mi,,117)",
+          "sC": "as gloria"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "LA, LA, LA, LA,  LA LA,, (La,m,20)",
+      "sC": "as"
+    },
+    {
+      "line": "LA LA LA LA, LA LA, LA LA;, (Re,m,22)(Mi,7,178)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "LA, LA, LA, LA, LA LA,, (La,m,20)",
+      "sC": "as"
+    },
+    {
+      "line": "LA, LA LA LA., (Re,m,22)(Mi,7,110)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_5",
+      "initialState": "collapsed",
+      "triggerLine": "RESURREXIT, RESURREXIT, (La,m,20)(Mi,7,220)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "RESURREXIT, RESURREXIT., (Fa,,92)(Mi,,223)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_6",
+      "initialState": "collapsed",
+      "triggerLine": "GLORIA, GLORIA, (La,m,32)(Mi,7,116)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GLORIA, GLORIA,, (Fa,,33)(Mi,,117)",
+          "sC": "as gloria"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA,, (La,m,51)(Mi,7,155)",
+      "sC": "as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA., (Fa,,55)(Mi,,150)",
+      "sC": "as"
+    },
+    {
+      "line": "ALELUYA., (La,m,79)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

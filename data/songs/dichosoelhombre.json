@@ -1,0 +1,192 @@
+{
+  "id": "dichosoelhombre",
+  "tt": "Dichoso El Hombre",
+  "title": "Dichoso El Hombre",
+  "subtitle": "Salmo 1",
+  "category": [
+    "Precatecumenado",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "52",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/dichosoelhombre.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=diceelsenoramisenor",
+  "sig": "/src/index.html?canto=elcombateescatologico",
+  "lizq": [
+    {
+      "line": "DICHOSO EL HOMBRE, (La,m,22)(Fa,,218)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE NO SIGUE EL CONSEJO DE LOS IMPÍOS,, (La,m,361)(Fa,,422)",
+      "sC": "as"
+    },
+    {
+      "line": "NI EN LA SENDA DE LOS PECADORES SE DETIENE,, (La,m,439)",
+      "sC": "as"
+    },
+    {
+      "line": "NI EN EL BANCO DE LOS BURLONES SE SIENTA., (Fa,,105)(La,m,400)",
+      "sC": "as"
+    },
+    {
+      "line": "Mas se complace en la palabra del Señor,, (Sol,,13)(Mi,,376)",
+      "sC": "tc"
+    },
+    {
+      "line": "sus salmos susurra día y noche., (Sol,,48)(Fa,,148)(Mi,,250)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Será como árbol plantado, (La,m,22)(Fa,,212)",
+      "sC": ""
+    },
+    {
+      "line": "junto a corrientes de agua., (La,m,215)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SERÁ COMO ÁRBOL PLANTADO, (Fa,,261)",
+      "sC": "ta as"
+    },
+    {
+      "line": "JUNTO A CORRIENTES DE AGUA,, (La,m,257)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "que da fruto a su tiempo,, (Fa,,89)(Mi,,183)",
+      "sC": "tc"
+    },
+    {
+      "line": "nunca se marchitarán sus hojas;, (Fa,,11)(Mi,,262)",
+      "sC": ""
+    },
+    {
+      "line": "todo lo que emprende le sale bien,, (Sol,,12)(Fa,,164)(Mi,,302)",
+      "sC": ""
+    },
+    {
+      "line": "todo lo que emprende le sale bien., (Sol,,13)(Fa,,164)(Mi,,302)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "¡No así los impíos, no así!, (La,m,25)",
+      "sC": "tc"
+    },
+    {
+      "line": "Que son como la paja, (Fa,,58)",
+      "sC": ""
+    },
+    {
+      "line": "que se lleva el viento., (La,m,157)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡NO ASÍ LOS IMPÍOS, NO ASÍ!, (La,m,25)",
+      "sC": "ta as"
+    },
+    {
+      "line": "QUE SON COMO LA PAJA, (Fa,,63)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE SE LLEVA EL VIENTO., (La,m,200)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No resistirán en el juicio los impíos,, (Fa,,10)(Mi,,303)",
+      "sC": "tc"
+    },
+    {
+      "line": "ni los pecadores, (Fa,,120)",
+      "sC": ""
+    },
+    {
+      "line": "en la comunidad de los santos., (Mi,,233)",
+      "sC": ""
+    },
+    {
+      "line": "Porque el Señor cuida, (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "el camino de sus fieles,, (Fa,,65)(Mi,,181)",
+      "sC": ""
+    },
+    {
+      "line": "mas el camino de los impíos, (Fa,,111)",
+      "sC": ""
+    },
+    {
+      "line": "acaba mal, acaba mal, acaba mal., (Mi,,84)(Fa,,133)(Mi,,305)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "DICHOSO EL HOMBRE, (La,m,22)(Fa,,218)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "QUE NO SIGUE EL CONSEJO DE LOS IMPÍOS,, (La,m,361)(Fa,,422)",
+          "sC": "as"
+        },
+        {
+          "line": "NI EN LA SENDA DE LOS PECADORES SE DETIENE,, (La,m,439)",
+          "sC": "as"
+        },
+        {
+          "line": "NI EN EL BANCO DE LOS BURLONES SE SIENTA., (Fa,,104)(La,m,400)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

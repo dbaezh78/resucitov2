@@ -1,0 +1,146 @@
+{
+  "id": "mariacasadebendicion",
+  "tt": "María, Casa De Bendición",
+  "title": "María, Casa De Bendición",
+  "subtitle": "Juan 2,1–11 | Las Bodas de Caná",
+  "category": [
+    "Precatecumenado",
+    "Vírgen María",
+    "Pascua",
+    "Comunión",
+    "Pentecostés"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "109",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/mariacasadebendicion.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=magnificat",
+  "sig": "/src/index.html?canto=mariadejasnagora",
+  "lizq": [
+    {
+      "line": "MARÍA, CASA DE BENDICIÓN,, (Re,m,20)(Sol,m,99)(Re,m,256)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SALUD DE NUESTRO SIGLO,, (Sol,m,44)(Re,m,218)",
+      "sC": "as r1"
+    },
+    {
+      "line": "MORADA TERRESTRE DEL HUMILDE., (La,7,56)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú, como en Caná de Galilea,, (Sol,m,22)(La,7,258)",
+      "sC": "tc"
+    },
+    {
+      "line": "has visto que nos faltaba el vino;, (Sol,m,24)(La,7,279)",
+      "sC": ""
+    },
+    {
+      "line": "que nuestra fiesta no era fiesta,, (Si♭,,13)",
+      "sC": ""
+    },
+    {
+      "line": "que nuestra vida no era vida,",
+      "sC": ""
+    },
+    {
+      "line": "porque la muerte reinaba en nosotros., (La,7,322)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "MARÍA, CASA DE BENDICIÓN (Re,m,20)(Sol,m,99)(Re,m,256)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SALUD DE NUESTRO SIGLO,, (Sol,m,44)(Re,m,218)",
+          "sC": "as r1"
+        },
+        {
+          "line": "MORADA TERRESTRE DEL HUMILDE., (La,7,56)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y tú nos has llevado hasta tu Hijo,, (Sol,m,22)(La,7,297)",
+      "sC": "tc"
+    },
+    {
+      "line": "nos has enseñado a obedecerle, (Sol,m,20)",
+      "sC": ""
+    },
+    {
+      "line": "y a hacer todo lo que nos diga Él,, (La,7,305)",
+      "sC": ""
+    },
+    {
+      "line": "para que transforme nuestra agua (Si♭,,13)",
+      "sC": ""
+    },
+    {
+      "line": "en vino nuevo.,(La,7,97)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡VICTORIA! ¡VICTORIA!, (Re,m,11)(Do,,158)",
+      "sC": "ta as"
+    },
+    {
+      "line": "¡VIDA ETERNA EN CRISTO RESUCITADO!, (Si♭,,92)(La,7,338)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aleluya, alelú, aleluya., (Re,m,62)(Do,,121)(Re,m,200)",
+      "sC": "tc"
+    },
+    {
+      "line": "ALELUYA, ALELÚ, ALELUYA., (Do,,153)(Re,m,241)",
+      "sC": "ta as"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

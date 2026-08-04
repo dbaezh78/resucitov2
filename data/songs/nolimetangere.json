@@ -1,0 +1,173 @@
+{
+  "id": "nolimetangere",
+  "tt": "Noli Me Tangere",
+  "title": "Noli Me Tangere",
+  "subtitle": "Juan 20,15-17",
+  "category": [
+    "Precatecumenado",
+    "Pascua",
+    "Pentecostés",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "122",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/nolimetangere.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=nohayenelparecer",
+  "sig": "/src/index.html?canto=ohcieloslloveddeloalto",
+  "lizq": [
+    {
+      "line": "«Mujer, dime, ¿por qué lloras?, (Do,,12)",
+      "sC": "tc"
+    },
+    {
+      "line": "Mujer, dime, ¿por qué lloras?, (Fa,,231)",
+      "sC": ""
+    },
+    {
+      "line": "¿A quién buscas?, (Do,,104)",
+      "sC": ""
+    },
+    {
+      "line": "¿A quién buscas?, (Sol,,104)",
+      "sC": ""
+    },
+    {
+      "line": "¿A quién buscas?», (Do,,104)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«SEÑOR, SI TE LO HAS LLEVADO TÚ,, (Do,,10)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SEÑOR, SI TE LO HAS LLEVADO TÚ,, (Fa,,318)",
+      "sC": "as"
+    },
+    {
+      "line": "DIME DÓNDE LO HAS PUESTO,, (Do,,239)",
+      "sC": "as"
+    },
+    {
+      "line": "Y YO ME LO LLEVARÉ,, (Sol,,37)(Do,,200)",
+      "sC": "as"
+    },
+    {
+      "line": "Y YO ME LO LLEVARÉ»., (Sol,,36)(Do,,194)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«¡María!», (Fa,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "«¡RABBUNÍ!», (Do,m,76)",
+      "sC": "ta as"
+    },
+    {
+      "line": "«¡María!», (Fa,m,20)",
+      "sC": "tc"
+    },
+    {
+      "line": "«¡RABBUNÍ!», (Do,m,69)(Do,,106)",
+      "sC": "ta as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "«¡Noli me tangere! No me toques,, (Si♭,,21)(Do,,103)(Si♭,,198)(Do,,260)",
+      "sC": "tc"
+    },
+    {
+      "line": "que todavía no he subido al Padre., (Si♭,,14)(Do,,285)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ve y anuncia a mis hermanos,, (Fa,m,20)(Do,m,245)",
+      "sC": "tc"
+    },
+    {
+      "line": "Y ANUNCIA A MIS HERMANOS,, (Fa,m,20)(Do,m,238)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que subo al Padre mío, (La♭,,60)",
+      "sC": "tc"
+    },
+    {
+      "line": "y padre vuestro,, (Sol,,104)",
+      "sC": ""
+    },
+    {
+      "line": "Dios mío y Dios vuestro., (La♭,,70)(Sol,,182)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "QUE SUBO AL PADRE MÍO, (Fa,m,65)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y PADRE VUESTRO,, (Do,m,124)",
+      "sC": "as"
+    },
+    {
+      "line": "DIOS MÍO Y DIOS VUESTRO., (Fa,m,72)(Do,m,202)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que subo al Padre mío, (La♭,,58)",
+      "sC": "tc"
+    },
+    {
+      "line": "y padre vuestro,, (Sol,,106)",
+      "sC": ""
+    },
+    {
+      "line": "Dios mío y Dios vuestro»., (La♭,,71)(Sol,,181)",
+      "sC": "melisma"
+    }
+  ],
+  "sourceBook": "resucito"
+}
