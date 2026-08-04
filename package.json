@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && node copy_assets.cjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pull-positions": "node pull_positions.js"
   },
   "devDependencies": {
     "vite": "^8.1.1"

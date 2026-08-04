@@ -130,13 +130,11 @@
 
   "lder": [
 
-    
-
-    { "line": "BENDECID...,,(Mi,7,359)",  "sC": "Bendecid2"  },
+    { "line": "BENDECID...,,(Mi,7,359)",  "sC": "ta Bendecid2"  },
     { "line": "BENDIGA...",  "sC": "Bendecid3"  },
 
 
-    {"line": "Montes y cumbres,,(La,m,0)","sC": ""},
+    {"line": "Montes y cumbres,,(La,m,0)","sC": "tc"},
     {"line": "Cuanto germina en la tierra,","sC": "bdcd"},
 
 
@@ -176,7 +174,7 @@
     {"line": "","sC": "adb1"},
 
     { "line": "BENDECID...,,(Mi,7,50) ",  "sC": "Bendecid1"  },
-    { "line": "BENDIGA...",  "sC": "Bendecid4"  },
+    { "line": "BENDIGA...,",  "sC": "Bendecid4"  },
 
     {"line": "Hijos de los hombres,,(La,m,0)","sC": "bdcd"},
     {"line": "Bendiga Israel al Señor,","sC": "bdcd"},
@@ -201,7 +199,7 @@
 
     {"line": "","sC": "adb1"},
 
-        { "line": "BENDECID...",  "sC": "Bendecid1"  },
+        { "line": "BENDECID...",  "sC": "Bendecid1 Bendecid1m"  },
 
     {"line": "Ananías, Azarías y Misael,","sC": "bdcd"},
 

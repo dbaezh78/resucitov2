@@ -858,6 +858,20 @@ header {
   transition: left 0.15s ease, font-size 0.2s ease, transform 0.15s ease;
 }
 
+.chord-pos-num {
+  font-size: 0.55em;
+  font-weight: 500;
+  margin-left: 2px;
+  opacity: 0.65;
+  vertical-align: super;
+  pointer-events: none;
+}
+
+/* Ocultar número de posición en modo normal, mostrar solo en modo edición */
+.nota-posicionada:not(.edit-mode-active) .chord-pos-num {
+  display: none;
+}
+
 /* Color para los acordes de la asamblea (opuesto) y cantor (principal) */
 .linea-canto.as .nota-posicionada {
   color: var(--chord-color-alt, #d01212);
@@ -1223,20 +1237,6 @@ footer {
   gap: 12px;
 }
 
-/* Responsive para pantallas pequeñas */
-@media (max-width: 768px) {
-  .dashboard-top-flex {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-  
-  .dashboard-left-image-container {
-    width: 100px;
-    height: 100px;
-  }
-}
-
 /* --- Pestañas de Libros (Book Tabs) --- */
 .book-tabs {
   display: flex;
@@ -1325,6 +1325,11 @@ footer {
 .btn-icon.active-star span {
   font-variation-settings: 'FILL' 1;
   color: #ffc107 !important;
+}
+
+.btn-icon.active-edit span {
+  font-variation-settings: 'FILL' 1;
+  color: var(--accent-color, #1a73e8) !important;
 }
 
 /* --- Selectores en Modal de Acordes --- */
@@ -1550,7 +1555,8 @@ footer {
 .speed-popover {
   position: absolute;
   top: 100%;
-  right: 180px;
+  /*right: 180px;*/
+  right: auto;
   background-color: var(--panel-bg);
   border: 1px solid var(--panel-border);
   padding: 10px;
@@ -1605,6 +1611,7 @@ footer {
   color: var(--text-color);
   margin-bottom: 4px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .canto-header-title {
@@ -1618,10 +1625,14 @@ footer {
 }
 
 .canto-header-subtitle {
-  font-size: 0.9rem;
-  font-style: italic;
+  font-size: 1.2rem;
+  /*font-style: italic;*/
   color: var(--text-muted);
   line-height: 1.4;
+  text-align: center;
+  font-weight: bold;
+    
+    
 }
 
 .canto-header-right {
@@ -1634,6 +1645,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+/* Responsive para pantallas pequeñas */
+  .dashboard-top-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .dashboard-left-image-container {
+    width: 100px;
+    height: 100px;
+  }
+
   .viewer-toolbar {
     flex-wrap: nowrap;
     gap: 8px;
@@ -2049,17 +2073,11 @@ footer {
 }
 
 
-.Bendecid, .Bendecid1, .Bendecid4, .Bendecid2, .Bendecid3
-{
-  position: relative;
-  width: fit-content;
-  font-weight: bolder;
-  left: 290px;
-}
+.Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
+  { position: relative;width: fit-content;font-weight: bolder;left: 290px;}
 
 .Bendecid, .Bendecid1 { margin-top: -46px;}
-.Bendecid4, .Bendecid2, .Bendecid3 { margin-top: -51px;}
-
+.Bendecid2, .Bendecid3, .Bendecid4 { margin-top: -51px;}
 
 .Bendecid {top: 51px}
 .Bendecid1 {top: 28px}
@@ -2067,7 +2085,273 @@ footer {
 .Bendecid3 {top: 79px;}     
 .Bendecid4 {top: 55px;}
 
+@media (min-width: 384px) {
+.Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
+  { position: relative;width: fit-content;font-weight: bolder;left: 235px;}
+
+.Bendecid, .Bendecid1 { margin-top: -46px;}
+.Bendecid2, .Bendecid3, .Bendecid4 { margin-top: -51px;}
+
+.Bendecid {top: 30px}    /*  106px*/
+.Bendecid1 {top: 9px}
+.Bendecid2 {top: 32px}
+.Bendecid3 {top: 60px;}     
+.Bendecid4 {top: 35px;}
+.Bendecid1m {top: 52px;}
+}
 
 
+@media (min-width: 768px) {
+.Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
+  { position: relative;width: fit-content;font-weight: bolder;left: 466px;}
 
+/*.Bendecid, .Bendecid1 { margin-top: -46px;}*/
+.Bendecid, .Bendecid1 {margin-top: -109px;}
+.Bendecid2, .Bendecid3, .Bendecid4 { margin-top: -51px;}
+
+.Bendecid {top: 106px}
+.Bendecid1 {top: 83px}
+.Bendecid2 {top: 107px}
+.Bendecid3 {top: 134px;}     
+.Bendecid4 {top: 110px;}
+.Bendecid1m {top: 52px;}
+
+
+}
+
+@media (min-width: 992px) {
+  .Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
+  { position: relative;width: fit-content;font-weight: bolder;left: 290px;}
+
+.Bendecid, .Bendecid1 { margin-top: -46px;}
+.Bendecid2, .Bendecid3, .Bendecid4 { margin-top: -51px;}
+
+.Bendecid {top: 51px}
+.Bendecid1 {top: 28px}
+.Bendecid2 {top: 52px}
+.Bendecid3 {top: 79px;}     
+.Bendecid4 {top: 55px;}
+}
+
+.canto-slideX1 {
+  display: flex; 
+  width: calc(300% + 80px); 
+  gap: 40px; 
+  transform: translate3d(calc(-100% / 3 - 13.333px), 0, 0); 
+  transition: none; 
+  user-select: none;
+}
+
+.canto-slideX2 
+{
+  width: calc((100% - 80px) / 3); 
+  flex-shrink: 0; 
+  opacity: 0.8; 
+  box-sizing: border-box; 
+  padding: 0 10px;
+}
+
+.canto-slideX3 {
+  width: calc((100% - 80px) / 3); 
+  flex-shrink: 0; 
+  box-sizing: border-box; 
+  padding: 0 10px;
+}
+
+@media (min-width: 384px) {
+  .canto-columns-container {
+    padding: 16px 0px; /* Reducir padding horizontal en móviles/tablets para ganar espacio */
+  }
+  .canto-slideX3 {padding: 0 0px;}
+}
+
+@media (min-width: 768px) {
+ .canto-columns-container {
+    padding: 16px 2px; /* Reducir padding horizontal en móviles/tablets para ganar espacio */
+ }
+}
+
+@media (min-width: 992px) {
+  .canto-columns-container {
+    padding: 16px 40px; /* Reducir padding horizontal en móviles/tablets para ganar espacio */
+  }
+}
+
+/* --- Menú Desplegable Responsivo de la Barra de Herramientas (Derecha) --- */
+.toolbar-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.toolbar-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+  background-color: var(--panel-bg);
+  border: 1.5px solid var(--panel-border);
+  box-shadow: var(--shadow-md);
+  z-index: 1000;
+  border-radius: 8px;
+  padding: 8px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 280px;
+}
+
+.toolbar-dropdown-content.show {
+  display: flex;
+}
+
+/* Botones y paneles dentro del menú desplegable */
+.toolbar-dropdown-content .btn-icon {
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: transparent;
+  color: var(--text-color);
+  border: none;
+  transition: background-color 0.15s ease;
+}
+
+/* Panel de velocidad dentro del menú */
+.toolbar-dropdown-content .scroll-speed-panel {
+  width: auto;
+  height: auto;
+  background: transparent !important;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  cursor: default;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  border: none;
+}
+
+.toolbar-dropdown-content .btn-icon:hover {
+  background-color: var(--panel-border);
+}
+
+/* Estilo para los iconos de Material Symbols */
+.toolbar-dropdown-content .btn-icon span.material-symbols-outlined {
+  font-size: 1.4rem;
+  color: var(--text-muted);
+}
+
+.toolbar-dropdown-content .btn-icon.active-star span {
+  color: #ffc107 !important;
+}
+
+.toolbar-dropdown-content .btn-icon.active-edit span {
+  color: var(--accent-color) !important;
+}
+
+/* Controladores de velocidad dentro del panel */
+.toolbar-dropdown-content .scroll-speed-panel-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.toolbar-dropdown-content .scroll-speed-panel-controls .btn-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--panel-border);
+}
+
+.toolbar-dropdown-content .scroll-speed-panel-controls .btn-icon:hover {
+  background-color: var(--panel-border-hover, rgba(128,128,128,0.25));
+}
+
+/* Popover de velocidad inline dentro del menú */
+.toolbar-dropdown-content .scroll-speed-panel .speed-popover {
+  position: static;
+  display: block !important;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 6px 0 0 0;
+  flex-basis: 100%;
+  width: 100%;
+}
+
+.toolbar-dropdown-content .scroll-speed-panel .speed-popover .scroll-slider {
+  width: 100%;
+  margin: 0;
+}
+
+/* --- Menú Desplegable de Tono/Cejilla (Izquierda) --- */
+.tone-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.tone-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: auto;
+  background-color: var(--panel-bg);
+  border: 1.5px solid var(--panel-border);
+  box-shadow: var(--shadow-md);
+  z-index: 1000;
+  border-radius: 8px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.tone-dropdown-content.show {
+  display: block;
+}
+
+.tone-capo-display-compact {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--accent-color);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 14px;
+  padding: 4px 10px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif, system-ui;
+  font-size: 0.85rem;
+  font-weight: 700;
+  height: 32px;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+.tone-capo-display-compact:hover {
+  filter: brightness(1.15);
+}
+
+.tone-capo-display-compact span.material-symbols-outlined {
+  font-size: 1rem;
+  color: white;
+}
+
+.tone-capo-display-compact img.cejilla-icon-img {
+  height: 12px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+  margin-left: 2px;
+}
 

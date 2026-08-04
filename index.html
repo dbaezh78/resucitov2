@@ -127,23 +127,46 @@
             </button>
             
             <div class="tone-capo-display" id="tone-capo-trigger" title="Cambiar tono o cejilla">
-
               <span class="material-symbols-outlined tone-music-note">music_note</span>
               <span id="key-badge" class="key-badge-text">La</span>
               <img src="ima/cejilla.png" alt="Cejilla" class="cejilla-icon-img">
               <span id="capo-badge" class="capo-badge-text">5/ 5º traste</span>
             </div>
 
-            <button id="favorite-btn" class="btn btn-icon" title="Favorito" style="margin-left: 8px;">
-              <span class="material-symbols-outlined" id="favorite-icon">star</span>
+            <!-- Disparador de Tono/Cejilla compacto para móviles/tablets -->
+            <button id="tone-dropdown-trigger" class="tone-capo-display-compact" style="display: none;" title="Cambiar tono o cejilla">
+              <span class="material-symbols-outlined" style="font-size: 1rem;">music_note</span>
+              <span id="tone-dropdown-trigger-key" class="key-badge-text">La</span>
+              <img src="ima/cejilla.png" alt="Cejilla" class="cejilla-icon-img" style="height: 14px; width: auto; margin-left: 2px;">
+              <span id="tone-dropdown-trigger-capo" class="capo-badge-text">5</span>
+            </button>
+
+            <button id="toolbar-chord-edit-btn" class="btn btn-icon" title="Editar acordes" style="margin-left: 8px; display: none;">
+              <span class="material-symbols-outlined" id="toolbar-chord-edit-icon">edit_note</span>
+            </button>
+            <button id="toolbar-save-chord-btn" class="btn btn-icon" title="Guardar posiciones" style="margin-left: 8px; display: none; color: #11e05a;">
+              <span class="material-symbols-outlined" id="toolbar-save-chord-icon">save</span>
             </button>
           </div>
 
           <!-- Derecha: Iconos de control, navegación y buscador rápido -->
           <div class="toolbar-right">
+            <!-- Menú Desplegable para Móviles/Tablets -->
+            <div id="toolbar-dropdown-container" class="toolbar-dropdown" style="display: none;">
+              <button id="toolbar-dropdown-trigger" class="btn btn-icon" title="Menú de herramientas">
+                <span class="material-symbols-outlined">menu</span>
+              </button>
+              <div id="toolbar-dropdown-content" class="toolbar-dropdown-content"></div>
+            </div>
+
             <!-- Abrir Modal de Acordes -->
             <button id="chord-modal-trigger-btn" class="btn btn-icon" title="Transportar / Ver acordes">
               <span class="material-symbols-outlined">music_note</span>
+            </button>
+
+            <!-- Favorito (Star) -->
+            <button id="favorite-btn" class="btn btn-icon" title="Favorito" style="margin-left: 8px;">
+              <span class="material-symbols-outlined" id="favorite-icon">star</span>
             </button>
 
             <!-- Dividir pantalla (Book icon) -->
@@ -161,18 +184,10 @@
               <span class="material-symbols-outlined">play_arrow</span>
             </button>
 
-            <!-- Auto-scroll y velocidad -->
-            <div class="scroll-speed-panel">
-              <button id="scroll-play-btn" class="btn btn-icon" title="Iniciar auto-desplazamiento">
-                <span class="material-symbols-outlined">play_circle</span>
-              </button>
-              <button id="scroll-speed-toggle-btn" class="btn btn-icon" title="Ajustar velocidad">
-                <span class="material-symbols-outlined">keyboard_arrow_down</span>
-              </button>
-              <div id="toolbar-speed-popover" class="speed-popover" style="display: none;">
-                <input type="range" id="scroll-speed-slider" class="scroll-slider" min="1" max="100" value="25" title="Velocidad de scroll">
-              </div>
-            </div>
+            <!-- Auto-scroll -->
+            <button id="scroll-play-btn" class="btn btn-icon" title="Iniciar auto-desplazamiento">
+              <span class="material-symbols-outlined">south</span>
+            </button>
 
             <!-- Navegación de Cantos -->
             <button id="prev-song-btn" class="btn btn-icon" title="Canto anterior">
@@ -203,10 +218,10 @@
 
       <!-- Contenedor deslizante de tres diapositivas (carrusel interactivo) -->
       <div id="canto-carousel-viewport" style="width: 100%; overflow: hidden; position: relative;">
-        <div id="canto-slider-container" style="display: flex; width: calc(300% + 80px); gap: 40px; transform: translate3d(calc(-100% / 3 - 13.333px), 0, 0); transition: none; user-select: none;">
-          <div id="canto-slide-prev" class="canto-slide" style="width: calc((100% - 80px) / 3); flex-shrink: 0; opacity: 0.8; box-sizing: border-box; padding: 0 10px;"></div>
+        <div id="canto-slider-container" class="canto-slideX1">
+          <div id="canto-slide-prev" class="canto-slide canto-slideX2"></div>
           
-          <div id="canto-slide-active" class="canto-slide" style="width: calc((100% - 80px) / 3); flex-shrink: 0; box-sizing: border-box; padding: 0 10px;">
+          <div id="canto-slide-active" class="canto-slide canto-slideX3">
             <!-- Contenedor del contenido del canto para transiciones -->
             <div id="canto-content-transition-wrapper" class="canto-content-transition-wrapper">
               <!-- Cabecera del canto (Título e imagen de Cristo estilo libro) -->
@@ -285,6 +300,24 @@
         </div>
       </div>
       
+      <!-- Selector de Cejilla (Capo) en Modal de Acorde -->
+      <div class="chord-picker-row" style="margin-top: 15px; border-top: 1px dashed var(--panel-border); padding-top: 12px; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+        <h4 style="font-size: 0.85rem; margin: 0; font-weight: 600; color: var(--text-color); opacity: 0.8;">Cejilla (Capo):</h4>
+        <select id="modal-capo-select" style="padding: 6px 12px; border-radius: 6px; background: var(--panel-bg); color: var(--text-color); border: 1.5px solid var(--panel-border); font-family: inherit; font-size: 0.9rem; font-weight: 700; cursor: pointer; outline: none;">
+          <option value="0">Sin cejilla</option>
+          <option value="1">1º traste</option>
+          <option value="2">2º traste</option>
+          <option value="3">3º traste</option>
+          <option value="4">4º traste</option>
+          <option value="5">5º traste</option>
+          <option value="6">6º traste</option>
+          <option value="7">7º traste</option>
+          <option value="8">8º traste</option>
+          <option value="9">9º traste</option>
+          <option value="10">10º traste</option>
+        </select>
+      </div>
+
       <div class="chord-diagram-view" style="margin-top: 15px; border-top: 1px solid var(--panel-border); padding-top: 15px;">
         <h4 id="chord-diagram-title" style="font-size: 0.95rem; margin-bottom: 8px; text-align: center; color: var(--accent-color); font-weight: 700;">Digitación del acorde:</h4>
         <img id="chord-diagram-img" src="" alt="Cargando diagrama..." style="max-height: 240px; display: block; margin: 0 auto; border-radius: 8px;">
@@ -622,6 +655,8 @@
                 <option value="6">6to traste</option>
                 <option value="7">7mo traste</option>
                 <option value="8">8vo traste</option>
+                <option value="9">9no traste</option>
+                <option value="10">10mo traste</option>
               </select>
             </div>
           </div>
@@ -740,14 +775,26 @@
                 Sesión activa. Las funciones administrativas de edición y guardado de acordes están habilitadas.
               </p>
               
-              <button id="auth-logout-btn" class="btn" style="border: 1px solid var(--panel-border); font-size: 0.85rem; padding: 6px 16px; margin: 0 auto; display: block;">Cerrar Sesión</button>
+              <div style="display: flex; gap: 12px; justify-content: center; margin-top: 16px;">
+                <button id="auth-update-btn" class="btn btn-primary" style="background-color: var(--accent-color); color: white; border: none; font-size: 0.85rem; padding: 6px 16px; font-weight: 600;">Actualizar App</button>
+                <button id="auth-logout-btn" class="btn" style="border: 1px solid var(--panel-border); font-size: 0.85rem; padding: 6px 16px; color: var(--text-color);">Cerrar Sesión</button>
+              </div>
+              
+              <!-- Acciones de Administrador -->
+              <div id="auth-admin-actions" style="display: none; margin-top: 16px; border-top: 1.5px dashed var(--panel-border); padding-top: 16px; width: 100%;">
+                <h4 style="font-size: 0.9rem; margin-bottom: 8px; font-weight: 700;">Acciones de Administrador</h4>
+                <button id="auth-pull-positions-btn" class="btn theme-btn" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; font-weight: 600;">
+                  <span class="material-symbols-outlined">cloud_download</span>
+                  Sincronizar desde Firebase
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Panel Canto -->
-        <div id="settings-panel-canto" class="settings-panel-group" style="display: none;">
-          <div class="setting-row">
+        <div id="settings-panel-canto" class="settings-panel-group" style="display: none; padding: 16px;">
+          <!-- Indicador BIS -->
+          <div class="setting-row" style="margin-bottom: 20px;">
             <div class="setting-label">
               <h4>Indicador BIS</h4>
             </div>
@@ -756,6 +803,32 @@
                 <input type="checkbox" id="bis-toggle">
                 <span class="toggle-slider"></span>
               </label>
+            </div>
+          </div>
+
+          <!-- Desplazamiento Canto -->
+          <div class="setting-row" style="flex-direction: column; align-items: stretch; gap: 8px; margin-bottom: 20px; border-top: 1px solid var(--panel-border); padding-top: 16px;">
+            <div class="setting-label" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+              <h4 style="margin: 0; font-size: 0.95rem;">Desplazamiento Canto</h4>
+              <input type="number" id="scroll-interval-input" min="1" max="40" value="25" style="width: 55px; text-align: center; border: 1.5px solid var(--panel-border); background-color: var(--panel-bg); color: var(--text-color); font-family: inherit; font-size: 0.9rem; padding: 4px 6px; border-radius: 6px; font-weight: 700; outline: none;">
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px; width: 100%;">
+              <button id="scroll-interval-minus-btn" class="btn btn-icon" style="padding: 0; min-width: auto; background-color: var(--panel-border); border-radius: 6px; height: 32px; width: 32px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; color: var(--text-color); border: none; cursor: pointer; transition: background-color 0.15s;">-</button>
+              <input type="range" id="scroll-interval-slider" min="1" max="40" value="25" style="flex: 1; accent-color: var(--accent-color); height: 6px; border-radius: 3px; outline: none; background: var(--panel-border); cursor: pointer; margin: 0;">
+              <button id="scroll-interval-plus-btn" class="btn btn-icon" style="padding: 0; min-width: auto; background-color: var(--panel-border); border-radius: 6px; height: 32px; width: 32px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; color: var(--text-color); border: none; cursor: pointer; transition: background-color 0.15s;">+</button>
+            </div>
+          </div>
+
+          <!-- Incremento Scroll (px) -->
+          <div class="setting-row" style="flex-direction: column; align-items: stretch; gap: 8px; border-top: 1px solid var(--panel-border); padding-top: 16px;">
+            <div class="setting-label" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+              <h4 style="margin: 0; font-size: 0.95rem;">Incremento Scroll (px)</h4>
+              <input type="number" id="scroll-step-input" min="1" max="15" value="1" style="width: 55px; text-align: center; border: 1.5px solid var(--panel-border); background-color: var(--panel-bg); color: var(--text-color); font-family: inherit; font-size: 0.9rem; padding: 4px 6px; border-radius: 6px; font-weight: 700; outline: none;">
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px; width: 100%;">
+              <button id="scroll-step-minus-btn" class="btn btn-icon" style="padding: 0; min-width: auto; background-color: var(--panel-border); border-radius: 6px; height: 32px; width: 32px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; color: var(--text-color); border: none; cursor: pointer; transition: background-color 0.15s;">-</button>
+              <input type="range" id="scroll-step-slider" min="1" max="15" value="1" style="flex: 1; accent-color: var(--accent-color); height: 6px; border-radius: 3px; outline: none; background: var(--panel-border); cursor: pointer; margin: 0;">
+              <button id="scroll-step-plus-btn" class="btn btn-icon" style="padding: 0; min-width: auto; background-color: var(--panel-border); border-radius: 6px; height: 32px; width: 32px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; color: var(--text-color); border: none; cursor: pointer; transition: background-color 0.15s;">+</button>
             </div>
           </div>
         </div>

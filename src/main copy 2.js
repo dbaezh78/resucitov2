@@ -1,7 +1,6 @@
 import { registerServiceWorker } from './pwa.js';
 import { searchSongs } from './search.js';
-import { transposeNote, normalizeChord, CHROMATIC_SCALE, parseChord } from './chords.js';
-import { songs } from './songs-data.js';
+import { transposeNote, normalizeChord, CHROMATIC_SCALE } from './chords.js';
 import { onAuthStateChanged, loginMock, logoutMock, isCurrentUserAdmin, getCurrentUser } from './auth.js';
 import { cantoConfig, loadBisConfig, saveBisConfig, isBisEnabled, setBisForSong } from './config/canto.js';
 import { 
@@ -21,7 +20,6 @@ let filteredSongs = [];
 let currentCanto = null;
 let currentKeyOffset = 0; // Transposición en semitonos
 let originalSongKey = 'La'; // Nota base del canto cargado
-let originalSongTypeSuffix = ''; // Sufijo/variación del tono original (ej: "7", "m")
 let zoomFactor = 1.0;
 let transitionDirection = null;
 let loadedSongsCache = {}; // Cache de cantos con letra y acordes completos
@@ -72,8 +70,7 @@ const transposeUpBtn = document.getElementById('transpose-up-btn');
 const zoomOutBtn = document.getElementById('zoom-out-btn');
 const zoomInBtn = document.getElementById('zoom-in-btn');
 const scrollPlayBtn = document.getElementById('scroll-play-btn');
-let scrollIntervalMs = parseInt(localStorage.getItem('scroll-interval')) || 25;
-let scrollStepPx = parseInt(localStorage.getItem('scroll-step')) || 1;
+const scrollSpeedSlider = document.getElementById('scroll-speed-slider');
 const splitLayoutBtn = document.getElementById('split-layout-btn');
 const asambleaToggleBtn = document.getElementById('asamblea-toggle-btn');
 const audioPlayBtn = document.getElementById('audio-play-btn');
@@ -89,6 +86,8 @@ const notesTextarea = document.getElementById('notes-textarea');
 const toneCapoTrigger = document.getElementById('tone-capo-trigger');
 const capoBadge = document.getElementById('capo-badge');
 const chordModalTriggerBtn = document.getElementById('chord-modal-trigger-btn');
+const scrollSpeedToggleBtn = document.getElementById('scroll-speed-toggle-btn');
+const toolbarSpeedPopover = document.getElementById('toolbar-speed-popover');
 const prevSongBtn = document.getElementById('prev-song-btn');
 const nextSongBtn = document.getElementById('next-song-btn');
 const toolbarSearchInput = document.getElementById('toolbar-search-input');
@@ -335,39 +334,17 @@ async function loadSongView(songId) {
     document.title = `${currentCanto.title || currentCanto.tt || 'Sin Título'} - Resucitó`;
     
     renderSongContent();
-// Tono original y cejilla desde songs-data.js
-    const songFromData = songs.find(s => s.id === songId);
-    let originalChordStr = 'La';
-    let originalCapoStr = '';
-    if (songFromData) {
-      originalChordStr = songFromData.acorde || 'La';
-      originalCapoStr = songFromData.cejilla || '';
-    } else {
-      originalChordStr = currentCanto.acorde || currentCanto.nCan || 'La';
-      originalCapoStr = currentCanto.cejilla || '';
-    }
-
-    const parsed = parseChord(originalChordStr);
-    originalSongKey = parsed.noteName;
-    originalSongTypeSuffix = parsed.typeSuffix;
+// Tono original
+    originalSongKey = normalizeChord(currentCanto.acorde || 'La');
     currentKeyOffset = 0; // Reiniciar offset
     updateTransposeBadge();
     
     // Cejilla original
-    const defaultCapo = parseInt(originalCapoStr) || 0;
+    const defaultCapo = parseInt(currentCanto.cejilla) || 0;
     capoSelect.value = defaultCapo;
-    
-    const activeCapoBadge = document.getElementById('capo-badge');
-    if (activeCapoBadge) {
-      activeCapoBadge.textContent = formatCapoText(defaultCapo);
+    if (capoBadge) {
+      capoBadge.textContent = formatCapoText(defaultCapo);
     }
-    
-    const modalCapoSelect = document.getElementById('modal-capo-select');
-    if (modalCapoSelect) {
-      modalCapoSelect.value = defaultCapo;
-    }
-
-    updateChordPanel();
     
     // Cargar notas del cantor
     notesTextarea.value = localStorage.getItem(`notes_${songId}`) || '';
@@ -481,9 +458,6 @@ function renderSongContent() {
     // Si no hay lado derecho, ocultarlo para pantallas grandes
     cantoRightCol.style.display = 'none';
   }
-  
-  // Sincronizar el estado de la UI de edición de acordes
-  updateChordEditUI();
 }
 
 function renderSection(container, lines, side) {
@@ -654,19 +628,14 @@ function renderLine(lineItem, side, lineIdx, subLineIdx) {
       chordSpan.dataset.noteType = match.noteType;
       
       const transposedNote = transposeNote(match.noteName, currentKeyOffset);
-      chordSpan.innerHTML = `${transposedNote}${match.noteType ? ' ' + match.noteType : ''}<span class="chord-pos-num">${match.position * 10}</span>`;
+      chordSpan.textContent = transposedNote + (match.noteType ? ' ' : '') + match.noteType;
       
-      // Posicionar inicialmente encima del caracter correspondiente (soportando medios pasos)
-      const posIndex = Math.floor(match.position);
-      const targetChar = charSpans[Math.min(posIndex, charSpans.length - 1)];
+      // Posicionar inicialmente encima del caracter correspondiente
+      const pos = Math.min(match.position, charSpans.length - 1);
+      const targetChar = charSpans[pos];
       if (targetChar) {
         requestAnimationFrame(() => {
-          let leftVal = targetChar.offsetLeft;
-          if (match.position % 1 !== 0) {
-            const nextChar = charSpans[posIndex + 1];
-            leftVal += nextChar ? (nextChar.offsetLeft - targetChar.offsetLeft) / 2 : targetChar.offsetWidth / 2;
-          }
-          chordSpan.style.left = leftVal + 'px';
+          chordSpan.style.left = targetChar.offsetLeft + 'px';
         });
       }
       
@@ -685,16 +654,15 @@ function renderLine(lineItem, side, lineIdx, subLineIdx) {
   let lastIndex = 0;
   matches.forEach(match => {
     const pos = match.position;
-    const charIndex = Math.floor(pos);
     
     // Texto previo al acorde
-    if (charIndex > lastIndex) {
-      const textNode = document.createTextNode(cleanLetra.substring(lastIndex, charIndex));
+    if (pos > lastIndex) {
+      const textNode = document.createTextNode(cleanLetra.substring(lastIndex, pos));
       lineDiv.appendChild(textNode);
     }
     
-    // Carácter en la posición (o espacio/vacío si ya fue consumido o fuera de rango)
-    const char = (charIndex >= lastIndex) ? (cleanLetra[charIndex] || ' ') : '';
+    // Carácter en la posición (o espacio si está fuera de rango)
+    const char = cleanLetra[pos] || ' ';
     
     // Crear wrapper span inline
     const wrapper = document.createElement('span');
@@ -708,13 +676,8 @@ function renderLine(lineItem, side, lineIdx, subLineIdx) {
     chordSpan.dataset.originalNote = match.noteName;
     chordSpan.dataset.noteType = match.noteType;
     
-    // Desplazar 50% a la derecha si es una posición intermedia (.5)
-    if (pos % 1 !== 0) {
-      chordSpan.style.left = '50%';
-    }
-    
     const transposedNote = transposeNote(match.noteName, currentKeyOffset);
-    chordSpan.innerHTML = `${transposedNote}${match.noteType ? ' ' + match.noteType : ''}<span class="chord-pos-num">${pos * 10}</span>`;
+    chordSpan.textContent = transposedNote + (match.noteType ? ' ' : '') + match.noteType;
     
     chordSpan.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -727,9 +690,7 @@ function renderLine(lineItem, side, lineIdx, subLineIdx) {
     wrapper.appendChild(document.createTextNode(char));
     
     lineDiv.appendChild(wrapper);
-    if (char !== '') {
-      lastIndex = charIndex + 1; // saltar el carácter que metimos al wrapper
-    }
+    lastIndex = pos + 1; // saltar el carácter que metimos al wrapper
   });
   
   // Agregar resto del texto
@@ -814,123 +775,6 @@ function resolveChordPositions(side, lineIdx, subLineIdx, baseChords, cleanLetra
   });
 }
 
-function updateChordEditUI() {
-  const toggleChordEditBtn = document.getElementById('toggle-chord-edit-btn');
-  const saveChordPositionsBtn = document.getElementById('save-chord-positions-btn');
-  const toolbarChordEditBtn = document.getElementById('toolbar-chord-edit-btn');
-  const toolbarSaveChordBtn = document.getElementById('toolbar-save-chord-btn');
-  
-  if (toggleChordEditBtn) {
-    toggleChordEditBtn.textContent = isChordEditMode ? 'Edición Activa' : 'Bloqueados';
-    toggleChordEditBtn.classList.toggle('active', isChordEditMode);
-  }
-  if (saveChordPositionsBtn) {
-    saveChordPositionsBtn.style.display = isChordEditMode ? 'block' : 'none';
-  }
-  if (toolbarChordEditBtn) {
-    toolbarChordEditBtn.classList.toggle('active-edit', isChordEditMode);
-  }
-  if (toolbarSaveChordBtn) {
-    const songId = currentCanto ? currentCanto.id : '';
-    const customKey = `custom-positions-${songId}`;
-    const hasPendingChanges = !!localStorage.getItem(customKey);
-    toolbarSaveChordBtn.style.display = (isChordEditMode && isAdmin && hasPendingChanges) ? 'inline-flex' : 'none';
-  }
-}
-
-function toggleChordEditMode() {
-  if (!isAdmin) {
-    alert('Acceso denegado: Se requieren privilegios de Administrador para editar acordes.');
-    return;
-  }
-  isChordEditMode = !isChordEditMode;
-  updateChordEditUI();
-  renderSongContent();
-}
-
-async function saveChordPositionsAction() {
-  if (!isAdmin) {
-    alert('Acceso denegado: Se requieren privilegios de Administrador.');
-    return;
-  }
-  if (!currentCanto) return;
-  const songId = currentCanto.id;
-  const customKey = `custom-positions-${songId}`;
-  const customStore = localStorage.getItem(customKey);
-  
-  if (!customStore) {
-    alert('No hay cambios de posición pendientes para guardar en este canto.');
-    return;
-  }
-  
-  const saveChordPositionsBtn = document.getElementById('save-chord-positions-btn');
-  const toolbarSaveChordBtn = document.getElementById('toolbar-save-chord-btn');
-  
-  try {
-    const parsed = JSON.parse(customStore);
-    if (saveChordPositionsBtn) {
-      saveChordPositionsBtn.disabled = true;
-      saveChordPositionsBtn.textContent = 'Guardando...';
-    }
-    if (toolbarSaveChordBtn) {
-      toolbarSaveChordBtn.disabled = true;
-      const iconSpan = toolbarSaveChordBtn.querySelector('span');
-      if (iconSpan) iconSpan.textContent = 'sync';
-    }
-    
-    let localSaved = false;
-    
-    // 1. Intentar guardado local en el archivo físico (Entorno de desarrollo)
-    try {
-      const response = await fetch('/api/save-positions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          songId: songId,
-          lizq: parsed.lizq,
-          lder: parsed.lder
-        })
-      });
-      if (response.ok) {
-        localSaved = true;
-        console.log("💾 Guardado local en JSON exitoso.");
-      }
-    } catch (e) {
-      console.warn("⚠️ Servidor local no disponible o producción. Guardando solo en Firebase Firestore.");
-    }
-    
-    // 2. Guardar en Firebase Firestore (Posiciones globales de administrador)
-    await publicarPosicionesGlobales(songId, parsed);
-    
-    // Actualizar base de datos en memoria y limpiar localStorage
-    if (!defaultChordPositions) defaultChordPositions = {};
-    defaultChordPositions[songId] = { lizq: parsed.lizq, lder: parsed.lder };
-    localStorage.removeItem(customKey);
-    
-    if (localSaved) {
-      alert('¡Posiciones guardadas en el archivo local y publicadas en Firebase Firestore!');
-    } else {
-      alert('¡Posiciones publicadas con éxito en Firebase Firestore!');
-    }
-  } catch (err) {
-    console.error('Error al guardar posiciones:', err);
-    alert('Error al intentar guardar las posiciones en la base de datos.');
-  } finally {
-    if (saveChordPositionsBtn) {
-      saveChordPositionsBtn.disabled = false;
-      saveChordPositionsBtn.textContent = 'Guardar en Archivo';
-    }
-    if (toolbarSaveChordBtn) {
-      toolbarSaveChordBtn.disabled = false;
-      const iconSpan = toolbarSaveChordBtn.querySelector('span');
-      if (iconSpan) iconSpan.textContent = 'save';
-    }
-    updateChordEditUI();
-  }
-}
-
 function setupChordDrag(chordSpan, side, lineIdx, subLineIdx, chordIdx, charSpans, lineDiv) {
   let isDragging = false;
   let currentTempPos = -1;
@@ -949,48 +793,26 @@ function setupChordDrag(chordSpan, side, lineIdx, subLineIdx, chordIdx, charSpan
   chordSpan.addEventListener('pointermove', (e) => {
     if (!isDragging) return;
     
-    // Construir todos los slots disponibles de 5 en 5 (i*10 e i*10 + 5)
-    const slots = [];
-    charSpans.forEach((charSpan, i) => {
-      const nextCharSpan = charSpans[i + 1];
-      const leftA = charSpan.offsetLeft;
-      const leftB = leftA + (nextCharSpan ? (nextCharSpan.offsetLeft - leftA) / 2 : charSpan.offsetWidth / 2);
-      
-      const charRect = charSpan.getBoundingClientRect();
-      const rectLeftA = charRect.left;
-      const rectLeftB = rectLeftA + (nextCharSpan ? (charSpans[i+1].getBoundingClientRect().left - rectLeftA) / 2 : charRect.width / 2);
-      
-      slots.push({
-        posValue: i * 10,
-        screenLeft: leftA,
-        rectLeft: rectLeftA
-      });
-      slots.push({
-        posValue: i * 10 + 5,
-        screenLeft: leftB,
-        rectLeft: rectLeftB
-      });
-    });
-    
-    // Buscar el slot más cercano horizontalmente
-    let closestSlot = null;
+    // Buscar el caracter más cercano usando cálculo de distancia euclídea 2D
+    let closestCharSpan = null;
     let minDistance = Infinity;
-    slots.forEach(slot => {
-      const dist = Math.abs(e.clientX - slot.rectLeft);
+    
+    charSpans.forEach(charSpan => {
+      const charRect = charSpan.getBoundingClientRect();
+      const charCenterX = charRect.left + charRect.width / 2;
+      const charCenterY = charRect.top + charRect.height / 2;
+      
+      const dist = Math.hypot(e.clientX - charCenterX, e.clientY - charCenterY);
       if (dist < minDistance) {
         minDistance = dist;
-        closestSlot = slot;
+        closestCharSpan = charSpan;
       }
     });
     
-    if (closestSlot) {
-      currentTempPos = closestSlot.posValue / 10; // Puede ser decimal (.5)
-      chordSpan.style.left = closestSlot.screenLeft + 'px';
-      
-      const posBadge = chordSpan.querySelector('.chord-pos-num');
-      if (posBadge) {
-        posBadge.textContent = closestSlot.posValue;
-      }
+    if (closestCharSpan) {
+      currentTempPos = parseInt(closestCharSpan.dataset.idx);
+      // Alinear el acorde de manera magnética y exacta con el inicio del carácter más cercano (evitando desplazamientos inesperados)
+      chordSpan.style.left = closestCharSpan.offsetLeft + 'px';
     }
   });
 
@@ -1193,88 +1015,9 @@ function getCleanLyrics(side, lineIdx, subLineIdx) {
 }
 
 // --- Transposición cromática ---
-function updateChordPanel() {
-  if (!currentCanto) return;
-
-  const songId = currentCanto.id;
-  const songFromData = songs.find(s => s.id === songId);
-  let originalChordStr = 'La';
-  let originalCapoStr = '';
-  if (songFromData) {
-    originalChordStr = songFromData.acorde || 'La';
-    originalCapoStr = songFromData.cejilla || '';
-  } else {
-    originalChordStr = currentCanto.acorde || currentCanto.nCan || 'La';
-    originalCapoStr = currentCanto.cejilla || '';
-  }
-
-  const parsed = parseChord(originalChordStr);
-  const baseOriginal = parsed.noteName;
-  const suffix = parsed.typeSuffix;
-  
-  const baseTransposed = transposeNote(baseOriginal, currentKeyOffset);
-  
-  const fullOriginal = baseOriginal + (suffix ? (suffix.startsWith(' ') ? '' : ' ') + suffix : '');
-  const fullTransposed = baseTransposed + (suffix ? (suffix.startsWith(' ') ? '' : ' ') + suffix : '');
-  
-  // 1. Acorde text: "Do 7 / Re 7" o solo "Do 7"
-  let chordText = fullOriginal;
-  if (currentKeyOffset !== 0) {
-    chordText = `${fullOriginal} / ${fullTransposed}`;
-  }
-
-  // 2. Cejilla logic
-  const originalCapo = parseInt(originalCapoStr) || 0;
-  const userCapo = parseInt(capoSelect.value) || 0;
-
-  // Let's build the HTML content
-  const buildPanelHTML = (isCompact) => {
-    const iconSize = isCompact ? '1.1rem' : '1.3rem';
-    const imgHeight = isCompact ? '12px' : '16px';
-    const styleString = isCompact ? 'filter: brightness(0) invert(1);' : '';
-
-    let capoHTML = '';
-    if (originalCapo > 0) {
-      capoHTML += `<img src="ima/cejilla.png" alt="Cejilla" class="cejilla-icon-img" style="height: ${imgHeight}; width: auto; margin-left: 2px; vertical-align: middle; ${styleString}"> `;
-      capoHTML += `<span style="vertical-align: middle;">${originalCapo}</span>`;
-    }
-    
-    capoHTML += ` <span style="opacity: 0.7; margin: 0 2px; vertical-align: middle;">/</span> `;
-    
-    if (userCapo !== originalCapo) {
-      capoHTML += `<span style="vertical-align: middle;">${userCapo}</span>`;
-    }
-
-    return `
-      <span class="material-symbols-outlined" style="font-size: ${iconSize}; vertical-align: middle;">music_note</span>
-      <span class="key-badge-text" style="font-weight: 700; vertical-align: middle;">${chordText}</span>
-      <div style="display: inline-flex; align-items: center; gap: 3px; margin-left: 6px; vertical-align: middle;">
-        ${capoHTML}
-      </div>
-    `;
-  };
-
-  // Update desktop panel
-  const desktopTrigger = document.getElementById('tone-capo-trigger');
-  if (desktopTrigger) {
-    desktopTrigger.innerHTML = buildPanelHTML(false);
-  }
-
-  // Update mobile/tablet panel
-  const mobileTrigger = document.getElementById('tone-dropdown-trigger');
-  if (mobileTrigger) {
-    mobileTrigger.innerHTML = buildPanelHTML(true);
-  }
-}
-
 function updateTransposeBadge() {
   const transposedKey = transposeNote(originalSongKey, currentKeyOffset);
-  const activeKeyBadge = document.getElementById('key-badge');
-  if (activeKeyBadge) {
-    activeKeyBadge.textContent = transposedKey;
-  }
-  
-  updateChordPanel();
+  keyBadge.textContent = transposedKey;
 }
 
 function shiftKey(semitones) {
@@ -1368,9 +1111,8 @@ function updateModalChordDiagram() {
 }
 
 function showChordDiagram(noteName, noteType) {
-  const parsed = parseChord(noteName);
-  selectedModalNote = parsed.noteName;
-  selectedModalType = noteType || parsed.typeSuffix || '';
+  selectedModalNote = noteName;
+  selectedModalType = noteType;
   
   updateModalChordDiagram();
   chordModal.style.display = 'flex';
@@ -1387,16 +1129,21 @@ function toggleAutoScroll() {
 
 function startAutoScroll() {
   isScrollActive = true;
-  scrollPlayBtn.querySelector('span').textContent = 'stop';
+  scrollPlayBtn.querySelector('span').textContent = 'pause';
   scrollPlayBtn.classList.add('active');
   
+  // El intervalo se regula con el slider (min: 1, max: 100)
+  // Mapear slider (25 por defecto) a tiempo en ms
+  const speed = parseInt(scrollSpeedSlider.value);
+  const intervalMs = Math.max(10, 110 - speed); // a mayor slider, menor tiempo de espera
+  
   scrollIntervalId = setInterval(() => {
-    window.scrollBy({ top: scrollStepPx, behavior: 'auto' });
+    window.scrollBy({ top: 1, behavior: 'auto' });
     // Detener al llegar al final de la página
     if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight) {
       stopAutoScroll();
     }
-  }, scrollIntervalMs);
+  }, intervalMs);
 }
 
 function stopAutoScroll() {
@@ -1762,23 +1509,17 @@ function generarHtmlLineaItem(song, lineItem, side, lineIdx, subLineIdx, keyOffs
   
   matches.forEach(chord => {
     const pos = Math.min(chord.position, cleanLetra.length);
-    const charIndex = Math.floor(pos);
-    if (charIndex > lastPos) {
-      spansHtml += `<span>${cleanLetra.substring(lastPos, charIndex)}</span>`;
+    if (pos > lastPos) {
+      spansHtml += `<span>${cleanLetra.substring(lastPos, pos)}</span>`;
     }
     
     const transposedNote = transposeNote(chord.noteName, keyOffset);
     const chordText = transposedNote + chord.noteType;
     
-    const leftStyle = (pos % 1 !== 0) ? 'left: 50%;' : 'left: 0;';
-    
     spansHtml += `<span class="chord-anchor-wrapper" style="position: relative; display: inline-block;">
-      <span class="acorde-canto" style="position: absolute; top: -1.35rem; ${leftStyle} font-family: sans-serif; font-weight: bold; color: var(--chord-color);">${chordText}</span>
+      <span class="acorde-canto" style="position: absolute; top: -1.35rem; left: 0; font-family: sans-serif; font-weight: bold; color: var(--chord-color);">${chordText}</span>
     </span>`;
-    
-    if (charIndex >= lastPos) {
-      lastPos = charIndex;
-    }
+    lastPos = pos;
   });
   
   if (lastPos < cleanLetra.length) {
@@ -1980,7 +1721,7 @@ function setupEventListeners() {
     toneCapoTrigger.addEventListener('click', () => {
       if (!currentCanto) return;
       const currentTransposedNote = transposeNote(originalSongKey, currentKeyOffset);
-      showChordDiagram(currentTransposedNote, originalSongTypeSuffix || '');
+      showChordDiagram(currentTransposedNote, currentCanto.typeSuffix || '');
     });
   }
 
@@ -1989,7 +1730,7 @@ function setupEventListeners() {
     chordModalTriggerBtn.addEventListener('click', () => {
       if (!currentCanto) return;
       const currentTransposedNote = transposeNote(originalSongKey, currentKeyOffset);
-      showChordDiagram(currentTransposedNote, originalSongTypeSuffix || '');
+      showChordDiagram(currentTransposedNote, currentCanto.typeSuffix || '');
     });
   }
 
@@ -2005,7 +1746,20 @@ function setupEventListeners() {
     });
   }
 
-
+  // Control de velocidad en popover
+  if (scrollSpeedToggleBtn) {
+    scrollSpeedToggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isVisible = toolbarSpeedPopover.style.display !== 'none';
+      toolbarSpeedPopover.style.display = isVisible ? 'none' : 'block';
+    });
+    
+    document.addEventListener('click', (e) => {
+      if (toolbarSpeedPopover && !toolbarSpeedPopover.contains(e.target) && e.target !== scrollSpeedToggleBtn) {
+        toolbarSpeedPopover.style.display = 'none';
+      }
+    });
+  }
 
   // Navegación de Canto Anterior
   if (prevSongBtn) {
@@ -2204,103 +1958,13 @@ function setupEventListeners() {
   
   scrollPlayBtn.addEventListener('click', toggleAutoScroll);
   
-  const scrollIntervalSlider = document.getElementById('scroll-interval-slider');
-  const scrollIntervalInput = document.getElementById('scroll-interval-input');
-  const scrollIntervalMinusBtn = document.getElementById('scroll-interval-minus-btn');
-  const scrollIntervalPlusBtn = document.getElementById('scroll-interval-plus-btn');
-
-  const scrollStepSlider = document.getElementById('scroll-step-slider');
-  const scrollStepInput = document.getElementById('scroll-step-input');
-  const scrollStepMinusBtn = document.getElementById('scroll-step-minus-btn');
-  const scrollStepPlusBtn = document.getElementById('scroll-step-plus-btn');
-
-  // Initialize values in DOM
-  if (scrollIntervalSlider && scrollIntervalInput) {
-    scrollIntervalSlider.value = scrollIntervalMs;
-    scrollIntervalInput.value = scrollIntervalMs;
-  }
-  if (scrollStepSlider && scrollStepInput) {
-    scrollStepSlider.value = scrollStepPx;
-    scrollStepInput.value = scrollStepPx;
-  }
-
-  function updateScrollInterval(val) {
-    scrollIntervalMs = Math.max(1, Math.min(40, val));
-    localStorage.setItem('scroll-interval', scrollIntervalMs);
-    if (scrollIntervalSlider) scrollIntervalSlider.value = scrollIntervalMs;
-    if (scrollIntervalInput) scrollIntervalInput.value = scrollIntervalMs;
+  scrollSpeedSlider.addEventListener('input', () => {
     if (isScrollActive) {
+      // Reiniciar scroll con nueva velocidad
       stopAutoScroll();
       startAutoScroll();
     }
-  }
-
-  function updateScrollStep(val) {
-    scrollStepPx = Math.max(1, Math.min(15, val));
-    localStorage.setItem('scroll-step', scrollStepPx);
-    if (scrollStepSlider) scrollStepSlider.value = scrollStepPx;
-    if (scrollStepInput) scrollStepInput.value = scrollStepPx;
-    if (isScrollActive) {
-      stopAutoScroll();
-      startAutoScroll();
-    }
-  }
-
-  // Bind events for Desplazamiento Canto (Interval)
-  if (scrollIntervalSlider) {
-    scrollIntervalSlider.addEventListener('input', () => {
-      updateScrollInterval(parseInt(scrollIntervalSlider.value) || 25);
-    });
-  }
-  if (scrollIntervalInput) {
-    scrollIntervalInput.addEventListener('change', () => {
-      updateScrollInterval(parseInt(scrollIntervalInput.value) || 25);
-    });
-    scrollIntervalInput.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        updateScrollInterval(parseInt(scrollIntervalInput.value) || 25);
-        scrollIntervalInput.blur();
-      }
-    });
-  }
-  if (scrollIntervalMinusBtn) {
-    scrollIntervalMinusBtn.addEventListener('click', () => {
-      updateScrollInterval(scrollIntervalMs - 1);
-    });
-  }
-  if (scrollIntervalPlusBtn) {
-    scrollIntervalPlusBtn.addEventListener('click', () => {
-      updateScrollInterval(scrollIntervalMs + 1);
-    });
-  }
-
-  // Bind events for Incremento Scroll (px)
-  if (scrollStepSlider) {
-    scrollStepSlider.addEventListener('input', () => {
-      updateScrollStep(parseInt(scrollStepSlider.value) || 1);
-    });
-  }
-  if (scrollStepInput) {
-    scrollStepInput.addEventListener('change', () => {
-      updateScrollStep(parseInt(scrollStepInput.value) || 1);
-    });
-    scrollStepInput.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        updateScrollStep(parseInt(scrollStepInput.value) || 1);
-        scrollStepInput.blur();
-      }
-    });
-  }
-  if (scrollStepMinusBtn) {
-    scrollStepMinusBtn.addEventListener('click', () => {
-      updateScrollStep(scrollStepPx - 1);
-    });
-  }
-  if (scrollStepPlusBtn) {
-    scrollStepPlusBtn.addEventListener('click', () => {
-      updateScrollStep(scrollStepPx + 1);
-    });
-  }
+  });
   
   asambleaToggleBtn.addEventListener('click', () => {
     allAsambleaExpanded = !allAsambleaExpanded;
@@ -2403,18 +2067,25 @@ function setupEventListeners() {
   capoSelect.addEventListener('change', () => {
     if (!currentCanto) return;
     const selectedCapo = parseInt(capoSelect.value) || 0;
+    const originalCantoCapo = parseInt(currentCanto.cejilla) || 0;
     
-    const activeCapoBadge = document.getElementById('capo-badge');
-    if (activeCapoBadge) {
-      activeCapoBadge.textContent = formatCapoText(selectedCapo);
+    if (capoBadge) {
+      capoBadge.textContent = formatCapoText(selectedCapo);
     }
     
-    const modalCapoSelect = document.getElementById('modal-capo-select');
-    if (modalCapoSelect) {
-      modalCapoSelect.value = selectedCapo;
-    }
-
-    updateChordPanel();
+    // Shift chords relatively:
+    // Nueva cejilla cambia los nombres de acordes virtuales que debe tocar el guitarrista
+    // Diferencia de semitonos: (originalCantoCapo - selectedCapo)
+    const relativeShift = originalCantoCapo - selectedCapo;
+    
+    document.querySelectorAll('.nota-posicionada').forEach(span => {
+      const originalNote = span.dataset.originalNote;
+      const noteType = span.dataset.noteType;
+      // Aplicar transposición de cejilla + transposición de tono de usuario
+      const finalShift = relativeShift + currentKeyOffset;
+      const finalNote = transposeNote(originalNote, finalShift);
+      span.textContent = finalNote + (noteType ? ' ' : '') + noteType;
+    });
   });
   
   // Cerrar modales
@@ -2678,20 +2349,87 @@ function setupEventListeners() {
   // Control de Edición de Acordes
   const toggleChordEditBtn = document.getElementById('toggle-chord-edit-btn');
   const saveChordPositionsBtn = document.getElementById('save-chord-positions-btn');
-  const toolbarChordEditBtn = document.getElementById('toolbar-chord-edit-btn');
-  const toolbarSaveChordBtn = document.getElementById('toolbar-save-chord-btn');
-
   if (toggleChordEditBtn) {
-    toggleChordEditBtn.addEventListener('click', toggleChordEditMode);
+    toggleChordEditBtn.addEventListener('click', () => {
+      if (!isAdmin) {
+        alert('Acceso denegado: Se requieren privilegios de Administrador para editar acordes.');
+        return;
+      }
+      isChordEditMode = !isChordEditMode;
+      toggleChordEditBtn.textContent = isChordEditMode ? 'Edición Activa' : 'Bloqueados';
+      toggleChordEditBtn.classList.toggle('active', isChordEditMode);
+      if (saveChordPositionsBtn) {
+        saveChordPositionsBtn.style.display = isChordEditMode ? 'block' : 'none';
+      }
+      renderSongContent(); // Re-renderizar para activar/desactivar controles en acordes
+    });
   }
+
   if (saveChordPositionsBtn) {
-    saveChordPositionsBtn.addEventListener('click', saveChordPositionsAction);
-  }
-  if (toolbarChordEditBtn) {
-    toolbarChordEditBtn.addEventListener('click', toggleChordEditMode);
-  }
-  if (toolbarSaveChordBtn) {
-    toolbarSaveChordBtn.addEventListener('click', saveChordPositionsAction);
+    saveChordPositionsBtn.addEventListener('click', async () => {
+      if (!isAdmin) {
+        alert('Acceso denegado: Se requieren privilegios de Administrador.');
+        return;
+      }
+      if (!currentCanto) return;
+      const songId = currentCanto.id;
+      const customKey = `custom-positions-${songId}`;
+      const customStore = localStorage.getItem(customKey);
+      
+      if (!customStore) {
+        alert('No hay cambios de posición pendientes para guardar en este canto.');
+        return;
+      }
+      
+      try {
+        const parsed = JSON.parse(customStore);
+        saveChordPositionsBtn.disabled = true;
+        saveChordPositionsBtn.textContent = 'Guardando...';
+        
+        let localSaved = false;
+        
+        // 1. Intentar guardado local en el archivo físico (Entorno de desarrollo)
+        try {
+          const response = await fetch('/api/save-positions', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              songId: songId,
+              lizq: parsed.lizq,
+              lder: parsed.lder
+            })
+          });
+          if (response.ok) {
+            localSaved = true;
+            console.log("💾 Guardado local en JSON exitoso.");
+          }
+        } catch (e) {
+          console.warn("⚠️ Servidor local no disponible o producción. Guardando solo en Firebase Firestore.");
+        }
+        
+        // 2. Guardar en Firebase Firestore (Posiciones globales de administrador)
+        await publicarPosicionesGlobales(songId, parsed);
+        
+        // Actualizar base de datos en memoria y limpiar localStorage
+        if (!defaultChordPositions) defaultChordPositions = {};
+        defaultChordPositions[songId] = { lizq: parsed.lizq, lder: parsed.lder };
+        localStorage.removeItem(customKey);
+        
+        if (localSaved) {
+          alert('¡Posiciones guardadas en el archivo local y publicadas en Firebase Firestore!');
+        } else {
+          alert('¡Posiciones publicadas con éxito en Firebase Firestore!');
+        }
+      } catch (err) {
+        console.error('Error al guardar posiciones:', err);
+        alert('Error al intentar guardar las posiciones en la base de datos.');
+      } finally {
+        saveChordPositionsBtn.disabled = false;
+        saveChordPositionsBtn.textContent = 'Guardar en Archivo';
+      }
+    });
   }
 
   // Ancho máximo del cancionero (.app-container)
@@ -2737,8 +2475,6 @@ function setupEventListeners() {
   // --- Autenticación y Cuenta de Usuario ---
   const authLoginBtn = document.getElementById('auth-login-btn');
   const authLogoutBtn = document.getElementById('auth-logout-btn');
-  const authUpdateBtn = document.getElementById('auth-update-btn');
-  
   if (authLoginBtn) {
     authLoginBtn.addEventListener('click', async () => {
       try {
@@ -2768,81 +2504,6 @@ function setupEventListeners() {
     });
   }
 
-  if (authUpdateBtn) {
-    authUpdateBtn.addEventListener('click', async () => {
-      try {
-        authUpdateBtn.disabled = true;
-        authUpdateBtn.textContent = 'Actualizando...';
-        
-        // 1. Limpiar caché del Service Worker (Cache Storage)
-        if ('caches' in window) {
-          const cacheKeys = await caches.keys();
-          await Promise.all(
-            cacheKeys.map(key => caches.delete(key))
-          );
-          console.log('[App] Caché de CacheStorage eliminada.');
-        }
-        
-        // 2. Desregistrar Service Worker
-        if ('serviceWorker' in navigator) {
-          const registrations = await navigator.serviceWorker.getRegistrations();
-          await Promise.all(
-            registrations.map(registration => registration.unregister())
-          );
-          console.log('[App] Service Worker desregistrado.');
-        }
-        
-        // 3. Recargar página (limpia memoria y fuerza recarga de red)
-        window.location.reload(true);
-      } catch (err) {
-        console.error('Error al actualizar la app:', err);
-        alert('Ocurrió un error al actualizar: ' + err.message);
-        authUpdateBtn.disabled = false;
-        authUpdateBtn.textContent = 'Actualizar App';
-      }
-    });
-  }
-
-  const authPullPositionsBtn = document.getElementById('auth-pull-positions-btn');
-  if (authPullPositionsBtn) {
-    authPullPositionsBtn.addEventListener('click', async () => {
-      try {
-        authPullPositionsBtn.disabled = true;
-        authPullPositionsBtn.innerHTML = '<span class="material-symbols-outlined">sync</span> Sincronizando...';
-        
-        const response = await fetch('/api/pull-positions', {
-          method: 'POST'
-        });
-        if (!response.ok) {
-          let errMsg = 'No se pudo conectar con el servidor local o Firebase.';
-          try {
-            const errData = await response.json();
-            if (errData && errData.error) errMsg = errData.error;
-          } catch (e) {}
-          throw new Error(errMsg);
-        }
-        const data = await response.json();
-        if (data.success) {
-          alert(`¡Sincronización exitosa! Se actualizaron ${data.count} cantos en el archivo local.`);
-          // Recargar las posiciones en memoria
-          const localResponse = await fetch('data/chord_positions.json');
-          if (localResponse.ok) {
-            defaultChordPositions = await localResponse.json();
-          }
-          if (currentCanto) renderSongContent();
-        } else {
-          throw new Error(data.error || 'Respuesta fallida.');
-        }
-      } catch (err) {
-        console.error('Error al sincronizar desde Firebase:', err);
-        alert('Error al sincronizar: ' + err.message);
-      } finally {
-        authPullPositionsBtn.disabled = false;
-        authPullPositionsBtn.innerHTML = '<span class="material-symbols-outlined">cloud_download</span> Sincronizar desde Firebase';
-      }
-    });
-  }
-
   // Escuchar cambios de autenticación
   onAuthStateChanged((user) => {
     isAdmin = isCurrentUserAdmin();
@@ -2853,8 +2514,8 @@ function setupEventListeners() {
     const authAdminBadge = document.getElementById('auth-admin-badge');
     const authRegularBadge = document.getElementById('auth-regular-badge');
     const chordEditSettingRow = document.getElementById('chord-edit-setting-row');
-    const toolbarChordEditBtn = document.getElementById('toolbar-chord-edit-btn');
-    const authAdminActions = document.getElementById('auth-admin-actions');
+    const toggleChordEditBtn = document.getElementById('toggle-chord-edit-btn');
+    const saveChordPositionsBtn = document.getElementById('save-chord-positions-btn');
     
     if (user) {
       if (authUnauthenticated) authUnauthenticated.style.display = 'none';
@@ -2865,111 +2526,25 @@ function setupEventListeners() {
       if (authAdminBadge) authAdminBadge.style.display = isAdm ? 'inline-flex' : 'none';
       if (authRegularBadge) authRegularBadge.style.display = isAdm ? 'none' : 'inline-flex';
       if (chordEditSettingRow) chordEditSettingRow.style.display = isAdm ? 'flex' : 'none';
-      if (toolbarChordEditBtn) toolbarChordEditBtn.style.display = isAdm ? 'inline-flex' : 'none';
-      if (authAdminActions) authAdminActions.style.display = isAdm ? 'block' : 'none';
     } else {
       if (authUnauthenticated) authUnauthenticated.style.display = 'block';
       if (authAuthenticated) authAuthenticated.style.display = 'none';
       if (chordEditSettingRow) chordEditSettingRow.style.display = 'none';
-      if (toolbarChordEditBtn) toolbarChordEditBtn.style.display = 'none';
-      if (authAdminActions) authAdminActions.style.display = 'none';
       
       // Desactivar modo edición si el usuario cierra sesión
       if (isChordEditMode) {
         isChordEditMode = false;
-        if (currentCanto) renderSongContent();
+        if (toggleChordEditBtn) {
+          toggleChordEditBtn.textContent = 'Bloqueados';
+          toggleChordEditBtn.classList.remove('active');
+        }
+        if (saveChordPositionsBtn) {
+          saveChordPositionsBtn.style.display = 'none';
+        }
+        renderSongContent();
       }
     }
-    updateChordEditUI();
   });
-
-  // Menú Desplegable en Móviles/Tablets (Derecha)
-  const dropdownTrigger = document.getElementById('toolbar-dropdown-trigger');
-  const dropdownContent = document.getElementById('toolbar-dropdown-content');
-  if (dropdownTrigger && dropdownContent) {
-    dropdownTrigger.addEventListener('click', (e) => {
-      e.stopPropagation();
-      dropdownContent.classList.toggle('show');
-    });
-    
-    document.addEventListener('click', (e) => {
-      if (!dropdownTrigger.contains(e.target) && !dropdownContent.contains(e.target)) {
-        dropdownContent.classList.remove('show');
-      }
-    });
-  }
-
-  // Disparador compacto de Tono/Cejilla en Móviles/Tablets (Izquierda) - Abre directamente el modal
-  const toneDropdownTrigger = document.getElementById('tone-dropdown-trigger');
-  if (toneDropdownTrigger) {
-    toneDropdownTrigger.addEventListener('click', () => {
-      if (!currentCanto) return;
-      const currentTransposedNote = transposeNote(originalSongKey, currentKeyOffset);
-      showChordDiagram(currentTransposedNote, originalSongTypeSuffix || '');
-    });
-  }
-
-  // Cejilla (Capo) selector inside Chord Modal
-  const modalCapoSelect = document.getElementById('modal-capo-select');
-  if (modalCapoSelect) {
-    modalCapoSelect.addEventListener('change', () => {
-      if (!currentCanto) return;
-      const selectedCapo = parseInt(modalCapoSelect.value) || 0;
-      if (capoSelect) {
-        capoSelect.value = selectedCapo;
-        capoSelect.dispatchEvent(new Event('change'));
-      }
-    });
-  }
-
-  function adjustToolbarForScreenSize() {
-    const isTabletOrMobile = window.innerWidth <= 992;
-    const dropdownContent = document.getElementById('toolbar-dropdown-content');
-    const toolbarRight = document.querySelector('.toolbar-right');
-    const dropdownContainer = document.getElementById('toolbar-dropdown-container');
-    
-    const toneDropdownTrigger = document.getElementById('tone-dropdown-trigger');
-    const toneCapoTrigger = document.getElementById('tone-capo-trigger');
-    
-    const elements = [
-      document.getElementById('chord-modal-trigger-btn'),
-      document.getElementById('favorite-btn'),
-      document.getElementById('split-layout-btn'),
-      document.getElementById('asamblea-toggle-btn'),
-      document.getElementById('audio-play-btn')
-    ];
-    
-    if (isTabletOrMobile) {
-      if (dropdownContainer) dropdownContainer.style.display = 'inline-block';
-      if (toneDropdownTrigger) toneDropdownTrigger.style.display = 'inline-flex';
-      if (toneCapoTrigger) toneCapoTrigger.style.display = 'none';
-      
-      elements.forEach(el => {
-        if (el && dropdownContent) {
-          dropdownContent.appendChild(el);
-        }
-      });
-    } else {
-      if (dropdownContainer) dropdownContainer.style.display = 'none';
-      if (dropdownContent) dropdownContent.classList.remove('show');
-      if (toneDropdownTrigger) toneDropdownTrigger.style.display = 'none';
-      if (toneCapoTrigger) toneCapoTrigger.style.display = 'flex';
-      
-      const prevSongBtn = document.getElementById('prev-song-btn');
-      elements.forEach(el => {
-        if (el && toolbarRight) {
-          if (prevSongBtn) {
-            toolbarRight.insertBefore(el, prevSongBtn);
-          } else {
-            toolbarRight.appendChild(el);
-          }
-        }
-      });
-    }
-  }
-
-  adjustToolbarForScreenSize();
-  window.addEventListener('resize', adjustToolbarForScreenSize);
 }
 
 // Aplica el zoom sin guardar (usado al inicializar el default por dispositivo)

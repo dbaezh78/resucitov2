@@ -77,6 +77,42 @@ export function getVirtualChord(targetChord, capoTraste) {
  * @param {number} capoTraste Traste del capo (ej: 3)
  * @returns {string} El acorde real que se escucha (ej: "Sol")
  */
+/**
+ * Calcula qué acorde real suena cuando se digitaliza un acorde base con cejilla.
+ * (Tocar Mi con cejilla en 3 resulta en Sol)
+ * @param {string} virtualChord Acorde digitalizado con los dedos (ej: "Mi")
+ * @param {number} capoTraste Traste del capo (ej: 3)
+ * @returns {string} El acorde real que se escucha (ej: "Sol")
+ */
 export function getRealChord(virtualChord, capoTraste) {
     return transposeNote(virtualChord, capoTraste);
+}
+
+/**
+ * Separa el nombre base de la nota de su variación/sufijo (ej: "Do 7" -> { noteName: "Do", typeSuffix: "7" })
+ * @param {string} chordStr Nombre del acorde completo (ej: "Do 7", "Si♭ m", "Fa# 7")
+ * @returns {{ noteName: string, typeSuffix: string }} Objeto con la nota base normalizada y el sufijo
+ */
+export function parseChord(chordStr) {
+    if (!chordStr) return { noteName: 'La', typeSuffix: '' };
+    
+    const clean = chordStr.trim();
+    
+    // Lista de las 12 notas cromáticas ordenadas por longitud descendente para evitar falsas coincidencias
+    const notesOrder = [
+        "Do#", "Re#", "Fa#", "Sol#", "Si♭", "Sib", "DO#", "RE#", "FA#", "SOL#", "SIB", 
+        "Do", "Re", "Mi", "Fa", "Sol", "La", "Si", "DO", "RE", "MI", "FA", "SOL", "LA", "SI"
+    ];
+    
+    for (const note of notesOrder) {
+        if (clean.startsWith(note)) {
+            const typeSuffix = clean.substring(note.length).trim();
+            return {
+                noteName: normalizeChord(note),
+                typeSuffix: typeSuffix
+            };
+        }
+    }
+    
+    return { noteName: normalizeChord(clean), typeSuffix: '' };
 }
