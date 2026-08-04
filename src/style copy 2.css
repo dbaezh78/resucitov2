@@ -2048,26 +2048,56 @@ footer {
   margin-top: -24px;
 }
 
-
-.Bendecid, .Bendecid1, .Bendecid4, .Bendecid2, .Bendecid3
+.Bendecid, .Bendecid1, .bdaS1, .bdaS3, .bdaS5, .bdaS7, .bdaS9, .bdaS11, .bdaS13, .bdaS15, .bdaS17, .bdaS19, .bdaS21, .bdaS23, .bdaS25, .bdaS27, .bdaS29
 {
-  position: relative;
-  width: fit-content;
-  font-weight: bolder;
-  left: 290px;
+    width: fit-content;
+    position: relative;
+    left: 290px;
+    margin-top: -46px;
 }
 
-.Bendecid, .Bendecid1 { margin-top: -46px;}
-.Bendecid4, .Bendecid2, .Bendecid3 { margin-top: -51px;}
 
-
-.Bendecid {top: 51px}
+.Bendecid {top: 51px}    /* .bdaS1  {top: 51px;} */
 .Bendecid1 {top: 28px}
-.Bendecid2 {top: 52px}
+
+.bdaS3  {top: 28px;}.bdaS5  {top: 28px;}.bdaS7  {top: 28px;}
+.bdaS9  {top: 28px;}.bdaS11  {top: 28px;}.bdaS13  {top: 28px;}
+.bdaS17  {top: 28px;}.bdaS19  {top: 28px;}.bdaS21  {top: 28px;}
+.bdaS23  {top: 28px;}.bdaS25  {top: 28px;}.bdaS27  {top: 28px;}
+.bdaS29  {top: 28px;}
+
+.Bendecid2 {top: 52px}    /*    .bdaS15  {top: 52px;}*/
+
+
+
+.Bendecid4, .Bendecid2, .Bendecid3, .bdaS2, .bdaS4, .bdaS6, .bdaS8, .bdaS10, .bdaS12, .bdaS14, .bdaS16, .bdaS18, .bdaS20, .bdaS22, .bdaS24, .bdaS26, .bdaS28
+{
+    width: fit-content;
+    position: relative;
+    left: 290px;
+    margin-top: -51px;
+}
+
 .Bendecid3 {top: 79px;}     
+/*.bdaS2 {top: 79px;}
+.bdaS16 {top: 79px;}
+*/
+
 .Bendecid4 {top: 55px;}
+/*
+.bdaS4 {top: 55px;}
+.bdaS6 {top: 55px;}
+.bdaS8 {top: 55px;}
+.bdaS10 {top: 55px;}
+.bdaS12 {top: 55px;}
+.bdaS14 {top: 55px;}
 
-
-
+.bdaS18 {top: 55px;}
+.bdaS20 {top: 55px;}
+.bdaS22 {top: 55px;}
+.bdaS24 {top: 55px;}
+.bdaS26 {top: 55px;}
+.bdaS28 {top: 55px;}
+*/
 
 
