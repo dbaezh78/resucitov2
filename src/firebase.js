@@ -15,7 +15,10 @@ import {
   getFirestore,
   doc,
   setDoc,
-  getDoc
+  getDoc,
+  collection,
+  getDocs,
+  onSnapshot
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -50,4 +53,4 @@ try {
 }
 
 export const db = dbTemp;
-export { doc, setDoc, getDoc, signInWithPopup, signOut, onAuthStateChanged };
+export { doc, setDoc, getDoc, collection, getDocs, onSnapshot, signInWithPopup, signOut, onAuthStateChanged };

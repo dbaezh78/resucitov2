@@ -10,7 +10,8 @@
   --accent-color: #d01212;
   --accent-glow: rgba(208, 18, 18, 0.2);
   
-  --panel-bg: rgba(255, 255, 255, 0.7);
+  --panel-bg: rgba(255, 255, 255, 0.931);
+  /*--panel-bg: rgba(255, 255, 255, 0.7);*/
   --panel-border: rgba(0, 0, 0, 0.08);
   --panel-hover-border: rgba(208, 18, 18, 0.3);
   
@@ -217,7 +218,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 1px;
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -634,8 +635,27 @@ header {
 }
 
 .toolbar-center {
-  flex-grow: 1;
+  flex: 1 1 auto;
+  min-width: 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6px;
+  overflow: hidden;
+}
+
+.toolbar-title-text {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif, 'Franklin Gothic Medium', Arial;
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .toolbar-center h2 {
@@ -847,7 +867,7 @@ header {
   left: 0;
   font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic Medium', Arial;
   font-weight: 700;
-  font-size: calc(17.6px * var(--font-zoom)); /* Exactamente 17.6px en PC por defecto */
+  font-size: calc(16px * var(--font-zoom)); /* Exactamente 17.6px en PC por defecto */
   cursor: pointer;
   user-select: none;
   z-index: 10;
@@ -1661,7 +1681,7 @@ footer {
   .viewer-toolbar {
     flex-wrap: nowrap;
     gap: 8px;
-    overflow-x: auto;
+    overflow: visible;
     padding: 6px 8px;
   }
   
@@ -1756,7 +1776,7 @@ footer {
   align-items: center;
   justify-content: flex-start;
   padding: 14px 20px;
-  border: 1px solid var(--stage-color, var(--panel-border));
+  /*border: 1px solid var(--stage-color, var(--panel-border));*/
   border-left: 10px solid var(--stage-color, var(--panel-border));
   border-radius: 0;
   /*box-shadow: none;  HE QUITADO ESTO, NO PONER */
@@ -1827,16 +1847,25 @@ footer {
 
 .settings-tab-btn {
   flex: 1;
-  padding: 12px;
-  font-weight: 600;
+  padding: 8px 4px;
+  font-weight: 400 !important;
   background: none;
   border: none;
   cursor: pointer;
   color: var(--text-muted);
   border-bottom: 3px solid transparent;
-  font-size: 1.05rem;
+  font-size: 0.8rem !important;
   transition: all 0.15s ease;
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.settings-tab-btn span.material-symbols-outlined {
+  font-size: 1.25rem;
 }
 
 .settings-tab-btn:hover {
@@ -1845,7 +1874,7 @@ footer {
 
 .settings-tab-btn.active {
   color: var(--accent-color);
-  font-weight: 700;
+  font-weight: 400 !important;
   border-bottom-color: var(--accent-color);
 }
 
@@ -2116,6 +2145,8 @@ footer {
 .Bendecid4 {top: 110px;}
 .Bendecid1m {top: 52px;}
 
+  .book-tabs {gap: 0px;}
+
 
 }
 
@@ -2163,6 +2194,28 @@ footer {
     padding: 16px 0px; /* Reducir padding horizontal en móviles/tablets para ganar espacio */
   }
   .canto-slideX3 {padding: 0 0px;}
+
+
+  .viewer-toolbar {
+    flex-wrap: nowrap;
+    gap: 0px;
+    overflow: visible;
+    padding: 6px 8px;
+  }
+
+  .toolbar-left, .toolbar-right {
+    gap: 0px;
+  }
+
+.toolbar-dropdown-content {
+    left: -8px !important;
+  }
+
+  .book-tabs {gap: 0px;}
+
+
+
+
 }
 
 @media (min-width: 768px) {
@@ -2181,18 +2234,19 @@ footer {
 .toolbar-dropdown {
   position: relative;
   display: inline-block;
+  z-index: 1001;
 }
 
 .toolbar-dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 4px);
   right: 0;
   left: auto;
   background-color: var(--panel-bg);
   border: 1.5px solid var(--panel-border);
-  box-shadow: var(--shadow-md);
-  z-index: 1000;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  z-index: 10000;
   border-radius: 8px;
   padding: 8px;
   flex-direction: row;
@@ -2201,11 +2255,13 @@ footer {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  width: max-content;
   max-width: 280px;
 }
 
 .toolbar-dropdown-content.show {
-  display: flex;
+  display: flex !important;
+  flex-direction: column-reverse;
 }
 
 /* Botones y paneles dentro del menú desplegable */

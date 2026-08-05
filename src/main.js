@@ -3,7 +3,8 @@ import { searchSongs } from './search.js';
 import { transposeNote, normalizeChord, CHROMATIC_SCALE, parseChord } from './chords.js';
 import { songs } from './songs-data.js';
 import { onAuthStateChanged, loginMock, logoutMock, isCurrentUserAdmin, getCurrentUser } from './auth.js';
-import { cantoConfig, loadBisConfig, saveBisConfig, isBisEnabled, setBisForSong } from './config/canto.js';
+import { canAccessBook, initAccessControl, setupAccessControlUI, trackLoggedInUser } from './accesscontrol.js';
+import { cantoConfig, loadBisConfig, saveBisConfig, isBisEnabled, setBisForSong } from './canto.js';
 import { 
   guardarTonoEnNube, 
   cargarTonoDesdeNube, 
@@ -122,7 +123,46 @@ let selectedModalType = 'm';
 let currentEditingChordInfo = null; // Almacena { side, lineIdx, subLineIdx, chordIdx } en modo edición
 let isSplitLayout = localStorage.getItem('split-layout') !== 'false';
 let activeSongsPlaylist = []; // Almacena el listado activo de cantos en pantalla para navegar
-let songListStyle = localStorage.getItem('song-list-style') || 'cards'; // Estilo visual de la lista: cards, detailed, simple
+let songListStyle = localStorage.getItem('song-list-style') || 'simple'; // Estilo visual de la lista: cards, detailed, simple
+
+/**
+ * Limpia símbolos o caracteres especiales iniciales (ej: ¡, ¿, ", «, () para ordenar alfabéticamente por la primera letra real del título.
+ * Ejemplo: "¡Mirad qué estupendo!" se ordena por "M".
+ */
+export function getSortableTitle(title) {
+  if (!title) return '';
+  return title.replace(/^[^a-zA-Z0-9áéíóúüñÁÉÍÓÚÜÑ]+/, '').trim();
+}
+
+export function sortSongsAlphabetically(songsArray) {
+  if (!Array.isArray(songsArray)) return;
+  songsArray.sort((a, b) => {
+    const keyA = getSortableTitle(a.title);
+    const keyB = getSortableTitle(b.title);
+    return keyA.localeCompare(keyB, 'es', { sensitivity: 'base' });
+  });
+}
+
+export function updateBookTabsVisibility() {
+  document.querySelectorAll('.book-tab').forEach(tab => {
+    const bookId = tab.dataset.book;
+    if (bookId) {
+      const hasAccess = canAccessBook(bookId);
+      tab.style.display = hasAccess ? 'inline-block' : 'none';
+    }
+  });
+
+  if (!canAccessBook(currentBook)) {
+    currentBook = 'resucito';
+    document.querySelectorAll('.book-tab').forEach(t => {
+      t.classList.toggle('active', t.dataset.book === 'resucito');
+    });
+    handleSearchAndFilters();
+  }
+}
+
+export const updateExtrasTabVisibility = updateBookTabsVisibility;
+window.updateBookTabsVisibility = updateBookTabsVisibility;
 
 // --- Inicialización ---
 document.addEventListener('DOMContentLoaded', async () => {
@@ -131,6 +171,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   
   // Cargar preferencias guardadas
   initPreferences();
+  setupAccessControlUI();
+  updateBookTabsVisibility();
   
   // Cargar configuración de BIS por canto desde localStorage
   loadBisConfig();
@@ -144,8 +186,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       })
     ]);
     allSongs = await indexRes.json();
-    filteredSongs = [...allSongs];
-    renderSongsList(filteredSongs);
+    // Ordenar alfabéticamente por la primera letra del título (ignorando símbolos iniciales como ¡ o ¿)
+    sortSongsAlphabetically(allSongs);
+    handleSearchAndFilters();
+    updateExtrasTabVisibility();
     
     if (posRes && posRes.ok) {
       defaultChordPositions = await posRes.json();
@@ -337,6 +381,7 @@ async function loadSongView(songId) {
     document.title = `${currentCanto.title || currentCanto.tt || 'Sin Título'} - Resucitó`;
     
     renderSongContent();
+    setupHeaderTitleObserver();
 // Tono original y cejilla desde songs-data.js
     const songFromData = songs.find(s => s.id === songId);
     let originalChordStr = 'La';
@@ -377,10 +422,13 @@ async function loadSongView(songId) {
     // Configurar estrella de favoritos
     favoriteBtn.classList.toggle('active-star', favorites.has(songId));
     
-    // Sincronizar botones de navegación anterior / siguiente
+    // Sincronizar botones de navegación anterior / siguiente (solo dentro del libro seleccionado)
+    const targetBook = (currentCanto && currentCanto.sourceBook) ? currentCanto.sourceBook : currentBook;
+    const currentBookSongs = allSongs.filter(s => (s.sourceBook || 'resucito') === targetBook);
+    
     const currentIndex = activeSongsPlaylist.findIndex(s => s.id === songId);
-    const playListToUse = currentIndex !== -1 ? activeSongsPlaylist : allSongs;
-    const currentIdxToUse = currentIndex !== -1 ? currentIndex : allSongs.findIndex(s => s.id === songId);
+    const playListToUse = currentIndex !== -1 ? activeSongsPlaylist : currentBookSongs;
+    const currentIdxToUse = currentIndex !== -1 ? currentIndex : currentBookSongs.findIndex(s => s.id === songId);
     
     if (currentIdxToUse !== -1) {
       prevSongBtn.style.opacity = currentIdxToUse > 0 ? '1' : '0.4';
@@ -1269,6 +1317,72 @@ function updateChordPanel() {
   }
 }
 
+// --- Control del título pegajoso en la barra superior al hacer scroll ---
+let headerTitleObserver = null;
+
+function checkTitleVisibilityOnScroll() {
+  const stickyTitleContainer = document.getElementById('toolbar-sticky-title');
+  if (!stickyTitleContainer) return;
+  
+  const mainTitleElements = document.querySelectorAll('.canto-header-title, .canto-title');
+  if (!mainTitleElements || mainTitleElements.length === 0) {
+    stickyTitleContainer.style.display = 'none';
+    return;
+  }
+
+  let isAnyVisible = false;
+  mainTitleElements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    // El título H1 sigue en pantalla si su parte inferior no ha superado el header superior (~50px)
+    if (rect.bottom > 50 && rect.top < window.innerHeight) {
+      isAnyVisible = true;
+    }
+  });
+
+  if (isAnyVisible) {
+    stickyTitleContainer.style.display = 'none';
+  } else {
+    stickyTitleContainer.style.display = 'flex';
+  }
+}
+
+function setupHeaderTitleObserver() {
+  const stickyTitleContainer = document.getElementById('toolbar-sticky-title');
+  const stickyTitleText = document.getElementById('toolbar-sticky-title-text');
+  
+  if (!stickyTitleContainer) return;
+
+  if (currentCanto) {
+    const titleText = currentCanto.title || currentCanto.tt || '';
+    if (stickyTitleText) {
+      stickyTitleText.textContent = titleText;
+    }
+  }
+
+  if (headerTitleObserver) {
+    headerTitleObserver.disconnect();
+  }
+
+  const mainTitleElements = document.querySelectorAll('.canto-header-title, .canto-title');
+
+  if (!mainTitleElements || mainTitleElements.length === 0) {
+    stickyTitleContainer.style.display = 'none';
+    return;
+  }
+
+  headerTitleObserver = new IntersectionObserver(() => {
+    checkTitleVisibilityOnScroll();
+  }, {
+    threshold: [0, 0.1, 0.5, 1.0]
+  });
+
+  mainTitleElements.forEach(el => headerTitleObserver.observe(el));
+  
+  window.removeEventListener('scroll', checkTitleVisibilityOnScroll);
+  window.addEventListener('scroll', checkTitleVisibilityOnScroll, { passive: true });
+  checkTitleVisibilityOnScroll();
+}
+
 function updateTransposeBadge() {
   const transposedKey = transposeNote(originalSongKey, currentKeyOffset);
   const activeKeyBadge = document.getElementById('key-badge');
@@ -1530,20 +1644,27 @@ async function handleSearchAndFilters() {
   if (currentBook === 'favoritos') {
     sourceList = allSongs.filter(song => favorites.has(song.id));
   } else {
-    sourceList = allSongs.filter(song => song.sourceBook === currentBook);
+    sourceList = allSongs.filter(song => (song.sourceBook || 'resucito') === currentBook);
   }
   
   const query = searchInput.value;
   filteredSongs = searchSongs(sourceList, query, activeStage, activeMoments);
+  
+  // Garantizar orden alfabético estricto por la primera letra real (ignorando símbolos iniciales como ¡ o ¿)
+  sortSongsAlphabetically(filteredSongs);
+  
   renderSongsList(filteredSongs);
 }
 
 // --- Auxiliares de Navegación con Transición ---
 function navigateToSong(direction, isSwipe = false) {
   if (!currentCanto) return;
+  const targetBook = (currentCanto && currentCanto.sourceBook) ? currentCanto.sourceBook : currentBook;
+  const currentBookSongs = allSongs.filter(s => (s.sourceBook || 'resucito') === targetBook);
+  
   const currentIndex = activeSongsPlaylist.findIndex(s => s.id === currentCanto.id);
-  const playListToUse = currentIndex !== -1 ? activeSongsPlaylist : allSongs;
-  const currentIdxToUse = currentIndex !== -1 ? currentIndex : allSongs.findIndex(s => s.id === currentCanto.id);
+  const playListToUse = currentIndex !== -1 ? activeSongsPlaylist : currentBookSongs;
+  const currentIdxToUse = currentIndex !== -1 ? currentIndex : currentBookSongs.findIndex(s => s.id === currentCanto.id);
   
   if (direction === 'prev' && currentIdxToUse > 0) {
     const prevSong = playListToUse[currentIdxToUse - 1];
@@ -2072,9 +2193,12 @@ function setupEventListeners() {
         // Carga dinámica de la vista previa de las diapositivas adyacentes si no están cargadas
         if (diffX > 0 && slidePrev && slidePrev.innerHTML === '') {
           if (currentCanto) {
+            const targetBook = (currentCanto && currentCanto.sourceBook) ? currentCanto.sourceBook : currentBook;
+            const currentBookSongs = allSongs.filter(s => (s.sourceBook || 'resucito') === targetBook);
+            
             const currentIndex = activeSongsPlaylist.findIndex(s => s.id === currentCanto.id);
-            const playListToUse = currentIndex !== -1 ? activeSongsPlaylist : allSongs;
-            const currentIdxToUse = currentIndex !== -1 ? currentIndex : allSongs.findIndex(s => s.id === currentCanto.id);
+            const playListToUse = currentIndex !== -1 ? activeSongsPlaylist : currentBookSongs;
+            const currentIdxToUse = currentIndex !== -1 ? currentIndex : currentBookSongs.findIndex(s => s.id === currentCanto.id);
             if (currentIdxToUse > 0) {
               const prevSong = playListToUse[currentIdxToUse - 1];
               // Si ya está en caché, renderizar síncronamente (evita parpadeos)
@@ -2092,9 +2216,12 @@ function setupEventListeners() {
           }
         } else if (diffX < 0 && slideNext && slideNext.innerHTML === '') {
           if (currentCanto) {
+            const targetBook = (currentCanto && currentCanto.sourceBook) ? currentCanto.sourceBook : currentBook;
+            const currentBookSongs = allSongs.filter(s => (s.sourceBook || 'resucito') === targetBook);
+            
             const currentIndex = activeSongsPlaylist.findIndex(s => s.id === currentCanto.id);
-            const playListToUse = currentIndex !== -1 ? activeSongsPlaylist : allSongs;
-            const currentIdxToUse = currentIndex !== -1 ? currentIndex : allSongs.findIndex(s => s.id === currentCanto.id);
+            const playListToUse = currentIndex !== -1 ? activeSongsPlaylist : currentBookSongs;
+            const currentIdxToUse = currentIndex !== -1 ? currentIndex : currentBookSongs.findIndex(s => s.id === currentCanto.id);
             if (currentIdxToUse !== -1 && currentIdxToUse < playListToUse.length - 1) {
               const nextSong = playListToUse[currentIdxToUse + 1];
               // Si ya está en caché, renderizar síncronamente (evita parpadeos)
@@ -2408,7 +2535,9 @@ function setupEventListeners() {
   }
   
   settingsOpenBtn.addEventListener('click', () => {
-    // Poblar la lista de BIS por canto al abrir ajustes
+    // Al abrir el modal, activar por defecto la pestaña "General" y ocultar todos los demás paneles
+    openSettingsTab('general');
+
     populateBisSongList();
     settingsModal.style.display = 'flex';
   });
@@ -2545,21 +2674,28 @@ function setupEventListeners() {
   });
 
   // Botón de ajustes en la página principal
+function openSettingsTab(tabName = 'general') {
+  const tabBtns = document.querySelectorAll('.settings-tab-btn');
+  tabBtns.forEach((b) => {
+    b.classList.toggle('active', b.dataset.tab === tabName);
+  });
+
+  const panelGroups = document.querySelectorAll('.settings-panel-group');
+  panelGroups.forEach((panel) => {
+    panel.style.display = 'none';
+  });
+
+  const targetPanel = document.getElementById(`settings-panel-${tabName}`);
+  if (targetPanel) {
+    targetPanel.style.display = 'block';
+  }
+}
+
+  // Botón de ajustes en la página principal
   if (dashboardSettingsBtn) {
     dashboardSettingsBtn.addEventListener('click', () => {
-      // Al abrir el modal, activar por defecto la pestaña "Tema"
-      const tabBtns = document.querySelectorAll('.settings-tab-btn');
-      tabBtns.forEach((b, idx) => {
-        b.classList.toggle('active', idx === 0);
-      });
-      const themePanel = document.getElementById('settings-panel-theme');
-      const generalPanel = document.getElementById('settings-panel-general');
-      const accountPanel = document.getElementById('settings-panel-account');
-      const cantoPanel = document.getElementById('settings-panel-canto');
-      if (themePanel) themePanel.style.display = 'block';
-      if (generalPanel) generalPanel.style.display = 'none';
-      if (accountPanel) accountPanel.style.display = 'none';
-      if (cantoPanel) cantoPanel.style.display = 'none';
+      // Al abrir el modal, activar por defecto la pestaña "General"
+      openSettingsTab('general');
 
       // Poblar la lista de BIS por canto al abrir ajustes
       populateBisSongList();
@@ -2572,20 +2708,8 @@ function setupEventListeners() {
   const settingsTabBtns = document.querySelectorAll('.settings-tab-btn');
   settingsTabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      settingsTabBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      
       const tab = btn.dataset.tab;
-      const themePanel = document.getElementById('settings-panel-theme');
-      const generalPanel = document.getElementById('settings-panel-general');
-      const accountPanel = document.getElementById('settings-panel-account');
-      const cantoPanel = document.getElementById('settings-panel-canto');
-      
-      const allPanels = [themePanel, generalPanel, accountPanel, cantoPanel];
-      allPanels.forEach(p => { if (p) p.style.display = 'none'; });
-      
-      const targetPanel = document.getElementById(`settings-panel-${tab}`);
-      if (targetPanel) targetPanel.style.display = 'block';
+      openSettingsTab(tab);
 
       // Poblar la lista de BIS al entrar a la pestaña Canto
       if (tab === 'canto') {
@@ -2894,7 +3018,15 @@ function setupEventListeners() {
   // Escuchar cambios de autenticación
   onAuthStateChanged((user) => {
     isAdmin = isCurrentUserAdmin();
+    if (user) {
+      trackLoggedInUser(user);
+    }
+    updateExtrasTabVisibility();
     
+    const settingsTabAccess = document.getElementById('settings-tab-access');
+    const isAdm = isCurrentUserAdmin();
+    if (settingsTabAccess) settingsTabAccess.style.display = isAdm ? 'flex' : 'none';
+
     const authUnauthenticated = document.getElementById('auth-unauthenticated');
     const authAuthenticated = document.getElementById('auth-authenticated');
     const authUserEmail = document.getElementById('auth-user-email');
@@ -2909,7 +3041,6 @@ function setupEventListeners() {
       if (authAuthenticated) authAuthenticated.style.display = 'block';
       if (authUserEmail) authUserEmail.textContent = user.email;
       
-      const isAdm = isCurrentUserAdmin();
       if (authAdminBadge) authAdminBadge.style.display = isAdm ? 'inline-flex' : 'none';
       if (authRegularBadge) authRegularBadge.style.display = isAdm ? 'none' : 'inline-flex';
       if (chordEditSettingRow) chordEditSettingRow.style.display = isAdm ? 'flex' : 'none';

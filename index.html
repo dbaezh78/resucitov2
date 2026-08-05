@@ -40,15 +40,14 @@
             <button class="book-tab" data-book="aclamaciones">Aclamaciones</button>
             <button class="book-tab" data-book="salmodias">Salmodias</button>
             <button class="book-tab" data-book="catequesis">Catequesis</button>
+            <button class="book-tab" data-book="extras" id="book-tab-extras" style="display: none;">Extras</button>
             <button class="book-tab" data-book="favoritos">Favoritos</button>
           </div>
 
           <!-- Buscador y Configuración -->
           <div class="search-and-settings-row">
             <!-- Botón de ajustes en la página principal -->
-            <button id="dashboard-settings-btn" class="dashboard-settings-btn" title="Opciones de configuración">
-              <span class="material-symbols-outlined">settings</span>
-            </button>
+
 
             <!-- Contenedor del Buscador -->
             <div class="search-box-container">
@@ -61,6 +60,11 @@
               
               <span class="material-symbols-outlined clear-search-btn" id="clear-search-btn" style="display: none;">close</span>
             </div>
+
+            <button id="dashboard-settings-btn" class="dashboard-settings-btn" title="Opciones de configuración">
+              <span class="material-symbols-outlined">settings</span>
+            </button>
+
           </div>
         </div>
       </div>
@@ -147,6 +151,11 @@
             <button id="toolbar-save-chord-btn" class="btn btn-icon" title="Guardar posiciones" style="margin-left: 8px; display: none; color: #11e05a;">
               <span class="material-symbols-outlined" id="toolbar-save-chord-icon">save</span>
             </button>
+          </div>
+
+          <!-- Centro: Título pegajoso cuando se desplaza hacia abajo -->
+          <div class="toolbar-center" id="toolbar-sticky-title" style="display: none;">
+            <span class="toolbar-title-text" id="toolbar-sticky-title-text"></span>
           </div>
 
           <!-- Derecha: Iconos de control, navegación y buscador rápido -->
@@ -336,15 +345,31 @@
       </div>
       <!-- Selector de Pestañas de Ajustes -->
       <div class="settings-tabs">
-        <button class="settings-tab-btn active" data-tab="general">General</button>
-        <button class="settings-tab-btn" data-tab="theme">Tema</button>
-        <button class="settings-tab-btn" data-tab="canto">Canto</button>
-        <button class="settings-tab-btn" data-tab="account">Cuenta</button>
+        <button class="settings-tab-btn active" data-tab="general">
+          <span class="material-symbols-outlined">tune</span>
+          <span>General</span>
+        </button>
+        <button class="settings-tab-btn" data-tab="theme">
+          <span class="material-symbols-outlined">palette</span>
+          <span>Tema</span>
+        </button>
+        <button class="settings-tab-btn" data-tab="canto">
+          <span class="material-symbols-outlined">music_note</span>
+          <span>Canto</span>
+        </button>
+        <button class="settings-tab-btn" data-tab="account">
+          <span class="material-symbols-outlined">person</span>
+          <span>Cuenta</span>
+        </button>
+        <button class="settings-tab-btn" data-tab="access" id="settings-tab-access" style="display: none;">
+          <span class="material-symbols-outlined">admin_panel_settings</span>
+          <span>Acceso</span>
+        </button>
       </div>
 
       <div class="settings-grid">
         <!-- Panel de Tema -->
-        <div id="settings-panel-theme" class="settings-panel-group">
+        <div id="settings-panel-theme" class="settings-panel-group" style="display: none;">
           <!-- Fila Tema -->
           <div class="setting-row">
             <div class="setting-label">
@@ -637,7 +662,7 @@
         </div>
 
         <!-- Panel General -->
-        <div id="settings-panel-general" class="settings-panel-group" style="display: none;">
+        <div id="settings-panel-general" class="settings-panel-group" style="display: block;">
           <!-- Fila Cejilla Calculada -->
           <div class="setting-row">
             <div class="setting-label">
@@ -848,6 +873,101 @@
               </div>
             </div>
 
+          </div>
+        </div>
+
+        <!-- Panel Control de Acceso (Active Directory) -->
+        <div id="settings-panel-access" class="settings-panel-group" style="display: none; padding: 12px 0;">
+          <div style="margin-bottom: 12px;">
+            <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--text-color); margin-bottom: 4px;">Control de Acceso y Permisos</h4>
+            <p style="font-size: 0.8rem; color: var(--text-muted);">Administra grupos de usuarios, subgrupos anidados (Active Directory) y permisos del sistema.</p>
+          </div>
+
+          <!-- Sub-pestañas internas de Control de Acceso -->
+          <div style="display: flex; gap: 6px; border-bottom: 1px solid var(--panel-border); margin-bottom: 16px; overflow-x: auto;">
+            <button class="access-subtab-btn active" data-subtab="members" style="padding: 6px 12px; font-size: 0.8rem; border: none; background: none; border-bottom: 2px solid var(--accent-color); font-weight: 700; color: var(--accent-color); cursor: pointer;">Miembros</button>
+            <button class="access-subtab-btn" data-subtab="groups" style="padding: 6px 12px; font-size: 0.8rem; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer;">Grupos</button>
+            <button class="access-subtab-btn" data-subtab="internal-members" style="padding: 6px 12px; font-size: 0.8rem; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer;">Miembros Internos</button>
+            <button class="access-subtab-btn" data-subtab="permissions" style="padding: 6px 12px; font-size: 0.8rem; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer;">Permisos</button>
+            <button class="access-subtab-btn" data-subtab="inspector" style="padding: 6px 12px; font-size: 0.8rem; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer;">Inspector</button>
+          </div>
+
+          <!-- Subpanel 1: Miembros Registrados con Inicio de Sesión -->
+          <div id="access-subpanel-members" class="access-subpanel" style="display: block;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+              <h5 style="margin: 0; font-size: 0.85rem; font-weight: 700;">Hermanos Registrados (Google Auth)</h5>
+              <button id="ac-btn-refresh-members" class="btn btn-icon" style="width: 28px; height: 28px; min-width: 28px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%;" title="Actualizar lista de Hermanos">
+                <span class="material-symbols-outlined" style="font-size: 1.1rem;">autorenew</span>
+              </button>
+            </div>
+            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 10px;">Todos los Hermanos asignados automáticamente a 'Grupo General de Cantores'. Puedes mover cualquier Hermano al grupo que desees.</p>
+            
+            <!-- Buscador de Miembros -->
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px; background: var(--panel-bg); border: 1px solid var(--panel-border); border-radius: 6px; padding: 6px 10px;">
+              <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--text-muted);">search</span>
+              <input type="text" id="ac-search-members-input" placeholder="Buscar Hermano por nombre o correo..." style="flex: 1; border: none; background: transparent; color: var(--text-color); font-size: 0.8rem; outline: none;">
+            </div>
+
+            <div id="ac-members-list" style="display: flex; flex-direction: column; gap: 8px; max-height: 280px; overflow-y: auto;"></div>
+          </div>
+
+          <!-- Subpanel 2: Gestión de Grupos -->
+          <div id="access-subpanel-groups" class="access-subpanel" style="display: none;">
+            <div style="background: rgba(0,0,0,0.03); border: 1px solid var(--panel-border); border-radius: 8px; padding: 12px; margin-bottom: 14px;">
+              <h5 style="margin-bottom: 8px; font-size: 0.85rem; font-weight: 700;">Crear Nuevo Grupo</h5>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <input type="text" id="ac-group-id" placeholder="ID del grupo (ej: guitarristas)" style="padding: 6px 10px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 0.85rem; background: var(--panel-bg); color: var(--text-color);">
+                <input type="text" id="ac-group-name" placeholder="Nombre visible (ej: Guitarristas Principales)" style="padding: 6px 10px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 0.85rem; background: var(--panel-bg); color: var(--text-color);">
+                <input type="text" id="ac-group-desc" placeholder="Descripción opcional" style="padding: 6px 10px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 0.85rem; background: var(--panel-bg); color: var(--text-color);">
+                <button id="ac-btn-create-group" class="btn theme-btn" style="padding: 6px 12px; font-size: 0.8rem; font-weight: 600; align-self: flex-end;">Crear Grupo</button>
+              </div>
+            </div>
+
+            <h5 style="margin-bottom: 8px; font-size: 0.85rem; font-weight: 700;">Grupos Existentes</h5>
+            <div id="ac-groups-list" style="display: flex; flex-direction: column; gap: 8px; max-height: 240px; overflow-y: auto;"></div>
+          </div>
+
+          <!-- Subpanel 3: Miembros Internos y Subgrupos (Active Directory) -->
+          <div id="access-subpanel-internal-members" class="access-subpanel" style="display: none;">
+            <div style="background: rgba(0,0,0,0.03); border: 1px solid var(--panel-border); border-radius: 8px; padding: 12px; margin-bottom: 14px;">
+              <h5 style="margin-bottom: 8px; font-size: 0.85rem; font-weight: 700;">Agregar Hermano Manual a Grupo</h5>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <select id="ac-select-group-user" style="padding: 6px 10px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 0.85rem; background: var(--panel-bg); color: var(--text-color);"></select>
+                <input type="email" id="ac-user-email-input" placeholder="Correo del Hermano (ej: cantor@gmail.com)" style="padding: 6px 10px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 0.85rem; background: var(--panel-bg); color: var(--text-color);">
+                <button id="ac-btn-add-user" class="btn theme-btn" style="padding: 6px 12px; font-size: 0.8rem; font-weight: 600; align-self: flex-end;">Agregar Hermano</button>
+              </div>
+            </div>
+
+            <div style="background: rgba(0,0,0,0.03); border: 1px solid var(--panel-border); border-radius: 8px; padding: 12px;">
+              <h5 style="margin-bottom: 8px; font-size: 0.85rem; font-weight: 700;">Anidar Grupo dentro de otro Grupo (Subgrupo)</h5>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label style="font-size: 0.75rem; color: var(--text-muted);">El grupo Padre heredará los miembros y permisos del Subgrupo</label>
+                <select id="ac-select-subgroup" style="padding: 6px 10px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 0.85rem; background: var(--panel-bg); color: var(--text-color);"></select>
+                <span style="font-size: 0.75rem; text-align: center; font-weight: 700; color: var(--text-muted);">▼ dentro de ▼</span>
+                <select id="ac-select-parentgroup" style="padding: 6px 10px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 0.85rem; background: var(--panel-bg); color: var(--text-color);"></select>
+                <button id="ac-btn-nest-group" class="btn theme-btn" style="padding: 6px 12px; font-size: 0.8rem; font-weight: 600; align-self: flex-end;">Anidar Grupo</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Subpanel 4: Asignación de Permisos -->
+          <div id="access-subpanel-permissions" class="access-subpanel" style="display: none;">
+            <div style="margin-bottom: 12px;">
+              <label style="font-size: 0.8rem; font-weight: 700; display: block; margin-bottom: 4px;">Selecciona el Grupo a Configurar:</label>
+              <select id="ac-select-group-perm" style="width: 100%; padding: 6px 10px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 0.85rem; background: var(--panel-bg); color: var(--text-color);"></select>
+            </div>
+            
+            <h5 style="margin-bottom: 8px; font-size: 0.85rem; font-weight: 700;">Permisos Asignados</h5>
+            <div id="ac-permissions-checkboxes" style="display: flex; flex-direction: column; gap: 8px;"></div>
+          </div>
+
+          <!-- Subpanel 5: Inspector de Permisos Efectivos -->
+          <div id="access-subpanel-inspector" class="access-subpanel" style="display: none;">
+            <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+              <input type="email" id="ac-inspect-email-input" placeholder="Ingresa el correo de un Hermano para verificar" style="flex: 1; padding: 6px 10px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 0.85rem; background: var(--panel-bg); color: var(--text-color);">
+              <button id="ac-btn-inspect" class="btn theme-btn" style="padding: 6px 12px; font-size: 0.8rem; font-weight: 600;">Verificar</button>
+            </div>
+            <div id="ac-inspect-result" style="background: rgba(0,0,0,0.03); border: 1px solid var(--panel-border); border-radius: 8px; padding: 12px; font-size: 0.8rem; min-height: 100px;"></div>
           </div>
         </div>
       </div>
