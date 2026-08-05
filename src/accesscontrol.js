@@ -5,7 +5,7 @@
  * - Permisos individuales por Hermano.
  * - Grupos de Hermanos y su edición (Nombre, descripción y permisos).
  * - Registro automático de Hermanos iniciados sesión (cantores por defecto).
- * - Sincronización PROFUNDA en la nube con Firebase Cloud Firestore.
+ * - Sincronización PROFUNDA y SILENCIOSA en la nube con Firebase Cloud Firestore.
  * - Asignación exclusiva de grupo primario por Hermano.
  * - Cambio de grupo de Hermanos, banear/desbanear y eliminar cuentas de la lista.
  * - Control dinámico de Hermanos invitados (sin sesión).
@@ -58,6 +58,8 @@ const accessControlState = {
   // Set de correos baneados
   bannedUsers: new Set()
 };
+
+let unsubscribeOwnUserListener = null;
 
 /**
  * Inicializa los grupos por defecto del sistema (Administradores, Cantores, Invitados).
@@ -209,7 +211,7 @@ export async function saveGroupConfigToCloud() {
 }
 
 /**
- * Escucha en tiempo real la configuración global de permisos y grupos desde Firebase Cloud.
+ * Escucha en tiempo real y SILENCIOSAMENTE la configuración global de permisos de grupos desde Firebase Cloud.
  */
 export function listenToGroupConfigFromFirebase() {
   try {
@@ -236,6 +238,7 @@ export function listenToGroupConfigFromFirebase() {
             }
           });
           saveAccessControl();
+          // Actualización silenciosa de visibilidad de libros en la ventana principal
           if (typeof window !== 'undefined' && window.updateBookTabsVisibility) {
             window.updateBookTabsVisibility();
           }
@@ -243,9 +246,54 @@ export function listenToGroupConfigFromFirebase() {
         }
       }
     });
-    console.log("🔥 Escuchando permisos de grupos en tiempo real desde Firebase Cloud.");
+    console.log("🤫 Escuchando permisos de grupos silenciosamente en vivo desde Firebase Cloud.");
   } catch (err) {
     console.warn("Error al escuchar permisos de grupos de Firebase Cloud:", err);
+  }
+}
+
+/**
+ * Escucha SILENCIOSAMENTE en tiempo real los cambios del Hermano individual conectado.
+ * Si el Administrador le cambia el grupo o lo banea en Firebase, se refleja al instante en pantalla principal.
+ */
+export function listenToOwnUserPermissionsSilently(user) {
+  if (unsubscribeOwnUserListener) {
+    unsubscribeOwnUserListener();
+    unsubscribeOwnUserListener = null;
+  }
+
+  if (!user || !user.email) return;
+
+  const email = user.email.toLowerCase().trim();
+  const cleanDocId = email.replace(/[^a-zA-Z0-9_-]/g, "_");
+
+  try {
+    unsubscribeOwnUserListener = onSnapshot(doc(db, "registered_users", cleanDocId), (docSnap) => {
+      if (docSnap.exists()) {
+        const data = docSnap.data();
+        if (data) {
+          if (data.group) {
+            setUserPrimaryGroup(email, data.group);
+          }
+          if (data.banned) {
+            accessControlState.bannedUsers.add(email);
+          } else {
+            accessControlState.bannedUsers.delete(email);
+          }
+          saveAccessControl();
+          
+          // Actualizar la visibilidad de los libros silenciosamente en la ventana principal
+          if (typeof window !== 'undefined' && window.updateBookTabsVisibility) {
+            window.updateBookTabsVisibility();
+          }
+          console.log("🤫 Permisos de Hermano actualizados silenciosamente desde Firebase Cloud para:", email);
+        }
+      }
+    }, (err) => {
+      // Ignorar errores silenciosamente
+    });
+  } catch (err) {
+    // Ignorar errores silenciosamente
   }
 }
 
@@ -253,8 +301,6 @@ export function listenToGroupConfigFromFirebase() {
  * Sincronización COMPLETA y PROFUNDA de todo el Control de Acceso (Grupos, Permisos y Hermanos Registrados).
  */
 export async function syncAllAccessControlFromFirebase() {
-  console.log("🔄 Ejecutando sincronización profunda de Control de Acceso desde Firebase Cloud...");
-
   // 1. Traer definición y permisos de grupos desde Firebase Cloud
   try {
     const docSnap = await getDoc(doc(db, "system_config", "access_control"));
@@ -333,6 +379,9 @@ export async function trackLoggedInUser(user) {
 
   saveAccessControl();
 
+  // Iniciar escuchador silencioso específico para este Hermano
+  listenToOwnUserPermissionsSilently(user);
+
   try {
     await setDoc(doc(db, "registered_users", cleanDocId), {
       email: email,
@@ -351,6 +400,8 @@ export async function trackLoggedInUser(user) {
  * Sincroniza en tiempo real la lista de Hermanos registrados desde Firebase Cloud Nube.
  */
 export async function syncRegisteredUsersFromFirebase() {
+  const currentUser = getCurrentUser();
+  if (!currentUser) return;
   try {
     const querySnapshot = await getDocs(collection(db, "registered_users"));
     querySnapshot.forEach((docSnap) => {
@@ -377,7 +428,11 @@ export async function syncRegisteredUsersFromFirebase() {
     }
     console.log("🔥 Hermanos sincronizados desde Firebase Cloud exitosamente.");
   } catch (err) {
-    console.warn("Error al sincronizar Hermanos desde Firebase Cloud:", err);
+    if (err && err.code === 'permission-denied') {
+      console.log("ℹ️ Usuario en modo invitado (sin permisos de lectura de lista completa de registrados).");
+    } else {
+      console.warn("Error al sincronizar Hermanos desde Firebase Cloud:", err);
+    }
   }
 }
 
@@ -385,6 +440,8 @@ export async function syncRegisteredUsersFromFirebase() {
  * Escucha en tiempo real (push) los nuevos Hermanos registrados desde cualquier navegador o dispositivo.
  */
 export function listenToRegisteredUsersFromFirebase() {
+  const currentUser = getCurrentUser();
+  if (!currentUser) return;
   try {
     onSnapshot(collection(db, "registered_users"), (snapshot) => {
       snapshot.forEach((docSnap) => {
@@ -414,6 +471,10 @@ export function listenToRegisteredUsersFromFirebase() {
         window.updateBookTabsVisibility();
       }
       renderAccessControlUI();
+    }, (err) => {
+      if (err && err.code === 'permission-denied') {
+        console.log("ℹ️ Escuchador de registrados pausado para invitados.");
+      }
     });
     console.log("🔥 Escuchando Hermanos en vivo desde Firebase Cloud.");
   } catch (err) {
@@ -1150,8 +1211,7 @@ function renderPermissionsPanel() {
   });
 }
 
-// Inicializar módulo y sincronización profunda en vivo con Firebase Cloud
+// Inicializar módulo y escuchadores silenciosos en vivo con Firebase Cloud
 initAccessControl();
 listenToRegisteredUsersFromFirebase();
 listenToGroupConfigFromFirebase();
-syncAllAccessControlFromFirebase();
