@@ -72,8 +72,10 @@ const transposeUpBtn = document.getElementById('transpose-up-btn');
 const zoomOutBtn = document.getElementById('zoom-out-btn');
 const zoomInBtn = document.getElementById('zoom-in-btn');
 const scrollPlayBtn = document.getElementById('scroll-play-btn');
-let scrollIntervalMs = parseInt(localStorage.getItem('scroll-interval')) || 25;
+let scrollIntervalMs = parseInt(localStorage.getItem('scroll-interval')) || 40;
 let scrollStepPx = parseInt(localStorage.getItem('scroll-step')) || 1;
+let scrollIntervalLimit = parseInt(localStorage.getItem('scroll-interval-limit')) || 1000;
+let scrollStepLimit = parseInt(localStorage.getItem('scroll-step-limit')) || 100;
 const splitLayoutBtn = document.getElementById('split-layout-btn');
 const asambleaToggleBtn = document.getElementById('asamblea-toggle-btn');
 const audioPlayBtn = document.getElementById('audio-play-btn');
@@ -2214,18 +2216,32 @@ function setupEventListeners() {
   const scrollStepMinusBtn = document.getElementById('scroll-step-minus-btn');
   const scrollStepPlusBtn = document.getElementById('scroll-step-plus-btn');
 
+  const scrollIntervalLimitInput = document.getElementById('scroll-interval-limit');
+  const scrollStepLimitInput = document.getElementById('scroll-step-limit');
+
   // Initialize values in DOM
+  if (scrollIntervalLimitInput) {
+    scrollIntervalLimitInput.value = scrollIntervalLimit;
+  }
   if (scrollIntervalSlider && scrollIntervalInput) {
+    scrollIntervalSlider.max = scrollIntervalLimit;
+    scrollIntervalInput.max = scrollIntervalLimit;
     scrollIntervalSlider.value = scrollIntervalMs;
     scrollIntervalInput.value = scrollIntervalMs;
   }
+
+  if (scrollStepLimitInput) {
+    scrollStepLimitInput.value = scrollStepLimit;
+  }
   if (scrollStepSlider && scrollStepInput) {
+    scrollStepSlider.max = scrollStepLimit;
+    scrollStepInput.max = scrollStepLimit;
     scrollStepSlider.value = scrollStepPx;
     scrollStepInput.value = scrollStepPx;
   }
 
   function updateScrollInterval(val) {
-    scrollIntervalMs = Math.max(1, Math.min(40, val));
+    scrollIntervalMs = Math.max(1, Math.min(scrollIntervalLimit, val));
     localStorage.setItem('scroll-interval', scrollIntervalMs);
     if (scrollIntervalSlider) scrollIntervalSlider.value = scrollIntervalMs;
     if (scrollIntervalInput) scrollIntervalInput.value = scrollIntervalMs;
@@ -2236,7 +2252,7 @@ function setupEventListeners() {
   }
 
   function updateScrollStep(val) {
-    scrollStepPx = Math.max(1, Math.min(15, val));
+    scrollStepPx = Math.max(1, Math.min(scrollStepLimit, val));
     localStorage.setItem('scroll-step', scrollStepPx);
     if (scrollStepSlider) scrollStepSlider.value = scrollStepPx;
     if (scrollStepInput) scrollStepInput.value = scrollStepPx;
@@ -2247,18 +2263,34 @@ function setupEventListeners() {
   }
 
   // Bind events for Desplazamiento Canto (Interval)
+  if (scrollIntervalLimitInput) {
+    scrollIntervalLimitInput.addEventListener('change', () => {
+      let val = parseInt(scrollIntervalLimitInput.value, 10);
+      if (isNaN(val) || val < 1) val = 1;
+      scrollIntervalLimit = val;
+      localStorage.setItem('scroll-interval-limit', scrollIntervalLimit);
+      
+      if (scrollIntervalSlider) scrollIntervalSlider.max = scrollIntervalLimit;
+      if (scrollIntervalInput) scrollIntervalInput.max = scrollIntervalLimit;
+      
+      if (scrollIntervalMs > scrollIntervalLimit) {
+        updateScrollInterval(scrollIntervalLimit);
+      }
+    });
+  }
+
   if (scrollIntervalSlider) {
     scrollIntervalSlider.addEventListener('input', () => {
-      updateScrollInterval(parseInt(scrollIntervalSlider.value) || 25);
+      updateScrollInterval(parseInt(scrollIntervalSlider.value) || 40);
     });
   }
   if (scrollIntervalInput) {
     scrollIntervalInput.addEventListener('change', () => {
-      updateScrollInterval(parseInt(scrollIntervalInput.value) || 25);
+      updateScrollInterval(parseInt(scrollIntervalInput.value) || 40);
     });
     scrollIntervalInput.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
-        updateScrollInterval(parseInt(scrollIntervalInput.value) || 25);
+        updateScrollInterval(parseInt(scrollIntervalInput.value) || 40);
         scrollIntervalInput.blur();
       }
     });
@@ -2275,6 +2307,22 @@ function setupEventListeners() {
   }
 
   // Bind events for Incremento Scroll (px)
+  if (scrollStepLimitInput) {
+    scrollStepLimitInput.addEventListener('change', () => {
+      let val = parseInt(scrollStepLimitInput.value, 10);
+      if (isNaN(val) || val < 1) val = 1;
+      scrollStepLimit = val;
+      localStorage.setItem('scroll-step-limit', scrollStepLimit);
+      
+      if (scrollStepSlider) scrollStepSlider.max = scrollStepLimit;
+      if (scrollStepInput) scrollStepInput.max = scrollStepLimit;
+      
+      if (scrollStepPx > scrollStepLimit) {
+        updateScrollStep(scrollStepLimit);
+      }
+    });
+  }
+
   if (scrollStepSlider) {
     scrollStepSlider.addEventListener('input', () => {
       updateScrollStep(parseInt(scrollStepSlider.value) || 1);

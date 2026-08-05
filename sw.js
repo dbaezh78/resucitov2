@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v60';
+const CACHE_NAME = 'resucito-cache-v64'; // Incrementado para forzar actualización
 const STATIC_ASSETS = [
   './',
   'index.html',
@@ -45,51 +45,78 @@ self.addEventListener('activate', event => {
   );
 });
 
+// Mensaje para forzar skipWaiting desde el cliente
+self.addEventListener('message', event => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
+
 // Interceptar peticiones
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
 
-  // Evitar interceptar llamadas API externas que no sean de audio o imágenes
+  // Evitar interceptar llamadas de APIs externas o de Firebase Auth
   if (url.origin !== self.location.origin) {
-    // Si es una petición a audioSrc (opcional, si queremos cachear audios ligeros. Pero los audios suelen ser grandes, mejor no cachearlos de golpe, o usar cache especial)
     return;
   }
 
-  // Estrategia: Cache-First con Network Fallback y actualización en segundo plano (Stale-While-Revalidate)
-  event.respondWith(
-    caches.match(event.request).then(cachedResponse => {
-      if (cachedResponse) {
-        // Devolver respuesta cacheada inmediatamente e ir al servidor a actualizar en background
-        fetch(event.request).then(networkResponse => {
+  // Comprobar si es un recurso core (HTML, JS, CSS)
+  const isCoreResource = 
+    url.pathname === '/' || 
+    url.pathname.endsWith('index.html') || 
+    url.pathname.endsWith('.js') || 
+    url.pathname.endsWith('.css');
+
+  if (isCoreResource) {
+    // ESTRATEGIA: Network-First (Intentar red primero, si falla usar caché)
+    // Esto asegura que las actualizaciones se vean al instante sin perder el modo sin conexión
+    event.respondWith(
+      fetch(event.request)
+        .then(networkResponse => {
           if (networkResponse && networkResponse.status === 200) {
+            const responseToCache = networkResponse.clone();
             caches.open(CACHE_NAME).then(cache => {
-              cache.put(event.request, networkResponse);
+              cache.put(event.request, responseToCache);
             });
           }
-        }).catch(err => console.log('[Service Worker] Error al actualizar recurso en segundo plano:', err));
-        
-        return cachedResponse;
-      }
-
-      // No está en caché, ir a la red
-      return fetch(event.request).then(networkResponse => {
-        if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
           return networkResponse;
+        })
+        .catch(() => {
+          // Si no hay red, servir desde caché
+          return caches.match(event.request);
+        })
+    );
+  } else {
+    // ESTRATEGIA: Cache-First con Stale-While-Revalidate para imágenes y JSON de datos
+    event.respondWith(
+      caches.match(event.request).then(cachedResponse => {
+        if (cachedResponse) {
+          // Devolver el recurso en caché e intentar actualizarlo en background
+          fetch(event.request).then(networkResponse => {
+            if (networkResponse && networkResponse.status === 200) {
+              caches.open(CACHE_NAME).then(cache => {
+                cache.put(event.request, networkResponse);
+              });
+            }
+          }).catch(err => console.log('[Service Worker] Error al actualizar en background:', err));
+          return cachedResponse;
         }
 
-        // Cachear las respuestas exitosas de datos, cantos e imágenes locales
-        if (url.pathname.includes('/data/') || url.pathname.includes('/ima/') || url.pathname.includes('.js')) {
-          const responseToCache = networkResponse.clone();
-          caches.open(CACHE_NAME).then(cache => {
-            cache.put(event.request, responseToCache);
-          });
-        }
-
-        return networkResponse;
-      }).catch(error => {
-        console.error('[Service Worker] Falla de red y recurso no cacheado:', error);
-        // Podríamos retornar un fallback offline.html para navegación si es necesario
-      });
-    })
-  );
+        // Si no está en caché, ir a la red
+        return fetch(event.request).then(networkResponse => {
+          if (networkResponse && networkResponse.status === 200) {
+            // Guardar en la caché
+            const responseToCache = networkResponse.clone();
+            caches.open(CACHE_NAME).then(cache => {
+              cache.put(event.request, responseToCache);
+            });
+          }
+          return networkResponse;
+        }).catch(error => {
+          console.error('[Service Worker] Error de red:', error);
+        });
+      })
+    );
+  }
 });

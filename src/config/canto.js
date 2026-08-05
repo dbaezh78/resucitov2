@@ -5,25 +5,42 @@
 
 export const cantoConfig = {
   // Mapa de estados BIS por canto: { songId: true/false }
-  // Por defecto vacío = todos deshabilitados
   bisEnabledMap: {},
+  // Intervalo base de desplazamiento en ms (por defecto 40ms)
+  scrollInterval: 40,
+  // Incremento de desplazamiento en píxeles (por defecto 1px)
+  scrollIncrement: 1,
 };
 
-// Cargar estados BIS desde localStorage
+// Cargar estados BIS y configuración de desplazamiento desde localStorage
 export function loadBisConfig() {
   try {
     const saved = localStorage.getItem('bis-enabled-map');
     if (saved) {
       cantoConfig.bisEnabledMap = JSON.parse(saved);
     }
+    const savedInterval = localStorage.getItem('scroll-interval');
+    if (savedInterval) {
+      cantoConfig.scrollInterval = parseInt(savedInterval, 10);
+    }
+    const savedInc = localStorage.getItem('scroll-increment');
+    if (savedInc) {
+      cantoConfig.scrollIncrement = parseInt(savedInc, 10);
+    }
   } catch (e) {
-    console.warn('Error al cargar configuración BIS:', e);
+    console.warn('Error al cargar configuración de Canto:', e);
   }
 }
 
 // Guardar estados BIS en localStorage
 export function saveBisConfig() {
   localStorage.setItem('bis-enabled-map', JSON.stringify(cantoConfig.bisEnabledMap));
+}
+
+// Guardar configuración de desplazamiento en localStorage
+export function saveCantoSettings() {
+  localStorage.setItem('scroll-interval', cantoConfig.scrollInterval);
+  localStorage.setItem('scroll-increment', cantoConfig.scrollIncrement);
 }
 
 // Verificar si el BIS está habilitado para un canto específico

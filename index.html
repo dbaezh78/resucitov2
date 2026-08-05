@@ -792,9 +792,10 @@
           </div>
         </div>
 
+        <!-- Panel Canto -->
         <div id="settings-panel-canto" class="settings-panel-group" style="display: none; padding: 16px;">
-          <!-- Indicador BIS -->
-          <div class="setting-row" style="margin-bottom: 20px;">
+          <!-- Fila Indicador BIS (arriba) -->
+          <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); margin-bottom: 0px;">
             <div class="setting-label">
               <h4>Indicador BIS</h4>
             </div>
@@ -806,30 +807,47 @@
             </div>
           </div>
 
-          <!-- Desplazamiento Canto -->
-          <div class="setting-row" style="flex-direction: column; align-items: stretch; gap: 8px; margin-bottom: 20px; border-top: 1px solid var(--panel-border); padding-top: 16px;">
-            <div class="setting-label" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-              <h4 style="margin: 0; font-size: 0.95rem;">Desplazamiento Canto</h4>
-              <input type="number" id="scroll-interval-input" min="1" max="40" value="25" style="width: 55px; text-align: center; border: 1.5px solid var(--panel-border); background-color: var(--panel-bg); color: var(--text-color); font-family: inherit; font-size: 0.9rem; padding: 4px 6px; border-radius: 6px; font-weight: 700; outline: none;">
+          <!-- Dos columnas: Desplazamiento e Incremento (Mitad y Mitad) -->
+          <div style="display: flex; gap: 24px; padding: 16px 0;">
+            
+            <!-- Columna Desplazamiento Canto (Lado Izquierdo) -->
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
+              <div style="display: flex; align-items: flex-end; justify-content: space-between; min-height: 48px;">
+                <span style="font-weight: 700; font-size: 1rem; color: var(--text-color); max-width: 130px; line-height: 1.2;">Desplazamiento</span>
+                <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px;">
+                  <div style="display: flex; align-items: center; gap: 4px;">
+                    <span style="font-size: 0.65rem; font-weight: 700; color: var(--text-muted); white-space: nowrap;">Aumentar a:</span>
+                    <input type="number" id="scroll-interval-limit" min="1" value="1000" style="font-size: 0.65rem; font-weight: 700; font-style: italic; color: #555; background: #fff; border: 1px solid var(--panel-border); padding: 1px 4px; border-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); width: 45px; text-align: center; outline: none;">
+                  </div>
+                  <input type="number" id="scroll-interval-input" min="1" max="1000" value="40" style="width: 55px; text-align: center; padding: 4px; border: 1px solid var(--panel-border); border-radius: 6px; background: #fff; color: #000; font-weight: bold; font-size: 0.95rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <button id="scroll-interval-minus-btn" class="btn" style="width: 32px; height: 32px; min-width: 32px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; border-radius: 6px; background: #e0e5eb; border: none; color: #333; cursor: pointer;">-</button>
+                <input type="range" id="scroll-interval-slider" min="1" max="1000" value="40" style="flex-grow: 1; accent-color: #d01212; height: 4px; border-radius: 2px; cursor: pointer;">
+                <button id="scroll-interval-plus-btn" class="btn" style="width: 32px; height: 32px; min-width: 32px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; border-radius: 6px; background: #e0e5eb; border: none; color: #333; cursor: pointer;">+</button>
+              </div>
             </div>
-            <div style="display: flex; align-items: center; gap: 12px; width: 100%;">
-              <button id="scroll-interval-minus-btn" class="btn btn-icon" style="padding: 0; min-width: auto; background-color: var(--panel-border); border-radius: 6px; height: 32px; width: 32px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; color: var(--text-color); border: none; cursor: pointer; transition: background-color 0.15s;">-</button>
-              <input type="range" id="scroll-interval-slider" min="1" max="40" value="25" style="flex: 1; accent-color: var(--accent-color); height: 6px; border-radius: 3px; outline: none; background: var(--panel-border); cursor: pointer; margin: 0;">
-              <button id="scroll-interval-plus-btn" class="btn btn-icon" style="padding: 0; min-width: auto; background-color: var(--panel-border); border-radius: 6px; height: 32px; width: 32px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; color: var(--text-color); border: none; cursor: pointer; transition: background-color 0.15s;">+</button>
-            </div>
-          </div>
 
-          <!-- Incremento Scroll (px) -->
-          <div class="setting-row" style="flex-direction: column; align-items: stretch; gap: 8px; border-top: 1px solid var(--panel-border); padding-top: 16px;">
-            <div class="setting-label" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-              <h4 style="margin: 0; font-size: 0.95rem;">Incremento Scroll (px)</h4>
-              <input type="number" id="scroll-step-input" min="1" max="15" value="1" style="width: 55px; text-align: center; border: 1.5px solid var(--panel-border); background-color: var(--panel-bg); color: var(--text-color); font-family: inherit; font-size: 0.9rem; padding: 4px 6px; border-radius: 6px; font-weight: 700; outline: none;">
+            <!-- Columna Incremento Scroll (Lado Derecho) -->
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
+              <div style="display: flex; align-items: flex-end; justify-content: space-between; min-height: 48px;">
+                <span style="font-weight: 700; font-size: 1rem; color: var(--text-color); max-width: 140px; line-height: 1.2;">Incremento</span>
+                <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px;">
+                  <div style="display: flex; align-items: center; gap: 4px;">
+                    <span style="font-size: 0.65rem; font-weight: 700; color: var(--text-muted); white-space: nowrap;">Aumentar a:</span>
+                    <input type="number" id="scroll-step-limit" min="1" value="100" style="font-size: 0.65rem; font-weight: 700; font-style: italic; color: #555; background: #fff; border: 1px solid var(--panel-border); padding: 1px 4px; border-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); width: 45px; text-align: center; outline: none;">
+                  </div>
+                  <input type="number" id="scroll-step-input" min="1" max="100" value="1" style="width: 55px; text-align: center; padding: 4px; border: 1px solid var(--panel-border); border-radius: 6px; background: #fff; color: #000; font-weight: bold; font-size: 0.95rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <button id="scroll-step-minus-btn" class="btn" style="width: 32px; height: 32px; min-width: 32px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; border-radius: 6px; background: #e0e5eb; border: none; color: #333; cursor: pointer;">-</button>
+                <input type="range" id="scroll-step-slider" min="1" max="100" value="1" style="flex-grow: 1; accent-color: #d01212; height: 4px; border-radius: 2px; cursor: pointer;">
+                <button id="scroll-step-plus-btn" class="btn" style="width: 32px; height: 32px; min-width: 32px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; border-radius: 6px; background: #e0e5eb; border: none; color: #333; cursor: pointer;">+</button>
+              </div>
             </div>
-            <div style="display: flex; align-items: center; gap: 12px; width: 100%;">
-              <button id="scroll-step-minus-btn" class="btn btn-icon" style="padding: 0; min-width: auto; background-color: var(--panel-border); border-radius: 6px; height: 32px; width: 32px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; color: var(--text-color); border: none; cursor: pointer; transition: background-color 0.15s;">-</button>
-              <input type="range" id="scroll-step-slider" min="1" max="15" value="1" style="flex: 1; accent-color: var(--accent-color); height: 6px; border-radius: 3px; outline: none; background: var(--panel-border); cursor: pointer; margin: 0;">
-              <button id="scroll-step-plus-btn" class="btn btn-icon" style="padding: 0; min-width: auto; background-color: var(--panel-border); border-radius: 6px; height: 32px; width: 32px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; color: var(--text-color); border: none; cursor: pointer; transition: background-color 0.15s;">+</button>
-            </div>
+
           </div>
         </div>
       </div>
