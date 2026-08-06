@@ -3716,6 +3716,9 @@ function openSettingsTab(tabName = 'general') {
       if (dropdownContent && itemsInDropdown === 0) {
         dropdownContent.classList.remove('show');
       }
+      if (itemsInDropdown > 0 && toolbarRight) {
+        toolbarRight.appendChild(dropdownContainer);
+      }
     }
   }
 

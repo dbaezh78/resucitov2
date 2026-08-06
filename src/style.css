@@ -1862,16 +1862,23 @@ footer {
     display: none !important;
   }
 
-  /* Centro: Título SIEMPRE visible en móviles (A LA VICTIMA PASCUAL) */
-  .toolbar-center,
+  /* Centro: Título en barra al hacer scroll en móviles */
+  .toolbar-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    padding: 0 4px;
+  }
   #toolbar-sticky-title {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex: 1 1 auto !important;
-    min-width: 0 !important;
-    overflow: hidden !important;
-    padding: 0 4px !important;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    padding: 0 4px;
   }
 
   .toolbar-title-text,
@@ -2673,4 +2680,15 @@ footer {
   padding: 0 12px 0 12px; 
   border-radius: 12px; 
   border: 1px solid var(--panel-border);
+}
+
+/* Prevenir zoom automático en dispositivos móviles y tablets al interactuar */
+@media (max-width: 992px) {
+  input[type="text"],
+  input[type="number"],
+  input[type="search"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
 }
