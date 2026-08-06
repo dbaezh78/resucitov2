@@ -1,8 +1,17 @@
 import { registerServiceWorker } from './pwa.js';
+import './navegador.js';
 import { searchSongs } from './search.js';
 import { transposeNote, normalizeChord, CHROMATIC_SCALE, parseChord } from './chords.js';
 import { songs } from './songs-data.js';
 import { onAuthStateChanged, loginMock, logoutMock, isCurrentUserAdmin, getCurrentUser } from './auth.js';
+
+// Exponer API de autenticación globalmente para el navegador
+window.firebaseAPI = {
+  login: loginMock,
+  logout: logoutMock,
+  onAuthReady: onAuthStateChanged,
+  getCurrentUser: getCurrentUser
+};
 import { canAccessBook, initAccessControl, setupAccessControlUI, trackLoggedInUser, hasPermission, getAccessControlState, listenToOwnUserPermissionsSilently } from './accesscontrol.js';
 import { cantoConfig, loadBisConfig, saveBisConfig, isBisEnabled, setBisForSong } from './canto.js';
 import { 
@@ -209,6 +218,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // --- Ruteo de la SPA ---
 function routeSPA() {
+  if (!dashboardView || !songViewerView) return;
   const hash = window.location.hash;
   
   // Detener scroll al cambiar de pantalla
@@ -468,6 +478,9 @@ async function loadSongView(songId) {
       renderSongContent();
     });
     
+    // Configurar pie de página del canto (categorías, nota modal, estrellas y número dbno)
+    setupViewerSongFooter(songId);
+
     // Mostrar visor
     dashboardView.style.display = 'none';
     songViewerView.style.display = 'flex';
@@ -499,6 +512,161 @@ async function loadSongView(songId) {
     alert('No se pudo cargar la letra del canto.');
     window.location.hash = ''; // Volver al listado
   }
+}
+
+// --- Pie de página del Canto (Categorías, Nota Modal, Estrellas y dbno) ---
+function setupViewerSongFooter(songId) {
+  const footerBarLeft = document.getElementById('footer-moments-list');
+  const footerRatingStars = document.getElementById('footer-rating-stars');
+  const footerSongNumber = document.getElementById('footer-song-number');
+  const noteBtn = document.getElementById('song-footer-note-btn');
+
+  const songMeta = allSongs.find(s => s.id === songId) || songs.find(s => s.id === songId) || currentCanto;
+  if (!songMeta) return;
+
+  const footerBar = document.getElementById('viewer-song-footer-bar');
+  if (footerBar) {
+    footerBar.style.backgroundColor = 'var(--current-stage-bg)';
+  }
+
+  // 1. Categorías / Momentos (Izquierda)
+  if (footerBarLeft) {
+    footerBarLeft.innerHTML = '';
+    let rawMoments = [];
+    if (Array.isArray(songMeta.moments)) {
+      rawMoments = songMeta.moments;
+    } else if (Array.isArray(songMeta.category)) {
+      rawMoments = songMeta.category;
+    } else if (typeof songMeta.category === 'string') {
+      rawMoments = [songMeta.category];
+    } else if (typeof songMeta.catCanto === 'string') {
+      rawMoments = [songMeta.catCanto];
+    }
+
+    const cleanMoments = rawMoments.filter(m => m && m.trim().length > 0 && m !== 'Indice');
+    if (cleanMoments.length === 0 && songMeta.stage) {
+      cleanMoments.push(songMeta.stage);
+    }
+
+    cleanMoments.forEach((momentName, index) => {
+      const pill = document.createElement('span');
+      pill.className = `footer-moment-pill ${index === 0 ? 'active-pill' : ''}`;
+      pill.textContent = momentName;
+
+      pill.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (dashboardView && songViewerView) {
+          songViewerView.style.display = 'none';
+          dashboardView.style.display = 'flex';
+          window.location.hash = '';
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        activeMoments.clear();
+        activeMoments.add(momentName);
+
+        document.querySelectorAll('.filter-pill').forEach(btn => {
+          const dm = btn.getAttribute('data-moment');
+          btn.classList.toggle('active', dm === momentName);
+        });
+
+        handleSearchAndFilters();
+      });
+
+      footerBarLeft.appendChild(pill);
+    });
+  }
+
+  // 2. Icono de Nota (Centro) -> Modal de Nota
+  if (noteBtn) {
+    noteBtn.onclick = (e) => {
+      e.stopPropagation();
+      abrirModalNotaCanto(songId);
+    };
+  }
+
+  // 3. Valoración de Estrellas (Derecha)
+  if (footerRatingStars) {
+    const keyData = localStorage.getItem(`canto-config-${songId}`) || localStorage.getItem(`data-${songId}`);
+    let dataObj = {};
+    if (keyData) {
+      try { dataObj = JSON.parse(keyData); } catch (e) {}
+    }
+    const puntos = parseInt(dataObj.valoracion || 0);
+
+    renderFooterStars(songId, puntos);
+  }
+
+  // 4. Número del canto (dbno)
+  if (footerSongNumber) {
+    const songNo = songMeta.dbno || songMeta.idi || currentCanto?.dbno || '';
+    footerSongNumber.textContent = songNo ? songNo : '';
+  }
+}
+
+function renderFooterStars(songId, puntos) {
+  const container = document.getElementById('footer-rating-stars');
+  if (!container) return;
+
+  let html = '';
+  for (let i = 1; i <= 5; i++) {
+    const color = (i <= puntos) ? '#FFD700' : '#C0C0C0';
+    html += `<span data-star="${i}" style="color: ${color};">★</span>`;
+  }
+  container.innerHTML = html;
+
+  container.querySelectorAll('span').forEach(starEl => {
+    starEl.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const rating = parseInt(starEl.getAttribute('data-star'));
+      guardarRatingCanto(songId, rating);
+    });
+  });
+}
+
+function guardarRatingCanto(songId, rating) {
+  const key = `canto-config-${songId}`;
+  let dataObj = {};
+  try {
+    dataObj = JSON.parse(localStorage.getItem(key) || '{}');
+  } catch (e) {}
+  dataObj.valoracion = rating;
+  localStorage.setItem(key, JSON.stringify(dataObj));
+
+  renderFooterStars(songId, rating);
+}
+
+function abrirModalNotaCanto(songId) {
+  const modal = document.getElementById('song-note-modal');
+  const textarea = document.getElementById('modal-notes-textarea');
+  const btnSave = document.getElementById('btn-save-song-note');
+  const btnClose = document.getElementById('close-song-note-modal');
+
+  if (!modal || !textarea) return;
+
+  textarea.value = localStorage.getItem(`notes_${songId}`) || '';
+
+  const handleSave = (e) => {
+    e.stopPropagation();
+    localStorage.setItem(`notes_${songId}`, textarea.value);
+    modal.style.display = 'none';
+    cleanup();
+  };
+
+  const handleClose = (e) => {
+    e.stopPropagation();
+    modal.style.display = 'none';
+    cleanup();
+  };
+
+  const cleanup = () => {
+    if (btnSave) btnSave.removeEventListener('click', handleSave);
+    if (btnClose) btnClose.removeEventListener('click', handleClose);
+  };
+
+  if (btnSave) btnSave.addEventListener('click', handleSave);
+  if (btnClose) btnClose.addEventListener('click', handleClose);
+
+  modal.style.display = 'flex';
 }
 
 // --- Renderizado de Canción ---
@@ -1286,21 +1454,21 @@ function updateChordPanel() {
     let capoHTML = '';
     if (originalCapo > 0) {
       capoHTML += `<img src="ima/cejilla.png" alt="Cejilla" class="cejilla-icon-img" style="height: ${imgHeight}; width: auto; margin-left: 2px; vertical-align: middle; ${styleString}"> `;
-      capoHTML += `<span style="vertical-align: middle;">${originalCapo}</span>`;
+      capoHTML += `<span class="capo-badge-text" style="vertical-align: middle;">${originalCapo}</span>`;
     }
     
-    capoHTML += ` <span style="opacity: 0.7; margin: 0 2px; vertical-align: middle;">/</span> `;
+    capoHTML += `<span class="capo-badge-text" style="opacity: 0.7; margin: 0 2px; vertical-align: middle;">/</span>`;
     
     if (userCapo !== originalCapo) {
-      capoHTML += `<span style="vertical-align: middle;">${userCapo}</span>`;
+      capoHTML += `<span class="capo-badge-text" style="vertical-align: middle;">${userCapo}</span>`;
     }
 
     return `
-      <span class="material-symbols-outlined" style="font-size: ${iconSize}; vertical-align: middle;">music_note</span>
+      <span class="material-symbols-outlined tone-music-note" style="font-size: ${iconSize}; vertical-align: middle;">music_note</span>
       <span class="key-badge-text" style="font-weight: 700; vertical-align: middle;">${chordText}</span>
-      <div style="display: inline-flex; align-items: center; gap: 3px; margin-left: 6px; vertical-align: middle;">
+      <span class="capo-badge-container capo-badge-text" style="display: inline-flex; align-items: center; gap: 3px; margin-left: 6px; vertical-align: middle;">
         ${capoHTML}
-      </div>
+      </span>
     `;
   };
 
@@ -1517,8 +1685,11 @@ function startAutoScroll() {
 
 function stopAutoScroll() {
   isScrollActive = false;
-  scrollPlayBtn.querySelector('span').textContent = 'south';
-  scrollPlayBtn.classList.remove('active');
+  if (scrollPlayBtn) {
+    const span = scrollPlayBtn.querySelector('span');
+    if (span) span.textContent = 'south';
+    scrollPlayBtn.classList.remove('active');
+  }
   if (scrollIntervalId) {
     clearInterval(scrollIntervalId);
     scrollIntervalId = null;
@@ -1538,6 +1709,7 @@ function getStageColor(stageName) {
 // --- Buscador y Renderizado de Lista ---
 function renderSongsList(songsList) {
   activeSongsPlaylist = songsList;
+  if (!songsGrid) return;
   songsGrid.innerHTML = '';
   
   if (songsList.length === 0) {
@@ -1647,7 +1819,7 @@ async function handleSearchAndFilters() {
     sourceList = allSongs.filter(song => (song.sourceBook || 'resucito') === currentBook);
   }
   
-  const query = searchInput.value;
+  const query = searchInput ? searchInput.value : '';
   filteredSongs = searchSongs(sourceList, query, activeStage, activeMoments);
   
   // Garantizar orden alfabético estricto por la primera letra real (ignorando símbolos iniciales como ¡ o ¿)
@@ -2098,14 +2270,16 @@ function setupEventListeners() {
     });
   }
 
-  // Clic en Tone/Capo trigger para abrir transposición
-  if (toneCapoTrigger) {
-    toneCapoTrigger.addEventListener('click', () => {
-      if (!currentCanto) return;
-      const currentTransposedNote = transposeNote(originalSongKey, currentKeyOffset);
-      showChordDiagram(currentTransposedNote, originalSongTypeSuffix || '');
-    });
-  }
+  // Clic en Tone/Capo trigger para abrir transposición (Desktop y Mobile)
+  const openChordModal = () => {
+    if (!currentCanto) return;
+    const currentTransposedNote = transposeNote(originalSongKey, currentKeyOffset);
+    showChordDiagram(currentTransposedNote, originalSongTypeSuffix || '');
+  };
+
+  if (toneCapoTrigger) toneCapoTrigger.addEventListener('click', openChordModal);
+  const toneDropdownTriggerBtn = document.getElementById('tone-dropdown-trigger');
+  if (toneDropdownTriggerBtn) toneDropdownTriggerBtn.addEventListener('click', openChordModal);
 
   // Botón de acordes / transposición
   if (chordModalTriggerBtn) {
@@ -2691,16 +2865,16 @@ function openSettingsTab(tabName = 'general') {
   }
 }
 
+  window.abrirModalConfiguracion = function() {
+    openSettingsTab('general');
+    populateBisSongList();
+    if (settingsModal) settingsModal.style.display = 'flex';
+  };
+
   // Botón de ajustes en la página principal
   if (dashboardSettingsBtn) {
     dashboardSettingsBtn.addEventListener('click', () => {
-      // Al abrir el modal, activar por defecto la pestaña "General"
-      openSettingsTab('general');
-
-      // Poblar la lista de BIS por canto al abrir ajustes
-      populateBisSongList();
-
-      settingsModal.style.display = 'flex';
+      window.abrirModalConfiguracion();
     });
   }
 
@@ -2830,6 +3004,93 @@ function openSettingsTab(tabName = 'general') {
       });
       
       applyBookTheme();
+    });
+  }
+
+  // Control de visibilidad mediante Select de Secciones en Tema
+  const themeSectionSelect = document.getElementById('theme-color-section-select');
+  function updateThemeSectionVisibility() {
+    if (!themeSectionSelect) return;
+    const selectedVal = themeSectionSelect.value;
+    const sections = {
+      book: document.getElementById('theme-section-book'),
+      canto: document.getElementById('theme-section-canto'),
+      etapas: document.getElementById('theme-section-etapas'),
+      botones: document.getElementById('theme-section-botones'),
+      navegador: document.getElementById('theme-section-navegador'),
+      toolbar: document.getElementById('theme-section-toolbar')
+    };
+
+    Object.keys(sections).forEach(key => {
+      const el = sections[key];
+      if (el) {
+        if (key === selectedVal) {
+          el.style.display = 'block';
+          el.classList.remove('collapsed');
+          const content = el.querySelector('.collapsible-content');
+          if (content) content.style.display = 'block';
+        } else {
+          el.style.display = 'none';
+        }
+      }
+    });
+  }
+
+  if (themeSectionSelect) {
+    themeSectionSelect.addEventListener('change', updateThemeSectionVisibility);
+    updateThemeSectionVisibility();
+  }
+
+  // Personalizar colores del Navegador (Normal y Efecto Hover)
+  document.querySelectorAll('.nav-theme-input').forEach(input => {
+    input.addEventListener('input', (e) => {
+      const type = input.dataset.type;
+      const mode = input.dataset.mode || 'normal';
+      const color = e.target.value;
+      const key = mode === 'hover' ? `nav-color-${type}-hover` : `nav-color-${type}`;
+      localStorage.setItem(key, color);
+
+      // Compatibilidad de nombres de clave alternativos para btn-bg e wrapper-bg
+      if (mode === 'hover' && type === 'btn-bg') {
+        localStorage.setItem('nav-color-btn-hover-bg', color);
+      } else if (mode === 'hover' && type === 'wrapper-bg') {
+        localStorage.setItem('nav-color-wrapper-hover-bg', color);
+      }
+
+      if (typeof window.applyNavTheme === 'function') window.applyNavTheme();
+      updateNavInputs();
+    });
+  });
+
+  const resetNavThemeBtn = document.getElementById('reset-nav-theme-btn');
+  if (resetNavThemeBtn) {
+    resetNavThemeBtn.addEventListener('click', () => {
+      const doReset = () => {
+        const keys = [
+          'nav-color-text', 'nav-color-text-hover',
+          'nav-color-bg', 'nav-color-bg-hover',
+          'nav-color-btn-bg', 'nav-color-btn-bg-hover', 'nav-color-btn-hover-bg',
+          'nav-color-icon', 'nav-color-icon-hover',
+          'nav-color-submenu-icon', 'nav-color-submenu-icon-hover',
+          'nav-color-wrapper-bg', 'nav-color-wrapper-bg-hover', 'nav-color-wrapper-hover-bg'
+        ];
+        keys.forEach(k => localStorage.removeItem(k));
+        if (typeof window.applyNavTheme === 'function') window.applyNavTheme();
+        updateNavInputs();
+      };
+
+      if (window.mostrarConfirmacion) {
+        window.mostrarConfirmacion({
+          titulo: 'Restaurar Colores',
+          mensaje: '¿Desea restaurar todos los colores del navegador a sus valores por defecto?',
+          icono: 'palette',
+          textoSi: 'Sí',
+          textoNo: 'No',
+          onConfirm: doReset
+        });
+      } else {
+        doReset();
+      }
     });
   }
 
@@ -3144,49 +3405,317 @@ function openSettingsTab(tabName = 'general') {
     });
   }
 
+  // --- Personalización Dinámica y Reordenamiento de Iconos (Celular, Tablet, PC) ---
+  const ICON_LABELS = {
+    search: { label: 'Buscador Rápido', icon: 'search' },
+    chord: { label: 'Transportar / Acordes (♪)', icon: 'music_note' },
+    favorite: { label: 'Marcar Favorito (★)', icon: 'star' },
+    split: { label: 'Vista en 2 Columnas (📖)', icon: 'menu_book' },
+    asamblea: { label: 'Alternar Asamblea (👁)', icon: 'visibility' },
+    audio: { label: 'Reproducir Audio (▶)', icon: 'play_arrow' },
+    scroll: { label: 'Auto-desplazamiento (↓)', icon: 'south' },
+    prev: { label: 'Canto Anterior (◄)', icon: 'arrow_left' },
+    next: { label: 'Canto Siguiente (►)', icon: 'arrow_right' },
+    settings: { label: 'Ajustes / Configuración (⚙)', icon: 'settings' }
+  };
+
+  const DEFAULT_TOOLBAR_CONFIG = {
+    mobile: [
+      { key: 'chord', inMenu: true },
+      { key: 'favorite', inMenu: true },
+      { key: 'asamblea', inMenu: true },
+      { key: 'audio', inMenu: true },
+      { key: 'scroll', inMenu: false },
+      { key: 'prev', inMenu: false },
+      { key: 'next', inMenu: false },
+      { key: 'settings', inMenu: true },
+      { key: 'split', inMenu: true },
+      { key: 'search', inMenu: true }
+    ],
+    tablet: [
+      { key: 'chord', inMenu: true },
+      { key: 'favorite', inMenu: false },
+      { key: 'asamblea', inMenu: false },
+      { key: 'audio', inMenu: false },
+      { key: 'scroll', inMenu: false },
+      { key: 'prev', inMenu: false },
+      { key: 'next', inMenu: false },
+      { key: 'settings', inMenu: false },
+      { key: 'split', inMenu: false },
+      { key: 'search', inMenu: false }
+    ],
+    pc: [
+      { key: 'search', inMenu: false },
+      { key: 'chord', inMenu: false },
+      { key: 'favorite', inMenu: false },
+      { key: 'split', inMenu: false },
+      { key: 'asamblea', inMenu: false },
+      { key: 'audio', inMenu: false },
+      { key: 'scroll', inMenu: false },
+      { key: 'prev', inMenu: false },
+      { key: 'next', inMenu: false },
+      { key: 'settings', inMenu: false }
+    ]
+  };
+
+  function getToolbarIconConfig() {
+    try {
+      const saved = localStorage.getItem('toolbar_icon_config');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        ['mobile', 'tablet', 'pc'].forEach(device => {
+          if (parsed[device] && !Array.isArray(parsed[device])) {
+            const oldObj = parsed[device];
+            parsed[device] = Object.keys(ICON_LABELS).map(key => ({
+              key,
+              inMenu: oldObj[key] === false
+            }));
+          } else if (Array.isArray(parsed[device])) {
+            parsed[device].forEach(it => {
+              if (it.visible !== undefined && it.inMenu === undefined) {
+                it.inMenu = !it.visible;
+                delete it.visible;
+              }
+            });
+            const existingKeys = parsed[device].map(it => it.key);
+            Object.keys(ICON_LABELS).forEach(k => {
+              if (!existingKeys.includes(k)) {
+                const defVal = DEFAULT_TOOLBAR_CONFIG[device]?.find(d => d.key === k);
+                parsed[device].push({ key: k, inMenu: defVal ? defVal.inMenu : false });
+              }
+            });
+          }
+        });
+        return parsed;
+      }
+    } catch (e) {}
+    return JSON.parse(JSON.stringify(DEFAULT_TOOLBAR_CONFIG));
+  }
+
+  function saveToolbarIconConfig(config) {
+    localStorage.setItem('toolbar_icon_config', JSON.stringify(config));
+    adjustToolbarForScreenSize();
+    updateToolbarUIFromConfig();
+  }
+
+  const deviceSelect = document.getElementById('toolbar-device-select');
+  const reorderContainer = document.getElementById('toolbar-icons-reorder-container');
+  const resetToolbarIconsBtn = document.getElementById('reset-toolbar-icons-btn');
+
+  function updateToolbarUIFromConfig() {
+    if (!deviceSelect || !reorderContainer) return;
+    const currentDevice = deviceSelect.value;
+    const config = getToolbarIconConfig();
+    const items = config[currentDevice] || DEFAULT_TOOLBAR_CONFIG[currentDevice];
+
+    reorderContainer.innerHTML = '';
+    const inMenuCount = items.filter(it => it.inMenu).length;
+
+    items.forEach((item, index) => {
+      const info = ICON_LABELS[item.key] || { label: item.key, icon: 'extension' };
+      const isOnBar = !item.inMenu;
+      const isLastInMenu = item.inMenu && inMenuCount <= 1;
+
+      const row = document.createElement('div');
+      row.style.cssText = 'display: flex; align-items: center; justify-content: space-between; padding: 6px 10px; background: var(--panel-bg, #fff); border-radius: 8px; border: 1px solid var(--panel-border, #ccc); margin-bottom: 4px;';
+
+      row.innerHTML = `
+        <label style="display: flex; align-items: center; gap: 10px; font-size: 0.88rem; color: var(--text-color); cursor: pointer; flex-grow: 1;" title="${isOnBar ? 'En la barra superior' : 'En el menú desplegable ≡'}">
+          <input type="checkbox" class="toolbar-icon-checkbox" data-index="${index}" ${isOnBar ? 'checked' : ''} ${isLastInMenu ? 'disabled title="Debe quedar al menos 1 icono dentro del menú desplegable ≡ para que no desaparezca"' : ''}>
+          <span class="material-symbols-outlined" style="font-size: 1.15rem;">${info.icon}</span>
+          <span style="font-weight: 600;">${info.label}</span>
+          <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: normal; margin-left: 4px;">${isOnBar ? '(en barra)' : '(en menú ≡)'}</span>
+        </label>
+        <div style="display: flex; gap: 4px; align-items: center;">
+          <button class="btn btn-order-up" data-index="${index}" title="Subir orden" style="padding: 2px 8px; border-radius: 4px; border: 1px solid var(--panel-border); background: var(--input-bg); cursor: pointer; font-size: 0.8rem;" ${index === 0 ? 'disabled style="opacity:0.3; cursor:default;"' : ''}>▲</button>
+          <button class="btn btn-order-down" data-index="${index}" title="Bajar orden" style="padding: 2px 8px; border-radius: 4px; border: 1px solid var(--panel-border); background: var(--input-bg); cursor: pointer; font-size: 0.8rem;" ${index === items.length - 1 ? 'disabled style="opacity:0.3; cursor:default;"' : ''}>▼</button>
+        </div>
+      `;
+
+      // Listener de la casilla de verificación (Marcado = En la barra superior, Desmarcado = En menú ≡)
+      const cb = row.querySelector('.toolbar-icon-checkbox');
+      cb.addEventListener('change', (e) => {
+        const fullConfig = getToolbarIconConfig();
+        fullConfig[currentDevice][index].inMenu = !e.target.checked;
+        saveToolbarIconConfig(fullConfig);
+      });
+
+      // Listener de subir en el orden
+      const btnUp = row.querySelector('.btn-order-up');
+      if (btnUp && index > 0) {
+        btnUp.addEventListener('click', () => {
+          const fullConfig = getToolbarIconConfig();
+          const list = fullConfig[currentDevice];
+          const temp = list[index];
+          list[index] = list[index - 1];
+          list[index - 1] = temp;
+          saveToolbarIconConfig(fullConfig);
+        });
+      }
+
+      // Listener de bajar en el orden
+      const btnDown = row.querySelector('.btn-order-down');
+      if (btnDown && index < items.length - 1) {
+        btnDown.addEventListener('click', () => {
+          const fullConfig = getToolbarIconConfig();
+          const list = fullConfig[currentDevice];
+          const temp = list[index];
+          list[index] = list[index + 1];
+          list[index + 1] = temp;
+          saveToolbarIconConfig(fullConfig);
+        });
+      }
+
+      reorderContainer.appendChild(row);
+    });
+
+    const selectAllRadio = document.getElementById('select-all-in-menu-radio');
+    const selectNoneRadio = document.getElementById('select-none-in-menu-radio');
+    if (selectAllRadio && selectNoneRadio) {
+      const allOnBarExceptOne = items.filter(it => !it.inMenu).length >= items.length - 1;
+      const allInMenu = items.every(it => it.inMenu);
+
+      selectAllRadio.checked = allOnBarExceptOne && !allInMenu;
+      selectNoneRadio.checked = allInMenu;
+    }
+  }
+
+  const selectAllRadio = document.getElementById('select-all-in-menu-radio');
+  const selectNoneRadio = document.getElementById('select-none-in-menu-radio');
+
+  if (selectAllRadio) {
+    // "Mostrar todos en la barra" -> Marcado (inMenu = false) salvo 1 elemento
+    selectAllRadio.addEventListener('change', () => {
+      if (!selectAllRadio.checked || !deviceSelect) return;
+      const currentDevice = deviceSelect.value;
+      const fullConfig = getToolbarIconConfig();
+      const items = fullConfig[currentDevice] || [];
+
+      items.forEach((it, idx) => {
+        if (idx === items.length - 1) {
+          it.inMenu = true;
+        } else {
+          it.inMenu = false;
+        }
+      });
+
+      saveToolbarIconConfig(fullConfig);
+    });
+  }
+
+  if (selectNoneRadio) {
+    // "Mover todos al menú ≡" -> Desmarcado (inMenu = true)
+    selectNoneRadio.addEventListener('change', () => {
+      if (!selectNoneRadio.checked || !deviceSelect) return;
+      const currentDevice = deviceSelect.value;
+      const fullConfig = getToolbarIconConfig();
+      const items = fullConfig[currentDevice] || [];
+
+      items.forEach(it => {
+        it.inMenu = true;
+      });
+
+      saveToolbarIconConfig(fullConfig);
+    });
+  }
+
+  if (deviceSelect) {
+    deviceSelect.addEventListener('change', updateToolbarUIFromConfig);
+    updateToolbarUIFromConfig();
+  }
+
+  const toggleAllExceptSearchBtn = document.getElementById('toggle-all-except-search-btn');
+
+  if (toggleAllExceptSearchBtn) {
+    toggleAllExceptSearchBtn.addEventListener('click', () => {
+      if (!deviceSelect) return;
+      const currentDevice = deviceSelect.value;
+      const fullConfig = getToolbarIconConfig();
+      const items = fullConfig[currentDevice] || [];
+
+      const nonSearchItems = items.filter(it => it.key !== 'search');
+      const allInMenu = nonSearchItems.length > 0 && nonSearchItems.every(it => it.inMenu);
+
+      const targetState = !allInMenu;
+      items.forEach(it => {
+        if (it.key !== 'search') {
+          it.inMenu = targetState;
+        }
+      });
+
+      saveToolbarIconConfig(fullConfig);
+    });
+  }
+
+  if (resetToolbarIconsBtn) {
+    resetToolbarIconsBtn.addEventListener('click', () => {
+      saveToolbarIconConfig(JSON.parse(JSON.stringify(DEFAULT_TOOLBAR_CONFIG)));
+    });
+  }
+
   function adjustToolbarForScreenSize() {
-    const isTabletOrMobile = window.innerWidth <= 992;
+    const screenWidth = window.innerWidth;
+    let device = 'pc';
+    if (screenWidth < 600) device = 'mobile';
+    else if (screenWidth <= 992) device = 'tablet';
+
+    const items = getToolbarIconConfig()[device] || DEFAULT_TOOLBAR_CONFIG[device];
     const dropdownContent = document.getElementById('toolbar-dropdown-content');
     const toolbarRight = document.querySelector('.toolbar-right');
     const dropdownContainer = document.getElementById('toolbar-dropdown-container');
-    
+
     const toneDropdownTrigger = document.getElementById('tone-dropdown-trigger');
     const toneCapoTrigger = document.getElementById('tone-capo-trigger');
-    
-    const elements = [
-      document.getElementById('chord-modal-trigger-btn'),
-      document.getElementById('favorite-btn'),
-      document.getElementById('split-layout-btn'),
-      document.getElementById('asamblea-toggle-btn'),
-      document.getElementById('audio-play-btn')
-    ];
-    
-    if (isTabletOrMobile) {
-      if (dropdownContainer) dropdownContainer.style.display = 'inline-block';
+
+    if (device !== 'pc') {
       if (toneDropdownTrigger) toneDropdownTrigger.style.display = 'inline-flex';
       if (toneCapoTrigger) toneCapoTrigger.style.display = 'none';
-      
-      elements.forEach(el => {
-        if (el && dropdownContent) {
-          dropdownContent.appendChild(el);
-        }
-      });
     } else {
-      if (dropdownContainer) dropdownContainer.style.display = 'none';
-      if (dropdownContent) dropdownContent.classList.remove('show');
       if (toneDropdownTrigger) toneDropdownTrigger.style.display = 'none';
       if (toneCapoTrigger) toneCapoTrigger.style.display = 'flex';
-      
-      const prevSongBtn = document.getElementById('prev-song-btn');
-      elements.forEach(el => {
-        if (el && toolbarRight) {
-          if (prevSongBtn) {
-            toolbarRight.insertBefore(el, prevSongBtn);
-          } else {
-            toolbarRight.appendChild(el);
-          }
+    }
+
+    const iconElements = {
+      search: document.querySelector('.toolbar-search-container'),
+      chord: document.getElementById('chord-modal-trigger-btn'),
+      favorite: document.getElementById('favorite-btn'),
+      split: document.getElementById('split-layout-btn'),
+      asamblea: document.getElementById('asamblea-toggle-btn'),
+      audio: document.getElementById('audio-play-btn'),
+      scroll: document.getElementById('scroll-play-btn'),
+      prev: document.getElementById('prev-song-btn'),
+      next: document.getElementById('next-song-btn'),
+      settings: document.getElementById('settings-open-btn')
+    };
+
+    let itemsInDropdown = 0;
+
+    // Insertar los elementos en el orden configurado por el usuario
+    items.forEach(item => {
+      const el = iconElements[item.key];
+      if (!el) return;
+
+      const isInMenu = item.inMenu === true;
+
+      if (!isInMenu) {
+        if (toolbarRight) {
+          toolbarRight.appendChild(el);
         }
-      });
+        el.style.display = (item.key === 'search') ? 'block' : 'flex';
+      } else {
+        if (dropdownContent) {
+          dropdownContent.appendChild(el);
+          el.style.display = (item.key === 'search') ? 'block' : 'flex';
+          itemsInDropdown++;
+        }
+      }
+    });
+
+    if (dropdownContainer) {
+      dropdownContainer.style.display = itemsInDropdown > 0 ? 'inline-block' : 'none';
+      if (dropdownContent && itemsInDropdown === 0) {
+        dropdownContent.classList.remove('show');
+      }
     }
   }
 
@@ -3528,6 +4057,53 @@ function applyBookTheme() {
           const isLight = /ffeb3b|ffffff|eeeeee|fafafa|fff9c4|f0f4c3/i.test(hex.replace('#',''));
           icon.style.color = isLight ? '#212529' : '#ffffff';
         }
+      }
+    }
+    updateNavInputs();
+  });
+}
+
+function updateNavInputs() {
+  const inputs = document.querySelectorAll('.nav-theme-input');
+  if (!inputs.length) return;
+
+  const navBar = document.getElementById('main-navbar');
+  const toggleBtn = document.getElementById('nav-toggle');
+  const computedNav = navBar ? getComputedStyle(navBar) : null;
+  const computedToggle = toggleBtn ? getComputedStyle(toggleBtn) : null;
+
+  inputs.forEach(input => {
+    const type = input.dataset.type;
+    const mode = input.dataset.mode || 'normal';
+    const key = mode === 'hover' ? `nav-color-${type}-hover` : `nav-color-${type}`;
+    let colorVal = localStorage.getItem(key);
+
+    if (!colorVal) {
+      if (type === 'text') {
+        colorVal = mode === 'hover' ? '#ffffff' : '#301d1d';
+      } else if (type === 'bg') {
+        colorVal = computedNav ? computedNav.getPropertyValue('background-color').trim() : '#ffffff';
+      } else if (type === 'btn-bg') {
+        colorVal = mode === 'hover' ? '#390404' : '#f7f7f7';
+      } else if (type === 'icon') {
+        colorVal = mode === 'hover' ? '#f4ebeb' : '#301d1d';
+      } else if (type === 'submenu-icon') {
+        colorVal = mode === 'hover' ? '#ffffff' : '#3d0706';
+      } else if (type === 'wrapper-bg') {
+        colorVal = computedToggle ? computedToggle.getPropertyValue('background-color').trim() : '#ffffff';
+      }
+    }
+
+    const hex = formatColorToHex(colorVal) || '#ffffff';
+    input.value = hex;
+
+    const preview = input.closest('.btn-pill-preview');
+    if (preview) {
+      preview.style.backgroundColor = hex;
+      const icon = preview.querySelector('span');
+      if (icon) {
+        const isLight = /ffeb3b|ffffff|eeeeee|fafafa|fff9c4|f0f4c3/i.test(hex.replace('#', ''));
+        icon.style.color = isLight ? '#212529' : '#ffffff';
       }
     }
   });

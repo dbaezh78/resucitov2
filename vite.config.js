@@ -14,6 +14,14 @@ export default defineConfig({
     port: 5173,
     open: true
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+        perfil: path.resolve(__dirname, 'perfil.html')
+      }
+    }
+  },
   plugins: [
     {
       name: 'save-chord-positions-middleware',

@@ -1,0 +1,314 @@
+/* === ESTILOS DE PERFIL DE SALMISTA (V2) === */
+
+.perfil-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px 12px 80px 12px;
+  font-family: inherit;
+  color: var(--text-color, #212529);
+}
+
+.perfil-title-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--panel-border, rgba(0,0,0,0.1));
+}
+
+.perfil-title-bar h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent-color, #d01212);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Secciones Colapsables */
+.perfil-section {
+  background: var(--panel-bg, #ffffff);
+  border: 1px solid var(--panel-border, rgba(0, 0, 0, 0.1));
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm, 0 2px 10px rgba(0,0,0,0.06));
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid var(--panel-border, rgba(0, 0, 0, 0.08));
+  transition: background 0.2s;
+}
+
+.section-header:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.header-title-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-title-group h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-color, #333);
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+  color: var(--accent-color, #d01212);
+}
+
+.perfil-section.collapsed .arrow-icon {
+  transform: rotate(-90deg);
+}
+
+.section-content {
+  padding: 20px;
+  transition: max-height 0.35s ease, opacity 0.3s ease;
+}
+
+.section-content.cfg-close {
+  display: none;
+}
+
+/* Tarjeta de Usuario / Perfil Header */
+.profile-info-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(208, 18, 18, 0.05);
+  border: 1px solid rgba(208, 18, 18, 0.15);
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.profile-avatar-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color, #d01212);
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.profile-info-details h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-color, #212529);
+}
+
+.profile-info-details p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted, #666);
+}
+
+/* Formulario de Perfil */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted, #555);
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1.5px solid var(--panel-border, #ccc);
+  background: var(--input-bg, #ffffff);
+  color: var(--text-color, #212529);
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--accent-color, #d01212);
+  box-shadow: 0 0 0 3px rgba(208, 18, 18, 0.15);
+}
+
+/* Estilo especial de lectura sin borde ni fondo para Nombre del Salmista */
+#userName,
+.input-user-name {
+  font-size: 1.5rem !important;
+  color: var(--accent-color, #d01212) !important;
+  font-weight: 700 !important;
+  border: none !important;
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 4px 0 !important;
+  cursor: default !important;
+  pointer-events: none;
+}
+
+.btn-guardar {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: var(--accent-color, #d01212);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(208, 18, 18, 0.3);
+  transition: transform 0.15s, background 0.2s;
+}
+
+.btn-guardar:hover {
+  transform: translateY(-1px);
+  background: #b00f0f;
+}
+
+/* Botones de Gestión de Cantos */
+.btn-action-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-action {
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s, opacity 0.2s;
+}
+
+.btn-action:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.btn-sync-cloud {
+  background: #4285F4;
+}
+
+.btn-download-offline {
+  background: #e65100;
+}
+
+/* Tabla de Gestión */
+.tabla-wrapper {
+  overflow-x: auto;
+}
+
+.tabla-gestion {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+.tabla-gestion th {
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--text-color, #333);
+  padding: 10px 12px;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 2px solid var(--panel-border, #ddd);
+}
+
+.tabla-gestion td {
+  padding: 10px 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--panel-border, #eee);
+  color: var(--text-color, #212529);
+}
+
+.tabla-gestion tr:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.listcanto {
+  text-decoration: none;
+  color: var(--accent-color, #d01212);
+  font-weight: 600;
+  transition: color 0.15s;
+  font-size: larger;
+}
+
+.listcanto:hover {
+  text-decoration: underline;
+}
+
+.estrellas-contenedor span {
+  font-size: 1.1rem;
+  user-select: none;
+  transition: transform 0.1s;
+}
+
+.estrellas-contenedor span:hover {
+  transform: scale(1.2);
+}
+
+/* Modales */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+}
+
+.modal-content-card {
+  background: var(--panel-bg, #ffffff);
+  color: var(--text-color, #212529);
+  padding: 24px;
+  border-radius: 20px;
+  max-width: 440px;
+  width: 90%;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+  border: 1px solid var(--panel-border, rgba(0,0,0,0.1));
+}
