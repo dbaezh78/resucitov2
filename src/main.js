@@ -3210,6 +3210,14 @@ function openSettingsTab(tabName = 'general') {
   if (authUpdateBtn) {
     authUpdateBtn.addEventListener('click', async () => {
       try {
+        if (window.mostrarProgreso) {
+          window.mostrarProgreso({
+            titulo: 'Actualizando App',
+            mensaje: 'Limpiando datos de caché y descargando la última versión...',
+            icono: 'system_update'
+          });
+        }
+
         authUpdateBtn.disabled = true;
         authUpdateBtn.textContent = 'Actualizando...';
         
@@ -3231,9 +3239,12 @@ function openSettingsTab(tabName = 'general') {
           console.log('[App] Service Worker desregistrado.');
         }
         
-        // 3. Recargar página (limpia memoria y fuerza recarga de red)
-        window.location.reload(true);
+        // 3. Recargar página
+        setTimeout(() => {
+          window.location.reload(true);
+        }, 1200);
       } catch (err) {
+        if (window.ocultarProgreso) window.ocultarProgreso();
         console.error('Error al actualizar la app:', err);
         alert('Ocurrió un error al actualizar: ' + err.message);
         authUpdateBtn.disabled = false;

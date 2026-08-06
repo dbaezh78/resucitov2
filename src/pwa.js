@@ -17,6 +17,13 @@ export function registerServiceWorker() {
                     // Si se encuentra una nueva versión instalándose
                     registration.addEventListener('updatefound', () => {
                         const newWorker = registration.installing;
+                        if (window.mostrarProgreso) {
+                            window.mostrarProgreso({
+                                titulo: 'Actualizando App',
+                                mensaje: 'Instalando la nueva versión en segundo plano...',
+                                icono: 'system_update'
+                            });
+                        }
                         newWorker.addEventListener('statechange', () => {
                             if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
                                 // Enviar señal para omitir la espera e instalar la nueva versión de inmediato

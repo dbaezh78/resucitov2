@@ -493,6 +493,41 @@
   animation: spinIcon 1.2s linear infinite;
 }
 
+/* Barra de Progreso Verde */
+.green-progress-bar-container {
+  width: 100%;
+  background: rgba(40, 167, 69, 0.15);
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 16px;
+}
+
+@keyframes greenProgressIndeterminate {
+  0% {
+    left: -35%;
+    width: 35%;
+  }
+  60% {
+    left: 100%;
+    width: 50%;
+  }
+  100% {
+    left: 100%;
+    width: 50%;
+  }
+}
+
+.green-progress-bar-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #28a745, #20c997);
+  border-radius: 10px;
+  animation: greenProgressIndeterminate 1.8s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+
 /* Margen inferior en body para que el contenido no quede oculto */
 body {
   padding-bottom: 70px !important;

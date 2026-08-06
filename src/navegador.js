@@ -226,7 +226,7 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
   const customProgressModalHTML = `
     <div id="custom-progress-modal" style="display: none;">
       <div class="settings-modal-content" style="max-width: 360px; width: 88%; padding: 28px 24px; border-radius: 24px; text-align: center;">
-        <div id="custom-progress-badge" style="width: 60px; height: 60px; border-radius: 50%; background: rgba(208, 18, 18, 0.1); color: var(--accent-color, #d01212); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto;">
+        <div id="custom-progress-badge" style="width: 60px; height: 60px; border-radius: 50%; background: rgba(40, 167, 69, 0.12); color: #28a745; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto;">
           <span class="material-symbols-outlined spin-icon" id="custom-progress-icon" style="font-size: 34px;">sync</span>
         </div>
         <h3 id="custom-progress-title" style="margin: 0 0 8px 0; font-size: 1.25rem; color: var(--text-color);">Actualizando App</h3>
@@ -234,8 +234,9 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
           Actualizando la aplicación a la última versión...
         </p>
 
-        <div style="width: 100%; background: rgba(0,0,0,0.08); border-radius: 10px; height: 8px; overflow: hidden; margin-top: 12px;">
-          <div style="width: 100%; height: 100%; background: var(--accent-color, #d01212); border-radius: 10px; animation: spinIcon 2s linear infinite;"></div>
+        <!-- Barra de Progreso Verde -->
+        <div class="green-progress-bar-container">
+          <div id="custom-progress-bar-fill" class="green-progress-bar-fill"></div>
         </div>
       </div>
     </div>
@@ -297,17 +298,30 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
   window.mostrarProgreso = function ({
     titulo = 'Procesando...',
     mensaje = 'Por favor espere un momento...',
-    icono = 'sync'
+    icono = 'sync',
+    porcentaje = null
   } = {}) {
     const modal = document.getElementById('custom-progress-modal');
     const titleEl = document.getElementById('custom-progress-title');
     const messageEl = document.getElementById('custom-progress-message');
     const iconEl = document.getElementById('custom-progress-icon');
+    const fillEl = document.getElementById('custom-progress-bar-fill');
 
     if (modal && titleEl && messageEl && iconEl) {
       titleEl.innerText = titulo;
       messageEl.innerText = mensaje;
       iconEl.innerText = icono;
+
+      if (fillEl) {
+        if (typeof porcentaje === 'number') {
+          fillEl.style.animation = 'none';
+          fillEl.style.left = '0';
+          fillEl.style.width = `${porcentaje}%`;
+        } else {
+          fillEl.style.animation = 'greenProgressIndeterminate 1.8s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite';
+        }
+      }
+
       modal.style.display = 'flex';
     }
   };
