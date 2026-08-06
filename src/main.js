@@ -3046,6 +3046,25 @@ function openSettingsTab(tabName = 'general') {
     if (user) {
       if (authUnauthenticated) authUnauthenticated.style.display = 'none';
       if (authAuthenticated) authAuthenticated.style.display = 'block';
+      
+      const authUserPhoto = document.getElementById('auth-user-photo');
+      const authUserIcon = document.getElementById('auth-user-icon');
+      const authUserWelcome = document.getElementById('auth-user-welcome');
+
+      if (user.photoURL && authUserPhoto) {
+        authUserPhoto.src = user.photoURL;
+        authUserPhoto.style.display = 'block';
+        if (authUserIcon) authUserIcon.style.display = 'none';
+      } else {
+        if (authUserPhoto) authUserPhoto.style.display = 'none';
+        if (authUserIcon) authUserIcon.style.display = 'block';
+      }
+
+      if (authUserWelcome) {
+        const displayName = user.displayName || (user.email ? user.email.split('@')[0] : 'Hermano');
+        authUserWelcome.textContent = `Bienvenido: ${displayName}`;
+      }
+
       if (authUserEmail) authUserEmail.textContent = user.email;
       
       if (authAdminBadge) authAdminBadge.style.display = isAdmin ? 'inline-flex' : 'none';

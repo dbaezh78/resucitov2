@@ -784,8 +784,13 @@
             </div>
             
             <div id="auth-authenticated" style="display: none;">
-              <span class="material-symbols-outlined" style="font-size: 4rem; color: var(--accent-color); margin-bottom: 8px;">account_circle</span>
-              <h4 id="auth-user-email" style="word-break: break-all;">usuario@correo.com</h4>
+              <div id="auth-user-avatar-container" style="display: flex; justify-content: center; margin-bottom: 10px;">
+                <img id="auth-user-photo" src="" alt="Foto de perfil" style="width: 76px; height: 76px; border-radius: 50%; object-fit: cover; border: 2.5px solid var(--accent-color); box-shadow: 0 3px 10px rgba(0,0,0,0.15); display: none;">
+                <span id="auth-user-icon" class="material-symbols-outlined" style="font-size: 4.5rem; color: var(--accent-color);">account_circle</span>
+              </div>
+              
+              <h3 id="auth-user-welcome" style="font-size: 1.15rem; font-weight: 700; color: var(--text-color); margin-bottom: 2px;">Bienvenido</h3>
+              <h4 id="auth-user-email" style="font-size: 0.85rem; color: var(--text-muted); word-break: break-all; margin-bottom: 6px;">usuario@correo.com</h4>
               
               <div id="auth-admin-badge" style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; background-color: rgba(208, 18, 18, 0.15); color: #d01212; padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: 700; margin: 8px auto 16px auto; width: fit-content; border: 1px solid rgba(208, 18, 18, 0.3);">
                 <span class="material-symbols-outlined" style="font-size: 1rem;">admin_panel_settings</span>
