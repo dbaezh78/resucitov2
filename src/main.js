@@ -3277,6 +3277,9 @@ function initPreferences() {
   const initialZoom = getDefaultZoom();
   applyZoom(initialZoom); // no guardar: es el default automático
 
+  // Inicializar preferencia de mantener pantalla encendida (Wake Lock)
+  initWakeLockPreference();
+
   // Ocultar opción de edición de acordes si no es administrador (para futura autenticación)
   const chordEditSettingRow = document.getElementById('chord-edit-setting-row');
   if (chordEditSettingRow) {
@@ -3630,4 +3633,61 @@ function importNotes() {
     reader.readAsText(file);
   };
   input.click();
+}
+
+// --- Wake Lock (Mantener pantalla encendida) ---
+let wakeLock = null;
+
+async function requestWakeLock() {
+  try {
+    if ('wakeLock' in navigator) {
+      wakeLock = await navigator.wakeLock.request('screen');
+      console.log('Screen Wake Lock is active');
+    }
+  } catch (err) {
+    console.warn('Wake Lock request failed:', err);
+  }
+}
+
+function releaseWakeLock() {
+  if (wakeLock !== null) {
+    wakeLock.release();
+    wakeLock = null;
+  }
+}
+
+async function handleVisibilityChange() {
+  if (wakeLock !== null && document.visibilityState === 'visible') {
+    const isWakeLockPrefActive = localStorage.getItem('pref-wakelock') === 'true';
+    if (isWakeLockPrefActive) {
+      await requestWakeLock();
+    }
+  }
+}
+
+function initWakeLockPreference() {
+  const isWakeLockPrefActive = localStorage.getItem('pref-wakelock') === 'true';
+  const wakelockToggle = document.getElementById('wakelock-toggle');
+  
+  if (wakelockToggle) {
+    wakelockToggle.checked = isWakeLockPrefActive;
+    
+    if (isWakeLockPrefActive) {
+      requestWakeLock();
+      document.addEventListener('visibilitychange', handleVisibilityChange);
+    }
+
+    wakelockToggle.addEventListener('change', async (e) => {
+      const active = e.target.checked;
+      localStorage.setItem('pref-wakelock', active ? 'true' : 'false');
+      
+      if (active) {
+        await requestWakeLock();
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+      } else {
+        releaseWakeLock();
+        document.removeEventListener('visibilitychange', handleVisibilityChange);
+      }
+    });
+  }
 }
