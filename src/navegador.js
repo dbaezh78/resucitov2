@@ -651,7 +651,10 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
   let autoHideTimer;
   function startAutoHideTimer() {
     const isEnabled = localStorage.getItem('pref-autohide-nav') === 'true';
-    if (!isEnabled) return;
+    if (!isEnabled) {
+      if (autoHideTimer) clearTimeout(autoHideTimer);
+      return;
+    }
 
     clearTimeout(autoHideTimer);
     autoHideTimer = setTimeout(() => {
@@ -661,6 +664,7 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
       }
     }, 30000);
   }
+  window.startAutoHideTimer = startAutoHideTimer;
 
   document.addEventListener('mousemove', startAutoHideTimer);
   document.addEventListener('touchstart', startAutoHideTimer);

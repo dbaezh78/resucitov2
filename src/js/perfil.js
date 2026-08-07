@@ -1,12 +1,21 @@
 // src/js/perfil.js - Lógica del Perfil de Salmista (Resucitó v2)
-import { auth, db, doc, getDoc, setDoc } from '../firebase.js';
+import { auth, db, doc, getDoc, setDoc, collection, getDocs } from '../firebase.js';
 import { onAuthStateChanged, getCurrentUser } from '../auth.js';
 import { songs } from '../songs-data.js';
 
 const MAPA_ACORDES = {
-  "0": "La m", "1": "Si b m", "2": "Si m", "3": "Do m",
-  "4": "Do# m", "5": "Re m", "6": "Re# m", "7": "Mi m",
-  "8": "Fa m", "9": "Fa# m", "10": "Sol m", "11": "Sol# m"
+  "0": "Do",
+  "1": "Do#",
+  "2": "Re",
+  "3": "Re#",
+  "4": "Mi",
+  "5": "Fa",
+  "6": "Fa#",
+  "7": "Sol",
+  "8": "Sol#",
+  "9": "La",
+  "10": "Sib",
+  "11": "Si"
 };
 
 // Normalizador de texto para búsqueda limpia
@@ -258,16 +267,40 @@ window.guardarPerfil = async function () {
   }
 };
 
+let cacheFirestoreCantos = {};
+
+async function cargarDatosFirestoreCantos() {
+  const user = getCurrentUser() || auth.currentUser;
+  if (!user) return;
+
+  try {
+    const dbdataRef = collection(db, "usuarios", user.uid, "dbdata");
+    const snap = await getDocs(dbdataRef);
+    snap.forEach(docSnap => {
+      const songKey = docSnap.id.toLowerCase().trim();
+      const dataDoc = docSnap.data();
+      const val = dataDoc.valor || dataDoc;
+      cacheFirestoreCantos[songKey] = val;
+    });
+  } catch (e) {
+    console.warn("⚠️ Error cargando dbdata de Firestore:", e);
+  }
+}
+
 // Renderizado de Tabla de Cantos
 async function renderizarTablaCantos() {
   const contenedor = document.getElementById('lista-cantos-gestion');
   if (!contenedor) return;
 
-  const cantos = (songs || []).filter(c => 
-    c.id !== 'cancionero' && 
-    c.id !== 'Salmodias' && 
-    c.visible !== 'index' && 
-    !c.title?.toLowerCase().includes('indice cancionero')
+  if (Object.keys(cacheFirestoreCantos).length === 0) {
+    await cargarDatosFirestoreCantos();
+  }
+
+  // Filtrar cantos que tengan ID válido
+  const cantos = songs.filter(s => s.id);
+
+  cantos.sort((a, b) => 
+    normalizarTexto(a.title || a.titulo).localeCompare(normalizarTexto(b.title || b.titulo))
   );
 
   if (cantos.length === 0) {
@@ -298,21 +331,45 @@ async function renderizarTablaCantos() {
 
   cantos.forEach(canto => {
     const cantoId = canto.id;
+    const cleanId = cantoId.toLowerCase().trim();
+
     const keyData = localStorage.getItem(`canto-config-${cantoId}`) || localStorage.getItem(`data-${cantoId}`);
     let datosRAM = null;
     if (keyData) {
       try { datosRAM = JSON.parse(keyData); } catch (e) {}
     }
 
-    const cejillaVisual = datosRAM ? (datosRAM.cejilla || datosRAM.capo || "0") : "-";
-    const numAcorde = datosRAM ? String(datosRAM.acorde || datosRAM.key || 0) : "0";
-    const acordeTexto = MAPA_ACORDES[numAcorde] || "La m";
+    const datosFS = cacheFirestoreCantos[cleanId] || null;
+    const datosFinales = datosRAM || datosFS;
+
+    let cejillaVisual = "-";
+    if (datosFinales && (datosFinales.cejilla !== undefined || datosFinales.capo !== undefined)) {
+      const cVal = String(datosFinales.cejilla ?? datosFinales.capo).trim();
+      if (cVal !== "") cejillaVisual = cVal;
+    }
+
+    let acordeTexto = "-";
+    if (datosFinales && (datosFinales.acorde !== undefined || datosFinales.key !== undefined)) {
+      const numAc = String(datosFinales.acorde ?? datosFinales.key).trim();
+      if (MAPA_ACORDES[numAc] !== undefined) {
+        acordeTexto = MAPA_ACORDES[numAc];
+      } else if (numAc !== "") {
+        acordeTexto = numAc;
+      }
+    }
 
     let fechaTexto = "---";
-    if (datosRAM && (datosRAM.fecha || datosRAM.valor)) {
-      const fRaw = datosRAM.fecha || datosRAM.valor;
-      const f = new Date(fRaw);
-      if (!isNaN(f.getTime())) {
+    if (datosFinales && (datosFinales.fecha || datosFinales.valor)) {
+      const fRaw = datosFinales.fecha || datosFinales.valor;
+      let f = null;
+      if (fRaw && typeof fRaw.toDate === 'function') {
+        f = fRaw.toDate();
+      } else if (fRaw && fRaw.seconds) {
+        f = new Date(fRaw.seconds * 1000);
+      } else if (fRaw) {
+        f = new Date(fRaw);
+      }
+      if (f && !isNaN(f.getTime())) {
         const meses = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
         fechaTexto = `${String(f.getDate()).padStart(2, '0')} ${meses[f.getMonth()]}`;
       }
@@ -329,13 +386,13 @@ async function renderizarTablaCantos() {
           </a>
         </td>
         <td id="valoracion-${cantoId}">
-          ${renderEstrellas(cantoId, datosRAM?.valoracion || 0)}
+          ${renderEstrellas(cantoId, datosFinales?.valoracion || 0)}
         </td>
         <td id="uso-${cantoId}">
           ${fechaTexto} <span onclick="window.abrirCalendario('${cantoId}', '${nombreMostrar.replace(/'/g, "\\'")}')" style="cursor:pointer; font-size:16px;">📅</span>
         </td>
         <td>${canto.cejilla || 0} / <b id="cejilla-tu-${cantoId}" style="color: var(--accent-color, #d01212);">${cejillaVisual}</b></td>
-        <td>${canto.acorde || 'La m'} / <b id="acorde-tu-${cantoId}" style="color: var(--accent-color, #d01212);">${acordeTexto}</b></td>
+        <td>${canto.acorde || 'La'} / <b id="acorde-tu-${cantoId}" style="color: var(--accent-color, #d01212);">${acordeTexto}</b></td>
       </tr>
     `;
   });
@@ -390,49 +447,550 @@ window.guardarValoracion = function(cantoId, rating) {
   if (celda) celda.innerHTML = renderEstrellas(cantoId, rating);
 };
 
-// Abrir Calendario de Historial de Uso
-window.abrirCalendario = function(cantoId, titulo) {
+// Abrir Calendario de Historial de Uso (Estilo Resucitó v1)
+let calendarCurrentYear = new Date().getFullYear();
+let calendarCurrentMonth = new Date().getMonth();
+let calendarActiveSongId = null;
+let calendarActiveSongTitle = '';
+let calendarViewMode = 'days'; // 'days' | 'months' | 'years'
+let calendarHistorialCache = [];
+
+window.abrirCalendario = async function(cantoId, titulo) {
+  calendarActiveSongId = cantoId;
+  calendarActiveSongTitle = titulo;
+  calendarViewMode = 'days';
+  calendarHistorialCache = [];
+
   const modal = document.getElementById('modalCalendario');
   const nombreEl = document.getElementById('nombreCantoCalendario');
-  const calendarioEl = document.getElementById('calendarioDinamico');
+  const container = document.getElementById('calendarioDinamico');
 
-  if (!modal || !calendarioEl) return;
-
+  if (!modal) return;
   if (nombreEl) nombreEl.innerText = titulo || `Canto #${cantoId}`;
 
-  const keyData = localStorage.getItem(`canto-config-${cantoId}`) || localStorage.getItem(`data-${cantoId}`);
-  let fechaUso = null;
-  if (keyData) {
-    try {
-      const parsed = JSON.parse(keyData);
-      fechaUso = parsed.fecha || parsed.valor || null;
-    } catch (e) {}
-  }
-
-  if (fechaUso) {
-    const f = new Date(fechaUso);
-    calendarioEl.innerHTML = `
-      <p style="text-align: center; font-size: 1.1rem; color: var(--text-color);">
-        🗓️ Última vez utilizado el: <br>
-        <strong style="color: var(--accent-color, #d01212); font-size: 1.2rem;">${f.toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</strong>
-      </p>
-    `;
-  } else {
-    calendarioEl.innerHTML = `
-      <p style="text-align: center; color: var(--text-muted, #666);">
-        Sin registro de uso reciente para este canto.
-      </p>
+  if (container) {
+    container.innerHTML = `
+      <div style="text-align: center; padding: 40px 10px; color: #777;">
+        <div class="spinner" style="border: 3px solid rgba(0,0,0,0.1); border-top: 3px solid #d4af37; border-radius: 50%; width: 28px; height: 28px; animation: spin 1s linear infinite; margin: 0 auto 12px;"></div>
+        <p style="margin: 0; font-size: 0.9rem;">Cargando historial desde Firebase...</p>
+      </div>
     `;
   }
-
   modal.style.display = 'flex';
+
+  // 1. Obtener registros directamente desde Firebase Firestore
+  const user = getCurrentUser() || auth.currentUser;
+  if (user) {
+    try {
+      const cleanCantoId = cantoId.toLowerCase().trim();
+      const historialRef = collection(db, "usuarios", user.uid, "dbdata", cleanCantoId, "historial");
+      const snap = await getDocs(historialRef);
+
+      snap.forEach(docSnap => {
+        const idDoc = docSnap.id;
+        const dataDoc = docSnap.data();
+        const val = dataDoc.valor || dataDoc;
+
+        let dateObj = null;
+        if (val.fecha) {
+          if (typeof val.fecha.toDate === 'function') {
+            dateObj = val.fecha.toDate();
+          } else if (val.fecha.seconds) {
+            dateObj = new Date(val.fecha.seconds * 1000);
+          } else if (!isNaN(new Date(val.fecha).getTime())) {
+            dateObj = new Date(val.fecha);
+          }
+        }
+        if (!dateObj || isNaN(dateObj.getTime())) {
+          const tsNum = Number(idDoc);
+          if (!isNaN(tsNum)) {
+            dateObj = new Date(tsNum);
+          } else {
+            dateObj = new Date();
+          }
+        }
+
+        calendarHistorialCache.push({
+          id: idDoc,
+          timestamp: dateObj.getTime(),
+          dateObj: dateObj,
+          acorde: val.acorde,
+          cejilla: val.cejilla,
+          valoracion: val.valoracion,
+          detalle: `Acorde: ${val.acorde !== undefined ? val.acorde : '-'}, Cejilla: ${val.cejilla || '0'}`
+        });
+      });
+    } catch (e) {
+      console.warn("⚠️ Error cargando historial desde Firebase:", e);
+    }
+  }
+
+  // 2. Fallback a localStorage si Firestore no contiene ítems
+  if (calendarHistorialCache.length === 0) {
+    const keyData = localStorage.getItem(`canto-config-${cantoId}`) || localStorage.getItem(`data-${cantoId}`);
+    if (keyData) {
+      try {
+        const parsed = JSON.parse(keyData);
+        const localHist = Array.isArray(parsed.historial) ? parsed.historial : [];
+        localHist.forEach(h => {
+          if (h && h.fecha) {
+            const f = new Date(h.fecha);
+            if (!isNaN(f.getTime())) {
+              calendarHistorialCache.push({
+                timestamp: f.getTime(),
+                dateObj: f,
+                acorde: h.acorde !== undefined ? h.acorde : (parsed.acorde || parsed.key || "0"),
+                cejilla: h.cejilla !== undefined ? h.cejilla : (parsed.cejilla || parsed.capo || "0"),
+                valoracion: parsed.valoracion || 0,
+                detalle: h.detalle || 'Uso registrado'
+              });
+            }
+          }
+        });
+        if (calendarHistorialCache.length === 0 && (parsed.fecha || parsed.valor)) {
+          const f = new Date(parsed.fecha || parsed.valor);
+          if (!isNaN(f.getTime())) {
+            calendarHistorialCache.push({
+              timestamp: f.getTime(),
+              dateObj: f,
+              acorde: parsed.acorde || parsed.key || "0",
+              cejilla: parsed.cejilla || parsed.capo || "0",
+              valoracion: parsed.valoracion || 0,
+              detalle: 'Uso registrado'
+            });
+          }
+        }
+      } catch (e) {}
+    }
+  }
+
+  // 3. Establecer mes y año inicial según el registro más reciente
+  if (calendarHistorialCache.length > 0) {
+    calendarHistorialCache.sort((a, b) => b.timestamp - a.timestamp);
+    const masReciente = calendarHistorialCache[0].dateObj;
+    calendarCurrentYear = masReciente.getFullYear();
+    calendarCurrentMonth = masReciente.getMonth();
+  } else {
+    const hoy = new Date();
+    calendarCurrentYear = hoy.getFullYear();
+    calendarCurrentMonth = hoy.getMonth();
+  }
+
+  renderizarCalendarioMes();
 };
 
-// Cerrar modal calendario
+function renderizarCalendarioMes() {
+  const container = document.getElementById('calendarioDinamico');
+  if (!container || !calendarActiveSongId) return;
+
+  const mapaFechas = {};
+  calendarHistorialCache.forEach(item => {
+    if (item && item.dateObj) {
+      const f = item.dateObj;
+      const keyFecha = `${f.getFullYear()}-${String(f.getMonth() + 1).padStart(2, '0')}-${String(f.getDate()).padStart(2, '0')}`;
+      if (!mapaFechas[keyFecha]) mapaFechas[keyFecha] = [];
+      mapaFechas[keyFecha].push(item);
+    }
+  });
+
+  const totalCambios = calendarHistorialCache.length;
+  const nombresMeses = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"];
+  const nombreMes = nombresMeses[calendarCurrentMonth];
+
+  if (calendarViewMode === 'months') {
+    let mesesGrid = '';
+    nombresMeses.forEach((mNombre, idx) => {
+      const isCurrent = idx === calendarCurrentMonth;
+      const bg = isCurrent ? '#d4af37' : 'var(--panel-bg, #ffffff)';
+      const color = isCurrent ? '#ffffff' : 'var(--text-color, #333)';
+      const shadow = isCurrent ? 'box-shadow: 0 3px 8px rgba(212, 175, 55, 0.4);' : 'border: 1px solid var(--panel-border, rgba(0,0,0,0.1));';
+      mesesGrid += `
+        <button class="cal-select-month-btn" data-month="${idx}" style="background: ${bg}; color: ${color}; ${shadow} padding: 12px 6px; border-radius: 0px; font-weight: 700; font-size: 0.85rem; cursor: pointer; border: none; text-transform: uppercase;">
+          ${mNombre.slice(0, 3)}
+        </button>
+      `;
+    });
+
+    container.innerHTML = `
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+        <span style="font-size: 1.1rem; font-weight: 700; color: var(--text-color);">Seleccionar Mes</span>
+        <button id="btn-cal-year-trigger" style="background: rgba(0,0,0,0.08); border: none; border-radius: 8px; padding: 6px 12px; font-weight: 800; cursor: pointer; color: var(--accent-color, #d01212); font-size: 0.95rem;">
+          ${calendarCurrentYear} ▾
+        </button>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px;">
+        ${mesesGrid}
+      </div>
+
+      <div style="text-align: center; margin-top: 10px;">
+        <button id="btn-cal-cancel-nav" style="background: transparent; border: none; color: var(--text-muted, #777); font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: underline;">Volver al Calendario</button>
+      </div>
+    `;
+
+    document.getElementById('btn-cal-year-trigger')?.addEventListener('click', () => {
+      calendarViewMode = 'years';
+      renderizarCalendarioMes();
+    });
+
+    document.getElementById('btn-cal-cancel-nav')?.addEventListener('click', () => {
+      calendarViewMode = 'days';
+      renderizarCalendarioMes();
+    });
+
+    container.querySelectorAll('.cal-select-month-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        calendarCurrentMonth = parseInt(btn.dataset.month);
+        calendarViewMode = 'days';
+        renderizarCalendarioMes();
+      });
+    });
+
+    return;
+  }
+
+  if (calendarViewMode === 'years') {
+    const startYear = 2020;
+    const endYear = new Date().getFullYear() + 5;
+    let añosGrid = '';
+    for (let y = startYear; y <= endYear; y++) {
+      const isCurrent = y === calendarCurrentYear;
+      const bg = isCurrent ? '#d4af37' : 'var(--panel-bg, #ffffff)';
+      const color = isCurrent ? '#ffffff' : 'var(--text-color, #333)';
+      const shadow = isCurrent ? 'box-shadow: 0 3px 8px rgba(212, 175, 55, 0.4);' : 'border: 1px solid var(--panel-border, rgba(0,0,0,0.1));';
+      añosGrid += `
+        <button class="cal-select-year-btn" data-year="${y}" style="background: ${bg}; color: ${color}; ${shadow} padding: 12px 6px; border-radius: 10px; font-weight: 700; font-size: 0.95rem; cursor: pointer; border: none;">
+          ${y}
+        </button>
+      `;
+    }
+
+    container.innerHTML = `
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+        <span style="font-size: 1.1rem; font-weight: 700; color: var(--text-color);">Seleccionar Año</span>
+        <button id="btn-cal-back-to-months" style="background: rgba(0,0,0,0.08); border: none; border-radius: 8px; padding: 6px 12px; font-weight: 700; cursor: pointer; color: var(--text-color); font-size: 0.85rem;">
+          Meses
+        </button>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; max-height: 240px; overflow-y: auto; padding-right: 4px; margin-bottom: 16px;">
+        ${añosGrid}
+      </div>
+
+      <div style="text-align: center; margin-top: 10px;">
+        <button id="btn-cal-cancel-nav-years" style="background: transparent; border: none; color: var(--text-muted, #777); font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: underline;">Volver al Calendario</button>
+      </div>
+    `;
+
+    document.getElementById('btn-cal-back-to-months')?.addEventListener('click', () => {
+      calendarViewMode = 'months';
+      renderizarCalendarioMes();
+    });
+
+    document.getElementById('btn-cal-cancel-nav-years')?.addEventListener('click', () => {
+      calendarViewMode = 'days';
+      renderizarCalendarioMes();
+    });
+
+    container.querySelectorAll('.cal-select-year-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        calendarCurrentYear = parseInt(btn.dataset.year);
+        calendarViewMode = 'months';
+        renderizarCalendarioMes();
+      });
+    });
+
+    return;
+  }
+
+  const primerDiaSemana = new Date(calendarCurrentYear, calendarCurrentMonth, 1).getDay();
+  const diasEnMes = new Date(calendarCurrentYear, calendarCurrentMonth + 1, 0).getDate();
+
+  let diasHtml = '';
+  for (let i = 0; i < primerDiaSemana; i++) {
+    diasHtml += `<div></div>`;
+  }
+
+  for (let d = 1; d <= diasEnMes; d++) {
+    const keyFecha = `${calendarCurrentYear}-${String(calendarCurrentMonth + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+    const tieneActividad = !!mapaFechas[keyFecha];
+    
+    if (tieneActividad) {
+      diasHtml += `
+        <div class="dia-calendario activo" data-fecha="${keyFecha}" style="background: #d4af37; color: #ffffff; font-weight: 800; border-radius: 0px; padding: 6px 0; text-align: center; cursor: pointer; box-shadow: 0 3px 8px rgba(212, 175, 55, 0.4); font-size: 0.95rem;">
+          ${d}
+        </div>
+      `;
+    } else {
+      diasHtml += `
+        <div class="dia-calendario" style="color: var(--text-color, #333); font-weight: 500; padding: 6px 0; text-align: center; font-size: 0.95rem;">
+          ${d}
+        </div>
+      `;
+    }
+  }
+
+  container.innerHTML = `
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+      <button id="btn-cal-prev" style="background: rgba(0,0,0,0.08); border: none; border-radius: 6px; padding: 4px 14px; font-weight: bold; cursor: pointer; color: var(--text-color); font-size: 1rem;">&lt;</button>
+      
+      <button id="btn-cal-title-selector" class="cCalendar" title="Toca para cambiar Mes y Año">
+        <span>${nombreMes} ${calendarCurrentYear}</span>
+        <span style="font-size: 0.75rem; color: var(--accent-color, #d01212);">▼</span>
+      </button>
+
+      <button id="btn-cal-next" style="background: rgba(0,0,0,0.08); border: none; border-radius: 6px; padding: 4px 14px; font-weight: bold; cursor: pointer; color: var(--text-color); font-size: 1rem;">&gt;</button>
+    </div>
+
+    <div style="background: var(--input-bg, #fafafa); border: 1px solid var(--panel-border, rgba(0,0,0,0.08)); border-radius: 12px; padding: 12px; margin-bottom: 16px;">
+      <div style="display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; font-weight: 700; font-size: 0.8rem; color: var(--text-muted, #777); margin-bottom: 10px;">
+        <div>D</div><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; align-items: center;">
+        ${diasHtml}
+      </div>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid var(--panel-border, rgba(0,0,0,0.1)); margin: 14px 0;">
+
+    <div style="text-align: center;">
+      <p style="margin: 0; font-size: 0.95rem; color: var(--text-color);">
+        Has cambiado el Acordes o Cejilla <b id="btn-ver-reporte-historial" style="color: #d01212; border-bottom: 2px solid #d01212; font-size: 1.15rem; cursor: pointer;" title="Toca para ver el reporte de historial">${totalCambios}</b> veces
+      </p>
+      <p style="margin: 4px 0 0 0; font-size: 0.75rem; color: var(--text-muted, #888); font-style: italic;">
+        (Toca el número para ver el detalle)
+      </p>
+    </div>
+
+    <div id="cal-detalle-box" style="display: none; margin-top: 12px; background: rgba(0,0,0,0.03); border: 1px solid var(--panel-border); border-radius: 8px; padding: 10px; font-size: 0.8rem;"></div>
+  `;
+
+  document.getElementById('btn-ver-reporte-historial')?.addEventListener('click', () => {
+    window.abrirReporteHistorial(calendarActiveSongId, calendarActiveSongTitle);
+  });
+
+  document.getElementById('btn-cal-title-selector')?.addEventListener('click', () => {
+    calendarViewMode = 'months';
+    renderizarCalendarioMes();
+  });
+
+  document.getElementById('btn-cal-prev')?.addEventListener('click', () => {
+    calendarCurrentMonth--;
+    if (calendarCurrentMonth < 0) {
+      calendarCurrentMonth = 11;
+      calendarCurrentYear--;
+    }
+    renderizarCalendarioMes();
+  });
+
+  document.getElementById('btn-cal-next')?.addEventListener('click', () => {
+    calendarCurrentMonth++;
+    if (calendarCurrentMonth > 11) {
+      calendarCurrentMonth = 0;
+      calendarCurrentYear++;
+    }
+    renderizarCalendarioMes();
+  });
+
+  container.querySelectorAll('.dia-calendario.activo').forEach(diaBtn => {
+    diaBtn.addEventListener('click', () => {
+      const fechaKey = diaBtn.dataset.fecha;
+      const eventos = mapaFechas[fechaKey] || [];
+      const box = document.getElementById('cal-detalle-box');
+      if (!box) return;
+
+      if (eventos.length > 0) {
+        const partesFecha = fechaKey.split('-');
+        const fechaLegible = `${partesFecha[2]}/${partesFecha[1]}/${partesFecha[0]}`;
+        box.innerHTML = `
+          <strong style="color: var(--accent-color, #d01212);">📅 Detalle del ${fechaLegible}:</strong>
+          <ul style="margin: 6px 0 0 0; padding-left: 18px;">
+            ${eventos.map(ev => {
+              const hora = ev.fecha ? new Date(ev.fecha).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '';
+              return `<li>${ev.detalle || 'Actividad registrada'} ${hora ? `(${hora})` : ''}</li>`;
+            }).join('')}
+          </ul>
+        `;
+        box.style.display = 'block';
+      }
+    });
+  });
+}
+
+// Abrir Modal de Reporte Tu Historial
+window.abrirReporteHistorial = async function(cantoId, titulo) {
+  const modal = document.getElementById('modalReporteHistorial');
+  const tituloEl = document.getElementById('reporteCantoTitulo');
+  const listaEl = document.getElementById('reporteHistorialLista');
+
+  if (!modal || !listaEl) return;
+  if (tituloEl) tituloEl.textContent = titulo || `Canto #${cantoId}`;
+
+  listaEl.innerHTML = `
+    <div style="text-align: center; padding: 30px 10px; color: #777;">
+      <div class="spinner" style="border: 3px solid rgba(0,0,0,0.1); border-top: 3px solid #d4af37; border-radius: 50%; width: 26px; height: 26px; animation: spin 1s linear infinite; margin: 0 auto 10px;"></div>
+      <p style="margin: 0; font-size: 0.85rem;">Cargando tu historial desde la nube...</p>
+    </div>
+  `;
+  modal.style.display = 'flex';
+
+  const user = getCurrentUser() || auth.currentUser;
+  let itemsHistorial = [];
+
+  // 1. Obtener registros desde Firestore (/usuarios/{uid}/dbdata/{cantoId}/historial)
+  if (user) {
+    try {
+      const cleanCantoId = cantoId.toLowerCase().trim();
+      const historialRef = collection(db, "usuarios", user.uid, "dbdata", cleanCantoId, "historial");
+      const snap = await getDocs(historialRef);
+
+      snap.forEach(docSnap => {
+        const idDoc = docSnap.id;
+        const dataDoc = docSnap.data();
+        const val = dataDoc.valor || dataDoc;
+        
+        let dateObj = null;
+        if (val.fecha) {
+          if (typeof val.fecha.toDate === 'function') {
+            dateObj = val.fecha.toDate();
+          } else if (val.fecha.seconds) {
+            dateObj = new Date(val.fecha.seconds * 1000);
+          } else if (!isNaN(new Date(val.fecha).getTime())) {
+            dateObj = new Date(val.fecha);
+          }
+        }
+        if (!dateObj || isNaN(dateObj.getTime())) {
+          const tsNum = Number(idDoc);
+          if (!isNaN(tsNum)) {
+            dateObj = new Date(tsNum);
+          } else {
+            dateObj = new Date();
+          }
+        }
+
+        itemsHistorial.push({
+          timestamp: dateObj.getTime(),
+          dateObj: dateObj,
+          acorde: val.acorde,
+          cejilla: val.cejilla,
+          valoracion: val.valoracion
+        });
+      });
+    } catch (err) {
+      console.warn("⚠️ Error leyendo historial desde Firestore:", err);
+    }
+  }
+
+  // 2. Si Firestore no tiene datos o está offline, usar localStorage
+  if (itemsHistorial.length === 0) {
+    const keyData = localStorage.getItem(`canto-config-${cantoId}`) || localStorage.getItem(`data-${cantoId}`);
+    if (keyData) {
+      try {
+        const parsed = JSON.parse(keyData);
+        const localHist = Array.isArray(parsed.historial) ? parsed.historial : [];
+        localHist.forEach(h => {
+          if (h && h.fecha) {
+            const f = new Date(h.fecha);
+            if (!isNaN(f.getTime())) {
+              itemsHistorial.push({
+                timestamp: f.getTime(),
+                dateObj: f,
+                acorde: h.acorde !== undefined ? h.acorde : (parsed.acorde || parsed.key || "0"),
+                cejilla: h.cejilla !== undefined ? h.cejilla : (parsed.cejilla || parsed.capo || "0"),
+                valoracion: parsed.valoracion || 0
+              });
+            }
+          }
+        });
+        if (itemsHistorial.length === 0 && (parsed.fecha || parsed.valor)) {
+          const f = new Date(parsed.fecha || parsed.valor);
+          if (!isNaN(f.getTime())) {
+            itemsHistorial.push({
+              timestamp: f.getTime(),
+              dateObj: f,
+              acorde: parsed.acorde || parsed.key || "0",
+              cejilla: parsed.cejilla || parsed.capo || "0",
+              valoracion: parsed.valoracion || 0
+            });
+          }
+        }
+      } catch (e) {}
+    }
+  }
+
+  if (itemsHistorial.length === 0) {
+    listaEl.innerHTML = `
+      <div style="text-align: center; padding: 30px 10px; color: #777;">
+        <span class="material-symbols-outlined" style="font-size: 40px; color: #ccc; margin-bottom: 8px;">history</span>
+        <p style="margin: 0; font-size: 0.9rem;">No hay registros de historial de cejilla o acorde para este canto.</p>
+      </div>
+    `;
+    return;
+  }
+
+  // Ordenar de más reciente a más antiguo
+  itemsHistorial.sort((a, b) => b.timestamp - a.timestamp);
+
+  const total = itemsHistorial.length;
+  const meses = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+
+  let htmlLista = '';
+  itemsHistorial.forEach((item, idx) => {
+    const numRef = total - idx; // #28, #27... #1
+    const d = item.dateObj;
+    const dia = String(d.getDate()).padStart(2, '0');
+    const mes = meses[d.getMonth()];
+    const anio = d.getFullYear();
+    const hora = String(d.getHours()).padStart(2, '0');
+    const min = String(d.getMinutes()).padStart(2, '0');
+    const fechaTexto = `${dia} ${mes} ${anio} - ${hora}:${min}`;
+
+    let acordeNombre = "-";
+    if (item.acorde !== undefined && item.acorde !== null) {
+      const rawAc = String(item.acorde).trim();
+      if (MAPA_ACORDES[rawAc] !== undefined) {
+        acordeNombre = MAPA_ACORDES[rawAc];
+      } else if (rawAc !== "") {
+        acordeNombre = rawAc;
+      }
+    }
+
+    const cejillaNum = item.cejilla !== undefined && item.cejilla !== null ? String(item.cejilla) : "0";
+
+    htmlLista += `
+      <div style="padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.06); display: flex; flex-direction: column; gap: 6px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem;">
+          <span style="color: #888; font-weight: 500;">${fechaTexto}</span>
+          <span style="color: #d4af37; font-weight: 800; font-size: 0.85rem;">#${numRef}</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; align-items: center; gap: 6px; font-weight: 800; font-size: 1.05rem; color: #212529;">
+            <span style="font-size: 1rem;">🎸</span>
+            <span>${acordeNombre}</span>
+          </div>
+          <div style="background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 12px; font-weight: 700; font-size: 0.85rem; color: #333; display: flex; align-items: center; gap: 4px;">
+            <span style="font-size: 0.9rem;">🗜️</span>
+            <span>${cejillaNum}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+
+  listaEl.innerHTML = htmlLista;
+};
+
+// Cerrar modales (Calendario y Reporte Historial)
 document.addEventListener('click', (e) => {
-  const modal = document.getElementById('modalCalendario');
-  const closeBtn = document.getElementById('closeCalendario');
-  if (modal && (e.target === modal || e.target === closeBtn)) {
-    modal.style.display = 'none';
+  const modalCal = document.getElementById('modalCalendario');
+  const closeCal = document.getElementById('closeCalendario');
+  if (modalCal && (e.target === modalCal || e.target === closeCal)) {
+    modalCal.style.display = 'none';
+  }
+
+  const modalRep = document.getElementById('modalReporteHistorial');
+  const closeRep = document.getElementById('closeReporteHistorial');
+  if (modalRep && (e.target === modalRep || e.target === closeRep)) {
+    modalRep.style.display = 'none';
   }
 });

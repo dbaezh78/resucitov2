@@ -31,18 +31,26 @@ export function searchSongs(songs, query, activeStage = null, activeMoments = []
     const cleanQuery = normalizeText(query);
     const gluedQuery = cleanQuery.replace(/\s/g, ""); // Quitar todos los espacios para búsqueda elástica
 
+    // Convertir activeMoments a Array si se pasa como Set o Array
+    const momentsArray = Array.isArray(activeMoments) ? activeMoments : (activeMoments ? Array.from(activeMoments) : []);
+
     return songs.filter(song => {
         // 1. Filtrado por Etapa
-        if (activeStage && song.stage.toLowerCase() !== activeStage.toLowerCase()) {
+        if (activeStage && normalizeText(song.stage || '') !== normalizeText(activeStage)) {
             return false;
         }
 
         // 2. Filtrado por Momentos Litúrgicos / Categorías
-        if (activeMoments.length > 0) {
-            const songMoments = (song.category || []).map(m => normalizeText(m));
-            const matchesAllMoments = activeMoments.every(moment => {
+        if (momentsArray.length > 0) {
+            const rawCategory = song.category || song.moments || [];
+            const songCategoryList = Array.isArray(rawCategory) ? rawCategory : (rawCategory ? [rawCategory] : []);
+            const songMoments = songCategoryList.map(m => normalizeText(m));
+            const songStageClean = normalizeText(song.stage || '');
+
+            const matchesAllMoments = momentsArray.every(moment => {
                 const cleanMoment = normalizeText(moment);
                 return songMoments.includes(cleanMoment) ||
+                       songStageClean === cleanMoment ||
                        (cleanMoment === 'aclamacion' && song.sourceBook === 'aclamaciones') ||
                        (cleanMoment === 'catolicos' && (songMoments.includes('catolicos') || song.sourceBook === 'joven'));
             });

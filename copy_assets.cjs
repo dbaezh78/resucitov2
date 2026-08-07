@@ -31,7 +31,7 @@ if (!fs.existsSync(distPath)) {
 console.log('--- COPIANDO ACTIVOS A LA CARPETA DIST ---');
 
 // Copy folders
-const folders = ['data', 'ima', 'img'];
+const folders = ['data', 'ima', 'img', 'fonts'];
 folders.forEach(folder => {
     const src = path.resolve(__dirname, folder);
     const dest = path.resolve(distPath, folder);

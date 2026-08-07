@@ -312,3 +312,18 @@
   box-shadow: 0 16px 40px rgba(0,0,0,0.4);
   border: 1px solid var(--panel-border, rgba(0,0,0,0.1));
 }
+
+.cCalendar {
+  
+  
+  
+  padding: 5px 12px; 
+  font-size: 1.15rem; 
+  font-weight: 800; 
+  color: var(--text-color); 
+  letter-spacing: 0.5px;
+  cursor: pointer; 
+  display: flex; 
+  align-items: center; 
+  gap: 6px;
+}

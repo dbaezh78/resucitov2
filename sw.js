@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v66'; // Incrementado para forzar actualización
+const CACHE_NAME = 'resucito-cache-v108'; // Incrementado para forzar actualización inmediata
 const STATIC_ASSETS = [
   './',
   'index.html',
@@ -61,14 +61,14 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Comprobar si es un recurso core (HTML, JS, CSS)
-  const isCoreResource = 
+  // Comprobar si es un recurso de código/interfaz (HTML, JS, CSS)
+  const isCodeResource = 
     url.pathname === '/' || 
     url.pathname.endsWith('index.html') || 
-    url.pathname.endsWith('.js') || 
-    url.pathname.endsWith('.css');
+    url.pathname.includes('.js') || 
+    url.pathname.includes('.css');
 
-  if (isCoreResource) {
+  if (isCodeResource) {
     // ESTRATEGIA: Network-First (Intentar red primero, si falla usar caché)
     // Esto asegura que las actualizaciones se vean al instante sin perder el modo sin conexión
     event.respondWith(

@@ -36,17 +36,17 @@ let zoomFactor = 1.0;
 let transitionDirection = null;
 let loadedSongsCache = {}; // Cache de cantos con letra y acordes completos
 
-// Zoom por defecto según dispositivo
+// Zoom por defecto según dispositivo (tc: Tablet y Celular)
 function getDefaultZoom() {
-  const w = window.innerWidth;
-  // Solo usar el guardado si el usuario lo cambió manualmente
+  // Si el usuario ajustó manualmente el zoom en la interfaz/ajustes, respetar esa preferencia
   if (localStorage.getItem('font-zoom-custom') === 'true') {
     const saved = localStorage.getItem('font-zoom');
     if (saved) return parseFloat(saved);
   }
-  if (w <= 384)  return 0.7;   // 📱 Celular   (≤ 384px)  =>  80%
-  if (w <= 992)  return 1.4;   // 📟 Tablet    (≤ 992px)  => 150%
-  return 1.0;                  // 🖥️ PC/Laptop (> 992px)  => 100%
+  const w = window.innerWidth;
+  if (w < 768)   return 0.8;   // 📱 Celular (tc: < 768px)    =>  80%
+  if (w <= 1024) return 1.2;   // 📟 Tablet  (tc: 768-1024px) => 120%
+  return 1.0;                  // 🖥️ PC/Laptop (> 1024px)     => 100%
 }
 let isScrollActive = false;
 let scrollIntervalId = null;
@@ -152,6 +152,43 @@ export function sortSongsAlphabetically(songsArray) {
   });
 }
 
+export function updateAccessControlVisibility() {
+  const userSubtabAccessBtn = document.getElementById('user-subtab-access-btn');
+  const userSubpanelAccess = document.getElementById('user-subpanel-access');
+  const userSubpanelAccount = document.getElementById('user-subpanel-account');
+  const userSubtabAccountBtn = document.getElementById('user-subtab-account-btn');
+  const canManageAccess = isCurrentUserAdmin() || hasPermission('manage_access');
+
+  if (userSubtabAccessBtn) {
+    userSubtabAccessBtn.style.display = canManageAccess ? 'inline-flex' : 'none';
+  }
+
+  if (!canManageAccess) {
+    if (userSubpanelAccess && userSubpanelAccess.style.display !== 'none') {
+      userSubpanelAccess.style.display = 'none';
+      if (userSubpanelAccount) userSubpanelAccount.style.display = 'block';
+      if (userSubtabAccountBtn) userSubtabAccountBtn.classList.add('active');
+      if (userSubtabAccessBtn) userSubtabAccessBtn.classList.remove('active');
+    }
+  }
+
+  // Control de visibilidad de la pestaña Log de Diagnóstico
+  const settingsTabLog = document.querySelector('.settings-tab-btn[data-tab="log"]');
+  const settingsPanelLog = document.getElementById('settings-panel-log');
+  const canViewLogs = isCurrentUserAdmin() || hasPermission('view_logs') || hasPermission('manage_access');
+
+  if (settingsTabLog) {
+    settingsTabLog.style.display = canViewLogs ? 'flex' : 'none';
+  }
+
+  if (!canViewLogs && settingsPanelLog && settingsPanelLog.style.display !== 'none') {
+    if (typeof window.openSettingsTab === 'function') {
+      window.openSettingsTab('general');
+    }
+  }
+}
+window.updateAccessControlVisibility = updateAccessControlVisibility;
+
 export function updateBookTabsVisibility() {
   document.querySelectorAll('.book-tab').forEach(tab => {
     const bookId = tab.dataset.book;
@@ -168,6 +205,8 @@ export function updateBookTabsVisibility() {
     });
     handleSearchAndFilters();
   }
+
+  updateAccessControlVisibility();
 }
 
 export const updateExtrasTabVisibility = updateBookTabsVisibility;
@@ -298,9 +337,37 @@ async function sincronizarCantoDesdeFirebase(songId) {
   }
 }
 
+window.registrarUsoCanto = function(songId, tipo, detalle) {
+  if (!songId) return;
+  const key = `canto-config-${songId}`;
+  let data = {};
+  try {
+    data = JSON.parse(localStorage.getItem(key) || '{}');
+  } catch (e) {}
+
+  const ahora = new Date().toISOString();
+  data.fecha = ahora;
+  if (!Array.isArray(data.historial)) {
+    data.historial = [];
+  }
+  data.historial.push({
+    fecha: ahora,
+    tipo: tipo || 'view',
+    detalle: detalle || 'Canto utilizado'
+  });
+
+  data.contadorCambios = (data.contadorCambios || 0) + 1;
+  localStorage.setItem(key, JSON.stringify(data));
+};
+
 // --- Carga de Detalles de Canción ---
 async function loadSongView(songId) {
   try {
+    const initPrev = document.getElementById('canto-slide-prev');
+    const initNext = document.getElementById('canto-slide-next');
+    if (initPrev) initPrev.innerHTML = '';
+    if (initNext) initNext.innerHTML = '';
+
     if (viewerSongTitle) {
       viewerSongTitle.textContent = "Cargando...";
     }
@@ -310,6 +377,9 @@ async function loadSongView(songId) {
     cantoLeftCol.innerHTML = "";
     cantoRightCol.innerHTML = "";
     viewerAudioContainer.classList.remove('open');
+
+    // Registrar apertura/uso del canto para el historial del calendario
+    window.registrarUsoCanto(songId, 'view', 'Vista de canto');
     
     let songData;
     if (loadedSongsCache[songId]) {
@@ -322,26 +392,8 @@ async function loadSongView(songId) {
     }
     currentCanto = songData;
     
-    // Configurar zoom por defecto según el dispositivo (Tablet vs Móvil/PC) y canto específico
-  // Obtener el ancho de la pantalla
-    const screenWidth = window.innerWidth;
-
-    if (screenWidth < 768) {
-      // 1. CELULAR (Menor a 768px)
-      updateZoom(0.8); 
-
-    } else if (screenWidth >= 768 && screenWidth <= 1024) {
-      // 2. TABLET (Entre 768px y 1024px)
-      if (songId === 'atilevantomisojos') {
-        updateZoom(1.5); 
-      } else {
-        updateZoom(1.5); // (Ambos están en 1.5 ahora, pero tienes la estructura lista por si quieres cambiar uno)
-      }
-
-    } else {
-      // 3. PC (Mayor a 1024px)
-      updateZoom(1.0); // Cambia este 1.0 por el valor que prefieras para la computadora
-    }
+    // Aplicar zoom según dispositivo (tc) respetando la preferencia personalizada si existe
+    applyZoom(getDefaultZoom());
     
     // Asignar el color de etapa actual a nivel de body para la cabecera y el sombreado
     const stageColor = getStageColor(currentCanto.catCanto || currentCanto.stage);
@@ -548,27 +600,48 @@ function setupViewerSongFooter(songId) {
       cleanMoments.push(songMeta.stage);
     }
 
-    cleanMoments.forEach((momentName, index) => {
+    cleanMoments.forEach((momentName) => {
       const pill = document.createElement('span');
-      pill.className = `footer-moment-pill ${index === 0 ? 'active-pill' : ''}`;
+      pill.className = 'footer-moment-pill';
       pill.textContent = momentName;
 
       pill.addEventListener('click', (e) => {
         e.stopPropagation();
+
+        // 1. Establecer filtro por Etapa o por Momento
+        const stageList = ['precatecumenado', 'catecumenado', 'eleccion', 'liturgia'];
+        const cleanMoment = momentName.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+        if (stageList.some(s => cleanMoment.includes(s))) {
+          activeStage = momentName;
+          activeMoments = [];
+        } else {
+          activeStage = null;
+          activeMoments = [momentName];
+        }
+
+        // 2. Cambiar a la vista del índice/buscador
         if (dashboardView && songViewerView) {
           songViewerView.style.display = 'none';
           dashboardView.style.display = 'flex';
           window.location.hash = '';
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-        activeMoments.clear();
-        activeMoments.add(momentName);
 
+        // 3. Activar el botón de filtro correspondiente en el índice si existe
         document.querySelectorAll('.filter-pill').forEach(btn => {
-          const dm = btn.getAttribute('data-moment');
-          btn.classList.toggle('active', dm === momentName);
+          const dm = btn.getAttribute('data-moment') || btn.textContent.trim();
+          const isActive = (dm.toLowerCase() === momentName.toLowerCase());
+          btn.classList.toggle('active', isActive);
         });
 
+        document.querySelectorAll('.stage-pill, .etapa-pill, [data-stage]').forEach(btn => {
+          const ds = btn.getAttribute('data-stage') || btn.textContent.trim();
+          const isActive = (ds.toLowerCase() === momentName.toLowerCase());
+          btn.classList.toggle('active', isActive);
+        });
+
+        // 4. Ejecutar búsqueda y renderizado de la lista filtrada
         handleSearchAndFilters();
       });
 
@@ -2455,12 +2528,30 @@ function setupEventListeners() {
           // Bote de vuelta al centro
           sliderContainer.style.transition = 'transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)';
           sliderContainer.style.transform = 'translate3d(calc(-100% / 3 - 13.333px), 0, 0)';
+          setTimeout(() => {
+            if (slidePrev) slidePrev.innerHTML = '';
+            if (slideNext) slideNext.innerHTML = '';
+          }, 320);
         }
       } else {
         // Devolverse al centro (snap back)
         sliderContainer.style.transition = 'transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)';
         sliderContainer.style.transform = 'translate3d(calc(-100% / 3 - 13.333px), 0, 0)';
+        setTimeout(() => {
+          if (slidePrev) slidePrev.innerHTML = '';
+          if (slideNext) slideNext.innerHTML = '';
+        }, 320);
       }
+    }, { passive: true });
+  }
+
+  // Evitar que el toque/clic en el buscador rápido cierre el menú desplegable ≡ o cancele el foco nativo
+  if (toolbarSearchInput) {
+    toolbarSearchInput.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+    toolbarSearchInput.addEventListener('touchstart', (e) => {
+      e.stopPropagation();
     }, { passive: true });
   }
 
@@ -2651,23 +2742,30 @@ function setupEventListeners() {
     });
   }
   
-  asambleaToggleBtn.addEventListener('click', () => {
-    allAsambleaExpanded = !allAsambleaExpanded;
-    asambleaToggleBtn.classList.toggle('active', allAsambleaExpanded);
-    asambleaToggleBtn.querySelector('span').textContent = allAsambleaExpanded ? 'visibility' : 'visibility_off';
-    
-    document.querySelectorAll('.collapsible-content').forEach(content => {
-      content.style.display = allAsambleaExpanded ? 'block' : 'none';
-    });
-    document.querySelectorAll('.collapsible-trigger').forEach(trigger => {
-      const letraSpan = trigger.querySelector('.letra');
-      if (allAsambleaExpanded) {
-        letraSpan.textContent = letraSpan.textContent.replace('...', '');
-      } else {
-        if (!letraSpan.textContent.endsWith('...')) letraSpan.textContent += '...';
+  if (asambleaToggleBtn) {
+    asambleaToggleBtn.addEventListener('click', () => {
+      allAsambleaExpanded = !allAsambleaExpanded;
+      asambleaToggleBtn.classList.toggle('active', allAsambleaExpanded);
+      const iconSpan = asambleaToggleBtn.querySelector('span');
+      if (iconSpan) {
+        iconSpan.textContent = allAsambleaExpanded ? 'visibility' : 'visibility_off';
       }
+
+      document.querySelectorAll('.collapsible-content').forEach(content => {
+        content.style.display = allAsambleaExpanded ? 'block' : 'none';
+      });
+      document.querySelectorAll('.collapsible-trigger').forEach(trigger => {
+        const letraSpan = trigger.querySelector('.letra');
+        if (letraSpan && letraSpan.textContent) {
+          if (allAsambleaExpanded) {
+            letraSpan.textContent = letraSpan.textContent.replace('...', '');
+          } else {
+            if (!letraSpan.textContent.endsWith('...')) letraSpan.textContent += '...';
+          }
+        }
+      });
     });
-  });
+  }
   
   if (audioPlayBtn) {
     audioPlayBtn.addEventListener('click', () => {
@@ -2863,6 +2961,10 @@ function openSettingsTab(tabName = 'general') {
   if (targetPanel) {
     targetPanel.style.display = 'block';
   }
+
+  if (tabName === 'log' && window.renderAppLogs) {
+    window.renderAppLogs();
+  }
 }
 
   window.abrirModalConfiguracion = function() {
@@ -2891,6 +2993,141 @@ function openSettingsTab(tabName = 'general') {
       }
     });
   });
+
+  // Manejo de sub-pestañas dentro del Módulo Usuario (Cuenta y Acceso)
+  const userSubtabBtns = document.querySelectorAll('.user-subtab-btn');
+  userSubtabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const subtab = btn.dataset.subtab;
+      userSubtabBtns.forEach(b => b.classList.toggle('active', b.dataset.subtab === subtab));
+
+      const subpanels = document.querySelectorAll('.user-subpanel');
+      subpanels.forEach(p => p.style.display = 'none');
+
+      const targetSubpanel = document.getElementById(`user-subpanel-${subtab}`);
+      if (targetSubpanel) {
+        targetSubpanel.style.display = 'block';
+      }
+    });
+  });
+
+  // --- Módulo de Logs de Diagnóstico ---
+  window.appLogs = window.appLogs || [];
+
+  window.addAppLog = function(category, message, details = null) {
+    const now = new Date();
+    const timeStr = now.toTimeString().split(' ')[0] + '.' + String(now.getMilliseconds()).padStart(3, '0');
+    const entry = {
+      id: Date.now() + Math.random(),
+      time: timeStr,
+      category: category || 'General',
+      message: message || '',
+      details: details ? (typeof details === 'object' ? JSON.stringify(details, null, 2) : String(details)) : ''
+    };
+    window.appLogs.push(entry);
+    if (window.appLogs.length > 300) window.appLogs.shift();
+    if (window.renderAppLogs) window.renderAppLogs();
+  };
+
+  const origLog = console.log;
+  const origWarn = console.warn;
+  const origErr = console.error;
+
+  console.log = function(...args) {
+    origLog.apply(console, args);
+    const msg = args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ');
+    let cat = 'General';
+    if (msg.includes('Buscador') || msg.includes('🔍')) cat = 'Buscador';
+    else if (msg.includes('Firebase') || msg.includes('🔥') || msg.includes('Permisos')) cat = 'Firebase';
+    else if (msg.includes('Service Worker') || msg.includes('sw.js')) cat = 'PWA';
+    window.addAppLog(cat, msg);
+  };
+
+  console.warn = function(...args) {
+    origWarn.apply(console, args);
+    const msg = args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ');
+    window.addAppLog('General', '⚠️ ' + msg);
+  };
+
+  console.error = function(...args) {
+    origErr.apply(console, args);
+    const msg = args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ');
+    window.addAppLog('General', '❌ ' + msg);
+  };
+
+  window.renderAppLogs = function() {
+    const container = document.getElementById('logs-viewer-container');
+    const catSelect = document.getElementById('logs-category-select');
+    if (!container) return;
+
+    const selectedCat = catSelect ? catSelect.value : 'all';
+    const filtered = window.appLogs.filter(item => selectedCat === 'all' || item.category === selectedCat);
+
+    if (filtered.length === 0) {
+      container.innerHTML = '<span style="color: #888;">No hay registros en esta categoría.</span>';
+      return;
+    }
+
+    container.innerHTML = filtered.map(item => `
+      <div style="margin-bottom: 6px; border-bottom: 1px dashed #333; padding-bottom: 4px;">
+        <span style="color: #888;">[${item.time}]</span> 
+        <span style="color: #ffc107; font-weight: bold;">[${item.category}]</span> 
+        <span style="color: #00ff66;">${item.message}</span>
+        ${item.details ? `<pre style="margin: 2px 0 0 10px; color: #64b5f6; font-size: 0.7rem;">${item.details}</pre>` : ''}
+      </div>
+    `).join('');
+
+    container.scrollTop = container.scrollHeight;
+  };
+
+  const logsCategorySelect = document.getElementById('logs-category-select');
+  if (logsCategorySelect) {
+    logsCategorySelect.addEventListener('change', window.renderAppLogs);
+  }
+
+  const clearLogsBtn = document.getElementById('clear-logs-btn');
+  if (clearLogsBtn) {
+    clearLogsBtn.addEventListener('click', () => {
+      window.appLogs = [];
+      window.renderAppLogs();
+    });
+  }
+
+  const copyLogsBtn = document.getElementById('copy-logs-btn');
+  if (copyLogsBtn) {
+    copyLogsBtn.addEventListener('click', () => {
+      const selectedCat = logsCategorySelect ? logsCategorySelect.value : 'all';
+      const filtered = window.appLogs.filter(item => selectedCat === 'all' || item.category === selectedCat);
+      const text = filtered.map(item => `[${item.time}] [${item.category}] ${item.message} ${item.details || ''}`).join('\n');
+      navigator.clipboard.writeText(text).then(() => {
+        copyLogsBtn.textContent = '¡Copiados!';
+        setTimeout(() => copyLogsBtn.textContent = 'Copiar Logs', 2000);
+      }).catch(err => {
+        alert('No se pudo copiar: ' + err);
+      });
+    });
+  }
+
+  // Logger de diagnóstico para inspeccionar el comportamiento táctil del buscador
+  const attachSearchDiagnostics = (inputEl, label) => {
+    if (!inputEl) return;
+    const events = ['pointerdown', 'touchstart', 'touchend', 'click', 'focus', 'blur', 'input'];
+    events.forEach(evtName => {
+      inputEl.addEventListener(evtName, (e) => {
+        const computed = window.getComputedStyle(inputEl);
+        console.log(`🔍 [Buscador ${label}] Evento: "${evtName}"`, {
+          activeElement: document.activeElement ? (document.activeElement.id || document.activeElement.tagName) : 'ninguno',
+          relatedTarget: e.relatedTarget ? (e.relatedTarget.id || e.relatedTarget.tagName) : 'null',
+          width: computed.width,
+          fontSize: computed.fontSize,
+          val: inputEl.value
+        });
+      });
+    });
+  };
+
+  attachSearchDiagnostics(searchInput, 'Principal (#search-input)');
+  attachSearchDiagnostics(toolbarSearchInput, 'Barra Superior (#toolbar-search-input)');
 
   // Sincronizar el toggle BIS con el canto actual
   function populateBisSongList() {
@@ -2986,24 +3223,82 @@ function openSettingsTab(tabName = 'general') {
         localStorage.removeItem(`book-theme-bg-${suffix}`);
         localStorage.removeItem(`book-theme-accent-${suffix}`);
         localStorage.removeItem(`book-theme-text-${suffix}`);
+        localStorage.removeItem(`book-theme-song-title-${suffix}`);
         localStorage.removeItem(`book-theme-chord-${suffix}`);
         localStorage.removeItem(`book-theme-chord-alt-${suffix}`);
+        localStorage.removeItem(`book-theme-footer-link-${suffix}`);
       });
       // Limpiar claves heredadas antiguas
       localStorage.removeItem('book-theme-bg');
       localStorage.removeItem('book-theme-accent');
       localStorage.removeItem('book-theme-text');
+      localStorage.removeItem('book-theme-song-title');
       localStorage.removeItem('book-theme-chord');
       localStorage.removeItem('book-theme-chord-alt');
+      localStorage.removeItem('book-theme-footer-link');
       
       // Limpiar inline style overrides de body y documentElement para forzar recálculo
-      const props = ['--bg-color', '--accent-color', '--text-color', '--accent-glow', '--chord-color', '--chord-color-alt'];
+      const props = ['--bg-color', '--accent-color', '--text-color', '--accent-glow', '--song-title-color', '--chord-color', '--chord-color-alt', '--SangreCristo'];
       props.forEach(p => {
         document.body.style.removeProperty(p);
         document.documentElement.style.removeProperty(p);
       });
       
       applyBookTheme();
+    });
+  }
+
+  // Restaurar por defecto para Colores del Canto
+  const resetCantoColorsBtn = document.getElementById('reset-canto-colors-btn');
+  if (resetCantoColorsBtn) {
+    resetCantoColorsBtn.addEventListener('click', () => {
+      const suffixes = ['dark', 'light', 'sepia'];
+      suffixes.forEach(suffix => {
+        localStorage.removeItem(`book-theme-song-title-${suffix}`);
+        localStorage.removeItem(`book-theme-chord-${suffix}`);
+        localStorage.removeItem(`book-theme-chord-alt-${suffix}`);
+        localStorage.removeItem(`book-theme-footer-link-${suffix}`);
+      });
+      localStorage.removeItem('book-theme-song-title');
+      localStorage.removeItem('book-theme-chord');
+      localStorage.removeItem('book-theme-chord-alt');
+      localStorage.removeItem('book-theme-footer-link');
+      
+      ['--song-title-color', '--chord-color', '--chord-color-alt', '--SangreCristo'].forEach(p => {
+        document.body.style.removeProperty(p);
+        document.documentElement.style.removeProperty(p);
+      });
+      applyBookTheme();
+    });
+  }
+
+  // Restaurar por defecto para Colores de Etapas
+  const resetStageColorsBtn = document.getElementById('reset-stage-colors-btn');
+  if (resetStageColorsBtn) {
+    resetStageColorsBtn.addEventListener('click', () => {
+      ['pre', 'cate', 'ele', 'lit', 'cat'].forEach(stg => {
+        localStorage.removeItem(`stage-color-${stg}`);
+        document.body.style.removeProperty(`--color-${stg}`);
+        document.documentElement.style.removeProperty(`--color-${stg}`);
+      });
+      applyStageColors();
+    });
+  }
+
+  // Restaurar por defecto para Personalizar Botones
+  const resetBtnColorsBtn = document.getElementById('reset-btn-colors-btn');
+  if (resetBtnColorsBtn) {
+    resetBtnColorsBtn.addEventListener('click', () => {
+      ['pre', 'cate', 'ele', 'lit', 'cat'].forEach(stg => {
+        localStorage.removeItem(`btn-color-${stg}-default`);
+        localStorage.removeItem(`btn-color-${stg}-active`);
+        localStorage.removeItem(`btn-color-${stg}-text`);
+        document.body.style.removeProperty(`--color-${stg}-active`);
+        document.body.style.removeProperty(`--text-${stg}`);
+        document.documentElement.style.removeProperty(`--color-${stg}-active`);
+        document.documentElement.style.removeProperty(`--text-${stg}`);
+      });
+      applyStageColors();
     });
   }
 
@@ -3158,9 +3453,17 @@ function openSettingsTab(tabName = 'general') {
     }
   });
   
-  // Recalcular posiciones en resize de pantalla
+  // Recalcular posiciones en resize de pantalla (sin afectar el teclado móvil)
   let resizeTimeout;
+  let lastContentResizeWidth = window.innerWidth;
   window.addEventListener('resize', () => {
+    const currentWidth = window.innerWidth;
+    if (currentWidth === lastContentResizeWidth) return;
+    if (document.activeElement && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA')) {
+      return;
+    }
+    lastContentResizeWidth = currentWidth;
+
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(() => {
       if (currentCanto) renderSongContent();
@@ -3213,7 +3516,7 @@ function openSettingsTab(tabName = 'general') {
         if (window.mostrarProgreso) {
           window.mostrarProgreso({
             titulo: 'Actualizando App',
-            mensaje: 'Limpiando datos de caché y descargando la última versión...',
+            mensaje: 'Limpiando caché completa y forzando recarga (Ctrl + Shift + R)...',
             icono: 'system_update'
           });
         }
@@ -3221,28 +3524,29 @@ function openSettingsTab(tabName = 'general') {
         authUpdateBtn.disabled = true;
         authUpdateBtn.textContent = 'Actualizando...';
         
-        // 1. Limpiar caché del Service Worker (Cache Storage)
+        // 1. Limpiar toda la caché del Cache Storage
         if ('caches' in window) {
           const cacheKeys = await caches.keys();
           await Promise.all(
             cacheKeys.map(key => caches.delete(key))
           );
-          console.log('[App] Caché de CacheStorage eliminada.');
+          console.log('[App] Caché de CacheStorage eliminada por completo.');
         }
         
-        // 2. Desregistrar Service Worker
+        // 2. Desregistrar todos los Service Workers activos
         if ('serviceWorker' in navigator) {
           const registrations = await navigator.serviceWorker.getRegistrations();
           await Promise.all(
             registrations.map(registration => registration.unregister())
           );
-          console.log('[App] Service Worker desregistrado.');
+          console.log('[App] Service Workers desregistrados.');
         }
         
-        // 3. Recargar página
+        // 3. Forzar recarga con timestamp de ruptura de caché (equivalente a Ctrl + Shift + R)
         setTimeout(() => {
-          window.location.reload(true);
-        }, 1200);
+          const cleanUrl = window.location.protocol + '//' + window.location.host + window.location.pathname;
+          window.location.href = cleanUrl + '?nocache=' + Date.now();
+        }, 800);
       } catch (err) {
         if (window.ocultarProgreso) window.ocultarProgreso();
         console.error('Error al actualizar la app:', err);
@@ -3302,9 +3606,7 @@ function openSettingsTab(tabName = 'general') {
     }
     updateExtrasTabVisibility();
     
-    const settingsTabAccess = document.getElementById('settings-tab-access');
-    const canManageAccess = isCurrentUserAdmin() || hasPermission('manage_access');
-    if (settingsTabAccess) settingsTabAccess.style.display = canManageAccess ? 'flex' : 'none';
+    updateAccessControlVisibility();
 
     const authUnauthenticated = document.getElementById('auth-unauthenticated');
     const authAuthenticated = document.getElementById('auth-authenticated');
@@ -3505,7 +3807,7 @@ function openSettingsTab(tabName = 'general') {
 
   function saveToolbarIconConfig(config) {
     localStorage.setItem('toolbar_icon_config', JSON.stringify(config));
-    adjustToolbarForScreenSize();
+    adjustToolbarForScreenSize(true);
     updateToolbarUIFromConfig();
   }
 
@@ -3701,8 +4003,10 @@ function openSettingsTab(tabName = 'general') {
 
     let itemsInDropdown = 0;
 
-    // Insertar los elementos en el orden configurado por el usuario
+    // Insertar los elementos en el orden configurado por el usuario (excepto search que va al final a la derecha)
     items.forEach(item => {
+      if (item.key === 'search') return; // Se posiciona siempre al final a la derecha
+
       const el = iconElements[item.key];
       if (!el) return;
 
@@ -3712,11 +4016,11 @@ function openSettingsTab(tabName = 'general') {
         if (toolbarRight) {
           toolbarRight.appendChild(el);
         }
-        el.style.display = (item.key === 'search') ? 'block' : 'flex';
+        el.style.display = 'flex';
       } else {
         if (dropdownContent) {
           dropdownContent.appendChild(el);
-          el.style.display = (item.key === 'search') ? 'block' : 'flex';
+          el.style.display = 'flex';
           itemsInDropdown++;
         }
       }
@@ -3731,10 +4035,26 @@ function openSettingsTab(tabName = 'general') {
         toolbarRight.appendChild(dropdownContainer);
       }
     }
+
+    // El buscador SIEMPRE debe estar en la extrema derecha de la barra superior
+    const searchEl = iconElements.search || document.getElementById('toolbar-search-container');
+    if (searchEl && toolbarRight) {
+      toolbarRight.appendChild(searchEl);
+      searchEl.style.display = 'block';
+    }
   }
 
   adjustToolbarForScreenSize();
-  window.addEventListener('resize', adjustToolbarForScreenSize);
+  let lastToolbarResizeWidth = window.innerWidth;
+  window.addEventListener('resize', () => {
+    const currentWidth = window.innerWidth;
+    if (currentWidth === lastToolbarResizeWidth) return;
+    if (document.activeElement && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA')) {
+      return;
+    }
+    lastToolbarResizeWidth = currentWidth;
+    adjustToolbarForScreenSize();
+  });
 }
 
 // Aplica el zoom sin guardar (usado al inicializar el default por dispositivo)
@@ -3756,7 +4076,7 @@ function updateZoom(factor) {
 
 // Mapa de fuentes tipográficas (igual que en la Biblia)
 const FONT_MAP = {
-  'franklin': "'Franklin Gothic', 'Franklin Gothic Medium', Arial, sans-serif",
+  'franklin': "'Franklin Gothic Medium', Arial, sans-serif",
   'sans-serif': "sans-serif",
   'arial': "'Arial', sans-serif",
   'aptos': "'Aptos', sans-serif",
@@ -3822,6 +4142,7 @@ function initPreferences() {
 
   // Inicializar preferencia de mantener pantalla encendida (Wake Lock)
   initWakeLockPreference();
+  initAutoHideNavPreference();
 
   // Ocultar opción de edición de acordes si no es administrador (para futura autenticación)
   const chordEditSettingRow = document.getElementById('chord-edit-setting-row');
@@ -3945,8 +4266,10 @@ function applyBookTheme() {
   const customBg = localStorage.getItem('book-theme-bg-' + suffix);
   const customAccent = localStorage.getItem('book-theme-accent-' + suffix);
   const customText = localStorage.getItem('book-theme-text-' + suffix);
+  const customSongTitle = localStorage.getItem('book-theme-song-title-' + suffix);
   const customChord = localStorage.getItem('book-theme-chord-' + suffix);
   const customChordAlt = localStorage.getItem('book-theme-chord-alt-' + suffix);
+  const customFooterLink = localStorage.getItem('book-theme-footer-link-' + suffix);
   
   if (customBg) {
     document.body.style.setProperty('--bg-color', customBg);
@@ -3977,6 +4300,12 @@ function applyBookTheme() {
     document.body.style.removeProperty('--text-color');
   }
 
+  if (customSongTitle) {
+    document.body.style.setProperty('--song-title-color', customSongTitle);
+  } else {
+    document.body.style.removeProperty('--song-title-color');
+  }
+
   if (customChord) {
     document.body.style.setProperty('--chord-color', customChord);
   } else {
@@ -3988,21 +4317,31 @@ function applyBookTheme() {
   } else {
     document.body.style.removeProperty('--chord-color-alt');
   }
+
+  if (customFooterLink) {
+    document.body.style.setProperty('--SangreCristo', customFooterLink);
+  } else {
+    document.body.style.removeProperty('--SangreCristo');
+  }
   
   // Actualizar los inputs en el customizer de tema del libro
   const bgInput = document.querySelector('.book-theme-input[data-type="bg"]');
   const accentInput = document.querySelector('.book-theme-input[data-type="accent"]');
   const textInput = document.querySelector('.book-theme-input[data-type="text"]');
+  const songTitleInput = document.querySelector('.book-theme-input[data-type="song-title"]');
   const chordInput = document.querySelector('.book-theme-input[data-type="chord"]');
   const chordAltInput = document.querySelector('.book-theme-input[data-type="chord-alt"]');
+  const footerLinkInput = document.querySelector('.book-theme-input[data-type="footer-link"]');
   
   requestAnimationFrame(() => {
     const computedStyle = getComputedStyle(document.body);
     const currentBg = computedStyle.getPropertyValue('--bg-color').trim();
     const currentAccent = computedStyle.getPropertyValue('--accent-color').trim();
     const currentText = computedStyle.getPropertyValue('--text-color').trim();
+    const currentSongTitle = computedStyle.getPropertyValue('--song-title-color').trim() || currentAccent || '#d01212';
     const currentChord = computedStyle.getPropertyValue('--chord-color').trim();
     const currentChordAlt = computedStyle.getPropertyValue('--chord-color-alt').trim();
+    const currentFooterLink = computedStyle.getPropertyValue('--SangreCristo').trim() || '#3d0706';
     
     if (bgInput) {
       const hex = formatColorToHex(currentBg) || '#0a0a0a';
@@ -4046,6 +4385,20 @@ function applyBookTheme() {
       }
     }
 
+    if (songTitleInput) {
+      const hex = formatColorToHex(currentSongTitle) || '#d01212';
+      songTitleInput.value = hex;
+      const preview = songTitleInput.closest('.btn-pill-preview');
+      if (preview) {
+        preview.style.backgroundColor = hex;
+        const icon = preview.querySelector('span');
+        if (icon) {
+          const isLight = /ffeb3b|ffffff|eeeeee|fafafa|fff9c4|f0f4c3/i.test(hex.replace('#',''));
+          icon.style.color = isLight ? '#212529' : '#ffffff';
+        }
+      }
+    }
+
     if (chordInput) {
       const hex = formatColorToHex(currentChord) || '#d01212';
       chordInput.value = hex;
@@ -4064,6 +4417,20 @@ function applyBookTheme() {
       const hex = formatColorToHex(currentChordAlt) || '#944c18';
       chordAltInput.value = hex;
       const preview = chordAltInput.closest('.btn-pill-preview');
+      if (preview) {
+        preview.style.backgroundColor = hex;
+        const icon = preview.querySelector('span');
+        if (icon) {
+          const isLight = /ffeb3b|ffffff|eeeeee|fafafa|fff9c4|f0f4c3/i.test(hex.replace('#',''));
+          icon.style.color = isLight ? '#212529' : '#ffffff';
+        }
+      }
+    }
+
+    if (footerLinkInput) {
+      const hex = formatColorToHex(currentFooterLink) || '#3d0706';
+      footerLinkInput.value = hex;
+      const preview = footerLinkInput.closest('.btn-pill-preview');
       if (preview) {
         preview.style.backgroundColor = hex;
         const icon = preview.querySelector('span');
@@ -4277,6 +4644,23 @@ function initWakeLockPreference() {
       } else {
         releaseWakeLock();
         document.removeEventListener('visibilitychange', handleVisibilityChange);
+      }
+    });
+  }
+}
+
+function initAutoHideNavPreference() {
+  const isAutoHideActive = localStorage.getItem('pref-autohide-nav') === 'true';
+  const autohideToggle = document.getElementById('autohide-nav-toggle');
+
+  if (autohideToggle) {
+    autohideToggle.checked = isAutoHideActive;
+
+    autohideToggle.addEventListener('change', (e) => {
+      const active = e.target.checked;
+      localStorage.setItem('pref-autohide-nav', active ? 'true' : 'false');
+      if (typeof window.startAutoHideTimer === 'function') {
+        window.startAutoHideTimer();
       }
     });
   }

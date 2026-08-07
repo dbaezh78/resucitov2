@@ -18,29 +18,31 @@ import { db, doc, setDoc, getDoc, collection, getDocs, onSnapshot } from "./fire
 // Lista de Permisos Disponibles en el Sistema
 export const PERMISSIONS = {
   ALL: "*",
+  MANAGE_ACCESS: "manage_access",
+  VIEW_LOGS: "view_logs", // Permiso para ver Logs de Diagnóstico
+  EDIT_CHORDS: "edit_chords",
   BOOK_RESUCITO: "book_resucito",
   BOOK_JOVEN: "book_joven",
   BOOK_ACLAMACIONES: "book_aclamaciones",
   BOOK_SALMODIAS: "book_salmodias",
   BOOK_CATEQUESIS: "book_catequesis",
   BOOK_FAVORITOS: "book_favoritos",
-  BOOK_EXTRAS: "book_extras", // Permiso exclusivo para el libro Extras
-  EDIT_CHORDS: "edit_chords",
-  MANAGE_ACCESS: "manage_access"
+  BOOK_EXTRAS: "book_extras" // Permiso exclusivo para el libro Extras
 };
 
 // Descripciones amigables para los permisos
 export const PERMISSION_LABELS = {
   "*": "Acceso Total (* / Administrador)",
+  "manage_access": "Administrar Control de Acceso",
+  "view_logs": "Ver Logs de Diagnóstico",
+  "edit_chords": "Editar Digitaciones y Acordes",
   "book_resucito": "Ver Libro Resucitó",
   "book_joven": "Ver Libro Canto Joven",
   "book_aclamaciones": "Ver Libro Aclamaciones",
   "book_salmodias": "Ver Libro Salmodias",
   "book_catequesis": "Ver Libro Catequesis",
   "book_favoritos": "Ver Favoritos",
-  "book_extras": "Ver Libro Extras (Exclusivo)",
-  "edit_chords": "Editar Digitaciones y Acordes",
-  "manage_access": "Administrar Control de Acceso"
+  "book_extras": "Ver Libro Extras (Exclusivo)"
 };
 
 // Almacenamiento de Estado del Control de Acceso (Persistible en localStorage)
@@ -735,6 +737,13 @@ export function togglePermissionForGroup(groupId, permissionKey) {
     g.permissions.add(permissionKey);
   }
   saveGroupConfigToCloud();
+
+  const selectGroupPerm = document.getElementById('ac-select-group-perm');
+  if (selectGroupPerm && accessControlState.groups[gid]) {
+    selectGroupPerm.value = gid;
+  }
+  renderPermissionsPanel();
+
   if (typeof window !== 'undefined' && window.updateBookTabsVisibility) {
     window.updateBookTabsVisibility();
   }
@@ -905,20 +914,14 @@ export function setupAccessControlUI() {
   const btnCreateGroup = document.getElementById('ac-btn-create-group');
   if (btnCreateGroup) {
     btnCreateGroup.addEventListener('click', () => {
-      const inputId = document.getElementById('ac-group-id');
-      const inputName = document.getElementById('ac-group-name');
-      const inputDesc = document.getElementById('ac-group-desc');
+      handleSaveGroupForm();
+    });
+  }
 
-      if (!inputId || !inputId.value.trim()) {
-        alert("Por favor ingresa un ID para el grupo.");
-        return;
-      }
-
-      createGroup(inputId.value, inputName.value, [], inputDesc.value);
-      inputId.value = '';
-      inputName.value = '';
-      inputDesc.value = '';
-      renderAccessControlUI();
+  const btnCancelGroup = document.getElementById('ac-btn-cancel-group');
+  if (btnCancelGroup) {
+    btnCancelGroup.addEventListener('click', () => {
+      handleCancelGroupForm();
     });
   }
 
@@ -997,15 +1000,32 @@ export function renderAccessControlUI() {
 
   const groupKeys = Object.keys(accessControlState.groups);
 
+  const savedGroupUserVal = selectGroupUser ? selectGroupUser.value : null;
+  const savedSubgroupVal = selectSubgroup ? selectSubgroup.value : null;
+  const savedParentgroupVal = selectParentgroup ? selectParentgroup.value : null;
+  const savedGroupPermVal = selectGroupPerm ? selectGroupPerm.value : null;
+
   const optionsHtml = groupKeys.map(gid => {
     const g = accessControlState.groups[gid];
     return `<option value="${g.id}">${g.name} (${g.id})</option>`;
   }).join('');
 
-  if (selectGroupUser) selectGroupUser.innerHTML = optionsHtml;
-  if (selectSubgroup) selectSubgroup.innerHTML = optionsHtml;
-  if (selectParentgroup) selectParentgroup.innerHTML = optionsHtml;
-  if (selectGroupPerm) selectGroupPerm.innerHTML = optionsHtml;
+  if (selectGroupUser) {
+    selectGroupUser.innerHTML = optionsHtml;
+    if (savedGroupUserVal && accessControlState.groups[savedGroupUserVal]) selectGroupUser.value = savedGroupUserVal;
+  }
+  if (selectSubgroup) {
+    selectSubgroup.innerHTML = optionsHtml;
+    if (savedSubgroupVal && accessControlState.groups[savedSubgroupVal]) selectSubgroup.value = savedSubgroupVal;
+  }
+  if (selectParentgroup) {
+    selectParentgroup.innerHTML = optionsHtml;
+    if (savedParentgroupVal && accessControlState.groups[savedParentgroupVal]) selectParentgroup.value = savedParentgroupVal;
+  }
+  if (selectGroupPerm) {
+    selectGroupPerm.innerHTML = optionsHtml;
+    if (savedGroupPermVal && accessControlState.groups[savedGroupPermVal]) selectGroupPerm.value = savedGroupPermVal;
+  }
 
   // 1. Renderizar lista de grupos (Pestaña Grupos)
   if (groupsList) {
@@ -1036,18 +1056,12 @@ export function renderAccessControlUI() {
 
     groupsList.querySelectorAll('.ac-edit-group-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
-        const gid = e.target.dataset.gid;
-        const g = accessControlState.groups[gid];
-        if (!g) return;
-
-        const newName = prompt(`Editar Nombre del Grupo "${g.name}":`, g.name);
-        if (newName === null) return;
-
-        const newDesc = prompt(`Editar Descripción para "${newName || g.name}":`, g.description || '');
-        if (newDesc === null) return;
-
-        updateGroup(gid, newName, newDesc);
-        renderAccessControlUI();
+        e.preventDefault();
+        e.stopPropagation();
+        const gid = btn.getAttribute('data-gid') || btn.dataset.gid;
+        if (gid) {
+          loadGroupIntoForm(gid);
+        }
       });
     });
 
@@ -1195,7 +1209,7 @@ function renderPermissionsPanel() {
     const label = PERMISSION_LABELS[pValue] || pValue;
 
     return `
-      <label style="display: flex; align-items: center; gap: 8px; font-size: 0.8rem; cursor: pointer; padding: 4px 0;">
+      <label style="display: flex; align-items: center; gap: 8px; font-size: 0.8rem; cursor: pointer; padding: 4px 0; color: var(--text-color);">
         <input type="checkbox" class="ac-perm-checkbox" data-gid="${group.id}" data-perm="${pValue}" ${isChecked ? 'checked' : ''}>
         <span>${label}</span>
       </label>
@@ -1209,6 +1223,131 @@ function renderPermissionsPanel() {
       togglePermissionForGroup(gid, perm);
     });
   });
+}
+
+// --- Gestión de Formulario de Grupos (Crear / Editar) ---
+let editingGroupGid = null;
+let editingGroupOrigName = '';
+let editingGroupOrigDesc = '';
+
+export function resetGroupForm() {
+  editingGroupGid = null;
+  editingGroupOrigName = '';
+  editingGroupOrigDesc = '';
+
+  const titleEl = document.getElementById('ac-group-form-title');
+  const inputId = document.getElementById('ac-group-id');
+  const inputName = document.getElementById('ac-group-name');
+  const inputDesc = document.getElementById('ac-group-desc');
+  const btnSubmit = document.getElementById('ac-btn-create-group');
+  const btnCancel = document.getElementById('ac-btn-cancel-group');
+  const card = document.getElementById('ac-group-form-card');
+
+  if (titleEl) titleEl.textContent = 'Crear Nuevo Grupo';
+  if (inputId) {
+    inputId.value = '';
+    inputId.disabled = false;
+    inputId.style.background = 'var(--panel-bg)';
+    inputId.style.cursor = 'text';
+  }
+  if (inputName) inputName.value = '';
+  if (inputDesc) inputDesc.value = '';
+
+  if (btnSubmit) btnSubmit.textContent = 'Crear Grupo';
+  if (btnCancel) btnCancel.style.display = 'none';
+
+  if (card) {
+    card.style.borderColor = 'var(--panel-border)';
+    card.style.boxShadow = 'none';
+  }
+}
+
+export function loadGroupIntoForm(gid) {
+  const g = accessControlState.groups[gid];
+  if (!g) return;
+
+  editingGroupGid = gid;
+  editingGroupOrigName = g.name || '';
+  editingGroupOrigDesc = g.description || '';
+
+  const titleEl = document.getElementById('ac-group-form-title');
+  const inputId = document.getElementById('ac-group-id');
+  const inputName = document.getElementById('ac-group-name');
+  const inputDesc = document.getElementById('ac-group-desc');
+  const btnSubmit = document.getElementById('ac-btn-create-group');
+  const btnCancel = document.getElementById('ac-btn-cancel-group');
+  const card = document.getElementById('ac-group-form-card');
+
+  if (titleEl) titleEl.textContent = `Editar Grupo: ${g.name || gid}`;
+  if (inputId) {
+    inputId.value = gid;
+    inputId.disabled = true;
+    inputId.style.background = 'rgba(0,0,0,0.05)';
+    inputId.style.cursor = 'not-allowed';
+  }
+  if (inputName) {
+    inputName.value = editingGroupOrigName;
+    setTimeout(() => inputName.focus(), 50);
+  }
+  if (inputDesc) inputDesc.value = editingGroupOrigDesc;
+
+  if (btnSubmit) btnSubmit.textContent = 'Grabar';
+  if (btnCancel) btnCancel.style.display = 'inline-block';
+
+  if (card) {
+    card.style.borderColor = 'var(--accent-color)';
+    card.style.boxShadow = '0 0 0 2px var(--accent-glow, rgba(13, 110, 253, 0.25))';
+    card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+}
+
+export function handleCancelGroupForm() {
+  if (editingGroupGid) {
+    const inputName = document.getElementById('ac-group-name');
+    const inputDesc = document.getElementById('ac-group-desc');
+    const currentName = inputName ? inputName.value.trim() : '';
+    const currentDesc = inputDesc ? inputDesc.value.trim() : '';
+
+    if (currentName !== editingGroupOrigName || currentDesc !== editingGroupOrigDesc) {
+      const save = confirm('Tienes cambios sin guardar. ¿Deseas guardar los cambios antes de salir?');
+      if (save) {
+        handleSaveGroupForm();
+        return;
+      }
+    }
+  }
+  resetGroupForm();
+}
+
+export function handleSaveGroupForm() {
+  const inputId = document.getElementById('ac-group-id');
+  const inputName = document.getElementById('ac-group-name');
+  const inputDesc = document.getElementById('ac-group-desc');
+
+  if (editingGroupGid) {
+    // Modo Edición
+    const newName = inputName ? inputName.value.trim() : '';
+    const newDesc = inputDesc ? inputDesc.value.trim() : '';
+
+    if (!newName) {
+      alert('Por favor ingresa un nombre para el grupo.');
+      return;
+    }
+
+    updateGroup(editingGroupGid, newName, newDesc);
+    resetGroupForm();
+    renderAccessControlUI();
+  } else {
+    // Modo Creación
+    if (!inputId || !inputId.value.trim()) {
+      alert('Por favor ingresa un ID para el grupo.');
+      return;
+    }
+
+    createGroup(inputId.value, inputName ? inputName.value : '', [], inputDesc ? inputDesc.value : '');
+    resetGroupForm();
+    renderAccessControlUI();
+  }
 }
 
 // Inicializar módulo y escuchadores silenciosos en vivo con Firebase Cloud
