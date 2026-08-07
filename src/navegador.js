@@ -129,7 +129,7 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
           <span>Resucitó</span>
           <div class="nav-submenu" id="nav-submenu-resucito">
             <a href="#" id="nav-resucito-camino"><span class="material-symbols-outlined arrow-icon">home</span> Inicio</a>
-            <a href="./perfil.html"><span class="material-symbols-outlined arrow-icon">person</span> Perfil</a>
+            <a href="perfil.html"><span class="material-symbols-outlined arrow-icon">person</span> Perfil</a>
             <a href="/src/select.html"><span class="material-symbols-outlined arrow-icon">playlist_add</span>Preparar Cantos</a>
             <a href="/src/html/intro.html"><span class="material-symbols-outlined arrow-icon">menu_book</span> Introducción</a>
             <a href="#" id="installButton"><span class="material-symbols-outlined arrow-icon">download_for_offline</span>Instalar App</a>
