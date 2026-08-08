@@ -1,6 +1,7 @@
 import { registerServiceWorker } from './pwa.js';
 import './navegador.js';
 import { searchSongs } from './search.js';
+import { getSongScrollConfig, saveSongScrollConfig } from './scroll.js';
 import { transposeNote, normalizeChord, CHROMATIC_SCALE, parseChord } from './chords.js';
 import { songs } from './songs-data.js';
 import { onAuthStateChanged, loginMock, logoutMock, isCurrentUserAdmin, getCurrentUser } from './auth.js';
@@ -444,6 +445,9 @@ async function loadSongView(songId) {
     
     renderSongContent();
     setupHeaderTitleObserver();
+    if (window.applySongScrollSpeed) {
+      window.applySongScrollSpeed(songId);
+    }
 // Tono original y cejilla desde songs-data.js
     const songFromData = songs.find(s => s.id === songId);
     let originalChordStr = 'La';
@@ -2711,9 +2715,31 @@ function setupEventListeners() {
     scrollStepInput.value = scrollStepPx;
   }
 
+  window.applySongScrollSpeed = function(songId) {
+    if (!songId) return;
+    const cfg = getSongScrollConfig(songId);
+    scrollIntervalMs = cfg.v;
+    scrollStepPx = cfg.i;
+    
+    if (scrollIntervalSlider) scrollIntervalSlider.value = scrollIntervalMs;
+    if (scrollIntervalInput) scrollIntervalInput.value = scrollIntervalMs;
+    if (scrollStepSlider) scrollStepSlider.value = scrollStepPx;
+    if (scrollStepInput) scrollStepInput.value = scrollStepPx;
+  };
+
+  window.addEventListener('resize', () => {
+    if (currentCanto && currentCanto.id && window.applySongScrollSpeed) {
+      window.applySongScrollSpeed(currentCanto.id);
+    }
+  });
+
   function updateScrollInterval(val) {
     scrollIntervalMs = Math.max(1, Math.min(scrollIntervalLimit, val));
-    localStorage.setItem('scroll-interval', scrollIntervalMs);
+    if (currentCanto && currentCanto.id) {
+      saveSongScrollConfig(currentCanto.id, scrollIntervalMs, scrollStepPx);
+    } else {
+      localStorage.setItem('scroll-interval', scrollIntervalMs);
+    }
     if (scrollIntervalSlider) scrollIntervalSlider.value = scrollIntervalMs;
     if (scrollIntervalInput) scrollIntervalInput.value = scrollIntervalMs;
     if (isScrollActive) {
@@ -2724,7 +2750,11 @@ function setupEventListeners() {
 
   function updateScrollStep(val) {
     scrollStepPx = Math.max(1, Math.min(scrollStepLimit, val));
-    localStorage.setItem('scroll-step', scrollStepPx);
+    if (currentCanto && currentCanto.id) {
+      saveSongScrollConfig(currentCanto.id, scrollIntervalMs, scrollStepPx);
+    } else {
+      localStorage.setItem('scroll-step', scrollStepPx);
+    }
     if (scrollStepSlider) scrollStepSlider.value = scrollStepPx;
     if (scrollStepInput) scrollStepInput.value = scrollStepPx;
     if (isScrollActive) {
