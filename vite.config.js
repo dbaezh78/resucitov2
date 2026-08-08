@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig({
   // Fuerza a Vite a usar rutas relativas para activos importados en el index.html de producción,
-  // permitiendo que el proyecto funcione en cualquier subcarpeta (ej: /lab/resucito/)
+  // permitiendo que el proyecto funcione en cualquier subcarpeta (ej: /resucitov2/)
   base: './',
   server: {
     port: 5173,

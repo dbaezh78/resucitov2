@@ -6,7 +6,7 @@ Esta es la nueva versión optimizada y rediseñada de **Resucito**, construida e
 
 ## 🚀 Cómo ejecutar localmente
 
-1. Abre tu terminal en este directorio (`c:\db\Github\lab\resucito`).
+1. Abre tu terminal en este directorio (`c:\db\Github\resucitov2`).
 2. Instala las dependencias de desarrollo ejecutando:
    ```bash
    npm install
