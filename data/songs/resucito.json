@@ -211,21 +211,10 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_4",
       "initialState": "collapsed",
-      "triggerLine": "RESUCITÓ, RESUCITÓ, (La,m,20)(Sol,,199)",
-      "sC": "ta as",
-      "lines": [
-        {
-          "line": "RESUCITÓ, ALELUYA., (Fa,,89)(Mi,,186)",
-          "sC": "as"
-        },
-        {
-          "line": "ALELUYA, ALELUYA,, (La,m,80)(Sol,,179)",
-          "sC": "as"
-        },
-        {
-          "line": "ALELUYA, RESUCITÓ., (Fa,,71)(Mi,,190)",
-          "sC": "as"
-        }
+      "triggerLine": "ALELUYA, ALELUYA,, (La,m,80)(Sol,,179)","sC": "as","lines": [
+        {"line": "ALELUYA, RESUCITÓ., (Fa,,71)(Mi,,190)","sC": "as"},
+        {"line": "RESUCITÓ, RESUCITÓ, (La,m,20)(Sol,,199)","sC": "ta as"},
+        {"line": "RESUCITÓ, ALELUYA., (Fa,,89)(Mi,,186)","sC": "as"}
       ]
     }
   ],
