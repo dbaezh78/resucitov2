@@ -2557,26 +2557,86 @@ function setupEventListeners() {
 
   // Buscador rápido de la barra de herramientas superior
   if (toolbarSearchInput) {
+    let activeSuggestionIndex = -1;
+
+    function updateActiveSuggestion(index) {
+      const items = toolbarSearchSuggestions.querySelectorAll('.search-suggestion-item');
+      items.forEach((item, idx) => {
+        if (idx === index) {
+          item.classList.add('active');
+          item.scrollIntoView({ block: 'nearest' });
+        } else {
+          item.classList.remove('active');
+        }
+      });
+      activeSuggestionIndex = index;
+    }
+
     toolbarSearchInput.addEventListener('input', () => {
       const query = toolbarSearchInput.value.trim();
       if (!query) {
         toolbarSearchSuggestions.style.display = 'none';
+        activeSuggestionIndex = -1;
         return;
       }
       
-      const matches = searchSongs(allSongs, query).slice(0, 8); // Máximo 8 sugerencias
+      const matches = searchSongs(allSongs, query).slice(0, 10); // Máximo 10 sugerencias
       
       if (matches.length === 0) {
         toolbarSearchSuggestions.innerHTML = `<div class="search-suggestion-item" style="color: var(--text-muted); cursor: default;">No se encontraron cantos</div>`;
+        activeSuggestionIndex = -1;
       } else {
-        toolbarSearchSuggestions.innerHTML = matches.map(song => `
-          <div class="search-suggestion-item" data-id="${song.id}">
-            <strong>${song.titulo || song.title}</strong>
-            <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">${song.catCanto || ''}</span>
-          </div>
-        `).join('');
+        toolbarSearchSuggestions.innerHTML = matches.map(song => {
+          const categoryText = song.stage || (Array.isArray(song.category) ? song.category.join(', ') : song.category) || '';
+          return `
+            <div class="search-suggestion-item" data-id="${song.id}">
+              <strong>${song.titulo || song.title}</strong>
+              <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">${categoryText}</span>
+            </div>
+          `;
+        }).join('');
+        activeSuggestionIndex = -1;
       }
       toolbarSearchSuggestions.style.display = 'block';
+    });
+
+    toolbarSearchInput.addEventListener('keydown', (e) => {
+      const items = toolbarSearchSuggestions.querySelectorAll('.search-suggestion-item:not([style*="cursor: default"])');
+      if (toolbarSearchSuggestions.style.display === 'none' || items.length === 0) return;
+
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        let nextIndex = activeSuggestionIndex + 1;
+        if (nextIndex >= items.length) nextIndex = 0;
+        updateActiveSuggestion(nextIndex);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        let prevIndex = activeSuggestionIndex - 1;
+        if (prevIndex < 0) prevIndex = items.length - 1;
+        updateActiveSuggestion(prevIndex);
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        if (activeSuggestionIndex >= 0 && activeSuggestionIndex < items.length) {
+          const activeItem = items[activeSuggestionIndex];
+          if (activeItem && activeItem.dataset.id) {
+            window.location.hash = `#canto=${activeItem.dataset.id}`;
+            toolbarSearchSuggestions.style.display = 'none';
+            toolbarSearchInput.value = '';
+            activeSuggestionIndex = -1;
+          }
+        } else if (items.length > 0) {
+          const firstItem = items[0];
+          if (firstItem && firstItem.dataset.id) {
+            window.location.hash = `#canto=${firstItem.dataset.id}`;
+            toolbarSearchSuggestions.style.display = 'none';
+            toolbarSearchInput.value = '';
+            activeSuggestionIndex = -1;
+          }
+        }
+      } else if (e.key === 'Escape') {
+        toolbarSearchSuggestions.style.display = 'none';
+        activeSuggestionIndex = -1;
+      }
     });
     
     if (toolbarSearchSuggestions) {
@@ -2586,6 +2646,25 @@ function setupEventListeners() {
         window.location.hash = `#canto=${item.dataset.id}`;
         toolbarSearchSuggestions.style.display = 'none';
         toolbarSearchInput.value = '';
+        activeSuggestionIndex = -1;
+      });
+
+      toolbarSearchSuggestions.addEventListener('mousemove', (e) => {
+        const item = e.target.closest('.search-suggestion-item');
+        if (item) {
+          const items = toolbarSearchSuggestions.querySelectorAll('.search-suggestion-item');
+          const idx = Array.from(items).indexOf(item);
+          if (idx !== -1 && idx !== activeSuggestionIndex) {
+            items.forEach((el, index) => {
+              if (index === idx) {
+                el.classList.add('active');
+              } else {
+                el.classList.remove('active');
+              }
+            });
+            activeSuggestionIndex = idx;
+          }
+        }
       });
       
       document.addEventListener('click', (e) => {

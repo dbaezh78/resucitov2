@@ -1569,6 +1569,7 @@ footer {
   transition: background-color 0.3s ease;
   min-height: calc(100vh - 32px);
   padding-bottom: 0px;  /*32px*/
+  align-self: center;
 
   @media (min-width: 384px) {width: 396px;}
   @media (min-width: 768px) {width: 812px;}
@@ -1733,6 +1734,25 @@ footer {
   backdrop-filter: blur(10px);
 }
 
+/* Personalización y visualización garantizada de la barra de scroll */
+.search-suggestions-dropdown::-webkit-scrollbar {
+  width: 6px;
+  display: block;
+}
+
+.search-suggestions-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.search-suggestions-dropdown::-webkit-scrollbar-thumb {
+  background: var(--panel-border);
+  border-radius: 3px;
+}
+
+.search-suggestions-dropdown::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
 .search-suggestion-item {
   padding: 8px 12px;
   font-size: 0.85rem;
@@ -1747,7 +1767,8 @@ footer {
   border-bottom: none;
 }
 
-.search-suggestion-item:hover {
+.search-suggestion-item:hover,
+.search-suggestion-item.active {
   background-color: var(--accent-glow);
   color: var(--accent-color);
 }

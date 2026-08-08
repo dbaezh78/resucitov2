@@ -20,12 +20,47 @@ export function normalizeText(text) {
 }
 
 /**
+ * Calcula la puntuación de relevancia para ordenar los resultados de búsqueda.
+ * @param {Object} song Objeto de la canción
+ * @param {string} cleanQuery Consulta de búsqueda normalizada
+ * @returns {number} Puntuación de relevancia
+ */
+function getRelevanceScore(song, cleanQuery) {
+    if (!cleanQuery) return 0;
+    const cleanTitle = normalizeText(song.title || '');
+    const cleanSubtitle = normalizeText(song.subtitle || '');
+    
+    // 1. Coincidencia exacta de título
+    if (cleanTitle === cleanQuery) return 100;
+    
+    // 2. El título empieza con la consulta
+    if (cleanTitle.startsWith(cleanQuery)) return 80;
+    
+    // 3. El título contiene la consulta
+    if (cleanTitle.includes(cleanQuery)) return 60;
+    
+    // 4. El subtítulo contiene la consulta
+    if (cleanSubtitle.includes(cleanQuery)) return 40;
+    
+    // 5. La letra / pool contiene la consulta
+    const pool = song.searchPool || '';
+    if (pool.includes(cleanQuery)) return 20;
+    
+    // 6. Búsqueda elástica pegada
+    const gluedQuery = cleanQuery.replace(/\s/g, "");
+    const gluedPool = pool.replace(/\s/g, "");
+    if (gluedQuery.length > 2 && gluedPool.includes(gluedQuery)) return 10;
+    
+    return 0;
+}
+
+/**
  * Filtra el catálogo de canciones basándose en la consulta, la etapa y los momentos litúrgicos.
  * @param {Array} songs Lista indexada de cantos
  * @param {string} query Texto buscado por el usuario
  * @param {string|null} activeStage Filtro por etapa (Precatecumenado, Catecumenado, Elección, Liturgia, etc.)
  * @param {Array} activeMoments Array de momentos litúrgicos seleccionados
- * @returns {Array} Cantos filtrados
+ * @returns {Array} Cantos filtrados y ordenados por relevancia
  */
 export function searchSongs(songs, query, activeStage = null, activeMoments = []) {
     const cleanQuery = normalizeText(query);
@@ -34,7 +69,7 @@ export function searchSongs(songs, query, activeStage = null, activeMoments = []
     // Convertir activeMoments a Array si se pasa como Set o Array
     const momentsArray = Array.isArray(activeMoments) ? activeMoments : (activeMoments ? Array.from(activeMoments) : []);
 
-    return songs.filter(song => {
+    const filtered = songs.filter(song => {
         // 1. Filtrado por Etapa
         if (activeStage && normalizeText(song.stage || '') !== normalizeText(activeStage)) {
             return false;
@@ -71,4 +106,22 @@ export function searchSongs(songs, query, activeStage = null, activeMoments = []
 
         return false;
     });
+
+    if (!cleanQuery) return filtered;
+
+    // Ordenar por relevancia
+    return filtered
+        .map(song => ({
+            song,
+            score: getRelevanceScore(song, cleanQuery)
+        }))
+        .sort((a, b) => {
+            if (b.score !== a.score) {
+                return b.score - a.score;
+            }
+            const titleA = a.song.title || '';
+            const titleB = b.song.title || '';
+            return titleA.localeCompare(titleB);
+        })
+        .map(item => item.song);
 }
