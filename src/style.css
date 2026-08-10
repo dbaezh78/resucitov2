@@ -26,6 +26,7 @@
   /* Tema Claro (Defecto) */
   --bg-color: hsl(210deg 100% 95.35%);
   --text-color: hsl(220, 25%, 15%);
+  --bg-text-campo: hsl(220, 25%, 15%);
   --text-muted: hsl(220, 15%, 45%);
   --accent-color: #d01212;
   --accent-glow: rgba(208, 18, 18, 0.2);
@@ -51,6 +52,14 @@
   --stage-bg-ele: #ceffcf;
   --stage-bg-lit: #fffde7;
   --stage-bg-cat: #f3e5f5;
+
+  /*db*/
+  --btn-db-unir: #4166d0;
+  --btn-db-unir-hover: #294182;
+  
+  --btn-db-sust: #50d041;
+  --btn-db-sust-hover: #2d7a15;
+
 }
 
 /* --- Variantes de Temas --- */
@@ -59,8 +68,13 @@
 }
 
 .theme-dark {
+
   --bg-color: hsl(220, 20%, 10%);
+  --bg-text-campo: hsl(220, 25%, 15%);
+
+  /*Revisar text-color que sale blanco y con el fondo no se ve*/
   --text-color: hsl(220, 20%, 95%);
+
   --text-muted: hsl(220, 10%, 65%);
   --accent-color: #d01212;
   --accent-glow: rgba(208, 18, 18, 0.35);
@@ -116,6 +130,11 @@
   --stage-bg-cat: #ded0de;
 }
 
+.material-symbols-outlined {
+  text-align: center;
+  align-content: center;
+}
+
 /* Colores de categorías litúrgicas */
 .badge-precatecumenado { background-color: var(--color-pre); color: white; }
 .badge-catecumenado { background-color: var(--color-cate); color: white; }
@@ -155,7 +174,7 @@ button, .btn {
   padding: 8px 16px;
   /*border-radius: 8px;   NLQ*/
   font-weight: 500;
-  gap: 8px;
+  gap: 0px;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -506,7 +525,7 @@ header {
   font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: transparent;
   color: var(--SangreCristo, #3d0706);
   border: none !important;
   outline: none;
@@ -1675,8 +1694,8 @@ footer {
 }
 
 .toolbar-search-input {
-  background-color: #ffffff;
-  color: #202020;
+  background-color: #ffffff !important;
+  color: #202020 !important;
   border: none;
   border-radius: 20px;
   padding: 6px 10px;
@@ -1686,6 +1705,10 @@ footer {
   transition: width 0.25s ease;
   outline: none;
   box-sizing: border-box;
+}
+
+.toolbar-search-input::placeholder {
+  color: #777777 !important;
 }
 
 .toolbar-search-input:focus {

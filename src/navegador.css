@@ -164,10 +164,11 @@
 .nav-submenu {
   width: max-content;
   position: absolute;
-  bottom: 65px;
+  bottom: 59px;
   background: var(--nav-bg-color, var(--panel-bg, #ffffff));
   border: 1.5px solid var(--panel-border, rgba(0, 0, 0, 0.1));
-  border-radius: 12px;
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
   display: none;
   flex-direction: column;

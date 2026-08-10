@@ -139,16 +139,22 @@
 }
 
 .form-group input,
-.form-group select {
+.form-group select,
+#inputBuscador {
   padding: 10px 14px;
   border-radius: 10px;
   border: 1.5px solid var(--panel-border, #ccc);
-  background: var(--input-bg, #ffffff);
-  color: var(--text-color, #212529);
+  background: #ffffff !important;
+  color: #212529 !important;
   font-size: 0.9rem;
   font-family: inherit;
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#inputBuscador::placeholder,
+.form-group input::placeholder {
+  color: #777777 !important;
 }
 
 .form-group input:focus,
@@ -267,14 +273,14 @@
 
 .listcanto {
   text-decoration: none;
-  color: var(--accent-color, #d01212);
-  font-weight: 600;
+  color: var(--text-color, #212529);
   transition: color 0.15s;
   font-size: larger;
 }
 
 .listcanto:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--SangreCristo);
 }
 
 .estrellas-contenedor span {

@@ -42,7 +42,7 @@ function setupCollapsibles() {
   document.querySelectorAll('.perfil-section').forEach(section => {
     const header = section.querySelector('.section-header');
     const content = section.querySelector('.section-content');
-    if (header && content) {
+    if (header && content && !header.getAttribute('onclick')) {
       header.addEventListener('click', (e) => {
         if (e.target.closest('button, select, input, a')) return;
         const isCollapsed = section.classList.toggle('collapsed');
@@ -311,7 +311,7 @@ async function renderizarTablaCantos() {
   let html = `
     <div style="position: relative; width: 100%; margin-bottom: 15px;">
       <input id="inputBuscador" type="text" placeholder="🔍 Buscar por título..." 
-        style="width: 100%; padding: 10px 40px 10px 14px; border-radius: 20px; border: 1.5px solid var(--panel-border, #ccc); background: var(--input-bg, #fff); color: var(--text-color, #212529); font-size: 0.9rem; box-sizing: border-box;">
+        style="width: 100%; padding: 10px 40px 10px 14px; border-radius: 20px; border: 1.5px solid var(--panel-border, #ccc); background: #ffffff !important; color: #212529 !important; font-size: 0.9rem; box-sizing: border-box;">
       <span id="btnLimpiar" style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #888; font-size: 20px; font-weight: bold; display: none;">&times;</span>
     </div>
     

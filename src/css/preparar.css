@@ -1,0 +1,682 @@
+/* === ESTILOS PARA PREPARAR CANTOS (GESTIÓN DE LISTAS V2) === */
+
+.preparar-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px 12px 90px 12px;
+  font-family: inherit;
+  color: var(--text-color, #212529);
+}
+
+.header-seleccion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--panel-border, rgba(0,0,0,0.1));
+}
+
+.header-seleccion h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent-color, #d01212);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text-color, #333);
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background: var(--accent-color, #d01212);
+  color: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(208, 18, 18, 0.25);
+}
+
+/* Selector de Momentos Litúrgicos */
+.selector-momentos {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+  padding: 4px 2px 8px 2px;
+  scrollbar-width: thin;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.opcion-momento {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1.5px solid var(--panel-border, #ccc);
+  color: var(--text-color, #333);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (min-width: 384px) {
+  .opcion-momento {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px 3px;
+    border-radius: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .opcion-momento {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 16px;
+    border-radius: 20px;
+
+
+  }
+}
+
+
+
+
+.opcion-momento:hover {
+  background: rgba(208, 18, 18, 0.08);
+  border-color: var(--accent-color, #d01212);
+  transform: translateY(-2px);
+}
+
+.opcion-momento.active {
+  background: var(--accent-color, #d01212);
+  border-color: var(--accent-color, #d01212);
+  color: #ffffff !important;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(208, 18, 18, 0.3);
+  transform: scale(1.02);
+}
+
+/* Buscador Rápido */
+.buscador-input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.buscador-input-container input {
+  width: 100%;
+  padding: 10px 42px 10px 40px;
+  border-radius: 25px;
+  border: 1.5px solid var(--panel-border, #ccc);
+  background: #ffffff !important;
+  color: #212529 !important;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.buscador-input-container input::placeholder {
+  color: #777777 !important;
+}
+
+.buscador-input-container input:focus {
+  border-color: var(--accent-color, #d01212);
+  box-shadow: 0 0 0 3px rgba(208, 18, 18, 0.15);
+}
+
+.buscador-input-container .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.buscador-input-container .close-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.buscador-input-container .close-icon:hover {
+  color: var(--accent-color, #d01212);
+}
+
+/* Lista Scrollable de Cantos en Selección */
+.lista-scroll {
+  max-height: 340px;
+  overflow-y: auto;
+  border: 1px solid var(--panel-border, rgba(0,0,0,0.08));
+  border-radius: 14px;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.015);
+  margin-bottom: 16px;
+}
+
+@media (min-width: 384px) {.lista-scroll {max-height: 196px;}}
+@media (min-width: 768px) {.lista-scroll {max-height: 340px;}}
+
+
+.item-canto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  background: var(--panel-bg, #ffffff);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  transition: background 0.15s, transform 0.15s, border-color 0.15s;
+  user-select: none;
+}
+
+.item-canto:hover {
+  background: rgba(208, 18, 18, 0.04);
+  border-color: rgba(208, 18, 18, 0.2);
+  transform: translateX(2px);
+}
+
+.titulo-canto-seleccion {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--text-color, #212529);
+  flex-grow: 1;
+  padding-right: 12px;
+}
+
+/* Cola Visual de Selección (Chips) */
+.cola-visual {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+  min-height: 42px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 12px;
+  border: 1px dashed var(--panel-border, #ccc);
+  align-items: center;
+}
+
+.canto-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: var(--panel-bg, #ffffff);
+  border: 1.5px solid var(--accent-color, #d01212);
+  border-radius: 0px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--text-color, #212529);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.canto-tag span {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent-color, #d01212);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.canto-tag:hover {
+  background: rgba(208, 18, 18, 0.1);
+  transform: scale(1.04);
+}
+
+/* Contador Footer y Botón Acción */
+.contador-footer {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-muted, #666);
+  margin-bottom: 14px;
+  text-align: right;
+}
+
+.contador-footer span {
+  color: var(--accent-color, #d01212);
+  font-size: 1.1rem;
+}
+
+.btn-accion {
+  width: 100%;
+  padding: 12px;
+  background: var(--accent-color, #d01212);
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(208, 18, 18, 0.3);
+  transition: transform 0.15s, background 0.2s;
+}
+
+.btn-accion:hover {
+  transform: translateY(-2px);
+  background: #b00f0f;
+}
+
+.btn-cancelar-lista:hover {
+  transform: translateY(-2px);
+  background: rgba(108, 117, 125, 0.25) !important;
+  color: var(--text-color, #212529) !important;
+}
+
+/* Tarjetas de Listas Guardadas */
+.listas-guardadas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tarjeta-lista-wrapper {
+  background: var(--panel-bg, #ffffff);
+  border: 1px solid var(--panel-border, rgba(0,0,0,0.1));
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm, 0 2px 8px rgba(0,0,0,0.06));
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta-lista-wrapper:hover {
+  border-color: var(--accent-color, #d01212);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.tarjeta-lista {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.015);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.info-lista {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.info-lista strong {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-color, #212529);
+}
+
+.info-lista span {
+  color: var(--text-muted, #666);
+  font-size: 0.85rem;
+}
+
+.acciones-lista {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Botones Redondos de Acción */
+.btn-icono {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text-color, #333);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+}
+
+.btn-icono span {
+  font-size: 18px;
+}
+
+.btn-icono.share-universal:hover {
+  background: #d4af37;
+  color: #ffffff;
+  transform: scale(1.12);
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.4);
+}
+
+.btn-icono.link:hover {
+  background: #0d6efd;
+  color: #ffffff;
+  transform: scale(1.12);
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.4);
+}
+
+.btn-icono.export:hover {
+  background: #28a745;
+  color: #ffffff;
+  transform: scale(1.12);
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.4);
+}
+
+.btn-icono.edit:hover {
+  background: #fd7e14;
+  color: #ffffff;
+  transform: scale(1.12);
+  box-shadow: 0 4px 10px rgba(253, 126, 20, 0.4);
+}
+
+.btn-icono.delete:hover {
+  background: #dc3545;
+  color: #ffffff;
+  transform: scale(1.12);
+  box-shadow: 0 4px 10px rgba(220, 53, 69, 0.4);
+}
+
+.btn-circular-import {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1.5px solid rgba(40, 167, 69, 0.2);
+}
+
+.btn-circular-import:hover {
+  background: #28a745;
+  color: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+/* Detalle Expandible de Cantos en Lista */
+.detalle-lista-cantos {
+  padding: 12px 16px;
+  border-top: 1px solid var(--panel-border, rgba(0,0,0,0.06));
+  background: rgba(0,0,0,0.01);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detalle-lista-cantos.cfg-close,
+.cfg-close {
+  display: none !important;
+}
+
+.section-header {
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.section-header:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.perfil-section.collapsed .arrow-icon {
+  transform: rotate(0deg);
+}
+
+.perfil-section:not(.collapsed) .arrow-icon {
+  transform: rotate(180deg);
+}
+
+.arrow-icon {
+  transition: transform 0.25s ease;
+  display: inline-block;
+}
+
+.sub-item-canto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--panel-bg, #ffffff);
+  border: 1px solid rgba(0,0,0,0.04);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-color, #333);
+  cursor: pointer;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.sub-item-canto:hover {
+  background: rgba(208, 18, 18, 0.05);
+  transform: translateX(4px);
+}
+
+.sub-item-canto .num {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #d4af37;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mensajes de Estado Vacio */
+.status-msg-vacia {
+  text-align: center;
+  padding: 30px 10px;
+  color: var(--text-muted, #777);
+}
+
+.link-crear-lista {
+  color: var(--accent-color, #d01212);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link-crear-lista:hover {
+  text-decoration: underline;
+}
+
+/* === FILTROS POR CATEGORÍA DE CELEBRACIÓN === */
+.filtros-categoria-wrapper {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+  padding: 4px 2px;
+  scrollbar-width: thin;
+  flex-wrap: wrap;
+}
+
+.btn-filtro-categoria {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1.5px solid var(--panel-border, #ccc);
+  color: var(--text-color, #333);
+  font-size: 0.83rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+}
+
+.btn-filtro-categoria:hover {
+  background: rgba(208, 18, 18, 0.08);
+  border-color: var(--accent-color, #d01212);
+  transform: translateY(-1px);
+}
+
+.btn-filtro-categoria.active {
+  background: var(--accent-color, #d01212);
+  border-color: var(--accent-color, #d01212);
+  color: #ffffff !important;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(208, 18, 18, 0.25);
+}
+
+/* GRUPOS DE CATEGORÍAS CONTRAÍBLES */
+.categoria-grupo-wrapper {
+  margin-bottom: 16px;
+  border: 1px solid var(--panel-border, rgba(0,0,0,0.1));
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--panel-bg, #ffffff);
+}
+
+.categoria-grupo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.categoria-grupo-header:hover {
+  background: rgba(208, 18, 18, 0.06);
+}
+
+.categoria-grupo-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-color, #d01212);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.categoria-grupo-header .badge-count {
+  background: var(--accent-color, #d01212);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.categoria-grupo-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.categoria-grupo-body.collapsed {
+  display: none;
+}
+
+
+.btn-aviso {
+  display: flex; 
+  gap: 10px; 
+  width: 100%; 
+  justify-content: space-evenly
+}
+
+
+.btn-cancel {
+  background: transparent;
+  color: var(--SangreCristo, #3d0706);
+  border: 1px solid var(--SangreCrissto, #3d0706);
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 4px;
+  width: 30%;
+}
+
+.btn-cancel:hover {
+  background: var(--SangreCristo, #3d0706);
+  color: white;
+}
+
+.btn-sust {
+  background: var(--btn-db-sust, #4166d0); 
+  color: var(--bg-color);
+  border: 1px solid var(--accent-color, #d01212); 
+  padding: 12px 16px; 
+  border-radius: 12px; 
+  font-weight: 700; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 8px; 
+  cursor: pointer; 
+  font-size: 0.95rem;
+  width: 30%;
+}
+
+.btn-sust:hover {background: var(--btn-db-sust-hover, #2d7a15);}
+
+.btn-unir {
+  background: var(--btn-db-unir, #316bdc); 
+  color: var(--bg-color);
+  border: none; 
+  padding: 12px 16px; 
+  border-radius: 12px; 
+  font-weight: 700; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 8px; 
+  cursor: pointer; 
+  font-size: 0.95rem;
+  width: 30%;
+}
+
+.btn-unir:hover {background: var(--btn-db-unir-hover, #294182);}
+

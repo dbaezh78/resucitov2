@@ -130,7 +130,7 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
           <div class="nav-submenu" id="nav-submenu-resucito">
             <a href="#" id="nav-resucito-camino"><span class="material-symbols-outlined arrow-icon">home</span> Inicio</a>
             <a href="perfil.html"><span class="material-symbols-outlined arrow-icon">person</span> Perfil</a>
-            <a href="/src/select.html"><span class="material-symbols-outlined arrow-icon">playlist_add</span>Preparar Cantos</a>
+            <a href="preparar.html"><span class="material-symbols-outlined arrow-icon">playlist_add</span>Preparar Cantos</a>
             <a href="/src/html/intro.html"><span class="material-symbols-outlined arrow-icon">menu_book</span> Introducción</a>
             <a href="#" id="installButton"><span class="material-symbols-outlined arrow-icon">download_for_offline</span>Instalar App</a>
           </div>
@@ -419,11 +419,15 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
         const accountCard = document.getElementById('account-popup-card');
         if (accountCard) accountCard.classList.add('hidden');
 
-        if (typeof window.abrirModalConfiguracion === 'function') {
-          window.abrirModalConfiguracion();
+        const modal = document.getElementById('settings-modal');
+        if (modal) {
+          if (typeof window.abrirModalConfiguracion === 'function') {
+            window.abrirModalConfiguracion();
+          } else {
+            modal.style.display = 'flex';
+          }
         } else {
-          const modal = document.getElementById('settings-modal');
-          if (modal) modal.style.display = 'flex';
+          window.location.href = './index.html#ajustes';
         }
       });
     }
@@ -480,7 +484,7 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
     if (prepararBtn) {
       prepararBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        window.location.href = '/src/select.html';
+        window.location.href = 'preparar.html';
       });
     }
 

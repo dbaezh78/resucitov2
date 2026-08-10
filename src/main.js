@@ -1,5 +1,6 @@
 import { registerServiceWorker } from './pwa.js';
 import './navegador.js';
+import './js/datos.js';
 import { searchSongs } from './search.js';
 import { getSongScrollConfig, saveSongScrollConfig } from './scroll.js';
 import { transposeNote, normalizeChord, CHROMATIC_SCALE, parseChord } from './chords.js';
@@ -283,6 +284,12 @@ function routeSPA() {
     }
     if (audioPlayBtn) {
       audioPlayBtn.classList.remove('active');
+    }
+
+    if (hash === '#ajustes') {
+      if (typeof window.abrirModalConfiguracion === 'function') {
+        window.abrirModalConfiguracion();
+      }
     }
   }
 }
@@ -2249,84 +2256,98 @@ function setupEventListeners() {
   });
 
   // Buscador e inputs
-  searchInput.addEventListener('input', () => {
-    clearSearchBtn.style.display = searchInput.value ? 'block' : 'none';
-    handleSearchAndFilters();
-  });
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      if (clearSearchBtn) clearSearchBtn.style.display = searchInput.value ? 'block' : 'none';
+      handleSearchAndFilters();
+    });
+  }
   
-  clearSearchBtn.addEventListener('click', () => {
-    searchInput.value = '';
-    clearSearchBtn.style.display = 'none';
-    handleSearchAndFilters();
-  });
+  if (clearSearchBtn) {
+    clearSearchBtn.addEventListener('click', () => {
+      if (searchInput) searchInput.value = '';
+      clearSearchBtn.style.display = 'none';
+      handleSearchAndFilters();
+    });
+  }
   
   // Toggle panel filtros
-  toggleFiltersBtn.addEventListener('click', () => {
-    const isVisible = filtersPanel.style.display !== 'none';
-    filtersPanel.style.display = isVisible ? 'none' : 'flex';
-    toggleFiltersBtn.classList.toggle('active', !isVisible);
-  });
+  if (toggleFiltersBtn) {
+    toggleFiltersBtn.addEventListener('click', () => {
+      if (filtersPanel) {
+        const isVisible = filtersPanel.style.display !== 'none';
+        filtersPanel.style.display = isVisible ? 'none' : 'flex';
+        toggleFiltersBtn.classList.toggle('active', !isVisible);
+      }
+    });
+  }
   
   // Clic en etapas
-  stageFiltersContainer.addEventListener('click', (e) => {
-    const btn = e.target.closest('.filter-pill');
-    if (!btn) return;
-    
-    const stage = btn.dataset.stage;
-    if (activeStage === stage) {
-      activeStage = null;
-      btn.classList.remove('active');
-    } else {
-      stageFiltersContainer.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
-      activeStage = stage;
-      btn.classList.add('active');
-    }
-    handleSearchAndFilters();
-  });
-  
-  // Clic en momentos litúrgicos
-  momentFiltersContainer.addEventListener('click', (e) => {
-    const btn = e.target.closest('.filter-pill');
-    if (!btn) return;
-    
-    const moment = btn.dataset.moment;
-    const btnIndice = document.getElementById('btn-filter-indice');
-    
-    if (moment === 'Indice de Cantos') {
-      // Limpiar todos los filtros de momentos
-      activeMoments = [];
-      momentFiltersContainer.querySelectorAll('.filter-pill').forEach(b => {
-        b.classList.remove('active');
-      });
-      if (btnIndice) btnIndice.classList.add('active');
-    } else {
-      const index = activeMoments.indexOf(moment);
-      if (index > -1) {
-        activeMoments.splice(index, 1);
+  if (stageFiltersContainer) {
+    stageFiltersContainer.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-pill');
+      if (!btn) return;
+      
+      const stage = btn.dataset.stage;
+      if (activeStage === stage) {
+        activeStage = null;
         btn.classList.remove('active');
       } else {
-        activeMoments.push(moment);
+        stageFiltersContainer.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+        activeStage = stage;
         btn.classList.add('active');
       }
+      handleSearchAndFilters();
+    });
+  }
+  
+  // Clic en momentos litúrgicos
+  if (momentFiltersContainer) {
+    momentFiltersContainer.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-pill');
+      if (!btn) return;
       
-      // Ajustar estado del botón de "Índice de Cantos"
-      if (activeMoments.length > 0) {
-        if (btnIndice) btnIndice.classList.remove('active');
-      } else {
+      const moment = btn.dataset.moment;
+      const btnIndice = document.getElementById('btn-filter-indice');
+      
+      if (moment === 'Indice de Cantos') {
+        // Limpiar todos los filtros de momentos
+        activeMoments = [];
+        momentFiltersContainer.querySelectorAll('.filter-pill').forEach(b => {
+          b.classList.remove('active');
+        });
         if (btnIndice) btnIndice.classList.add('active');
+      } else {
+        const index = activeMoments.indexOf(moment);
+        if (index > -1) {
+          activeMoments.splice(index, 1);
+          btn.classList.remove('active');
+        } else {
+          activeMoments.push(moment);
+          btn.classList.add('active');
+        }
+        
+        // Ajustar estado del botón de "Índice de Cantos"
+        if (activeMoments.length > 0) {
+          if (btnIndice) btnIndice.classList.remove('active');
+        } else {
+          if (btnIndice) btnIndice.classList.add('active');
+        }
       }
-    }
-    handleSearchAndFilters();
-  });
+      handleSearchAndFilters();
+    });
+  }
   
   // Botones de visor
-  viewerBackBtn.addEventListener('click', () => {
-    if (window.history.length > 1) {
-      window.history.back();
-    } else {
-      window.location.hash = '';
-    }
-  });
+  if (viewerBackBtn) {
+    viewerBackBtn.addEventListener('click', () => {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.hash = '';
+      }
+    });
+  }
   
   // Zoom settings
   if (settingsZoomOutBtn) settingsZoomOutBtn.addEventListener('click', () => updateZoom(zoomFactor - 0.1));
@@ -2679,8 +2700,10 @@ function setupEventListeners() {
     }
   }
   
-  scrollPlayBtn.addEventListener('click', toggleAutoScroll);
-  
+  if (scrollPlayBtn) {
+    scrollPlayBtn.addEventListener('click', toggleAutoScroll);
+  }
+
   const scrollIntervalSlider = document.getElementById('scroll-interval-slider');
   const scrollIntervalInput = document.getElementById('scroll-interval-input');
   const scrollIntervalMinusBtn = document.getElementById('scroll-interval-minus-btn');
@@ -2878,9 +2901,9 @@ function setupEventListeners() {
   
   if (audioPlayBtn) {
     audioPlayBtn.addEventListener('click', () => {
-      if (viewerAudioPlayer.paused) {
+      if (viewerAudioPlayer && viewerAudioPlayer.paused) {
         viewerAudioPlayer.play();
-      } else {
+      } else if (viewerAudioPlayer) {
         viewerAudioPlayer.pause();
       }
     });
@@ -2888,7 +2911,7 @@ function setupEventListeners() {
   
   if (viewerAudioPlayer) {
     viewerAudioPlayer.addEventListener('play', () => {
-      viewerAudioContainer.classList.add('open');
+      if (viewerAudioContainer) viewerAudioContainer.classList.add('open');
       if (audioPlayBtn) {
         audioPlayBtn.classList.add('active');
         const iconSpan = audioPlayBtn.querySelector('span');
@@ -2897,7 +2920,7 @@ function setupEventListeners() {
     });
     
     viewerAudioPlayer.addEventListener('pause', () => {
-      viewerAudioContainer.classList.remove('open');
+      if (viewerAudioContainer) viewerAudioContainer.classList.remove('open');
       if (audioPlayBtn) {
         audioPlayBtn.classList.remove('active');
         const iconSpan = audioPlayBtn.querySelector('span');
@@ -2906,7 +2929,7 @@ function setupEventListeners() {
     });
     
     viewerAudioPlayer.addEventListener('ended', () => {
-      viewerAudioContainer.classList.remove('open');
+      if (viewerAudioContainer) viewerAudioContainer.classList.remove('open');
       if (audioPlayBtn) {
         audioPlayBtn.classList.remove('active');
         const iconSpan = audioPlayBtn.querySelector('span');
@@ -2915,110 +2938,131 @@ function setupEventListeners() {
     });
   }
   
-  settingsOpenBtn.addEventListener('click', () => {
-    // Al abrir el modal, activar por defecto la pestaña "General" y ocultar todos los demás paneles
-    openSettingsTab('general');
-
-    populateBisSongList();
-    settingsModal.style.display = 'flex';
-  });
+  if (settingsOpenBtn) {
+    settingsOpenBtn.addEventListener('click', () => {
+      openSettingsTab('general');
+      populateBisSongList();
+      const settingsModal = document.getElementById('settings-modal');
+      if (settingsModal) settingsModal.style.display = 'flex';
+    });
+  }
   
   // Guardado de favoritos
-  favoriteBtn.addEventListener('click', () => {
-    if (!currentCanto) return;
-    const songId = currentCanto.id;
-    if (favorites.has(songId)) {
-      favorites.delete(songId);
-      favoriteBtn.classList.remove('active-star');
-    } else {
-      favorites.add(songId);
-      favoriteBtn.classList.add('active-star');
-    }
-    localStorage.setItem('favorites', JSON.stringify([...favorites]));
-    
-    if (currentBook === 'favoritos') {
-      handleSearchAndFilters();
-    }
-  });
+  if (favoriteBtn) {
+    favoriteBtn.addEventListener('click', () => {
+      if (!currentCanto) return;
+      const songId = currentCanto.id;
+      if (favorites.has(songId)) {
+        favorites.delete(songId);
+        favoriteBtn.classList.remove('active-star');
+      } else {
+        favorites.add(songId);
+        favoriteBtn.classList.add('active-star');
+      }
+      localStorage.setItem('favorites', JSON.stringify([...favorites]));
+      
+      if (currentBook === 'favoritos') {
+        handleSearchAndFilters();
+      }
+    });
+  }
   
   // Guardado de notas del cantor
-  let notesSaveTimeout;
-  notesTextarea.addEventListener('input', () => {
-    if (currentCanto) {
-      const songId = currentCanto.id;
-      const val = notesTextarea.value;
-      localStorage.setItem(`notes_${songId}`, val);
-      
-      // Sincronizar con Firebase de forma debounced
-      clearTimeout(notesSaveTimeout);
-      notesSaveTimeout = setTimeout(() => {
-        guardarNotaEnNube(songId, val);
-      }, 1000);
-    }
-  });
+  if (notesTextarea) {
+    let notesSaveTimeout;
+    notesTextarea.addEventListener('input', () => {
+      if (currentCanto) {
+        const songId = currentCanto.id;
+        const val = notesTextarea.value;
+        localStorage.setItem(`notes_${songId}`, val);
+        
+        // Sincronizar con Firebase de forma debounced
+        clearTimeout(notesSaveTimeout);
+        notesSaveTimeout = setTimeout(() => {
+          guardarNotaEnNube(songId, val);
+        }, 1000);
+      }
+    });
+  }
   
   // Cejilla select
-  capoSelect.addEventListener('change', () => {
-    if (!currentCanto) return;
-    const selectedCapo = parseInt(capoSelect.value) || 0;
-    
-    const activeCapoBadge = document.getElementById('capo-badge');
-    if (activeCapoBadge) {
-      activeCapoBadge.textContent = formatCapoText(selectedCapo);
-    }
-    
-    const modalCapoSelect = document.getElementById('modal-capo-select');
-    if (modalCapoSelect) {
-      modalCapoSelect.value = selectedCapo;
-    }
+  if (capoSelect) {
+    capoSelect.addEventListener('change', () => {
+      if (!currentCanto) return;
+      const selectedCapo = parseInt(capoSelect.value) || 0;
+      
+      const activeCapoBadge = document.getElementById('capo-badge');
+      if (activeCapoBadge) {
+        activeCapoBadge.textContent = formatCapoText(selectedCapo);
+      }
+      
+      const modalCapoSelect = document.getElementById('modal-capo-select');
+      if (modalCapoSelect) {
+        modalCapoSelect.value = selectedCapo;
+      }
 
-    updateChordPanel();
-  });
+      updateChordPanel();
+    });
+  }
   
   // Cerrar modales
-  chordModalClose.addEventListener('click', () => {
-    chordModal.style.display = 'none';
-    currentEditingChordInfo = null;
-  });
-  chordModal.addEventListener('click', (e) => {
-    if (e.target === chordModal) {
-      chordModal.style.display = 'none';
+  if (chordModalClose) {
+    chordModalClose.addEventListener('click', () => {
+      if (chordModal) chordModal.style.display = 'none';
       currentEditingChordInfo = null;
-    }
-  });
+    });
+  }
+  if (chordModal) {
+    chordModal.addEventListener('click', (e) => {
+      if (e.target === chordModal) {
+        chordModal.style.display = 'none';
+        currentEditingChordInfo = null;
+      }
+    });
+  }
   
-  settingsModalClose.addEventListener('click', () => settingsModal.style.display = 'none');
-  settingsModal.addEventListener('click', (e) => {
-    if (e.target === settingsModal) settingsModal.style.display = 'none';
-  });
+  const btnCloseModal = document.getElementById('settings-modal-close');
+  if (btnCloseModal) {
+    btnCloseModal.addEventListener('click', () => {
+      const modal = document.getElementById('settings-modal');
+      if (modal) modal.style.display = 'none';
+    });
+  }
+  const modalContainer = document.getElementById('settings-modal');
+  if (modalContainer) {
+    modalContainer.addEventListener('click', (e) => {
+      if (e.target === modalContainer) modalContainer.style.display = 'none';
+    });
+  }
   
   // Click listeners para el prontuario de acordes interactivo
-  modalChordNotePicker.addEventListener('click', (e) => {
-    const btn = e.target.closest('.btn-picker');
-    if (!btn) return;
-    
-    const chosenNote = btn.dataset.note;
-    
-    if (isChordEditMode && currentEditingChordInfo) {
-      saveSingleChordEdit(chosenNote, undefined);
-      chordModal.style.display = 'none';
-      return;
-    }
-    
-    const fromIdx = CHROMATIC_SCALE.indexOf(normalizeChord(selectedModalNote));
-    const toIdx = CHROMATIC_SCALE.indexOf(normalizeChord(chosenNote));
-    
-    if (fromIdx !== -1 && toIdx !== -1) {
-      let diff = toIdx - fromIdx;
-      if (diff !== 0) {
-        shiftKey(diff);
-        selectedModalNote = chosenNote;
-        updateModalChordDiagram();
+  if (modalChordNotePicker) {
+    modalChordNotePicker.addEventListener('click', (e) => {
+      const btn = e.target.closest('.btn-picker');
+      if (!btn) return;
+      
+      const chosenNote = btn.dataset.note;
+      
+      if (isChordEditMode && currentEditingChordInfo) {
+        saveSingleChordEdit(chosenNote, undefined);
+        if (chordModal) chordModal.style.display = 'none';
+        return;
       }
-      // Cerrar el modal al realizar la selección
-      chordModal.style.display = 'none';
-    }
-  });
+      
+      const fromIdx = CHROMATIC_SCALE.indexOf(normalizeChord(selectedModalNote));
+      const toIdx = CHROMATIC_SCALE.indexOf(normalizeChord(chosenNote));
+      
+      if (fromIdx !== -1 && toIdx !== -1) {
+        let diff = toIdx - fromIdx;
+        if (diff !== 0) {
+          shiftKey(diff);
+          selectedModalNote = chosenNote;
+          updateModalChordDiagram();
+        }
+        if (chordModal) chordModal.style.display = 'none';
+      }
+    });
+  }
 
   if (modalChordTypePicker) {
     modalChordTypePicker.addEventListener('click', (e) => {
@@ -3074,12 +3118,18 @@ function openSettingsTab(tabName = 'general') {
   if (tabName === 'log' && window.renderAppLogs) {
     window.renderAppLogs();
   }
+  if (tabName === 'datos' && window.renderDatosModule) {
+    window.renderDatosModule();
+  }
 }
 
   window.abrirModalConfiguracion = function() {
     openSettingsTab('general');
-    populateBisSongList();
-    if (settingsModal) settingsModal.style.display = 'flex';
+    if (typeof populateBisSongList === 'function') {
+      try { populateBisSongList(); } catch (e) {}
+    }
+    const modal = document.getElementById('settings-modal');
+    if (modal) modal.style.display = 'flex';
   };
 
   // Botón de ajustes en la página principal
@@ -3102,6 +3152,23 @@ function openSettingsTab(tabName = 'general') {
       }
     });
   });
+
+  const btnAgregarTipo = document.getElementById('btnAgregarTipoCelebracion');
+  const inputNuevoTipo = document.getElementById('inputNuevoTipoCelebracion');
+  if (btnAgregarTipo && inputNuevoTipo) {
+    btnAgregarTipo.addEventListener('click', () => {
+      if (window.agregarTipoCelebracion) {
+        window.agregarTipoCelebracion(inputNuevoTipo.value);
+        inputNuevoTipo.value = '';
+      }
+    });
+    inputNuevoTipo.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && window.agregarTipoCelebracion) {
+        window.agregarTipoCelebracion(inputNuevoTipo.value);
+        inputNuevoTipo.value = '';
+      }
+    });
+  }
 
   // Manejo de sub-pestañas dentro del Módulo Usuario (Cuenta y Acceso)
   const userSubtabBtns = document.querySelectorAll('.user-subtab-btn');
