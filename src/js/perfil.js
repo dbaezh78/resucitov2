@@ -322,8 +322,8 @@ async function renderizarTablaCantos() {
             <th style="text-align: left;">Canto</th>
             <th>Valoración</th>
             <th>Uso</th>
-            <th>Cejilla (Orig / Tuya)</th>
-            <th>Tono (Orig / Tuyo)</th>
+            <th>Cejilla</th>
+            <th>Tono</th>
           </tr>
         </thead>
         <tbody id="cuerpo-tabla-perfil">

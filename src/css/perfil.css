@@ -81,6 +81,9 @@
   transition: max-height 0.35s ease, opacity 0.3s ease;
 }
 
+@media (min-width: 384px) {.section-content {padding: 7px;}}
+@media (min-width: 768px) {.section-content {padding: 20px;}}
+
 .section-content.cfg-close {
   display: none;
 }
@@ -255,14 +258,14 @@
   background: rgba(0, 0, 0, 0.04);
   color: var(--text-color, #333);
   padding: 10px 12px;
-  text-align: center;
+  text-align: right;
   font-weight: 700;
   border-bottom: 2px solid var(--panel-border, #ddd);
 }
 
 .tabla-gestion td {
   padding: 10px 12px;
-  text-align: center;
+  text-align: right;
   border-bottom: 1px solid var(--panel-border, #eee);
   color: var(--text-color, #212529);
 }

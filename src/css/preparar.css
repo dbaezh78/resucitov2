@@ -3,7 +3,7 @@
 .preparar-container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 16px 12px 90px 12px;
+  padding: 16px 3px 90px 3px;
   font-family: inherit;
   color: var(--text-color, #212529);
 }
@@ -175,6 +175,9 @@
   max-height: 340px;
   overflow-y: auto;
   border: 1px solid var(--panel-border, rgba(0,0,0,0.08));
+  /*
+  border: 1px solid rgb(134 7 7 / 23%);
+  */
   border-radius: 14px;
   padding: 6px;
   background: rgba(0, 0, 0, 0.015);
@@ -207,7 +210,7 @@
 
 .titulo-canto-seleccion {
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: smaller;
   color: var(--text-color, #212529);
   flex-grow: 1;
   padding-right: 12px;
@@ -221,7 +224,7 @@
   margin-bottom: 14px;
   min-height: 42px;
   padding: 8px;
-  background: rgba(0, 0, 0, 0.02);
+  background: rgb(122 17 17 / 0%);
   border-radius: 12px;
   border: 1px dashed var(--panel-border, #ccc);
   align-items: center;
@@ -278,11 +281,11 @@
 
 .btn-accion {
   width: 100%;
-  padding: 12px;
+  padding: 9px;
   background: var(--accent-color, #d01212);
   color: #ffffff;
   border: none;
-  border-radius: 14px;
+  border-radius: 0px;
   font-weight: 700;
   font-size: 0.95rem;
   cursor: pointer;
@@ -533,6 +536,9 @@
   padding: 4px 2px;
   scrollbar-width: thin;
   flex-wrap: wrap;
+
+  @media (min-width: 384px) {gap: 4px;}
+  @media (min-width: 768px) {gap: 8px;}
 }
 
 .btn-filtro-categoria {
@@ -548,6 +554,9 @@
   user-select: none;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   outline: none;
+
+  @media (min-width: 384px) {padding: 3px 2px;border-radius: 0px;}
+  @media (min-width: 768px) {padding: 6px 14px;border-radius: 0px;}
 }
 
 .btn-filtro-categoria:hover {
@@ -680,3 +689,35 @@
 
 .btn-unir:hover {background: var(--btn-db-unir-hover, #294182);}
 
+
+.cSel { /*Cantos Seleccionados*/
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 6px;
+    align-items: center;
+}
+
+
+.btn-guardar {
+  width: 20%; 
+  min-width: 140px;
+}
+
+
+.btn-db-cancel {
+  width: 20%; 
+  min-width: 140px; 
+  padding: 9px;
+  background: rgba(108, 117, 125, 0.12); 
+  color: var(--text-muted, #6c757d); 
+  border: 1px solid var(--panel-border, #ccc); 
+  border-radius: 0px; 
+  font-weight: 700; 
+  font-size: 0.95rem; 
+  cursor: pointer;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 8px; 
+  transition: background 0.2s;
+}

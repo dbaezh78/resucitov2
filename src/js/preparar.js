@@ -931,6 +931,13 @@ window.cancelarEdicionLista = () => {
     window.contraerSeccionNuevaLista();
 };
 
+window.limpiarTodosLosCantos = () => {
+    if (listaOrdenada.length === 0) return;
+    listaOrdenada = [];
+    actualizarInterfazSeleccion();
+    renderizarLista(todosLosCantos);
+};
+
 window.irANuevaLista = () => {
     window.expandirSeccionNuevaLista();
     window.scrollTo({ top: 0, behavior: 'smooth' });
