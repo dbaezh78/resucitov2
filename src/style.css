@@ -1691,7 +1691,7 @@ footer {
 .capo-badge-text {
   font-size: 0.85rem;
   font-weight: 600;
-  opacity: 0.9;
+  /*opacity: 0.9;*/
 }
 
 /* Buscador rápido de la barra superior */
@@ -2752,9 +2752,9 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  background-color: var(--accent-color);
+  /*background-color: var(--accent-color);
   border: 1.5px solid rgba(255, 255, 255, 0.25);
-  border-radius: 14px;
+  border-radius: 14px;*/
   padding: 4px 10px;
   color: white;
   cursor: pointer;
