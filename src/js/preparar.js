@@ -406,9 +406,9 @@ function renderizarLista(lista) {
         div.onclick = () => window.toggleCanto(canto.id);
         div.innerHTML = `
             <span class="titulo-canto-seleccion">${nombreAMostrar}</span>
-            <label class="switch" onclick="event.stopPropagation()">
+            <label class="toggle-switch" onclick="event.stopPropagation()">
                 <input type="checkbox" data-id="${canto.id}" ${isChecked ? 'checked' : ''} onchange="window.toggleCanto('${canto.id}')">
-                <span class="slider"></span>
+                <span class="toggle-slider"></span>
             </label>`;
         contenedor.appendChild(div);
     });

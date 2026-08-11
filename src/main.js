@@ -1,5 +1,6 @@
 import { registerServiceWorker } from './pwa.js';
 import './navegador.js';
+import './js/ajustes.js';
 import './js/datos.js';
 import { searchSongs } from './search.js';
 import { getSongScrollConfig, saveSongScrollConfig } from './scroll.js';
@@ -34,33 +35,22 @@ let currentCanto = null;
 let currentKeyOffset = 0; // Transposición en semitonos
 let originalSongKey = 'La'; // Nota base del canto cargado
 let originalSongTypeSuffix = ''; // Sufijo/variación del tono original (ej: "7", "m")
-let zoomFactor = 1.0;
 let transitionDirection = null;
 let loadedSongsCache = {}; // Cache de cantos con letra y acordes completos
 
 // Zoom por defecto según dispositivo (tc: Tablet y Celular)
-function getDefaultZoom() {
-  // Si el usuario ajustó manualmente el zoom en la interfaz/ajustes, respetar esa preferencia
-  if (localStorage.getItem('font-zoom-custom') === 'true') {
-    const saved = localStorage.getItem('font-zoom');
-    if (saved) return parseFloat(saved);
-  }
-  const w = window.innerWidth;
-  if (w < 768)   return 0.8;   // 📱 Celular (tc: < 768px)    =>  80%
-  if (w <= 1024) return 1.2;   // 📟 Tablet  (tc: 768-1024px) => 120%
-  return 1.0;                  // 🖥️ PC/Laptop (> 1024px)     => 100%
-}
+// (Definido en ajustes.js)
 let isScrollActive = false;
 let scrollIntervalId = null;
 let activeStage = null;
 let activeMoments = [];
 let allAsambleaExpanded = true;
 let currentBook = 'resucito';
-let favorites = new Set();
+// favorites e isAdmin ahora son globales e inicializados en ajustes.js
 let catequesisData = null;
 let defaultChordPositions = {};
 let isChordEditMode = false;
-let isAdmin = false; // TODO: Conectar con el sistema de usuarios. Cambiar a true para pruebas locales de administrador.
+// isAdmin se inicializa en ajustes.js
 
 // Referencias del DOM
 const dashboardView = document.getElementById('dashboard-view');
@@ -84,10 +74,11 @@ const transposeUpBtn = document.getElementById('transpose-up-btn');
 const zoomOutBtn = document.getElementById('zoom-out-btn');
 const zoomInBtn = document.getElementById('zoom-in-btn');
 const scrollPlayBtn = document.getElementById('scroll-play-btn');
-let scrollIntervalMs = parseInt(localStorage.getItem('scroll-interval')) || 40;
-let scrollStepPx = parseInt(localStorage.getItem('scroll-step')) || 1;
-let scrollIntervalLimit = parseInt(localStorage.getItem('scroll-interval-limit')) || 1000;
-let scrollStepLimit = parseInt(localStorage.getItem('scroll-step-limit')) || 100;
+// Variables globales en ajustes.js
+scrollIntervalMs = parseInt(localStorage.getItem('scroll-interval')) || 40;
+scrollStepPx = parseInt(localStorage.getItem('scroll-step')) || 1;
+scrollIntervalLimit = parseInt(localStorage.getItem('scroll-interval-limit')) || 1000;
+scrollStepLimit = parseInt(localStorage.getItem('scroll-step-limit')) || 100;
 const splitLayoutBtn = document.getElementById('split-layout-btn');
 const asambleaToggleBtn = document.getElementById('asamblea-toggle-btn');
 const audioPlayBtn = document.getElementById('audio-play-btn');
@@ -132,9 +123,9 @@ const listStyleBtns = document.querySelectorAll('.list-style-btn');
 let selectedModalNote = 'La';
 let selectedModalType = 'm';
 let currentEditingChordInfo = null; // Almacena { side, lineIdx, subLineIdx, chordIdx } en modo edición
-let isSplitLayout = localStorage.getItem('split-layout') !== 'false';
+isSplitLayout = localStorage.getItem('split-layout') !== 'false';
 let activeSongsPlaylist = []; // Almacena el listado activo de cantos en pantalla para navegar
-let songListStyle = localStorage.getItem('song-list-style') || 'simple'; // Estilo visual de la lista: cards, detailed, simple
+songListStyle = localStorage.getItem('song-list-style') || 'simple'; // Estilo visual de la lista: cards, detailed, simple
 
 /**
  * Limpia símbolos o caracteres especiales iniciales (ej: ¡, ¿, ", «, () para ordenar alfabéticamente por la primera letra real del título.
@@ -220,7 +211,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   registerServiceWorker();
   
   // Cargar preferencias guardadas
-  initPreferences();
+  if (typeof window.initAjustes === 'function') {
+    window.initAjustes();
+  } else {
+    initPreferences();
+  }
   setupAccessControlUI();
   updateBookTabsVisibility();
   
@@ -236,6 +231,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       })
     ]);
     allSongs = await indexRes.json();
+    window.allSongs = allSongs;
+    window.populateBisSongList = populateBisSongList;
     // Ordenar alfabéticamente por la primera letra del título (ignorando símbolos iniciales como ¡ o ¿)
     sortSongsAlphabetically(allSongs);
     handleSearchAndFilters();
@@ -1792,6 +1789,7 @@ function getStageColor(stageName) {
 
 // --- Buscador y Renderizado de Lista ---
 function renderSongsList(songsList) {
+  window.renderSongsList = renderSongsList;
   activeSongsPlaylist = songsList;
   if (!songsGrid) return;
   songsGrid.innerHTML = '';
@@ -1905,6 +1903,7 @@ async function handleSearchAndFilters() {
   
   const query = searchInput ? searchInput.value : '';
   filteredSongs = searchSongs(sourceList, query, activeStage, activeMoments);
+  window.filteredSongs = filteredSongs;
   
   // Garantizar orden alfabético estricto por la primera letra real (ignorando símbolos iniciales como ¡ o ¿)
   sortSongsAlphabetically(filteredSongs);
@@ -4568,628 +4567,4 @@ function openSettingsTab(tabName = 'general') {
   });
 }
 
-// Aplica el zoom sin guardar (usado al inicializar el default por dispositivo)
-function applyZoom(factor) {
-  zoomFactor = Math.max(0.6, Math.min(2.0, factor));
-  document.documentElement.style.setProperty('--font-zoom', zoomFactor);
-  if (settingsZoomBadge) {
-    settingsZoomBadge.textContent = `${Math.round(zoomFactor * 100)}%`;
-  }
-}
-
-// Aplica el zoom Y lo persiste (usado cuando el usuario lo cambia manualmente)
-function updateZoom(factor) {
-  applyZoom(factor);
-  localStorage.setItem('font-zoom', zoomFactor);
-  localStorage.setItem('font-zoom-custom', 'true');
-}
-
-
-// Mapa de fuentes tipográficas (igual que en la Biblia)
-const FONT_MAP = {
-  'franklin': "'Franklin Gothic Medium', Arial, sans-serif",
-  'sans-serif': "sans-serif",
-  'arial': "'Arial', sans-serif",
-  'aptos': "'Aptos', sans-serif",
-  'cavolini': "'Cavolini', sans-serif",
-  'comic-sans': "'Comic Sans MS', cursive, sans-serif",
-  'fairwater-script': "'Fairwater Script', 'Brush Script MT', cursive",
-  'mv-boli': "'MV Boli', sans-serif",
-  'neocat': "'Neocat', sans-serif",
-  'pristina': "'Pristina', cursive, serif",
-  'segoe-print': "'Segoe Print', cursive, sans-serif",
-  'viner-hand': "'Viner Hand ITC', cursive, serif"
-};
-
-function applyFontFamily(key) {
-  const css = FONT_MAP[key] || FONT_MAP['franklin'];
-  document.documentElement.style.setProperty('--font-family-lyrics', css);
-}
-
-// --- Ajustes Visuales y Preferencias ---
-function initPreferences() {
-  const savedTheme = localStorage.getItem('theme') || 'light';
-  setTheme(savedTheme);
-  
-  const savedFavorites = localStorage.getItem('favorites');
-  if (savedFavorites) {
-    try {
-      favorites = new Set(JSON.parse(savedFavorites));
-    } catch (e) {
-      console.error('Error al cargar favoritos:', e);
-    }
-  }
-
-  // Inicializar clase y botón de dividir pantalla
-  if (cantoColumnsContainer) {
-    cantoColumnsContainer.classList.toggle('single-column', !isSplitLayout);
-  }
-  if (splitLayoutBtn) {
-    splitLayoutBtn.classList.toggle('active', isSplitLayout);
-  }
-
-  // Inicializar estilo visual de la lista de cantos
-  setListStyle(songListStyle);
-
-  // Inicializar colores personalizados de etapas y tema del libro
-  applyStageColors();
-  applyBookTheme();
-
-  // Inicializar estilos de cabecera de grupo de categoría (Preparación y Perfil)
-  (() => {
-    const catColor  = localStorage.getItem('cat-header-color');
-    const catSize   = localStorage.getItem('cat-header-font-size');
-    const catWeight = localStorage.getItem('cat-header-font-weight');
-    if (catColor)  document.documentElement.style.setProperty('--cat-header-color', catColor);
-    if (catSize)   document.documentElement.style.setProperty('--cat-header-font-size', catSize + 'px');
-    if (catWeight) document.documentElement.style.setProperty('--cat-header-font-weight', catWeight);
-
-    const perfilColor  = localStorage.getItem('perfil-header-color');
-    const perfilSize   = localStorage.getItem('perfil-header-font-size');
-    const perfilWeight = localStorage.getItem('perfil-header-font-weight');
-    if (perfilColor)  document.documentElement.style.setProperty('--perfil-header-color', perfilColor);
-    if (perfilSize)   document.documentElement.style.setProperty('--perfil-header-font-size', perfilSize + 'px');
-    if (perfilWeight) document.documentElement.style.setProperty('--perfil-header-font-weight', perfilWeight);
-  })();
-
-  // Inicializar ancho de página
-  const savedWidth = localStorage.getItem('app-max-width') || '1200';
-  document.documentElement.style.setProperty('--app-max-width', savedWidth + 'px');
-  const widthSlider = document.getElementById('app-width-slider');
-  const widthBadge = document.getElementById('app-width-badge');
-  if (widthSlider) widthSlider.value = savedWidth;
-  if (widthBadge) widthBadge.textContent = savedWidth + 'px';
-
-  // Inicializar tipografía guardada
-  const savedFont = localStorage.getItem('lyrics-font-family') || 'franklin';
-  applyFontFamily(savedFont);
-
-  // Inicializar zoom con valor guardado o defecto por dispositivo
-  const initialZoom = getDefaultZoom();
-  applyZoom(initialZoom); // no guardar: es el default automático
-
-  // Inicializar preferencia de mantener pantalla encendida (Wake Lock)
-  initWakeLockPreference();
-  initAutoHideNavPreference();
-
-  // Ocultar opción de edición de acordes si no es administrador (para futura autenticación)
-  const chordEditSettingRow = document.getElementById('chord-edit-setting-row');
-  if (chordEditSettingRow) {
-    chordEditSettingRow.style.display = isAdmin ? 'flex' : 'none';
-  }
-}
-
-function applyStageColors() {
-  const preColor  = localStorage.getItem('stage-color-pre')  || '#ffffff';
-  const cateColor = localStorage.getItem('stage-color-cate') || '#2196f3';
-  const eleColor  = localStorage.getItem('stage-color-ele')  || '#8bc34a';
-  const litColor  = localStorage.getItem('stage-color-lit')  || '#FFEB3B';
-  const catColor  = localStorage.getItem('stage-color-cat')  || '#6f42c1';
-
-  // Colores de estado activo para los botones de etapa
-  const preActive  = localStorage.getItem('btn-color-pre-active')  || '#495057';
-  const cateActive = localStorage.getItem('btn-color-cate-active') || '#1976d2';
-  const eleActive  = localStorage.getItem('btn-color-ele-active')  || '#558b2f';
-  const litActive  = localStorage.getItem('btn-color-lit-active')  || '#f9a825';
-  const catActive  = localStorage.getItem('btn-color-cat-active')  || '#4a1d96';
-
-  // Colores de texto de los botones de etapa
-  const preText  = localStorage.getItem('btn-color-pre-text')  || '#212529';
-  const cateText = localStorage.getItem('btn-color-cate-text') || '#ffffff';
-  const eleText  = localStorage.getItem('btn-color-ele-text')  || '#ffffff';
-  const litText  = localStorage.getItem('btn-color-lit-text')  || '#212529';
-  const catText  = localStorage.getItem('btn-color-cat-text')  || '#ffffff';
-
-  // Aplicar variables CSS de color por defecto
-  document.body.style.setProperty('--color-pre', preColor);
-  document.body.style.setProperty('--color-cate', cateColor);
-  document.body.style.setProperty('--color-ele', eleColor);
-  document.body.style.setProperty('--color-lit', litColor);
-  document.body.style.setProperty('--color-cat', catColor);
-
-  // Aplicar variables CSS de color activo
-  document.body.style.setProperty('--color-pre-active', preActive);
-  document.body.style.setProperty('--color-cate-active', cateActive);
-  document.body.style.setProperty('--color-ele-active', eleActive);
-  document.body.style.setProperty('--color-lit-active', litActive);
-  document.body.style.setProperty('--color-cat-active', catActive);
-
-  // Aplicar variables CSS de color de texto
-  document.body.style.setProperty('--text-pre', preText);
-  document.body.style.setProperty('--text-cate', cateText);
-  document.body.style.setProperty('--text-ele', eleText);
-  document.body.style.setProperty('--text-lit', litText);
-  document.body.style.setProperty('--text-cat', catText);
-
-  // Actualizar los preview labels de Personalizar Botones
-  const updatePreview = (id, color) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.style.backgroundColor = color;
-      const icon = el.querySelector('span');
-      if (icon) {
-        const isLight = /ffeb3b|ffffff|eeeeee|fafafa|fff9c4|f0f4c3/i.test(color.replace('#',''));
-        icon.style.color = isLight ? '#212529' : '#ffffff';
-      }
-      const input = el.querySelector('input');
-      if (input) input.value = color;
-    }
-  };
-  updatePreview('preview-pre-default', preColor);
-  updatePreview('preview-pre-active', preActive);
-  updatePreview('preview-pre-text', preText);
-  updatePreview('preview-cate-default', cateColor);
-  updatePreview('preview-cate-active', cateActive);
-  updatePreview('preview-cate-text', cateText);
-  updatePreview('preview-ele-default', eleColor);
-  updatePreview('preview-ele-active', eleActive);
-  updatePreview('preview-ele-text', eleText);
-  updatePreview('preview-lit-default', litColor);
-  updatePreview('preview-lit-active', litActive);
-  updatePreview('preview-lit-text', litText);
-  updatePreview('preview-cat-default', catColor);
-  updatePreview('preview-cat-active', catActive);
-  updatePreview('preview-cat-text', catText);
-
-  // Resaltar los botones de los circulitos de color correspondientes
-  document.querySelectorAll('.color-swatches').forEach(container => {
-    const stage = container.dataset.stage;
-    let activeColor = '#6c757d';
-    if (stage === 'pre') activeColor = preColor;
-    if (stage === 'cate') activeColor = cateColor;
-    if (stage === 'ele') activeColor = eleColor;
-    if (stage === 'lit') activeColor = litColor;
-
-    let presetMatched = false;
-    container.querySelectorAll('.color-swatch-btn').forEach(btn => {
-      const btnColor = btn.dataset.color.toLowerCase();
-      const isMatched = btnColor === activeColor.toLowerCase();
-      btn.classList.toggle('active', isMatched);
-      if (isMatched) presetMatched = true;
-    });
-
-    const labelBtn = container.querySelector('.color-picker-label-btn');
-    const inputPicker = container.querySelector('.stage-color-input');
-    if (inputPicker) {
-      inputPicker.value = activeColor.startsWith('#') ? activeColor : '#6c757d';
-    }
-    if (labelBtn) {
-      if (!presetMatched) {
-        labelBtn.classList.add('active');
-        labelBtn.style.backgroundColor = activeColor;
-        const isLight = activeColor.toLowerCase() === '#eeeeee' || activeColor.toLowerCase() === '#ffffff' || activeColor.toLowerCase() === '#ffeb3b';
-        labelBtn.querySelector('span').style.color = isLight ? '#212529' : '#ffffff';
-      } else {
-        labelBtn.classList.remove('active');
-        labelBtn.style.backgroundColor = 'var(--panel-bg)';
-        labelBtn.querySelector('span').style.color = 'var(--text-color)';
-      }
-    }
-  });
-}
-
-function applyBookTheme() {
-  const suffix = localStorage.getItem('theme') || 'light'; // 'dark' | 'light' | 'sepia'
-  
-  const customBg = localStorage.getItem('book-theme-bg-' + suffix);
-  const customAccent = localStorage.getItem('book-theme-accent-' + suffix);
-  const customText = localStorage.getItem('book-theme-text-' + suffix);
-  const customSongTitle = localStorage.getItem('book-theme-song-title-' + suffix);
-  const customChord = localStorage.getItem('book-theme-chord-' + suffix);
-  const customChordAlt = localStorage.getItem('book-theme-chord-alt-' + suffix);
-  const customFooterLink = localStorage.getItem('book-theme-footer-link-' + suffix);
-  
-  if (customBg) {
-    document.body.style.setProperty('--bg-color', customBg);
-  } else {
-    document.body.style.removeProperty('--bg-color');
-  }
-  
-  if (customAccent) {
-    document.body.style.setProperty('--accent-color', customAccent);
-    let glow = customAccent;
-    if (customAccent.startsWith('#')) {
-      const r = parseInt(customAccent.slice(1, 3), 16);
-      const g = parseInt(customAccent.slice(3, 5), 16);
-      const b = parseInt(customAccent.slice(5, 7), 16);
-      if (!isNaN(r) && !isNaN(g) && !isNaN(b)) {
-        glow = `rgba(${r}, ${g}, ${b}, 0.35)`;
-      }
-    }
-    document.body.style.setProperty('--accent-glow', glow);
-  } else {
-    document.body.style.removeProperty('--accent-color');
-    document.body.style.removeProperty('--accent-glow');
-  }
-
-  if (customText) {
-    document.body.style.setProperty('--text-color', customText);
-  } else {
-    document.body.style.removeProperty('--text-color');
-  }
-
-  if (customSongTitle) {
-    document.body.style.setProperty('--song-title-color', customSongTitle);
-  } else {
-    document.body.style.removeProperty('--song-title-color');
-  }
-
-  if (customChord) {
-    document.body.style.setProperty('--chord-color', customChord);
-  } else {
-    document.body.style.removeProperty('--chord-color');
-  }
-
-  if (customChordAlt) {
-    document.body.style.setProperty('--chord-color-alt', customChordAlt);
-  } else {
-    document.body.style.removeProperty('--chord-color-alt');
-  }
-
-  if (customFooterLink) {
-    document.body.style.setProperty('--SangreCristo', customFooterLink);
-  } else {
-    document.body.style.removeProperty('--SangreCristo');
-  }
-  
-  // Actualizar los inputs en el customizer de tema del libro
-  const bgInput = document.querySelector('.book-theme-input[data-type="bg"]');
-  const accentInput = document.querySelector('.book-theme-input[data-type="accent"]');
-  const textInput = document.querySelector('.book-theme-input[data-type="text"]');
-  const songTitleInput = document.querySelector('.book-theme-input[data-type="song-title"]');
-  const chordInput = document.querySelector('.book-theme-input[data-type="chord"]');
-  const chordAltInput = document.querySelector('.book-theme-input[data-type="chord-alt"]');
-  const footerLinkInput = document.querySelector('.book-theme-input[data-type="footer-link"]');
-  
-  requestAnimationFrame(() => {
-    const computedStyle = getComputedStyle(document.body);
-    const currentBg = computedStyle.getPropertyValue('--bg-color').trim();
-    const currentAccent = computedStyle.getPropertyValue('--accent-color').trim();
-    const currentText = computedStyle.getPropertyValue('--text-color').trim();
-    const currentSongTitle = computedStyle.getPropertyValue('--song-title-color').trim() || currentAccent || '#d01212';
-    const currentChord = computedStyle.getPropertyValue('--chord-color').trim();
-    const currentChordAlt = computedStyle.getPropertyValue('--chord-color-alt').trim();
-    const currentFooterLink = computedStyle.getPropertyValue('--SangreCristo').trim() || '#3d0706';
-    
-    if (bgInput) {
-      const hex = formatColorToHex(currentBg) || '#0a0a0a';
-      bgInput.value = hex;
-      const preview = bgInput.closest('.btn-pill-preview');
-      if (preview) {
-        preview.style.backgroundColor = hex;
-        const icon = preview.querySelector('span');
-        if (icon) {
-          const isLight = /ffeb3b|ffffff|eeeeee|fafafa|fff9c4|f0f4c3/i.test(hex.replace('#',''));
-          icon.style.color = isLight ? '#212529' : '#ffffff';
-        }
-      }
-    }
-    
-    if (accentInput) {
-      const hex = formatColorToHex(currentAccent) || '#d01212';
-      accentInput.value = hex;
-      const preview = accentInput.closest('.btn-pill-preview');
-      if (preview) {
-        preview.style.backgroundColor = hex;
-        const icon = preview.querySelector('span');
-        if (icon) {
-          const isLight = /ffeb3b|ffffff|eeeeee|fafafa|fff9c4|f0f4c3/i.test(hex.replace('#',''));
-          icon.style.color = isLight ? '#212529' : '#ffffff';
-        }
-      }
-    }
-
-    if (textInput) {
-      const hex = formatColorToHex(currentText) || '#ffffff';
-      textInput.value = hex;
-      const preview = textInput.closest('.btn-pill-preview');
-      if (preview) {
-        preview.style.backgroundColor = hex;
-        const icon = preview.querySelector('span');
-        if (icon) {
-          const isLight = /ffeb3b|ffffff|eeeeee|fafafa|fff9c4|f0f4c3/i.test(hex.replace('#',''));
-          icon.style.color = isLight ? '#212529' : '#ffffff';
-        }
-      }
-    }
-
-    if (songTitleInput) {
-      const hex = formatColorToHex(currentSongTitle) || '#d01212';
-      songTitleInput.value = hex;
-      const preview = songTitleInput.closest('.btn-pill-preview');
-      if (preview) {
-        preview.style.backgroundColor = hex;
-        const icon = preview.querySelector('span');
-        if (icon) {
-          const isLight = /ffeb3b|ffffff|eeeeee|fafafa|fff9c4|f0f4c3/i.test(hex.replace('#',''));
-          icon.style.color = isLight ? '#212529' : '#ffffff';
-        }
-      }
-    }
-
-    if (chordInput) {
-      const hex = formatColorToHex(currentChord) || '#d01212';
-      chordInput.value = hex;
-      const preview = chordInput.closest('.btn-pill-preview');
-      if (preview) {
-        preview.style.backgroundColor = hex;
-        const icon = preview.querySelector('span');
-        if (icon) {
-          const isLight = /ffeb3b|ffffff|eeeeee|fafafa|fff9c4|f0f4c3/i.test(hex.replace('#',''));
-          icon.style.color = isLight ? '#212529' : '#ffffff';
-        }
-      }
-    }
-
-    if (chordAltInput) {
-      const hex = formatColorToHex(currentChordAlt) || '#944c18';
-      chordAltInput.value = hex;
-      const preview = chordAltInput.closest('.btn-pill-preview');
-      if (preview) {
-        preview.style.backgroundColor = hex;
-        const icon = preview.querySelector('span');
-        if (icon) {
-          const isLight = /ffeb3b|ffffff|eeeeee|fafafa|fff9c4|f0f4c3/i.test(hex.replace('#',''));
-          icon.style.color = isLight ? '#212529' : '#ffffff';
-        }
-      }
-    }
-
-    if (footerLinkInput) {
-      const hex = formatColorToHex(currentFooterLink) || '#3d0706';
-      footerLinkInput.value = hex;
-      const preview = footerLinkInput.closest('.btn-pill-preview');
-      if (preview) {
-        preview.style.backgroundColor = hex;
-        const icon = preview.querySelector('span');
-        if (icon) {
-          const isLight = /ffeb3b|ffffff|eeeeee|fafafa|fff9c4|f0f4c3/i.test(hex.replace('#',''));
-          icon.style.color = isLight ? '#212529' : '#ffffff';
-        }
-      }
-    }
-    updateNavInputs();
-  });
-}
-
-function updateNavInputs() {
-  const inputs = document.querySelectorAll('.nav-theme-input');
-  if (!inputs.length) return;
-
-  const navBar = document.getElementById('main-navbar');
-  const toggleBtn = document.getElementById('nav-toggle');
-  const computedNav = navBar ? getComputedStyle(navBar) : null;
-  const computedToggle = toggleBtn ? getComputedStyle(toggleBtn) : null;
-
-  inputs.forEach(input => {
-    const type = input.dataset.type;
-    const mode = input.dataset.mode || 'normal';
-    const key = mode === 'hover' ? `nav-color-${type}-hover` : `nav-color-${type}`;
-    let colorVal = localStorage.getItem(key);
-
-    if (!colorVal) {
-      if (type === 'text') {
-        colorVal = mode === 'hover' ? '#ffffff' : '#301d1d';
-      } else if (type === 'bg') {
-        colorVal = computedNav ? computedNav.getPropertyValue('background-color').trim() : '#ffffff';
-      } else if (type === 'btn-bg') {
-        colorVal = mode === 'hover' ? '#390404' : '#f7f7f7';
-      } else if (type === 'icon') {
-        colorVal = mode === 'hover' ? '#f4ebeb' : '#301d1d';
-      } else if (type === 'submenu-icon') {
-        colorVal = mode === 'hover' ? '#ffffff' : '#3d0706';
-      } else if (type === 'wrapper-bg') {
-        colorVal = computedToggle ? computedToggle.getPropertyValue('background-color').trim() : '#ffffff';
-      }
-    }
-
-    const hex = formatColorToHex(colorVal) || '#ffffff';
-    input.value = hex;
-
-    const preview = input.closest('.btn-pill-preview');
-    if (preview) {
-      preview.style.backgroundColor = hex;
-      const icon = preview.querySelector('span');
-      if (icon) {
-        const isLight = /ffeb3b|ffffff|eeeeee|fafafa|fff9c4|f0f4c3/i.test(hex.replace('#', ''));
-        icon.style.color = isLight ? '#212529' : '#ffffff';
-      }
-    }
-  });
-}
-
-function formatColorToHex(colorStr) {
-  if (!colorStr) return '';
-  colorStr = colorStr.trim();
-  if (colorStr.startsWith('#')) return colorStr;
-  
-  const temp = document.createElement('div');
-  temp.style.color = colorStr;
-  document.body.appendChild(temp);
-  const resolved = getComputedStyle(temp).color;
-  document.body.removeChild(temp);
-  
-  const match = resolved.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)/);
-  if (match) {
-    const r = parseInt(match[1], 10);
-    const g = parseInt(match[2], 10);
-    const b = parseInt(match[3], 10);
-    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
-  }
-  return '';
-}
-
-function setListStyle(style) {
-  songListStyle = style;
-  localStorage.setItem('song-list-style', style);
-  
-  if (songsGrid) {
-    // Aplicar clase correspondiente a la cuadrícula
-    songsGrid.className = `songs-grid style-${style}`;
-  }
-  
-  // Resaltar botón activo en ajustes
-  listStyleBtns.forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.style === style);
-  });
-}
-
-function setTheme(theme) {
-  document.body.className = '';
-  document.body.classList.add(`theme-${theme}`);
-  localStorage.setItem('theme', theme);
-  
-  // Resaltar botón activo en el modal de ajustes
-  document.querySelectorAll('.theme-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.theme === theme);
-  });
-  applyBookTheme();
-}
-
-// --- Exportar/Importar Anotaciones locales ---
-function exportNotes() {
-  const notesObj = {};
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (key.startsWith('notes_')) {
-      notesObj[key] = localStorage.getItem(key);
-    }
-  }
-  
-  const blob = new Blob([JSON.stringify(notesObj, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = `resucito_notas_cantor_${new Date().toISOString().slice(0,10)}.json`;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-}
-
-function importNotes() {
-  const input = document.createElement('input');
-  input.type = 'file';
-  input.accept = '.json';
-  input.onchange = (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-    
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      try {
-        const importedData = JSON.parse(event.target.result);
-        let count = 0;
-        for (const [key, value] of Object.entries(importedData)) {
-          if (key.startsWith('notes_')) {
-            localStorage.setItem(key, value);
-            count++;
-          }
-        }
-        alert(`Se importaron con éxito ${count} anotaciones de cantos.`);
-        // Recargar si estamos en un canto
-        if (currentCanto) {
-          notesTextarea.value = localStorage.getItem(`notes_${currentCanto.id}`) || '';
-        }
-      } catch (err) {
-        alert('El archivo no es un backup válido de notas de cantor.');
-      }
-    };
-    reader.readAsText(file);
-  };
-  input.click();
-}
-
-// --- Wake Lock (Mantener pantalla encendida) ---
-let wakeLock = null;
-
-async function requestWakeLock() {
-  try {
-    if ('wakeLock' in navigator) {
-      wakeLock = await navigator.wakeLock.request('screen');
-      console.log('Screen Wake Lock is active');
-    }
-  } catch (err) {
-    console.warn('Wake Lock request failed:', err);
-  }
-}
-
-function releaseWakeLock() {
-  if (wakeLock !== null) {
-    wakeLock.release();
-    wakeLock = null;
-  }
-}
-
-async function handleVisibilityChange() {
-  if (wakeLock !== null && document.visibilityState === 'visible') {
-    const isWakeLockPrefActive = localStorage.getItem('pref-wakelock') === 'true';
-    if (isWakeLockPrefActive) {
-      await requestWakeLock();
-    }
-  }
-}
-
-function initWakeLockPreference() {
-  const isWakeLockPrefActive = localStorage.getItem('pref-wakelock') === 'true';
-  const wakelockToggle = document.getElementById('wakelock-toggle');
-  
-  if (wakelockToggle) {
-    wakelockToggle.checked = isWakeLockPrefActive;
-    
-    if (isWakeLockPrefActive) {
-      requestWakeLock();
-      document.addEventListener('visibilitychange', handleVisibilityChange);
-    }
-
-    wakelockToggle.addEventListener('change', async (e) => {
-      const active = e.target.checked;
-      localStorage.setItem('pref-wakelock', active ? 'true' : 'false');
-      
-      if (active) {
-        await requestWakeLock();
-        document.addEventListener('visibilitychange', handleVisibilityChange);
-      } else {
-        releaseWakeLock();
-        document.removeEventListener('visibilitychange', handleVisibilityChange);
-      }
-    });
-  }
-}
-
-function initAutoHideNavPreference() {
-  const isAutoHideActive = localStorage.getItem('pref-autohide-nav') === 'true';
-  const autohideToggle = document.getElementById('autohide-nav-toggle');
-
-  if (autohideToggle) {
-    autohideToggle.checked = isAutoHideActive;
-
-    autohideToggle.addEventListener('change', (e) => {
-      const active = e.target.checked;
-      localStorage.setItem('pref-autohide-nav', active ? 'true' : 'false');
-      if (typeof window.startAutoHideTimer === 'function') {
-        window.startAutoHideTimer();
-      }
-    });
-  }
-}
+// Las funciones de zoom, fuentes, temas y preferencias han sido movidas a ajustes.js y expuestas globalmente.
