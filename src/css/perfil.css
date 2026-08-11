@@ -185,7 +185,8 @@
   width: 100%;
   margin-top: 20px;
   padding: 12px;
-  background: var(--accent-color, #d01212);
+  background: var(--myblue, rgb(34 127 222));
+  box-shadow: 0 4px 14px rgb(59 150 229 / 66%);
   color: #ffffff;
   border: none;
   border-radius: 12px;
@@ -196,7 +197,6 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  box-shadow: 0 4px 14px rgba(208, 18, 18, 0.3);
   transition: transform 0.15s, background 0.2s;
 }
 

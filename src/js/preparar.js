@@ -40,14 +40,17 @@ export function poblarSelectYFiltrosCelebracion() {
         }
     }
 
-    // 2. Poblar contenedor de botones de filtro #contenedor-filtros-categoria
+    // 2. Poblar select de filtro #contenedor-filtros-categoria
     const contFiltros = document.getElementById('contenedor-filtros-categoria');
     if (contFiltros) {
-        let html = `<button class="btn-filtro-categoria ${filtroCategoriaSeleccionada === 'Todos' ? 'active' : ''}" data-cat="Todos" onclick="window.setFiltroCategoria(this, 'Todos')">Todos</button>`;
+        let html = `<label for="select-filtro-categoria" class="label-filtro-categoria">Seleccionar:</label>`;
+        html += `<select id="select-filtro-categoria" class="select-filtro-categoria" onchange="window.setFiltroCategoria(null, this.value)">`;
+        html += `<option value="Todos" ${filtroCategoriaSeleccionada === 'Todos' ? 'selected' : ''}>Todos</option>`;
         tipos.forEach(t => {
-            const isActive = (filtroCategoriaSeleccionada === t);
-            html += `<button class="btn-filtro-categoria ${isActive ? 'active' : ''}" data-cat="${t}" onclick="window.setFiltroCategoria(this, '${t}')">${t}</button>`;
+            const isSelected = (filtroCategoriaSeleccionada === t);
+            html += `<option value="${t}" ${isSelected ? 'selected' : ''}>${t}</option>`;
         });
+        html += `</select>`;
         contFiltros.innerHTML = html;
     }
 }
@@ -241,11 +244,9 @@ onAuthStateChanged(auth, (user) => {
 
 window.setFiltroCategoria = (elemento, cat) => {
     filtroCategoriaSeleccionada = cat;
-    const cont = document.getElementById('contenedor-filtros-categoria');
-    if (cont) {
-        cont.querySelectorAll('.btn-filtro-categoria').forEach(btn => {
-            btn.classList.toggle('active', btn.dataset.cat === cat);
-        });
+    const selectEl = document.getElementById('select-filtro-categoria');
+    if (selectEl && selectEl.value !== cat) {
+        selectEl.value = cat;
     }
     renderizarListasUI(listasLocalesCache);
 };

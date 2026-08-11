@@ -3489,7 +3489,9 @@ function openSettingsTab(tabName = 'general') {
       etapas: document.getElementById('theme-section-etapas'),
       botones: document.getElementById('theme-section-botones'),
       navegador: document.getElementById('theme-section-navegador'),
-      toolbar: document.getElementById('theme-section-toolbar')
+      toolbar: document.getElementById('theme-section-toolbar'),
+      'preparacion-canto': document.getElementById('theme-section-preparacion-canto'),
+      perfil: document.getElementById('theme-section-perfil')
     };
 
     Object.keys(sections).forEach(key => {
@@ -3511,6 +3513,339 @@ function openSettingsTab(tabName = 'general') {
     themeSectionSelect.addEventListener('change', updateThemeSectionVisibility);
     updateThemeSectionVisibility();
   }
+
+  // ══════════════════════════════════════════════════
+  // PESTAÑA: PREPARAR CANTO — Cabecera de grupo
+  // ══════════════════════════════════════════════════
+  (function initPrepararCanto() {
+    const colorInput  = document.getElementById('preparar-header-color');
+    const sizeInput   = document.getElementById('preparar-header-size');
+    const sizeLabel   = document.getElementById('preparar-header-size-label');
+    const boldOnBtn   = document.getElementById('preparar-bold-on');
+    const boldOffBtn  = document.getElementById('preparar-bold-off');
+    const resetBtn    = document.getElementById('preparar-header-reset');
+    const prevText    = document.getElementById('prev-preparar-texto');
+    const prevColor   = document.getElementById('prev-preparar-color');
+
+    function applyPreparar() {
+      const c = localStorage.getItem('cat-header-color');
+      const s = localStorage.getItem('cat-header-font-size');
+      const w = localStorage.getItem('cat-header-font-weight');
+      if (c) document.documentElement.style.setProperty('--cat-header-color', c);
+      if (s) document.documentElement.style.setProperty('--cat-header-font-size', s + 'px');
+      if (w) document.documentElement.style.setProperty('--cat-header-font-weight', w);
+    }
+
+    function updatePreview() {
+      if (!prevText) return;
+      const c = localStorage.getItem('cat-header-color') || '#d01212';
+      const s = localStorage.getItem('cat-header-font-size') || '16';
+      const w = localStorage.getItem('cat-header-font-weight') || '700';
+      prevText.style.color      = c;
+      prevText.style.fontSize   = s + 'px';
+      prevText.style.fontWeight = w;
+      if (prevColor) prevColor.style.backgroundColor = c;
+    }
+
+    function setBold(w) {
+      localStorage.setItem('cat-header-font-weight', w);
+      document.documentElement.style.setProperty('--cat-header-font-weight', w);
+      if (boldOnBtn)  boldOnBtn.classList.toggle('active', w === '700');
+      if (boldOffBtn) boldOffBtn.classList.toggle('active', w === '400');
+      updatePreview();
+    }
+
+    // Inicializar valores desde localStorage
+    const savedC = localStorage.getItem('cat-header-color')       || '#d01212';
+    const savedS = localStorage.getItem('cat-header-font-size')   || '16';
+    const savedW = localStorage.getItem('cat-header-font-weight') || '700';
+    if (colorInput)  colorInput.value  = savedC;
+    if (sizeInput)   sizeInput.value   = savedS;
+    if (sizeLabel)   sizeLabel.textContent = savedS + 'px';
+    applyPreparar();
+    setBold(savedW);
+    updatePreview();
+
+    if (colorInput) colorInput.addEventListener('input', e => {
+      localStorage.setItem('cat-header-color', e.target.value);
+      document.documentElement.style.setProperty('--cat-header-color', e.target.value);
+      updatePreview();
+    });
+
+    if (sizeInput) sizeInput.addEventListener('input', e => {
+      localStorage.setItem('cat-header-font-size', e.target.value);
+      document.documentElement.style.setProperty('--cat-header-font-size', e.target.value + 'px');
+      if (sizeLabel) sizeLabel.textContent = e.target.value + 'px';
+      updatePreview();
+    });
+
+    if (boldOnBtn)  boldOnBtn.addEventListener('click',  () => setBold('700'));
+    if (boldOffBtn) boldOffBtn.addEventListener('click', () => setBold('400'));
+
+    if (resetBtn) resetBtn.addEventListener('click', () => {
+      localStorage.removeItem('cat-header-color');
+      localStorage.removeItem('cat-header-font-size');
+      localStorage.removeItem('cat-header-font-weight');
+      document.documentElement.style.removeProperty('--cat-header-color');
+      document.documentElement.style.removeProperty('--cat-header-font-size');
+      document.documentElement.style.removeProperty('--cat-header-font-weight');
+      if (colorInput) colorInput.value = '#d01212';
+      if (sizeInput)  { sizeInput.value = '16'; if (sizeLabel) sizeLabel.textContent = '16px'; }
+      setBold('700');
+    });
+  })();
+
+  // ══════════════════════════════════════════════════
+  // PESTAÑA: PERFIL — Cabecera de grupo
+  // ══════════════════════════════════════════════════
+  (function initPerfilCanto() {
+    const colorInput  = document.getElementById('perfil-header-color');
+    const sizeInput   = document.getElementById('perfil-header-size');
+    const sizeLabel   = document.getElementById('perfil-header-size-label');
+    const boldOnBtn   = document.getElementById('perfil-bold-on');
+    const boldOffBtn  = document.getElementById('perfil-bold-off');
+    const resetBtn    = document.getElementById('perfil-header-reset');
+    const prevText    = document.getElementById('prev-perfil-texto');
+    const prevColor   = document.getElementById('prev-perfil-color');
+
+    function applyPerfil() {
+      const c = localStorage.getItem('perfil-header-color');
+      const s = localStorage.getItem('perfil-header-font-size');
+      const w = localStorage.getItem('perfil-header-font-weight');
+      if (c) document.documentElement.style.setProperty('--perfil-header-color', c);
+      if (s) document.documentElement.style.setProperty('--perfil-header-font-size', s + 'px');
+      if (w) document.documentElement.style.setProperty('--perfil-header-font-weight', w);
+    }
+
+    function updatePreview() {
+      if (!prevText) return;
+      const c = localStorage.getItem('perfil-header-color') || '#d01212';
+      const s = localStorage.getItem('perfil-header-font-size') || '16';
+      const w = localStorage.getItem('perfil-header-font-weight') || '700';
+      prevText.style.color      = c;
+      prevText.style.fontSize   = s + 'px';
+      prevText.style.fontWeight = w;
+      if (prevColor) prevColor.style.backgroundColor = c;
+    }
+
+    function setBold(w) {
+      localStorage.setItem('perfil-header-font-weight', w);
+      document.documentElement.style.setProperty('--perfil-header-font-weight', w);
+      if (boldOnBtn)  boldOnBtn.classList.toggle('active', w === '700');
+      if (boldOffBtn) boldOffBtn.classList.toggle('active', w === '400');
+      updatePreview();
+    }
+
+    const savedC = localStorage.getItem('perfil-header-color')       || '#d01212';
+    const savedS = localStorage.getItem('perfil-header-font-size')   || '16';
+    const savedW = localStorage.getItem('perfil-header-font-weight') || '700';
+    if (colorInput)  colorInput.value  = savedC;
+    if (sizeInput)   sizeInput.value   = savedS;
+    if (sizeLabel)   sizeLabel.textContent = savedS + 'px';
+    applyPerfil();
+    setBold(savedW);
+    updatePreview();
+
+    if (colorInput) colorInput.addEventListener('input', e => {
+      localStorage.setItem('perfil-header-color', e.target.value);
+      document.documentElement.style.setProperty('--perfil-header-color', e.target.value);
+      updatePreview();
+    });
+
+    if (sizeInput) sizeInput.addEventListener('input', e => {
+      localStorage.setItem('perfil-header-font-size', e.target.value);
+      document.documentElement.style.setProperty('--perfil-header-font-size', e.target.value + 'px');
+      if (sizeLabel) sizeLabel.textContent = e.target.value + 'px';
+      updatePreview();
+    });
+
+    if (boldOnBtn)  boldOnBtn.addEventListener('click',  () => setBold('700'));
+    if (boldOffBtn) boldOffBtn.addEventListener('click', () => setBold('400'));
+
+    if (resetBtn) resetBtn.addEventListener('click', () => {
+      localStorage.removeItem('perfil-header-color');
+      localStorage.removeItem('perfil-header-font-size');
+      localStorage.removeItem('perfil-header-font-weight');
+      document.documentElement.style.removeProperty('--perfil-header-color');
+      document.documentElement.style.removeProperty('--perfil-header-font-size');
+      document.documentElement.style.removeProperty('--perfil-header-font-weight');
+      if (colorInput) colorInput.value = '#d01212';
+      if (sizeInput)  { sizeInput.value = '16'; if (sizeLabel) sizeLabel.textContent = '16px'; }
+      setBold('700');
+    });
+  })();
+
+  // ── Personalización: Preparación Canto (Cabecera de Grupo de Categoría) ──
+  function applyCatHeaderStyles() {
+    const color = localStorage.getItem('cat-header-color');
+    const size  = localStorage.getItem('cat-header-font-size');
+    const weight = localStorage.getItem('cat-header-font-weight');
+    if (color)  document.documentElement.style.setProperty('--cat-header-color', color);
+    if (size)   document.documentElement.style.setProperty('--cat-header-font-size', size + 'px');
+    if (weight) document.documentElement.style.setProperty('--cat-header-font-weight', weight);
+  }
+  applyCatHeaderStyles();
+
+  function updateCatHeaderPreview() {
+    const el = document.getElementById('preview-cat-header-text');
+    if (!el) return;
+    const color  = localStorage.getItem('cat-header-color') || getComputedStyle(document.documentElement).getPropertyValue('--accent-color').trim() || '#d01212';
+    const size   = localStorage.getItem('cat-header-font-size') || '16';
+    const weight = localStorage.getItem('cat-header-font-weight') || '700';
+    el.style.color = color;
+    el.style.fontSize = size + 'px';
+    el.style.fontWeight = weight;
+  }
+
+  // Inicializar inputs de Preparación Canto
+  const catColorInput  = document.getElementById('cat-header-color-input');
+  const catSizeInput   = document.getElementById('cat-header-size-input');
+  const catSizeDisplay = document.getElementById('cat-header-size-display');
+  const catBoldBtn     = document.getElementById('cat-header-bold-btn');
+  const catNormalBtn   = document.getElementById('cat-header-normal-btn');
+  const resetCatBtn    = document.getElementById('reset-cat-header-btn');
+
+  if (catColorInput) {
+    const savedColor = localStorage.getItem('cat-header-color');
+    if (savedColor) catColorInput.value = savedColor;
+    catColorInput.addEventListener('input', (e) => {
+      const val = e.target.value;
+      localStorage.setItem('cat-header-color', val);
+      document.documentElement.style.setProperty('--cat-header-color', val);
+      const previewLabel = document.getElementById('preview-cat-header-color');
+      if (previewLabel) previewLabel.style.backgroundColor = val;
+      updateCatHeaderPreview();
+    });
+  }
+
+  if (catSizeInput && catSizeDisplay) {
+    const savedSize = localStorage.getItem('cat-header-font-size') || '16';
+    catSizeInput.value = savedSize;
+    catSizeDisplay.textContent = savedSize + 'px';
+    catSizeInput.addEventListener('input', (e) => {
+      const val = e.target.value;
+      localStorage.setItem('cat-header-font-size', val);
+      document.documentElement.style.setProperty('--cat-header-font-size', val + 'px');
+      catSizeDisplay.textContent = val + 'px';
+      updateCatHeaderPreview();
+    });
+  }
+
+  function setCatHeaderBold(weight) {
+    localStorage.setItem('cat-header-font-weight', weight);
+    document.documentElement.style.setProperty('--cat-header-font-weight', weight);
+    updateCatHeaderPreview();
+    if (catBoldBtn)   catBoldBtn.classList.toggle('active', weight === '700');
+    if (catNormalBtn) catNormalBtn.classList.toggle('active', weight === '400');
+  }
+
+  if (catBoldBtn)   catBoldBtn.addEventListener('click', () => setCatHeaderBold('700'));
+  if (catNormalBtn) catNormalBtn.addEventListener('click', () => setCatHeaderBold('400'));
+
+  // Marcar el botón activo al iniciar
+  const initCatWeight = localStorage.getItem('cat-header-font-weight') || '700';
+  setCatHeaderBold(initCatWeight);
+
+  if (resetCatBtn) {
+    resetCatBtn.addEventListener('click', () => {
+      localStorage.removeItem('cat-header-color');
+      localStorage.removeItem('cat-header-font-size');
+      localStorage.removeItem('cat-header-font-weight');
+      document.documentElement.style.removeProperty('--cat-header-color');
+      document.documentElement.style.removeProperty('--cat-header-font-size');
+      document.documentElement.style.removeProperty('--cat-header-font-weight');
+      if (catColorInput)  catColorInput.value = '#d01212';
+      if (catSizeInput)   { catSizeInput.value = '16'; catSizeDisplay.textContent = '16px'; }
+      setCatHeaderBold('700');
+    });
+  }
+
+  updateCatHeaderPreview();
+
+  // ── Personalización: Perfil (Cabecera de Grupo de Categoría en Perfil) ──
+  function applyPerfilHeaderStyles() {
+    const color  = localStorage.getItem('perfil-header-color');
+    const size   = localStorage.getItem('perfil-header-font-size');
+    const weight = localStorage.getItem('perfil-header-font-weight');
+    if (color)  document.documentElement.style.setProperty('--perfil-header-color', color);
+    if (size)   document.documentElement.style.setProperty('--perfil-header-font-size', size + 'px');
+    if (weight) document.documentElement.style.setProperty('--perfil-header-font-weight', weight);
+  }
+  applyPerfilHeaderStyles();
+
+  function updatePerfilHeaderPreview() {
+    const el = document.getElementById('preview-perfil-header-text');
+    if (!el) return;
+    const color  = localStorage.getItem('perfil-header-color') || getComputedStyle(document.documentElement).getPropertyValue('--accent-color').trim() || '#d01212';
+    const size   = localStorage.getItem('perfil-header-font-size') || '16';
+    const weight = localStorage.getItem('perfil-header-font-weight') || '700';
+    el.style.color = color;
+    el.style.fontSize = size + 'px';
+    el.style.fontWeight = weight;
+  }
+
+  const perfilColorInput  = document.getElementById('perfil-header-color-input');
+  const perfilSizeInput   = document.getElementById('perfil-header-size-input');
+  const perfilSizeDisplay = document.getElementById('perfil-header-size-display');
+  const perfilBoldBtn     = document.getElementById('perfil-header-bold-btn');
+  const perfilNormalBtn   = document.getElementById('perfil-header-normal-btn');
+  const resetPerfilBtn    = document.getElementById('reset-perfil-header-btn');
+
+  if (perfilColorInput) {
+    const savedColor = localStorage.getItem('perfil-header-color');
+    if (savedColor) perfilColorInput.value = savedColor;
+    perfilColorInput.addEventListener('input', (e) => {
+      const val = e.target.value;
+      localStorage.setItem('perfil-header-color', val);
+      document.documentElement.style.setProperty('--perfil-header-color', val);
+      const previewLabel = document.getElementById('preview-perfil-header-color');
+      if (previewLabel) previewLabel.style.backgroundColor = val;
+      updatePerfilHeaderPreview();
+    });
+  }
+
+  if (perfilSizeInput && perfilSizeDisplay) {
+    const savedSize = localStorage.getItem('perfil-header-font-size') || '16';
+    perfilSizeInput.value = savedSize;
+    perfilSizeDisplay.textContent = savedSize + 'px';
+    perfilSizeInput.addEventListener('input', (e) => {
+      const val = e.target.value;
+      localStorage.setItem('perfil-header-font-size', val);
+      document.documentElement.style.setProperty('--perfil-header-font-size', val + 'px');
+      perfilSizeDisplay.textContent = val + 'px';
+      updatePerfilHeaderPreview();
+    });
+  }
+
+  function setPerfilHeaderBold(weight) {
+    localStorage.setItem('perfil-header-font-weight', weight);
+    document.documentElement.style.setProperty('--perfil-header-font-weight', weight);
+    updatePerfilHeaderPreview();
+    if (perfilBoldBtn)   perfilBoldBtn.classList.toggle('active', weight === '700');
+    if (perfilNormalBtn) perfilNormalBtn.classList.toggle('active', weight === '400');
+  }
+
+  if (perfilBoldBtn)   perfilBoldBtn.addEventListener('click', () => setPerfilHeaderBold('700'));
+  if (perfilNormalBtn) perfilNormalBtn.addEventListener('click', () => setPerfilHeaderBold('400'));
+
+  const initPerfilWeight = localStorage.getItem('perfil-header-font-weight') || '700';
+  setPerfilHeaderBold(initPerfilWeight);
+
+  if (resetPerfilBtn) {
+    resetPerfilBtn.addEventListener('click', () => {
+      localStorage.removeItem('perfil-header-color');
+      localStorage.removeItem('perfil-header-font-size');
+      localStorage.removeItem('perfil-header-font-weight');
+      document.documentElement.style.removeProperty('--perfil-header-color');
+      document.documentElement.style.removeProperty('--perfil-header-font-size');
+      document.documentElement.style.removeProperty('--perfil-header-font-weight');
+      if (perfilColorInput)  perfilColorInput.value = '#d01212';
+      if (perfilSizeInput)   { perfilSizeInput.value = '16'; perfilSizeDisplay.textContent = '16px'; }
+      setPerfilHeaderBold('700');
+    });
+  }
+
+  updatePerfilHeaderPreview();
 
   // Personalizar colores del Navegador (Normal y Efecto Hover)
   document.querySelectorAll('.nav-theme-input').forEach(input => {
@@ -4299,6 +4634,23 @@ function initPreferences() {
   // Inicializar colores personalizados de etapas y tema del libro
   applyStageColors();
   applyBookTheme();
+
+  // Inicializar estilos de cabecera de grupo de categoría (Preparación y Perfil)
+  (() => {
+    const catColor  = localStorage.getItem('cat-header-color');
+    const catSize   = localStorage.getItem('cat-header-font-size');
+    const catWeight = localStorage.getItem('cat-header-font-weight');
+    if (catColor)  document.documentElement.style.setProperty('--cat-header-color', catColor);
+    if (catSize)   document.documentElement.style.setProperty('--cat-header-font-size', catSize + 'px');
+    if (catWeight) document.documentElement.style.setProperty('--cat-header-font-weight', catWeight);
+
+    const perfilColor  = localStorage.getItem('perfil-header-color');
+    const perfilSize   = localStorage.getItem('perfil-header-font-size');
+    const perfilWeight = localStorage.getItem('perfil-header-font-weight');
+    if (perfilColor)  document.documentElement.style.setProperty('--perfil-header-color', perfilColor);
+    if (perfilSize)   document.documentElement.style.setProperty('--perfil-header-font-size', perfilSize + 'px');
+    if (perfilWeight) document.documentElement.style.setProperty('--perfil-header-font-weight', perfilWeight);
+  })();
 
   // Inicializar ancho de página
   const savedWidth = localStorage.getItem('app-max-width') || '1200';

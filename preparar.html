@@ -132,21 +132,28 @@
       </div>
 
       <div id="content-mis-listas" class="section-content">
-        <!-- Filtros por Categoría de Celebración -->
-        <div class="filtros-categoria-wrapper" id="contenedor-filtros-categoria">
-          <button class="btn-filtro-categoria active" data-cat="Todos" onclick="window.setFiltroCategoria(this, 'Todos')">Todos</button>
-          <button class="btn-filtro-categoria" data-cat="Eucaristía" onclick="window.setFiltroCategoria(this, 'Eucaristía')">Eucaristía</button>
-          <button class="btn-filtro-categoria" data-cat="Celebración" onclick="window.setFiltroCategoria(this, 'Celebración')">Celebración</button>
-          <button class="btn-filtro-categoria" data-cat="Convivencia" onclick="window.setFiltroCategoria(this, 'Convivencia')">Convivencia</button>
-          <button class="btn-filtro-categoria" data-cat="Pasos" onclick="window.setFiltroCategoria(this, 'Pasos')">Pasos</button>
-          <button class="btn-filtro-categoria" data-cat="Otros" onclick="window.setFiltroCategoria(this, 'Otros')">Otros</button>
-        </div>
 
         <div class="buscador-input-container">
           <span class="material-symbols-outlined search-icon">search</span>
           <input type="text" id="inputBuscadorListas" placeholder="Filtrar mis listas guardadas..." oninput="window.filtrarMisListas()">
           <span id="btnLimpiarListas" class="material-symbols-outlined close-icon" onclick="window.limpiarBuscadorListas()" style="display: none;">close</span>
         </div>
+
+        <!-- Filtros por Categoría de Celebración -->
+         
+        <div class="filtros-categoria-wrapper" id="contenedor-filtros-categoria">
+          <label for="select-filtro-categoria" class="label-filtro-categoria">Seleccionar:</label>
+          <select id="select-filtro-categoria" class="select-filtro-categoria" onchange="window.setFiltroCategoria(null, this.value)">
+            <option value="Todos">Todos</option>
+            <option value="Eucaristía">Eucaristía</option>
+            <option value="Celebración">Celebración</option>
+            <option value="Convivencia">Convivencia</option>
+            <option value="Pasos">Pasos</option>
+            <option value="Otros">Otros</option>
+          </select>
+        </div>
+
+
                 
         <div id="lista-colecciones" class="listas-guardadas-container"></div>
       </div>
@@ -187,6 +194,14 @@
         <button class="settings-tab-btn" data-tab="log">
           <span class="material-symbols-outlined">terminal</span>
           <span>Log</span>
+        </button>
+        <button class="settings-tab-btn" data-tab="preparar-canto">
+          <span class="material-symbols-outlined">queue_music</span>
+          <span>Preparar</span>
+        </button>
+        <button class="settings-tab-btn" data-tab="perfil">
+          <span class="material-symbols-outlined">manage_accounts</span>
+          <span>Perfil</span>
         </button>
       </div>
 
@@ -252,6 +267,8 @@
                 <option value="etapas">Colores de Etapas</option>
                 <option value="botones">Personalizar Botones</option>
                 <option value="navegador">Colores del Navegador</option>
+                <option value="preparacion-canto">Preparación Canto</option>
+                <option value="perfil">Perfil</option>
               </select>
             </div>
           </div>
@@ -649,6 +666,114 @@
 
               <div style="display: flex; justify-content: flex-end; margin-top: 12px; margin-bottom: 4px;">
                 <button class="btn theme-btn" id="reset-nav-theme-btn" style="font-size: 0.75rem; padding: 5px 12px;">Restaurar por Defecto</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personalización: Preparación Canto (Cabecera de Grupo de Categoría) -->
+          <div id="theme-section-preparacion-canto" class="stage-colors-customizer" style="display: none;">
+            <div class="stage-colors-header collapsible-header">
+              <h4>Preparación Canto</h4>
+              <span class="material-symbols-outlined toggle-icon">expand_more</span>
+            </div>
+            <div class="collapsible-content" style="display: block;">
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 14px;">Personaliza el estilo de la cabecera de grupo de categoría en la lista de preparación</p>
+
+              <!-- Vista previa -->
+              <div id="preview-cat-header" style="margin-bottom: 16px; padding: 10px 16px; border-radius: 10px; border: 1px solid var(--panel-border); background: rgba(0,0,0,0.03);">
+                <span id="preview-cat-header-text" style="font-size: 1rem; font-weight: 700; color: var(--cat-header-color, var(--accent-color, #d01212));">✦ Vista previa Eucaristía</span>
+              </div>
+
+              <!-- Color -->
+              <div class="btn-table-row" style="margin-bottom: 12px;">
+                <span class="stage-color-label">Color del texto</span>
+                <span></span>
+                <span></span>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-cat-header-color" title="Color de la cabecera">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" id="cat-header-color-input" value="#d01212">
+                </label>
+              </div>
+
+              <!-- Tamaño de letra -->
+              <div class="setting-row" style="margin-bottom: 12px; gap: 12px;">
+                <div class="setting-label" style="flex: 1;">
+                  <h4 style="margin:0; font-size:0.85rem;">Tamaño de letra</h4>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px; flex: 2;">
+                  <input type="range" id="cat-header-size-input" min="10" max="22" step="1" value="16"
+                    style="flex: 1; accent-color: var(--accent-color, #d01212);">
+                  <span id="cat-header-size-display" style="font-size: 0.85rem; font-weight: 700; min-width: 36px; text-align: right;">16px</span>
+                </div>
+              </div>
+
+              <!-- Negrita -->
+              <div class="setting-row" style="margin-bottom: 12px;">
+                <div class="setting-label">
+                  <h4 style="margin:0; font-size:0.85rem;">Negrita</h4>
+                </div>
+                <div class="setting-control">
+                  <button id="cat-header-bold-btn" class="btn theme-btn" data-bold="700" style="font-weight: 700;"><b>N</b> Negrita</button>
+                  <button id="cat-header-normal-btn" class="btn theme-btn" data-bold="400">Normal</button>
+                </div>
+              </div>
+
+              <div style="display: flex; justify-content: flex-end; margin-top: 12px; margin-bottom: 4px;">
+                <button class="btn theme-btn" id="reset-cat-header-btn" style="font-size: 0.75rem; padding: 5px 12px;">Restaurar por Defecto</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personalización: Perfil -->
+          <div id="theme-section-perfil" class="stage-colors-customizer" style="display: none;">
+            <div class="stage-colors-header collapsible-header">
+              <h4>Perfil</h4>
+              <span class="material-symbols-outlined toggle-icon">expand_more</span>
+            </div>
+            <div class="collapsible-content" style="display: block;">
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 14px;">Personaliza el estilo tipográfico de la cabecera de grupo de categoría en la página de Perfil</p>
+
+              <!-- Vista previa -->
+              <div style="margin-bottom: 16px; padding: 10px 16px; border-radius: 10px; border: 1px solid var(--panel-border); background: rgba(0,0,0,0.03);">
+                <span id="preview-perfil-header-text" style="font-size: 1rem; font-weight: 700; color: var(--perfil-header-color, var(--accent-color, #d01212));">✦ Vista previa Perfil</span>
+              </div>
+
+              <!-- Color -->
+              <div class="btn-table-row" style="margin-bottom: 12px;">
+                <span class="stage-color-label">Color del texto</span>
+                <span></span>
+                <span></span>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-perfil-header-color" title="Color de la cabecera">
+                  <span class="material-symbols-outlined">palette</span>
+                  <input type="color" id="perfil-header-color-input" value="#d01212">
+                </label>
+              </div>
+
+              <!-- Tamaño de letra -->
+              <div class="setting-row" style="margin-bottom: 12px; gap: 12px;">
+                <div class="setting-label" style="flex: 1;">
+                  <h4 style="margin:0; font-size:0.85rem;">Tamaño de letra</h4>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px; flex: 2;">
+                  <input type="range" id="perfil-header-size-input" min="10" max="22" step="1" value="16"
+                    style="flex: 1; accent-color: var(--accent-color, #d01212);">
+                  <span id="perfil-header-size-display" style="font-size: 0.85rem; font-weight: 700; min-width: 36px; text-align: right;">16px</span>
+                </div>
+              </div>
+
+              <!-- Negrita -->
+              <div class="setting-row" style="margin-bottom: 12px;">
+                <div class="setting-label">
+                  <h4 style="margin:0; font-size:0.85rem;">Negrita</h4>
+                </div>
+                <div class="setting-control">
+                  <button id="perfil-header-bold-btn" class="btn theme-btn" data-bold="700" style="font-weight: 700;"><b>N</b> Negrita</button>
+                  <button id="perfil-header-normal-btn" class="btn theme-btn" data-bold="400">Normal</button>
+                </div>
+              </div>
+
+              <div style="display: flex; justify-content: flex-end; margin-top: 12px; margin-bottom: 4px;">
+                <button class="btn theme-btn" id="reset-perfil-header-btn" style="font-size: 0.75rem; padding: 5px 12px;">Restaurar por Defecto</button>
               </div>
             </div>
           </div>
@@ -1088,6 +1213,119 @@
             Esperando registros de diagnóstico...
           </div>
         </div>
+
+        <!-- Panel: Preparar Canto -->
+        <div id="settings-panel-preparar-canto" class="settings-panel-group" style="display: none;">
+
+          <div class="setting-row" style="flex-direction: column; align-items: flex-start; gap: 6px; margin-bottom: 4px;">
+            <h4 style="margin:0; font-size: 1rem;">Cabecera de Grupo de Categoría</h4>
+            <p style="margin:0; font-size: 0.8rem; color: var(--text-muted);">Personaliza el estilo del título de cada grupo en tu lista de preparación</p>
+          </div>
+
+          <!-- Vista previa -->
+          <div style="margin: 12px 0; padding: 12px 16px; border-radius: 10px; border: 1px solid var(--panel-border); background: rgba(0,0,0,0.03);">
+            <span id="prev-preparar-texto" style="display:flex; align-items:center; gap:8px; font-size:1rem; font-weight:700; color:var(--cat-header-color, var(--accent-color, #d01212));">
+              ✦ Vista previa Eucaristía
+            </span>
+          </div>
+
+          <!-- Color -->
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Color del texto</h4>
+            </div>
+            <div class="setting-control">
+              <label class="color-picker-label-btn btn-pill-preview" id="prev-preparar-color" title="Color de la cabecera" style="background-color:#d01212;">
+                <span class="material-symbols-outlined" style="color:#fff;">palette</span>
+                <input type="color" id="preparar-header-color" value="#d01212">
+              </label>
+            </div>
+          </div>
+
+          <!-- Tamaño de letra -->
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Tamaño de letra</h4>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px; flex:1;">
+              <input type="range" id="preparar-header-size" min="10" max="24" step="1" value="16"
+                style="flex:1; accent-color: var(--accent-color, #d01212);">
+              <span id="preparar-header-size-label" style="font-size:0.85rem; font-weight:700; min-width:36px; text-align:right;">16px</span>
+            </div>
+          </div>
+
+          <!-- Negrita -->
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Negrita</h4>
+            </div>
+            <div class="setting-control">
+              <button id="preparar-bold-on" class="btn theme-btn" style="font-weight:700;"><b>N</b> Negrita</button>
+              <button id="preparar-bold-off" class="btn theme-btn">Normal</button>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:flex-end; margin-top:16px;">
+            <button id="preparar-header-reset" class="btn theme-btn" style="font-size:0.75rem; padding:5px 12px;">Restaurar por Defecto</button>
+          </div>
+        </div>
+
+        <!-- Panel: Perfil -->
+        <div id="settings-panel-perfil" class="settings-panel-group" style="display: none;">
+
+          <div class="setting-row" style="flex-direction: column; align-items: flex-start; gap: 6px; margin-bottom: 4px;">
+            <h4 style="margin:0; font-size: 1rem;">Cabecera de Grupo de Categoría</h4>
+            <p style="margin:0; font-size: 0.8rem; color: var(--text-muted);">Personaliza el estilo del título de cada grupo en la página de Perfil</p>
+          </div>
+
+          <!-- Vista previa -->
+          <div style="margin: 12px 0; padding: 12px 16px; border-radius: 10px; border: 1px solid var(--panel-border); background: rgba(0,0,0,0.03);">
+            <span id="prev-perfil-texto" style="display:flex; align-items:center; gap:8px; font-size:1rem; font-weight:700; color:var(--perfil-header-color, var(--accent-color, #d01212));">
+              ✦ Vista previa Perfil
+            </span>
+          </div>
+
+          <!-- Color -->
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Color del texto</h4>
+            </div>
+            <div class="setting-control">
+              <label class="color-picker-label-btn btn-pill-preview" id="prev-perfil-color" title="Color de la cabecera" style="background-color:#d01212;">
+                <span class="material-symbols-outlined" style="color:#fff;">palette</span>
+                <input type="color" id="perfil-header-color" value="#d01212">
+              </label>
+            </div>
+          </div>
+
+          <!-- Tamaño de letra -->
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Tamaño de letra</h4>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px; flex:1;">
+              <input type="range" id="perfil-header-size" min="10" max="24" step="1" value="16"
+                style="flex:1; accent-color: var(--accent-color, #d01212);">
+              <span id="perfil-header-size-label" style="font-size:0.85rem; font-weight:700; min-width:36px; text-align:right;">16px</span>
+            </div>
+          </div>
+
+          <!-- Negrita -->
+          <div class="setting-row">
+            <div class="setting-label">
+              <h4>Negrita</h4>
+            </div>
+            <div class="setting-control">
+              <button id="perfil-bold-on" class="btn theme-btn" style="font-weight:700;"><b>N</b> Negrita</button>
+              <button id="perfil-bold-off" class="btn theme-btn">Normal</button>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:flex-end; margin-top:16px;">
+            <button id="perfil-header-reset" class="btn theme-btn" style="font-size:0.75rem; padding:5px 12px;">Restaurar por Defecto</button>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

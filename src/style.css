@@ -24,6 +24,7 @@
 
   --SangreCristo: #3d0706;
   /* Tema Claro (Defecto) */
+  --myblue: rgb(34 127 222);
   --bg-color: hsl(210deg 100% 95.35%);
   --text-color: hsl(220, 25%, 15%);
   --bg-text-campo: hsl(220, 25%, 15%);
@@ -59,6 +60,10 @@
   
   --btn-db-sust: #309d24;
   --btn-db-sust-hover: #2d7a15;
+
+
+  --card-bg: white;
+  
 
 }
 
@@ -96,6 +101,9 @@
   --stage-bg-ele: rgba(24, 46, 24, 0.45);
   --stage-bg-lit: rgba(46, 42, 15, 0.45);
   --stage-bg-cat: rgba(37, 18, 51, 0.45);
+
+  /*db*/
+  --card-bg: slategrey;
 }
 
 .theme-sepia {
@@ -1547,7 +1555,8 @@ footer {
   cursor: pointer;
   transition: all 0.15s ease-in-out;
   text-align: center;
-  box-shadow: var(--shadow-sm);
+  
+  box-shadow: 0 4px 14px var(--card-bg);
 }
 
 .btn-picker:hover, .btn-type-picker:hover {
