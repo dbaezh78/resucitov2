@@ -531,6 +531,16 @@ window.abrirModalConfiguracion = function() {
   if (typeof window.populateBisSongList === 'function') {
     try { window.populateBisSongList(); } catch (e) {}
   }
+  if (typeof window.switchThemeSubmodule === 'function') {
+    window.switchThemeSubmodule('visual');
+  }
+  if (typeof window.switchThemeFunctionModule === 'function') {
+    window.switchThemeFunctionModule('toolbar');
+  }
+  const accountBtn = document.getElementById('user-subtab-account-btn');
+  if (accountBtn) {
+    accountBtn.click();
+  }
   const modal = document.getElementById('settings-modal');
   if (modal) modal.style.display = 'flex';
 };
@@ -725,7 +735,21 @@ window.updatePerfilHeaderPreview = function() {
 };
 
 // Función principal de inicialización de Ajustes
-window.initAjustes = function() {
+window.initAjustes = async function() {
+  // Cargar el HTML del modal si no existe en el DOM
+  if (!document.getElementById('settings-modal')) {
+    try {
+      const response = await fetch('data/ajustes_modal.html');
+      if (response.ok) {
+        const html = await response.text();
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = html;
+        document.body.appendChild(tempDiv.firstElementChild);
+      }
+    } catch (e) {
+      console.error('Error al cargar el modal de ajustes dinámicamente:', e);
+    }
+  }
   // 1. Inicializar preferencias visuales generales
   const savedTheme = localStorage.getItem('theme') || 'light';
   window.setTheme(savedTheme);
@@ -744,8 +768,25 @@ window.initAjustes = function() {
   document.documentElement.style.setProperty('--app-max-width', savedWidth + 'px');
   const widthSlider = document.getElementById('app-width-slider');
   const widthBadge = document.getElementById('app-width-badge');
-  if (widthSlider) widthSlider.value = savedWidth;
+  const widthDefaultBtn = document.getElementById('app-width-default-btn');
+  if (widthSlider) {
+    widthSlider.value = savedWidth;
+    widthSlider.addEventListener('input', (e) => {
+      const val = e.target.value;
+      if (widthBadge) widthBadge.textContent = val + 'px';
+      document.documentElement.style.setProperty('--app-max-width', val + 'px');
+      localStorage.setItem('app-max-width', val);
+    });
+  }
   if (widthBadge) widthBadge.textContent = savedWidth + 'px';
+  if (widthDefaultBtn) {
+    widthDefaultBtn.addEventListener('click', () => {
+      if (widthSlider) widthSlider.value = 1200;
+      if (widthBadge) widthBadge.textContent = '1200px';
+      document.documentElement.style.setProperty('--app-max-width', '1200px');
+      localStorage.setItem('app-max-width', '1200');
+    });
+  }
 
   // Tipografía
   const savedFont = localStorage.getItem('lyrics-font-family') || 'franklin';
@@ -1123,4 +1164,111 @@ window.initAjustes = function() {
       });
     }
   })();
+
+  // Manejo de la navegación de subpestañas de Tema
+  window.switchThemeSubmodule = function(subtab) {
+    const btns = document.querySelectorAll('.theme-subtab-btn');
+    btns.forEach(b => {
+      b.classList.toggle('active', b.dataset.subtab === subtab);
+    });
+    
+    const subPanels = {
+      'visual': document.getElementById('theme-submodule-visual-content'),
+      'preparar-canto': document.getElementById('theme-submodule-preparar-content'),
+      'perfil': document.getElementById('theme-submodule-perfil-content')
+    };
+    
+    for (const [key, el] of Object.entries(subPanels)) {
+      if (el) {
+        el.style.display = key === subtab ? 'block' : 'none';
+      }
+    }
+  };
+
+  // Manejo de la navegación de subpestañas de Función (Personalizar Función)
+  window.switchThemeFunctionModule = function(funcKey) {
+    const btns = document.querySelectorAll('.func-subtab-btn');
+    btns.forEach(b => {
+      b.classList.toggle('active', b.dataset.func === funcKey);
+    });
+    
+    const sections = {
+      book: document.getElementById('theme-section-book'),
+      canto: document.getElementById('theme-section-canto'),
+      etapas: document.getElementById('theme-section-etapas'),
+      botones: document.getElementById('theme-section-botones'),
+      navegador: document.getElementById('theme-section-navegador'),
+      toolbar: document.getElementById('theme-section-toolbar')
+    };
+
+    for (const [key, el] of Object.entries(sections)) {
+      if (el) {
+        if (key === funcKey) {
+          el.style.display = 'block';
+          el.classList.remove('collapsed');
+          const content = el.querySelector('.collapsible-content');
+          if (content) content.style.display = 'block';
+        } else {
+          el.style.display = 'none';
+        }
+      }
+    }
+  };
+
+  const funcSubtabBtns = document.querySelectorAll('.func-subtab-btn');
+  funcSubtabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.switchThemeFunctionModule(btn.dataset.func);
+    });
+  });
+
+  const themeSubtabBtns = document.querySelectorAll('.theme-subtab-btn');
+  themeSubtabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.switchThemeSubmodule(btn.dataset.subtab);
+    });
+  });
+
+  // Manejo de sub-pestañas dentro del Módulo Usuario (Cuenta y Acceso)
+  const userSubtabBtns = document.querySelectorAll('.user-subtab-btn');
+  userSubtabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const subtab = btn.dataset.subtab;
+      userSubtabBtns.forEach(b => b.classList.toggle('active', b.dataset.subtab === subtab));
+
+      const subpanels = document.querySelectorAll('.user-subpanel');
+      subpanels.forEach(p => p.style.display = 'none');
+
+      const targetSubpanel = document.getElementById(`user-subpanel-${subtab}`);
+      if (targetSubpanel) {
+        targetSubpanel.style.display = 'block';
+      }
+    });
+  });
+  
+  // Manejo del cierre del modal de Ajustes (guardando los cambios en la nube)
+  const btnCloseModal = document.getElementById('settings-modal-close');
+  const modalContainer = document.getElementById('settings-modal');
+  
+  const closeModalAction = () => {
+    if (modalContainer) modalContainer.style.display = 'none';
+    if (typeof window.guardarAjustesEnNube === 'function') {
+      window.guardarAjustesEnNube();
+    }
+  };
+
+  if (btnCloseModal) {
+    btnCloseModal.addEventListener('click', closeModalAction);
+  }
+  if (modalContainer) {
+    modalContainer.addEventListener('click', (e) => {
+      if (e.target === modalContainer) {
+        closeModalAction();
+      }
+    });
+  }
+
+  // Forzar el estado por defecto al iniciar
+  window.switchThemeSubmodule('visual');
+  window.switchThemeFunctionModule('toolbar');
 };

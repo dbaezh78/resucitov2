@@ -108,16 +108,8 @@ const chordDiagramImg = document.getElementById('chord-diagram-img');
 const modalChordNotePicker = document.getElementById('modal-chord-note-picker');
 const modalChordTypePicker = document.getElementById('modal-chord-type-picker');
 
-const settingsModal = document.getElementById('settings-modal');
-const settingsModalClose = document.getElementById('settings-modal-close');
-const capoSelect = document.getElementById('capo-select');
-const settingsZoomOutBtn = document.getElementById('settings-zoom-out-btn');
-const settingsZoomInBtn = document.getElementById('settings-zoom-in-btn');
-const settingsZoomBadge = document.getElementById('settings-zoom-badge');
-const exportNotesBtn = document.getElementById('export-notes-btn');
-const importNotesBtn = document.getElementById('import-notes-btn');
+let capoSelect = null;
 const dashboardSettingsBtn = document.getElementById('dashboard-settings-btn');
-const listStyleBtns = document.querySelectorAll('.list-style-btn');
 
 // Estado interno para el prontuario de acordes activo
 let selectedModalNote = 'La';
@@ -212,10 +204,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   
   // Cargar preferencias guardadas
   if (typeof window.initAjustes === 'function') {
-    window.initAjustes();
-  } else {
-    initPreferences();
+    await window.initAjustes();
   }
+  capoSelect = document.getElementById('capo-select');
   setupAccessControlUI();
   updateBookTabsVisibility();
   
@@ -232,7 +223,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     ]);
     allSongs = await indexRes.json();
     window.allSongs = allSongs;
-    window.populateBisSongList = populateBisSongList;
     // Ordenar alfabéticamente por la primera letra del título (ignorando símbolos iniciales como ¡ o ¿)
     sortSongsAlphabetically(allSongs);
     handleSearchAndFilters();
@@ -1353,6 +1343,9 @@ function saveChordPosition(side, lineIdx, subLineIdx, chordIdx, newPos) {
   if (lineChords && lineChords[chordIdx]) {
     lineChords[chordIdx].pos = newPos;
     localStorage.setItem(customKey, JSON.stringify(customPositions));
+    if (typeof guardarPosicionesEnNube === 'function') {
+      guardarPosicionesEnNube(songId, customPositions);
+    }
     renderSongContent();
   }
 }
@@ -1400,6 +1393,9 @@ function saveSingleChordEdit(chosenNote, chosenType) {
     }
     if (chosenType !== undefined) lineChords[chordIdx].type = chosenType;
     localStorage.setItem(customKey, JSON.stringify(customPositions));
+    if (typeof guardarPosicionesEnNube === 'function') {
+      guardarPosicionesEnNube(songId, customPositions);
+    }
     renderSongContent();
   }
   currentEditingChordInfo = null;
@@ -2348,24 +2344,7 @@ function setupEventListeners() {
     });
   }
   
-  // Zoom settings
-  if (settingsZoomOutBtn) settingsZoomOutBtn.addEventListener('click', () => updateZoom(zoomFactor - 0.1));
-  if (settingsZoomInBtn) settingsZoomInBtn.addEventListener('click', () => updateZoom(zoomFactor + 0.1));
 
-  // Selector de tipografía
-  const fontFamilySelect = document.getElementById('font-family-select');
-  if (fontFamilySelect) {
-    // Restaurar selección guardada
-    const savedFont = localStorage.getItem('lyrics-font-family') || 'franklin';
-    fontFamilySelect.value = savedFont;
-    applyFontFamily(savedFont);
-
-    fontFamilySelect.addEventListener('change', () => {
-      const key = fontFamilySelect.value;
-      applyFontFamily(key);
-      localStorage.setItem('lyrics-font-family', key);
-    });
-  }
 
   // Clic en Tone/Capo trigger para abrir transposición (Desktop y Mobile)
   const openChordModal = () => {
@@ -2939,10 +2918,7 @@ function setupEventListeners() {
   
   if (settingsOpenBtn) {
     settingsOpenBtn.addEventListener('click', () => {
-      openSettingsTab('general');
-      populateBisSongList();
-      const settingsModal = document.getElementById('settings-modal');
-      if (settingsModal) settingsModal.style.display = 'flex';
+      window.abrirModalConfiguracion();
     });
   }
   
@@ -3020,19 +2996,7 @@ function setupEventListeners() {
     });
   }
   
-  const btnCloseModal = document.getElementById('settings-modal-close');
-  if (btnCloseModal) {
-    btnCloseModal.addEventListener('click', () => {
-      const modal = document.getElementById('settings-modal');
-      if (modal) modal.style.display = 'none';
-    });
-  }
-  const modalContainer = document.getElementById('settings-modal');
-  if (modalContainer) {
-    modalContainer.addEventListener('click', (e) => {
-      if (e.target === modalContainer) modalContainer.style.display = 'none';
-    });
-  }
+
   
   // Click listeners para el prontuario de acordes interactivo
   if (modalChordNotePicker) {
@@ -3081,110 +3045,7 @@ function setupEventListeners() {
     });
   }
   
-  // Selección de temas
-  document.querySelectorAll('.theme-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const theme = btn.dataset.theme;
-      setTheme(theme);
-    });
-  });
 
-  // Selección de estilo de lista
-  listStyleBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const style = btn.dataset.style;
-      setListStyle(style);
-    });
-  });
-
-  // Botón de ajustes en la página principal
-function openSettingsTab(tabName = 'general') {
-  const tabBtns = document.querySelectorAll('.settings-tab-btn');
-  tabBtns.forEach((b) => {
-    b.classList.toggle('active', b.dataset.tab === tabName);
-  });
-
-  const panelGroups = document.querySelectorAll('.settings-panel-group');
-  panelGroups.forEach((panel) => {
-    panel.style.display = 'none';
-  });
-
-  const targetPanel = document.getElementById(`settings-panel-${tabName}`);
-  if (targetPanel) {
-    targetPanel.style.display = 'block';
-  }
-
-  if (tabName === 'log' && window.renderAppLogs) {
-    window.renderAppLogs();
-  }
-  if (tabName === 'datos' && window.renderDatosModule) {
-    window.renderDatosModule();
-  }
-}
-
-  window.abrirModalConfiguracion = function() {
-    openSettingsTab('general');
-    if (typeof populateBisSongList === 'function') {
-      try { populateBisSongList(); } catch (e) {}
-    }
-    const modal = document.getElementById('settings-modal');
-    if (modal) modal.style.display = 'flex';
-  };
-
-  // Botón de ajustes en la página principal
-  if (dashboardSettingsBtn) {
-    dashboardSettingsBtn.addEventListener('click', () => {
-      window.abrirModalConfiguracion();
-    });
-  }
-
-  // Selección de pestañas del modal de Ajustes
-  const settingsTabBtns = document.querySelectorAll('.settings-tab-btn');
-  settingsTabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const tab = btn.dataset.tab;
-      openSettingsTab(tab);
-
-      // Poblar la lista de BIS al entrar a la pestaña Canto
-      if (tab === 'canto') {
-        populateBisSongList();
-      }
-    });
-  });
-
-  const btnAgregarTipo = document.getElementById('btnAgregarTipoCelebracion');
-  const inputNuevoTipo = document.getElementById('inputNuevoTipoCelebracion');
-  if (btnAgregarTipo && inputNuevoTipo) {
-    btnAgregarTipo.addEventListener('click', () => {
-      if (window.agregarTipoCelebracion) {
-        window.agregarTipoCelebracion(inputNuevoTipo.value);
-        inputNuevoTipo.value = '';
-      }
-    });
-    inputNuevoTipo.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' && window.agregarTipoCelebracion) {
-        window.agregarTipoCelebracion(inputNuevoTipo.value);
-        inputNuevoTipo.value = '';
-      }
-    });
-  }
-
-  // Manejo de sub-pestañas dentro del Módulo Usuario (Cuenta y Acceso)
-  const userSubtabBtns = document.querySelectorAll('.user-subtab-btn');
-  userSubtabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const subtab = btn.dataset.subtab;
-      userSubtabBtns.forEach(b => b.classList.toggle('active', b.dataset.subtab === subtab));
-
-      const subpanels = document.querySelectorAll('.user-subpanel');
-      subpanels.forEach(p => p.style.display = 'none');
-
-      const targetSubpanel = document.getElementById(`user-subpanel-${subtab}`);
-      if (targetSubpanel) {
-        targetSubpanel.style.display = 'block';
-      }
-    });
-  });
 
   // --- Módulo de Logs de Diagnóstico ---
   window.appLogs = window.appLogs || [];
@@ -3310,6 +3171,7 @@ function openSettingsTab(tabName = 'general') {
     if (!bisToggle) return;
     bisToggle.checked = currentCanto ? isBisEnabled(currentCanto.id) : false;
   }
+  window.populateBisSongList = populateBisSongList;
 
   // Listener del toggle BIS
   const bisToggleInput = document.getElementById('bis-toggle');
@@ -3477,41 +3339,7 @@ function openSettingsTab(tabName = 'general') {
     });
   }
 
-  // Control de visibilidad mediante Select de Secciones en Tema
-  const themeSectionSelect = document.getElementById('theme-color-section-select');
-  function updateThemeSectionVisibility() {
-    if (!themeSectionSelect) return;
-    const selectedVal = themeSectionSelect.value;
-    const sections = {
-      book: document.getElementById('theme-section-book'),
-      canto: document.getElementById('theme-section-canto'),
-      etapas: document.getElementById('theme-section-etapas'),
-      botones: document.getElementById('theme-section-botones'),
-      navegador: document.getElementById('theme-section-navegador'),
-      toolbar: document.getElementById('theme-section-toolbar'),
-      'preparacion-canto': document.getElementById('theme-section-preparacion-canto'),
-      perfil: document.getElementById('theme-section-perfil')
-    };
-
-    Object.keys(sections).forEach(key => {
-      const el = sections[key];
-      if (el) {
-        if (key === selectedVal) {
-          el.style.display = 'block';
-          el.classList.remove('collapsed');
-          const content = el.querySelector('.collapsible-content');
-          if (content) content.style.display = 'block';
-        } else {
-          el.style.display = 'none';
-        }
-      }
-    });
-  }
-
-  if (themeSectionSelect) {
-    themeSectionSelect.addEventListener('change', updateThemeSectionVisibility);
-    updateThemeSectionVisibility();
-  }
+  // El control de visibilidad de secciones de tema se ha centralizado y portado a ajustes.js usando pestañas de carpeta.
 
   // ══════════════════════════════════════════════════
   // PESTAÑA: PREPARAR CANTO — Cabecera de grupo
@@ -3899,19 +3727,7 @@ function openSettingsTab(tabName = 'general') {
     });
   }
 
-  // Manejo de secciones colapsables en Ajustes
-  document.querySelectorAll('.collapsible-header').forEach(header => {
-    header.addEventListener('click', () => {
-      const parent = header.closest('.stage-colors-customizer');
-      if (parent) {
-        parent.classList.toggle('collapsed');
-      }
-    });
-  });
 
-  // Exportar / Importar notas
-  exportNotesBtn.addEventListener('click', exportNotes);
-  importNotesBtn.addEventListener('click', importNotes);
   
   // Control de Edición de Acordes
   const toggleChordEditBtn = document.getElementById('toggle-chord-edit-btn');
@@ -3932,34 +3748,18 @@ function openSettingsTab(tabName = 'general') {
     toolbarSaveChordBtn.addEventListener('click', saveChordPositionsAction);
   }
 
-  // Ancho máximo del cancionero (.app-container)
-  const widthSlider = document.getElementById('app-width-slider');
-  const widthBadge = document.getElementById('app-width-badge');
-  const widthDefaultBtn = document.getElementById('app-width-default-btn');
-  
-  if (widthSlider) {
-    widthSlider.addEventListener('input', (e) => {
-      const val = e.target.value;
-      if (widthBadge) widthBadge.textContent = val + 'px';
-      document.documentElement.style.setProperty('--app-max-width', val + 'px');
-      localStorage.setItem('app-max-width', val);
-    });
-  }
-  
-  if (widthDefaultBtn) {
-    widthDefaultBtn.addEventListener('click', () => {
-      if (widthSlider) widthSlider.value = 1200;
-      if (widthBadge) widthBadge.textContent = '1200px';
-      document.documentElement.style.setProperty('--app-max-width', '1200px');
-      localStorage.setItem('app-max-width', '1200');
-    });
-  }
-  
   // Cerrar con Escape
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      chordModal.style.display = 'none';
-      settingsModal.style.display = 'none';
+      const chordModal = document.getElementById('chord-modal');
+      const settingsModal = document.getElementById('settings-modal');
+      if (chordModal) chordModal.style.display = 'none';
+      if (settingsModal && settingsModal.style.display !== 'none') {
+        settingsModal.style.display = 'none';
+        if (typeof window.guardarAjustesEnNube === 'function') {
+          window.guardarAjustesEnNube();
+        }
+      }
     }
   });
   
@@ -4113,6 +3913,15 @@ function openSettingsTab(tabName = 'general') {
     if (user) {
       trackLoggedInUser(user);
       listenToOwnUserPermissionsSilently(user);
+      
+      // Descargar y aplicar preferencias personales de Ajustes desde la nube
+      if (typeof window.cargarAjustesDesdeNube === 'function') {
+        window.cargarAjustesDesdeNube().then(() => {
+          if (typeof window.initAjustes === 'function') {
+            window.initAjustes();
+          }
+        });
+      }
     }
     updateExtrasTabVisibility();
     

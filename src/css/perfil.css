@@ -94,8 +94,8 @@
   align-items: center;
   gap: 16px;
   padding: 16px;
-  background: rgba(208, 18, 18, 0.05);
-  border: 1px solid rgba(208, 18, 18, 0.15);
+  background: #8ab4f830;
+  border: 1px solid rgb(18 25 208 / 15%);
   border-radius: 14px;
   margin-bottom: 20px;
 }
@@ -202,7 +202,7 @@
 
 .btn-guardar:hover {
   transform: translateY(-1px);
-  background: #b00f0f;
+  background: rgb(24 106 191);
 }
 
 /* Botones de Gestión de Cantos */

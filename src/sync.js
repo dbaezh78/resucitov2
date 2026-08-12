@@ -181,3 +181,82 @@ export async function cargarPosicionesGlobales(cantoId) {
   }
   return null;
 }
+
+// Sincroniza todos los ajustes de la aplicación con Firestore
+export async function guardarAjustesEnNube() {
+  const user = auth.currentUser;
+  if (!user) return;
+
+  try {
+    const docRef = doc(db, "usuarios", user.uid, "configuracion", "ajustes");
+    const ajustes = {
+      theme: localStorage.getItem('theme') || 'light',
+      songListStyle: localStorage.getItem('song-list-style') || 'simple',
+      splitLayout: localStorage.getItem('split-layout') || 'true',
+      lyricsFontFamily: localStorage.getItem('lyrics-font-family') || 'franklin',
+      appMaxWidth: localStorage.getItem('app-max-width') || '1200',
+      fontZoom: localStorage.getItem('font-zoom') || '1.0',
+      fontZoomCustom: localStorage.getItem('font-zoom-custom') || 'false',
+      
+      // Cabeceras de preparación
+      catHeaderColor: localStorage.getItem('cat-header-color') || '#d01212',
+      catHeaderFontSize: localStorage.getItem('cat-header-font-size') || '16',
+      catHeaderFontWeight: localStorage.getItem('cat-header-font-weight') || '700',
+      
+      // Cabeceras de perfil
+      perfilHeaderColor: localStorage.getItem('perfil-header-color') || '#d01212',
+      perfilHeaderFontSize: localStorage.getItem('perfil-header-font-size') || '16',
+      perfilHeaderFontWeight: localStorage.getItem('perfil-header-font-weight') || '700',
+
+      ultimaActualizacion: new Date()
+    };
+
+    await setDoc(docRef, ajustes);
+    console.log("☁️ [Firebase] Ajustes personales guardados en la nube.");
+  } catch (e) {
+    console.warn("⚠️ [Firebase] No se pudieron guardar los ajustes en la nube:", e.message || e);
+  }
+}
+
+// Carga los ajustes de la aplicación desde Firestore
+export async function cargarAjustesDesdeNube() {
+  const user = auth.currentUser;
+  if (!user) return;
+
+  try {
+    const docRef = doc(db, "usuarios", user.uid, "configuracion", "ajustes");
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      const data = docSnap.data();
+      
+      // Guardar localmente y aplicar
+      if (data.theme) localStorage.setItem('theme', data.theme);
+      if (data.songListStyle) localStorage.setItem('song-list-style', data.songListStyle);
+      if (data.splitLayout) localStorage.setItem('split-layout', data.splitLayout);
+      if (data.lyricsFontFamily) localStorage.setItem('lyrics-font-family', data.lyricsFontFamily);
+      if (data.appMaxWidth) localStorage.setItem('app-max-width', data.appMaxWidth);
+      if (data.fontZoom) localStorage.setItem('font-zoom', data.fontZoom);
+      if (data.fontZoomCustom) localStorage.setItem('font-zoom-custom', data.fontZoomCustom);
+
+      if (data.catHeaderColor) localStorage.setItem('cat-header-color', data.catHeaderColor);
+      if (data.catHeaderFontSize) localStorage.setItem('cat-header-font-size', data.catHeaderFontSize);
+      if (data.catHeaderFontWeight) localStorage.setItem('cat-header-font-weight', data.catHeaderFontWeight);
+
+      if (data.perfilHeaderColor) localStorage.setItem('perfil-header-color', data.perfilHeaderColor);
+      if (data.perfilHeaderFontSize) localStorage.setItem('perfil-header-font-size', data.perfilHeaderFontSize);
+      if (data.perfilHeaderFontWeight) localStorage.setItem('perfil-header-font-weight', data.perfilHeaderFontWeight);
+
+      console.log("📥 [Firebase] Ajustes personales descargados de la nube.");
+    }
+  } catch (e) {
+    console.warn("⚠️ [Firebase] No se pudieron cargar los ajustes desde la nube:", e.message || e);
+  }
+}
+
+// Exponer globalmente
+window.guardarAjustesEnNube = guardarAjustesEnNube;
+window.cargarAjustesDesdeNube = cargarAjustesDesdeNube;
+window.guardarPosicionesEnNube = guardarPosicionesEnNube;
+window.cargarPosicionesDesdeNube = cargarPosicionesDesdeNube;
+
