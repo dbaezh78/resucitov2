@@ -18,6 +18,22 @@ const MAPA_ACORDES = {
   "11": "Si"
 };
 
+function calcularAcordeTransportado(canto, offsetStr) {
+  if (!canto) return "-";
+  const offset = parseInt(offsetStr) || 0;
+  const originalKey = canto.acorde || "La m";
+  const CHROMATIC_SCALE = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Sib", "Si"];
+  const esMenor = originalKey.toLowerCase().includes("m");
+  const notaBasePura = originalKey.split(" ")[0].replace("m", "").trim();
+  const idxOriginal = CHROMATIC_SCALE.indexOf(notaBasePura);
+  if (idxOriginal !== -1) {
+    let finalIdx = (idxOriginal + offset) % 12;
+    if (finalIdx < 0) finalIdx += 12;
+    return CHROMATIC_SCALE[finalIdx] + (esMenor ? " m" : "");
+  }
+  return originalKey;
+}
+
 // Normalizador de texto para búsqueda limpia
 const normalizarTexto = (texto) => {
   if (!texto) return "";
@@ -340,7 +356,7 @@ async function renderizarTablaCantos() {
     }
 
     const datosFS = cacheFirestoreCantos[cleanId] || null;
-    const datosFinales = datosRAM || datosFS;
+    const datosFinales = (datosRAM || datosFS) ? Object.assign({}, datosFS, datosRAM) : null;
 
     let cejillaVisual = "-";
     if (datosFinales && (datosFinales.cejilla !== undefined || datosFinales.capo !== undefined)) {
@@ -351,11 +367,7 @@ async function renderizarTablaCantos() {
     let acordeTexto = "-";
     if (datosFinales && (datosFinales.acorde !== undefined || datosFinales.key !== undefined)) {
       const numAc = String(datosFinales.acorde ?? datosFinales.key).trim();
-      if (MAPA_ACORDES[numAc] !== undefined) {
-        acordeTexto = MAPA_ACORDES[numAc];
-      } else if (numAc !== "") {
-        acordeTexto = numAc;
-      }
+      acordeTexto = calcularAcordeTransportado(canto, numAc);
     }
 
     let fechaTexto = "---";
@@ -440,11 +452,28 @@ window.guardarValoracion = function(cantoId, rating) {
   try {
     data = JSON.parse(localStorage.getItem(key) || '{}');
   } catch (e) {}
-  data.valoracion = rating;
+  
+  // Si la valoración actual es 1 y se hace clic en la primera estrella, se quita (0)
+  const currentRating = parseInt(data.valoracion) || 0;
+  let newRating = rating;
+  if (rating === 1 && currentRating === 1) {
+    newRating = 0;
+  }
+  
+  data.valoracion = newRating;
   localStorage.setItem(key, JSON.stringify(data));
 
   const celda = document.getElementById(`valoracion-${cantoId}`);
-  if (celda) celda.innerHTML = renderEstrellas(cantoId, rating);
+  if (celda) celda.innerHTML = renderEstrellas(cantoId, newRating);
+
+  // Sincronizar en la nube (dbdata y su historial)
+  if (typeof window.guardarHistorialCantoEnNube === 'function') {
+    const cleanId = cantoId.toLowerCase().trim();
+    const datosFS = cacheFirestoreCantos[cleanId] || {};
+    const cejillaValue = datosFS.cejilla || "0";
+    const acordeValue = datosFS.acorde || "0";
+    window.guardarHistorialCantoEnNube(cantoId, acordeValue, cejillaValue);
+  }
 };
 
 // Abrir Calendario de Historial de Uso (Estilo Resucitó v1)
@@ -934,6 +963,7 @@ window.abrirReporteHistorial = async function(cantoId, titulo) {
   const total = itemsHistorial.length;
   const meses = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
 
+  const canto = songs.find(s => s.id === cantoId);
   let htmlLista = '';
   itemsHistorial.forEach((item, idx) => {
     const numRef = total - idx; // #28, #27... #1
@@ -948,11 +978,7 @@ window.abrirReporteHistorial = async function(cantoId, titulo) {
     let acordeNombre = "-";
     if (item.acorde !== undefined && item.acorde !== null) {
       const rawAc = String(item.acorde).trim();
-      if (MAPA_ACORDES[rawAc] !== undefined) {
-        acordeNombre = MAPA_ACORDES[rawAc];
-      } else if (rawAc !== "") {
-        acordeNombre = rawAc;
-      }
+      acordeNombre = calcularAcordeTransportado(canto, rawAc);
     }
 
     const cejillaNum = item.cejilla !== undefined && item.cejilla !== null ? String(item.cejilla) : "0";

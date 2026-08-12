@@ -197,7 +197,8 @@ button:active, .btn:active {
   min-height: 100vh;
   max-width: var(--app-max-width, 1200px);
   margin: 0 auto;
-  padding: 16px;
+  --app-padding: 16px;
+  padding: var(--app-padding);
 }
 
 header {
@@ -1223,7 +1224,7 @@ header {
   width: 90%;
   height: 90%;
   max-width: 500px;
-  max-height: 85vh;
+  max-height: 70vh;
   overflow-y: auto;
   box-shadow: var(--shadow-lg);
   animation: scale-up 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -1398,6 +1399,15 @@ footer {
   gap: 24px;
   margin-bottom: 20px;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+  padding-top: var(--app-padding);
+  margin-top: calc(-1 * var(--app-padding));
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--panel-border);
 }
 
 .dashboard-left-image-container {
@@ -1409,7 +1419,7 @@ footer {
   justify-content: center;
 }
 
-.dashboard-christ-img {
+.dashboard-christ-img-pc {
   width: 210px;
   height: 210px;
   object-fit: contain;
@@ -1417,17 +1427,18 @@ footer {
   transition: transform 0.3s ease;
   margin-right: -82px;
   margin-bottom: -10px;
-  position: fixed;
-  z-index: -1;
+  z-index: 1;
 }
-
-.dashboard-christ-img:hover {
+.dashboard-christ-img-pc:hover {
   transform: scale(1.05);
 }
-
-/* Invertir colores en modo oscuro o sepia para que se integre perfectamente */
-.theme-dark .dashboard-christ-img,
-.theme-sepia .dashboard-christ-img {
+.dashboard-christ-img-mobile {
+  display: none;
+}
+.theme-dark .dashboard-christ-img-pc,
+.theme-sepia .dashboard-christ-img-pc,
+.theme-dark .dashboard-christ-img-mobile,
+.theme-sepia .dashboard-christ-img-mobile {
   filter: invert(1) brightness(0.95) contrast(1.1);
 }
 
@@ -1593,6 +1604,75 @@ footer {
   color: white !important;
   border-color: var(--accent-color) !important;
 }
+
+/* Fila de información de acordes y cejillas (Canto y Cantor) en el modal */
+.chord-picker-info-row {
+  margin-top: 15px;
+  border-top: 1px dashed var(--panel-border);
+  padding-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.chord-picker-info-col {
+  flex: 1;
+}
+
+.chord-picker-info-col-border {
+  flex: 1;
+  border-left: 1.5px solid var(--panel-border);
+  padding-left: 4px;
+}
+
+.chord-picker-info-col-capo-selector {
+  flex: 1.2;
+  border-left: 1.5px solid var(--panel-border);
+  padding-left: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chord-picker-info-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.7;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.chord-picker-info-value {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-color);
+  margin-top: 4px;
+}
+
+.chord-picker-info-value.accent {
+  color: var(--accent-color);
+}
+
+.chord-picker-capo-select {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--panel-bg);
+  color: var(--text-color);
+  border: 1.5px solid var(--panel-border);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  max-width: 100px;
+  margin-top: 4px;
+}
+
 
 /* --- Rediseño de la Barra de Opciones y Cabecera --- */
 
@@ -1910,8 +1990,19 @@ footer {
   }
   
   .dashboard-left-image-container {
-    width: 100px;
-    height: 100px;
+    display: none;
+  }
+  
+  .dashboard-christ-img-mobile {
+    position: relative;
+    left: auto;
+    top: auto;
+    display: block;
+    margin: 10px auto 20px auto;
+    width: 165px;
+    height: 207px;
+    z-index: 0;
+    opacity: 0.7;
   }
 
   .viewer-toolbar {
@@ -2121,6 +2212,7 @@ footer {
   backdrop-filter: none;
   margin-bottom: -1px;
   transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.25s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.2s ease, background-color 0.2s ease;
+  
 }
 .songs-grid.style-simple .song-card:first-child {
   border-top-left-radius: 7px;
@@ -2700,12 +2792,12 @@ footer {
   background: #1e1e1e; 
   color: #00ff66; 
   font-family: 'Consolas', 'Courier New', monospace; 
-  font-size: 0.75rem; 
+  font-size: 17px; 
   padding: 10px; 
   border-radius: 8px; 
   max-height: 512px; 
   overflow-y: auto; 
-  white-space: pre-wrap; 
+  white-space: normal; 
   word-break: break-word; 
   border: 1px solid #333; 
   line-height: 1.4;
@@ -2954,7 +3046,9 @@ footer {
   .Bendecid4 {top: 35px;}
   .Bendecid1m {top: 52px;}
   .modal-content{max-width: 85%;}
-  .song-viewer-view {width: 396px;}
+
+  /*TAMAÑO DE LA PANTALLA CELULAR db*/
+  .song-viewer-view {width: 383px;}
   .settings-tabs {gap: 5px;}
 
   .canto-columns-container {padding: 16px 0px;}
@@ -2990,7 +3084,10 @@ footer {
   
   .btn-icon {width: 20px;}
   .toolbar-left .viewer-toolbar {gap: 0px !important;}
-  .app-container {padding: 4px;}
+  .app-container {
+    --app-padding: 4px;
+    padding: var(--app-padding);
+  }
 
     .viewer-toolbar {
         max-width: 100%;
@@ -3002,6 +3099,15 @@ footer {
 
     .dashboard-top-flex {margin-bottom: 2px;}
 
+
+
+    .dashboard-christ-img-mobile {
+      width: 130px;
+      height: 163px;
+      margin: 5px auto 10px auto;
+    }
+  .book-tabs {margin-bottom: 0px;}
+  .canto-content-transition-wrapper {margin-left: 5px;}
 
     
   }   /* **************** FIN DE 384px*/
@@ -3028,9 +3134,18 @@ footer {
 
   .canto-columns-container {padding: 16px 12px; }
   .btn-icon {width: 40px;}
-  .app-container {padding: 4px;}
+  .app-container {
+    --app-padding: 4px;
+    padding: var(--app-padding);
+  }
   .func-subtabs {flex-wrap: nowrap;}
 
+
+.dashboard-christ-img-pc {
+    width: 166px;
+    margin-right: 0px;
+
+}
 }
 
 @media (min-width: 992px) {
@@ -3051,6 +3166,12 @@ footer {
   .canto-columns-container {padding: 16px 40px;  }
   .btn-icon {width: 40px;}
 
+.dashboard-christ-img {
+        width: 215px;
+        height: 200px;
+        left: 15%;
+        top: 3%;
+    }
 
 
 }

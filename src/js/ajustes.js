@@ -105,7 +105,7 @@ window.getDefaultZoom = function() {
   }
   const w = window.innerWidth;
   if (w < 768)   return 0.8;   // 📱 Celular (< 768px) => 80%
-  if (w <= 1024) return 1.2;   // 📟 Tablet  (768-1024px) => 120%
+  if (w <= 1024) return 1.5;   // 📟 Tablet  (768-1024px) => 150%
   return 1.0;                  // 🖥️ PC/Laptop (> 1024px) => 100%
 };
 

@@ -18,14 +18,14 @@ window.firebaseAPI = {
 import { canAccessBook, initAccessControl, setupAccessControlUI, trackLoggedInUser, hasPermission, getAccessControlState, listenToOwnUserPermissionsSilently } from './accesscontrol.js';
 import { cantoConfig, loadBisConfig, saveBisConfig, isBisEnabled, setBisForSong } from './canto.js';
 import { 
-  guardarTonoEnNube, 
-  cargarTonoDesdeNube, 
   guardarNotaEnNube, 
   cargarNotaDesdeNube, 
   guardarPosicionesEnNube, 
   cargarPosicionesDesdeNube, 
   publicarPosicionesGlobales, 
-  cargarPosicionesGlobales 
+  cargarPosicionesGlobales,
+  guardarHistorialCantoEnNube,
+  cargarHistorialCantoDesdeNube
 } from './sync.js';
 
 // --- Estado Global de la SPA ---
@@ -33,6 +33,7 @@ let allSongs = [];
 let filteredSongs = [];
 let currentCanto = null;
 let currentKeyOffset = 0; // Transposición en semitonos
+window.getCurrentKeyOffset = () => currentKeyOffset;
 let originalSongKey = 'La'; // Nota base del canto cargado
 let originalSongTypeSuffix = ''; // Sufijo/variación del tono original (ej: "7", "m")
 let transitionDirection = null;
@@ -297,15 +298,41 @@ async function sincronizarCantoDesdeFirebase(songId) {
   // 2. Si el usuario está autenticado, descargar sus datos personales
   const user = getCurrentUser();
   if (user) {
-    // 2a. Descargar transportación
+    // 2a. Descargar historial de transportación y cejilla
     try {
-      const offset = await cargarTonoDesdeNube(songId, originalSongKey);
-      if (offset !== null) {
-        currentKeyOffset = offset;
-        console.log(`📥 [Firebase] Transportación cargada de la nube: offset = ${offset}`);
+      const historial = await cargarHistorialCantoDesdeNube(songId);
+      if (historial !== null) {
+        currentKeyOffset = historial.acorde;
+        
+        // Aplicar la cejilla (capo) descargada a los selectores
+        const selectedCapo = historial.cejilla;
+        if (capoSelect) capoSelect.value = selectedCapo;
+        const activeCapoBadge = document.getElementById('capo-badge');
+        if (activeCapoBadge) activeCapoBadge.textContent = formatCapoText(selectedCapo);
+        const modalCapoSelect = document.getElementById('modal-capo-select');
+        if (modalCapoSelect) modalCapoSelect.value = selectedCapo;
+
+        // Sincronizar nota personal y valoración del historial (Versión 1)
+        if (historial.notasCantor !== undefined && historial.notasCantor !== '') {
+          localStorage.setItem(`notes_${songId}`, historial.notasCantor);
+          const notesTextarea = document.getElementById('notes-textarea');
+          if (notesTextarea) notesTextarea.value = historial.notasCantor;
+        }
+        if (historial.valoracion !== undefined && historial.valoracion > 0) {
+          const key = `canto-config-${songId}`;
+          let dataObj = {};
+          try {
+            dataObj = JSON.parse(localStorage.getItem(key) || '{}');
+          } catch (e) {}
+          dataObj.valoracion = historial.valoracion;
+          localStorage.setItem(key, JSON.stringify(dataObj));
+          renderFooterStars(songId, historial.valoracion);
+        }
+        
+        console.log(`📥 [Firebase] Historial completo cargado de la nube: acorde = ${historial.acorde}, cejilla = ${historial.cejilla}`);
       }
     } catch (e) {
-      console.error("Error al sincronizar tono desde la nube:", e);
+      console.error("Error al sincronizar historial de tono/cejilla desde la nube:", e);
     }
     
     // 2b. Descargar nota del cantor
@@ -700,10 +727,23 @@ function guardarRatingCanto(songId, rating) {
   try {
     dataObj = JSON.parse(localStorage.getItem(key) || '{}');
   } catch (e) {}
-  dataObj.valoracion = rating;
+  
+  // Si la valoración actual es 1 y se hace clic en la primera estrella, se quita (0)
+  const currentRating = parseInt(dataObj.valoracion) || 0;
+  let newRating = rating;
+  if (rating === 1 && currentRating === 1) {
+    newRating = 0;
+  }
+  
+  dataObj.valoracion = newRating;
   localStorage.setItem(key, JSON.stringify(dataObj));
 
-  renderFooterStars(songId, rating);
+  renderFooterStars(songId, newRating);
+
+  if (typeof window.guardarHistorialCantoEnNube === 'function') {
+    const cejillaValue = capoSelect ? (parseInt(capoSelect.value) || 0) : 0;
+    window.guardarHistorialCantoEnNube(songId, currentKeyOffset, cejillaValue);
+  }
 }
 
 function abrirModalNotaCanto(songId) {
@@ -718,7 +758,11 @@ function abrirModalNotaCanto(songId) {
 
   const handleSave = (e) => {
     e.stopPropagation();
-    localStorage.setItem(`notes_${songId}`, textarea.value);
+    const val = textarea.value;
+    localStorage.setItem(`notes_${songId}`, val);
+    if (typeof guardarNotaEnNube === 'function') {
+      guardarNotaEnNube(songId, val);
+    }
     modal.style.display = 'none';
     cleanup();
   };
@@ -1638,6 +1682,28 @@ function updateTransposeBadge() {
   updateChordPanel();
 }
 
+function guardarHistorialCanto() {
+  console.log("💾 [guardarHistorialCanto] Inicio del proceso para:", currentCanto ? currentCanto.id : null);
+  if (!currentCanto) {
+    console.warn("⚠️ [guardarHistorialCanto] No hay currentCanto activo.");
+    return;
+  }
+  const user = getCurrentUser();
+  if (!user) {
+    console.warn("⚠️ [guardarHistorialCanto] No hay usuario autenticado.");
+    return;
+  }
+  
+  const cejillaValue = capoSelect ? (parseInt(capoSelect.value) || 0) : 0;
+  console.log(`💾 [guardarHistorialCanto] Enviando a Firebase: acordeOffset=${currentKeyOffset}, cejillaValue=${cejillaValue}`);
+  
+  if (typeof window.guardarHistorialCantoEnNube === 'function') {
+    window.guardarHistorialCantoEnNube(currentCanto.id, currentKeyOffset, cejillaValue);
+  } else {
+    console.error("❌ [guardarHistorialCanto] window.guardarHistorialCantoEnNube no es una función.");
+  }
+}
+
 function shiftKey(semitones) {
   currentKeyOffset = (currentKeyOffset + semitones) % 12;
   updateTransposeBadge();
@@ -1651,8 +1717,7 @@ function shiftKey(semitones) {
   });
   
   if (currentCanto) {
-    const transposedKey = transposeNote(originalSongKey, currentKeyOffset);
-    guardarTonoEnNube(currentCanto.id, transposedKey);
+    guardarHistorialCanto();
   }
 }
 
@@ -1669,6 +1734,30 @@ function updateModalChordDiagram() {
     } else {
       titleEl.textContent = "Transportar Acorde";
     }
+  }
+  
+  // Actualizar acorde canto, cejilla original y acorde cantor en el modal
+  const modalCantoOriginalChord = document.getElementById('modal-canto-original-chord');
+  const modalCantoOriginalCapo = document.getElementById('modal-canto-original-capo');
+  const modalCantorCurrentChord = document.getElementById('modal-cantor-current-chord');
+  
+  if (modalCantoOriginalChord) {
+    modalCantoOriginalChord.textContent = `${originalSongKey}${originalSongTypeSuffix ? ' ' : ''}${originalSongTypeSuffix}`;
+  }
+  if (modalCantoOriginalCapo && currentCanto) {
+    let capoStr = '';
+    const songFromData = songs.find(s => s.id === currentCanto.id);
+    if (songFromData) {
+      capoStr = songFromData.cejilla || '';
+    } else {
+      capoStr = currentCanto.cejilla || '';
+    }
+    const capoNum = parseInt(capoStr) || 0;
+    modalCantoOriginalCapo.textContent = capoNum > 0 ? `${capoNum}º traste` : 'Sin cejilla';
+  }
+  if (modalCantorCurrentChord) {
+    const currentTransposedChord = transposeNote(originalSongKey, currentKeyOffset);
+    modalCantorCurrentChord.textContent = `${currentTransposedChord}${originalSongTypeSuffix ? ' ' : ''}${originalSongTypeSuffix}`;
   }
   
   // Resaltar botón de Nota
@@ -2977,6 +3066,7 @@ function setupEventListeners() {
       }
 
       updateChordPanel();
+      guardarHistorialCanto();
     });
   }
   

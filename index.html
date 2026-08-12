@@ -16,7 +16,7 @@
     <!-- BANNER DE ENCABEZADO -->
     <header>
       <div class="title-banner">
-        <img class="logo-app" src="img/logo_cantos.png" alt="Camino Neocatecumenal">
+        <img class="logo-app" src="img/logo_cantos.png" alt="Camino Neocatecumenal" onclick="location.reload();" style="cursor: pointer;">
         <h1>RESUCITÓ</h1>
       </div>
       <div class="marquee-banner">
@@ -28,10 +28,11 @@
 
     <!-- VISTA 1: DASHBOARD / BUSCADOR -->
     <div id="dashboard-view" class="view dashboard-view">
+      <img src="img/christ.png" alt="Cristo" class="dashboard-christ-img-mobile">
       <!-- Flex contenedor superior para la imagen de Cristo fija a la izquierda y controles a la derecha -->
       <div class="dashboard-top-flex">
         <div class="dashboard-left-image-container">
-          <img src="img/christ.png" alt="Cristo" class="dashboard-christ-img">
+          <img src="img/christ.png" alt="Cristo" class="dashboard-christ-img-pc">
         </div>
         <div class="dashboard-right-controls">
           <!-- Pestañas de Libros (Book Tabs) -->
@@ -62,9 +63,7 @@
               <span class="material-symbols-outlined clear-search-btn" id="clear-search-btn" style="display: none;">close</span>
             </div>
 
-            <button id="dashboard-settings-btn" class="dashboard-settings-btn" title="Opciones de configuración">
-              <span class="material-symbols-outlined">settings</span>
-            </button>
+            
 
           </div>
         </div>
@@ -347,22 +346,39 @@
         </div>
       </div>
       
-      <!-- Selector de Cejilla (Capo) en Modal de Acorde -->
-      <div class="chord-picker-row" style="margin-top: 15px; border-top: 1px dashed var(--panel-border); padding-top: 12px; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
-        <h4 style="font-size: 0.85rem; margin: 0; font-weight: 600; color: var(--text-color); opacity: 0.8;">Cejilla (Capo):</h4>
-        <select id="modal-capo-select" style="padding: 6px 12px; border-radius: 6px; background: var(--panel-bg); color: var(--text-color); border: 1.5px solid var(--panel-border); font-family: inherit; font-size: 0.9rem; font-weight: 700; cursor: pointer; outline: none;">
-          <option value="0">Sin cejilla</option>
-          <option value="1">1º traste</option>
-          <option value="2">2º traste</option>
-          <option value="3">3º traste</option>
-          <option value="4">4º traste</option>
-          <option value="5">5º traste</option>
-          <option value="6">6º traste</option>
-          <option value="7">7º traste</option>
-          <option value="8">8º traste</option>
-          <option value="9">9º traste</option>
-          <option value="10">10º traste</option>
-        </select>
+      <!-- Acordes y Cejillas (Canto y Cantor) -->
+      <div class="chord-picker-info-row">
+        <div class="chord-picker-info-col">
+          <div class="chord-picker-info-label">Acorde Canto</div>
+          <div id="modal-canto-original-chord" class="chord-picker-info-value accent">La m</div>
+        </div>
+        
+        <div class="chord-picker-info-col-border">
+          <div class="chord-picker-info-label">Cejilla Canto</div>
+          <div id="modal-canto-original-capo" class="chord-picker-info-value">Sin cejilla</div>
+        </div>
+        
+        <div class="chord-picker-info-col-border">
+          <div class="chord-picker-info-label">Acorde Cantor</div>
+          <div id="modal-cantor-current-chord" class="chord-picker-info-value accent">La m</div>
+        </div>
+
+        <div class="chord-picker-info-col-capo-selector">
+          <div class="chord-picker-info-label">Cejilla Cantor</div>
+          <select id="modal-capo-select" class="chord-picker-capo-select">
+            <option value="0">Sin cejilla</option>
+            <option value="1">1º traste</option>
+            <option value="2">2º traste</option>
+            <option value="3">3º traste</option>
+            <option value="4">4º traste</option>
+            <option value="5">5º traste</option>
+            <option value="6">6º traste</option>
+            <option value="7">7º traste</option>
+            <option value="8">8º traste</option>
+            <option value="9">9º traste</option>
+            <option value="10">10º traste</option>
+          </select>
+        </div>
       </div>
 
       <div class="chord-diagram-view" style="margin-top: 15px; border-top: 1px solid var(--panel-border); padding-top: 15px;">

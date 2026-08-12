@@ -1,63 +1,9 @@
 // src/sync.js - Sincronización de configuraciones personales y globales con Firestore
 
-import { db, auth, doc, setDoc, getDoc } from "./firebase.js";
+import { db, auth, doc, setDoc, getDoc, collection, getDocs, query, orderBy, limit } from "./firebase.js";
 import { transposeNote, normalizeChord } from "./chords.js";
 
-// Sincroniza la transportación (tono) del canto
-export async function guardarTonoEnNube(cantoId, tono) {
-  const user = auth.currentUser;
-  if (!user) return;
-  
-  try {
-    const docRef = doc(db, "usuarios", user.uid, "transportacion", cantoId);
-    await setDoc(docRef, {
-      tono: tono,
-      ultimaActualizacion: new Date()
-    });
-    console.log(`☁️ [Firebase] Tono ${tono} guardado para el canto ${cantoId}`);
-  } catch (e) {
-    console.warn("⚠️ [Firebase] No se pudo guardar el tono (permisos/offline):", e.message || e);
-  }
-}
 
-// Carga la transportación (tono) del canto y devuelve el offset en semitonos
-export async function cargarTonoDesdeNube(cantoId, originalKey) {
-  const user = auth.currentUser;
-  if (!user) return null;
-  
-  try {
-    const docRef = doc(db, "usuarios", user.uid, "transportacion", cantoId);
-    const docSnap = await getDoc(docRef);
-    
-    if (docSnap.exists()) {
-      const data = docSnap.data();
-      if (data.tono) {
-        // Calcular el offset en semitonos desde originalKey a data.tono
-        const normOriginal = normalizeChord(originalKey);
-        const normSaved = normalizeChord(data.tono);
-        
-        // Buscar la distancia cromática
-        const scale = ['do', 'do#', 're', 're#', 'mi', 'fa', 'fa#', 'sol', 'sol#', 'la', 'la#', 'si'];
-        
-        // Eliminar 'm' y espacios para la comparación limpia de tono fundamental
-        const cleanOrig = normOriginal.toLowerCase().replace('m', '').trim();
-        const cleanSaved = normSaved.toLowerCase().replace('m', '').trim();
-        
-        const idxOriginal = scale.indexOf(cleanOrig);
-        const idxSaved = scale.indexOf(cleanSaved);
-        
-        if (idxOriginal !== -1 && idxSaved !== -1) {
-          let offset = idxSaved - idxOriginal;
-          if (offset < 0) offset += 12;
-          return offset;
-        }
-      }
-    }
-  } catch (e) {
-    console.warn("⚠️ [Firebase] No se pudo cargar el tono (permisos/offline):", e.message || e);
-  }
-  return null;
-}
 
 // Sincroniza la nota personal del cantor
 export async function guardarNotaEnNube(cantoId, notaPersonal) {
@@ -65,14 +11,50 @@ export async function guardarNotaEnNube(cantoId, notaPersonal) {
   if (!user) return;
   
   try {
-    const docRef = doc(db, "usuarios", user.uid, "config_cantos", cantoId);
-    await setDoc(docRef, {
+    // 1. Sincronizar en config_cantos por retrocompatibilidad
+    const docRefLegacy = doc(db, "usuarios", user.uid, "config_cantos", cantoId);
+    await setDoc(docRefLegacy, {
       notaPersonal: notaPersonal || "",
       ultimaActualizacion: new Date()
     }, { merge: true });
-    console.log(`☁️ [Firebase] Nota personal guardada para el canto ${cantoId}`);
+
+    // 2. Sincronizar en la estructura unificada dbdata y su historial (Versión 1)
+    let currentOffset = 0;
+    let currentCapo = 0;
+    try {
+      if (typeof window.getCurrentKeyOffset === 'function') {
+        currentOffset = window.getCurrentKeyOffset() || 0;
+      }
+      const capoEl = document.getElementById('capo-select') || document.getElementById('modal-capo-select');
+      if (capoEl) {
+        currentCapo = parseInt(capoEl.value) || 0;
+      }
+    } catch (e) {}
+
+    let ratingValue = 0;
+    try {
+      const localConfig = JSON.parse(localStorage.getItem(`canto-config-${cantoId}`) || '{}');
+      ratingValue = parseInt(localConfig.valoracion) || 0;
+    } catch (e) {}
+
+    const timestamp = Date.now().toString();
+    const refCantoRaiz = doc(db, "usuarios", user.uid, "dbdata", cantoId);
+    const refHist = doc(db, "usuarios", user.uid, "dbdata", cantoId, "historial", timestamp);
+
+    const datosDB = {
+      acorde: String(currentOffset),
+      cejilla: String(currentCapo),
+      fecha: new Date(),
+      notasCantor: notaPersonal || "",
+      valoracion: ratingValue
+    };
+
+    await setDoc(refCantoRaiz, { valor: datosDB }, { merge: true });
+    await setDoc(refHist, { valor: datosDB }, { merge: true });
+
+    console.log(`☁️ [Firebase] Nota personal guardada y sincronizada en dbdata/historial para ${cantoId}`);
   } catch (e) {
-    console.warn("⚠️ [Firebase] No se pudo guardar la nota (permisos/offline):", e.message || e);
+    console.warn("⚠️ [Firebase] No se pudo guardar la nota en la nube:", e.message || e);
   }
 }
 
@@ -195,8 +177,6 @@ export async function guardarAjustesEnNube() {
       splitLayout: localStorage.getItem('split-layout') || 'true',
       lyricsFontFamily: localStorage.getItem('lyrics-font-family') || 'franklin',
       appMaxWidth: localStorage.getItem('app-max-width') || '1200',
-      fontZoom: localStorage.getItem('font-zoom') || '1.0',
-      fontZoomCustom: localStorage.getItem('font-zoom-custom') || 'false',
       
       // Cabeceras de preparación
       catHeaderColor: localStorage.getItem('cat-header-color') || '#d01212',
@@ -236,8 +216,6 @@ export async function cargarAjustesDesdeNube() {
       if (data.splitLayout) localStorage.setItem('split-layout', data.splitLayout);
       if (data.lyricsFontFamily) localStorage.setItem('lyrics-font-family', data.lyricsFontFamily);
       if (data.appMaxWidth) localStorage.setItem('app-max-width', data.appMaxWidth);
-      if (data.fontZoom) localStorage.setItem('font-zoom', data.fontZoom);
-      if (data.fontZoomCustom) localStorage.setItem('font-zoom-custom', data.fontZoomCustom);
 
       if (data.catHeaderColor) localStorage.setItem('cat-header-color', data.catHeaderColor);
       if (data.catHeaderFontSize) localStorage.setItem('cat-header-font-size', data.catHeaderFontSize);
@@ -254,9 +232,80 @@ export async function cargarAjustesDesdeNube() {
   }
 }
 
+// Sincroniza la cejilla y el acorde en la colección 'historial' de cada canto y en la raíz dbdata
+export async function guardarHistorialCantoEnNube(cantoId, acordeOffset, cejillaValue) {
+  const user = auth.currentUser;
+  if (!user) return;
+
+  try {
+    const timestamp = Date.now().toString();
+    const refCantoRaiz = doc(db, "usuarios", user.uid, "dbdata", cantoId);
+    const refHist = doc(db, "usuarios", user.uid, "dbdata", cantoId, "historial", timestamp);
+
+    // Obtener notas y valoración actuales de localStorage
+    const notesValue = localStorage.getItem(`notes_${cantoId}`) || "";
+    let ratingValue = 0;
+    try {
+      const localConfig = JSON.parse(localStorage.getItem(`canto-config-${cantoId}`) || '{}');
+      ratingValue = parseInt(localConfig.valoracion) || 0;
+    } catch (e) {}
+
+    const datosDB = {
+      acorde: String(acordeOffset),
+      cejilla: String(cejillaValue),
+      fecha: new Date(),
+      notasCantor: notesValue,
+      valoracion: ratingValue
+    };
+
+    // A. Actualizar la Raíz de dbdata para este canto
+    await setDoc(refCantoRaiz, { valor: datosDB }, { merge: true });
+
+    // B. Crear la entrada en el historial
+    await setDoc(refHist, { valor: datosDB }, { merge: true });
+
+    console.log(`☁️ [Firebase] Historial de canto ${cantoId} guardado: acorde=${acordeOffset}, cejilla=${cejillaValue}, notasCantor=${notesValue ? 'sí' : 'no'}, valoración=${ratingValue}`);
+  } catch (e) {
+    console.warn("⚠️ [Firebase] No se pudo guardar el historial del canto en la nube:", e.message || e);
+  }
+}
+
+// Descarga el historial más reciente de cejilla y acorde del canto
+export async function cargarHistorialCantoDesdeNube(cantoId) {
+  const user = auth.currentUser;
+  if (!user) return null;
+
+  try {
+    const colRef = collection(db, "usuarios", user.uid, "dbdata", cantoId, "historial");
+    const querySnapshot = await getDocs(colRef);
+
+    if (!querySnapshot.empty) {
+      const docs = querySnapshot.docs;
+      // Ordenar en memoria por el ID del documento (timestamp string) de forma descendente
+      docs.sort((a, b) => b.id.localeCompare(a.id));
+      
+      const docSnap = docs[0];
+      const data = docSnap.data();
+      if (data && data.valor) {
+        return {
+          acorde: parseInt(data.valor.acorde) || 0,
+          cejilla: parseInt(data.valor.cejilla) || 0,
+          notasCantor: data.valor.notasCantor || "",
+          valoracion: parseInt(data.valor.valoracion) || 0
+        };
+      }
+    }
+  } catch (e) {
+    console.warn("⚠️ [Firebase] No se pudo cargar el historial del canto desde la nube:", e.message || e);
+  }
+  return null;
+}
+
 // Exponer globalmente
 window.guardarAjustesEnNube = guardarAjustesEnNube;
 window.cargarAjustesDesdeNube = cargarAjustesDesdeNube;
 window.guardarPosicionesEnNube = guardarPosicionesEnNube;
 window.cargarPosicionesDesdeNube = cargarPosicionesDesdeNube;
+window.guardarHistorialCantoEnNube = guardarHistorialCantoEnNube;
+window.cargarHistorialCantoDesdeNube = cargarHistorialCantoDesdeNube;
 
