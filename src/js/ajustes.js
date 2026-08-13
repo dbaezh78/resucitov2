@@ -538,8 +538,13 @@ window.openSettingsTab = function(tabName = 'general') {
     targetPanel.style.display = 'block';
   }
 
-  if (tabName === 'log' && window.renderAppLogs) {
-    window.renderAppLogs();
+  if (tabName === 'log') {
+    if (typeof window.switchLogSubmodule === 'function') {
+      window.switchLogSubmodule('console');
+    }
+    if (window.renderAppLogs) {
+      window.renderAppLogs();
+    }
   }
   if (tabName === 'datos' && window.renderDatosModule) {
     window.renderDatosModule();
@@ -1186,6 +1191,378 @@ window.initAjustes = async function() {
     });
   });
 
+  // Manejo de subpestañas dentro del Módulo LOG (LOG y Estado Resucitó)
+  window.switchLogSubmodule = function(subtab) {
+    const btns = document.querySelectorAll('.log-subtab-btn');
+    btns.forEach(b => {
+      b.classList.toggle('active', b.dataset.subtab === subtab);
+      if (b.dataset.subtab === subtab) {
+        b.style.borderBottom = '2.5px solid var(--accent-color)';
+        b.style.color = 'var(--accent-color)';
+        b.style.fontWeight = '700';
+      } else {
+        b.style.borderBottom = 'none';
+        b.style.color = 'var(--text-muted)';
+        b.style.fontWeight = '600';
+      }
+    });
+
+    const panels = {
+      'console': document.getElementById('log-submodule-console-content'),
+      'status': document.getElementById('log-submodule-status-content')
+    };
+
+    for (const [key, el] of Object.entries(panels)) {
+      if (el) {
+        el.style.display = key === subtab ? 'block' : 'none';
+      }
+    }
+
+    if (subtab === 'status') {
+      window.recalcularEstadoRecursos();
+    }
+  };
+
+  const logSubtabBtns = document.querySelectorAll('.log-subtab-btn');
+  logSubtabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.switchLogSubmodule(btn.dataset.subtab);
+    });
+  });
+
+  // --- MÓDULO ESTADO RESUCITÓ ---
+  async function loadResourceIntoCache(url) {
+    try {
+      const keys = await caches.keys();
+      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v182';
+      const cache = await caches.open(cacheName);
+      
+      const res = await fetch(url);
+      if (res.ok) {
+        await cache.put(url, res.clone());
+        return true;
+      }
+    } catch (e) {
+      console.error('Error cargando recurso a caché:', url, e);
+    }
+    return false;
+  }
+
+  function bindStatusButtons() {
+    // Botones individuales "Cargar recurso"
+    document.querySelectorAll('.btn-status-load-single').forEach(btn => {
+      btn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const url = btn.dataset.url;
+        btn.disabled = true;
+        btn.textContent = 'Cargando...';
+        const success = await loadResourceIntoCache(url);
+        if (success) {
+          window.recalcularEstadoRecursos();
+        } else {
+          btn.disabled = false;
+          btn.textContent = 'Reintentar';
+          if (window.mostrarAlerta) {
+            window.mostrarAlerta({
+              titulo: 'Error de carga',
+              mensaje: `No se pudo descargar el recurso: ${url}. Verifique su conexión a Internet.`,
+              icono: 'error'
+            });
+          } else {
+            alert(`No se pudo descargar el recurso: ${url}`);
+          }
+        }
+      });
+    });
+
+    // Botones de grupo "Cargar faltantes"
+    document.querySelectorAll('.btn-status-load-group').forEach(btn => {
+      btn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const urls = JSON.parse(btn.dataset.urls);
+        btn.disabled = true;
+        btn.textContent = 'Cargando...';
+        
+        let loaded = 0;
+        for (const url of urls) {
+          const success = await loadResourceIntoCache(url);
+          if (success) loaded++;
+        }
+        
+        window.recalcularEstadoRecursos();
+      });
+    });
+  }
+
+  // Vincular botón "Cargar todos los faltantes" (general) una sola vez al cargar el DOM o usar delegación
+  document.addEventListener('click', async (e) => {
+    if (e.target && e.target.id === 'btn-status-load-all') {
+      e.preventDefault();
+      e.stopPropagation();
+      const btn = e.target;
+      const urls = JSON.parse(btn.dataset.urls || '[]');
+      if (urls.length === 0) return;
+      
+      btn.disabled = true;
+      btn.textContent = 'Cargando todos...';
+      
+      for (const url of urls) {
+        await loadResourceIntoCache(url);
+      }
+      
+      window.recalcularEstadoRecursos();
+    }
+    
+    if (e.target && e.target.id === 'btn-status-refresh') {
+      e.preventDefault();
+      e.stopPropagation();
+      window.recalcularEstadoRecursos();
+    }
+  });
+
+  window.recalcularEstadoRecursos = async function() {
+    const listEl = document.getElementById('status-resources-list');
+    const totalRatioEl = document.getElementById('status-total-ratio');
+    const loadAllBtn = document.getElementById('btn-status-load-all');
+    const missingCountEl = document.getElementById('status-missing-count');
+    const missingListEl = document.getElementById('status-missing-list');
+
+    if (!listEl) return;
+
+    listEl.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 20px 0;">Escaneando recursos en la caché local...</div>';
+
+    try {
+      // 1. Obtener recursos estáticos de las páginas HTML
+      const htmlResources = [
+        { label: 'Inicio o Index.html', url: 'index.html' },
+        { label: 'Perfil Cuenta (HTML)', url: 'perfil.html' },
+        { label: 'Preparar Cantos (HTML)', url: 'preparar.html' },
+        { label: 'Ajustes de la App (HTML)', url: 'data/ajustes_modal.html' }
+      ];
+
+      // JSONs de datos estáticos
+      const jsonResources = [
+        { label: 'Índice de Búsqueda (JSON)', url: 'data/songs-index.json' },
+        { label: 'Posiciones de Acordes (JSON)', url: 'data/chord_positions.json' },
+        { label: 'Catequesis (JSON)', url: 'data/catequesis.json' },
+        { label: 'Paises y Diócesis (JSON)', url: 'data/paises.json' }
+      ];
+
+      // Descubrir JS, CSS e imágenes analizando los HTMLs locales
+      const htmlsToParse = ['index.html', 'perfil.html', 'preparar.html'];
+      const jsSet = new Set();
+      const cssSet = new Set();
+      const assetSet = new Set(); // Imágenes, fuentes, manifest
+
+      // Agregar Service Worker
+      jsSet.add('sw.js');
+      assetSet.add('manifest.json');
+
+      for (const htmlPath of htmlsToParse) {
+        try {
+          const res = await fetch(htmlPath);
+          if (res.ok) {
+            const text = await res.text();
+            // Buscar JS
+            const jsMatches = text.matchAll(/src="([^"]+\.js)"/g);
+            for (const m of jsMatches) {
+              jsSet.add(m[1].replace(/^\.\//, ''));
+            }
+            // Buscar CSS
+            const cssMatches = text.matchAll(/href="([^"]+\.css)"/g);
+            for (const m of cssMatches) {
+              cssSet.add(m[1].replace(/^\.\//, ''));
+            }
+            // Buscar imágenes
+            const imgMatches = text.matchAll(/src="([^"]+\.(png|jpg|jpeg|gif|ico|svg))"/g);
+            for (const m of imgMatches) {
+              assetSet.add(m[1].replace(/^\.\//, ''));
+            }
+            // Buscar preloads de JS/CSS
+            const preloadMatches = text.matchAll(/href="([^"]+\.(js|css))"/g);
+            for (const m of preloadMatches) {
+              if (m[2] === 'js') jsSet.add(m[1].replace(/^\.\//, ''));
+              else if (m[2] === 'css') cssSet.add(m[1].replace(/^\.\//, ''));
+            }
+          }
+        } catch (e) {
+          console.warn('Error escaneando HTML:', htmlPath, e);
+        }
+      }
+
+      // Convertir Sets a arrays
+      const jsResources = Array.from(jsSet).map(url => ({ url }));
+      const cssResources = Array.from(cssSet).map(url => ({ url }));
+      const assetResources = Array.from(assetSet).map(url => ({ url }));
+
+      // JSONs de Cantos
+      const songIds = window.allSongs ? window.allSongs.map(s => s.id) : [];
+      const songResources = songIds.map(id => {
+        const folder = id.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
+        return { url: `${folder}/${id}.json?offline=true` };
+      });
+
+      // 2. Conectar a la caché
+      const keys = await caches.keys();
+      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v182';
+      const cache = await caches.open(cacheName);
+      
+      // Obtener todas las claves cacheadas para búsqueda rápida
+      const cachedRequests = await cache.keys();
+      const cachedUrls = new Set(cachedRequests.map(r => {
+        const urlObj = new URL(r.url, window.location.href);
+        // Retornamos la ruta relativa limpia
+        let path = urlObj.pathname;
+        if (path.startsWith('/')) {
+          path = path.substring(1);
+        }
+        return path + urlObj.search;
+      }));
+
+      // Helper para comprobar existencia en caché
+      const checkCached = (relUrl) => {
+        let cleanRel = relUrl.replace(/^\.\//, '');
+        if (cleanRel.startsWith('/')) {
+          cleanRel = cleanRel.substring(1);
+        }
+        return cachedUrls.has(cleanRel);
+      };
+
+      // 3. Evaluar el estado de cada categoría
+      let totalCount = 0;
+      let cachedCount = 0;
+      const missingFiles = [];
+
+      const evaluateGroup = (resourcesList) => {
+        let groupTotal = resourcesList.length;
+        let groupCached = 0;
+        const missingGroup = [];
+        
+        resourcesList.forEach(r => {
+          const isCached = checkCached(r.url);
+          if (isCached) {
+            groupCached++;
+          } else {
+            missingGroup.push(r.url);
+            missingFiles.push(r.url);
+          }
+        });
+        
+        totalCount += groupTotal;
+        cachedCount += groupCached;
+        
+        return { total: groupTotal, cached: groupCached, missing: missingGroup };
+      };
+
+      // Evaluar archivos HTML individuales
+      const htmlResults = htmlResources.map(r => {
+        const isCached = checkCached(r.url);
+        totalCount++;
+        if (isCached) cachedCount++;
+        else missingFiles.push(r.url);
+        return { ...r, isCached };
+      });
+
+      // Evaluar grupos
+      const jsResults = evaluateGroup(jsResources);
+      const cssResults = evaluateGroup(cssResources);
+      const jsonResults = evaluateGroup(jsonResources);
+      const songResults = evaluateGroup(songResources);
+      const assetResults = evaluateGroup(assetResources);
+
+      // 4. Renderizar UI
+      let html = '';
+
+      // Renderizar HTMLs individuales
+      htmlResults.forEach(r => {
+        const dotColor = r.isCached ? '#28a745' : '#dc3545';
+        const dotSize = '1.8rem';
+        const buttonHtml = r.isCached ? '' : `
+          <button class="btn theme-btn btn-status-load-single" data-url="${r.url}" style="font-size: 0.75rem; padding: 4px 10px;">Cargar recurso</button>
+        `;
+        html += `
+          <div class="status-item" style="display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; border: 1.5px solid var(--panel-border); border-radius: 12px; background: var(--input-bg);">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: ${dotSize}; line-height: 1; color: ${dotColor}; user-select: none; margin-top: -4px;">•</span>
+              <div style="display: flex; flex-direction: column;">
+                <span style="font-size: 0.88rem; font-weight: 700; color: var(--text-color);">${r.label}</span>
+                <span style="font-size: 0.7rem; color: var(--text-muted);">${r.url}</span>
+              </div>
+            </div>
+            ${buttonHtml}
+          </div>
+        `;
+      });
+
+      // Renderizar filas de grupos
+      const renderGroupRow = (title, detailsText, results) => {
+        const isComplete = results.cached === results.total;
+        const dotColor = isComplete ? '#28a745' : '#dc3545';
+        const dotSize = '1.8rem';
+        const buttonHtml = isComplete ? '' : `
+          <button class="btn theme-btn btn-status-load-group" data-urls='${JSON.stringify(results.missing)}' style="font-size: 0.75rem; padding: 4px 10px;">Cargar faltantes</button>
+        `;
+        html += `
+          <div class="status-item" style="display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; border: 1.5px solid var(--panel-border); border-radius: 12px; background: var(--input-bg);">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: ${dotSize}; line-height: 1; color: ${dotColor}; user-select: none; margin-top: -4px;">•</span>
+              <div style="display: flex; flex-direction: column;">
+                <span style="font-size: 0.88rem; font-weight: 700; color: var(--text-color);">${title}</span>
+                <span style="font-size: 0.72rem; color: var(--text-muted);">${results.cached}/${results.total} archivos (${detailsText})</span>
+              </div>
+            </div>
+            ${buttonHtml}
+          </div>
+        `;
+      };
+
+      renderGroupRow('Archivos JavaScript (.js)', 'Scripts de la aplicación', jsResults);
+      renderGroupRow('Archivos CSS (.css)', 'Estilos visuales', cssResults);
+      renderGroupRow('Archivos JSON de Datos', 'Diócesis, catequesis, acordes', jsonResults);
+      renderGroupRow('Archivos JSON de Cantos', 'Acordes, letras y cejillas', songResults);
+      renderGroupRow('Otros Recursos', 'Imágenes, fuentes y PWA Manifest', assetResults);
+
+      listEl.innerHTML = html;
+
+      // Actualizar Totales
+      totalRatioEl.textContent = `${cachedCount}/${totalCount}`;
+      if (missingFiles.length === 0) {
+        totalRatioEl.style.color = '#28a745';
+      } else {
+        totalRatioEl.style.color = '#dc3545';
+      }
+      missingCountEl.textContent = missingFiles.length;
+
+      // Actualizar color de la nube (verde si está completo, rojo si falta algo)
+      const cloudIconEl = document.getElementById('status-cloud-icon');
+      if (cloudIconEl) {
+        if (missingFiles.length === 0) {
+          cloudIconEl.style.color = '#28a745';
+        } else {
+          cloudIconEl.style.color = '#dc3545';
+        }
+      }
+
+      if (missingFiles.length > 0) {
+        loadAllBtn.style.display = 'block';
+        loadAllBtn.dataset.urls = JSON.stringify(missingFiles);
+        missingListEl.innerHTML = missingFiles.map(f => `<div style="word-break: break-all; color: #dc3545; padding: 2px 0;">• ${f}</div>`).join('');
+      } else {
+        loadAllBtn.style.display = 'none';
+        missingListEl.innerHTML = '<div style="color: #28a745; font-weight: 600;">¡Todos los recursos están cargados correctamente!</div>';
+      }
+
+      bindStatusButtons();
+
+    } catch (err) {
+      console.error(err);
+      listEl.innerHTML = `<div style="text-align: center; color: #dc3545; padding: 20px 0;">Error al evaluar recursos: ${err.message}</div>`;
+    }
+  };
+
+
   // --- MÓDULO CLOUD ---
   function updateCloudProgress(statusText, percentage) {
     const container = document.getElementById('cloud-progress-container');
@@ -1223,16 +1600,34 @@ window.initAjustes = async function() {
       updateCantoEquipoBadge();
     }
     cantoEquipoToggle.addEventListener('change', async () => {
+      // Comprobar si hay conexión a Internet para cualquier cambio (activar o desactivar)
+      if (!navigator.onLine) {
+        if (window.mostrarAlerta) {
+          window.mostrarAlerta({
+            titulo: 'Sin Conexión',
+            mensaje: 'No puedes Habilitar Resucitó sin Internet si no tienes internet',
+            icono: 'wifi_off'
+          });
+        } else {
+          alert("⚠️ Sin Conexión\nNo puedes Habilitar Resucitó sin Internet si no tienes internet");
+        }
+        // Revertir al estado persistido previamente
+        cantoEquipoToggle.checked = localStorage.getItem('cantoEquipoOffline') === 'true';
+        updateCantoEquipoBadge();
+        return;
+      }
+
       updateCantoEquipoBadge();
       const isChecked = cantoEquipoToggle.checked;
       if (isChecked) {
+
         // ACTIVAR: Descargar todos los cantos
         cantoEquipoToggle.disabled = true;
         try {
           updateCloudProgress("Iniciando descarga...", 0);
           
           const keys = await caches.keys();
-          const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v168';
+          const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v182';
           const cache = await caches.open(cacheName);
           
           const songIds = window.allSongs ? window.allSongs.map(s => s.id) : [];
@@ -1248,7 +1643,7 @@ window.initAjustes = async function() {
             const batch = songIds.slice(i, i + batchSize);
             await Promise.all(batch.map(async (id) => {
               const folder = id.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
-              const url = `${folder}/${id}.json`;
+              const url = `${folder}/${id}.json?offline=true`;
               try {
                 const res = await fetch(url);
                 if (res.ok) {
@@ -1268,7 +1663,15 @@ window.initAjustes = async function() {
           updateCloudProgress("¡Todos los cantos descargados offline con éxito!", 100);
         } catch (err) {
           console.error(err);
-          alert("Error al descargar cantos: " + err.message);
+          if (window.mostrarAlerta) {
+            window.mostrarAlerta({
+              titulo: 'Error',
+              mensaje: 'Error al descargar cantos: ' + err.message,
+              icono: 'error'
+            });
+          } else {
+            alert("Error al descargar cantos: " + err.message);
+          }
           updateCloudProgress("Error en la descarga", 0);
           cantoEquipoToggle.checked = false;
           updateCantoEquipoBadge();
@@ -1283,7 +1686,7 @@ window.initAjustes = async function() {
           try {
             updateCloudProgress("Eliminando cantos guardados...", 20);
             const keys = await caches.keys();
-            const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v168';
+            const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v182';
             const cache = await caches.open(cacheName);
             
             const songIds = window.allSongs ? window.allSongs.map(s => s.id) : [];
@@ -1291,7 +1694,7 @@ window.initAjustes = async function() {
             
             for (const id of songIds) {
               const folder = id.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
-              const url = `${folder}/${id}.json`;
+              const url = `${folder}/${id}.json?offline=true`;
               await cache.delete(url);
               deleted++;
               const pct = 20 + Math.round((deleted / songIds.length) * 80);
@@ -1302,7 +1705,15 @@ window.initAjustes = async function() {
             updateCloudProgress("¡Modo sin conexión desactivado y caché liberada!", 100);
           } catch (err) {
             console.error(err);
-            alert("Error al desactivar: " + err.message);
+            if (window.mostrarAlerta) {
+              window.mostrarAlerta({
+                titulo: 'Error',
+                mensaje: 'Error al desactivar: ' + err.message,
+                icono: 'error'
+              });
+            } else {
+              alert("Error al desactivar: " + err.message);
+            }
             cantoEquipoToggle.checked = true;
             updateCantoEquipoBadge();
           } finally {
@@ -1313,9 +1724,9 @@ window.initAjustes = async function() {
 
         if (window.mostrarConfirmacion) {
           window.mostrarConfirmacion({
-            titulo: 'Desactivar Canto Offline',
+            titulo: 'Resucitó solo con Internet',
             mensaje: '¿Deseas desactivar el modo sin conexión y eliminar los cantos guardados localmente?',
-            icono: 'wifi_off',
+            icono: 'wifi',
             textoSi: 'Sí',
             textoNo: 'No',
             onConfirm: doDeactivate,
@@ -1341,7 +1752,15 @@ window.initAjustes = async function() {
     btnSyncOffline.addEventListener('click', async () => {
       const user = getCurrentUser() || auth.currentUser;
       if (!user) {
-        alert("⚠️ Debes iniciar sesión con tu cuenta de Google para descargar tus datos desde la nube.");
+        if (window.mostrarAlerta) {
+          window.mostrarAlerta({
+            titulo: 'Iniciar Sesión',
+            mensaje: 'Debes iniciar sesión con tu cuenta de Google para descargar tus datos desde la nube.',
+            icono: 'account_circle'
+          });
+        } else {
+          alert("⚠️ Debes iniciar sesión con tu cuenta de Google para descargar tus datos desde la nube.");
+        }
         return;
       }
       
@@ -1387,7 +1806,15 @@ window.initAjustes = async function() {
         if (typeof window.routeSPA === 'function') window.routeSPA();
       } catch (err) {
         console.error(err);
-        alert("Error al descargar datos personales: " + err.message);
+        if (window.mostrarAlerta) {
+          window.mostrarAlerta({
+            titulo: 'Error',
+            mensaje: 'Error al descargar datos personales: ' + err.message,
+            icono: 'error'
+          });
+        } else {
+          alert("Error al descargar datos personales: " + err.message);
+        }
         updateCloudProgress("Error al activar offline", 0);
       } finally {
         btnSyncOffline.disabled = false;
@@ -1400,8 +1827,16 @@ window.initAjustes = async function() {
   if (btnClearCache) {
     btnClearCache.addEventListener('click', async () => {
       if (!navigator.onLine) {
-         alert("⚠️ No puedes limpiar la caché estando sin conexión. Es obligatorio tener conexión a Internet para garantizar la re-descarga de recursos necesarios.");
-         return;
+        if (window.mostrarAlerta) {
+          window.mostrarAlerta({
+            titulo: 'Sin Conexión',
+            mensaje: 'No puedes limpiar la caché estando sin conexión. Es obligatorio tener conexión a Internet para garantizar la re-descarga de recursos necesarios.',
+            icono: 'wifi_off'
+          });
+        } else {
+          alert("⚠️ No puedes limpiar la caché estando sin conexión. Es obligatorio tener conexión a Internet para garantizar la re-descarga de recursos necesarios.");
+        }
+        return;
       }
       
       const doClear = async () => {
@@ -1430,7 +1865,15 @@ window.initAjustes = async function() {
           }, 1500);
         } catch (err) {
           console.error(err);
-          alert("Error al limpiar caché: " + err.message);
+          if (window.mostrarAlerta) {
+            window.mostrarAlerta({
+              titulo: 'Error',
+              mensaje: 'Error al limpiar caché: ' + err.message,
+              icono: 'error'
+            });
+          } else {
+            alert("Error al limpiar caché: " + err.message);
+          }
           updateCloudProgress("Error al limpiar", 0);
           btnClearCache.disabled = false;
           hideCloudProgress();

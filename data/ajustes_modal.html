@@ -1015,7 +1015,7 @@
             <!-- Opción 1: Usar canto en equipo sin Internet -->
             <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); display: flex; align-items: center; justify-content: space-between;">
               <div class="setting-label">
-                <h4 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Usar canto en equipo sin Internet</h4>
+                <h4 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Habilitar Resucitó sin Internet</h4>
                 <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Descarga todos los cantos y sus acordes con sus letras para usarlos sin conexión.</p>
               </div>
               <div class="setting-control" style="display: flex; align-items: center; gap: 12px;">
@@ -1358,33 +1358,91 @@
           </div>
         </div>
 
-        <!-- Panel Log (Logs de Diagnóstico) -->
+        <!-- Panel Log (Logs de Diagnóstico y Estado Resucitó) -->
         <div id="settings-panel-log" class="settings-panel-group" style="display: none; padding: 16px;">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
-            <h4 style="margin: 0; font-size: 1rem; color: var(--text-color); display: flex; align-items: center; gap: 6px;">
-              <span class="material-symbols-outlined" style="color: var(--accent-color);">terminal</span>
-              Logs de Diagnóstico
-            </h4>
-            <div style="display: flex; gap: 6px;">
-              <button class="btn theme-btn" id="copy-logs-btn" style="font-size: 0.75rem; padding: 4px 10px;">Copiar Logs</button>
-              <button class="btn theme-btn" id="clear-logs-btn" style="font-size: 0.75rem; padding: 4px 10px; background: #dc3545; color: #fff;">Limpiar</button>
+          <!-- Selector de Submódulos dentro de LOG (LOG, Estado Resucitó) -->
+          <div class="log-subtabs" style="display: flex; gap: 8px; border-bottom: 1.5px solid var(--panel-border); padding-bottom: 12px; margin-bottom: 16px;">
+            <button class="log-subtab-btn active" data-subtab="console" id="log-subtab-console-btn" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border: none; background: none; border-bottom: 2.5px solid var(--accent-color); font-weight: 700; color: var(--accent-color); cursor: pointer; transition: all 0.2s;">
+              <span class="material-symbols-outlined" style="font-size: 1.15rem;">terminal</span>
+              LOG
+            </button>
+            <button class="log-subtab-btn" data-subtab="status" id="log-subtab-status-btn" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer; transition: all 0.2s;">
+              <span class="material-symbols-outlined" style="font-size: 1.15rem;">fact_check</span>
+              Estado Resucitó
+            </button>
+          </div>
+
+          <!-- Contenido Submódulo: LOG Console -->
+          <div id="log-submodule-console-content" class="log-submodule-panel" style="display: block;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+              <h4 style="margin: 0; font-size: 1rem; color: var(--text-color); display: flex; align-items: center; gap: 6px;">
+                <span class="material-symbols-outlined" style="color: var(--accent-color);">terminal</span>
+                Logs de Diagnóstico
+              </h4>
+              <div style="display: flex; gap: 6px;">
+                <button class="btn theme-btn" id="copy-logs-btn" style="font-size: 0.75rem; padding: 4px 10px;">Copiar Logs</button>
+                <button class="btn theme-btn" id="clear-logs-btn" style="font-size: 0.75rem; padding: 4px 10px; background: #dc3545; color: #fff;">Limpiar</button>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+              <label style="font-size: 0.82rem; font-weight: 700; color: var(--text-color); display: block; margin-bottom: 4px;">Filtrar por Categoría:</label>
+              <select id="logs-category-select" class="theme-select" style="width: 100%; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); font-weight: 600;">
+                <option value="all">Ver Todos los Logs</option>
+                <option value="Buscador">Buscador (Eventos y Foco)</option>
+                <option value="Firebase">Firebase / Nube</option>
+                <option value="PWA">Service Worker / PWA</option>
+                <option value="Interfaz">Interfaz y Eventos UI</option>
+                <option value="General">General / Sistema</option>
+              </select>
+            </div>
+
+            <div id="logs-viewer-container" class="cLog">
+              Esperando registros de diagnóstico...
             </div>
           </div>
 
-          <div style="margin-bottom: 10px;">
-            <label style="font-size: 0.82rem; font-weight: 700; color: var(--text-color); display: block; margin-bottom: 4px;">Filtrar por Categoría:</label>
-            <select id="logs-category-select" class="theme-select" style="width: 100%; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); font-weight: 600;">
-              <option value="all">Ver Todos los Logs</option>
-              <option value="Buscador">Buscador (Eventos y Foco)</option>
-              <option value="Firebase">Firebase / Nube</option>
-              <option value="PWA">Service Worker / PWA</option>
-              <option value="Interfaz">Interfaz y Eventos UI</option>
-              <option value="General">General / Sistema</option>
-            </select>
-          </div>
+          <!-- Contenido Submódulo: Estado Resucitó -->
+          <div id="log-submodule-status-content" class="log-submodule-panel" style="display: none; padding: 8px 0;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+              <h4 style="margin: 0; font-size: 1rem; color: var(--text-color); display: flex; align-items: center; gap: 6px;">
+                <span id="status-cloud-icon" class="material-symbols-outlined" style="color: var(--accent-color);">cloud_done</span>
+                Estado de recursos (PWA Caché)
+              </h4>
+              <button class="btn theme-btn" id="btn-status-refresh" style="display: flex; align-items: center; gap: 4px; padding: 6px 12px; font-size: 0.8rem; font-weight: 600;">
+                <span class="material-symbols-outlined" style="font-size: 1rem;">refresh</span>
+                Actualizar
+              </button>
+            </div>
 
-          <div id="logs-viewer-container" class="cLog">
-            Esperando registros de diagnóstico...
+            <!-- Listado de recursos -->
+            <div id="status-resources-list" style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; max-height: 380px; overflow-y: auto; padding-right: 4px;">
+              <div style="text-align: center; color: var(--text-muted); padding: 20px 0;">
+                Cargando estado de los recursos...
+              </div>
+            </div>
+
+            <!-- Total y Acciones -->
+            <div style="border-top: 1.5px solid var(--panel-border); padding-top: 16px; margin-top: 16px; display: flex; flex-direction: column; gap: 12px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+                <span style="font-size: 0.95rem; font-weight: 700; color: var(--text-color);">
+                  Total de recursos: <span id="status-total-ratio" style="color: var(--accent-color);">0/0</span>
+                </span>
+                <button class="btn theme-btn" id="btn-status-load-all" style="display: none; padding: 8px 16px; font-size: 0.85rem; font-weight: 700; background: var(--accent-color); color: #fff; border: none; border-radius: 20px;">
+                  Cargar todos los faltantes
+                </button>
+              </div>
+
+              <!-- Collapsible de recursos faltantes -->
+              <details id="status-missing-collapsible" style="margin-top: 8px; border: 1px solid var(--panel-border); border-radius: 12px; background: rgba(0,0,0,0.02);">
+                <summary style="padding: 10px 14px; font-size: 0.85rem; font-weight: 600; color: var(--text-color); cursor: pointer; user-select: none;">
+                  Recursos faltantes (<span id="status-missing-count">0</span>)
+                </summary>
+                <div id="status-missing-list" style="padding: 12px; max-height: 180px; overflow-y: auto; font-family: monospace; font-size: 0.78rem; display: flex; flex-direction: column; gap: 6px; border-top: 1px solid var(--panel-border);">
+                  Ninguno
+                </div>
+              </details>
+            </div>
           </div>
         </div>
 

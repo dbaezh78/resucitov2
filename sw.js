@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v173'; // Incrementado para forzar actualización inmediata
+const CACHE_NAME = 'resucito-cache-v182'; // Incrementado para forzar actualización inmediata
 const STATIC_ASSETS = [
   './',
   'index.html',
@@ -91,6 +91,16 @@ self.addEventListener('fetch', event => {
         })
     );
   } else {
+    // Para cantos, si el modo sin conexión no está activo, servir directamente de la red sin usar ni rellenar caché
+    const isSongJson = url.pathname.includes('/data/songs/') || url.pathname.includes('/data/songs-ae/');
+    if (isSongJson) {
+      const isOfflineMode = url.searchParams.get('offline') === 'true';
+      if (!isOfflineMode) {
+        event.respondWith(fetch(event.request));
+        return;
+      }
+    }
+
     // ESTRATEGIA: Cache-First con Stale-While-Revalidate para imágenes y JSON de datos
     event.respondWith(
       caches.match(event.request).then(cachedResponse => {

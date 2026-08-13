@@ -250,12 +250,15 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
     textoSi = 'Sí',
     textoNo = 'No',
     onConfirm = null,
-    onCancel = null
+    onCancel = null,
+    iconoColor = null,
+    iconoBg = null
   } = {}) {
     const modal = document.getElementById('custom-confirm-modal');
     const titleEl = document.getElementById('custom-confirm-title');
     const messageEl = document.getElementById('custom-confirm-message');
     const iconEl = document.getElementById('custom-confirm-icon');
+    const badgeEl = document.getElementById('custom-confirm-badge');
     const btnSi = document.getElementById('custom-confirm-btn-si');
     const btnNo = document.getElementById('custom-confirm-btn-no');
 
@@ -266,6 +269,25 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
     iconEl.innerText = icono;
     btnSi.innerText = textoSi;
     btnNo.innerText = textoNo;
+
+    // Configurar colores personalizados del badge si se especifican
+    if (badgeEl) {
+      if (iconoColor) badgeEl.style.color = iconoColor;
+      else badgeEl.style.color = 'var(--accent-color, #d01212)';
+      if (iconoBg) badgeEl.style.background = iconoBg;
+      else badgeEl.style.background = 'rgba(208, 18, 18, 0.1)';
+    }
+
+    // Si textoNo es vacío, mostramos como Alerta (1 botón)
+    if (textoNo === '') {
+      btnNo.style.display = 'none';
+      btnSi.style.flex = 'none';
+      btnSi.style.padding = '10px 32px';
+    } else {
+      btnNo.style.display = 'block';
+      btnSi.style.flex = '1';
+      btnSi.style.padding = '10px 20px';
+    }
 
     const handleSi = async (e) => {
       e.preventDefault();
@@ -292,6 +314,29 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
     btnNo.addEventListener('click', handleNo);
 
     modal.style.display = 'flex';
+  };
+
+  // Función de atajo global para mostrar Alertas (1 solo botón Aceptar)
+  window.mostrarAlerta = function ({
+    titulo = 'Aviso',
+    mensaje = '',
+    icono = 'warning',
+    textoBoton = 'Aceptar',
+    iconoColor = null,
+    iconoBg = null,
+    onClose = null
+  } = {}) {
+    window.mostrarConfirmacion({
+      titulo,
+      mensaje,
+      icono,
+      textoSi: textoBoton,
+      textoNo: '',
+      iconoColor,
+      iconoBg,
+      onConfirm: onClose,
+      onCancel: onClose
+    });
   };
 
   // Función Global para mostrar ventana de progreso estilizada (sin alert nativo)
@@ -493,6 +538,20 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
       actualizarBtn.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
+        
+        if (!navigator.onLine) {
+          if (window.mostrarAlerta) {
+            window.mostrarAlerta({
+              titulo: 'Sin Conexión',
+              mensaje: 'No puede Actualizar sin internet',
+              icono: 'wifi_off'
+            });
+          } else {
+            alert("⚠️ No puede Actualizar sin internet");
+          }
+          return;
+        }
+
         if (accountCard) accountCard.classList.add('hidden');
 
         window.mostrarConfirmacion({

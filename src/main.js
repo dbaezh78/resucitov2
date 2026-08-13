@@ -435,7 +435,8 @@ async function loadSongView(songId) {
       songData = loadedSongsCache[songId];
     } else {
       const folder = songId.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
-      const response = await fetch(`${folder}/${songId}.json`);
+      const isOffline = localStorage.getItem('cantoEquipoOffline') === 'true';
+      const response = await fetch(`${folder}/${songId}.json?offline=${isOffline}`);
       if (!response.ok) throw new Error('Canto no encontrado');
       songData = await response.json();
       loadedSongsCache[songId] = songData;
@@ -2118,7 +2119,8 @@ async function obtenerCantoCompleto(songId) {
   }
   try {
     const folder = songId.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
-    const response = await fetch(`${folder}/${songId}.json`);
+    const isOffline = localStorage.getItem('cantoEquipoOffline') === 'true';
+    const response = await fetch(`${folder}/${songId}.json?offline=${isOffline}`);
     if (response.ok) {
       const songData = await response.json();
       loadedSongsCache[songId] = songData;
@@ -4064,6 +4066,18 @@ function setupEventListeners() {
 
   if (authUpdateBtn) {
     authUpdateBtn.addEventListener('click', async () => {
+      if (!navigator.onLine) {
+        if (window.mostrarAlerta) {
+          window.mostrarAlerta({
+            titulo: 'Sin Conexión',
+            mensaje: 'No puede Actualizar sin internet',
+            icono: 'wifi_off'
+          });
+        } else {
+          alert("⚠️ No puede Actualizar sin internet");
+        }
+        return;
+      }
       try {
         if (window.mostrarProgreso) {
           window.mostrarProgreso({
