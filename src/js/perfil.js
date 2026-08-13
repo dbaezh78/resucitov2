@@ -425,6 +425,29 @@ async function renderizarTablaCantos() {
         row.style.display = text.includes(q) ? '' : 'none';
       });
     });
+    inputBuscador.addEventListener('keydown', (e) => {
+      if (e.key === 'Tab' && !e.shiftKey) {
+        const firstRow = Array.from(document.querySelectorAll('#cuerpo-tabla-perfil tr'))
+          .find(row => row.style.display !== 'none');
+        if (firstRow) {
+          const link = firstRow.querySelector('.listcanto');
+          if (link) {
+            e.preventDefault();
+            link.focus();
+          }
+        }
+      } else if (e.key === 'Enter') {
+        const firstRow = Array.from(document.querySelectorAll('#cuerpo-tabla-perfil tr'))
+          .find(row => row.style.display !== 'none');
+        if (firstRow) {
+          const link = firstRow.querySelector('.listcanto');
+          if (link) {
+            e.preventDefault();
+            link.click();
+          }
+        }
+      }
+    });
   }
 
   if (btnLimpiar && inputBuscador) {

@@ -107,7 +107,7 @@
 
         ]},
 
-    {"line": "El enemigo había dicho:,(Do,7,0)(Fa,,167)","sC": "nSpace"},
+    {"line": "El enemigo había dicho:,(Do,7,0)(Fa,,167)","sC": "tc nSpace"},
     {"line": "«Les perseguiré y alcanzaré,,(La,7,164) ","sC": "nSpace"},
     {"line": "desnudaré la espada, se saciará mi alma,,(Re,7,188)","sC": "nSpace"},
     {"line": "los aniquilaré».,(Sol,7,188) ","sC": "nSpace"},
@@ -133,7 +133,7 @@
       ]
     },
 
-    {"line": "Soplaste con tu aliento,(Do,7,0)(Fa,,167)","sC": "nSpace"},
+    {"line": "Soplaste con tu aliento,(Do,7,0)(Fa,,167)","sC": "tc nSpace"},
     {"line": "y el mar los sepultó.,(La,7,164) ","sC": "nSpace"},
     {"line": "Se hundieron como plomo,(Re,7,188)","sC": "nSpace"},
     {"line": "en las aguas de la muerte,,(Sol,7,188) ","sC": "nSpace"},
@@ -159,7 +159,7 @@
         {"line": "CABALLO Y CABALLERO. ","sC": "as bdcd"}
       ]
     },
-    {"line": "¿Quién como tú, Señor,,(Do,7,19)(Fa,,167)","sC": "nSpace"},
+    {"line": "¿Quién como tú, Señor,,(Do,7,19)(Fa,,167)","sC": "tc nSpace"},
     {"line": "glorioso en santidad,,(La,7,164) ","sC": "nSpace"},
     {"line": "terrible en las empresas, autor de maravillas,,(Re,7,188)","sC": "nSpace"},
     {"line": "autor de maravillas?,,(Sol,7,188) ","sC": "nSpace"},
@@ -185,7 +185,7 @@
         {"line": "CABALLO Y CABALLERO. ","sC": "as bdcd"}
       ]
     },
-    {"line": "Rescatas a tu pueblo,,(Do,7,19)(Fa,,167)","sC": "nSpace"},
+    {"line": "Rescatas a tu pueblo,,(Do,7,19)(Fa,,167)","sC": "tc nSpace"},
     {"line": "lo llevas a tu casa.,,(La,7,164) ","sC": "nSpace"},
     {"line": "Los príncipes de Edom, se estremecen,,(Re,7,188)","sC": "nSpace"},
     {"line": "al paso de Jacob.,(Sol,7,188) ","sC": "nSpace"},
@@ -210,7 +210,7 @@
         {"line": "CABALLO Y CABALLERO. ","sC": "as bdcd"}
       ]
     },
-    {"line": "Lo llevas y lo plantas,(Do,7,19)(Fa,,167)","sC": "nSpace"},
+    {"line": "Lo llevas y lo plantas,(Do,7,19)(Fa,,167)","sC": "tc nSpace"},
     {"line": "en el lugar sagrado,(La,7,164) ","sC": "nSpace"},
     {"line": "sobre tu monte santo, el santuario,(Re,7,188)","sC": "nSpace"},
     {"line": "que tus manos prepararon.(Sol,7,188) ","sC": "nSpace"},

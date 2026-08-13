@@ -198,6 +198,30 @@ export function updateBookTabsVisibility() {
 export const updateExtrasTabVisibility = updateBookTabsVisibility;
 window.updateBookTabsVisibility = updateBookTabsVisibility;
 
+window.applyStickySearchPreference = function() {
+  const stickyEnabled = localStorage.getItem('stickySearch') !== 'false';
+  const topFlex = document.querySelector('.dashboard-top-flex');
+  if (topFlex) {
+    topFlex.classList.toggle('not-sticky', !stickyEnabled);
+  }
+};
+
+window.limpiarFiltrosIndex = function() {
+  activeStage = null;
+  activeMoments = [];
+  const stageContainer = document.getElementById('stage-filters-container');
+  const momentContainer = document.getElementById('moment-filters-container');
+  if (stageContainer) {
+    stageContainer.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+  }
+  if (momentContainer) {
+    momentContainer.querySelectorAll('.filter-pill').forEach(b => {
+      b.classList.toggle('active', b.id === 'btn-filter-indice');
+    });
+  }
+  handleSearchAndFilters();
+};
+
 // --- Inicialización ---
 document.addEventListener('DOMContentLoaded', async () => {
   // Registrar Service Worker
@@ -210,6 +234,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   capoSelect = document.getElementById('capo-select');
   setupAccessControlUI();
   updateBookTabsVisibility();
+  if (typeof window.applyStickySearchPreference === 'function') {
+    window.applyStickySearchPreference();
+  }
   
   // Cargar configuración de BIS por canto desde localStorage
   loadBisConfig();
@@ -407,7 +434,8 @@ async function loadSongView(songId) {
     if (loadedSongsCache[songId]) {
       songData = loadedSongsCache[songId];
     } else {
-      const response = await fetch(`data/songs/${songId}.json`);
+      const folder = songId.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
+      const response = await fetch(`${folder}/${songId}.json`);
       if (!response.ok) throw new Error('Canto no encontrado');
       songData = await response.json();
       loadedSongsCache[songId] = songData;
@@ -832,6 +860,14 @@ function renderSection(container, lines, side) {
       
       const triggerLine = renderLine(item.triggerLine, side, lineIdx, -1);
       triggerLine.classList.add('collapsible-trigger');
+      if (item.sC) {
+        item.sC.split(' ').forEach(cls => {
+          if (cls) triggerLine.classList.add(cls);
+        });
+      }
+      if (item.color) {
+        triggerLine.style.color = item.color;
+      }
       
       const contentDiv = document.createElement('div');
       contentDiv.className = 'collapsible-content';
@@ -952,6 +988,22 @@ function renderLine(lineItem, side, lineIdx, subLineIdx) {
   
   // Resolver las posiciones reales (custom de usuario, default de JSON o escala mixta)
   const matches = resolveChordPositions(side, lineIdx, subLineIdx, baseChords, cleanLetra);
+
+  // Rellenar dinámicamente con espacios en blanco al final si hay acordes que van fuera de la letra
+  if (matches.length > 0) {
+    const maxPos = matches.reduce((max, m) => Math.max(max, m.position), 0);
+    if (maxPos >= cleanLetra.length) {
+      cleanLetra = cleanLetra.padEnd(Math.ceil(maxPos) + 1, ' ');
+    }
+    // Si estamos en modo edición, agregar 10 espacios de cortesía extra al final de la línea para poder arrastrar nuevos acordes hacia afuera
+    if (isChordEditMode) {
+      cleanLetra = cleanLetra.padEnd(cleanLetra.length + 10, ' ');
+    }
+    // Asegurar que las posiciones estén acotadas al nuevo tamaño de cleanLetra
+    matches.forEach(m => {
+      m.position = Math.max(0, Math.min(m.position, cleanLetra.length - 1));
+    });
+  }
   
   // Si no hay acordes, renderizar simple
   if (matches.length === 0) {
@@ -1137,7 +1189,7 @@ function resolveChordPositions(side, lineIdx, subLineIdx, baseChords, cleanLetra
       }
     }
     if (cleanLetra.length > 0) {
-      pos = Math.max(0, Math.min(pos, cleanLetra.length - 1));
+      pos = Math.max(0, pos);
     }
     return {
       noteName: chord.name,
@@ -2065,7 +2117,8 @@ async function obtenerCantoCompleto(songId) {
     return loadedSongsCache[songId];
   }
   try {
-    const response = await fetch(`data/songs/${songId}.json`);
+    const folder = songId.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
+    const response = await fetch(`${folder}/${songId}.json`);
     if (response.ok) {
       const songData = await response.json();
       loadedSongsCache[songId] = songData;
@@ -2147,7 +2200,7 @@ function generarHtmlCanto(song) {
 
 function generarHtmlLinea(song, lineItem, side, lineIdx, keyOffset) {
   if (lineItem.type === "collapsible-block") {
-    const triggerHtml = generarHtmlLineaItem(song, lineItem.triggerLine, side, lineIdx, -1, keyOffset);
+    const triggerHtml = generarHtmlLineaItem(song, lineItem.triggerLine, side, lineIdx, -1, keyOffset, 'collapsible-trigger ' + (lineItem.sC || ''));
     const subLinesHtml = lineItem.lines.map((l, subIdx) => 
       generarHtmlLineaItem(song, l, side, lineIdx, subIdx, keyOffset)
     ).join('');
@@ -2158,7 +2211,7 @@ function generarHtmlLinea(song, lineItem, side, lineIdx, keyOffset) {
     return `
       <div class="collapsible-block-container">
         <div class="collapsible-lines-wrapper">
-          <div class="linea-canto collapsible-trigger">${triggerHtml}</div>
+          ${triggerHtml}
           <div class="collapsible-content" style="display: ${displayStyle};">
             ${subLinesHtml}
           </div>
@@ -2176,9 +2229,9 @@ function generarHtmlLinea(song, lineItem, side, lineIdx, keyOffset) {
   }
 }
 
-function generarHtmlLineaItem(song, lineItem, side, lineIdx, subLineIdx, keyOffset) {
+function generarHtmlLineaItem(song, lineItem, side, lineIdx, subLineIdx, keyOffset, extraClasses = '') {
   const content = typeof lineItem === 'string' ? lineItem : (lineItem.line || '');
-  const sectionClass = lineItem.sC || '';
+  const sectionClass = ((lineItem.sC || '') + ' ' + extraClasses).trim();
   const textColor = lineItem.color || '';
   
   const firstParenIndex = content.indexOf('(');
@@ -2345,6 +2398,21 @@ function setupEventListeners() {
       if (clearSearchBtn) clearSearchBtn.style.display = searchInput.value ? 'block' : 'none';
       handleSearchAndFilters();
     });
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Tab' && !e.shiftKey) {
+        const firstCard = songsGrid.querySelector('.song-card');
+        if (firstCard) {
+          e.preventDefault();
+          firstCard.focus();
+        }
+      } else if (e.key === 'Enter') {
+        const firstCard = songsGrid.querySelector('.song-card');
+        if (firstCard) {
+          e.preventDefault();
+          firstCard.click();
+        }
+      }
+    });
   }
   
   if (clearSearchBtn) {
@@ -2381,7 +2449,27 @@ function setupEventListeners() {
         activeStage = stage;
         btn.classList.add('active');
       }
+
+      // Si combineStageMomentFilter es false, limpiamos filtros de momentos/cantos
+      const combineFilter = localStorage.getItem('combineStageMomentFilter') === 'true';
+      if (!combineFilter) {
+        activeMoments = [];
+        if (momentFiltersContainer) {
+          momentFiltersContainer.querySelectorAll('.filter-pill').forEach(b => {
+            b.classList.toggle('active', b.id === 'btn-filter-indice');
+          });
+        }
+      }
+
       handleSearchAndFilters();
+
+      // Cerrar filtrado al seleccionar (solo si no está activa la opción de mantener abierto en selección de etapas)
+      const closeOnSelect = localStorage.getItem('closeFiltersOnSelect') !== 'false';
+      const keepStageActive = localStorage.getItem('keepStageFilterActive') !== 'false';
+      if (closeOnSelect && !keepStageActive && filtersPanel) {
+        filtersPanel.style.display = 'none';
+        if (toggleFiltersBtn) toggleFiltersBtn.classList.remove('active');
+      }
     });
   }
   
@@ -2393,6 +2481,15 @@ function setupEventListeners() {
       
       const moment = btn.dataset.moment;
       const btnIndice = document.getElementById('btn-filter-indice');
+
+      // Si combineStageMomentFilter es false y el filtro no es "Indice de Cantos", limpiamos etapa
+      const combineFilter = localStorage.getItem('combineStageMomentFilter') === 'true';
+      if (!combineFilter && moment !== 'Indice de Cantos') {
+        activeStage = null;
+        if (stageFiltersContainer) {
+          stageFiltersContainer.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+        }
+      }
       
       if (moment === 'Indice de Cantos') {
         // Limpiar todos los filtros de momentos
@@ -2402,13 +2499,26 @@ function setupEventListeners() {
         });
         if (btnIndice) btnIndice.classList.add('active');
       } else {
-        const index = activeMoments.indexOf(moment);
-        if (index > -1) {
-          activeMoments.splice(index, 1);
-          btn.classList.remove('active');
+        const isMultiMoment = localStorage.getItem('multiMomentFilter') === 'true';
+        if (isMultiMoment) {
+          const index = activeMoments.indexOf(moment);
+          if (index > -1) {
+            activeMoments.splice(index, 1);
+            btn.classList.remove('active');
+          } else {
+            activeMoments.push(moment);
+            btn.classList.add('active');
+          }
         } else {
-          activeMoments.push(moment);
-          btn.classList.add('active');
+          // Selección única de momento
+          const isCurrentlyActive = activeMoments.includes(moment);
+          activeMoments = [];
+          momentFiltersContainer.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+          
+          if (!isCurrentlyActive) {
+            activeMoments.push(moment);
+            btn.classList.add('active');
+          }
         }
         
         // Ajustar estado del botón de "Índice de Cantos"
@@ -2418,7 +2528,16 @@ function setupEventListeners() {
           if (btnIndice) btnIndice.classList.add('active');
         }
       }
+
       handleSearchAndFilters();
+
+      // Cerrar filtrado al seleccionar (solo si no está activa la multiselección de cantos)
+      const closeOnSelect = localStorage.getItem('closeFiltersOnSelect') !== 'false';
+      const isMultiMoment = localStorage.getItem('multiMomentFilter') === 'true';
+      if (closeOnSelect && !isMultiMoment && filtersPanel) {
+        filtersPanel.style.display = 'none';
+        if (toggleFiltersBtn) toggleFiltersBtn.classList.remove('active');
+      }
     });
   }
   
@@ -2681,7 +2800,7 @@ function setupEventListeners() {
         toolbarSearchSuggestions.innerHTML = matches.map(song => {
           const categoryText = song.stage || (Array.isArray(song.category) ? song.category.join(', ') : song.category) || '';
           return `
-            <div class="search-suggestion-item" data-id="${song.id}">
+            <div class="search-suggestion-item" data-id="${song.id}" tabindex="0">
               <strong>${song.titulo || song.title}</strong>
               <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">${categoryText}</span>
             </div>
@@ -2728,10 +2847,34 @@ function setupEventListeners() {
       } else if (e.key === 'Escape') {
         toolbarSearchSuggestions.style.display = 'none';
         activeSuggestionIndex = -1;
+      } else if (e.key === 'Tab' && !e.shiftKey) {
+        const firstItem = items[0];
+        if (firstItem) {
+          e.preventDefault();
+          firstItem.focus();
+        }
       }
     });
     
     if (toolbarSearchSuggestions) {
+      toolbarSearchSuggestions.addEventListener('keydown', (e) => {
+        const item = e.target.closest('.search-suggestion-item');
+        if (!item || !item.dataset.id) return;
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          window.location.hash = `#canto=${item.dataset.id}`;
+          toolbarSearchSuggestions.style.display = 'none';
+          toolbarSearchInput.value = '';
+        } else if (e.key === 'Tab') {
+          const items = Array.from(toolbarSearchSuggestions.querySelectorAll('.search-suggestion-item:not([style*="cursor: default"])'));
+          const index = items.indexOf(item);
+          if (e.shiftKey && index === 0) {
+            e.preventDefault();
+            toolbarSearchInput.focus();
+          }
+        }
+      });
+
       toolbarSearchSuggestions.addEventListener('click', (e) => {
         const item = e.target.closest('.search-suggestion-item');
         if (!item || !item.dataset.id) return;
@@ -2978,6 +3121,15 @@ function setupEventListeners() {
   
   if (viewerAudioPlayer) {
     viewerAudioPlayer.addEventListener('play', () => {
+      // Aplicar preferencias de bucle y ecualizador al reproducir
+      viewerAudioPlayer.loop = localStorage.getItem('audioLoopEnabled') === 'true';
+      if (typeof window.initAudioEqualizer === 'function') {
+        window.initAudioEqualizer();
+      }
+      if (window.eqCtx && window.eqCtx.state === 'suspended') {
+        window.eqCtx.resume();
+      }
+      
       if (viewerAudioContainer) viewerAudioContainer.classList.add('open');
       if (audioPlayBtn) {
         audioPlayBtn.classList.add('active');

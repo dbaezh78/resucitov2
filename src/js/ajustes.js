@@ -1,5 +1,25 @@
 // src/js/ajustes.js
 // Centralización de todos los ajustes y preferencias de la aplicación.
+import { auth, db, doc, getDoc, setDoc, collection, getDocs } from '../firebase.js';
+import { getCurrentUser } from '../auth.js';
+
+// --- Indicador de Estado del Canto Offline ---
+export function updateCantoEquipoBadge() {
+  const badge = document.getElementById('cloud-connection-badge');
+  if (!badge) return;
+  const toggle = document.getElementById('canto-equipo-toggle');
+  const isActive = toggle ? toggle.checked : (localStorage.getItem('cantoEquipoOffline') === 'true');
+  
+  if (isActive) {
+    badge.textContent = "OnLine";
+    badge.style.background = "#28a745";
+    badge.style.boxShadow = "0 0 10px rgba(40, 167, 69, 0.8)";
+  } else {
+    badge.textContent = "OffLine";
+    badge.style.background = "#dc3545";
+    badge.style.boxShadow = "0 0 10px rgba(220, 53, 69, 0.8)";
+  }
+}
 
 // 1. Exponer variables de ajustes en `window` mediante getters/setters que leen/escriben en `localStorage`.
 // De esta manera, cualquier acceso o asignación (ej: `scrollIntervalMs = 50`) actualiza automáticamente localStorage y el estado.
@@ -734,22 +754,100 @@ window.updatePerfilHeaderPreview = function() {
   if (prevColor) prevColor.style.backgroundColor = color;
 };
 
+let settingsModalPromise = null;
+
 // Función principal de inicialización de Ajustes
 window.initAjustes = async function() {
   // Cargar el HTML del modal si no existe en el DOM
   if (!document.getElementById('settings-modal')) {
-    try {
-      const response = await fetch('data/ajustes_modal.html');
-      if (response.ok) {
-        const html = await response.text();
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = html;
-        document.body.appendChild(tempDiv.firstElementChild);
-      }
-    } catch (e) {
-      console.error('Error al cargar el modal de ajustes dinámicamente:', e);
+    if (!settingsModalPromise) {
+      settingsModalPromise = (async () => {
+        try {
+          const response = await fetch('data/ajustes_modal.html');
+          if (response.ok) {
+            const html = await response.text();
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = html;
+            document.body.appendChild(tempDiv.firstElementChild);
+          }
+        } catch (e) {
+          console.error('Error al cargar el modal de ajustes dinámicamente:', e);
+        }
+      })();
     }
+    await settingsModalPromise;
   }
+
+  // Actualizar placa de conexión del submódulo Cloud
+  if (typeof updateCantoEquipoBadge === 'function') {
+    updateCantoEquipoBadge();
+  }
+  
+  // Evitar duplicar los escuchadores de eventos si initAjustes se ejecuta de nuevo
+  if (window.ajustesListenersAttached) {
+    const loopToggle = document.getElementById('audio-loop-toggle');
+    const player = document.getElementById('viewer-audio-player');
+    if (loopToggle && player) {
+      const loopEnabled = localStorage.getItem('audioLoopEnabled') === 'true';
+      loopToggle.checked = loopEnabled;
+      player.loop = loopEnabled;
+    }
+    
+    const bassSlider = document.getElementById('eq-bass-slider');
+    const midSlider = document.getElementById('eq-mid-slider');
+    const trebleSlider = document.getElementById('eq-treble-slider');
+    const bassVal = document.getElementById('eq-bass-val');
+    const midVal = document.getElementById('eq-mid-val');
+    const trebleVal = document.getElementById('eq-treble-val');
+    
+    if (bassSlider) {
+      const bassValDB = localStorage.getItem('eqGainBass') || '0';
+      bassSlider.value = bassValDB;
+      if (bassVal) bassVal.textContent = parseFloat(bassValDB) > 0 ? `+${bassValDB} dB` : `${bassValDB} dB`;
+    }
+    if (midSlider) {
+      const midValDB = localStorage.getItem('eqGainMid') || '0';
+      midSlider.value = midValDB;
+      if (midVal) midVal.textContent = parseFloat(midValDB) > 0 ? `+${midValDB} dB` : `${midValDB} dB`;
+    }
+    if (trebleSlider) {
+      const trebleValDB = localStorage.getItem('eqGainTreble') || '0';
+      trebleSlider.value = trebleValDB;
+      if (trebleVal) trebleVal.textContent = parseFloat(trebleValDB) > 0 ? `+${trebleValDB} dB` : `${trebleValDB} dB`;
+    }
+
+    // Sincronizar Inicio Toggles
+    const closeFiltersToggle = document.getElementById('close-filters-on-select-toggle');
+    if (closeFiltersToggle) {
+      closeFiltersToggle.checked = localStorage.getItem('closeFiltersOnSelect') !== 'false';
+    }
+    const multiMomentToggle = document.getElementById('multi-moment-filter-toggle');
+    if (multiMomentToggle) {
+      multiMomentToggle.checked = localStorage.getItem('multiMomentFilter') === 'true';
+    }
+    const combineStageMomentToggle = document.getElementById('combine-stage-moment-filter-toggle');
+    if (combineStageMomentToggle) {
+      combineStageMomentToggle.checked = localStorage.getItem('combineStageMomentFilter') === 'true';
+    }
+    const stickySearchToggle = document.getElementById('sticky-search-toggle');
+    if (stickySearchToggle) {
+      stickySearchToggle.checked = localStorage.getItem('stickySearch') !== 'false';
+    }
+    const keepStageToggle = document.getElementById('keep-stage-filter-active-toggle');
+    if (keepStageToggle) {
+      keepStageToggle.checked = localStorage.getItem('keepStageFilterActive') !== 'false';
+    }
+    const cantoEquipoToggle = document.getElementById('canto-equipo-toggle');
+    if (cantoEquipoToggle) {
+      cantoEquipoToggle.checked = localStorage.getItem('cantoEquipoOffline') === 'true';
+    }
+    if (typeof updateCantoEquipoBadge === 'function') {
+      updateCantoEquipoBadge();
+    }
+    
+    return;
+  }
+  window.ajustesListenersAttached = true;
   // 1. Inicializar preferencias visuales generales
   const savedTheme = localStorage.getItem('theme') || 'light';
   window.setTheme(savedTheme);
@@ -801,9 +899,207 @@ window.initAjustes = async function() {
     });
   }
 
-  // Wake Lock & Auto Hide
   window.initWakeLockPreference();
   window.initAutoHideNavPreference();
+
+  // --- SUBMÓDULO INICIO ---
+  const closeFiltersToggle = document.getElementById('close-filters-on-select-toggle');
+  if (closeFiltersToggle) {
+    const isCloseOnSelect = localStorage.getItem('closeFiltersOnSelect') !== 'false';
+    closeFiltersToggle.checked = isCloseOnSelect;
+    closeFiltersToggle.addEventListener('change', (e) => {
+      localStorage.setItem('closeFiltersOnSelect', e.target.checked);
+    });
+  }
+
+  const multiMomentToggle = document.getElementById('multi-moment-filter-toggle');
+  if (multiMomentToggle) {
+    const isMultiMoment = localStorage.getItem('multiMomentFilter') === 'true';
+    multiMomentToggle.checked = isMultiMoment;
+    multiMomentToggle.addEventListener('change', (e) => {
+      localStorage.setItem('multiMomentFilter', e.target.checked);
+      if (typeof window.limpiarFiltrosIndex === 'function') {
+        window.limpiarFiltrosIndex();
+      }
+    });
+  }
+
+  const combineStageMomentToggle = document.getElementById('combine-stage-moment-filter-toggle');
+  if (combineStageMomentToggle) {
+    const isCombine = localStorage.getItem('combineStageMomentFilter') === 'true';
+    combineStageMomentToggle.checked = isCombine;
+    combineStageMomentToggle.addEventListener('change', (e) => {
+      localStorage.setItem('combineStageMomentFilter', e.target.checked);
+      if (typeof window.limpiarFiltrosIndex === 'function') {
+        window.limpiarFiltrosIndex();
+      }
+    });
+  }
+
+  const keepStageToggle = document.getElementById('keep-stage-filter-active-toggle');
+  if (keepStageToggle) {
+    const isKeepActive = localStorage.getItem('keepStageFilterActive') !== 'false';
+    keepStageToggle.checked = isKeepActive;
+    keepStageToggle.addEventListener('change', (e) => {
+      localStorage.setItem('keepStageFilterActive', e.target.checked);
+    });
+  }
+
+  const stickySearchToggle = document.getElementById('sticky-search-toggle');
+  if (stickySearchToggle) {
+    const isSticky = localStorage.getItem('stickySearch') !== 'false';
+    stickySearchToggle.checked = isSticky;
+    if (typeof window.applyStickySearchPreference === 'function') {
+      window.applyStickySearchPreference();
+    }
+    stickySearchToggle.addEventListener('change', (e) => {
+      localStorage.setItem('stickySearch', e.target.checked);
+      if (typeof window.applyStickySearchPreference === 'function') {
+        window.applyStickySearchPreference();
+      }
+    });
+  }
+
+  // Loop de Reproducción
+  const loopToggle = document.getElementById('audio-loop-toggle');
+  const player = document.getElementById('viewer-audio-player');
+  if (loopToggle && player) {
+    const loopEnabled = localStorage.getItem('audioLoopEnabled') === 'true';
+    loopToggle.checked = loopEnabled;
+    player.loop = loopEnabled;
+    
+    loopToggle.addEventListener('change', (e) => {
+      localStorage.setItem('audioLoopEnabled', e.target.checked);
+      player.loop = e.target.checked;
+    });
+  }
+
+  // Ecualizador de Audio (Bucle y Filtros)
+  const eqHeader = document.getElementById('eq-accordion-header');
+  const eqContainer = document.getElementById('eq-controls-container');
+  const eqIcon = document.getElementById('eq-collapse-icon');
+  
+  if (eqHeader && eqContainer) {
+    eqHeader.addEventListener('click', () => {
+      const isOpen = eqContainer.style.display !== 'none';
+      eqContainer.style.display = isOpen ? 'none' : 'flex';
+      if (eqIcon) {
+        eqIcon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+      }
+    });
+  }
+
+  window.initAudioEqualizer = function() {
+    if (window.eqCtx) return; // Ya inicializado
+    const playerEl = document.getElementById('viewer-audio-player');
+    if (!playerEl) return;
+    
+    try {
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      window.eqCtx = new AudioContextClass();
+      
+      // Crear filtros
+      window.eqBassFilter = window.eqCtx.createBiquadFilter();
+      window.eqBassFilter.type = 'lowshelf';
+      window.eqBassFilter.frequency.value = 200;
+      
+      window.eqMidFilter = window.eqCtx.createBiquadFilter();
+      window.eqMidFilter.type = 'peaking';
+      window.eqMidFilter.frequency.value = 1000;
+      window.eqMidFilter.Q.value = 1.0;
+      
+      window.eqTrebleFilter = window.eqCtx.createBiquadFilter();
+      window.eqTrebleFilter.type = 'highshelf';
+      window.eqTrebleFilter.frequency.value = 4000;
+      
+      // Permitir CORS dinámicamente
+      playerEl.crossOrigin = 'anonymous';
+      
+      // Crear fuente y conectar
+      window.eqSource = window.eqCtx.createMediaElementSource(playerEl);
+      window.eqSource.connect(window.eqBassFilter);
+      window.eqBassFilter.connect(window.eqMidFilter);
+      window.eqMidFilter.connect(window.eqTrebleFilter);
+      window.eqTrebleFilter.connect(window.eqCtx.destination);
+      
+      // Aplicar ganancias iniciales desde localStorage
+      const bassG = parseFloat(localStorage.getItem('eqGainBass') || '0');
+      const midG = parseFloat(localStorage.getItem('eqGainMid') || '0');
+      const trebleG = parseFloat(localStorage.getItem('eqGainTreble') || '0');
+      
+      window.eqBassFilter.gain.value = bassG;
+      window.eqMidFilter.gain.value = midG;
+      window.eqTrebleFilter.gain.value = trebleG;
+    } catch (err) {
+      console.error("Error al inicializar el ecualizador Web Audio:", err);
+    }
+  };
+
+  // Manejar Sliders del Ecualizador
+  const bassSlider = document.getElementById('eq-bass-slider');
+  const midSlider = document.getElementById('eq-mid-slider');
+  const trebleSlider = document.getElementById('eq-treble-slider');
+  
+  const bassVal = document.getElementById('eq-bass-val');
+  const midVal = document.getElementById('eq-mid-val');
+  const trebleVal = document.getElementById('eq-treble-val');
+  
+  const resetBtn = document.getElementById('eq-reset-btn');
+  
+  const updateBass = (val) => {
+    localStorage.setItem('eqGainBass', val);
+    if (bassVal) bassVal.textContent = val > 0 ? `+${val} dB` : `${val} dB`;
+    if (window.initAudioEqualizer) window.initAudioEqualizer();
+    if (window.eqBassFilter) window.eqBassFilter.gain.value = parseFloat(val);
+  };
+  
+  const updateMid = (val) => {
+    localStorage.setItem('eqGainMid', val);
+    if (midVal) midVal.textContent = val > 0 ? `+${val} dB` : `${val} dB`;
+    if (window.initAudioEqualizer) window.initAudioEqualizer();
+    if (window.eqMidFilter) window.eqMidFilter.gain.value = parseFloat(val);
+  };
+  
+  const updateTreble = (val) => {
+    localStorage.setItem('eqGainTreble', val);
+    if (trebleVal) trebleVal.textContent = val > 0 ? `+${val} dB` : `${val} dB`;
+    if (window.initAudioEqualizer) window.initAudioEqualizer();
+    if (window.eqTrebleFilter) window.eqTrebleFilter.gain.value = parseFloat(val);
+  };
+  
+  if (bassSlider) {
+    bassSlider.value = localStorage.getItem('eqGainBass') || '0';
+    updateBass(bassSlider.value);
+    bassSlider.addEventListener('input', (e) => {
+      if (window.eqCtx && window.eqCtx.state === 'suspended') window.eqCtx.resume();
+      updateBass(e.target.value);
+    });
+  }
+  if (midSlider) {
+    midSlider.value = localStorage.getItem('eqGainMid') || '0';
+    updateMid(midSlider.value);
+    midSlider.addEventListener('input', (e) => {
+      if (window.eqCtx && window.eqCtx.state === 'suspended') window.eqCtx.resume();
+      updateMid(e.target.value);
+    });
+  }
+  if (trebleSlider) {
+    trebleSlider.value = localStorage.getItem('eqGainTreble') || '0';
+    updateTreble(trebleSlider.value);
+    trebleSlider.addEventListener('input', (e) => {
+      if (window.eqCtx && window.eqCtx.state === 'suspended') window.eqCtx.resume();
+      updateTreble(e.target.value);
+    });
+  }
+  
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      if (window.eqCtx && window.eqCtx.state === 'suspended') window.eqCtx.resume();
+      if (bassSlider) { bassSlider.value = '0'; updateBass('0'); }
+      if (midSlider) { midSlider.value = '0'; updateMid('0'); }
+      if (trebleSlider) { trebleSlider.value = '0'; updateTreble('0'); }
+    });
+  }
 
   // 2. Adjuntar listeners para controles del modal de Ajustes
   
@@ -854,6 +1150,310 @@ window.initAjustes = async function() {
   const importNotesBtn = document.getElementById('import-notes-btn');
   if (exportNotesBtn) exportNotesBtn.addEventListener('click', window.exportNotes);
   if (importNotesBtn) importNotesBtn.addEventListener('click', window.importNotes);
+
+  // Manejo de subpestañas dentro del Módulo General (Gral Común y Cloud)
+  window.switchGeneralSubmodule = function(subtab) {
+    const btns = document.querySelectorAll('.general-subtab-btn');
+    btns.forEach(b => {
+      b.classList.toggle('active', b.dataset.subtab === subtab);
+      if (b.dataset.subtab === subtab) {
+        b.style.borderBottom = '2.5px solid var(--accent-color)';
+        b.style.color = 'var(--accent-color)';
+        b.style.fontWeight = '700';
+      } else {
+        b.style.borderBottom = 'none';
+        b.style.color = 'var(--text-muted)';
+        b.style.fontWeight = '600';
+      }
+    });
+
+    const panels = {
+      'comun': document.getElementById('general-submodule-comun-content'),
+      'cloud': document.getElementById('general-submodule-cloud-content')
+    };
+
+    for (const [key, el] of Object.entries(panels)) {
+      if (el) {
+        el.style.display = key === subtab ? 'block' : 'none';
+      }
+    }
+  };
+
+  const generalSubtabBtns = document.querySelectorAll('.general-subtab-btn');
+  generalSubtabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.switchGeneralSubmodule(btn.dataset.subtab);
+    });
+  });
+
+  // --- MÓDULO CLOUD ---
+  function updateCloudProgress(statusText, percentage) {
+    const container = document.getElementById('cloud-progress-container');
+    const status = document.getElementById('cloud-progress-status');
+    const pctText = document.getElementById('cloud-progress-percentage');
+    const fill = document.getElementById('cloud-progress-bar-fill');
+    
+    if (container) container.style.display = 'block';
+    if (status) {
+      status.textContent = statusText;
+      // Remover negrita si es el mensaje de éxito de descarga o sincronización
+      if (statusText === "¡Todos los cantos descargados offline con éxito!" || statusText === "¡Tus cejillas y notas se activaron de forma offline!") {
+        status.style.fontWeight = 'normal';
+      } else {
+        status.style.fontWeight = '600';
+      }
+    }
+    if (pctText) pctText.textContent = `${percentage}%`;
+    if (fill) fill.style.width = `${percentage}%`;
+  }
+  
+  function hideCloudProgress() {
+    const container = document.getElementById('cloud-progress-container');
+    if (container) {
+      setTimeout(() => {
+        container.style.display = 'none';
+      }, 3000);
+    }
+  }
+
+  const cantoEquipoToggle = document.getElementById('canto-equipo-toggle');
+  if (cantoEquipoToggle) {
+    cantoEquipoToggle.checked = localStorage.getItem('cantoEquipoOffline') === 'true';
+    if (typeof updateCantoEquipoBadge === 'function') {
+      updateCantoEquipoBadge();
+    }
+    cantoEquipoToggle.addEventListener('change', async () => {
+      updateCantoEquipoBadge();
+      const isChecked = cantoEquipoToggle.checked;
+      if (isChecked) {
+        // ACTIVAR: Descargar todos los cantos
+        cantoEquipoToggle.disabled = true;
+        try {
+          updateCloudProgress("Iniciando descarga...", 0);
+          
+          const keys = await caches.keys();
+          const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v168';
+          const cache = await caches.open(cacheName);
+          
+          const songIds = window.allSongs ? window.allSongs.map(s => s.id) : [];
+          if (songIds.length === 0) {
+            throw new Error("No hay cantos cargados en la aplicación para descargar.");
+          }
+          
+          let downloaded = 0;
+          const total = songIds.length;
+          const batchSize = 15;
+          
+          for (let i = 0; i < total; i += batchSize) {
+            const batch = songIds.slice(i, i + batchSize);
+            await Promise.all(batch.map(async (id) => {
+              const folder = id.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
+              const url = `${folder}/${id}.json`;
+              try {
+                const res = await fetch(url);
+                if (res.ok) {
+                  await cache.put(url, res.clone());
+                }
+              } catch (err) {
+                console.warn(`Error descargando canto ${id}:`, err);
+              }
+              downloaded++;
+            }));
+            
+            const pct = Math.min(100, Math.round((downloaded / total) * 100));
+            updateCloudProgress(`Descargando cantos (${downloaded}/${total})...`, pct);
+          }
+          
+          localStorage.setItem('cantoEquipoOffline', 'true');
+          updateCloudProgress("¡Todos los cantos descargados offline con éxito!", 100);
+        } catch (err) {
+          console.error(err);
+          alert("Error al descargar cantos: " + err.message);
+          updateCloudProgress("Error en la descarga", 0);
+          cantoEquipoToggle.checked = false;
+          updateCantoEquipoBadge();
+        } finally {
+          cantoEquipoToggle.disabled = false;
+          hideCloudProgress();
+        }
+      } else {
+        // DESACTIVAR: Eliminar cantos de la caché
+        const doDeactivate = async () => {
+          cantoEquipoToggle.disabled = true;
+          try {
+            updateCloudProgress("Eliminando cantos guardados...", 20);
+            const keys = await caches.keys();
+            const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v168';
+            const cache = await caches.open(cacheName);
+            
+            const songIds = window.allSongs ? window.allSongs.map(s => s.id) : [];
+            let deleted = 0;
+            
+            for (const id of songIds) {
+              const folder = id.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
+              const url = `${folder}/${id}.json`;
+              await cache.delete(url);
+              deleted++;
+              const pct = 20 + Math.round((deleted / songIds.length) * 80);
+              updateCloudProgress(`Eliminando canto ${deleted}/${songIds.length}...`, pct);
+            }
+            
+            localStorage.setItem('cantoEquipoOffline', 'false');
+            updateCloudProgress("¡Modo sin conexión desactivado y caché liberada!", 100);
+          } catch (err) {
+            console.error(err);
+            alert("Error al desactivar: " + err.message);
+            cantoEquipoToggle.checked = true;
+            updateCantoEquipoBadge();
+          } finally {
+            cantoEquipoToggle.disabled = false;
+            hideCloudProgress();
+          }
+        };
+
+        if (window.mostrarConfirmacion) {
+          window.mostrarConfirmacion({
+            titulo: 'Desactivar Canto Offline',
+            mensaje: '¿Deseas desactivar el modo sin conexión y eliminar los cantos guardados localmente?',
+            icono: 'wifi_off',
+            textoSi: 'Sí',
+            textoNo: 'No',
+            onConfirm: doDeactivate,
+            onCancel: () => {
+              cantoEquipoToggle.checked = true;
+              updateCantoEquipoBadge();
+            }
+          });
+        } else {
+          if (confirm("¿Deseas desactivar el modo sin conexión y eliminar los cantos guardados localmente?")) {
+            doDeactivate();
+          } else {
+            cantoEquipoToggle.checked = true;
+            updateCantoEquipoBadge();
+          }
+        }
+      }
+    });
+  }
+
+  const btnSyncOffline = document.getElementById('btn-cloud-sync-offline');
+  if (btnSyncOffline) {
+    btnSyncOffline.addEventListener('click', async () => {
+      const user = getCurrentUser() || auth.currentUser;
+      if (!user) {
+        alert("⚠️ Debes iniciar sesión con tu cuenta de Google para descargar tus datos desde la nube.");
+        return;
+      }
+      
+      btnSyncOffline.disabled = true;
+      try {
+        updateCloudProgress("Conectando con la nube...", 10);
+        
+        const dbdataRef = collection(db, "usuarios", user.uid, "dbdata");
+        const snap = await getDocs(dbdataRef);
+        
+        updateCloudProgress("Procesando datos del salmista...", 40);
+        
+        if (snap.empty) {
+          updateCloudProgress("No tienes datos personales guardados en la nube.", 100);
+          return;
+        }
+        
+        let processed = 0;
+        const total = snap.docs.length;
+        
+        snap.forEach(docSnap => {
+          const songId = docSnap.id;
+          const dataDoc = docSnap.data();
+          const val = dataDoc.valor || dataDoc;
+          
+          const localConfig = {
+            valoracion: parseInt(val.valoracion) || 0,
+            cejilla: String(val.cejilla || "0"),
+            acorde: String(val.acorde || "0")
+          };
+          localStorage.setItem(`canto-config-${songId}`, JSON.stringify(localConfig));
+          
+          if (val.notesCantor !== undefined) {
+            localStorage.setItem(`notes_${songId}`, val.notesCantor);
+          }
+          
+          processed++;
+          const pct = 40 + Math.round((processed / total) * 60);
+          updateCloudProgress(`Guardando datos del canto ${processed}/${total}...`, pct);
+        });
+        
+        updateCloudProgress("¡Tus cejillas y notas se activaron de forma offline!", 100);
+        if (typeof window.routeSPA === 'function') window.routeSPA();
+      } catch (err) {
+        console.error(err);
+        alert("Error al descargar datos personales: " + err.message);
+        updateCloudProgress("Error al activar offline", 0);
+      } finally {
+        btnSyncOffline.disabled = false;
+        hideCloudProgress();
+      }
+    });
+  }
+
+  const btnClearCache = document.getElementById('btn-cloud-clear-cache');
+  if (btnClearCache) {
+    btnClearCache.addEventListener('click', async () => {
+      if (!navigator.onLine) {
+         alert("⚠️ No puedes limpiar la caché estando sin conexión. Es obligatorio tener conexión a Internet para garantizar la re-descarga de recursos necesarios.");
+         return;
+      }
+      
+      const doClear = async () => {
+        btnClearCache.disabled = true;
+        try {
+          updateCloudProgress("Eliminando caché...", 20);
+          const keys = await caches.keys();
+          let deletedCount = 0;
+          
+          for (const key of keys) {
+            await caches.delete(key);
+            deletedCount++;
+            const pct = 20 + Math.round((deletedCount / keys.length) * 80);
+            updateCloudProgress(`Eliminado caché: ${key}...`, pct);
+          }
+          
+          if (window.loadedSongsCache) {
+            window.loadedSongsCache = {};
+          }
+          
+          localStorage.setItem('cantoEquipoOffline', 'false'); // Desactivar el toggle de canto offline
+          
+          updateCloudProgress("¡Caché limpiada con éxito! Recargando aplicación...", 100);
+          setTimeout(() => {
+            window.location.reload();
+          }, 1500);
+        } catch (err) {
+          console.error(err);
+          alert("Error al limpiar caché: " + err.message);
+          updateCloudProgress("Error al limpiar", 0);
+          btnClearCache.disabled = false;
+          hideCloudProgress();
+        }
+      };
+
+      if (window.mostrarConfirmacion) {
+        window.mostrarConfirmacion({
+          titulo: 'Limpiar Caché',
+          mensaje: '¿Estás seguro de que deseas limpiar la caché de la aplicación? Esto forzará la descarga de las últimas versiones de cantos y recursos la próxima vez que los abras.',
+          icono: 'delete_forever',
+          textoSi: 'Sí',
+          textoNo: 'No',
+          onConfirm: doClear
+        });
+      } else {
+        if (confirm("¿Estás seguro de que deseas limpiar la caché de la aplicación? Esto forzará la descarga de las últimas versiones de cantos y recursos la próxima vez que los abras.")) {
+          doClear();
+        }
+      }
+    });
+  }
+
 
   // Sliders de zoom / ancho
   if (widthSlider) {
@@ -1174,6 +1774,7 @@ window.initAjustes = async function() {
     
     const subPanels = {
       'visual': document.getElementById('theme-submodule-visual-content'),
+      'inicio': document.getElementById('theme-submodule-inicio-content'),
       'preparar-canto': document.getElementById('theme-submodule-preparar-content'),
       'perfil': document.getElementById('theme-submodule-perfil-content')
     };
@@ -1271,4 +1872,5 @@ window.initAjustes = async function() {
   // Forzar el estado por defecto al iniciar
   window.switchThemeSubmodule('visual');
   window.switchThemeFunctionModule('toolbar');
+  window.switchGeneralSubmodule('comun');
 };

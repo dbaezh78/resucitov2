@@ -63,6 +63,10 @@
               <span class="material-symbols-outlined" style="font-size: 1.15rem;">palette</span>
               Temas Visual
             </button>
+            <button class="theme-subtab-btn" data-subtab="inicio" id="theme-subtab-inicio-btn">
+              <span class="material-symbols-outlined" style="font-size: 1.15rem;">home</span>
+              Inicio
+            </button>
             <button class="theme-subtab-btn" data-subtab="preparar-canto" id="theme-subtab-preparar-btn">
               <span class="material-symbols-outlined" style="font-size: 1.15rem;">queue_music</span>
               Preparación
@@ -681,6 +685,79 @@
           </div>
           </div><!-- Fin de theme-submodule-visual-content -->
 
+          <!-- Contenido Submódulo: Inicio -->
+          <div id="theme-submodule-inicio-content" class="theme-submodule-panel" style="display: none; padding: 16px;">
+            <!-- Opción 1: Cerrar filtrado al seleccionar -->
+            <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); display: flex; align-items: center; justify-content: space-between;">
+              <div class="setting-label">
+                <h4 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Cerrar filtrado al seleccionar</h4>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Cierra el panel de filtros automáticamente después de elegir una opción</p>
+              </div>
+              <div class="setting-control">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="close-filters-on-select-toggle">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Opción 2: Seleccionar varios filtrado de canto -->
+            <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); display: flex; align-items: center; justify-content: space-between;">
+              <div class="setting-label">
+                <h4 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Seleccionar varios filtrados de canto</h4>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Permite seleccionar múltiples categorías de cantos al mismo tiempo</p>
+              </div>
+              <div class="setting-control">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="multi-moment-filter-toggle">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Opción 3: Seleccionar filtrado de etapas -->
+            <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); display: flex; align-items: center; justify-content: space-between;">
+              <div class="setting-label">
+                <h4 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Seleccionar filtrado de etapas</h4>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Permite combinar el filtrado de etapas junto con el de cantos (momento litúrgico)</p>
+              </div>
+              <div class="setting-control">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="combine-stage-moment-filter-toggle">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Opción 4: Mantener el filtrado activo en la seleccion de Etapas -->
+            <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); display: flex; align-items: center; justify-content: space-between;">
+              <div class="setting-label">
+                <h4 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Mantener el filtrado activo en la seleccion de Etapas</h4>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Mantiene el panel de filtros abierto al seleccionar una etapa</p>
+              </div>
+              <div class="setting-control">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="keep-stage-filter-active-toggle">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Opción 5: Fijar buscador arriba -->
+            <div class="setting-row" style="padding: 12px 0; border-bottom: none; display: flex; align-items: center; justify-content: space-between;">
+              <div class="setting-label">
+                <h4 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Fijar buscador arriba</h4>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Mantiene la barra de búsqueda fija en la parte superior al hacer scroll</p>
+              </div>
+              <div class="setting-control">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="sticky-search-toggle">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
           <!-- Contenido Submódulo: Preparación Canto -->
           <div id="theme-submodule-preparar-content" class="theme-submodule-panel" style="display: none;">
             <div class="setting-row" style="flex-direction: column; align-items: flex-start; gap: 6px; margin-bottom: 4px;">
@@ -794,127 +871,199 @@
 
         <!-- Panel General -->
         <div id="settings-panel-general" class="settings-panel-group" style="display: block;">
-          <!-- Fila Mantener pantalla encendida -->
-          <div class="setting-row">
-            <div class="setting-label">
-              <h4>Mantener pantalla encendida</h4>
-              <p>Evita que la pantalla del dispositivo se apague</p>
-            </div>
-            <div class="setting-control">
-              <label class="toggle-switch">
-                <input type="checkbox" id="wakelock-toggle">
-                <span class="toggle-slider"></span>
-              </label>
-            </div>
-          </div>
-          <!-- Fila Ocultar Automáticamente el Navegador -->
-          <div class="setting-row">
-            <div class="setting-label">
-              <h4>Ocultar Automáticamente</h4>
-              <p>Oculta el navegador tras 30 segundos de inactividad</p>
-            </div>
-            <div class="setting-control">
-              <label class="toggle-switch">
-                <input type="checkbox" id="autohide-nav-toggle">
-                <span class="toggle-slider"></span>
-              </label>
-            </div>
-          </div>
-          <!-- Fila Cejilla Calculada -->
-          <div class="setting-row">
-            <div class="setting-label">
-              <h4>Cejilla (Capo)</h4>
-              <p>Ajusta el traste de cejilla sugerido</p>
-            </div>
-            <div class="setting-control">
-              <select id="capo-select" style="padding: 6px; border-radius: 6px; background: var(--panel-bg); color: var(--text-color); border: 1px solid var(--panel-border);">
-                <option value="0">Sin cejilla</option>
-                <option value="1">1er traste</option>
-                <option value="2">2do traste</option>
-                <option value="3">3er traste</option>
-                <option value="4">4to traste</option>
-                <option value="5">5to traste</option>
-                <option value="6">6to traste</option>
-                <option value="7">7mo traste</option>
-                <option value="8">8vo traste</option>
-                <option value="9">9no traste</option>
-                <option value="10">10mo traste</option>
-              </select>
-            </div>
+          <!-- Selector de Submódulos dentro de General (Gral Común, Cloud) -->
+          <div class="general-subtabs" style="display: flex; gap: 8px; border-bottom: 1.5px solid var(--panel-border); padding-bottom: 12px; margin-bottom: 16px;">
+            <button class="general-subtab-btn active" data-subtab="comun" id="general-subtab-comun-btn" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border: none; background: none; border-bottom: 2.5px solid var(--accent-color); font-weight: 700; color: var(--accent-color); cursor: pointer; transition: all 0.2s;">
+              <span class="material-symbols-outlined" style="font-size: 1.15rem;">tune</span>
+              Gral Común
+            </button>
+            <button class="general-subtab-btn" data-subtab="cloud" id="general-subtab-cloud-btn" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer; transition: all 0.2s;">
+              <span class="material-symbols-outlined" style="font-size: 1.15rem;">cloud</span>
+              Cloud
+            </button>
           </div>
 
-          <!-- Fila Tamaño de Letra -->
-          <div class="setting-row">
-            <div class="setting-label">
-              <h4>Tamaño de Letra</h4>
-              <p>Ajusta el tamaño del texto del canto</p>
-            </div>
-            <div class="setting-control" style="display: flex; align-items: center; gap: 8px;">
-              <button id="settings-zoom-out-btn" class="btn btn-icon" style="width: 32px; height: 32px; padding: 0;" title="Reducir letra">-</button>
-              <span id="settings-zoom-badge" style="font-weight: 700; min-width: 45px; text-align: center;">100%</span>
-              <button id="settings-zoom-in-btn" class="btn btn-icon" style="width: 32px; height: 32px; padding: 0;" title="Aumentar letra">+</button>
-            </div>
-          </div>
-
-          <!-- Fila Tipografía -->
-          <div class="setting-row">
-            <div class="setting-label">
-              <h4>Tipografía</h4>
-              <p>Fuente del texto de los cantos</p>
-            </div>
-            <div class="setting-control">
-              <select id="font-family-select" style="padding: 6px 10px; border-radius: 6px; background: var(--panel-bg); color: var(--text-color); border: 1px solid var(--panel-border); min-width: 160px;">
-                <option value="franklin" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif; font-weight: 400;">Franklin Gothic Medium</option>
-                <option value="sans-serif" style="font-family: sans-serif;">Sans-serif</option>
-                <option value="arial" style="font-family: Arial, sans-serif;">Arial</option>
-                <option value="aptos" style="font-family: 'Aptos', sans-serif;">Aptos (Body)</option>
-                <option value="cavolini" style="font-family: 'Cavolini', sans-serif;">Cavolini</option>
-                <option value="comic-sans" style="font-family: 'Comic Sans MS', cursive;">Comic Sans MS</option>
-                <option value="fairwater-script" style="font-family: 'Fairwater Script', cursive;">Fairwater Script</option>
-                <option value="mv-boli" style="font-family: 'MV Boli', sans-serif;">MV Boli</option>
-                <option value="neocat" style="font-family: 'Neocat', sans-serif;">Neocat</option>
-                <option value="pristina" style="font-family: 'Pristina', cursive;">Pristina</option>
-                <option value="segoe-print" style="font-family: 'Segoe Print', cursive;">Segoe Print</option>
-                <option value="viner-hand" style="font-family: 'Viner Hand ITC', cursive;">Viner Hand ITC</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Fila Edición de Acordes -->
-          <div id="chord-edit-setting-row" class="setting-row">
-            <div class="setting-label">
-              <h4>Edición de Acordes</h4>
-              <p>Mueve la posición horizontal de los acordes</p>
-            </div>
-            <div class="setting-control" style="display: flex; gap: 8px;">
-              <button id="toggle-chord-edit-btn" class="btn" style="min-width: 110px;">Bloqueados</button>
-              <button id="save-chord-positions-btn" class="btn" style="font-size: 0.75rem; padding: 6px 12px; display: none;">Guardar en Archivo</button>
-            </div>
-          </div>
-
-          <!-- Fila Ancho del Contenedor -->
-          <div class="setting-row">
-            <div class="setting-label">
-              <h4>Ancho de Página</h4>
-              <p>Ajusta el ancho máximo del cancionero</p>
-            </div>
-            <div class="setting-control" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; width: 100%; max-width: 250px;">
-              <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%;">
-                <input type="range" id="app-width-slider" min="384" max="1600" value="1200" style="flex-grow: 1; accent-color: var(--accent-color);">
-                <span id="app-width-badge" style="font-weight: 700; min-width: 60px; text-align: right;">1200px</span>
+          <!-- Contenido Submódulo: Gral Común -->
+          <div id="general-submodule-comun-content" class="general-submodule-panel" style="display: block;">
+            <!-- Fila Mantener pantalla encendida -->
+            <div class="setting-row">
+              <div class="setting-label">
+                <h4>Mantener pantalla encendida</h4>
+                <p>Evita que la pantalla del dispositivo se apague</p>
               </div>
-              <button id="app-width-default-btn" class="btn" style="font-size: 0.75rem; padding: 4px 8px; align-self: flex-end;">1200px (Defecto)</button>
+              <div class="setting-control">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="wakelock-toggle">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+            <!-- Fila Ocultar Automáticamente el Navegador -->
+            <div class="setting-row">
+              <div class="setting-label">
+                <h4>Ocultar Automáticamente Navegador</h4>
+                <p>Oculta el navegador tras 30 segundos de inactividad</p>
+              </div>
+              <div class="setting-control">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="autohide-nav-toggle">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+            <!-- Fila Cejilla Calculada -->
+            <div class="setting-row">
+              <div class="setting-label">
+                <h4>Cejilla (Capo)</h4>
+                <p>Ajusta el traste de cejilla sugerido</p>
+              </div>
+              <div class="setting-control">
+                <select id="capo-select" style="padding: 6px; border-radius: 6px; background: var(--panel-bg); color: var(--text-color); border: 1px solid var(--panel-border);">
+                  <option value="0">Sin cejilla</option>
+                  <option value="1">1er traste</option>
+                  <option value="2">2do traste</option>
+                  <option value="3">3er traste</option>
+                  <option value="4">4to traste</option>
+                  <option value="5">5to traste</option>
+                  <option value="6">6to traste</option>
+                  <option value="7">7mo traste</option>
+                  <option value="8">8vo traste</option>
+                  <option value="9">9no traste</option>
+                  <option value="10">10mo traste</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Fila Tamaño de Letra -->
+            <div class="setting-row">
+              <div class="setting-label">
+                <h4>Tamaño de Letra</h4>
+                <p>Ajusta el tamaño del texto del canto</p>
+              </div>
+              <div class="setting-control" style="display: flex; align-items: center; gap: 8px;">
+                <button id="settings-zoom-out-btn" class="btn btn-icon" style="width: 32px; height: 32px; padding: 0;" title="Reducir letra">-</button>
+                <span id="settings-zoom-badge" style="font-weight: 700; min-width: 45px; text-align: center;">100%</span>
+                <button id="settings-zoom-in-btn" class="btn btn-icon" style="width: 32px; height: 32px; padding: 0;" title="Aumentar letra">+</button>
+              </div>
+            </div>
+
+            <!-- Fila Tipografía -->
+            <div class="setting-row">
+              <div class="setting-label">
+                <h4>Tipografía</h4>
+                <p>Fuente del texto de los cantos</p>
+              </div>
+              <div class="setting-control">
+                <select id="font-family-select" style="padding: 6px 10px; border-radius: 6px; background: var(--panel-bg); color: var(--text-color); border: 1px solid var(--panel-border); min-width: 160px;">
+                  <option value="franklin" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif; font-weight: 400;">Franklin Gothic Medium</option>
+                  <option value="sans-serif" style="font-family: sans-serif;">Sans-serif</option>
+                  <option value="arial" style="font-family: Arial, sans-serif;">Arial</option>
+                  <option value="aptos" style="font-family: 'Aptos', sans-serif;">Aptos (Body)</option>
+                  <option value="cavolini" style="font-family: 'Cavolini', sans-serif;">Cavolini</option>
+                  <option value="comic-sans" style="font-family: 'Comic Sans MS', cursive;">Comic Sans MS</option>
+                  <option value="fairwater-script" style="font-family: 'Fairwater Script', cursive;">Fairwater Script</option>
+                  <option value="mv-boli" style="font-family: 'MV Boli', sans-serif;">MV Boli</option>
+                  <option value="neocat" style="font-family: 'Neocat', sans-serif;">Neocat</option>
+                  <option value="pristina" style="font-family: 'Pristina', cursive;">Pristina</option>
+                  <option value="segoe-print" style="font-family: 'Segoe Print', cursive;">Segoe Print</option>
+                  <option value="viner-hand" style="font-family: 'Viner Hand ITC', cursive;">Viner Hand ITC</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Fila Edición de Acordes -->
+            <div id="chord-edit-setting-row" class="setting-row">
+              <div class="setting-label">
+                <h4>Edición de Acordes</h4>
+                <p>Mueve la posición horizontal de los acordes</p>
+              </div>
+              <div class="setting-control" style="display: flex; gap: 8px;">
+                <button id="toggle-chord-edit-btn" class="btn" style="min-width: 110px;">Bloqueados</button>
+                <button id="save-chord-positions-btn" class="btn" style="font-size: 0.75rem; padding: 6px 12px; display: none;">Guardar en Archivo</button>
+              </div>
+            </div>
+
+            <!-- Fila Ancho del Contenedor -->
+            <div class="setting-row">
+              <div class="setting-label">
+                <h4>Ancho de Página</h4>
+                <p>Ajusta el ancho máximo del cancionero</p>
+              </div>
+              <div class="setting-control" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; width: 100%; max-width: 250px;">
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%;">
+                  <input type="range" id="app-width-slider" min="384" max="1600" value="1200" style="flex-grow: 1; accent-color: var(--accent-color);">
+                  <span id="app-width-badge" style="font-weight: 700; min-width: 60px; text-align: right;">1200px</span>
+                </div>
+                <button id="app-width-default-btn" class="btn" style="font-size: 0.75rem; padding: 4px 8px; align-self: flex-end;">1200px (Defecto)</button>
+              </div>
+            </div>
+            <!-- Copia de seguridad notas -->
+            <div class="setting-row" style="border-bottom: none;">
+              <div class="setting-label">
+                <h4>Notas del Cantor</h4>
+                <p>Exportar/Importar anotaciones</p>
+              </div>
+              <div class="setting-control">
+                <button id="export-notes-btn" class="btn">Exportar</button>
+                <button id="import-notes-btn" class="btn">Importar</button>
+              </div>
             </div>
           </div>
-          <!-- Copia de seguridad notas -->
-          <div class="setting-row">
-            <div class="setting-label">
-              <h4>Notas del Cantor</h4>
-              <p>Exportar/Importar anotaciones</p>
+
+          <!-- Contenido Submódulo: Cloud -->
+          <div id="general-submodule-cloud-content" class="general-submodule-panel" style="display: none; padding: 8px 0;">
+            <!-- Opción 1: Usar canto en equipo sin Internet -->
+            <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); display: flex; align-items: center; justify-content: space-between;">
+              <div class="setting-label">
+                <h4 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Usar canto en equipo sin Internet</h4>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Descarga todos los cantos y sus acordes con sus letras para usarlos sin conexión.</p>
+              </div>
+              <div class="setting-control" style="display: flex; align-items: center; gap: 12px;">
+                <span id="cloud-connection-badge" style="padding: 4px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; color: white; transition: all 0.3s ease; text-transform: uppercase;"></span>
+                <label class="toggle-switch">
+                  <input type="checkbox" id="canto-equipo-toggle">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
             </div>
-            <div class="setting-control">
-              <button id="export-notes-btn" class="btn">Exportar</button>
-              <button id="import-notes-btn" class="btn">Importar</button>
+
+            <!-- Opción 2: Sincronizar Cantos de forma Offline -->
+            <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); display: flex; align-items: center; justify-content: space-between;">
+              <div class="setting-label">
+                <h4 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Sincronizar Cantos de forma Offline</h4>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Sincroniza y descarga tus tonos, cejillas y valoraciones personales</p>
+              </div>
+              <div class="setting-control">
+                <button id="btn-cloud-sync-offline" class="btn theme-btn" style="display: flex; align-items: center; gap: 6px; padding: 8px 14px; font-size: 0.85rem; font-weight: 600;">
+                  <span class="material-symbols-outlined" style="font-size: 1.1rem;">sync</span>
+                  Sincronizar
+                </button>
+              </div>
+            </div>
+
+            <!-- Opción 3: Limpiar cache -->
+            <div class="setting-row" style="padding: 12px 0; border-bottom: none; display: flex; align-items: center; justify-content: space-between;">
+              <div class="setting-label">
+                <h4 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Limpiar caché de la app</h4>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Elimina archivos temporales locales para liberar espacio (Requiere Internet)</p>
+              </div>
+              <div class="setting-control">
+                <button id="btn-cloud-clear-cache" class="btn" style="display: flex; align-items: center; gap: 6px; padding: 8px 14px; font-size: 0.85rem; font-weight: 600; border: 1px solid var(--panel-border); color: var(--text-color);">
+                  <span class="material-symbols-outlined" style="font-size: 1.1rem;">delete_forever</span>
+                  Limpiar
+                </button>
+              </div>
+            </div>
+
+            <!-- Barra de Progreso del Cloud -->
+            <div id="cloud-progress-container" style="display: none; margin-top: 24px; padding: 16px; border-radius: 12px; background: rgba(0,0,0,0.03); border: 1.5px solid var(--panel-border); box-sizing: border-box; text-align: center;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span id="cloud-progress-status" style="font-size: 0.85rem; font-weight: 600; color: var(--text-color);">Cargando...</span>
+                <span id="cloud-progress-percentage" style="font-size: 0.85rem; font-weight: 700; color: var(--accent-color);">0%</span>
+              </div>
+              <div style="width: 100%; height: 10px; background: rgba(0,0,0,0.1); border-radius: 5px; overflow: hidden; position: relative;">
+                <div id="cloud-progress-bar-fill" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--accent-color) 0%, #ff5e5e 100%); transition: width 0.1s ease-out; border-radius: 5px;"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -931,6 +1080,64 @@
                 <input type="checkbox" id="bis-toggle">
                 <span class="toggle-slider"></span>
               </label>
+            </div>
+          </div>
+
+          <!-- Fila Loop Reproducción -->
+          <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); margin-bottom: 0px;">
+            <div class="setting-label">
+              <h4>Bucle de Reproducción</h4>
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Volver a reproducir automáticamente al terminar</p>
+            </div>
+            <div class="setting-control">
+              <label class="toggle-switch">
+                <input type="checkbox" id="audio-loop-toggle">
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Fila Ecualizador (Colapsable) -->
+          <div class="setting-row" id="eq-accordion-container" style="flex-direction: column; align-items: stretch; border-bottom: 1px solid var(--panel-border); padding: 12px 0; margin-bottom: 12px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none;" id="eq-accordion-header">
+              <div class="setting-label">
+                <h4 style="margin: 0; display: flex; align-items: center; gap: 8px;">
+                  <span class="material-symbols-outlined" style="font-size: 1.2rem; color: var(--accent-color, #d01212);">equalizer</span>
+                  Ecualizador de Audio
+                </h4>
+              </div>
+              <span id="eq-collapse-icon" class="material-symbols-outlined" style="transition: transform 0.2s; color: var(--text-muted);">expand_more</span>
+            </div>
+            
+            <div id="eq-controls-container" style="display: none; flex-direction: column; gap: 12px; margin-top: 12px; padding: 4px 2px;">
+              <!-- Bajos -->
+              <div style="display: flex; flex-direction: column; gap: 4px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: var(--text-color);">
+                  <span>Bajos (Bass)</span>
+                  <span id="eq-bass-val" style="color: var(--accent-color, #d01212);">0 dB</span>
+                </div>
+                <input type="range" id="eq-bass-slider" min="-12" max="12" value="0" step="1" style="accent-color: var(--accent-color, #d01212); cursor: pointer; width: 100%;">
+              </div>
+              
+              <!-- Medios -->
+              <div style="display: flex; flex-direction: column; gap: 4px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: var(--text-color);">
+                  <span>Medios (Mid)</span>
+                  <span id="eq-mid-val" style="color: var(--accent-color, #d01212);">0 dB</span>
+                </div>
+                <input type="range" id="eq-mid-slider" min="-12" max="12" value="0" step="1" style="accent-color: var(--accent-color, #d01212); cursor: pointer; width: 100%;">
+              </div>
+              
+              <!-- Agudos -->
+              <div style="display: flex; flex-direction: column; gap: 4px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: var(--text-color);">
+                  <span>Agudos (Treble)</span>
+                  <span id="eq-treble-val" style="color: var(--accent-color, #d01212);">0 dB</span>
+                </div>
+                <input type="range" id="eq-treble-slider" min="-12" max="12" value="0" step="1" style="accent-color: var(--accent-color, #d01212); cursor: pointer; width: 100%;">
+              </div>
+              
+              <button id="eq-reset-btn" class="btn" style="align-self: flex-end; font-size: 0.75rem; padding: 4px 10px; background: var(--panel-border, #eee); border: none; border-radius: 6px; color: var(--text-color); cursor: pointer; font-weight: bold;">Restablecer</button>
             </div>
           </div>
 

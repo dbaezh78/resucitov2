@@ -394,6 +394,7 @@ function renderizarLista(lista) {
     listaOrdenadaParaMostrar.forEach(canto => {
         const div = document.createElement('div');
         div.className = 'item-canto';
+        div.tabIndex = 0;
         
         const esDelMomento = canto.moments && canto.moments.includes(momentoSeleccionado);
         if (momentoSeleccionado !== 'Libre' && !esDelMomento) {
@@ -404,6 +405,12 @@ function renderizarLista(lista) {
         const isChecked = listaOrdenada.some(item => String(item.id) === String(canto.id));
         
         div.onclick = () => window.toggleCanto(canto.id);
+        div.onkeydown = (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                window.toggleCanto(canto.id);
+            }
+        };
         div.innerHTML = `
             <span class="titulo-canto-seleccion">${nombreAMostrar}</span>
             <label class="toggle-switch" onclick="event.stopPropagation()">
@@ -1080,5 +1087,25 @@ document.addEventListener('DOMContentLoaded', () => {
     poblarSelectYFiltrosCelebracion();
     if (todosLosCantos.length > 0) {
         renderizarLista(todosLosCantos);
+    }
+    
+    // Escuchadores de teclado para el buscador en preparar
+    const input = document.getElementById('inputBuscadorCantos');
+    if (input) {
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'Tab' && !e.shiftKey) {
+                const firstItem = document.querySelector('#contenedor-seleccion .item-canto');
+                if (firstItem) {
+                    e.preventDefault();
+                    firstItem.focus();
+                }
+            } else if (e.key === 'Enter') {
+                const firstItem = document.querySelector('#contenedor-seleccion .item-canto');
+                if (firstItem) {
+                    e.preventDefault();
+                    firstItem.click();
+                }
+            }
+        });
     }
 });

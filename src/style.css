@@ -63,7 +63,7 @@
 
 
   --card-bg: white;
-  
+  --color-pre-active: #edf3f7;
 
 }
 
@@ -436,7 +436,8 @@ header {
   border-color: var(--color-pre, #cdd3d9);
 }
 .stage-pill-pre.active {
-  background-color: var(--color-pre-active, #495057) !important;
+  /*background-color: var(--color-pre-active, #edf3f7) !important;*/
+  background-color: #ffffff !important;
   border-color: var(--color-pre-active, #495057) !important;
   color: var(--text-pre, #ffffff) !important;
   box-shadow: 0 0 0 3px rgba(108,117,125,0.35), var(--shadow-sm);
@@ -1041,7 +1042,7 @@ header {
 /* Acordes posicionados (Anclados con precisión de caracteres) */
 .nota-posicionada {
   position: absolute;
-  top: -18px; /* Forzado exactamente a -18px */
+  top: -12px; /* Forzado exactamente a -12px */
   left: 0;
   font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic', Arial;
   font-weight: 700;
@@ -1081,15 +1082,17 @@ header {
 
 .nota-posicionada:hover {
   /*transform: translate(-10%, -2px) scale(1.1);    NLQ*/
-  box-shadow: var(--shadow-sm);
+  /*box-shadow: var(--shadow-sm);*/
   color: var(--accent-color);
 }
 
 /* Estilos para desplazar acordes en modo edición */
 .nota-posicionada.edit-mode-active {
   /*padding: 2px 6px;*/
-  /*background-color: var(--panel-bg);*/
+  /*background-color: var(--panel-bg);
   border: 1px dashed var(--accent-color);
+  */
+  border: 1px dashed #d0121226;
   border-radius: 0px;
   display: inline-block;
   cursor: grab;
@@ -1317,7 +1320,6 @@ header {
 /* --- Botones de selección en el panel de Ajustes --- */
 .theme-btn,
 .list-style-btn {
-  width: 70px;
   padding: 7px 7px;
   border-radius: 0px;
   font-size: 0.82rem;
@@ -1408,6 +1410,13 @@ footer {
   margin-top: calc(-1 * var(--app-padding));
   padding-bottom: 12px;
   border-bottom: 1px dashed var(--panel-border);
+}
+
+.dashboard-top-flex.not-sticky {
+  position: relative !important;
+  top: auto !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .dashboard-left-image-container {
@@ -1946,7 +1955,8 @@ footer {
   font-weight: 700;
   font-size: 0.95rem;
   letter-spacing: 1px;
-  color: var(--text-color);
+  /*color: var(--text-color);*/
+  color: hsl(348deg 1.98% 39.61% / 65%);
   margin-bottom: 4px;
   text-transform: uppercase;
   text-align: center;
@@ -1965,7 +1975,8 @@ footer {
 .canto-header-subtitle {
   font-size: 1.2rem;
   /*font-style: italic;*/
-  color: var(--text-muted);
+  /*color: var(--text-muted);*/
+  color: hsl(348deg 1.98% 39.61% / 47%);
   line-height: 1.4;
   text-align: center;
   font-weight: bold;
@@ -3160,7 +3171,7 @@ footer {
   .Bendecid2 {top: 52px}
   .Bendecid3 {top: 79px;}     
   .Bendecid4 {top: 55px;}
-  .modal-content{max-width: 33%;max-height: 74%;}
+  .modal-content{max-width: 33%;max-height: 74%;overflow-y: initial;}
   .song-viewer-view {width: 1024px;}
 
   .canto-columns-container {padding: 16px 40px;  }
