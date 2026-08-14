@@ -20,6 +20,15 @@ export const PERMISSIONS = {
   ALL: "*",
   MANAGE_ACCESS: "manage_access",
   VIEW_LOGS: "view_logs", // Permiso para ver Logs de Diagnóstico
+  VIEW_USAGE: "view_usage", // Permiso para ver el Uso de la App (Firebase)
+  VIEW_STATUS: "view_status", // Permiso para ver el Estado Resucitó (recursos cacheados)
+  VIEW_SETTINGS_GENERAL: "view_settings_general", // Ajustes > General
+  VIEW_SETTINGS_THEME: "view_settings_theme",     // Ajustes > Tema
+  VIEW_SETTINGS_SONG: "view_settings_song",       // Ajustes > Canto
+  VIEW_SETTINGS_USER: "view_settings_user",       // Ajustes > Usuario
+  VIEW_SETTINGS_DATA: "view_settings_data",       // Ajustes > Datos
+  VIEW_SETTINGS_LOG: "view_settings_log",         // Ajustes > Log
+  VIEW_BOOKS: "view_books",                       // Ver Libros de Cantos
   EDIT_CHORDS: "edit_chords",
   BOOK_RESUCITO: "book_resucito",
   BOOK_JOVEN: "book_joven",
@@ -35,6 +44,15 @@ export const PERMISSION_LABELS = {
   "*": "Acceso Total (* / Administrador)",
   "manage_access": "Administrar Control de Acceso",
   "view_logs": "Ver Logs de Diagnóstico",
+  "view_usage": "Ver Uso de la Aplicación (Uso App)",
+  "view_status": "Ver Estado de Canto Resucitó",
+  "view_settings_general": "Ver Ajustes: General",
+  "view_settings_theme": "Ver Ajustes: Tema",
+  "view_settings_song": "Ver Ajustes: Canto",
+  "view_settings_user": "Ver Ajustes: Usuario",
+  "view_settings_data": "Ver Ajustes: Datos",
+  "view_settings_log": "Ver Ajustes: Log",
+  "view_books": "Ver Libros de Cantos",
   "edit_chords": "Editar Digitaciones y Acordes",
   "book_resucito": "Ver Libro Resucitó",
   "book_joven": "Ver Libro Canto Joven",
@@ -117,7 +135,14 @@ export function initAccessControl() {
   // Crear Grupo de Invitados
   createGroup("invitados", "Usuarios Invitados", [
     PERMISSIONS.BOOK_RESUCITO,
-    PERMISSIONS.BOOK_FAVORITOS
+    PERMISSIONS.BOOK_FAVORITOS,
+    PERMISSIONS.VIEW_SETTINGS_GENERAL,
+    PERMISSIONS.VIEW_SETTINGS_THEME,
+    PERMISSIONS.VIEW_SETTINGS_SONG,
+    PERMISSIONS.VIEW_SETTINGS_USER,
+    PERMISSIONS.VIEW_SETTINGS_DATA,
+    PERMISSIONS.VIEW_SETTINGS_LOG,
+    PERMISSIONS.VIEW_BOOKS
   ], "Usuarios sin inicio de sesión");
   
   // El grupo Cantores incluye al grupo Invitados (Subgrupo anidado)
@@ -287,6 +312,9 @@ export function listenToOwnUserPermissionsSilently(user) {
           // Actualizar la visibilidad de los libros silenciosamente en la ventana principal
           if (typeof window !== 'undefined' && window.updateBookTabsVisibility) {
             window.updateBookTabsVisibility();
+          }
+          if (typeof window !== 'undefined' && window.updateAccessControlVisibility) {
+            window.updateAccessControlVisibility();
           }
           console.log("🤫 Permisos de Hermano actualizados silenciosamente desde Firebase Cloud para:", email);
         }
@@ -846,18 +874,38 @@ export function canAccessBook(bookId) {
     return false;
   }
 
+  if (isCurrentUserAdmin()) {
+    return true;
+  }
+
   if (bookId === 'extras') {
-    return isCurrentUserAdmin() || hasPermission(PERMISSIONS.BOOK_EXTRAS);
+    return hasPermission(PERMISSIONS.BOOK_EXTRAS);
   }
 
   const permKey = `book_${bookId}`;
-  return isCurrentUserAdmin() || hasPermission(permKey);
+  return hasPermission(permKey);
 }
 
 /**
  * Configuración de eventos de la interfaz visual del Control de Acceso.
  */
 export function setupAccessControlUI() {
+  window.switchAccessSubtab = function(targetSub) {
+    const subtabBtns = document.querySelectorAll('.access-subtab-btn');
+    const subpanels = document.querySelectorAll('.access-subpanel');
+    subtabBtns.forEach(b => {
+      const isActive = b.dataset.subtab === targetSub;
+      b.classList.toggle('active', isActive);
+      b.style.borderBottom = isActive ? '2px solid var(--accent-color)' : 'none';
+      b.style.color = isActive ? 'var(--accent-color)' : 'var(--text-muted)';
+      b.style.fontWeight = isActive ? '700' : '600';
+    });
+
+    subpanels.forEach(sp => {
+      sp.style.display = sp.id === `access-subpanel-${targetSub}` ? 'block' : 'none';
+    });
+  };
+
   const subtabBtns = document.querySelectorAll('.access-subtab-btn');
   const subpanels = document.querySelectorAll('.access-subpanel');
 
@@ -1190,6 +1238,167 @@ export function renderAccessControlUI() {
   renderPermissionsPanel();
 }
 
+const PERMISSION_TREE = [
+  { key: "*", label: "Acceso Total (* / Administrador)" },
+  {
+    key: "view_books",
+    label: "Ver Libros de Cantos",
+    children: [
+      { key: "book_resucito", label: "Ver Libro Resucitó" },
+      { key: "book_joven", label: "Ver Libro Canto Joven" },
+      { key: "book_aclamaciones", label: "Ver Libro Aclamaciones" },
+      { key: "book_salmodias", label: "Ver Libro Salmodias" },
+      { key: "book_catequesis", label: "Ver Libro Catequesis" },
+      { key: "book_favoritos", label: "Ver Favoritos" },
+      { key: "book_extras", label: "Ver Libro Extras (Exclusivo)" }
+    ]
+  },
+  { key: "edit_chords", label: "Editar Digitaciones y Acordes" },
+
+  {
+    key: "view_settings_general",
+    label: "Ajustes: General",
+    children: [
+      { key: "view_general_comun", label: "Gral Común" },
+      { key: "view_general_cloud", label: "Cloud" }
+    ]
+  },
+  {
+    key: "view_settings_theme",
+    label: "Ajustes: Tema",
+    children: [
+      {
+        key: "view_theme_visual",
+        label: "Tema Visual",
+        children: [
+          { key: "view_theme_func_barra", label: "Barra" },
+          { key: "view_theme_func_canto", label: "Canto" },
+          { key: "view_theme_func_libro", label: "Libro" },
+          { key: "view_theme_func_etapa", label: "Etapa" },
+          { key: "view_theme_func_botones", label: "Botones" },
+          { key: "view_theme_func_navegador", label: "Navegador" }
+        ]
+      },
+      { key: "view_theme_inicio", label: "Inicio" },
+      { key: "view_theme_preparacion", label: "Preparación" },
+      { key: "view_theme_perfil", label: "Perfil" }
+    ]
+  },
+  { key: "view_settings_song_dup", label: "Ajustes: Canto", value: "view_settings_song" },
+  {
+    key: "view_settings_user",
+    label: "Ajustes: Usuario",
+    children: [
+      {
+        key: "manage_access",
+        label: "Acceso",
+        children: [
+          { key: "view_access_miembros", label: "Miembros" },
+          { key: "view_access_grupos", label: "Grupos" },
+          { key: "view_access_miembros_internos", label: "Miembros Internos" },
+          { key: "view_access_permisos", label: "Permisos" },
+          { key: "view_access_inspector", label: "Inspector" }
+        ]
+      },
+      { key: "view_user_cuenta", label: "Cuenta" },
+      { key: "view_usage", label: "Uso App" }
+    ]
+  },
+  { key: "view_settings_data", label: "Ajustes: Datos" },
+  {
+    key: "view_settings_log",
+    label: "Ajustes: Log",
+    children: [
+      { key: "view_logs", label: "LOG" },
+      { key: "view_status", label: "Estado Resucitó" }
+    ]
+  }
+];
+
+const expandedNodes = new Set();
+
+function getNodeState(node, permissions) {
+  const hasChildren = node.children && node.children.length > 0;
+  if (!hasChildren) {
+    const isChecked = permissions.has(node.value || node.key);
+    return {
+      allChecked: isChecked,
+      anyChecked: isChecked
+    };
+  }
+
+  let allChecked = true;
+  let anyChecked = false;
+  node.children.forEach(child => {
+    const childState = getNodeState(child, permissions);
+    if (!childState.allChecked) allChecked = false;
+    if (childState.anyChecked) anyChecked = true;
+  });
+
+  return {
+    allChecked,
+    anyChecked
+  };
+}
+
+function getSubtreePermissions(node) {
+  let perms = [node.value || node.key];
+  if (node.children) {
+    node.children.forEach(child => {
+      perms = perms.concat(getSubtreePermissions(child));
+    });
+  }
+  return perms;
+}
+
+function buildTreeHtml(nodes, depth, group) {
+  return nodes.map(node => {
+    const hasChildren = node.children && node.children.length > 0;
+    const isExpanded = expandedNodes.has(node.key);
+    const actualValue = node.value || node.key;
+    
+    let isChecked = false;
+    let isIndeterminate = false;
+    
+    if (hasChildren) {
+      const state = getNodeState(node, group.permissions);
+      if (state.allChecked) {
+        isChecked = true;
+      } else if (state.anyChecked) {
+        isChecked = true;
+        isIndeterminate = true;
+      }
+    } else {
+      isChecked = group.permissions.has(actualValue);
+    }
+
+    const toggleSign = hasChildren 
+      ? `<span class="ac-tree-toggle material-symbols-outlined" data-key="${node.key}" style="font-size: 1.15rem; cursor: pointer; user-select: none; color: var(--accent-color); margin-right: 6px; display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 4px; background: rgba(0,0,0,0.03);">${isExpanded ? 'remove' : 'add'}</span>`
+      : `<span style="width: 26px; display: inline-block;"></span>`;
+
+    const paddingLeft = depth * 20;
+
+    const childrenHtml = (hasChildren && isExpanded)
+      ? `<div style="display: flex; flex-direction: column;">${buildTreeHtml(node.children, depth + 1, group)}</div>`
+      : '';
+
+    const checkboxStyle = `cursor: pointer; width: 16px; height: 16px; margin-left: 12px; accent-color: ${isIndeterminate ? '#2ec4b6' : 'var(--accent-color)'};`;
+
+    return `
+      <div class="ac-tree-row-container" style="display: flex; flex-direction: column;">
+        <div class="ac-tree-row" style="display: flex; align-items: center; justify-content: space-between; padding: 6px 12px 6px ${paddingLeft}px; border-bottom: 1px solid var(--panel-border); background: ${depth === 0 ? 'rgba(0,0,0,0.01)' : 'transparent'};">
+          ${toggleSign}
+          <label style="cursor: pointer; display: flex; align-items: center; flex: 1; margin: 0; padding: 4px 0;">
+            <span style="font-size: 0.8rem; font-weight: ${depth === 0 ? '700' : depth === 1 ? '600' : '500'}; color: var(--text-color); flex: 1;">${node.label}</span>
+            <input type="checkbox" class="ac-perm-checkbox" data-gid="${group.id}" data-key="${node.key}" data-perm="${actualValue}" ${isChecked ? 'checked' : ''} ${isIndeterminate ? 'data-indeterminate="true"' : ''} style="${checkboxStyle}">
+          </label>
+        </div>
+        ${childrenHtml}
+      </div>
+    `;
+  }).join('');
+}
+
 function renderPermissionsPanel() {
   const selectGroupPerm = document.getElementById('ac-select-group-perm');
   const containerCheckboxes = document.getElementById('ac-permissions-checkboxes');
@@ -1203,24 +1412,108 @@ function renderPermissionsPanel() {
 
   const group = accessControlState.groups[currentGid];
 
-  containerCheckboxes.innerHTML = Object.keys(PERMISSIONS).map(pkKey => {
-    const pValue = PERMISSIONS[pkKey];
-    const isChecked = group.permissions.has(pValue);
-    const label = PERMISSION_LABELS[pValue] || pValue;
+  containerCheckboxes.innerHTML = buildTreeHtml(PERMISSION_TREE, 0, group);
 
-    return `
-      <label style="display: flex; align-items: center; gap: 8px; font-size: 0.8rem; cursor: pointer; padding: 4px 0; color: var(--text-color);">
-        <input type="checkbox" class="ac-perm-checkbox" data-gid="${group.id}" data-perm="${pValue}" ${isChecked ? 'checked' : ''}>
-        <span>${label}</span>
-      </label>
-    `;
-  }).join('');
+  containerCheckboxes.querySelectorAll('.ac-perm-checkbox[data-indeterminate="true"]').forEach(cb => {
+    cb.indeterminate = true;
+  });
+
+  containerCheckboxes.querySelectorAll('.ac-tree-toggle').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const key = btn.dataset.key;
+      if (expandedNodes.has(key)) {
+        expandedNodes.delete(key);
+      } else {
+        expandedNodes.add(key);
+      }
+      renderPermissionsPanel();
+    });
+  });
 
   containerCheckboxes.querySelectorAll('.ac-perm-checkbox').forEach(cb => {
     cb.addEventListener('change', (e) => {
       const gid = e.target.dataset.gid;
-      const perm = e.target.dataset.perm;
-      togglePermissionForGroup(gid, perm);
+      const key = e.target.dataset.key;
+      const isChecked = e.target.checked;
+      
+      const findNode = (nodes, targetKey) => {
+        for (let n of nodes) {
+          if (n.key === targetKey) return n;
+          if (n.children) {
+            const res = findNode(n.children, targetKey);
+            if (res) return res;
+          }
+        }
+        return null;
+      };
+
+      const targetNode = findNode(PERMISSION_TREE, key);
+      if (targetNode) {
+        const permsToToggle = getSubtreePermissions(targetNode);
+        
+        if (isChecked) {
+          permsToToggle.forEach(p => group.permissions.add(p));
+
+          const parentMap = {};
+          const buildParentMap = (nodes, parent = null) => {
+            nodes.forEach(node => {
+              if (parent) {
+                parentMap[node.key] = parent;
+              }
+              if (node.children) {
+                buildParentMap(node.children, node);
+              }
+            });
+          };
+          buildParentMap(PERMISSION_TREE);
+
+          let current = targetNode;
+          while (current && parentMap[current.key]) {
+            const parentNode = parentMap[current.key];
+            const parentValue = parentNode.value || parentNode.key;
+            group.permissions.add(parentValue);
+            current = parentNode;
+          }
+        } else {
+          permsToToggle.forEach(p => group.permissions.delete(p));
+
+          const parentMap = {};
+          const buildParentMap = (nodes, parent = null) => {
+            nodes.forEach(node => {
+              if (parent) {
+                parentMap[node.key] = parent;
+              }
+              if (node.children) {
+                buildParentMap(node.children, node);
+              }
+            });
+          };
+          buildParentMap(PERMISSION_TREE);
+
+          let current = targetNode;
+          while (current && parentMap[current.key]) {
+            const parentNode = parentMap[current.key];
+            const parentValue = parentNode.value || parentNode.key;
+            
+            const hasCheckedChild = parentNode.children.some(child => {
+              const childVal = child.value || child.key;
+              return group.permissions.has(childVal);
+            });
+
+            if (!hasCheckedChild) {
+              group.permissions.delete(parentValue);
+              current = parentNode;
+            } else {
+              break;
+            }
+          }
+        }
+
+        saveGroupConfigToCloud();
+        renderPermissionsPanel();
+      }
     });
   });
 }
@@ -1354,3 +1647,6 @@ export function handleSaveGroupForm() {
 initAccessControl();
 listenToRegisteredUsersFromFirebase();
 listenToGroupConfigFromFirebase();
+
+window.hasPermission = hasPermission;
+window.isCurrentUserAdmin = isCurrentUserAdmin;

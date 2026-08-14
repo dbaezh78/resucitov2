@@ -1187,7 +1187,7 @@
 
         <!-- Panel Usuario (con Submódulos Cuenta y Acceso) -->
         <div id="settings-panel-user" class="settings-panel-group" style="display: none; padding: 12px 0;">
-          <!-- Selector de Submódulos dentro de Usuario (Cuenta y Acceso) -->
+          <!-- Selector de Submódulos dentro de Usuario (Cuenta, Acceso y Uso App) -->
           <div class="user-subtabs">
             <button class="user-subtab-btn active" data-subtab="account" id="user-subtab-account-btn">
               <span class="material-symbols-outlined" style="font-size: 1.15rem;">person</span>
@@ -1196,6 +1196,10 @@
             <button class="user-subtab-btn" data-subtab="access" id="user-subtab-access-btn">
               <span class="material-symbols-outlined" style="font-size: 1.15rem;">admin_panel_settings</span>
               Acceso
+            </button>
+            <button class="user-subtab-btn" data-subtab="usage" id="user-subtab-usage-btn">
+              <span class="material-symbols-outlined" style="font-size: 1.15rem;">monitoring</span>
+              Uso App
             </button>
           </div>
 
@@ -1344,7 +1348,7 @@
               </div>
               
               <h5 style="margin-bottom: 8px; font-size: 0.85rem; font-weight: 700;">Permisos Asignados</h5>
-              <div id="ac-permissions-checkboxes" style="display: flex; flex-direction: column; gap: 8px; max-height: 320px; overflow-y: auto; padding-right: 4px;"></div>
+              <div id="ac-permissions-checkboxes" style="display: flex; flex-direction: column; max-height: 420px; overflow-y: auto; border: 1px solid var(--panel-border); border-radius: 8px; background: var(--input-bg);"></div>
             </div>
 
             <!-- Subpanel 5: Inspector de Permisos Efectivos -->
@@ -1357,6 +1361,54 @@
             </div>
           </div>
         </div>
+
+        <!-- Submódulo 3: Uso App -->
+        <div id="user-subpanel-usage" class="user-subpanel" style="display: none; padding: 12px 0;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+            <h4 style="margin: 0; font-size: 1rem; color: var(--text-color); display: flex; align-items: center; gap: 6px;">
+              <span class="material-symbols-outlined" style="color: var(--accent-color);">monitoring</span>
+              Uso de la Aplicación (Firebase)
+            </h4>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <button class="btn theme-btn" id="btn-usage-zoom-out" title="Disminuir letra" style="padding: 4px 10px; font-size: 0.85rem; font-weight: 700; border-radius: 6px;">-</button>
+              <button class="btn theme-btn" id="btn-usage-zoom-in" title="Aumentar letra" style="padding: 4px 10px; font-size: 0.85rem; font-weight: 700; border-radius: 6px;">+</button>
+              <button class="btn theme-btn" id="btn-usage-refresh" style="display: flex; align-items: center; gap: 4px; padding: 6px 12px; font-size: 0.8rem; font-weight: 600;">
+                <span class="material-symbols-outlined" style="font-size: 1rem;">refresh</span>
+                Actualizar
+              </button>
+            </div>
+          </div>
+
+          <!-- Filtro y Buscador -->
+          <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
+            <input type="text" id="usage-search-input" placeholder="Buscar por usuario, correo, IP o dispositivo..." style="flex: 1; min-width: 200px; padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--panel-border); background: var(--panel-bg); color: var(--text-color); font-size: 0.82rem; outline: none; transition: border-color 0.2s;">
+            <select id="usage-country-filter" style="min-width: 160px; padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--panel-border); background: var(--panel-bg); color: var(--text-color); font-weight: 600; font-size: 0.82rem; outline: none; cursor: pointer;">
+              <option value="all">Todos los países</option>
+            </select>
+          </div>
+
+          <!-- Tabla de uso -->
+          <div style="overflow-x: auto; border: 1.5px solid var(--panel-border); border-radius: 12px; background: var(--input-bg); max-height: 400px; overflow-y: auto;">
+            <table id="usage-users-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.8rem; color: var(--text-color); table-layout: fixed;">
+              <thead>
+                <tr style="border-bottom: 1.5px solid var(--panel-border); background: rgba(0,0,0,0.02); position: sticky; top: 0; z-index: 10;">
+                  <th style="padding: 10px 12px; font-weight: 700; width: 160px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">Usuario</th>
+                  <th style="padding: 10px 12px; font-weight: 700; width: 120px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">IP</th>
+                  <th style="padding: 10px 12px; font-weight: 700; width: 120px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">País</th>
+                  <th style="padding: 10px 12px; font-weight: 700; width: 200px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">Dispositivo</th>
+                  <th style="padding: 10px 12px; font-weight: 700; width: 90px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">Estado</th>
+                  <th style="padding: 10px 12px; font-weight: 700; width: 130px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">Última Actividad</th>
+                </tr>
+              </thead>
+              <tbody id="usage-users-table-body">
+                <tr>
+                  <td colspan="6" style="padding: 20px; text-align: center; color: var(--text-muted);">Cargando registros de uso...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
 
         <!-- Panel Log (Logs de Diagnóstico y Estado Resucitó) -->
         <div id="settings-panel-log" class="settings-panel-group" style="display: none; padding: 16px;">

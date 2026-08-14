@@ -540,7 +540,18 @@ window.openSettingsTab = function(tabName = 'general') {
 
   if (tabName === 'log') {
     if (typeof window.switchLogSubmodule === 'function') {
-      window.switchLogSubmodule('console');
+      const canViewLogs = (typeof window.isCurrentUserAdmin === 'function' && window.isCurrentUserAdmin()) || 
+                          (typeof window.hasPermission === 'function' && window.hasPermission('view_logs'));
+      const canViewStatus = (typeof window.isCurrentUserAdmin === 'function' && window.isCurrentUserAdmin()) || 
+                            (typeof window.hasPermission === 'function' && window.hasPermission('view_status'));
+      
+      if (canViewLogs) {
+        window.switchLogSubmodule('console');
+      } else if (canViewStatus) {
+        window.switchLogSubmodule('status');
+      } else {
+        window.switchLogSubmodule('console');
+      }
     }
     if (window.renderAppLogs) {
       window.renderAppLogs();
@@ -1234,7 +1245,7 @@ window.initAjustes = async function() {
   async function loadResourceIntoCache(url) {
     try {
       const keys = await caches.keys();
-      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v182';
+      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v200';
       const cache = await caches.open(cacheName);
       
       const res = await fetch(url);
@@ -1406,7 +1417,7 @@ window.initAjustes = async function() {
 
       // 2. Conectar a la caché
       const keys = await caches.keys();
-      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v182';
+      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v200';
       const cache = await caches.open(cacheName);
       
       // Obtener todas las claves cacheadas para búsqueda rápida
@@ -1627,7 +1638,7 @@ window.initAjustes = async function() {
           updateCloudProgress("Iniciando descarga...", 0);
           
           const keys = await caches.keys();
-          const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v182';
+          const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v200';
           const cache = await caches.open(cacheName);
           
           const songIds = window.allSongs ? window.allSongs.map(s => s.id) : [];
@@ -1686,7 +1697,7 @@ window.initAjustes = async function() {
           try {
             updateCloudProgress("Eliminando cantos guardados...", 20);
             const keys = await caches.keys();
-            const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v182';
+            const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v200';
             const cache = await caches.open(cacheName);
             
             const songIds = window.allSongs ? window.allSongs.map(s => s.id) : [];
@@ -2273,7 +2284,7 @@ window.initAjustes = async function() {
     });
   });
 
-  // Manejo de sub-pestañas dentro del Módulo Usuario (Cuenta y Acceso)
+  // Manejo de sub-pestañas dentro del Módulo Usuario (Cuenta, Acceso y Uso App)
   const userSubtabBtns = document.querySelectorAll('.user-subtab-btn');
   userSubtabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -2287,7 +2298,368 @@ window.initAjustes = async function() {
       if (targetSubpanel) {
         targetSubpanel.style.display = 'block';
       }
+
+      if (subtab === 'usage') {
+        window.renderUsoAppModule();
+      }
     });
+  });
+
+  // --- REGISTRO DE USO DE LA APP EN FIREBASE ---
+  function getOrCreateDeviceId() {
+    let deviceId = localStorage.getItem('usoAppDeviceId');
+    if (!deviceId) {
+      deviceId = 'dev_' + Math.random().toString(36).substring(2, 15) + '_' + Date.now();
+      localStorage.setItem('usoAppDeviceId', deviceId);
+    }
+    return deviceId;
+  }
+
+  function getDeviceDescription() {
+    const ua = navigator.userAgent;
+    let os = 'Desconocido';
+    if (/android/i.test(ua)) os = 'Android';
+    else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) os = 'iOS';
+    else if (/Windows/i.test(ua)) os = 'Windows';
+    else if (/Mac/i.test(ua)) os = 'macOS';
+    else if (/Linux/i.test(ua)) os = 'Linux';
+
+    let browser = 'Desconocido';
+    if (/chrome|crios/i.test(ua)) browser = 'Chrome';
+    else if (/firefox|fxios/i.test(ua)) browser = 'Firefox';
+    else if (/safari/i.test(ua) && !/chrome/i.test(ua)) browser = 'Safari';
+    else if (/edge|edg/i.test(ua)) browser = 'Edge';
+    else if (/msie|trident/i.test(ua)) browser = 'IE';
+
+    let type = 'Escritorio';
+    if (/tablet|ipad|playbook|silk/i.test(ua)) type = 'Tablet';
+    else if (/Mobile|Android|iP(hone|od)|IEMobile/i.test(ua)) type = 'Móvil';
+
+    return `${type} (${os} / ${browser})`;
+  }
+
+  window.registrarUsoApp = async function() {
+    try {
+      const deviceId = getOrCreateDeviceId();
+      const device = getDeviceDescription();
+      
+      let ip = 'Desconocida';
+      let pais = 'Desconocido';
+      
+      try {
+        const res = await fetch('https://ipapi.co/json/');
+        if (res.ok) {
+          const data = await res.json();
+          ip = data.ip || 'Desconocida';
+          pais = data.country_name || 'Desconocido';
+        }
+      } catch (e1) {
+        console.warn('Error al consultar ipapi.co, intentando fallback:', e1);
+        try {
+          const res = await fetch('https://api.db-ip.com/v2/free/self');
+          if (res.ok) {
+            const data = await res.json();
+            ip = data.ipAddress || 'Desconocida';
+            pais = data.countryName || 'Desconocido';
+          }
+        } catch (e2) {
+          console.warn('Error en fallback de geolocalización:', e2);
+        }
+      }
+
+      const currentUser = getCurrentUser();
+      const usageData = {
+        uid: currentUser ? currentUser.uid : 'Invitado',
+        nombre: currentUser ? (currentUser.displayName || 'Usuario Google') : 'Invitado',
+        email: currentUser ? (currentUser.email || '') : '',
+        ip: ip,
+        pais: pais,
+        dispositivo: device,
+        lastActive: Date.now()
+      };
+
+      const docRef = doc(db, "registro_uso", deviceId);
+      await setDoc(docRef, usageData, { merge: true });
+      console.log("📊 Registro de uso de la app sincronizado con Firebase.");
+    } catch (err) {
+      console.warn("⚠️ No se pudo registrar el uso en Firebase:", err);
+    }
+  };
+
+  let usageTableZoom = parseFloat(localStorage.getItem('usageTableZoom')) || 0.8;
+
+  function makeTableResizable(table) {
+    const row = table.querySelector('thead tr');
+    const cols = row ? row.children : [];
+    if (cols.length === 0) return;
+    
+    table.style.tableLayout = 'fixed';
+    
+    for (let i = 0; i < cols.length; i++) {
+      const col = cols[i];
+      if (!col.style.width) {
+        col.style.width = col.clientWidth + 'px';
+      }
+      
+      if (!col.querySelector('.resize-handle')) {
+        col.style.position = 'relative';
+        const handle = document.createElement('div');
+        handle.className = 'resize-handle';
+        handle.style.position = 'absolute';
+        handle.style.right = '0';
+        handle.style.top = '0';
+        handle.style.bottom = '0';
+        handle.style.width = '8px';
+        handle.style.cursor = 'col-resize';
+        handle.style.userSelect = 'none';
+        handle.style.zIndex = '5';
+        
+        handle.addEventListener('mouseenter', () => { handle.style.backgroundColor = 'rgba(0,0,0,0.15)'; });
+        handle.addEventListener('mouseleave', () => { handle.style.backgroundColor = 'transparent'; });
+        
+        col.appendChild(handle);
+        
+        let startX, startWidth;
+        
+        const onMouseDown = (e) => {
+          startX = e.pageX !== undefined ? e.pageX : e.touches[0].pageX;
+          startWidth = parseFloat(col.style.width);
+          
+          document.addEventListener('mousemove', onMouseMove);
+          document.addEventListener('mouseup', onMouseUp);
+          document.addEventListener('touchmove', onMouseMove);
+          document.addEventListener('touchend', onMouseUp);
+          
+          handle.style.backgroundColor = 'rgba(0,0,0,0.25)';
+          document.body.style.cursor = 'col-resize';
+        };
+        
+        const onMouseMove = (e) => {
+          const pageX = e.pageX !== undefined ? e.pageX : e.touches[0].pageX;
+          const dx = pageX - startX;
+          const newWidth = Math.max(50, startWidth + dx);
+          col.style.width = newWidth + 'px';
+        };
+        
+        const onMouseUp = () => {
+          document.removeEventListener('mousemove', onMouseMove);
+          document.removeEventListener('mouseup', onMouseUp);
+          document.removeEventListener('touchmove', onMouseMove);
+          document.removeEventListener('touchend', onMouseUp);
+          
+          handle.style.backgroundColor = 'transparent';
+          document.body.style.cursor = 'default';
+        };
+        
+        handle.addEventListener('mousedown', onMouseDown);
+        handle.addEventListener('touchstart', onMouseDown, { passive: true });
+      }
+    }
+  }
+
+  let lastUsageRecords = [];
+
+  window.applyUsageFilters = function() {
+    const tableBody = document.getElementById('usage-users-table-body');
+    if (!tableBody) return;
+
+    const searchInput = document.getElementById('usage-search-input');
+    const countrySelect = document.getElementById('usage-country-filter');
+
+    const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    const selectedCountry = countrySelect ? countrySelect.value : 'all';
+
+    const filtered = lastUsageRecords.filter(r => {
+      // Filtro de País
+      if (selectedCountry !== 'all') {
+        const countryVal = r.pais || 'Desconocido';
+        if (countryVal !== selectedCountry) return false;
+      }
+
+      // Filtro de búsqueda por texto
+      if (query) {
+        const name = (r.nombre || '').toLowerCase();
+        const email = (r.email || '').toLowerCase();
+        const ip = (r.ip || '').toLowerCase();
+        const device = (r.dispositivo || '').toLowerCase();
+        const country = (r.pais || '').toLowerCase();
+
+        if (!name.includes(query) && 
+            !email.includes(query) && 
+            !ip.includes(query) && 
+            !device.includes(query) && 
+            !country.includes(query)) {
+          return false;
+        }
+      }
+      return true;
+    });
+
+    if (filtered.length === 0) {
+      tableBody.innerHTML = `
+        <tr>
+          <td colspan="6" style="padding: 20px; text-align: center; color: var(--text-muted);">
+            Ningún registro coincide con los filtros aplicados.
+          </td>
+        </tr>
+      `;
+      return;
+    }
+
+    const now = Date.now();
+    const oneHourMs = 60 * 60 * 1000;
+
+    tableBody.innerHTML = filtered.map(r => {
+      const lastActiveTime = r.lastActive ? new Date(r.lastActive) : null;
+      const lastActiveStr = lastActiveTime 
+        ? lastActiveTime.toLocaleString('es-ES', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }) 
+        : 'Desconocida';
+      
+      const diff = now - (r.lastActive || 0);
+      const isOnline = diff < oneHourMs;
+      const statusBadge = isOnline 
+        ? `<span style="padding: 3px 8px; border-radius: 10px; font-size: 0.72rem; font-weight: 700; background: rgba(40, 167, 69, 0.15); color: #28a745; text-transform: uppercase;">OnLine</span>`
+        : `<span style="padding: 3px 8px; border-radius: 10px; font-size: 0.72rem; font-weight: 700; background: rgba(220, 53, 69, 0.15); color: #dc3545; text-transform: uppercase;">OffLine</span>`;
+
+      const userHtml = r.nombre === 'Invitado' 
+        ? `<span style="font-weight: 600; color: var(--text-muted);">Invitado</span>`
+        : `
+          <div style="display: flex; flex-direction: column;">
+            <span style="font-weight: 700; color: var(--text-color);">${r.nombre}</span>
+            <span style="font-size: 0.72rem; color: var(--text-muted);">${r.email || ''}</span>
+          </div>
+        `;
+
+      return `
+        <tr style="border-bottom: 1px solid var(--panel-border); transition: background 0.2s;">
+          <td style="padding: 10px 12px; vertical-align: middle; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">${userHtml}</td>
+          <td style="padding: 10px 12px; vertical-align: middle; font-family: monospace; font-size: 0.75rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">${r.ip || 'Desconocida'}</td>
+          <td style="padding: 10px 12px; vertical-align: middle; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">${r.pais || 'Desconocido'}</td>
+          <td style="padding: 10px 12px; vertical-align: middle; font-size: 0.75rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">${r.dispositivo || 'Desconocido'}</td>
+          <td style="padding: 10px 12px; vertical-align: middle; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">${statusBadge}</td>
+          <td style="padding: 10px 12px; vertical-align: middle; font-size: 0.75rem; color: var(--text-muted); overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">${lastActiveStr}</td>
+        </tr>
+      `;
+    }).join('');
+
+    const table = document.getElementById('usage-users-table');
+    if (table) {
+      table.style.fontSize = `${usageTableZoom}rem`;
+      makeTableResizable(table);
+    }
+  };
+
+  window.renderUsoAppModule = async function() {
+    const tableBody = document.getElementById('usage-users-table-body');
+    if (!tableBody) return;
+
+    tableBody.innerHTML = `
+      <tr>
+        <td colspan="6" style="padding: 20px; text-align: center; color: var(--text-muted);">
+          Obteniendo registros de uso desde Firebase...
+        </td>
+      </tr>
+    `;
+
+    try {
+      const colRef = collection(db, "registro_uso");
+      const snap = await getDocs(colRef);
+      
+      const records = [];
+      snap.forEach(docSnap => {
+        records.push({
+          id: docSnap.id,
+          ...docSnap.data()
+        });
+      });
+
+      records.sort((a, b) => (b.lastActive || 0) - (a.lastActive || 0));
+      lastUsageRecords = records;
+
+      if (records.length === 0) {
+        tableBody.innerHTML = `
+          <tr>
+            <td colspan="6" style="padding: 20px; text-align: center; color: var(--text-muted);">
+              No hay registros de uso en Firebase.
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      // Rellenar dinámicamente el selector de países
+      const countrySelect = document.getElementById('usage-country-filter');
+      if (countrySelect) {
+        const currentSel = countrySelect.value || 'all';
+        const countries = Array.from(new Set(records.map(r => r.pais || 'Desconocido'))).filter(Boolean).sort();
+        countrySelect.innerHTML = `<option value="all">Todos los países</option>` + 
+          countries.map(c => `<option value="${c}">${c}</option>`).join('');
+        
+        if (countries.includes(currentSel)) {
+          countrySelect.value = currentSel;
+        } else {
+          countrySelect.value = 'all';
+        }
+      }
+
+      // Aplicar filtros (renderiza el contenido final)
+      window.applyUsageFilters();
+
+    } catch (err) {
+      console.error("Error al cargar registros de uso:", err);
+      tableBody.innerHTML = `
+        <tr>
+          <td colspan="6" style="padding: 20px; text-align: center; color: #dc3545; font-weight: 600;">
+            Error al conectar con Firebase: ${err.message}
+          </td>
+        </tr>
+      `;
+    }
+  };
+
+  // Registrar uso automáticamente cada vez que se detecte cambio de sesión
+  auth.onAuthStateChanged(() => {
+    window.registrarUsoApp();
+  });
+
+  // Escuchar clicks de refrescar y zoom de letra en la tabla
+  document.addEventListener('click', (e) => {
+    if (e.target && e.target.id === 'btn-usage-refresh') {
+      e.preventDefault();
+      e.stopPropagation();
+      window.renderUsoAppModule();
+    }
+    
+    if (e.target && e.target.id === 'btn-usage-zoom-in') {
+      e.preventDefault();
+      e.stopPropagation();
+      usageTableZoom = Math.min(1.4, usageTableZoom + 0.05);
+      localStorage.setItem('usageTableZoom', usageTableZoom);
+      const table = document.getElementById('usage-users-table');
+      if (table) table.style.fontSize = `${usageTableZoom}rem`;
+    }
+
+    if (e.target && e.target.id === 'btn-usage-zoom-out') {
+      e.preventDefault();
+      e.stopPropagation();
+      usageTableZoom = Math.max(0.55, usageTableZoom - 0.05);
+      localStorage.setItem('usageTableZoom', usageTableZoom);
+      const table = document.getElementById('usage-users-table');
+      if (table) table.style.fontSize = `${usageTableZoom}rem`;
+    }
+  });
+
+  // Escuchar entrada en el buscador y filtros por país de la tabla de uso
+  document.addEventListener('input', (e) => {
+    if (e.target && e.target.id === 'usage-search-input') {
+      window.applyUsageFilters();
+    }
+  });
+
+  document.addEventListener('change', (e) => {
+    if (e.target && e.target.id === 'usage-country-filter') {
+      window.applyUsageFilters();
+    }
   });
   
   // Manejo del cierre del modal de Ajustes (guardando los cambios en la nube)

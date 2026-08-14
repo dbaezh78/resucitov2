@@ -1,0 +1,48 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // 1. Colección de enlaces cortos (PÚBLICA)
+    match /listasCompartidas/{idCorto} {
+      allow read, create: if true; 
+      allow update, delete: if false;
+    }
+
+    // 2. Colección de usuarios (PRIVADA - Sincroniza tonos, notas y posiciones personales)
+    match /usuarios/{userId}/{document=**} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // 3. Posiciones globales de acordes (Lectura pública, escritura solo para el administrador)
+    match /global_positions/{cantoId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.email == 'dbaezh78@gmail.com';
+    }
+
+    // 4. Colección de usuarios registrados para Control de Acceso
+    match /registered_users/{userDoc} {
+      allow read, write: if request.auth != null;
+    }
+
+    // 5. Configuración de permisos y grupos del sistema (Lectura PÚBLICA para Invitados, escritura para Administrador/Autenticado)
+    match /system_config/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // 6. Reglas para el registro de uso de la aplicación (Uso App)
+    match /registro_uso/{deviceId} {
+      // Permite leer si el usuario está autenticado en la aplicación
+      allow read: if request.auth != null; 
+      
+      // Permite crear y actualizar a cualquier visitante (para registrar accesos de invitados)
+      allow write: if true; 
+    }
+
+    // 7. Bloqueo por defecto para cualquier otra colección no especificada
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

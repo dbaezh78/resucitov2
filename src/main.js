@@ -143,35 +143,286 @@ export function updateAccessControlVisibility() {
   const userSubpanelAccess = document.getElementById('user-subpanel-access');
   const userSubpanelAccount = document.getElementById('user-subpanel-account');
   const userSubtabAccountBtn = document.getElementById('user-subtab-account-btn');
-  const canManageAccess = isCurrentUserAdmin() || hasPermission('manage_access');
+
+  const canViewMembers = isCurrentUserAdmin() || hasPermission('view_access_miembros');
+  const canViewGroups = isCurrentUserAdmin() || hasPermission('view_access_grupos');
+  const canViewInternalMembers = isCurrentUserAdmin() || hasPermission('view_access_miembros_internos');
+  const canViewPermissions = isCurrentUserAdmin() || hasPermission('view_access_permisos');
+  const canViewInspector = isCurrentUserAdmin() || hasPermission('view_access_inspector');
+
+  // Si tiene el permiso padre "manage_access" o cualquiera de los subpermisos, puede ver la sección Acceso
+  const canViewAccessSection = isCurrentUserAdmin() || hasPermission('manage_access') || canViewMembers || canViewGroups || canViewInternalMembers || canViewPermissions || canViewInspector;
 
   if (userSubtabAccessBtn) {
-    userSubtabAccessBtn.style.display = canManageAccess ? 'inline-flex' : 'none';
+    userSubtabAccessBtn.style.display = canViewAccessSection ? 'inline-flex' : 'none';
   }
 
-  if (!canManageAccess) {
+  if (!canViewAccessSection) {
     if (userSubpanelAccess && userSubpanelAccess.style.display !== 'none') {
       userSubpanelAccess.style.display = 'none';
       if (userSubpanelAccount) userSubpanelAccount.style.display = 'block';
       if (userSubtabAccountBtn) userSubtabAccountBtn.classList.add('active');
       if (userSubtabAccessBtn) userSubtabAccessBtn.classList.remove('active');
     }
-  }
+  } else {
+    // Control de visibilidad de las subpestañas dentro de Acceso
+    const accessSubtabMembers = document.querySelector('.access-subtab-btn[data-subtab="members"]');
+    const accessSubtabGroups = document.querySelector('.access-subtab-btn[data-subtab="groups"]');
+    const accessSubtabInternalMembers = document.querySelector('.access-subtab-btn[data-subtab="internal-members"]');
+    const accessSubtabPermissions = document.querySelector('.access-subtab-btn[data-subtab="permissions"]');
+    const accessSubtabInspector = document.querySelector('.access-subtab-btn[data-subtab="inspector"]');
 
-  // Control de visibilidad de la pestaña Log de Diagnóstico
-  const settingsTabLog = document.querySelector('.settings-tab-btn[data-tab="log"]');
-  const settingsPanelLog = document.getElementById('settings-panel-log');
-  const canViewLogs = isCurrentUserAdmin() || hasPermission('view_logs') || hasPermission('manage_access');
+    const showMembers = isCurrentUserAdmin() || canViewMembers;
+    const showGroups = isCurrentUserAdmin() || canViewGroups;
+    const showInternalMembers = isCurrentUserAdmin() || canViewInternalMembers;
+    const showPermissions = isCurrentUserAdmin() || canViewPermissions;
+    const showInspector = isCurrentUserAdmin() || canViewInspector;
 
-  if (settingsTabLog) {
-    settingsTabLog.style.display = canViewLogs ? 'flex' : 'none';
-  }
+    if (accessSubtabMembers) accessSubtabMembers.style.display = showMembers ? 'inline-block' : 'none';
+    if (accessSubtabGroups) accessSubtabGroups.style.display = showGroups ? 'inline-block' : 'none';
+    if (accessSubtabInternalMembers) accessSubtabInternalMembers.style.display = showInternalMembers ? 'inline-block' : 'none';
+    if (accessSubtabPermissions) accessSubtabPermissions.style.display = showPermissions ? 'inline-block' : 'none';
+    if (accessSubtabInspector) accessSubtabInspector.style.display = showInspector ? 'inline-block' : 'none';
 
-  if (!canViewLogs && settingsPanelLog && settingsPanelLog.style.display !== 'none') {
-    if (typeof window.openSettingsTab === 'function') {
-      window.openSettingsTab('general');
+    // Redireccionar si el usuario actual se encuentra en un subtab de Acceso deshabilitado para él
+    const activeAccessSubtab = document.querySelector('.access-subtab-btn.active');
+    if (activeAccessSubtab) {
+      const activeSub = activeAccessSubtab.dataset.subtab;
+      let allowed = true;
+      if (activeSub === 'members' && !showMembers) allowed = false;
+      else if (activeSub === 'groups' && !showGroups) allowed = false;
+      else if (activeSub === 'internal-members' && !showInternalMembers) allowed = false;
+      else if (activeSub === 'permissions' && !showPermissions) allowed = false;
+      else if (activeSub === 'inspector' && !showInspector) allowed = false;
+
+      if (!allowed) {
+        let targetSubtab = null;
+        if (showMembers) targetSubtab = 'members';
+        else if (showGroups) targetSubtab = 'groups';
+        else if (showInternalMembers) targetSubtab = 'internal-members';
+        else if (showPermissions) targetSubtab = 'permissions';
+        else if (showInspector) targetSubtab = 'inspector';
+
+        if (targetSubtab && typeof window.switchAccessSubtab === 'function') {
+          window.switchAccessSubtab(targetSubtab);
+        }
+      }
     }
   }
+
+  // --- GENERAL SUBTABS ---
+  const generalSubtabComunBtn = document.getElementById('general-subtab-comun-btn');
+  const generalSubtabCloudBtn = document.getElementById('general-subtab-cloud-btn');
+  const canViewGeneralComun = isCurrentUserAdmin() || hasPermission('view_general_comun');
+  const canViewGeneralCloud = isCurrentUserAdmin() || hasPermission('view_general_cloud');
+
+  if (generalSubtabComunBtn) generalSubtabComunBtn.style.display = canViewGeneralComun ? 'inline-flex' : 'none';
+  if (generalSubtabCloudBtn) generalSubtabCloudBtn.style.display = canViewGeneralCloud ? 'inline-flex' : 'none';
+
+  // Redirección General
+  const activeGeneralSubtab = document.querySelector('.general-subtab-btn.active');
+  if (activeGeneralSubtab) {
+    const activeSub = activeGeneralSubtab.dataset.subtab;
+    let allowed = true;
+    if (activeSub === 'comun' && !canViewGeneralComun) allowed = false;
+    else if (activeSub === 'cloud' && !canViewGeneralCloud) allowed = false;
+
+    if (!allowed) {
+      if (canViewGeneralComun && typeof window.switchGeneralSubmodule === 'function') window.switchGeneralSubmodule('comun');
+      else if (canViewGeneralCloud && typeof window.switchGeneralSubmodule === 'function') window.switchGeneralSubmodule('cloud');
+    }
+  }
+
+  // --- TEMA SUBTABS ---
+  const themeSubtabVisualBtn = document.getElementById('theme-subtab-visual-btn');
+  const themeSubtabInicioBtn = document.getElementById('theme-subtab-inicio-btn');
+  const themeSubtabPrepararBtn = document.getElementById('theme-subtab-preparar-btn');
+  const themeSubtabPerfilBtn = document.getElementById('theme-subtab-perfil-btn');
+
+  const canViewThemeVisual = isCurrentUserAdmin() || hasPermission('view_theme_visual');
+  const canViewThemeInicio = isCurrentUserAdmin() || hasPermission('view_theme_inicio');
+  const canViewThemePreparacion = isCurrentUserAdmin() || hasPermission('view_theme_preparacion');
+  const canViewThemePerfil = isCurrentUserAdmin() || hasPermission('view_theme_perfil');
+
+  if (themeSubtabVisualBtn) themeSubtabVisualBtn.style.display = canViewThemeVisual ? 'inline-flex' : 'none';
+  if (themeSubtabInicioBtn) themeSubtabInicioBtn.style.display = canViewThemeInicio ? 'inline-flex' : 'none';
+  if (themeSubtabPrepararBtn) themeSubtabPrepararBtn.style.display = canViewThemePreparacion ? 'inline-flex' : 'none';
+  if (themeSubtabPerfilBtn) themeSubtabPerfilBtn.style.display = canViewThemePerfil ? 'inline-flex' : 'none';
+
+  // Redirección Tema
+  const activeThemeSubtab = document.querySelector('.theme-subtab-btn.active');
+  if (activeThemeSubtab) {
+    const activeSub = activeThemeSubtab.dataset.subtab;
+    let allowed = true;
+    if (activeSub === 'visual' && !canViewThemeVisual) allowed = false;
+    else if (activeSub === 'inicio' && !canViewThemeInicio) allowed = false;
+    else if (activeSub === 'preparar-canto' && !canViewThemePreparacion) allowed = false;
+    else if (activeSub === 'perfil' && !canViewThemePerfil) allowed = false;
+
+    if (!allowed) {
+      if (canViewThemeVisual && typeof window.switchThemeSubmodule === 'function') window.switchThemeSubmodule('visual');
+      else if (canViewThemeInicio && typeof window.switchThemeSubmodule === 'function') window.switchThemeSubmodule('inicio');
+      else if (canViewThemePreparacion && typeof window.switchThemeSubmodule === 'function') window.switchThemeSubmodule('preparar-canto');
+      else if (canViewThemePerfil && typeof window.switchThemeSubmodule === 'function') window.switchThemeSubmodule('perfil');
+    }
+  }
+
+  // --- TEMA VISUAL FUNCTION SUB-PANELS ---
+  const funcSubtabToolbarBtn = document.getElementById('func-subtab-toolbar-btn');
+  const funcSubtabCantoBtn = document.getElementById('func-subtab-canto-btn');
+  const funcSubtabBookBtn = document.getElementById('func-subtab-book-btn');
+  const funcSubtabEtapasBtn = document.getElementById('func-subtab-etapas-btn');
+  const funcSubtabBotonesBtn = document.getElementById('func-subtab-botones-btn');
+  const funcSubtabNavegadorBtn = document.getElementById('func-subtab-navegador-btn');
+
+  const canViewFuncBarra = isCurrentUserAdmin() || hasPermission('view_theme_func_barra');
+  const canViewFuncCanto = isCurrentUserAdmin() || hasPermission('view_theme_func_canto');
+  const canViewFuncLibro = isCurrentUserAdmin() || hasPermission('view_theme_func_libro');
+  const canViewFuncEtapa = isCurrentUserAdmin() || hasPermission('view_theme_func_etapa');
+  const canViewFuncBotones = isCurrentUserAdmin() || hasPermission('view_theme_func_botones');
+  const canViewFuncNavegador = isCurrentUserAdmin() || hasPermission('view_theme_func_navegador');
+
+  if (funcSubtabToolbarBtn) funcSubtabToolbarBtn.style.display = canViewFuncBarra ? 'inline-flex' : 'none';
+  if (funcSubtabCantoBtn) funcSubtabCantoBtn.style.display = canViewFuncCanto ? 'inline-flex' : 'none';
+  if (funcSubtabBookBtn) funcSubtabBookBtn.style.display = canViewFuncLibro ? 'inline-flex' : 'none';
+  if (funcSubtabEtapasBtn) funcSubtabEtapasBtn.style.display = canViewFuncEtapa ? 'inline-flex' : 'none';
+  if (funcSubtabBotonesBtn) funcSubtabBotonesBtn.style.display = canViewFuncBotones ? 'inline-flex' : 'none';
+  if (funcSubtabNavegadorBtn) funcSubtabNavegadorBtn.style.display = canViewFuncNavegador ? 'inline-flex' : 'none';
+
+  // Redirección Tema Visual Func
+  const activeFuncSubtabBtn = document.querySelector('.func-subtab-btn.active');
+  if (activeFuncSubtabBtn) {
+    const activeSub = activeFuncSubtabBtn.dataset.func;
+    let allowed = true;
+    if (activeSub === 'toolbar' && !canViewFuncBarra) allowed = false;
+    else if (activeSub === 'canto' && !canViewFuncCanto) allowed = false;
+    else if (activeSub === 'book' && !canViewFuncLibro) allowed = false;
+    else if (activeSub === 'etapas' && !canViewFuncEtapa) allowed = false;
+    else if (activeSub === 'botones' && !canViewFuncBotones) allowed = false;
+    else if (activeSub === 'navegador' && !canViewFuncNavegador) allowed = false;
+
+    if (!allowed) {
+      let targetFunc = null;
+      if (canViewFuncBarra) targetFunc = 'toolbar';
+      else if (canViewFuncLibro) targetFunc = 'book';
+      else if (canViewFuncCanto) targetFunc = 'canto';
+      else if (canViewFuncEtapa) targetFunc = 'etapas';
+      else if (canViewFuncBotones) targetFunc = 'botones';
+      else if (canViewFuncNavegador) targetFunc = 'navegador';
+
+      if (targetFunc && typeof window.switchThemeFunctionModule === 'function') {
+        window.switchThemeFunctionModule(targetFunc);
+      }
+    }
+  }
+
+  // --- USUARIO SUBTABS ---
+  const userSubtabUsageBtn = document.getElementById('user-subtab-usage-btn');
+  const canViewUserCuenta = isCurrentUserAdmin() || hasPermission('view_user_cuenta');
+  const canViewUsage = isCurrentUserAdmin() || hasPermission('view_usage');
+
+  if (userSubtabAccountBtn) userSubtabAccountBtn.style.display = canViewUserCuenta ? 'inline-flex' : 'none';
+  if (userSubtabUsageBtn) userSubtabUsageBtn.style.display = canViewUsage ? 'inline-flex' : 'none';
+
+  // Redirección Usuario Subtabs
+  const activeUserSubtab = document.querySelector('.user-subtab-btn.active');
+  if (activeUserSubtab) {
+    const activeSub = activeUserSubtab.dataset.subtab;
+    let allowed = true;
+    if (activeSub === 'account' && !canViewUserCuenta) allowed = false;
+    else if (activeSub === 'access' && !canViewAccessSection) allowed = false;
+    else if (activeSub === 'usage' && !canViewUsage) allowed = false;
+
+    if (!allowed) {
+      if (canViewUserCuenta && userSubtabAccountBtn) userSubtabAccountBtn.click();
+      else if (canViewAccessSection && userSubtabAccessBtn) userSubtabAccessBtn.click();
+      else if (canViewUsage && userSubtabUsageBtn) userSubtabUsageBtn.click();
+    }
+  }
+
+  // --- LOG SUBTABS ---
+  const logSubtabConsoleBtn = document.getElementById('log-subtab-console-btn');
+  const logSubtabStatusBtn = document.getElementById('log-subtab-status-btn');
+
+  const canViewLogs = isCurrentUserAdmin() || hasPermission('view_logs');
+  const canViewStatus = isCurrentUserAdmin() || hasPermission('view_status');
+
+  if (logSubtabConsoleBtn) logSubtabConsoleBtn.style.display = canViewLogs ? 'flex' : 'none';
+  if (logSubtabStatusBtn) logSubtabStatusBtn.style.display = canViewStatus ? 'flex' : 'none';
+
+  // Redirección Log
+  const activeLogSubtab = document.querySelector('.log-subtab-btn.active');
+  if (activeLogSubtab) {
+    const activeSub = activeLogSubtab.dataset.subtab;
+    let allowed = true;
+    if (activeSub === 'console' && !canViewLogs) allowed = false;
+    else if (activeSub === 'status' && !canViewStatus) allowed = false;
+
+    if (!allowed) {
+      if (canViewLogs && typeof window.switchLogSubmodule === 'function') window.switchLogSubmodule('console');
+      else if (canViewStatus && typeof window.switchLogSubmodule === 'function') window.switchLogSubmodule('status');
+    }
+  }
+
+  // --- PESTAÑAS PRINCIPALES ---
+  const settingsTabGeneral = document.querySelector('.settings-tab-btn[data-tab="general"]');
+  const settingsTabTheme = document.querySelector('.settings-tab-btn[data-tab="theme"]');
+  const settingsTabSong = document.querySelector('.settings-tab-btn[data-tab="canto"]');
+  const settingsTabUser = document.querySelector('.settings-tab-btn[data-tab="user"]');
+  const settingsTabLog = document.querySelector('.settings-tab-btn[data-tab="log"]');
+  const settingsPanelLog = document.getElementById('settings-panel-log');
+  const settingsTabData = document.querySelector('.settings-tab-btn[data-tab="datos"]');
+
+  const canViewGeneral = isCurrentUserAdmin() || hasPermission('view_settings_general') || canViewGeneralComun || canViewGeneralCloud;
+  const canViewTheme = isCurrentUserAdmin() || hasPermission('view_settings_theme') || canViewThemeVisual || canViewThemeInicio || canViewThemePreparacion || canViewThemePerfil;
+  const canViewSong = isCurrentUserAdmin() || hasPermission('view_settings_song');
+  const canViewUser = isCurrentUserAdmin() || hasPermission('view_settings_user') || canViewUserCuenta || canViewAccessSection || canViewUsage;
+  const canViewData = isCurrentUserAdmin() || hasPermission('view_settings_data');
+  const canViewLogSection = isCurrentUserAdmin() || hasPermission('view_settings_log') || canViewLogs || canViewStatus;
+
+  if (settingsTabGeneral) settingsTabGeneral.style.display = canViewGeneral ? 'flex' : 'none';
+  if (settingsTabTheme) settingsTabTheme.style.display = canViewTheme ? 'flex' : 'none';
+  if (settingsTabSong) settingsTabSong.style.display = canViewSong ? 'flex' : 'none';
+  if (settingsTabUser) settingsTabUser.style.display = canViewUser ? 'flex' : 'none';
+  if (settingsTabData) settingsTabData.style.display = canViewData ? 'flex' : 'none';
+  if (settingsTabLog) settingsTabLog.style.display = canViewLogSection ? 'flex' : 'none';
+
+  // Redireccionar si el usuario actual se encuentra en una pestaña deshabilitada
+  const activeSettingsTabBtn = document.querySelector('.settings-tab-btn.active');
+  if (activeSettingsTabBtn) {
+    const activeTab = activeSettingsTabBtn.dataset.tab;
+    let allowed = true;
+    if (activeTab === 'general' && !canViewGeneral) allowed = false;
+    else if (activeTab === 'theme' && !canViewTheme) allowed = false;
+    else if (activeTab === 'canto' && !canViewSong) allowed = false;
+    else if (activeTab === 'user' && !canViewUser) allowed = false;
+    else if (activeTab === 'datos' && !canViewData) allowed = false;
+    else if (activeTab === 'log' && !canViewLogSection) allowed = false;
+
+    if (!allowed) {
+      let targetTab = null;
+      if (canViewGeneral) targetTab = 'general';
+      else if (canViewTheme) targetTab = 'theme';
+      else if (canViewSong) targetTab = 'canto';
+      else if (canViewUser) targetTab = 'user';
+      else if (canViewData) targetTab = 'datos';
+      else if (canViewLogSection) targetTab = 'log';
+
+      if (targetTab && typeof window.openSettingsTab === 'function') {
+        window.openSettingsTab(targetTab);
+      } else {
+        const modalContainer = document.getElementById('settings-modal');
+        if (modalContainer) modalContainer.style.display = 'none';
+      }
+    }
+  }
+
+  // Actualizar visibilidad de controles de edición de acordes en base a permisos
+  const chordEditSettingRow = document.getElementById('chord-edit-setting-row');
+  const toolbarChordEditBtn = document.getElementById('toolbar-chord-edit-btn');
+  const showChordEditing = canEditChords();
+  if (chordEditSettingRow) chordEditSettingRow.style.display = showChordEditing ? 'flex' : 'none';
+  if (toolbarChordEditBtn) toolbarChordEditBtn.style.display = showChordEditing ? 'inline-flex' : 'none';
 }
 window.updateAccessControlVisibility = updateAccessControlVisibility;
 
@@ -1200,6 +1451,11 @@ function resolveChordPositions(side, lineIdx, subLineIdx, baseChords, cleanLetra
   });
 }
 
+export function canEditChords() {
+  return isCurrentUserAdmin() || hasPermission('edit_chords');
+}
+window.canEditChords = canEditChords;
+
 function updateChordEditUI() {
   const toggleChordEditBtn = document.getElementById('toggle-chord-edit-btn');
   const saveChordPositionsBtn = document.getElementById('save-chord-positions-btn');
@@ -1220,13 +1476,13 @@ function updateChordEditUI() {
     const songId = currentCanto ? currentCanto.id : '';
     const customKey = `custom-positions-${songId}`;
     const hasPendingChanges = !!localStorage.getItem(customKey);
-    toolbarSaveChordBtn.style.display = (isChordEditMode && isAdmin && hasPendingChanges) ? 'inline-flex' : 'none';
+    toolbarSaveChordBtn.style.display = (isChordEditMode && canEditChords() && hasPendingChanges) ? 'inline-flex' : 'none';
   }
 }
 
 function toggleChordEditMode() {
-  if (!isAdmin) {
-    alert('Acceso denegado: Se requieren privilegios de Administrador para editar acordes.');
+  if (!canEditChords()) {
+    alert('Acceso denegado: Se requieren permisos de edición para editar acordes.');
     return;
   }
   isChordEditMode = !isChordEditMode;
@@ -1235,8 +1491,8 @@ function toggleChordEditMode() {
 }
 
 async function saveChordPositionsAction() {
-  if (!isAdmin) {
-    alert('Acceso denegado: Se requieren privilegios de Administrador.');
+  if (!canEditChords()) {
+    alert('Acceso denegado: Se requieren permisos de edición.');
     return;
   }
   if (!currentCanto) return;
@@ -4235,14 +4491,10 @@ function setupEventListeners() {
           authRegularBadge.innerHTML = `<span class="material-symbols-outlined" style="font-size: 1rem;">person</span> Hermano Cantor`;
         }
       }
-      if (chordEditSettingRow) chordEditSettingRow.style.display = isAdmin ? 'flex' : 'none';
-      if (toolbarChordEditBtn) toolbarChordEditBtn.style.display = isAdmin ? 'inline-flex' : 'none';
       if (authAdminActions) authAdminActions.style.display = isAdmin ? 'block' : 'none';
     } else {
       if (authUnauthenticated) authUnauthenticated.style.display = 'block';
       if (authAuthenticated) authAuthenticated.style.display = 'none';
-      if (chordEditSettingRow) chordEditSettingRow.style.display = 'none';
-      if (toolbarChordEditBtn) toolbarChordEditBtn.style.display = 'none';
       if (authAdminActions) authAdminActions.style.display = 'none';
       
       // Desactivar modo edición si el usuario cierra sesión
