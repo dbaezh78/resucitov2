@@ -3040,7 +3040,16 @@ footer {
 }
 
 
-
+.tb_usoapp {
+  padding: 10px 12px; 
+  font-weight: 700; 
+  width: 160px; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+  background: hsl(210deg 70.59% 93.33%);
+  z-index: 1;
+}
 
 
 /*ESTO SIEMPRE TIENE QUE ESTAR DE ULTIMO*/
