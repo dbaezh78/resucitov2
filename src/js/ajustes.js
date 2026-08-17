@@ -210,6 +210,9 @@ window.applyStageColors = function() {
   const litText  = localStorage.getItem('btn-color-lit-text')  || '#212529';
   const catText  = localStorage.getItem('btn-color-cat-text')  || '#ffffff';
 
+  const settingsBtnBg = localStorage.getItem('settings-btn-bg') || '#d01212';
+  const settingsBtnText = localStorage.getItem('settings-btn-text') || '#ffffff';
+
   document.body.style.setProperty('--color-pre', preColor);
   document.body.style.setProperty('--color-cate', cateColor);
   document.body.style.setProperty('--color-ele', eleColor);
@@ -227,6 +230,11 @@ window.applyStageColors = function() {
   document.body.style.setProperty('--text-ele', eleText);
   document.body.style.setProperty('--text-lit', litText);
   document.body.style.setProperty('--text-cat', catText);
+
+  document.body.style.setProperty('--settings-btn-bg', settingsBtnBg);
+  document.body.style.setProperty('--settings-btn-text', settingsBtnText);
+  document.documentElement.style.setProperty('--settings-btn-bg', settingsBtnBg);
+  document.documentElement.style.setProperty('--settings-btn-text', settingsBtnText);
 
   const updatePreview = (id, color) => {
     const el = document.getElementById(id);
@@ -256,6 +264,8 @@ window.applyStageColors = function() {
   updatePreview('preview-cat-default', catColor);
   updatePreview('preview-cat-active', catActive);
   updatePreview('preview-cat-text', catText);
+  updatePreview('preview-settings-btn-bg', settingsBtnBg);
+  updatePreview('preview-settings-btn-text', settingsBtnText);
 
   document.querySelectorAll('.color-swatches').forEach(container => {
     const stage = container.dataset.stage;
@@ -1245,7 +1255,7 @@ window.initAjustes = async function() {
   async function loadResourceIntoCache(url) {
     try {
       const keys = await caches.keys();
-      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v200';
+      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v208';
       const cache = await caches.open(cacheName);
       
       const res = await fetch(url);
@@ -1417,7 +1427,7 @@ window.initAjustes = async function() {
 
       // 2. Conectar a la caché
       const keys = await caches.keys();
-      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v200';
+      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v208';
       const cache = await caches.open(cacheName);
       
       // Obtener todas las claves cacheadas para búsqueda rápida
@@ -1638,7 +1648,7 @@ window.initAjustes = async function() {
           updateCloudProgress("Iniciando descarga...", 0);
           
           const keys = await caches.keys();
-          const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v200';
+          const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v208';
           const cache = await caches.open(cacheName);
           
           const songIds = window.allSongs ? window.allSongs.map(s => s.id) : [];
@@ -1697,7 +1707,7 @@ window.initAjustes = async function() {
           try {
             updateCloudProgress("Eliminando cantos guardados...", 20);
             const keys = await caches.keys();
-            const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v200';
+            const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v208';
             const cache = await caches.open(cacheName);
             
             const songIds = window.allSongs ? window.allSongs.map(s => s.id) : [];
@@ -1956,19 +1966,27 @@ window.initAjustes = async function() {
     });
   });
 
-  // Personalizar colores de botones de etapa
+  // Personalizar colores de botones de etapa y de ajustes
   document.querySelectorAll('.btn-color-input').forEach(input => {
     input.addEventListener('input', (e) => {
       const stage = input.dataset.stage;
       const mode = input.dataset.mode;
       const color = e.target.value;
       
-      if (mode === 'default') {
-        localStorage.setItem(`stage-color-${stage}`, color);
-      } else if (mode === 'text') {
-        localStorage.setItem(`btn-color-${stage}-text`, color);
+      if (stage === 'settings-btn') {
+        if (mode === 'bg') {
+          localStorage.setItem('settings-btn-bg', color);
+        } else if (mode === 'text') {
+          localStorage.setItem('settings-btn-text', color);
+        }
       } else {
-        localStorage.setItem(`btn-color-${stage}-active`, color);
+        if (mode === 'default') {
+          localStorage.setItem(`stage-color-${stage}`, color);
+        } else if (mode === 'text') {
+          localStorage.setItem(`btn-color-${stage}-text`, color);
+        } else {
+          localStorage.setItem(`btn-color-${stage}-active`, color);
+        }
       }
       window.applyStageColors();
     });
@@ -2054,6 +2072,12 @@ window.initAjustes = async function() {
         document.documentElement.style.removeProperty(`--color-${stg}-active`);
         document.documentElement.style.removeProperty(`--text-${stg}`);
       });
+      localStorage.removeItem('settings-btn-bg');
+      localStorage.removeItem('settings-btn-text');
+      document.body.style.removeProperty('--settings-btn-bg');
+      document.body.style.removeProperty('--settings-btn-text');
+      document.documentElement.style.removeProperty('--settings-btn-bg');
+      document.documentElement.style.removeProperty('--settings-btn-text');
       window.applyStageColors();
     });
   }

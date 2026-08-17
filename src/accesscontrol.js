@@ -29,7 +29,9 @@ export const PERMISSIONS = {
   VIEW_SETTINGS_DATA: "view_settings_data",       // Ajustes > Datos
   VIEW_SETTINGS_LOG: "view_settings_log",         // Ajustes > Log
   VIEW_BOOKS: "view_books",                       // Ver Libros de Cantos
+  CONTROL_CANTO: "control_canto",
   EDIT_CHORDS: "edit_chords",
+  EDIT_SONG_STAGES: "edit_song_stages",
   BOOK_RESUCITO: "book_resucito",
   BOOK_JOVEN: "book_joven",
   BOOK_ACLAMACIONES: "book_aclamaciones",
@@ -53,7 +55,9 @@ export const PERMISSION_LABELS = {
   "view_settings_data": "Ver Ajustes: Datos",
   "view_settings_log": "Ver Ajustes: Log",
   "view_books": "Ver Libros de Cantos",
+  "control_canto": "Control Canto",
   "edit_chords": "Editar Digitaciones y Acordes",
+  "edit_song_stages": "Etapas del Canto",
   "book_resucito": "Ver Libro Resucitó",
   "book_joven": "Ver Libro Canto Joven",
   "book_aclamaciones": "Ver Libro Aclamaciones",
@@ -904,6 +908,21 @@ export function setupAccessControlUI() {
     subpanels.forEach(sp => {
       sp.style.display = sp.id === `access-subpanel-${targetSub}` ? 'block' : 'none';
     });
+
+    if (targetSub === 'song-stages') {
+      const songSelect = document.getElementById('ac-stage-song-select');
+      if (songSelect && window.allSongs && songSelect.children.length === 0) {
+        songSelect.innerHTML = window.allSongs.map(s => 
+          `<option value="${s.id}">#${s.dbno || 'S/N'} - ${s.title}</option>`
+        ).join('');
+      }
+      if (typeof window.renderSongStagesTable === 'function') {
+        window.renderSongStagesTable();
+      }
+      if (typeof window.updateAddSongStageButtonState === 'function') {
+        window.updateAddSongStageButtonState();
+      }
+    }
   };
 
   const subtabBtns = document.querySelectorAll('.access-subtab-btn');
@@ -926,6 +945,19 @@ export function setupAccessControlUI() {
 
       if (targetSub === 'members' || targetSub === 'permissions' || targetSub === 'groups') {
         await syncAllAccessControlFromFirebase();
+      } else if (targetSub === 'song-stages') {
+        const songSelect = document.getElementById('ac-stage-song-select');
+        if (songSelect && window.allSongs && songSelect.children.length === 0) {
+          songSelect.innerHTML = window.allSongs.map(s => 
+            `<option value="${s.id}">#${s.dbno || 'S/N'} - ${s.title}</option>`
+          ).join('');
+        }
+        if (typeof window.renderSongStagesTable === 'function') {
+          window.renderSongStagesTable();
+        }
+        if (typeof window.updateAddSongStageButtonState === 'function') {
+          window.updateAddSongStageButtonState();
+        }
       }
 
       renderAccessControlUI();
@@ -1030,6 +1062,92 @@ export function setupAccessControlUI() {
   const selectGroupPerm = document.getElementById('ac-select-group-perm');
   if (selectGroupPerm) {
     selectGroupPerm.addEventListener('change', renderPermissionsPanel);
+  }
+
+  // --- Manejadores de Eventos de Etapas Canto ---
+  const btnAddSongStage = document.getElementById('ac-btn-add-song-stage');
+  if (btnAddSongStage) {
+    btnAddSongStage.addEventListener('click', async () => {
+      const songSelect = document.getElementById('ac-stage-song-select');
+      const stageSelect = document.getElementById('ac-stage-level-select');
+      if (!songSelect || !stageSelect) return;
+      const songId = songSelect.value;
+      const stage = stageSelect.value;
+      if (!songId) return;
+      
+      const docRef = doc(db, "global_positions", songId);
+      try {
+        await setDoc(docRef, { etapa: stage }, { merge: true });
+        console.log(`[Firebase] Etapa establecida para ${songId}: ${stage}`);
+      } catch (err) {
+        console.error("Error al establecer la etapa del canto:", err);
+      }
+    });
+  }
+
+  const inputSearchStages = document.getElementById('ac-stage-song-search');
+  const btnClearSearchStages = document.getElementById('ac-clear-stage-song-search');
+  if (inputSearchStages) {
+    inputSearchStages.addEventListener('input', (e) => {
+      const filterTerm = e.target.value.toLowerCase();
+      if (btnClearSearchStages) {
+        btnClearSearchStages.style.display = filterTerm ? 'block' : 'none';
+      }
+      const songSelect = document.getElementById('ac-stage-song-select');
+      if (songSelect && window.allSongs) {
+        const filtered = window.allSongs.filter(s => 
+          s.title.toLowerCase().includes(filterTerm) || 
+          (s.dbno && s.dbno.toString().includes(filterTerm))
+        );
+        songSelect.innerHTML = filtered.map(s => 
+          `<option value="${s.id}">#${s.dbno || 'S/N'} - ${s.title}</option>`
+        ).join('');
+        
+        // Actualizar el estado del botón inmediatamente después del filtro
+        if (typeof window.updateAddSongStageButtonState === 'function') {
+          window.updateAddSongStageButtonState();
+        }
+      }
+    });
+  }
+
+  if (btnClearSearchStages && inputSearchStages) {
+    btnClearSearchStages.addEventListener('click', () => {
+      inputSearchStages.value = '';
+      btnClearSearchStages.style.display = 'none';
+      inputSearchStages.dispatchEvent(new Event('input'));
+    });
+  }
+
+  const songSelectEl = document.getElementById('ac-stage-song-select');
+  if (songSelectEl) {
+    songSelectEl.addEventListener('change', () => {
+      if (typeof window.updateAddSongStageButtonState === 'function') {
+        window.updateAddSongStageButtonState();
+      }
+    });
+  }
+
+  const assignedStagesSearch = document.getElementById('ac-assigned-stages-search');
+  const btnClearAssignedSearch = document.getElementById('ac-clear-assigned-stages-search');
+  if (assignedStagesSearch) {
+    assignedStagesSearch.addEventListener('input', (e) => {
+      const q = e.target.value;
+      if (btnClearAssignedSearch) {
+        btnClearAssignedSearch.style.display = q ? 'block' : 'none';
+      }
+      if (typeof window.renderSongStagesTable === 'function') {
+        window.renderSongStagesTable();
+      }
+    });
+  }
+
+  if (btnClearAssignedSearch && assignedStagesSearch) {
+    btnClearAssignedSearch.addEventListener('click', () => {
+      assignedStagesSearch.value = '';
+      btnClearAssignedSearch.style.display = 'none';
+      assignedStagesSearch.dispatchEvent(new Event('input'));
+    });
   }
 
   renderAccessControlUI();
@@ -1253,7 +1371,14 @@ const PERMISSION_TREE = [
       { key: "book_extras", label: "Ver Libro Extras (Exclusivo)" }
     ]
   },
-  { key: "edit_chords", label: "Editar Digitaciones y Acordes" },
+  {
+    key: "control_canto",
+    label: "Control Canto",
+    children: [
+      { key: "edit_chords", label: "Editar Digitaciones y Acordes" },
+      { key: "edit_song_stages", label: "Etapas del Canto" }
+    ]
+  },
 
   {
     key: "view_settings_general",
@@ -1643,6 +1768,136 @@ export function handleSaveGroupForm() {
   }
 }
 
+export function renderSongStagesTable() {
+  const tbody = document.getElementById('ac-song-stages-table-body');
+  if (!tbody || !window.allSongs) return;
+  
+  const searchInput = document.getElementById('ac-assigned-stages-search');
+  const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+  
+  const customizedSongs = [];
+  
+  if (window.globalPositionsCache) {
+    Object.keys(window.globalPositionsCache).forEach(songId => {
+      const data = window.globalPositionsCache[songId];
+      if (data && data.etapa !== undefined && data.etapa !== "0") {
+        const songMeta = window.allSongs.find(s => s.id === songId);
+        if (songMeta) {
+          const matchesSearch = !query || 
+                                songMeta.title.toLowerCase().includes(query) || 
+                                (songMeta.dbno && songMeta.dbno.toString().includes(query));
+          if (matchesSearch) {
+            customizedSongs.push({
+              id: songId,
+              title: songMeta.title,
+              dbno: songMeta.dbno,
+              etapa: data.etapa
+            });
+          }
+        }
+      }
+    });
+  }
+  
+  customizedSongs.sort((a, b) => a.title.localeCompare(b.title));
+  
+  if (customizedSongs.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="3" style="text-align: center; padding: 12px; color: var(--text-muted);">No hay cantos con etapa restringida que coincidan con la búsqueda.</td></tr>`;
+    if (typeof window.updateAddSongStageButtonState === 'function') {
+      window.updateAddSongStageButtonState();
+    }
+    return;
+  }
+  
+  const stageOptions = [
+    { value: "0", label: "Precatecumenado" },
+    { value: "1", label: "Primer Escrutinio" },
+    { value: "1.5", label: "SHEMA" },
+    { value: "2", label: "Segundo Escrutinio" },
+    { value: "3", label: "Iniciación a la Oración" },
+    { value: "4", label: "Traditio Symboli" },
+    { value: "5", label: "Redditio Symboli" },
+    { value: "6", label: "Padre Nuestro" },
+    { value: "7", label: "Elección" },
+    { value: "8", label: "Renovación de las Promesas Bautismales" }
+  ];
+  
+  tbody.innerHTML = customizedSongs.map(song => {
+    const selectHtml = `<select class="ac-song-table-stage-select" data-song-id="${song.id}" style="padding: 4px; font-size: 0.85rem; border: 1px solid var(--panel-border); border-radius: 4px; background: var(--panel-bg); color: var(--text-color); width: 100%; outline: none;">
+      ${stageOptions.map(opt => `<option value="${opt.value}" ${opt.value === song.etapa ? 'selected' : ''}>${opt.label}</option>`).join('')}
+    </select>`;
+    
+    return `<tr style="border-bottom: 1px solid var(--panel-border);">
+      <td style="padding: 8px;">#${song.dbno || 'S/N'} - <strong>${song.title}</strong></td>
+      <td style="padding: 8px;">${selectHtml}</td>
+      <td style="padding: 8px; text-align: center;">
+        <button class="btn btn-icon ac-btn-remove-song-stage" data-song-id="${song.id}" style="width: 28px; height: 28px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 4px; color: red; background: none; border: none; cursor: pointer;" title="Eliminar restricción (volver a Precatecumenado)">
+          <span class="material-symbols-outlined" style="font-size: 1.1rem;">delete</span>
+        </button>
+      </td>
+    </tr>`;
+  }).join('');
+  
+  tbody.querySelectorAll('.ac-song-table-stage-select').forEach(sel => {
+    sel.addEventListener('change', async (e) => {
+      const songId = sel.dataset.songId;
+      const newStage = e.target.value;
+      const docRef = doc(db, "global_positions", songId);
+      try {
+        await setDoc(docRef, { etapa: newStage }, { merge: true });
+        console.log(`[Firebase] Actualizada etapa del canto ${songId} a ${newStage}`);
+      } catch (err) {
+        console.error("Error al actualizar la etapa:", err);
+      }
+    });
+  });
+  
+  tbody.querySelectorAll('.ac-btn-remove-song-stage').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const songId = btn.dataset.songId;
+      const docRef = doc(db, "global_positions", songId);
+      try {
+        await setDoc(docRef, { etapa: "0" }, { merge: true });
+        console.log(`[Firebase] Eliminada restricción de etapa del canto ${songId}`);
+      } catch (err) {
+        console.error("Error al eliminar la etapa:", err);
+      }
+    });
+  });
+
+  if (typeof window.updateAddSongStageButtonState === 'function') {
+    window.updateAddSongStageButtonState();
+  }
+}
+
+export function updateAddSongStageButtonState() {
+  const btn = document.getElementById('ac-btn-add-song-stage');
+  const songSelect = document.getElementById('ac-stage-song-select');
+  if (!btn || !songSelect) return;
+  
+  const songId = songSelect.value;
+  let isAlreadyAssigned = false;
+  if (songId && window.globalPositionsCache && window.globalPositionsCache[songId]) {
+    const data = window.globalPositionsCache[songId];
+    if (data.etapa !== undefined && data.etapa !== "0") {
+      isAlreadyAssigned = true;
+    }
+  }
+  
+  btn.disabled = isAlreadyAssigned;
+  if (isAlreadyAssigned) {
+    btn.style.setProperty('background-color', '#ccc', 'important');
+    btn.style.setProperty('color', '#666', 'important');
+    btn.style.setProperty('border-color', '#ccc', 'important');
+    btn.style.cursor = 'not-allowed';
+  } else {
+    btn.style.removeProperty('background-color');
+    btn.style.removeProperty('color');
+    btn.style.removeProperty('border-color');
+    btn.style.cursor = '';
+  }
+}
+
 // Inicializar módulo y escuchadores silenciosos en vivo con Firebase Cloud
 initAccessControl();
 listenToRegisteredUsersFromFirebase();
@@ -1650,3 +1905,5 @@ listenToGroupConfigFromFirebase();
 
 window.hasPermission = hasPermission;
 window.isCurrentUserAdmin = isCurrentUserAdmin;
+window.renderSongStagesTable = renderSongStagesTable;
+window.updateAddSongStageButtonState = updateAddSongStageButtonState;

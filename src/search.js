@@ -70,6 +70,11 @@ export function searchSongs(songs, query, activeStage = null, activeMoments = []
     const momentsArray = Array.isArray(activeMoments) ? activeMoments : (activeMoments ? Array.from(activeMoments) : []);
 
     const filtered = songs.filter(song => {
+        // SEGURIDAD: Filtrar según la etapa del usuario y la etapa requerida por el canto
+        if (typeof window.canCurrentUserSeeSong === 'function' && !window.canCurrentUserSeeSong(song.id)) {
+            return false;
+        }
+
         // 1. Filtrado por Etapa
         if (activeStage && normalizeText(song.stage || '') !== normalizeText(activeStage)) {
             return false;

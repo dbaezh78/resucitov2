@@ -1,6 +1,6 @@
 // src/sync.js - Sincronización de configuraciones personales y globales con Firestore
 
-import { db, auth, doc, setDoc, getDoc, collection, getDocs, query, orderBy, limit } from "./firebase.js";
+import { db, auth, doc, setDoc, getDoc, collection, getDocs, query, orderBy, limit, onSnapshot } from "./firebase.js";
 import { transposeNote, normalizeChord } from "./chords.js";
 
 
@@ -308,4 +308,66 @@ window.guardarPosicionesEnNube = guardarPosicionesEnNube;
 window.cargarPosicionesDesdeNube = cargarPosicionesDesdeNube;
 window.guardarHistorialCantoEnNube = guardarHistorialCantoEnNube;
 window.cargarHistorialCantoDesdeNube = cargarHistorialCantoDesdeNube;
+
+// --- Control de Etapas de Cantos ---
+window.globalPositionsCache = {};
+
+export function listenToGlobalPositions() {
+  try {
+    const colRef = collection(db, "global_positions");
+    onSnapshot(colRef, (snapshot) => {
+      snapshot.forEach((doc) => {
+        window.globalPositionsCache[doc.id] = doc.data();
+      });
+      // Forzar recálculo del buscador y catálogo
+      if (typeof window.handleSearchAndFilters === 'function') {
+        window.handleSearchAndFilters();
+      }
+      // Forzar renderizado de la tabla de etapas si está visible
+      if (typeof window.renderSongStagesTable === 'function') {
+        window.renderSongStagesTable();
+      }
+    }, (error) => {
+      console.warn("⚠️ [Firebase] Error escuchando global_positions:", error);
+    });
+  } catch (e) {
+    console.warn("⚠️ [Firebase] Error al iniciar listenToGlobalPositions:", e);
+  }
+}
+
+export function canCurrentUserSeeSong(songId) {
+  // Administradores se saltan cualquier restricción de etapa
+  if (window.isCurrentUserAdmin && window.isCurrentUserAdmin()) {
+    return true;
+  }
+  
+  // Obtener etapa del perfil del usuario (default: 0 - Precatecumenado)
+  let userStage = 0;
+  const profileStr = localStorage.getItem('user_profile_data');
+  if (profileStr) {
+    try {
+      const profile = JSON.parse(profileStr);
+      if (profile && profile.etapa !== undefined) {
+        userStage = parseFloat(profile.etapa);
+      }
+    } catch (e) {}
+  }
+  
+  // Obtener etapa requerida del canto
+  let requiredStage = 0;
+  if (window.globalPositionsCache && window.globalPositionsCache[songId]) {
+    const customData = window.globalPositionsCache[songId];
+    if (customData.etapa !== undefined) {
+      requiredStage = parseFloat(customData.etapa);
+    }
+  }
+  
+  return userStage >= requiredStage;
+}
+
+window.canCurrentUserSeeSong = canCurrentUserSeeSong;
+window.listenToGlobalPositions = listenToGlobalPositions;
+
+// Iniciar la escucha inmediatamente
+listenToGlobalPositions();
 

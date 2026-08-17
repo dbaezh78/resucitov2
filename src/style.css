@@ -24,13 +24,19 @@
 
   --SangreCristo: #3d0706;
   /* Tema Claro (Defecto) */
+  --cBlanco: #ffffff;
+  
   --myblue: rgb(34 127 222);
   --bg-color: hsl(210deg 100% 95.35%);
   --text-color: hsl(220, 25%, 15%);
+  --text-categoria: hsl(348deg 1.98% 39.61% / 65%);
+  --text-subtitulo: hsl(199.46deg 25.51% 66.92% / 66%);
   --bg-text-campo: hsl(220, 25%, 15%);
   --text-muted: hsl(220, 15%, 45%);
   --accent-color: #d01212;
   --accent-glow: rgba(208, 18, 18, 0.2);
+
+  --cant-border: #f8f8f8;
   
   --panel-bg: rgba(255, 255, 255, 0.931);
   /*--panel-bg: rgba(255, 255, 255, 0.7);*/
@@ -43,6 +49,7 @@
   
   --chord-color: #d01212;
   --chord-color-alt: #d01212;
+  --Rojo-Leccionario: #d01212;
   --font-zoom: 1;
   --font-family-lyrics: 'Franklin Gothic Medium', Arial, sans-serif;
   --font-size-lyrics: 22.4px;
@@ -74,26 +81,30 @@
 
 .theme-dark {
 
+  --SangreCristo: #8c2a2a;
   --bg-color: hsl(220, 20%, 10%);
   --bg-text-campo: hsl(220, 25%, 15%);
-
+  --cant-border: #4c4b4b;
   /*Revisar text-color que sale blanco y con el fondo no se ve*/
   --text-color: hsl(220, 20%, 95%);
+  --text-categoria: hsl(192.07deg 3.12% 54.79%);
+  --text-subtitulo: hsl(199.46deg 53.83% 64.24%);
 
   --text-muted: hsl(220, 10%, 65%);
-  --accent-color: #d01212;
+  --accent-color: #567ec4;
   --accent-glow: rgba(208, 18, 18, 0.35);
   
   --panel-bg: hsla(220, 20%, 15%, 0.65);
-  --panel-border: hsla(220, 20%, 25%, 0.5);
+  --panel-border: hsla(222, 29%, 93%, 0.5);
+/*  --panel-border: hsla(220, 20%, 25%, 0.5);*/
   --panel-hover-border: rgba(208, 18, 18, 0.4);
   
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
   --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.5);
   
-  --chord-color: #d01212;
-  --chord-color-alt: #d01212;
+  --chord-color: #98b5e7;
+  --chord-color-alt: #98b5e7;
   
   /* Fondos de etapa para modo oscuro */
   --stage-bg-pre: hsla(220, 20%, 15%, 0.65);
@@ -109,6 +120,7 @@
 .theme-sepia {
   --bg-color: hsl(35, 35%, 90%);
   --text-color: hsl(35, 40%, 15%);
+  --text-categoria: hsl(192.07deg 3.12% 54.79%);
   --text-muted: hsl(35, 20%, 40%);
   --accent-color: #d01212;
   --accent-glow: rgba(208, 18, 18, 0.2);
@@ -123,6 +135,7 @@
   
   --chord-color: #d01212;
   --chord-color-alt: #d01212;
+  --Rojo-Leccionario: #d01212;
 
   /* Colores de etapas configurables */
   --color-pre: #6c757d;
@@ -577,8 +590,8 @@ header {
 }
 
 .footer-icon-btn:hover {
-  background: rgba(208, 18, 18, 0.1);
-  color: var(--accent-color, #d01212);
+  background: rgb(61 7 6);
+  color: var(--cBlanco, white);
 }
 
 .footer-bar-right {
@@ -783,6 +796,8 @@ header {
   flex-direction: column;
   gap: 4px;
   animation: fade-in 0.3s ease;
+  border: 1px solid var(--cant-border)
+
 }
 
 @keyframes fade-in {
@@ -1345,7 +1360,78 @@ header {
   box-shadow: var(--shadow-sm);
 }
 
+/* Personalización de botones específicos dentro del modal de Ajustes */
+#settings-modal .btn.theme-btn,
+#settings-modal .theme-btn {
+  background-color: var(--settings-btn-bg, #d01212) !important;
+  color: var(--settings-btn-text, #ffffff) !important;
+  border: 1.5px solid var(--settings-btn-bg, #d01212) !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+  width: auto !important; /* Ancho dinámico para botones de acción */
+}
 
+#settings-modal .btn.theme-btn:hover,
+#settings-modal .theme-btn:hover {
+  background-color: var(--settings-btn-text, #ffffff) !important;
+  color: var(--settings-btn-bg, #d01212) !important;
+  border-color: var(--settings-btn-bg, #d01212) !important;
+}
+
+#settings-modal .btn.theme-btn.active,
+#settings-modal .theme-btn.active {
+  background-color: var(--settings-btn-bg, #d01212) !important;
+  color: var(--settings-btn-text, #ffffff) !important;
+  border-color: var(--settings-btn-bg, #d01212) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+/* --- Botones selectores/toggles con estados inactivos (gris) y activos (color personalizado) --- */
+#settings-modal .btn.theme-btn[data-theme],
+#settings-modal .list-style-btn,
+#settings-modal .btn.theme-btn[data-bold],
+#settings-modal .btn.theme-btn#preparar-bold-on,
+#settings-modal .btn.theme-btn#preparar-bold-off,
+#settings-modal .btn.theme-btn#perfil-bold-on,
+#settings-modal .btn.theme-btn#perfil-bold-off {
+  background-color: hsla(0, 0%, 50%, 0.08) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--panel-border) !important;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  width: auto !important;
+}
+
+/* Forzar que los selectores de tema (1) y estilo de lista (2) tengan exactamente un ancho de 70px */
+#settings-modal .btn.theme-btn[data-theme],
+#settings-modal .list-style-btn {
+  width: 70px !important;
+}
+
+#settings-modal .btn.theme-btn[data-theme]:hover,
+#settings-modal .list-style-btn:hover,
+#settings-modal .btn.theme-btn[data-bold]:hover,
+#settings-modal .btn.theme-btn#preparar-bold-on:hover,
+#settings-modal .btn.theme-btn#preparar-bold-off:hover,
+#settings-modal .btn.theme-btn#perfil-bold-on:hover,
+#settings-modal .btn.theme-btn#perfil-bold-off:hover {
+  background-color: hsla(0, 0%, 50%, 0.15) !important;
+  border-color: var(--accent-color) !important;
+  color: var(--text-color) !important;
+}
+
+#settings-modal .btn.theme-btn[data-theme].active,
+#settings-modal .list-style-btn.active,
+#settings-modal .btn.theme-btn[data-bold].active,
+#settings-modal .btn.theme-btn#preparar-bold-on.active,
+#settings-modal .btn.theme-btn#preparar-bold-off.active,
+#settings-modal .btn.theme-btn#perfil-bold-on.active,
+#settings-modal .btn.theme-btn#perfil-bold-off.active {
+  background-color: var(--settings-btn-bg, #d01212) !important;
+  color: var(--settings-btn-text, #ffffff) !important;
+  border-color: var(--settings-btn-bg, #d01212) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
 
 /* --- Impresión --- */
 @media print {
@@ -1408,7 +1494,7 @@ footer {
   box-sizing: border-box;
   padding-top: var(--app-padding);
   margin-top: calc(-1 * var(--app-padding));
-  padding-bottom: 12px;
+  padding-bottom: 25px;
   border-bottom: 1px dashed var(--panel-border);
 }
 
@@ -1448,7 +1534,11 @@ footer {
 .theme-sepia .dashboard-christ-img-pc,
 .theme-dark .dashboard-christ-img-mobile,
 .theme-sepia .dashboard-christ-img-mobile {
-  filter: invert(1) brightness(0.95) contrast(1.1);
+  /*filter: invert(1) brightness(0.95) contrast(1.1);*/
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 31px;
+  margin-left: 35px;
 }
 
 .dashboard-right-controls {
@@ -1712,7 +1802,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #3d0706 !important; /* Color vino oscuro */
+  background: var(--SangreCristo);
+  
   color: #ffffff !important;
   border-bottom: 2px solid #2e0505;
   padding: 1px 2px;
@@ -1943,7 +2034,9 @@ footer {
 
 /* Invertir imagen de cristo en modo oscuro */
 .theme-dark .canto-header-img, .theme-sepia .canto-header-img {
-  filter: invert(1) brightness(0.95) contrast(1.1);
+  /*filter: invert(1) brightness(0.95) contrast(1.1);*/
+  background: #ffffff;
+  border-radius: 8px;
 }
 
 .canto-header-center {
@@ -1955,8 +2048,7 @@ footer {
   font-weight: 700;
   font-size: 0.95rem;
   letter-spacing: 1px;
-  /*color: var(--text-color);*/
-  color: hsl(348deg 1.98% 39.61% / 65%);
+  color: var(--text-categoria);
   margin-bottom: 4px;
   text-transform: uppercase;
   text-align: center;
@@ -1975,8 +2067,7 @@ footer {
 .canto-header-subtitle {
   font-size: 1.2rem;
   /*font-style: italic;*/
-  /*color: var(--text-muted);*/
-  color: hsl(348deg 1.98% 39.61% / 47%);
+  color: var(--text-subtitulo);
   line-height: 1.4;
   text-align: center;
   font-weight: bold;
@@ -3131,6 +3222,18 @@ footer {
   .book-tabs {margin-bottom: 0px;}
   .canto-content-transition-wrapper {margin-left: 5px;}
 
+
+  .theme-dark .dashboard-christ-img-pc,
+.theme-sepia .dashboard-christ-img-pc,
+.theme-dark .dashboard-christ-img-mobile,
+.theme-sepia .dashboard-christ-img-mobile {
+  margin-left: auto;
+}
+
+.dashboard-top-flex {padding-bottom: 5px;}
+
+.songs-grid.style-simple .song-card {padding: 10px 10px;}
+.songs-grid.style-simple .song-card-title {font-size: medium;}
     
   }   /* **************** FIN DE 384px*/
 
@@ -3182,7 +3285,7 @@ footer {
   .Bendecid2 {top: 52px}
   .Bendecid3 {top: 79px;}     
   .Bendecid4 {top: 55px;}
-  .modal-content{max-width: 33%;max-height: 74%;overflow-y: initial;}
+  .modal-content{max-width: 33%;max-height: 74%;overflow-y: initial;border: 1px solid;}
   .song-viewer-view {width: 1024px;}
 
   .canto-columns-container {padding: 16px 40px;  }

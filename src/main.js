@@ -149,9 +149,10 @@ export function updateAccessControlVisibility() {
   const canViewInternalMembers = isCurrentUserAdmin() || hasPermission('view_access_miembros_internos');
   const canViewPermissions = isCurrentUserAdmin() || hasPermission('view_access_permisos');
   const canViewInspector = isCurrentUserAdmin() || hasPermission('view_access_inspector');
+  const canViewSongStages = isCurrentUserAdmin() || hasPermission('edit_song_stages');
 
   // Si tiene el permiso padre "manage_access" o cualquiera de los subpermisos, puede ver la sección Acceso
-  const canViewAccessSection = isCurrentUserAdmin() || hasPermission('manage_access') || canViewMembers || canViewGroups || canViewInternalMembers || canViewPermissions || canViewInspector;
+  const canViewAccessSection = isCurrentUserAdmin() || hasPermission('manage_access') || canViewMembers || canViewGroups || canViewInternalMembers || canViewPermissions || canViewInspector || canViewSongStages;
 
   if (userSubtabAccessBtn) {
     userSubtabAccessBtn.style.display = canViewAccessSection ? 'inline-flex' : 'none';
@@ -171,18 +172,21 @@ export function updateAccessControlVisibility() {
     const accessSubtabInternalMembers = document.querySelector('.access-subtab-btn[data-subtab="internal-members"]');
     const accessSubtabPermissions = document.querySelector('.access-subtab-btn[data-subtab="permissions"]');
     const accessSubtabInspector = document.querySelector('.access-subtab-btn[data-subtab="inspector"]');
+    const accessSubtabSongStages = document.querySelector('.access-subtab-btn[data-subtab="song-stages"]');
 
     const showMembers = isCurrentUserAdmin() || canViewMembers;
     const showGroups = isCurrentUserAdmin() || canViewGroups;
     const showInternalMembers = isCurrentUserAdmin() || canViewInternalMembers;
     const showPermissions = isCurrentUserAdmin() || canViewPermissions;
     const showInspector = isCurrentUserAdmin() || canViewInspector;
+    const showSongStages = isCurrentUserAdmin() || canViewSongStages;
 
     if (accessSubtabMembers) accessSubtabMembers.style.display = showMembers ? 'inline-block' : 'none';
     if (accessSubtabGroups) accessSubtabGroups.style.display = showGroups ? 'inline-block' : 'none';
     if (accessSubtabInternalMembers) accessSubtabInternalMembers.style.display = showInternalMembers ? 'inline-block' : 'none';
     if (accessSubtabPermissions) accessSubtabPermissions.style.display = showPermissions ? 'inline-block' : 'none';
     if (accessSubtabInspector) accessSubtabInspector.style.display = showInspector ? 'inline-block' : 'none';
+    if (accessSubtabSongStages) accessSubtabSongStages.style.display = showSongStages ? 'inline-block' : 'none';
 
     // Redireccionar si el usuario actual se encuentra en un subtab de Acceso deshabilitado para él
     const activeAccessSubtab = document.querySelector('.access-subtab-btn.active');
@@ -194,6 +198,7 @@ export function updateAccessControlVisibility() {
       else if (activeSub === 'internal-members' && !showInternalMembers) allowed = false;
       else if (activeSub === 'permissions' && !showPermissions) allowed = false;
       else if (activeSub === 'inspector' && !showInspector) allowed = false;
+      else if (activeSub === 'song-stages' && !showSongStages) allowed = false;
 
       if (!allowed) {
         let targetSubtab = null;
@@ -202,6 +207,7 @@ export function updateAccessControlVisibility() {
         else if (showInternalMembers) targetSubtab = 'internal-members';
         else if (showPermissions) targetSubtab = 'permissions';
         else if (showInspector) targetSubtab = 'inspector';
+        else if (showSongStages) targetSubtab = 'song-stages';
 
         if (targetSubtab && typeof window.switchAccessSubtab === 'function') {
           window.switchAccessSubtab(targetSubtab);
@@ -533,6 +539,59 @@ function routeSPA() {
   
   if (hash.startsWith('#canto=')) {
     const songId = hash.replace('#canto=', '');
+    if (typeof window.canCurrentUserSeeSong === 'function' && !window.canCurrentUserSeeSong(songId)) {
+      if (window.mostrarConfirmacion) {
+        const user = (typeof getCurrentUser === 'function') ? getCurrentUser() : null;
+        
+        if (!user) {
+          // Caso: No ha iniciado sesión
+          window.mostrarConfirmacion({
+            titulo: 'Acceso Restringido',
+            mensaje: 'Inicia sesión, Como invitado solo puedes ver los canto blancos del Precatecumenado, La paz.',
+            icono: 'lock',
+            textoSi: 'Entrar',
+            textoNo: 'Cerrar',
+            onConfirm: async () => {
+              if (window.firebaseAPI && typeof window.firebaseAPI.login === 'function') {
+                try {
+                  const loggedUser = await window.firebaseAPI.login();
+                  if (loggedUser) {
+                    // Recargar la página con el mismo hash para re-evaluar el acceso al iniciar sesión
+                    window.location.reload();
+                  } else {
+                    window.location.hash = '';
+                  }
+                } catch (e) {
+                  console.error("Error al iniciar sesión con Google:", e);
+                  window.location.hash = '';
+                }
+              } else {
+                window.location.hash = '';
+              }
+            },
+            onCancel: () => {
+              window.location.hash = '';
+            }
+          });
+        } else {
+          // Caso: Ya inició sesión pero no cumple la etapa
+          window.mostrarConfirmacion({
+            titulo: 'Acceso Restringido',
+            mensaje: 'La paz de Cristo, este canto aun no está disponible para tu etapa del camino.',
+            icono: 'lock',
+            textoSi: 'Entendido',
+            textoNo: '', // Alerta con un solo botón
+            onConfirm: () => {
+              window.location.hash = '';
+            }
+          });
+        }
+      } else {
+        alert('La paz de Cristo, este canto no está disponible para tu etapa.');
+        window.location.hash = '';
+      }
+      return;
+    }
     loadSongView(songId);
   } else {
     // Volver al buscador
@@ -2309,7 +2368,7 @@ async function handleSearchAndFilters() {
 function navigateToSong(direction, isSwipe = false) {
   if (!currentCanto) return;
   const targetBook = (currentCanto && currentCanto.sourceBook) ? currentCanto.sourceBook : currentBook;
-  const currentBookSongs = allSongs.filter(s => (s.sourceBook || 'resucito') === targetBook);
+  const currentBookSongs = allSongs.filter(s => (s.sourceBook || 'resucito') === targetBook && (typeof window.canCurrentUserSeeSong !== 'function' || window.canCurrentUserSeeSong(s.id)));
   
   const currentIndex = activeSongsPlaylist.findIndex(s => s.id === currentCanto.id);
   const playListToUse = currentIndex !== -1 ? activeSongsPlaylist : currentBookSongs;

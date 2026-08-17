@@ -425,6 +425,22 @@
                 </label>
               </div>
 
+              <!-- Botones Ajustes -->
+              <div class="btn-table-row">
+                <span class="stage-color-label">Botones Ajustes</span>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-settings-btn-bg" title="Fondo" style="background-color:#d01212;">
+                  <span class="material-symbols-outlined" style="color:#ffffff;">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="settings-btn" data-mode="bg" value="#d01212">
+                </label>
+                <label class="color-picker-label-btn btn-pill-preview" style="visibility: hidden; cursor: default;">
+                  <span class="material-symbols-outlined">palette</span>
+                </label>
+                <label class="color-picker-label-btn btn-pill-preview" id="preview-settings-btn-text" title="Texto" style="background-color:#ffffff;">
+                  <span class="material-symbols-outlined" style="color:#212529;">palette</span>
+                  <input type="color" class="btn-color-input" data-stage="settings-btn" data-mode="text" value="#ffffff">
+                </label>
+              </div>
+
               <div style="display: flex; justify-content: flex-end; margin-top: 12px; margin-bottom: 4px;">
                 <button class="btn theme-btn" id="reset-btn-colors-btn" style="font-size: 0.75rem; padding: 5px 12px;">Restaurar por Defecto</button>
               </div>
@@ -1252,7 +1268,7 @@
                 </div>
                 
                 <!-- Acciones de Administrador -->
-                <div id="auth-admin-actions" style="display: none; margin-top: 16px; border-top: 1.5px dashed var(--panel-border); padding-top: 16px; width: 100%;">
+                <div id="auth-admin-actions" style="display: none; margin-top: 16px; border-top: 1.5px dashed var(--panel-border); padding-top: 16px; width: 100%; justify-items: center;">
                   <h4 style="font-size: 0.9rem; margin-bottom: 8px; font-weight: 700;">Acciones de Administrador</h4>
                   <button id="auth-pull-positions-btn" class="btn theme-btn" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; font-weight: 600;">
                     <span class="material-symbols-outlined">cloud_download</span>
@@ -1266,7 +1282,7 @@
           <!-- Submódulo 2: Control de Acceso -->
           <div id="user-subpanel-access" class="user-subpanel" style="display: none;">
             <div style="margin-bottom: 12px;">
-              <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--text-color); margin-bottom: 4px;">Control de Acceso y Permisos</h4>
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--text-color); margin-top: 10px; margin-bottom: 4px;">Control de Acceso y Permisos</h4>
               <p style="font-size: 0.8rem; color: var(--text-muted);">Administra grupos de usuarios, subgrupos anidados (Active Directory) y permisos del sistema.</p>
             </div>
 
@@ -1277,6 +1293,7 @@
               <button class="access-subtab-btn" data-subtab="internal-members" style="padding: 6px 12px; font-size: 0.8rem; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer;">Miembros Internos</button>
               <button class="access-subtab-btn" data-subtab="permissions" style="padding: 6px 12px; font-size: 0.8rem; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer;">Permisos</button>
               <button class="access-subtab-btn" data-subtab="inspector" style="padding: 6px 12px; font-size: 0.8rem; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer;">Inspector</button>
+              <button class="access-subtab-btn" data-subtab="song-stages" style="padding: 6px 12px; font-size: 0.8rem; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer;">Etapas Canto</button>
             </div>
 
             <!-- Subpanel 1: Miembros Registrados con Inicio de Sesión -->
@@ -1359,9 +1376,57 @@
               </div>
               <div id="ac-inspect-result" style="background: rgba(0,0,0,0.03); border: 1px solid var(--panel-border); border-radius: 8px; padding: 12px; font-size: 0.8rem; min-height: 100px;"></div>
             </div>
-          </div>
-        </div>
 
+            <!-- Subpanel 6: Etapas Canto -->
+            <div id="access-subpanel-song-stages" class="access-subpanel" style="display: none;">
+              <h5 style="margin-bottom: 8px; font-size: 0.85rem; font-weight: 700;">Asignar Etapa a Canto</h5>
+              <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center;">
+                <div style="position: relative; display: flex; align-items: center; flex: 1; min-width: 150px;">
+                  <input type="text" id="ac-stage-song-search" placeholder="Filtrar cantos..." style="width: 100%; padding: 6px 30px 6px 10px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 0.85rem; background: var(--panel-bg); color: var(--text-color); outline: none;">
+                  <span class="material-symbols-outlined clear-search-btn" id="ac-clear-stage-song-search" style="position: absolute; right: 8px; font-size: 1.1rem; display: none; color: var(--text-muted); cursor: pointer; user-select: none;">close</span>
+                </div>
+                <select id="ac-stage-song-select" style="flex: 1.5; min-width: 200px; padding: 6px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 0.85rem; background: var(--panel-bg); color: var(--text-color);"></select>
+                <select id="ac-stage-level-select" style="flex: 1; min-width: 150px; padding: 6px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 0.85rem; background: var(--panel-bg); color: var(--text-color);">
+                  <option value="0">Precatecumenado</option>
+                  <option value="1">Primer Escrutinio</option>
+                  <option value="1.5">SHEMA</option>
+                  <option value="2">Segundo Escrutinio</option>
+                  <option value="3">Iniciación a la Oración</option>
+                  <option value="4">Traditio Symboli</option>
+                  <option value="5">Redditio Symboli</option>
+                  <option value="6">Padre Nuestro</option>
+                  <option value="7">Elección</option>
+                  <option value="8">Renovación de las Promesas Bautismales</option>
+                </select>
+                <button id="ac-btn-add-song-stage" class="btn theme-btn" style="padding: 6px 12px; font-size: 0.8rem; font-weight: 600; margin: 0;">Establecer</button>
+              </div>
+
+              <h5 style="margin-bottom: 8px; font-size: 0.85rem; font-weight: 700;">Cantos con Etapa Asignada</h5>
+              <div style="display: flex; gap: 8px; margin-bottom: 10px; align-items: center;">
+                <div style="position: relative; display: flex; align-items: center; flex: 1;">
+                  <input type="text" id="ac-assigned-stages-search" placeholder="Buscar en la tabla por título o número..." style="width: 100%; padding: 6px 30px 6px 10px; border-radius: 6px; border: 1px solid var(--panel-border); font-size: 0.82rem; background: var(--panel-bg); color: var(--text-color); outline: none;">
+                  <span class="material-symbols-outlined clear-search-btn" id="ac-clear-assigned-stages-search" style="position: absolute; right: 8px; font-size: 1.1rem; display: none; color: var(--text-muted); cursor: pointer; user-select: none;">close</span>
+                </div>
+              </div>
+              <div style="max-height: 250px; overflow-y: auto; border: 1px solid var(--panel-border); border-radius: 8px; background: var(--panel-bg);">
+                <table style="width: 100%; border-collapse: collapse; font-size: 0.8rem; text-align: left;">
+                  <thead>
+                    <tr style="background: rgba(0,0,0,0.03); border-bottom: 1.5px solid var(--panel-border);">
+                      <th style="padding: 8px; font-weight: 700; color: var(--text-color);">Canto</th>
+                      <th style="padding: 8px; font-weight: 700; color: var(--text-color); width: 220px;">Etapa Requerida</th>
+                      <th style="padding: 8px; font-weight: 700; color: var(--text-color); width: 80px; text-align: center;">Acción</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ac-song-stages-table-body">
+                    <tr>
+                      <td colspan="3" style="text-align: center; padding: 12px; color: var(--text-muted);">Cargando...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          
         <!-- Submódulo 3: Uso App -->
         <div id="user-subpanel-usage" class="user-subpanel" style="display: none; padding: 12px 0;">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
